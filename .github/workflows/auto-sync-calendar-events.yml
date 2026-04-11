@@ -1,0 +1,38 @@
+name: Sync Google Calendar events
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  sync-calendar-events:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install Python requirements
+        run: pip install -r src/python/requirements.txt
+
+      - name: Sync Google Calendar events
+        run: python -m src.python.sync_google_calendar_events
+        env:
+          GOOGLE_CALENDAR_API_KEY: ${{ secrets.GOOGLE_CALENDAR_API_KEY }}
+          GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          delete-branch: true
+          branch-suffix: timestamp
+          branch: gh-actions/sync-calendar-events
+          commit-message: "[GH Actions] Sync Google Calendar events"
+          title: "[Automatic PR] Sync Google Calendar events"
+          body: |
+            Automatically syncs Google Calendar events to `_data/events.yml`.

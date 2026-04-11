@@ -34,5 +34,3 @@ jobs:
             in `_data/authors.yml` and that have a valid `semantic_scholar_id`.
             This pull request was automatically created through GitHub Actions.
           branch: "gh-actions/auto-update-publications"
-          team-reviewers: >
-            @ComplexData-MILA/maintainers
