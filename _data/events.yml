@@ -1,15 +1,35 @@
-generated_at: "2026-04-11T00:00:00+00:00"
+generated_at: '2026-04-11T23:40:31+00:00'
 source:
-  provider: "placeholder"
-  calendar_id: "mcgillcsdc@gmail.com"
-  timezone: "America/Toronto"
+  provider: google_calendar
+  calendar_id: mcgillcsdc@gmail.com
+  timezone: America/Toronto
 featured_event:
-  banner_label: "Featured Seminar"
-  title: "No upcoming seminar scheduled."
-  date_display: "Check back soon"
-  location: "TBD"
-  blurb: ""
-  cta_text: "View all seminars"
-  cta_url: "/calendar/"
-  event_url: ""
-upcoming_events: []
+  banner_label: Featured Seminar
+  title: CSDC Lab
+  date_display: Wednesday, April 15, 1:15 PM ET
+  location: LEA429
+  blurb: 'Location: LEA429'
+  cta_text: View all seminars
+  cta_url: /calendar/
+  event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA0MTVUMTcxNTAwWiBtY2dpbGxjc2RjQG0
+upcoming_events:
+- title: CSDC Lab
+  date_display: Wednesday, April 15, 1:15 PM ET
+  location: LEA429
+  event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA0MTVUMTcxNTAwWiBtY2dpbGxjc2RjQG0
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, April 16, 10:30 AM ET
+  location: Room 430
+  event_url: https://www.google.com/calendar/event?eid=N2tnYmhiNDVyOWdoczBvcW9kNzFicWpxdGFfMjAyNjA0MTZUMTQzMDAwWiBtY2dpbGxjc2RjQG0
+- title: CSDC Lab
+  date_display: Wednesday, April 22, 1:15 PM ET
+  location: LEA429
+  event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA0MjJUMTcxNTAwWiBtY2dpbGxjc2RjQG0
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, April 23, 10:30 AM ET
+  location: Room 430
+  event_url: https://www.google.com/calendar/event?eid=N2tnYmhiNDVyOWdoczBvcW9kNzFicWpxdGFfMjAyNjA0MjNUMTQzMDAwWiBtY2dpbGxjc2RjQG0
+- title: CSDC Lab
+  date_display: Wednesday, April 29, 1:15 PM ET
+  location: LEA429
+  event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA0MjlUMTcxNTAwWiBtY2dpbGxjc2RjQG0
