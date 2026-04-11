@@ -1,23 +1,12 @@
 ---
 permalink: /
-title: Complex Data Lab
+title: Home
 layout: splash
-header:
-    overlay_image: /assets/images/logo/logo.png
-    overlay_css: "background-size&#58; contain; background-repeat&#58; no-repeat;"
-excerpt: "A research group focusing on developing techniques for analyzing complex data from online societies, with applications to enhance the health and safety of online spaces."
-
-row_research:
-  - image_path: /assets/images/home/group-photo-2.webp
-    url: /publications
-    alt: "Poster Presentation"
-    title: "Research"
-    btn_label: "Publications"
-    btn_class: "btn--primary"
-    excerpt: "We work on various topics and present our works in ML and NLP conferences and journals."
+excerpt: "The McGill node of the CSDC researches trust, participation, and democratic inclusion."
 
 ---
 
-{% include research-directions.html category="research-directions"%}
-
-{% include feature_row id="row_research" type="left" %}
+{% include csdc-home-hero.html %}
+{% include csdc-featured-event.html %}
+{% include csdc-research-pillars.html %}
+{% include csdc-cta-stats.html %}

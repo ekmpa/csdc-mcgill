@@ -2,65 +2,24 @@
 permalink: /people/
 title: "People"
 layout: splash_v2
-header:
-    overlay_image: /assets/images/logo/logo.png
-    overlay_css: "background-size&#58; contain; background-repeat&#58; no-repeat;"
+search_terms: "Dietlind Stolle Anne Imouza Emma Kondrup"
+classes:
+    - csdc-page
 ---
 
-## Faculty & Staff & Postdoc
+<div class="csdc-container csdc-people-page">
+
+<h1>Our Research Team</h1>
+
+<p>Meet the researchers and staff advancing democratic citizenship research at McGill.</p>
+
+<h2>Faculty and Staff</h2>
 
 {% include card-authors-with-role.html authors=site.data.authors role="Faculty" render_current_role=true %}
 {% include card-authors-with-role.html authors=site.data.authors role="Staff" render_current_role=true %}
-{% include card-authors-with-role.html authors=site.data.authors role="Postdoc" render_current_role=true %}
 
-## Students
+<p>
+    <span class="csdc-contact-pill">Interested in joining us? <a href="mailto:anne.imouza@mail.mcgill.ca">Contact us</a></span>
+</p>
 
-### PhD 
-
-{% include card-authors-with-role.html authors=site.data.authors role="Student" title="PhD" render_current_role=true %}
-
-### Masters
-
-{% include card-authors-with-role.html authors=site.data.authors role="Student" title="Master" render_current_role=true %}
-
-### Undergraduate
-
-{% include card-authors-with-role.html authors=site.data.authors role="Student" title="Undergraduate" render_current_role=true %}
-
-### Intern
-
-{% include card-authors-with-role.html authors=site.data.authors role="Student" title="Intern" render_current_role=true %}
-
----
-
-# Past Members
-
-## Faculty & Staff & Postdoc
-
-{% include card-authors-with-role.html authors=site.data.authors role="Faculty" render_current_role=false %}
-{% include card-authors-with-role.html authors=site.data.authors role="Staff" render_current_role=false %}
-{% include card-authors-with-role.html authors=site.data.authors role="Postdoc" render_current_role=false %}
-
-## Alumni
-
-### PhD
-
-{% include card-authors-with-role.html authors=site.data.authors role="Student" title="PhD" render_current_role=false %}
-
-### Masters
-
-{% include card-authors-with-role.html authors=site.data.authors role="Student" title="Master" render_current_role=false %}
-
-### Undergraduate
-
-{% include card-authors-with-role.html authors=site.data.authors role="Student" title="Undergraduate" render_current_role=false %}
-
-### Interns
-
-{% include card-authors-with-role.html authors=site.data.authors role="Student" title="Intern" render_current_role=false %}
-
-<br/>
-
-<!-- # Updating the website
-
-If you are part of the Complex Data Lab, please head to the [GitHub repository](https://github.com/ComplexData-MILA/ComplexDataLab-Mila-McGill), for instructions on adding/updating your publications, creating/updating your profile, updating other parts of the website and etc. -->
+</div>

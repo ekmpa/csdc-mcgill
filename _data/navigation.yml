@@ -1,24 +1,18 @@
 main:
   - tab: "Research"
     subpages:
-      - page: "Temporal Graph Learning"
-        url: /temporal-graph-learning/
-      - page: "Crime & Online Markets"
-        url: /online-crime/
-      - page: "Politics & Online Media"
-        url: /poli-sci/
-      - page: "Toxicity & Online Games"
-        url: /online-toxicity/
+      - page: "Our Research"
+        url: /research/
       - page: "Tools & Resources"
         url: /tools-and-resources/
       - page: "STAMINA"
         url: /stamina/
       - page: "Publications"
         url: /publications/
-    url: /
+    url: /research/
   - tab: "About"
     subpages:
-      - page: "About the Lab"
+      - page: "About McGill CSDC"
         url: /about/
       - page: "News"
         url: /news/

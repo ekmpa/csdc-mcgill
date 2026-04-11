@@ -1,10 +1,10 @@
-# Complex Data Lab Website
+# McGill Centre for the Study of Democratic Citizenship Web Dev
 
-### [➡️ Click Here to Add Your Profile or Paper ⬅️](https://github.com/ComplexData-MILA/ComplexDataLab-Mila-McGill/issues/new/choose)
+### [➡️ Click Here to Add Your Profile or Paper ⬅️](https://github.com/ekmpa/csdc-mcgill/issues/new/choose)
 
 <br>
 
-This is the source code of [Complex Data Lab Website](https://complexdatalab.com/), which was forked from [McGill-NLP](https://github.com/McGill-NLP/mcgill-nlp.github.io). Internally, it is built using [Jekyll](https://github.com/jekyll/jekyll) and [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes).
+This is the source code of the [McGill Centre for the Study of Democratic Citizenship Website](), as forked by the [Complex Data Lab Website](https://complexdatalab.com/) (originally forked from [McGill-NLP](https://github.com/McGill-NLP/mcgill-nlp.github.io)). Internally, it is built using [Jekyll](https://github.com/jekyll/jekyll) and [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes).
 
 ## Quickstart
 
@@ -19,7 +19,7 @@ For certain contributions, it is possible to fill GitHub forms and everything wi
   * With a URL (for limited number of websites)
 * Adding all papers by a certain author within a time frame
 
-To get started, [click here to open the issue forms](https://github.com/ComplexData-MILA/ComplexDataLab-Mila-McGill/issues/new/choose).
+To get started, [click here to open the issue forms](https://github.com/ekmpa/csdc-mcgill/issues/new/choose).
 
 > [!NOTE]
 >
@@ -30,9 +30,9 @@ To get started, [click here to open the issue forms](https://github.com/ComplexD
 
 For other types of contribution (not covered by the issue form), please follow these steps:
 
-1. [Fork](https://github.com/ComplexData-MILA/ComplexDataLab-Mila-McGill/fork) the repository.
+1. [Fork](https://github.com/ekmpa/csdc-mcgill/fork) the repository.
 2. Add your contribution by editing the desired files.
-3. Create a pull request: Click on the [Pull Request](https://github.com/ComplexData-MILA/ComplexDataLab-Mila-McGill/pulls) tab and select "New pull request". Select the repository you forked and modified.
+3. Create a pull request: Click on the [Pull Request](https://github.com/ekmpa/csdc-mcgill/pulls) tab and select "New pull request". Select the repository you forked and modified.
 4. Wait for a team member to review and merge your pull request.
 
 ## Quick Guides

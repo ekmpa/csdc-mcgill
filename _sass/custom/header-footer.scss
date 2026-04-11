@@ -1,16 +1,16 @@
 a.site-title {
     @media (min-width: 601px) {
-        font-size: xx-large;
+        font-size: 1.45rem;
     }
 
     @media (max-width: 600px) {
-        font-size: large;
+        font-size: 1rem;
     }
 
-    color: $primary-color;
+    color: #ffffff;
 
     &:hover {
-        color: mix($background-color, $primary-color, 25%);
+        color: #fecdd3;
     }
 }
 
@@ -20,6 +20,58 @@ a.site-title {
     }
 }
 
+.masthead {
+    background: #1f2937;
+    border-bottom: 4px solid #c8102e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.masthead__inner-wrap {
+    max-width: 100%;
+    padding: 0.45rem 1rem;
+}
+
+.csdc-shell-nav {
+    min-height: 56px;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.csdc-shell-nav .site-title {
+    color: #ffffff;
+    line-height: 1.25;
+}
+
+.csdc-shell-nav .site-subtitle {
+    color: #d1d5db;
+    font-size: 0.52rem;
+    font-weight: 500;
+}
+
+.csdc-shell-nav .visible-links a,
+.csdc-shell-nav .hidden-links a,
+.csdc-shell-nav .search__toggle {
+    color: #f9fafb;
+}
+
+.csdc-shell-nav .visible-links a:hover,
+.csdc-shell-nav .hidden-links a:hover {
+    color: #fda4af;
+}
+
+
+.csdc-shell-nav .site-logo img {
+    max-height: 44px;
+    width: auto;
+}
+
+.csdc-shell-nav .visible-links a,
+.csdc-shell-nav .hidden-links a {
+    font-size: 1.05rem;
+}
 
 .submenu {
     list-style: none;
@@ -31,7 +83,7 @@ a.site-title {
 
 .masthead>.masthead__inner-wrap>.masthead__menu>.greedy-nav>.visible-links>li>.submenu {
     position: absolute;
-    background: $background-color;
+    background: #111827;
     min-width: 200px;
     z-index: 1000;
     display: none;
@@ -39,4 +91,79 @@ a.site-title {
 
 .masthead>.masthead__inner-wrap>.masthead__menu>.greedy-nav>.visible-links>li>.submenu>li>a {
     padding: 10px 20px;
+    color: #f9fafb;
+}
+
+.csdc-footer {
+    margin-top: 3rem;
+    border-top: 4px solid #c8102e;
+    background: #1f2937;
+    color: #f9fafb;
+    padding: 2rem 0 1rem;
+}
+
+.page__footer {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+    width: 100% !important;
+    background: transparent !important;
+}
+
+.page__footer footer {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+    width: 100% !important;
+}
+
+.page__footer .csdc-footer {
+    margin-top: 0;
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    box-sizing: border-box;
+}
+
+.csdc-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.2rem;
+
+    @include breakpoint($medium) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @include breakpoint($large) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.csdc-footer h4 {
+    color: #fda4af;
+    margin-top: 0;
+    margin-bottom: 0.55rem;
+}
+
+.csdc-footer p {
+    margin: 0.3rem 0;
+    color: #d1d5db;
+}
+
+.csdc-footer a {
+    color: #f9fafb;
+    text-decoration: none;
+}
+
+.csdc-footer a:hover {
+    color: #fecdd3;
+}
+
+.csdc-footer-copy {
+    margin-top: 1.15rem;
+    border-top: 1px solid #374151;
+    padding-top: 0.85rem;
+    font-size: 0.85rem;
+    color: #9ca3af;
 }

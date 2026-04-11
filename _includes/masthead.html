@@ -1,50 +1,31 @@
 <!-- Overrides and modified from: https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/_includes/masthead.html -->
 
-{% capture logo_path %}{{ site.logo }}{% endcapture %}
-
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        {% unless logo_path == empty %}
-        <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}"
-            alt="{{ site.masthead_title | default: site.title }}"></a>
-        {% endunless %}
+      <nav id="site-nav" class="greedy-nav csdc-shell-nav">
         <a class="site-title" href="{{ '/' | relative_url }}">
-          {{ site.masthead_title | default: site.title }}
-          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
+          McGill CSDC
+          <span class="site-subtitle">Centre for the Study of Democratic Citizenship</span>
         </a>
         <ul class="visible-links">
-
-
-          {%- for link in site.data.navigation.main -%}
-
-          {% if link.tab %}
           <li class="masthead__menu-item">
-            <a href="{{ link.url | relative_url }}" {% if link.description %} title="{{ link.description }}" {% endif
-              %}>{{ link.tab }}</a>
-            <ul class="submenu">
-              {%- for sublink in link.subpages -%}
-              <li class="masthead__menu-item">
-                <a href="{{ sublink.url | relative_url }}" {% if sublink.description %}
-                  title="{{ sublink.description }}" {% endif %}>{{ sublink.page }}</a>
-              </li>
-              {%- endfor -%}
-            </ul>
+            <a href="{{ '/' | relative_url }}">Home</a>
           </li>
-          {% endif %}
-
-          {% if link.title %}
           <li class="masthead__menu-item">
-            <a href="{{ link.url | relative_url }}" {% if link.description %} title="{{ link.description }}" {% endif
-              %}>{{ link.title }}</a>
+            <a href="{{ '/about/' | relative_url }}">About</a>
           </li>
-          {% endif %}
-
-          {%- endfor -%}
+          <li class="masthead__menu-item">
+            <a href="{{ '/people/' | relative_url }}">Team</a>
+          </li>
+          <li class="masthead__menu-item">
+            <a href="{{ '/publications/' | relative_url }}">Research</a>
+          </li>
+          <li class="masthead__menu-item">
+            <a href="{{ '/news/' | relative_url }}">Events</a>
+          </li>
 
         </ul>
-
         {% if site.search == true %}
         <button class="search__toggle" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search"

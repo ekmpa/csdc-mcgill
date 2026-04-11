@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{% include page__hero_particles.html %}
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -49,9 +47,11 @@ layout: default
 
     {{ content }}
 
+    {% if page.show_taxonomy_posts != false %}
     <div>
       {% include posts-publication.html taxonomy=page.taxonomy %}
     </div>
+    {% endif %}
 
   </article>
 </div>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+html[data-theme="default"] {
+  --color-primary: #c8102e;
+  --color-secondary: #1f2937;
+  --color-accent: #c8102e;
+  --color-bg-start: #f8fafc;
+  --color-bg-end: #ffffff;
+  --color-about-box: #ffffff;
+  --color-cecd: #f87171;
+  --font-body: "Inter", sans-serif;
+}
+
+html[data-theme="blue"] {
+  --color-primary: #1d4ed8;
+  --color-secondary: #0f172a;
+  --color-accent: #2563eb;
+  --color-bg-start: #eff6ff;
+  --color-bg-end: #f8fafc;
+  --color-about-box: #eff6ff;
+  --color-cecd: #93c5fd;
+  --font-body: "Inter", sans-serif;
+}
+
+html[data-theme="formal"] {
+  --color-primary: #8b3a3a;
+  --color-secondary: #2f2f2f;
+  --color-accent: #a45252;
+  --color-bg-start: #faf6f1;
+  --color-bg-end: #fffdfb;
+  --color-about-box: #ffffff;
+  --color-cecd: #d4a5a5;
+  --font-body: Georgia, serif;
+}
+
+html[data-theme="warm"] {
+  --color-primary: #d97706;
+  --color-secondary: #2d2520;
+  --color-accent: #f59e0b;
+  --color-bg-start: #fffbeb;
+  --color-bg-end: #fff7ed;
+  --color-about-box: #ffffff;
+  --color-cecd: #fdba74;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background: linear-gradient(135deg, var(--color-bg-start), var(--color-bg-end));
+  color: #111827;
+}
+
+html,
+body,
+a,
+section,
+div,
+header,
+footer,
+button {
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.bg-mcgillDark {
+  background-color: var(--color-secondary) !important;
+}
+
+.text-mcgillRed {
+  color: var(--color-accent) !important;
+}
+
+.border-mcgillRed {
+  border-color: var(--color-accent) !important;
+}
+
+.hover\:text-mcgillRed:hover {
+  color: var(--color-accent) !important;
+}
+
+.hover\:bg-mcgillRed:hover {
+  background-color: var(--color-accent) !important;
+}
+
+.text-cecd {
+  color: var(--color-cecd);
+}
+
+.about-box {
+  background-color: var(--color-about-box);
+}
+
+html[data-theme="blue"] main .bg-white {
+  background-color: var(--color-about-box) !important;
+}
+
+html[data-theme="blue"] main .events-page .bg-white {
+  background-color: #ffffff !important;
+}
+
+.card {
+  background-color: var(--color-about-box);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.card {
+  @apply rounded-lg shadow-md p-6 bg-white border border-gray-200;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg font-semibold transition-colors;
+}
+
+.btn-primary {
+  @apply btn bg-mcgillRed text-white;
+}
+
+.btn-primary:hover {
+  filter: brightness(0.92);
+}
+
+.btn-secondary {
+  @apply btn bg-gray-200 text-gray-900 hover:bg-gray-300;
+}

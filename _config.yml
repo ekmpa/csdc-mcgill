@@ -13,14 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Complex Data Lab
+title: McGill CSDC
+name: McGill CSDC
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Complex Data Lab is a research group within McGill University and Mila focusing on network science and applied machine learning. 
-twitter_username: complexDataLab
-github_username: ComplexData-MILA
-logo: "/assets/images/logo/logo.png"
-og_image: "/assets/images/logo/logo.png"
+  The McGill node of the Centre for the Study of Democratic Citizenship researches trust, participation, and democratic inclusion.
+twitter_username:
+github_username: ekmpa
+logo: ""
+og_image: ""
 dark_theme_css: "/assets/css/main-dark.css"
 log_level: info
 search: true
@@ -51,6 +52,7 @@ exclude:
   - records
   - src
   - tests
+  - _research_directions
 
 # Plugins (previously gems:)
 plugins:
@@ -60,19 +62,13 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Complex Data Lab Member(s)"
+  name   : "McGill CSDC Member(s)"
   avatar : "/assets/images/bio/placeholder/martlet.jpeg"
-  bio    : "Current or former lab member(s) worked on this."
+  bio    : "Current or former CSDC member(s) worked on this."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.complexdatalab.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/ComplexData-MILA"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/complexDataLab"
+      url: "https://github.com/ekmpa/csdc-mcgill"
 
 analytics:
   provider: "google-gtag"
@@ -87,10 +83,9 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/ComplexData-MILA"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/complexDataLab"
+      url: "https://github.com/ekmpa/csdc-mcgill"
+
+copyright: McGill CSDC
 
 defaults:
   # _pages
@@ -124,6 +119,8 @@ defaults:
       type: posts
     values:
       layout: publication
+      published: false
+      search: false
       classes:
         - wide
       author_profile: true
@@ -135,6 +132,7 @@ defaults:
       type: posts
     values:
       layout: single
+      search: false
       classes:
         - no-sidebar
       author_profile: false
@@ -171,6 +169,13 @@ defaults:
         - no-sidebar
       author_profile: false
       share: true
+
+  # _tech_transfer
+  - scope:
+      path: ""
+      type: tech_transfer
+    values:
+      search: false
 
 category_archive:
   type: liquid

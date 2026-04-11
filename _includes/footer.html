@@ -1,26 +1,27 @@
-<div class="page__footer-follow">
-    <ul class="social-icons">
-        {% if site.data.ui-text[site.locale].follow_label %}
-        <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-        {% endif %}
+<div class="csdc-footer">
+    <div class="csdc-container">
+        <div class="csdc-footer-grid">
+            <div>
+                <h4>McGill CSDC</h4>
+                <p>Research on trust, democratic participation, and inclusion.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <p><a href="{{ '/about/' | relative_url }}">About</a></p>
+                <p><a href="{{ '/news/' | relative_url }}">News and Events</a></p>
+                <p><a href="{{ '/people/' | relative_url }}">People</a></p>
+            </div>
+            <div>
+                <h4>Contribute</h4>
+                <p><a href="https://github.com/ekmpa/csdc-mcgill/issues/new/choose">Add or update member profile</a></p>
+                <p><a href="https://github.com/ekmpa/csdc-mcgill/issues/new/choose">Add or update publication</a></p>
+            </div>
+            <div>
+                <h4>National CSDC</h4>
+                <p><a href="https://csdc-cecd.ca" rel="nofollow noopener noreferrer">Centre for the Study of Democratic Citizenship (National)</a></p>
+            </div>
+        </div>
 
-        {% if site.footer.links %}
-        {% for link in site.footer.links %}
-        {% if link.label and link.url %}
-        <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i
-                    class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-
-        {% unless site.atom_feed.hide %}
-        <li><a
-                href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i
-                    class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label
-                | default: "Feed" }}</a></li>
-        {% endunless %}
-    </ul>
+        <div class="csdc-footer-copy">&copy; {{ site.time | date: '%Y' }} {{ site.copyright | default: site.title }}.</div>
+    </div>
 </div>
-
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} <a
-        href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a>.</div>

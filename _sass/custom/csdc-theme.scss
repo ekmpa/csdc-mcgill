@@ -1,0 +1,269 @@
+$csdc-red: #c8102e;
+$csdc-dark: #1f2937;
+$csdc-bg-a: #f8fafc;
+$csdc-bg-b: #ffffff;
+
+.csdc-page {
+  background: linear-gradient(135deg, $csdc-bg-a 0%, $csdc-bg-b 100%);
+}
+
+.csdc-container {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.csdc-hero {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 55%, #eef2f7 100%);
+  padding: 2.4rem 0;
+  margin-bottom: 1rem;
+}
+
+.csdc-kicker {
+  font-weight: 700;
+  font-size: 0.82rem;
+  margin-bottom: 0.35rem;
+}
+
+.csdc-red {
+  color: $csdc-red;
+}
+
+.csdc-hero-title {
+  color: $csdc-dark;
+  font-size: clamp(1.25rem, 3vw, 1.8rem);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.csdc-hero-subtitle {
+  margin-top: 0.35rem;
+  color: #6b7280;
+  font-size: clamp(1rem, 2.5vw, 1.45rem);
+  line-height: 1.25;
+}
+
+.csdc-lead {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 46rem;
+  color: #374151;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.csdc-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.csdc-btn {
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.csdc-btn-primary {
+  background: $csdc-red;
+  color: #ffffff;
+}
+
+.csdc-btn-primary:visited,
+.csdc-btn-primary:hover,
+.csdc-btn-primary:focus {
+  color: #ffffff;
+}
+
+.csdc-btn-secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.csdc-section {
+  margin: 0 0 1.5rem;
+}
+
+.csdc-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.6rem;
+  padding: 0.95rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.csdc-card-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: $csdc-red;
+}
+
+.csdc-pillars {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.csdc-pillars-two {
+  @include breakpoint($large) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.csdc-two-col {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.csdc-featured {
+  border-left: 4px solid $csdc-red;
+}
+
+.csdc-slab {
+  background: $csdc-dark;
+  color: #ffffff;
+  border-radius: 0.6rem;
+  padding: 1.5rem;
+}
+
+.csdc-slab a {
+  color: #fca5a5;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.csdc-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  text-align: center;
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.csdc-stat-number {
+  color: $csdc-red;
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.csdc-update-box {
+  margin: 1rem 0 2rem;
+  border: 1px solid #fecaca;
+  background: #fff1f2;
+  border-radius: 0.6rem;
+  padding: 0.9rem 1rem;
+}
+
+.csdc-update-box a {
+  color: #9f1239;
+  font-weight: 700;
+}
+
+.csdc-news-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.csdc-news-card h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.csdc-news-card h2 a:hover {
+  color: $csdc-red;
+}
+
+.csdc-news-meta {
+  margin: 0 0 0.4rem;
+  color: #6b7280;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.csdc-news-venue {
+  color: #4b5563;
+  font-weight: 600;
+}
+
+.csdc-people-page {
+  padding-top: 3rem;
+
+  @media (max-width: 600px) {
+    padding-top: 2.2rem;
+  }
+}
+
+.csdc-about-hero,
+.csdc-news-hero {
+  margin-bottom: 1rem;
+}
+
+.csdc-contact-pill {
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  background: #e5e7eb;
+  color: #111827;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.csdc-contact-pill a {
+  color: #9f1239;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.csdc-page,
+.csdc-page * {
+  overflow-wrap: anywhere;
+}
+
+.csdc-page img,
+.csdc-page svg,
+.csdc-page video,
+.csdc-page iframe,
+.csdc-page table {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .csdc-container {
+    padding: 0 0.75rem;
+  }
+
+  .csdc-contact-pill {
+    display: block;
+  }
+}
