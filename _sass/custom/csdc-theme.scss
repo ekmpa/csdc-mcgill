@@ -258,6 +258,23 @@ $csdc-bg-b: #ffffff;
   height: auto;
 }
 
+.csdc-calendar-card {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.csdc-calendar-embed {
+  position: relative;
+  width: 100%;
+  min-height: 620px;
+}
+
+.csdc-calendar-embed iframe {
+  width: 100%;
+  height: 620px;
+  border: 0;
+}
+
 @media (max-width: 600px) {
   .csdc-container {
     padding: 0 0.75rem;
@@ -265,5 +282,13 @@ $csdc-bg-b: #ffffff;
 
   .csdc-contact-pill {
     display: block;
+  }
+
+  .csdc-calendar-embed {
+    min-height: 520px;
+  }
+
+  .csdc-calendar-embed iframe {
+    height: 520px;
   }
 }
