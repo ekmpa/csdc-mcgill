@@ -1,0 +1,15 @@
+generated_at: "2026-04-11T00:00:00+00:00"
+source:
+  provider: "placeholder"
+  calendar_id: "mcgillcsdc@gmail.com"
+  timezone: "America/Toronto"
+featured_event:
+  banner_label: "Featured Seminar"
+  title: "No upcoming seminar scheduled."
+  date_display: "Check back soon"
+  location: "TBD"
+  blurb: ""
+  cta_text: "View all seminars"
+  cta_url: "/calendar/"
+  event_url: ""
+upcoming_events: []

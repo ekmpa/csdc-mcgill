@@ -3,6 +3,10 @@ $csdc-dark: #1f2937;
 $csdc-bg-a: #f8fafc;
 $csdc-bg-b: #ffffff;
 
+html, body {
+  overflow-x: hidden;
+}
+
 .csdc-page {
   background: linear-gradient(135deg, $csdc-bg-a 0%, $csdc-bg-b 100%);
 }
@@ -17,6 +21,10 @@ $csdc-bg-b: #ffffff;
   background: linear-gradient(180deg, #ffffff 0%, #f8fafc 55%, #eef2f7 100%);
   padding: 2.4rem 0;
   margin-bottom: 1rem;
+  /* Full-bleed: break out of #main's max-width/padding */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 .csdc-kicker {
@@ -80,7 +88,26 @@ $csdc-bg-b: #ffffff;
 
 .csdc-btn-secondary {
   background: #e5e7eb;
-  color: #111827;
+  color: #8f0f2a;
+}
+
+.csdc-btn-secondary:visited,
+.csdc-btn-secondary:hover,
+.csdc-btn-secondary:focus {
+  color: #8f0f2a;
+}
+
+.csdc-events-cta {
+  display: inline-block;
+  color: $csdc-red;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.csdc-events-cta:visited,
+.csdc-events-cta:hover,
+.csdc-events-cta:focus {
+  color: $csdc-red;
 }
 
 .csdc-section {
@@ -259,6 +286,10 @@ $csdc-bg-b: #ffffff;
 }
 
 .csdc-calendar-card {
+  max-width: 920px;
+}
+
+.csdc-calendar-shell {
   max-width: 920px;
   margin: 0 auto;
 }

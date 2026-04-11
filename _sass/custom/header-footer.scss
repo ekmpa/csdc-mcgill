@@ -70,7 +70,32 @@ a.site-title {
 
 .csdc-shell-nav .visible-links a,
 .csdc-shell-nav .hidden-links a {
-    font-size: 1.05rem;
+    font-size: 0.84rem;
+}
+
+.csdc-shell-nav .visible-links {
+    margin-left: auto;
+    gap: 0 !important;
+}
+
+.csdc-shell-nav .masthead__menu-item {
+    margin: 0 !important;
+}
+
+.csdc-shell-nav .visible-links li {
+    margin: 0 0.4rem !important;
+}
+
+.csdc-shell-nav .visible-links a {
+    margin: 0 !important;
+    padding-left: 0.04rem !important;
+    padding-right: 0.04rem !important;
+}
+
+.csdc-shell-nav .visible-links>li>a {
+    margin: 0 !important;
+    padding-left: 0.04rem !important;
+    padding-right: 0.04rem !important;
 }
 
 .submenu {

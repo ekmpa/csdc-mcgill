@@ -1,11 +1,25 @@
 <section class="csdc-section">
   <div class="csdc-container">
+    {% assign upcoming = site.data.events.upcoming_events %}
     <div class="csdc-card csdc-featured">
-      <p class="csdc-red" style="font-size:0.8rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; margin:0 0 0.4rem;">Featured Seminar</p>
-      <h2 style="margin-top:0; margin-bottom:0.35rem;">Trust, Diversity, and Democratic Resilience</h2>
-      <p style="margin:0.35rem 0;"><strong>Date:</strong> Thursday, April 9, 2:00 PM ET</p>
-      <p style="margin:0.35rem 0 0.8rem;"><strong>Location:</strong> Leacock Building, Room 232</p>
-      <a href="{{ '/news/' | relative_url }}" class="csdc-red" style="font-weight:700; text-decoration:none;">View all seminars</a>
+      <p class="csdc-red" style="font-size:0.8rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; margin:0 0 0.4rem;">Upcoming Events</p>
+
+      {% if upcoming and upcoming.size > 0 %}
+        {% for event in upcoming limit:3 %}
+        <div style="padding:0.35rem 0 0.8rem; border-bottom:1px solid #e5e7eb; margin-bottom:0.7rem;">
+          <h3 style="margin:0 0 0.25rem;">{{ event.title }}</h3>
+          <p style="margin:0.2rem 0;"><strong>Date:</strong> {{ event.date_display }}</p>
+          <p style="margin:0.2rem 0;"><strong>Location:</strong> {{ event.location }}</p>
+          {% if event.event_url and event.event_url != '' %}
+          <p style="margin:0.25rem 0 0;"><a href="{{ event.event_url }}" target="_blank" rel="noopener noreferrer" class="csdc-red" style="font-weight:700; text-decoration:none;">Event details</a></p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      {% else %}
+      <p style="margin:0.35rem 0 0.8rem;">No upcoming events synced yet.</p>
+      {% endif %}
+
+      <a href="{{ '/calendar/' | relative_url }}" class="csdc-events-cta" aria-label="Go to Calendar">&rarr; Calendar</a>
     </div>
   </div>
 </section>

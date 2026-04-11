@@ -24,15 +24,15 @@ permalink: /about/
       <div class="csdc-pillars csdc-pillars-two">
         <article class="csdc-card" style="border-top:4px solid #c8102e;">
           <h3 class="csdc-card-title">Learning Democratic Citizenship in an Unequal World</h3>
-          <p>Examining how democratic values, identities, and civic competencies are developed in contexts shaped by social and economic inequality.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </article>
         <article class="csdc-card" style="border-top:4px solid #c8102e;">
           <h3 class="csdc-card-title">The Practice of Democratic Citizenship</h3>
-          <p>Studying how citizens participate in democratic life through formal and informal practices, including voting, engagement, and collective action.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </article>
         <article class="csdc-card" style="border-top:4px solid #c8102e;">
           <h3 class="csdc-card-title">Citizen Representation and Governance</h3>
-          <p>Analyzing how institutions represent citizens and govern democratically, including responsiveness, accountability, and trust in public decision-making.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </article>
       </div>
     </div>

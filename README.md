@@ -44,6 +44,18 @@ For other types of contribution (not covered by the issue form), please follow t
 | Creating pages under _post (paper publications, blogs, teaching) | [here](./documentation/creating-posts.md) |
 | Modifying pages / dependicies / Local setup | [here](./documentation/advanced_mode.md) | 
 
+## Automated Calendar Sync (Homepage Featured Event)
+
+The homepage featured seminar card is now data-driven from `_data/events.yml`.
+
+To enable automatic sync from Google Calendar via GitHub Actions:
+
+1. Add repository secret `GOOGLE_CALENDAR_API_KEY`.
+2. Optionally add repository secret `GOOGLE_CALENDAR_ID` (defaults to `mcgillcsdc@gmail.com`).
+3. Run workflow `.github/workflows/auto-sync-calendar-events.yml` manually once, or wait for the scheduled run.
+
+The sync script is `src/python/sync_google_calendar_events.py`.
+
 
 ## FAQ
 
