@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import time
 from urllib.request import urlopen
@@ -12,7 +13,13 @@ from .add_update_publication import generate_publication_post
 
 def fetch_content(parsed, max_retry=3):
     method = parsed["method"]
-    identifier = parsed["identifier"]
+    identifier = parsed["identifier"].strip()
+
+    # Auto-detect: if identifier looks like a URL, always use the URL lookup method
+    # so users can paste arxiv/doi/acl URLs regardless of which dropdown they chose.
+    if identifier.startswith(("http://", "https://")):
+        method = "URL"
+
     url = (
         f"https://api.semanticscholar.org/graph/v1/paper/{method}:{identifier}"
         "?fields=title,venue,year,publicationDate,authors.name,externalIds,url,abstract"
@@ -21,13 +28,14 @@ def fetch_content(parsed, max_retry=3):
         response = urlopen(url)
         data = json.loads(response.read())
     except HTTPError as e:
-        # Invalid paper IDs/methods are non-retriable; skip without crashing workflow.
         if e.code == 404:
+            # Fail loudly so the workflow shows an error and the user knows to resubmit.
             print(
-                f"Semantic Scholar paper not found for {method}:{identifier} (HTTP 404). "
-                "Skipping publication creation."
+                f"ERROR: Semantic Scholar paper not found for {method}:{identifier} (HTTP 404).\n"
+                "Please verify the identifier is correct and re-submit the issue.",
+                file=sys.stderr,
             )
-            return None
+            sys.exit(1)
 
         # Retry only for transient errors (rate limits / server issues).
         if max_retry > 0 and e.code in (408, 409, 425, 429, 500, 502, 503, 504):
@@ -65,9 +73,9 @@ def wrangle_fetched_content(parsed, paper_json):
 
     author_names = [data["name"] for data in paper_json["authors"]]
     paper_json["names"] = ", ".join(author_names)
-    paper_json["tags"] = paper_json["venue"]
+    paper_json["tags"] = paper_json["venue"] or ""
     paper_json["shorthand"] = str(paper_json["paperId"])
-    paper_json["link"] = paper_json["url"]
+    paper_json["link"] = paper_json["url"] or ""
     
     if paper_json['publicationDate']:
         year, month, day = paper_json["publicationDate"].split("-")
@@ -89,7 +97,7 @@ def wrangle_fetched_content(parsed, paper_json):
         paper_json["shorthand"] = paper_json["externalIds"]["ACL"]
 
     for key in ["title", "names", "tags", "venue", "shorthand", "link"]:
-        paper_json[key] = paper_json[key].replace("\n", " ")
+        paper_json[key] = (paper_json[key] or "").replace("\n", " ")
 
     fullname_to_username = create_attr_to_username_map(lab_members, "name")
     member_id_to_username = create_attr_to_username_map(
@@ -118,9 +126,6 @@ def wrangle_fetched_content(parsed, paper_json):
 
 def main(parsed, save_dir="_posts/papers"):
     paper_json = fetch_content(parsed)
-    if paper_json is None:
-        return None
-
     paper_json = wrangle_fetched_content(parsed, paper_json)  # in-place
     formatted = generate_publication_post(paper_json)
     write_content_to_file(formatted, save_dir)
