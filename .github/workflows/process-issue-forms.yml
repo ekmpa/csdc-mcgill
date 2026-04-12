@@ -45,12 +45,6 @@ jobs:
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: python -m src.python.add_publication_by_id
       
-      - name: "Create posts in _posts/papers with src/python/add_publications_by_author.py"
-        if: github.event.label.name == 'automatic-add-publications-by-author'
-        env:
-          ISSUE_BODY: ${{ github.event.issue.body }}
-        run: python -m src.python.add_publications_by_author
-
       - name: "Create post in _posts/news with src/python/add_news_update.py"
         if: github.event.label.name == 'automatic-add-news-update'
         env:

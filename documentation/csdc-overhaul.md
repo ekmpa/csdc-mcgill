@@ -39,7 +39,6 @@ These files are presentation-only and should not change automation schemas.
 - `src/python/add_update_member.py`
 - `src/python/add_update_publication.py`
 - `src/python/add_publication_by_id.py`
-- `src/python/add_publications_by_author.py`
 - `src/python/auto_update_publications.py`
 - `src/python/__init__.py` (notably issue parsing helpers)
 

@@ -6,6 +6,12 @@
 
 This is the source code of the [McGill Centre for the Study of Democratic Citizenship Website](), as forked by the [Complex Data Lab Website](https://complexdatalab.com/) (originally forked from [McGill-NLP](https://github.com/McGill-NLP/mcgill-nlp.github.io)). Internally, it is built using [Jekyll](https://github.com/jekyll/jekyll) and [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes).
 
+## Contribution Guide
+
+| Action | How-to | 
+| -- | -- | 
+| Add a 
+
 ## Quickstart
 
 > [!IMPORTANT]
@@ -67,10 +73,6 @@ Make sure it is in the right directory, and that the file name is correct. The f
 
 After you fill the form, an issue is created with an appropriate *tag*. Then, a pull request (which is a "proposal" to make a change) is automatically created from that *tag*, based on the content of the issue. But if you made a mistake, then that PR is incorrect. So you should try to close it, or request the PR to be closed in a reply. Then, all you need to do is to modify the issue's content (makes sure the formatting stays the same, that's very important!). Once it's updated, you can remove the *tag*, refresh the page, then add back the same *tag*. This will create a new pull request, and a maintainer will review it.
 
-> When using `src/python/add_publications_by_author.py`, it keeps adding a paper I already added (or I want to ignore). How can I make it stop doing that?
-
-Add the semantic scholar paper ID to the list in `records/semantic_paper_ids_ignored.json`.
-
 > When filling out the form, how do I upload my profile picture or a thumbnail without having to use an external source, like imgur?
 
 1. Open a [new blank issue](https://github.com/McGill-NLP/mcgill-nlp.github.io/issues/new).
@@ -79,16 +81,6 @@ Add the semantic scholar paper ID to the list in `records/semantic_paper_ids_ign
 4. Copy only the URL link (i.e. `https://user-images.githubusercontent.com/...png` only). Ignore the rest (i.e. `![text]()`).
 5. Keep the link, but cancel the new issue. Paste that link in the form.
 
-> The tests in `test_add_publications_by_author.py` are failing. What should I do?
+> Does OpenAlex require an API key? I am getting throttled.
 
-Sometimes, semantic scholar will update the content of the paper. In that case, the failed tests have saved the new versions of those papers in `tests/scratch/_posts/papers`, and you will need to replace the old versions in `tests/data/add_publication_by_author/<author_name>` with the new versions in `tests/scratch/_posts/papers`. You can do that by running the following command:
-
-```bash
-python -m src.python.cli.replace_files_in_test_dir --source_dir tests/scratch/_posts/papers --target_dir tests/data/add_publications_by_author/siva
-python -m src.python.cli.replace_files_in_test_dir --source_dir tests/scratch/_posts/papers --target_dir tests/data/add_publications_by_author/jackie
-python -m src.python.cli.replace_files_in_test_dir --source_dir tests/scratch/_posts/papers --target_dir tests/data/add_publications_by_author/tim
-```
-
-> Does Semantic Scholar require an API key? I am getting an HTTP 429 error.
-
-Although it is possible to make requests to Semantic Scholar without an API key, it is recommend to use one if available. Please set the environment variable `SEMANTIC_SCHOLAR_API_KEY` to your API key and it will be automatically used. For mcgill-nlp.github.io, we have set it up as a [*GitHub Repository Secret*](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository); please look at `.github/workflows/auto-update-publications.yml` to see how the environment variable is assigned. You can update Github Repository secrets for Actions at [this settings page](https://github.com/McGill-NLP/mcgill-nlp.github.io/settings/secrets/actions/).
+OpenAlex works without an API key, but it is better to use one when available. Please set the environment variable `OPENALEX_API_KEY` to your API key and it will be automatically used. For GitHub Actions, look at `.github/workflows/auto-update-publications.yml` to see how the environment variable is assigned.
