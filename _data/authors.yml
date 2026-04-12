@@ -29,10 +29,8 @@ Dietlind Stolle:
   name: Dietlind Stolle
   auto_update_publications: false
   current_role:
-    type: Faculty
-    title: Director
-    start_date: '2020'
-    affiliation: McGill University
+    type: None
+    title: _No response_
   bio: Dietlind Stolle is a Professor of Political Science at McGill University. Her
     research looks at political mobilization, participation and knowledge, as well
     as social capital, ethnic and racial prejudice, and the consequences of ethnic
@@ -42,8 +40,12 @@ Dietlind Stolle:
     impact of religious diversity in 11 different countries, and attitudes towards
     refugees in Germany. She is also the Director of the Centre for the Study of Democratic
     Citizenship.
-  avatar: https://github.com/user-attachments/assets/3d70a2bf-7a8e-4b27-8edf-24960930611f
+  avatar: /assets/images/bio/Dietlind Stolle.jpg
 
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=mjqHdG4AAAAJ&hl=en
+  orcid: 0000-0001-7839-0617
+  past_roles:
+  - type: None
+    title: _No response_
