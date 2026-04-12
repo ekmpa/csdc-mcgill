@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 import re
 from urllib.request import urlopen, urlretrieve
+from urllib.error import HTTPError, URLError
 from collections import OrderedDict
 
 from PIL import Image
@@ -125,7 +126,12 @@ def save_url_image(
             file_path = image_dir / f"{fname}"
 
         image_dir.mkdir(parents=True, exist_ok=True)
-        urlretrieve(url, str(file_path))
+        try:
+            urlretrieve(url, str(file_path))
+        except (HTTPError, URLError, ValueError) as e:
+            print(f"Could not download image from {url}: {e}")
+            file_path.unlink(missing_ok=True)
+            continue
 
         if ext in ["svg", "gif"]:
             return "/" + str(file_path)
@@ -139,7 +145,7 @@ def save_url_image(
             except Exception as e:
                 print(f"Could not open {url} as image due to error: {e}")
                 # Remove the file
-                file_path.unlink()
+                file_path.unlink(missing_ok=True)
                 continue
             
             if ext == "jpg":
