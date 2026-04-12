@@ -1,16 +1,3 @@
-Dietlind Stolle:
-  name: Dietlind Stolle
-  auto_update_publications: false
-  current_role:
-    type: Faculty
-    title: Professor
-    start_date: Fall 2026
-    affiliation: McGill CSDC
-    research_directions:
-    - poli-sci
-  bio: Professor and lead researcher at the McGill node of the Centre for the Study of Democratic Citizenship.
-  avatar: /assets/images/bio/placeholder/default.jpg
-
 Anne Imouza:
   name: Anne Imouza
   auto_update_publications: false
@@ -21,7 +8,8 @@ Anne Imouza:
     affiliation: McGill CSDC
     research_directions:
     - poli-sci
-  bio: Administrative lead supporting coordination, operations, and outreach for McGill CSDC.
+  bio: Administrative lead supporting coordination, operations, and outreach for McGill
+    CSDC.
   avatar: /assets/images/bio/placeholder/default.jpg
 
 Emma Kondrup:
@@ -34,5 +22,29 @@ Emma Kondrup:
     affiliation: McGill CSDC
     research_directions:
     - poli-sci
-  bio: Web developer maintaining the McGill CSDC website and publication/member update workflow.
+  bio: Web developer maintaining the McGill CSDC website and publication/member update
+    workflow.
   avatar: /assets/images/bio/placeholder/default.jpg
+Dietlind Stolle:
+  name: Dietlind Stolle
+  auto_update_publications: false
+  current_role:
+    type: Faculty
+    title: Director
+    start_date: '2020'
+    affiliation: McGill University
+  bio: Dietlind Stolle is a Professor of Political Science at McGill University. Her
+    research looks at political mobilization, participation and knowledge, as well
+    as social capital, ethnic and racial prejudice, and the consequences of ethnic
+    diversity. She is also a Principal Investigator of the Canadian Election Study.
+    Professor Stolle's projects include quantitative research looking into youth mobilization
+    and participation on Facebook, the role of pregnancy on political behaviour, the
+    impact of religious diversity in 11 different countries, and attitudes towards
+    refugees in Germany. She is also the Director of the Centre for the Study of Democratic
+    Citizenship.
+  avatar: <img width="619" height="627" alt="Image" src="https://github.com/user-attachments/assets/3d70a2bf-7a8e-4b27-8edf-24960930611f"
+    />
+
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=mjqHdG4AAAAJ&hl=en
