@@ -7,6 +7,15 @@ from ruamel.yaml import YAML
 from . import save_url_image, parse_issue_body, remove_keys, remove_items_with_values
 
 
+def _is_empty_response(value) -> bool:
+    """Treat empty issue-form placeholders as missing values."""
+    if value is None:
+        return True
+    if isinstance(value, str):
+        return value.strip() in ("", "_No response_", "None")
+    return False
+
+
 def format_site_label(name: str) -> str:
     """Format social media site labels."""
     labels = {
@@ -23,7 +32,7 @@ def format_social_media_links(parsed: Dict) -> List[Dict]:
     """Format social media links into structured format."""
     social_links = []
     for key in ["website", "twitter", "github", "scholar", "linkedin"]:
-        if parsed.get(key) and parsed[key] != "_No response_":
+        if not _is_empty_response(parsed.get(key)):
             social_links.append({
                 "label": format_site_label(key),
                 "url": parsed[key]
@@ -34,7 +43,7 @@ def format_social_media_links(parsed: Dict) -> List[Dict]:
 def process_role_data(parsed: Dict, prefix: str = "") -> Optional[Dict]:
     """Process role data from parsed content with optional prefix."""
     role_type = parsed.get(f"{prefix}type")
-    if not role_type or role_type == "_No response_":
+    if _is_empty_response(role_type):
         return None
 
     role = {
@@ -45,16 +54,16 @@ def process_role_data(parsed: Dict, prefix: str = "") -> Optional[Dict]:
     # Add optional fields if they exist
     for field in ["advisor"]:
         value = parsed.get(f"{prefix}{field}")
-        if value and value != "_No response_":
+        if not _is_empty_response(value):
             role[field] = value
 
     # Add new fields for affiliation and research directions
     affiliation = parsed.get(f"{prefix}affiliation")
-    if affiliation and affiliation != "_No response_":
+    if not _is_empty_response(affiliation):
         role["affiliation"] = affiliation
 
     research_directions = parsed.get(f"{prefix}research_directions")
-    if research_directions and research_directions != "_No response_":
+    if not _is_empty_response(research_directions):
         # Handle both string and list inputs for research directions
         if isinstance(research_directions, str):
             # Split by commas if it's a comma-separated string
@@ -85,7 +94,7 @@ def format_parsed_content(parsed: Dict) -> Dict:
     # Add optional fields if they exist and aren't empty
     optional_fields = ["bio", "note", "orcid", "openalex_id", "avatar"]
     for field in optional_fields:
-        if parsed.get(field) and parsed[field] != "_No response_":
+        if not _is_empty_response(parsed.get(field)):
             formatted[field] = parsed[field]
 
     # Auto-update is enabled whenever an ORCID or OpenAlex ID is present.
