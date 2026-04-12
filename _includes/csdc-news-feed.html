@@ -1,5 +1,3 @@
-{% include csdc-featured-event.html %}
-
 {% assign news_updates = site.posts | where_exp: "post", "post.path contains '_posts/news/'" %}
 
 <section class="csdc-section">
@@ -23,3 +21,5 @@
     </div>
   </div>
 </section>
+
+{% include csdc-featured-event.html %}

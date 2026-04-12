@@ -13,25 +13,6 @@
 {% assign postsByYear = posts | group_by_exp: 'post', 'post.date | default: "9999-01-01" | date: "%Y"' %}
 
 {% if postsByYear.size > 0 %}
-{% unless include.hide_years_dropdown == true %}
-<details class="publications-years">
-  <summary>Show years</summary>
-  <div class="taxonomy__index">
-    {% assign sortedYears = postsByYear | sort: 'name' | reverse %}
-    {% for year in sortedYears %}
-    {% if year.name == "9999" %}
-    {% assign yearName = "None" %}
-    {% else %}
-    {% assign yearName = year.name %}
-    {% endif %}
-    <a href="#{{ yearName | slugify }}" class="year-link">
-      <strong>{{ yearName }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
-    </a>
-    {% endfor %}
-  </div>
-</details>
-{% endunless %}
-
 {% assign sortedYears = postsByYear | sort: 'name' | reverse %}
 {% for year in sortedYears %}
 {% if year.name == "9999" %}
@@ -41,7 +22,7 @@
 {% endif %}
 
 <section id="{{ yearName | slugify }}" class="taxonomy__section">
-  <h3 class="archive__subtitle">{{ yearName }}</h3>
+  <h3 class="archive__subtitle">{{ yearName }} ({{ year.items | size }})</h3>
   <div class="entries-{{ entries_layout | default: 'list' }}">
     {% assign yearItems = year.items | sort: 'date' | reverse %}
     {% for post in yearItems %}
