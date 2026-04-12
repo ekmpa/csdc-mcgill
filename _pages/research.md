@@ -44,64 +44,111 @@ show_taxonomy_posts: false
       {% if publications and publications.size > 0 %}
       {% assign faculty_members = '' | split: '' %}
       {% assign professor_members = '' | split: '' %}
-      {% assign students_staff_members = '' | split: '' %}
+      {% assign student_members = '' | split: '' %}
+      {% assign staff_members = '' | split: '' %}
 
       {% for member_hash in site.data.authors %}
+      {% assign member_key = member_hash[0] %}
       {% assign member = member_hash[1] %}
+      {% assign member_key_lc = member_key | default: '' | downcase %}
       {% assign member_name_lc = member.name | default: '' | downcase %}
       {% assign role_type = member.current_role.type | default: '' %}
       {% assign role_title_lc = member.current_role.title | default: '' | downcase %}
 
       {% if role_type == 'Faculty' %}
       {% if role_title_lc contains 'professor' %}
+      {% assign professor_members = professor_members | push: member_key_lc %}
       {% assign professor_members = professor_members | push: member_name_lc %}
       {% else %}
+      {% assign faculty_members = faculty_members | push: member_key_lc %}
       {% assign faculty_members = faculty_members | push: member_name_lc %}
       {% endif %}
       {% elsif role_type == 'Professor' %}
+      {% assign professor_members = professor_members | push: member_key_lc %}
       {% assign professor_members = professor_members | push: member_name_lc %}
-      {% elsif role_type == 'Student' or role_type == 'Staff' %}
-      {% assign students_staff_members = students_staff_members | push: member_name_lc %}
+      {% elsif role_type == 'Student' %}
+      {% assign student_members = student_members | push: member_name_lc %}
+      {% elsif role_type == 'Staff' %}
+      {% assign staff_members = staff_members | push: member_name_lc %}
       {% endif %}
       {% endfor %}
 
       {% assign faculty_publications = '' | split: '' %}
       {% assign professor_publications = '' | split: '' %}
-      {% assign students_staff_publications = '' | split: '' %}
+      {% assign student_publications = '' | split: '' %}
+      {% assign staff_publications = '' | split: '' %}
+      {% assign non_affiliated_publications = '' | split: '' %}
 
       {% for post in publications %}
+      {% assign explicit_author_lc = post.author | default: '' | downcase %}
       {% assign names_lc = post.names | default: '' | downcase %}
       {% assign match_faculty = false %}
       {% assign match_professor = false %}
-      {% assign match_students_staff = false %}
+      {% assign match_student = false %}
+      {% assign match_staff = false %}
 
+      {% if explicit_author_lc != '' %}
       {% for member_name in faculty_members %}
-      {% if names_lc contains member_name %}
+      {% if explicit_author_lc == member_name %}
       {% assign match_faculty = true %}
       {% break %}
       {% endif %}
       {% endfor %}
 
+      {% unless match_faculty %}
       {% for member_name in professor_members %}
-      {% if names_lc contains member_name %}
+      {% if explicit_author_lc == member_name %}
       {% assign match_professor = true %}
       {% break %}
       {% endif %}
       {% endfor %}
+      {% endunless %}
 
-      {% for member_name in students_staff_members %}
-      {% if names_lc contains member_name %}
-      {% assign match_students_staff = true %}
+      {% unless match_faculty or match_professor %}
+      {% for member_name in student_members %}
+      {% if explicit_author_lc == member_name %}
+      {% assign match_student = true %}
       {% break %}
       {% endif %}
       {% endfor %}
+      {% endunless %}
+
+      {% unless match_faculty or match_professor or match_student %}
+      {% for member_name in staff_members %}
+      {% if explicit_author_lc == member_name %}
+      {% assign match_staff = true %}
+      {% break %}
+      {% endif %}
+      {% endfor %}
+      {% endunless %}
+      {% else %}
+      {% for member_name in student_members %}
+      {% if names_lc contains member_name %}
+      {% assign match_student = true %}
+      {% break %}
+      {% endif %}
+      {% endfor %}
+
+      {% unless match_student %}
+      {% for member_name in staff_members %}
+      {% if names_lc contains member_name %}
+      {% assign match_staff = true %}
+      {% break %}
+      {% endif %}
+      {% endfor %}
+      {% endunless %}
+      {% endif %}
 
       {% if match_faculty %}
       {% assign faculty_publications = faculty_publications | push: post %}
       {% elsif match_professor %}
       {% assign professor_publications = professor_publications | push: post %}
-      {% elsif match_students_staff %}
-      {% assign students_staff_publications = students_staff_publications | push: post %}
+      {% elsif match_student %}
+      {% assign student_publications = student_publications | push: post %}
+      {% elsif match_staff %}
+      {% assign staff_publications = staff_publications | push: post %}
+      {% else %}
+      {% assign non_affiliated_publications = non_affiliated_publications | push: post %}
       {% endif %}
       {% endfor %}
 
@@ -137,12 +184,14 @@ show_taxonomy_posts: false
       <div class="csdc-card"><p style="margin:0;">No professor-tagged publications found yet.</p></div>
       {% endif %}
 
-      <h3>Students and Staff</h3>
-      {% if students_staff_publications.size > 0 %}
+      <h3>Broader Research Outputs</h3>
+
+      <h4>Students</h4>
+      {% if student_publications.size > 0 %}
       <div class="csdc-pillars csdc-pillars-two">
-        {% for post in students_staff_publications limit:8 %}
+        {% for post in student_publications limit:8 %}
         <article class="csdc-card">
-          <h4 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+          <h5 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h5>
           {% if post.names %}<p style="margin:0.2rem 0;">{{ post.names }}</p>{% endif %}
           {% if post.venue %}<p style="margin:0.2rem 0; color:#6b7280;">{{ post.venue }}</p>{% endif %}
           {% if post.link %}<p style="margin:0.35rem 0 0;"><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">Paper link</a></p>{% endif %}
@@ -150,7 +199,39 @@ show_taxonomy_posts: false
         {% endfor %}
       </div>
       {% else %}
-      <div class="csdc-card"><p style="margin:0;">No student/staff-tagged publications found yet.</p></div>
+      <div class="csdc-card"><p style="margin:0;">No student publications found yet.</p></div>
+      {% endif %}
+
+      <h4>Staff</h4>
+      {% if staff_publications.size > 0 %}
+      <div class="csdc-pillars csdc-pillars-two">
+        {% for post in staff_publications limit:8 %}
+        <article class="csdc-card">
+          <h5 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h5>
+          {% if post.names %}<p style="margin:0.2rem 0;">{{ post.names }}</p>{% endif %}
+          {% if post.venue %}<p style="margin:0.2rem 0; color:#6b7280;">{{ post.venue }}</p>{% endif %}
+          {% if post.link %}<p style="margin:0.35rem 0 0;"><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">Paper link</a></p>{% endif %}
+        </article>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="csdc-card"><p style="margin:0;">No staff publications found yet.</p></div>
+      {% endif %}
+
+      <h4>Non-affiliated Publications</h4>
+      {% if non_affiliated_publications.size > 0 %}
+      <div class="csdc-pillars csdc-pillars-two">
+        {% for post in non_affiliated_publications limit:8 %}
+        <article class="csdc-card">
+          <h5 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h5>
+          {% if post.names %}<p style="margin:0.2rem 0;">{{ post.names }}</p>{% endif %}
+          {% if post.venue %}<p style="margin:0.2rem 0; color:#6b7280;">{{ post.venue }}</p>{% endif %}
+          {% if post.link %}<p style="margin:0.35rem 0 0;"><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">Paper link</a></p>{% endif %}
+        </article>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="csdc-card"><p style="margin:0;">No broader research outputs found yet.</p></div>
       {% endif %}
 
       <p style="margin-top:0.75rem;"><a href="{{ '/publications/' | relative_url }}">&rarr; Browse all publications</a></p>

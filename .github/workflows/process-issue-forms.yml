@@ -32,6 +32,12 @@ jobs:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ACTION: Update member
         run: python -m src.python.add_update_member
+
+      - name: "Auto-sync publications for members with ORCID/OpenAlex IDs"
+        if: github.event.label.name == 'automatic-add-member' || github.event.label.name == 'automatic-update-member'
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python -m src.python.auto_update_publications
       
       - name: "Create post in _posts/papers with src/python/add_update_publication.py"
         if: github.event.label.name == 'automatic-add-update-publication'

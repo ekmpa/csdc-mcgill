@@ -117,7 +117,6 @@ def _fetch_events(calendar_id: str, api_key: str, timezone_name: str, max_result
                 "title": summary,
                 "start": start_info["datetime"],
                 "all_day": start_info["all_day"],
-                "location": event.get("location", "TBD"),
                 "html_link": event.get("htmlLink", ""),
                 "blurb": _extract_blurb(description),
             }
@@ -136,7 +135,6 @@ def _build_payload(events: List[Dict[str, Any]], calendar_id: str, timezone_name
             "banner_label": DEFAULT_BANNER_LABEL,
             "title": featured["title"],
             "date_display": _format_date_display(featured["start"], featured["all_day"], timezone_name),
-            "location": featured["location"],
             "blurb": featured["blurb"],
             "cta_text": DEFAULT_CTA_TEXT,
             "cta_url": DEFAULT_CTA_URL,
@@ -147,7 +145,6 @@ def _build_payload(events: List[Dict[str, Any]], calendar_id: str, timezone_name
             "banner_label": DEFAULT_BANNER_LABEL,
             "title": "No upcoming seminar scheduled.",
             "date_display": "Check back soon",
-            "location": "TBD",
             "blurb": "",
             "cta_text": DEFAULT_CTA_TEXT,
             "cta_url": DEFAULT_CTA_URL,
@@ -160,7 +157,6 @@ def _build_payload(events: List[Dict[str, Any]], calendar_id: str, timezone_name
             {
                 "title": event["title"],
                 "date_display": _format_date_display(event["start"], event["all_day"], timezone_name),
-                "location": event["location"],
                 "event_url": event["html_link"],
             }
         )

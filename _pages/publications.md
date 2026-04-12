@@ -8,5 +8,5 @@ classes:
 permalink: /publications/
 taxonomy: Publications
 show_view_by_venue: false
-show_taxonomy_posts: false
+show_taxonomy_posts: true
 ---

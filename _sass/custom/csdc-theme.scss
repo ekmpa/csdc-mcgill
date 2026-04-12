@@ -37,6 +37,13 @@ html, body {
   color: $csdc-red;
 }
 
+a.csdc-red,
+a.csdc-red:visited,
+a.csdc-red:hover,
+a.csdc-red:focus {
+  color: $csdc-red;
+}
+
 .csdc-hero-title {
   color: $csdc-dark;
   font-size: clamp(1.25rem, 3vw, 1.8rem);
@@ -88,13 +95,13 @@ html, body {
 
 .csdc-btn-secondary {
   background: #e5e7eb;
-  color: #8f0f2a;
+  color: $primary-color;
 }
 
 .csdc-btn-secondary:visited,
 .csdc-btn-secondary:hover,
 .csdc-btn-secondary:focus {
-  color: #8f0f2a;
+  color: $primary-color;
 }
 
 .csdc-events-cta {

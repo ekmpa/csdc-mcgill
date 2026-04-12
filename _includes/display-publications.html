@@ -1,4 +1,4 @@
-<article class="publication-card" itemscope itemtype="https://schema.org/CreativeWork">
+<article class="publication-card{% if post.thumbnail %} has-thumbnail{% endif %}" itemscope itemtype="https://schema.org/CreativeWork">
 
     {% if post.thumbnail %}
     {% assign currentYear = 'now' | date: "%Y" %}

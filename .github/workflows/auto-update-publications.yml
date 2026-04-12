@@ -1,4 +1,4 @@
-name: "Automatically fetch and update the publications of authors when auto_update_publications: true"
+name: "Automatically fetch and update publications for authors with ORCID/OpenAlex IDs"
 on:
   schedule:
     - cron: '0 8 1,15 * *'
@@ -17,7 +17,7 @@ jobs:
       - name: Install Python requirements
         run: pip install -r src/python/requirements.txt
       
-      - name: "Automatically add papers from authors with `auto_update_publications: true`"
+      - name: "Automatically add papers from authors with ORCID/OpenAlex IDs"
         run: python -m src.python.auto_update_publications
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
@@ -30,7 +30,7 @@ jobs:
           commit-message: "[GH Actions] Automatically add papers from authors"
           title: "[Automatic PR] Automatically add papers from authors"
           body: >
-            Automatically add papers from authors where `auto_update_publications: true`
-            in `_data/authors.yml` and that have a valid `orcid` or `openalex_id`.
+            Automatically add papers from authors in `_data/authors.yml`
+            with a valid `orcid` or `openalex_id`.
             This pull request was automatically created through GitHub Actions.
           branch: "gh-actions/auto-update-publications"

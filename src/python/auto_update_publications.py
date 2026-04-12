@@ -15,12 +15,10 @@ def main(save_dir="_posts/papers", site_data_dir="_data/", use_ignore_list=True)
         authors = yaml.load(f)
 
     for author in authors.values():
-        auto_update = author.get("auto_update_publications", False)
-
         orcid = author.get("orcid", "")
         openalex_id = author.get("openalex_id", "")
 
-        if auto_update and (orcid or openalex_id):
+        if orcid or openalex_id:
             year = int(datetime.datetime.now().year)
             print(f"Updating publications for {author['name']} via OpenAlex...")
             add_publications_by_author_openalex.main(
@@ -30,10 +28,6 @@ def main(save_dir="_posts/papers", site_data_dir="_data/", use_ignore_list=True)
                 year_end=year,
                 save_dir=save_dir,
                 use_ignore_list=use_ignore_list,
-            )
-        elif auto_update:
-            print(
-                f"Skipping {author.get('name', 'unknown')}: auto_update_publications is true but neither orcid nor openalex_id is set."
             )
 
 

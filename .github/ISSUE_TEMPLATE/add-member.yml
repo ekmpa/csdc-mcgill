@@ -51,7 +51,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        To auto-update publications, set **Auto Update Publications** to `True` and provide **ORCID** or **OpenAlex ID**.
+        Publications are auto-updated whenever **ORCID** or **OpenAlex ID** is provided.
   
   - type: input
     id: orcid
@@ -70,18 +70,6 @@ body:
       placeholder: "A5023888391"
     validations:
       required: false
-
-  - type: dropdown
-    id: auto_update_publications
-    attributes:
-      label: "Auto Update Publications"
-      description: Do you want your publications to be auto-updated?
-      multiple: false
-      options:
-        - "False"
-        - "True"
-    validations:
-      required: true
 
   - type: dropdown
     id: current_role-type

@@ -1,12 +1,4 @@
 article.publication-card {
-    display: grid;
-    grid-template-areas:
-        "thumbnail title"
-        "thumbnail authors"
-        "thumbnail venue"
-        "thumbnail links";
-    grid-template-columns: 300px 1fr;
-    gap: 10px;
     margin: 0.75em 0;
     padding: 1em;
     background: #fff;
@@ -18,7 +10,19 @@ article.publication-card {
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     }
 
+    &.has-thumbnail {
+        display: grid;
+        grid-template-areas:
+            "thumbnail title"
+            "thumbnail authors"
+            "thumbnail venue"
+            "thumbnail links";
+        grid-template-columns: 300px 1fr;
+        gap: 10px;
+    }
+
     @media (max-width: 600px) {
+        &.has-thumbnail {
         grid-template-areas:
             "title"
             "authors"
@@ -26,6 +30,7 @@ article.publication-card {
             "links"
             "thumbnail";
         grid-template-columns: 1fr;
+        }
     }
 }
 

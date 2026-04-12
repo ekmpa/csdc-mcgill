@@ -8,7 +8,6 @@
         <div style="padding:0.35rem 0 0.8rem; border-bottom:1px solid #e5e7eb; margin-bottom:0.7rem;">
           <h3 style="margin:0 0 0.25rem;">{{ event.title }}</h3>
           <p style="margin:0.2rem 0;"><strong>Date:</strong> {{ event.date_display }}</p>
-          <p style="margin:0.2rem 0;"><strong>Location:</strong> {{ event.location }}</p>
           {% if event.event_url and event.event_url != '' %}
           <p style="margin:0.25rem 0 0;"><a href="{{ event.event_url }}" target="_blank" rel="noopener noreferrer" class="csdc-red" style="font-weight:700; text-decoration:none;">Event details</a></p>
           {% endif %}
