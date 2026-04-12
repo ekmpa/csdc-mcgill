@@ -27,7 +27,7 @@ Emma Kondrup:
   avatar: /assets/images/bio/placeholder/default.jpg
 Dietlind Stolle:
   name: Dietlind Stolle
-  auto_update_publications: false
+  auto_update_publications: true
   current_role:
     type: None
     title: _No response_
