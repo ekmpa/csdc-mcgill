@@ -10,29 +10,12 @@ This is the source code of the [McGill Centre for the Study of Democratic Citize
 
 | Action | How-to | 
 | -- | -- | 
-| Add a 
+| Add or update a member profile or publications | [Open a Github Issue](https://github.com/ekmpa/csdc-mcgill/issues/new/choose) | 
+| Calendar sync setup | [Calendar documentation](./documentation/calendar.md) |
+| Mistake made in the form | Refer to the [FAQ](#faq) below | 
+| Technical issue | [Contact Developer](mailto:emma.kondrup@mila.quebec) |
 
-## Quickstart
-
-> [!IMPORTANT]
-> You should probably read this section!
-
-For certain contributions, it is possible to fill GitHub forms and everything will be automated without requiring to fork or modify the codebase. This currently works for:
-
-* Adding or updating the profile of a lab member
-* Adding a paper written by a lab member
-  * With manual information entry
-  * With a URL (for limited number of websites)
-* Adding all papers by a certain author within a time frame
-
-To get started, [click here to open the issue forms](https://github.com/ekmpa/csdc-mcgill/issues/new/choose).
-
-> [!NOTE]
->
-> * *If you made a mistake but already submitted the form, please see how to correct it in [FAQ](#faq).*
-> * *If you are looking to build a project website/webpage for your paper, check out the [project page template](https://github.com/McGill-NLP/project-page-template), which has the same style as this website.*
-
-## Steps to contribute
+## Further contributions
 
 For other types of contribution (not covered by the issue form), please follow these steps:
 
@@ -41,27 +24,12 @@ For other types of contribution (not covered by the issue form), please follow t
 3. Create a pull request: Click on the [Pull Request](https://github.com/ekmpa/csdc-mcgill/pulls) tab and select "New pull request". Select the repository you forked and modified.
 4. Wait for a team member to review and merge your pull request.
 
-## Quick Guides
-
-| Name | Page | 
-| :-- | :-- | 
+| Direct code modification | How-to | 
+| -- | -- | 
 | Adding members / contributors | [here](./documentation/members.md) |
 | Utility (e.g. image-resizing) | [here](./documentation/utility.md) | 
 | Creating pages under _post (paper publications, blogs, teaching) | [here](./documentation/creating-posts.md) |
 | Modifying pages / dependicies / Local setup | [here](./documentation/advanced_mode.md) | 
-
-## Automated Calendar Sync (Homepage Featured Event)
-
-The homepage featured seminar card is now data-driven from `_data/events.yml`.
-
-To enable automatic sync from Google Calendar via GitHub Actions:
-
-1. Add repository secret `GOOGLE_CALENDAR_API_KEY`.
-2. Optionally add repository secret `GOOGLE_CALENDAR_ID` (defaults to `mcgillcsdc@gmail.com`).
-3. Run workflow `.github/workflows/auto-sync-calendar-events.yml` manually once, or wait for the scheduled run.
-
-The sync script is `src/python/sync_google_calendar_events.py`.
-
 
 ## FAQ
 
@@ -81,6 +49,6 @@ After you fill the form, an issue is created with an appropriate *tag*. Then, a 
 4. Copy only the URL link (i.e. `https://user-images.githubusercontent.com/...png` only). Ignore the rest (i.e. `![text]()`).
 5. Keep the link, but cancel the new issue. Paste that link in the form.
 
-> Does OpenAlex require an API key? I am getting throttled.
+> Does OpenAlex require an API key?
 
-OpenAlex works without an API key, but it is better to use one when available. Please set the environment variable `OPENALEX_API_KEY` to your API key and it will be automatically used. For GitHub Actions, look at `.github/workflows/auto-update-publications.yml` to see how the environment variable is assigned.
+OpenAlex works with an API key. Please set the environment variable `OPENALEX_API_KEY` to your API key and it will be automatically used. For GitHub Actions, look at `.github/workflows/auto-update-publications.yml` to see how the environment variable is assigned.
