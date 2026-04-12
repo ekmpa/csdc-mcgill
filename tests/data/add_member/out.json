@@ -1,7 +1,7 @@
 {
     "name": "John Doe",
     "avatar": "/tests/scratch/assets/images/bio/John Doe.jpg",
-    "semantic_scholar_id": "145113126",
+    "orcid": "0000-0002-1825-0097",
     "auto_update_publications": true,
     "current_role": {
         "type": "Student",
@@ -11,8 +11,7 @@
             "online-toxicity",
             "poli-sci"
         ],
-        "advisor": "Reihaneh Rabbany",
-        "start_date": "Fall 2019"
+        "advisor": "Reihaneh Rabbany"
     },
     "social_media_links": [
         {

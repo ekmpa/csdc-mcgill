@@ -5,13 +5,32 @@
 {% assign show_author = false %}
 
 {% if include.render_current_role %}
-{% if author.current_role.type == include.role %}
+{% if author.current_role and author.current_role.type == include.role %}
+{% assign title_match = true %}
+{% assign role_title = author.current_role.title | default: "" | downcase %}
+
 {% if include.title %}
-{% if author.current_role.title == include.title %}
-{% assign show_author = true %}
-{% assign role_to_render = author.current_role %}
+{% assign include_title = include.title | downcase %}
+{% if role_title != include_title %}
+{% assign title_match = false %}
 {% endif %}
-{% else %}
+{% endif %}
+
+{% if include.title_contains and title_match %}
+{% assign include_title_contains = include.title_contains | downcase %}
+{% unless role_title contains include_title_contains %}
+{% assign title_match = false %}
+{% endunless %}
+{% endif %}
+
+{% if include.exclude_title_contains and title_match %}
+{% assign include_exclude_title_contains = include.exclude_title_contains | downcase %}
+{% if role_title contains include_exclude_title_contains %}
+{% assign title_match = false %}
+{% endif %}
+{% endif %}
+
+{% if title_match %}
 {% assign show_author = true %}
 {% assign role_to_render = author.current_role %}
 {% endif %}

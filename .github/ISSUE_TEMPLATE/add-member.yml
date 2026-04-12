@@ -51,18 +51,26 @@ body:
   - type: markdown
     attributes:
       value: |
-        To have publications to be automatically updated, please provide both the semantic scholar ID and setting auto_update to True.
+        To auto-update publications, set **Auto Update Publications** to `True` and provide **ORCID** or **OpenAlex ID**.
   
   - type: input
-    id: semantic_scholar_id
+    id: orcid
     attributes:
-      label: "Semantic Scholar ID"
-      description: |
-        If you have a [Semantic Scholar](https://www.semanticscholar.org) ID, enter it here. This is highly recommend becasue it is used to automatically attribute a paper to the correct author.
-      placeholder: "145113126"
+      label: "ORCID"
+      description: "Your ORCID identifier (e.g. 0000-0002-1825-0097). Used to fetch publications via OpenAlex."
+      placeholder: "0000-0002-1825-0097"
     validations:
       required: false
-  
+
+  - type: input
+    id: openalex_id
+    attributes:
+      label: "OpenAlex ID"
+      description: "Your [OpenAlex](https://openalex.org) author ID or URL (e.g. A5023888391 or https://openalex.org/A5023888391)."
+      placeholder: "A5023888391"
+    validations:
+      required: false
+
   - type: dropdown
     id: auto_update_publications
     attributes:
@@ -83,6 +91,7 @@ body:
       multiple: false
       options:
         - "Faculty"
+        - "Professor"
         - "Staff"
         - "Postdoc"
         - "Student"
@@ -132,15 +141,6 @@ body:
     validations:
       required: false
 
-  - type: "input"
-    id: current_role-start_date
-    attributes:
-      label: "Current Role Start Date"
-      description: "When did the lab member join the lab? MMM-YYYY or {Fall, Summer, Winter} YYYY"
-      placeholder: "Jan 2021"
-    validations:
-      required: true
-  
   - type: "input"
     id: github
     attributes:

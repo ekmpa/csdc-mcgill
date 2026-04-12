@@ -13,10 +13,18 @@ classes:
 
 <p>Meet the researchers and staff advancing democratic citizenship research at McGill.</p>
 
-<h2>Faculty and Staff</h2>
+<h2>Faculty</h2>
+{% include card-authors-with-role.html authors=site.data.authors role="Faculty" render_current_role=true exclude_title_contains="professor" %}
 
-{% include card-authors-with-role.html authors=site.data.authors role="Faculty" render_current_role=true %}
+<h2>Staff</h2>
 {% include card-authors-with-role.html authors=site.data.authors role="Staff" render_current_role=true %}
+
+<h2>Professors</h2>
+{% include card-authors-with-role.html authors=site.data.authors role="Professor" render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors role="Faculty" render_current_role=true title_contains="professor" %}
+
+<h2>Students</h2>
+{% include card-authors-with-role.html authors=site.data.authors role="Student" render_current_role=true %}
 
 <p>
     <span class="csdc-contact-pill">Interested in joining us? <a href="mailto:anne.imouza@mail.mcgill.ca">Contact us</a></span>
