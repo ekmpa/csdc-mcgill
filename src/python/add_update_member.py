@@ -43,7 +43,7 @@ def process_role_data(parsed: Dict, prefix: str = "") -> Optional[Dict]:
     }
 
     # Add optional fields if they exist
-    for field in ["start_date", "end_date", "advisor"]:
+    for field in ["advisor"]:
         value = parsed.get(f"{prefix}{field}")
         if value and value != "_No response_":
             role[field] = value
@@ -84,7 +84,7 @@ def format_parsed_content(parsed: Dict) -> Dict:
         formatted["past_roles"] = past_role
 
     # Add optional fields if they exist and aren't empty
-    optional_fields = ["bio", "note", "semantic_scholar_id", "avatar"]
+    optional_fields = ["bio", "note", "orcid", "openalex_id", "avatar"]
     for field in optional_fields:
         if parsed.get(field) and parsed[field] != "_No response_":
             formatted[field] = parsed[field]
@@ -102,7 +102,7 @@ def merge_profile_data(old_profile: Dict, new_profile: Dict) -> Dict:
     merged = old_profile.copy()
 
     # Update basic fields if provided
-    for field in ["bio", "note", "semantic_scholar_id", "avatar", "auto_update_publications"]:
+    for field in ["bio", "note", "orcid", "openalex_id", "avatar", "auto_update_publications"]:
         if field in new_profile:
             merged[field] = new_profile[field]
 
@@ -119,8 +119,7 @@ def merge_profile_data(old_profile: Dict, new_profile: Dict) -> Dict:
         role_exists = False
         for role in existing_past_roles:
             if (role.get("type") == new_past_role["type"] and 
-                role.get("title") == new_past_role["title"] and 
-                role.get("start_date") == new_past_role.get("start_date")):
+                role.get("title") == new_past_role["title"]):
                 role.update(new_past_role)
                 role_exists = True
                 break

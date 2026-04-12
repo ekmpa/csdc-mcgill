@@ -9,3 +9,4 @@ vendor/*
 tests/scratch/*
 .jekyll-cache
 venv/
+.env

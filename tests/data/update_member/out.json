@@ -3,7 +3,7 @@
     "avatar": "/tests/scratch/assets/images/bio/John Doe.jpg",
     "bio": "I'm a very happy student",
     "note": "Allergic to reviewer 2",
-    "semantic_scholar_id": "145113126",
+    "orcid": "0000-0002-1825-0097",
     "auto_update_publications": true,
     "current_role": {
         "type": "Unaffiliated",
@@ -18,9 +18,7 @@
         {
             "type": "Student",
             "title": "PhD",
-            "start_date": "Fall 2019",
-            "advisor": "Reihaneh Rabbany",
-            "end_date": "Winter 2023"
+            "advisor": "Reihaneh Rabbany"
         }
     ],
     "social_media_links": [

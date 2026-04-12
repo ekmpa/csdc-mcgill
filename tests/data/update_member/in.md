@@ -14,9 +14,9 @@ I'm a very happy student
 
 Allergic to reviewer 2
 
-### Semantic Scholar ID
+### ORCID
 
-145113126
+0000-0002-1825-0097
 
 ### Auto Update Publications
 
@@ -35,10 +35,6 @@ Professing at Leland S. Junior University
 online-toxicity, poli-sci, online-crime
 
 ### Current Role Advisor
-
-_No response_
-
-### Current Role Start Date
 
 _No response_
 
@@ -74,10 +70,3 @@ PhD
 
 Reihaneh Rabbany
 
-### Past Role Start Date
-
-Fall 2019
-
-### Past Role End Date
-
-Winter 2023

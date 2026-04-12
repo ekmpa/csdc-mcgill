@@ -14,9 +14,9 @@ _No response_
 
 _No response_
 
-### Semantic Scholar ID
+### ORCID
 
-145113126
+0000-0002-1825-0097
 
 ### Auto Update Publications
 
@@ -42,10 +42,6 @@ online-toxicity, poli-sci
 ### Current Role Advisor
 
 Reihaneh Rabbany
-
-### Current Role Start Date
-
-Fall 2019
 
 ### GitHub
 

@@ -100,15 +100,8 @@ def wrangle_fetched_content(parsed, paper_json):
         paper_json[key] = (paper_json[key] or "").replace("\n", " ")
 
     fullname_to_username = create_attr_to_username_map(lab_members, "name")
-    member_id_to_username = create_attr_to_username_map(
-        lab_members, "semantic_scholar_id"
-    )
 
     for author in paper_json["authors"]:
-        if author["authorId"] in member_id_to_username:
-            paper_json["author"] = member_id_to_username[author["authorId"]]
-            break
-
         if author["name"] in fullname_to_username:
             paper_json["author"] = fullname_to_username[author["name"]]
             break

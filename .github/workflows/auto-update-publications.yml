@@ -20,7 +20,7 @@ jobs:
       - name: "Automatically add papers from authors with `auto_update_publications: true`"
         run: python -m src.python.auto_update_publications
         env:
-          SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v4
@@ -31,6 +31,6 @@ jobs:
           title: "[Automatic PR] Automatically add papers from authors"
           body: >
             Automatically add papers from authors where `auto_update_publications: true`
-            in `_data/authors.yml` and that have a valid `semantic_scholar_id`.
+            in `_data/authors.yml` and that have a valid `orcid` or `openalex_id`.
             This pull request was automatically created through GitHub Actions.
           branch: "gh-actions/auto-update-publications"

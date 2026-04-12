@@ -39,25 +39,120 @@ show_taxonomy_posts: false
 
   <section class="csdc-section">
     <div class="csdc-container">
-      <h2>Recent Publications</h2>
+      <h2>Publications by Member Category</h2>
       {% assign publications = site.posts | where_exp: "post", "post.path contains '_posts/papers/'" %}
       {% if publications and publications.size > 0 %}
+      {% assign faculty_members = '' | split: '' %}
+      {% assign professor_members = '' | split: '' %}
+      {% assign students_staff_members = '' | split: '' %}
+
+      {% for member_hash in site.data.authors %}
+      {% assign member = member_hash[1] %}
+      {% assign member_name_lc = member.name | default: '' | downcase %}
+      {% assign role_type = member.current_role.type | default: '' %}
+      {% assign role_title_lc = member.current_role.title | default: '' | downcase %}
+
+      {% if role_type == 'Faculty' %}
+      {% if role_title_lc contains 'professor' %}
+      {% assign professor_members = professor_members | push: member_name_lc %}
+      {% else %}
+      {% assign faculty_members = faculty_members | push: member_name_lc %}
+      {% endif %}
+      {% elsif role_type == 'Professor' %}
+      {% assign professor_members = professor_members | push: member_name_lc %}
+      {% elsif role_type == 'Student' or role_type == 'Staff' %}
+      {% assign students_staff_members = students_staff_members | push: member_name_lc %}
+      {% endif %}
+      {% endfor %}
+
+      {% assign faculty_publications = '' | split: '' %}
+      {% assign professor_publications = '' | split: '' %}
+      {% assign students_staff_publications = '' | split: '' %}
+
+      {% for post in publications %}
+      {% assign names_lc = post.names | default: '' | downcase %}
+      {% assign match_faculty = false %}
+      {% assign match_professor = false %}
+      {% assign match_students_staff = false %}
+
+      {% for member_name in faculty_members %}
+      {% if names_lc contains member_name %}
+      {% assign match_faculty = true %}
+      {% break %}
+      {% endif %}
+      {% endfor %}
+
+      {% for member_name in professor_members %}
+      {% if names_lc contains member_name %}
+      {% assign match_professor = true %}
+      {% break %}
+      {% endif %}
+      {% endfor %}
+
+      {% for member_name in students_staff_members %}
+      {% if names_lc contains member_name %}
+      {% assign match_students_staff = true %}
+      {% break %}
+      {% endif %}
+      {% endfor %}
+
+      {% if match_faculty %}
+      {% assign faculty_publications = faculty_publications | push: post %}
+      {% elsif match_professor %}
+      {% assign professor_publications = professor_publications | push: post %}
+      {% elsif match_students_staff %}
+      {% assign students_staff_publications = students_staff_publications | push: post %}
+      {% endif %}
+      {% endfor %}
+
+      <h3>Faculty</h3>
+      {% if faculty_publications.size > 0 %}
       <div class="csdc-pillars csdc-pillars-two">
-        {% for post in publications limit:8 %}
+        {% for post in faculty_publications limit:8 %}
         <article class="csdc-card">
-          <h3 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          {% if post.names %}
-          <p style="margin:0.2rem 0;">{{ post.names }}</p>
-          {% endif %}
-          {% if post.venue %}
-          <p style="margin:0.2rem 0; color:#6b7280;">{{ post.venue }}</p>
-          {% endif %}
-          {% if post.link %}
-          <p style="margin:0.35rem 0 0;"><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">Paper link</a></p>
-          {% endif %}
+          <h4 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+          {% if post.names %}<p style="margin:0.2rem 0;">{{ post.names }}</p>{% endif %}
+          {% if post.venue %}<p style="margin:0.2rem 0; color:#6b7280;">{{ post.venue }}</p>{% endif %}
+          {% if post.link %}<p style="margin:0.35rem 0 0;"><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">Paper link</a></p>{% endif %}
         </article>
         {% endfor %}
       </div>
+      {% else %}
+      <div class="csdc-card"><p style="margin:0;">No faculty-tagged publications found yet.</p></div>
+      {% endif %}
+
+      <h3>Professors</h3>
+      {% if professor_publications.size > 0 %}
+      <div class="csdc-pillars csdc-pillars-two">
+        {% for post in professor_publications limit:8 %}
+        <article class="csdc-card">
+          <h4 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+          {% if post.names %}<p style="margin:0.2rem 0;">{{ post.names }}</p>{% endif %}
+          {% if post.venue %}<p style="margin:0.2rem 0; color:#6b7280;">{{ post.venue }}</p>{% endif %}
+          {% if post.link %}<p style="margin:0.35rem 0 0;"><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">Paper link</a></p>{% endif %}
+        </article>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="csdc-card"><p style="margin:0;">No professor-tagged publications found yet.</p></div>
+      {% endif %}
+
+      <h3>Students and Staff</h3>
+      {% if students_staff_publications.size > 0 %}
+      <div class="csdc-pillars csdc-pillars-two">
+        {% for post in students_staff_publications limit:8 %}
+        <article class="csdc-card">
+          <h4 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+          {% if post.names %}<p style="margin:0.2rem 0;">{{ post.names }}</p>{% endif %}
+          {% if post.venue %}<p style="margin:0.2rem 0; color:#6b7280;">{{ post.venue }}</p>{% endif %}
+          {% if post.link %}<p style="margin:0.35rem 0 0;"><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">Paper link</a></p>{% endif %}
+        </article>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="csdc-card"><p style="margin:0;">No student/staff-tagged publications found yet.</p></div>
+      {% endif %}
+
       <p style="margin-top:0.75rem;"><a href="{{ '/publications/' | relative_url }}">&rarr; Browse all publications</a></p>
       {% else %}
       <div class="csdc-card">
