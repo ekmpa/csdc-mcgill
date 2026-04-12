@@ -2,6 +2,7 @@ import os
 import json
 import time
 from urllib.request import urlopen
+from urllib.error import HTTPError, URLError
 
 from ruamel.yaml import YAML
 
@@ -12,18 +13,32 @@ from .add_update_publication import generate_publication_post
 def fetch_content(parsed, max_retry=3):
     method = parsed["method"]
     identifier = parsed["identifier"]
+    url = (
+        f"https://api.semanticscholar.org/graph/v1/paper/{method}:{identifier}"
+        "?fields=title,venue,year,publicationDate,authors.name,externalIds,url,abstract"
+    )
     try:
-        url = urlopen(
-            f"https://api.semanticscholar.org/graph/v1/paper/{method}:{identifier}?fields=title,venue,year,publicationDate,authors.name,externalIds,url,abstract"
-        )
-        data = json.loads(url.read())
-    except Exception as e:
-        if max_retry > 0:
-            # First, sleep for 20 second to avoid rate limiting
+        response = urlopen(url)
+        data = json.loads(response.read())
+    except HTTPError as e:
+        # Invalid paper IDs/methods are non-retriable; skip without crashing workflow.
+        if e.code == 404:
+            print(
+                f"Semantic Scholar paper not found for {method}:{identifier} (HTTP 404). "
+                "Skipping publication creation."
+            )
+            return None
+
+        # Retry only for transient errors (rate limits / server issues).
+        if max_retry > 0 and e.code in (408, 409, 425, 429, 500, 502, 503, 504):
             time.sleep(20)
             return fetch_content(parsed, max_retry - 1)
-        else:
-            raise e
+        raise
+    except URLError:
+        if max_retry > 0:
+            time.sleep(20)
+            return fetch_content(parsed, max_retry - 1)
+        raise
 
     return data
 
@@ -103,6 +118,9 @@ def wrangle_fetched_content(parsed, paper_json):
 
 def main(parsed, save_dir="_posts/papers"):
     paper_json = fetch_content(parsed)
+    if paper_json is None:
+        return None
+
     paper_json = wrangle_fetched_content(parsed, paper_json)  # in-place
     formatted = generate_publication_post(paper_json)
     write_content_to_file(formatted, save_dir)
