@@ -119,7 +119,7 @@ defaults:
       type: posts
     values:
       layout: publication
-      published: false
+      published: true
       search: false
       classes:
         - wide

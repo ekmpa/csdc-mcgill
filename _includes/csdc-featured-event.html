@@ -1,9 +1,8 @@
-<section class="csdc-section">
+<section class="csdc-section csdc-home-events">
   <div class="csdc-container">
     {% assign upcoming = site.data.events.upcoming_events %}
+    <p class="csdc-home-events-title">Upcoming Events</p>
     <div class="csdc-card csdc-featured">
-      <p class="csdc-red" style="font-size:0.8rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; margin:0 0 0.4rem;">Upcoming Events</p>
-
       {% if upcoming and upcoming.size > 0 %}
         {% for event in upcoming limit:3 %}
         <div style="padding:0.35rem 0 0.8rem; border-bottom:1px solid #e5e7eb; margin-bottom:0.7rem;">

@@ -51,6 +51,12 @@ jobs:
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: python -m src.python.add_publications_by_author
 
+      - name: "Create post in _posts/news with src/python/add_news_update.py"
+        if: github.event.label.name == 'automatic-add-news-update'
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: python -m src.python.add_news_update
+
       - name: Create pull request
         uses: peter-evans/create-pull-request@v4
         with:

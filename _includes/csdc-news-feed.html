@@ -1,7 +1,25 @@
+{% include csdc-featured-event.html %}
+
+{% assign news_updates = site.posts | where_exp: "post", "post.path contains '_posts/news/'" %}
+
 <section class="csdc-section">
   <div class="csdc-container">
     <div class="csdc-card">
-      <h2 class="csdc-card-title">No CSDC events posted yet</h2>
+      <h2 class="csdc-card-title">Latest Updates</h2>
+
+      {% if news_updates and news_updates.size > 0 %}
+        {% for post in news_updates limit:12 %}
+        <article style="padding:0.35rem 0 0.8rem; border-bottom:1px solid #e5e7eb; margin-bottom:0.7rem;">
+          <h3 style="margin:0 0 0.2rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p style="margin:0.2rem 0; color:#6b7280;">{{ post.date | date: "%B %-d, %Y" }}</p>
+          {% if post.excerpt %}
+          <p style="margin:0.2rem 0;">{{ post.excerpt | strip_html | truncate: 220 }}</p>
+          {% endif %}
+        </article>
+        {% endfor %}
+      {% else %}
+      <p style="margin:0.35rem 0 0.8rem;">No news updates posted yet.</p>
+      {% endif %}
     </div>
   </div>
 </section>

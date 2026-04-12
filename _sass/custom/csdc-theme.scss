@@ -162,6 +162,35 @@ html, body {
   border-left: 4px solid $csdc-red;
 }
 
+.csdc-home-events-title {
+  margin: 0 0 0.45rem;
+  color: $csdc-red;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.csdc-home-research {
+  margin-bottom: 2.25rem;
+}
+
+.csdc-home-research .csdc-container {
+  max-width: 76rem;
+}
+
+.csdc-home-pillars-row {
+  @include breakpoint($large) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.csdc-home-pillars-row .csdc-card {
+  width: 100%;
+  max-width: 22rem;
+  justify-self: center;
+}
+
 .csdc-slab {
   background: $csdc-dark;
   color: #ffffff;

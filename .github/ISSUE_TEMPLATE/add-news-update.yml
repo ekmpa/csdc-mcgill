@@ -1,0 +1,49 @@
+name: Add news update announcement
+
+description: |
+  Submit a miscellaneous update that should appear on the News page.
+
+title: "[News update]"
+labels: ["automatic-add-news-update"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for announcements and miscellaneous updates that should appear on `/news/`.
+
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Headline shown on the News page
+      placeholder: "CSDC receives new partnership grant"
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: Must be in YYYY-MM-DD format
+      placeholder: "2026-04-11"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Short update text shown in the news card
+      placeholder: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    validations:
+      required: true
+
+  - type: input
+    id: external_link
+    attributes:
+      label: External link (optional)
+      description: URL for more details
+      placeholder: "https://example.com/announcement"
+    validations:
+      required: false
