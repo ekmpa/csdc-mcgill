@@ -1,6 +1,6 @@
-name: Add publications by author ID ✔️
+name: Add authors' publications (Semantic ID))
 description:  |
-  Paste the Semantic Scholar ID of an author to add all their publications within a time frame.
+  Add an author using Semantic Scholar ID to add all their publications within a timeframe.
 title: "[Add publications by an author]"
 labels: ["automatic-add-publications-by-author"]
 assignees:

@@ -1,8 +1,7 @@
 name: Add news update announcement
 
 description: |
-  Submit a miscellaneous update that should appear on the News page.
-
+  Centre announcements and other news updates.
 title: "[News update]"
 labels: ["automatic-add-news-update"]
 

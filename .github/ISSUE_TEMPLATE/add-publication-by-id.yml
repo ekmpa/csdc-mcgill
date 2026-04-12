@@ -1,6 +1,6 @@
-name: Add publication by URL or DOI 🔗
+name: Add publication (URL or DOI)
 description:  |
-  Paste a URL or a DOI to add a publication to the website automatically.
+  Add publication by URL or DOI. 
   
 title: "[Add publication]"
 labels: ["automatic-add-publication-by-id"]

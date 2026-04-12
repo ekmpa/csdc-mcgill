@@ -1,6 +1,6 @@
-name: Add or update publication manually 📝
+name: Add or update publication manually
 description:  |
-  Fill this form to add or update a publication on the website.
+  Add or update a publication manually.
   
 title: "[Add/update publication]"
 labels: ["automatic-add-update-publication"]

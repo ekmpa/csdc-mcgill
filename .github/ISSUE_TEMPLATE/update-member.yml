@@ -1,6 +1,6 @@
-name: Update member profile 🧑‍🔬
+name: Update member profile 
 description: |
-  Use this form to update a lab member's profile on the website.
+  Update a Center member's profile.
 title: "[Update member]"
 labels: ["automatic-update-member"]
 assignees:

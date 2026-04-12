@@ -1,6 +1,6 @@
 name: Add member profile 🧑‍🔬
 description: |
-  Use this form to add or update a lab member's profile on the website.
+  Add new member profile.
 title: "[Add member]"
 labels: ["automatic-add-member"]
 assignees:
