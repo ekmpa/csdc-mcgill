@@ -1,20 +1,17 @@
-generated_at: '2026-04-15T19:39:29+00:00'
+generated_at: '2026-04-16T19:27:09+00:00'
 source:
   provider: google_calendar
   calendar_id: mcgillcsdc@gmail.com
   timezone: America/Toronto
 featured_event:
   banner_label: Featured Seminar
-  title: CSDC Breakfast 🥐
-  date_display: Thursday, April 16, 10:30 AM ET
+  title: CSDC Lab
+  date_display: Wednesday, April 22, 1:15 PM ET
   blurb: ''
   cta_text: View all seminars
   cta_url: /calendar/
-  event_url: https://www.google.com/calendar/event?eid=N2tnYmhiNDVyOWdoczBvcW9kNzFicWpxdGFfMjAyNjA0MTZUMTQzMDAwWiBtY2dpbGxjc2RjQG0
+  event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA0MjJUMTcxNTAwWiBtY2dpbGxjc2RjQG0
 upcoming_events:
-- title: CSDC Breakfast 🥐
-  date_display: Thursday, April 16, 10:30 AM ET
-  event_url: https://www.google.com/calendar/event?eid=N2tnYmhiNDVyOWdoczBvcW9kNzFicWpxdGFfMjAyNjA0MTZUMTQzMDAwWiBtY2dpbGxjc2RjQG0
 - title: CSDC Lab
   date_display: Wednesday, April 22, 1:15 PM ET
   event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA0MjJUMTcxNTAwWiBtY2dpbGxjc2RjQG0
@@ -27,3 +24,6 @@ upcoming_events:
 - title: CSDC Breakfast 🥐
   date_display: Thursday, April 30, 10:30 AM ET
   event_url: https://www.google.com/calendar/event?eid=N2tnYmhiNDVyOWdoczBvcW9kNzFicWpxdGFfMjAyNjA0MzBUMTQzMDAwWiBtY2dpbGxjc2RjQG0
+- title: CSDC Lab
+  date_display: Wednesday, May 6, 1:15 PM ET
+  event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA1MDZUMTcxNTAwWiBtY2dpbGxjc2RjQG0
