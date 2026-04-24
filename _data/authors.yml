@@ -32,6 +32,21 @@ Leonardo Baccini:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=t621mGQAAAAJ&hl=en&oi=ao
+Elissa Berwick:
+  name: Elissa Berwick
+  current_role:
+    type: Faculty / Professor
+    title: Assistant Professor
+    affiliation: McGill University
+  bio: Prof Berwick’s interests span the sub-fields of comparative politics and quantitative
+    methodology. Her research focuses on sub-state nationalism, exploring how the
+    imagined communities of stateless nations mold actual political attitudes and
+    behaviors.
+  orcid: 0000-0002-0011-5073
+  auto_update_publications: true
+  social_media_links:
+  - label: Website
+    url: https://www.elissaberwick.com/
 Éric Bélanger:
   name: Éric Bélanger
   current_role:
