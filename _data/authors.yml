@@ -1,3 +1,22 @@
+Nicolas Ajzenman:
+  name: Nicolas Ajzenman
+  current_role:
+    type: Professor
+    title: Assistant Professor
+    affiliation: McGill University, J-PAL, IZA.
+  bio: Nicolas Ajzenman is an Assistant Professor at McGill (Economics Department)
+    and an affiliated professor at J-PAL and IZA. He is working at the intersection
+    of development economics, behavioral economics, and political economy. His research
+    has appeared or is forthcoming in top scientific journals such as the American
+    Economic Journal.
+  avatar: <img width="386" height="464" alt="Image" src="https://github.com/user-attachments/assets/a0df0780-8d08-4e46-aaac-2bc460ee3b7b"
+    />
+  auto_update_publications: false
+  social_media_links:
+  - label: Website
+    url: http://www.ajzenman.com
+  - label: Scholar
+    url: https://scholar.google.ca/citations?user=MdFqDJkAAAAJ&hl=en&oi=ao
 Aaron Erlich:
   name: Aaron Erlich
   current_role:
