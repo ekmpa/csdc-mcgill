@@ -10,7 +10,7 @@ featured_event:
   location: LEA429
   blurb: 'Location: LEA429'
   cta_text: View all seminars
-  cta_url: /calendar/
+  cta_url: /news/
   event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA0MTVUMTcxNTAwWiBtY2dpbGxjc2RjQG0
 upcoming_events:
 - title: CSDC Lab
