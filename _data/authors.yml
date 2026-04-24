@@ -1,3 +1,24 @@
+Aaron Erlich:
+  name: Aaron Erlich
+  current_role:
+    type: Faculty
+    title: Prof.
+    affiliation: McGill University
+  bio: Aaron Erlich is an Assistant Professor of Political Science at McGill University.
+    His research interests concern questions of democratization, information dissemination,
+    political behavior, political participation, and public opinion in the Former
+    Soviet Union, Eastern and Southern Africa, and Mexico. Professor Erlich's research
+    makes use of a variety of methods, such as field experiments, survey experiments,
+    and mixed-method research designs.
+  orcid: 0000-0001-6571-9081
+  avatar: <img width="150" height="189" alt="Image" src="https://github.com/user-attachments/assets/4c441e39-9859-48e0-9440-e743ddbd8838"
+    />
+  auto_update_publications: true
+  social_media_links:
+  - label: Website
+    url: http://www.aaronerlich.com/
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=h8n98PQAAAAJ&hl=en
 Anne Imouza:
   name: Anne Imouza
   auto_update_publications: false
