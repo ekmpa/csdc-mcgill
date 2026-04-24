@@ -23,12 +23,10 @@ body:
   - type: textarea
     id: avatar
     attributes:
-      label: "Avatar"
+      label: "Profile picture"
       description: |
-        Path or URL or image of the avatar of the lab member. If it's a URL, it will be automatically resized and saved to `/assets/images/bio`.
-        
-        Tip: You can drag and drop an image, or click on the "M" button on the bottom right of the text area.   
-        Otherwise, you can use imgur and give the **direct** link (e.g. https://i.imgur.com/{id}.png).
+        Drag-and-drop the member's profile picture here. It will be automatically resized and saved as an asset.
+        Otheriwse, you can use imgur...
       
       placeholder: "Click here and drag an image to upload, or paste an image URL"
     validations:
@@ -84,11 +82,6 @@ body:
     validations:
       required: false
 
-  - type: markdown
-    attributes:
-      value: |
-        **For Students**
-
   - type: "input"
     id: current_role-affiliation
     attributes:
@@ -107,24 +100,6 @@ body:
     validations:
       required: false
 
-  - type: "input"
-    id: github
-    attributes:
-      label: "GitHub"
-      description: "Full URL of the lab member's GitHub profile"
-      placeholder: "https://github.com/john-doe"
-    validations:
-      required: false
-  
-  - type: "input"
-    id: twitter
-    attributes:
-      label: "Twitter"
-      description: "Full URL of the lab member's Twitter profile"
-      placeholder: "https://twitter.com/john-doe"
-    validations:
-      required: false
-    
   - type: "input"
     id: scholar
     attributes:
