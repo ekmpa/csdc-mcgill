@@ -16,6 +16,22 @@ Nicolas Ajzenman:
     url: http://www.ajzenman.com
   - label: Scholar
     url: https://scholar.google.ca/citations?user=MdFqDJkAAAAJ&hl=en&oi=ao
+Leonardo Baccini:
+  name: Leonardo Baccini
+  current_role:
+    type: Faculty / Professor
+    title: Associate Professor
+    affiliation: McGill University
+  bio: Leonardo Baccini is an Associate Professor in the Department of Political Science
+    at McGill University. His research interests are in the area of international
+    political economy and comparative political economy with a focus on the political
+    effects of structural economic transformations.
+  orcid: 0000-0002-6027-9192
+  avatar: /assets/images/bio/Leonardo Baccini.jpg
+  auto_update_publications: true
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=t621mGQAAAAJ&hl=en&oi=ao
 Aaron Erlich:
   name: Aaron Erlich
   current_role:
