@@ -193,6 +193,36 @@ a.csdc-red:focus {
   text-transform: uppercase;
 }
 
+.csdc-team-banner {
+  margin-top: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-radius: 0.6rem;
+  padding: 0.9rem 1rem;
+  text-decoration: none;
+  background: linear-gradient(110deg, #9f1239 0%, #c8102e 50%, #ef4444 100%);
+  color: #ffffff;
+}
+
+.csdc-team-banner:visited,
+.csdc-team-banner:hover,
+.csdc-team-banner:focus {
+  color: #ffffff;
+}
+
+.csdc-team-banner-label {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.csdc-team-banner-arrow {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
 .csdc-home-research {
   margin-bottom: 2.25rem;
 }
@@ -211,6 +241,23 @@ a.csdc-red:focus {
   width: 100%;
   max-width: 22rem;
   justify-self: center;
+}
+
+.csdc-arrow-link {
+  margin-top: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: $csdc-red;
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.csdc-arrow-link:visited,
+.csdc-arrow-link:hover,
+.csdc-arrow-link:focus {
+  color: $csdc-red;
 }
 
 .csdc-slab {

@@ -55,7 +55,7 @@ show_taxonomy_posts: false
       {% assign role_type = member.current_role.type | default: '' %}
       {% assign role_title_lc = member.current_role.title | default: '' | downcase %}
 
-      {% if role_type == 'Faculty' %}
+      {% if role_type == 'Faculty / Professor' %}
       {% if role_title_lc contains 'professor' %}
       {% assign professor_members = professor_members | push: member_key_lc %}
       {% assign professor_members = professor_members | push: member_name_lc %}
@@ -63,9 +63,6 @@ show_taxonomy_posts: false
       {% assign faculty_members = faculty_members | push: member_key_lc %}
       {% assign faculty_members = faculty_members | push: member_name_lc %}
       {% endif %}
-      {% elsif role_type == 'Professor' %}
-      {% assign professor_members = professor_members | push: member_key_lc %}
-      {% assign professor_members = professor_members | push: member_name_lc %}
       {% elsif role_type == 'Student' %}
       {% assign student_members = student_members | push: member_name_lc %}
       {% elsif role_type == 'Staff' %}

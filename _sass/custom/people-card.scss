@@ -257,3 +257,71 @@ div.author-avatar {
 .author-links {
     margin-top: 0.75rem;
 }
+
+.csdc-people-page .author-card {
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.csdc-people-page .author-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3.1rem;
+    pointer-events: none;
+    opacity: 0;
+    background: linear-gradient(to top,
+            rgba(200, 16, 46, 0.08) 0%,
+            rgba(200, 16, 46, 0.03) 45%,
+            rgba(255, 255, 255, 0) 100%);
+    transition: opacity 0.16s ease;
+}
+
+.csdc-people-page .author-card:hover,
+.csdc-people-page .author-card:focus-within {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.csdc-people-page .author-card:hover::after,
+.csdc-people-page .author-card:focus-within::after {
+    opacity: 1;
+}
+
+.csdc-people-page .author-card .author-bio,
+.csdc-people-page .author-card .author-note {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 0;
+    transition: max-height 0.3s ease, opacity 0.24s ease, margin-top 0.3s ease;
+    transition-delay: 2s;
+}
+
+.csdc-people-page .author-card:hover .author-bio,
+.csdc-people-page .author-card:focus-within .author-bio,
+.csdc-people-page .author-card:hover .author-note,
+.csdc-people-page .author-card:focus-within .author-note {
+    max-height: 20rem;
+    opacity: 1;
+    margin-top: 0.6rem;
+    transition-delay: 0.06s;
+}
+
+@supports selector(:has(*)) {
+    .csdc-people-page:has(.author-card:hover) .author-card:not(:hover):not(:focus-within) .author-bio,
+    .csdc-people-page:has(.author-card:hover) .author-card:not(:hover):not(:focus-within) .author-note {
+        transition-delay: 0s;
+    }
+}
+
+@media (hover: none), (max-width: 720px) {
+    .csdc-people-page .author-card .author-bio,
+    .csdc-people-page .author-card .author-note {
+        max-height: none;
+        opacity: 1;
+        margin-top: 0.6rem;
+    }
+}

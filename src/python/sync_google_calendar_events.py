@@ -15,7 +15,7 @@ from ruamel.yaml import YAML
 DEFAULT_CALENDAR_ID = "mcgillcsdc@gmail.com"
 DEFAULT_TIMEZONE = "America/Toronto"
 DEFAULT_CTA_TEXT = "View all seminars"
-DEFAULT_CTA_URL = "/calendar/"
+DEFAULT_CTA_URL = "/news/"
 DEFAULT_BANNER_LABEL = "Featured Seminar"
 
 

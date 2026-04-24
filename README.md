@@ -2,7 +2,7 @@
 
 
 
-This is the source code of the [McGill Centre for the Study of Democratic Citizenship Website](), as forked by the [Complex Data Lab Website](https://complexdatalab.com/) (originally forked from [McGill-NLP](https://github.com/McGill-NLP/mcgill-nlp.github.io)). Internally, it is built using [Jekyll](https://github.com/jekyll/jekyll) and [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes).
+This is the source code of the [McGill Centre for the Study of Democratic Citizenship Website](), as forked by the [Complex Data Lab Website](https://complexdatalab.com/) (originally forked from [McGill-NLP](https://github.com/McGill-NLP/mcgill-nlp.github.io)). It is built using [Jekyll](https://github.com/jekyll/jekyll) and [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes).
 
 ## Contribution Guide
 

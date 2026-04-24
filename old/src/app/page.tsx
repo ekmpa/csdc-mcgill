@@ -19,7 +19,7 @@ export default function Home() {
           </div>
 
           <p className="text-lg text-gray-700 max-w-3xl mb-10 leading-relaxed mt-8">
-            The McGill CSDC team studies democratic citizenship, social trust, political behavior, and inclusion. We combine survey research, comparative analysis, and public engagement to understand how democracy works in everyday life.
+            The McGill CSDC team studies democratic citizenship, justice and political behaviors. We combine survey research, comparative analysis, and public engagement to understand how democracy works in everyday life.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <a href="/research" className="btn-primary inline-block text-center">Our Research</a>

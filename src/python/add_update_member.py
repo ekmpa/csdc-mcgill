@@ -4,7 +4,7 @@ from typing import Dict, List, Optional
 
 from ruamel.yaml import YAML
 
-from . import save_url_image, parse_issue_body, remove_keys, remove_items_with_values
+from . import find_urls, save_url_image, parse_issue_body, remove_keys, remove_items_with_values
 
 
 def _is_empty_response(value) -> bool:
@@ -14,6 +14,18 @@ def _is_empty_response(value) -> bool:
     if isinstance(value, str):
         return value.strip() in ("", "_No response_", "None")
     return False
+
+
+def _normalize_avatar_value(value: str) -> str:
+    """Extract the first URL from avatar input if markdown/HTML was pasted."""
+    if _is_empty_response(value):
+        return value
+
+    urls = find_urls(value)
+    if urls:
+        return urls[0].rstrip('"\'<>')
+
+    return value
 
 
 def format_site_label(name: str) -> str:
@@ -95,7 +107,10 @@ def format_parsed_content(parsed: Dict) -> Dict:
     optional_fields = ["bio", "note", "orcid", "openalex_id", "avatar"]
     for field in optional_fields:
         if not _is_empty_response(parsed.get(field)):
-            formatted[field] = parsed[field]
+            if field == "avatar":
+                formatted[field] = _normalize_avatar_value(parsed[field])
+            else:
+                formatted[field] = parsed[field]
 
     # Auto-update is enabled whenever an ORCID or OpenAlex ID is present.
     formatted["auto_update_publications"] = bool(

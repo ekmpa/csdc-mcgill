@@ -73,5 +73,20 @@ class TestAddUpdateMember(unittest.TestCase):
         
         self.assertEqual(output, expected, error_message)
 
+    def test_format_parsed_content_normalizes_avatar_html(self):
+        parsed = {
+            "name": "Jane Doe",
+            "avatar": '<img width="150" height="189" alt="Image" src="https://github.com/user-attachments/assets/4c441e39-9859-48e0-9440-e743ddbd8838" />',
+            "current_role_type": "Student",
+            "current_role_title": "PhD",
+        }
+
+        formatted = mod.format_parsed_content(parsed)
+
+        self.assertEqual(
+            formatted["avatar"],
+            "https://github.com/user-attachments/assets/4c441e39-9859-48e0-9440-e743ddbd8838",
+        )
+
         
     
