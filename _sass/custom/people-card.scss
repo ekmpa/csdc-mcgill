@@ -310,11 +310,11 @@ div.author-avatar {
     transition-delay: 0.06s;
 }
 
-@supports selector(:has(*)) {
-    .csdc-people-page:has(.author-card:hover) .author-card:not(:hover):not(:focus-within) .author-bio,
-    .csdc-people-page:has(.author-card:hover) .author-card:not(:hover):not(:focus-within) .author-note {
-        transition-delay: 0s;
-    }
+/* Sass in this Jekyll stack does not support :has(); keep close behavior immediate
+   when the team area is hovered and the current card is not active. */
+.csdc-people-page:hover .author-card:not(:hover):not(:focus-within) .author-bio,
+.csdc-people-page:hover .author-card:not(:hover):not(:focus-within) .author-note {
+    transition-delay: 0s;
 }
 
 @media (hover: none), (max-width: 720px) {

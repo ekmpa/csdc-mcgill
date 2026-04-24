@@ -44,18 +44,6 @@ body:
       label: "Bio"
       description: "A description of the lab member in one sentence (or less than 10 words)."
       placeholder: "Works on Artificial Generic Intelligence"
-
-  - type: "input"
-    id: note
-    attributes:
-      label: "Note"
-      description: "Any special note you want to include in one sentence. For example, fellowship, etc."
-      placeholder: "I'm special!"
-  
-  - type: markdown
-    attributes:
-      value: |
-        Publications are auto-updated whenever **ORCID** or **OpenAlex ID** is provided.
   
   - type: input
     id: orcid
@@ -69,7 +57,7 @@ body:
   - type: input
     id: openalex_id
     attributes:
-      label: "OpenAlex ID"
+      label: "OpenAlex ID (Optional)"
       description: "Your [OpenAlex](https://openalex.org) author ID or URL (e.g. A5023888391 or https://openalex.org/A5023888391)."
       placeholder: "A5023888391"
     validations:
@@ -82,8 +70,7 @@ body:
       description: What's the current role of this person? (set to Unaffilated for Alumni)
       multiple: false
       options:
-        - "Faculty"
-        - "Professor"
+        - "Faculty / Professor"
         - "Staff"
         - "Postdoc"
         - "Student"
@@ -96,10 +83,15 @@ body:
     id: current_role-title
     attributes:
       label: "Current Role Title"
-      description: What's the current title of this person? For students, please choose between ["PhD, "Master", "Undergraduate", "Intern"]
+      description: For students, please choose between "PhD", "Master", "Undergraduate", "Intern".
       placeholder: "PhD"
     validations:
       required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        **For Students**
 
   - type: input
     id: current_role-advisor
@@ -115,21 +107,7 @@ body:
     attributes:
       label: "Current Role Affiliation"
       description: "Affiliation"
-      placeholder: "Mila, McGill1"
-    validations:
-      required: false
-  
-  - type: "dropdown"
-    id: current_role-research-directions
-    attributes:
-      label: "Current Role Research Directions"
-      description: "What research direction are you in"
-      multiple: true
-      options:
-        - "online-toxicity"
-        - "poli-sci"
-        - "online-crime"
-        - "temporal-graph-learning"
+      placeholder: "McGill, Université de Montréal"
     validations:
       required: false
 
@@ -190,8 +168,7 @@ body:
       description: What's the past role of this person?
       multiple: false
       options:
-        - "Faculty"
-        - "Professor"
+        - "Faculty / Professor"
         - "Staff"
         - "Postdoc"
         - "Student"
