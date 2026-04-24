@@ -26,7 +26,6 @@ body:
       label: "Profile picture"
       description: |
         Drag-and-drop the member's profile picture here. It will be automatically resized and saved as an asset.
-        Otheriwse, you can use imgur...
       
       placeholder: "Click here and drag an image to upload, or paste an image URL"
     validations:
