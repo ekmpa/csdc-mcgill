@@ -155,6 +155,14 @@ Aaron Erlich:
     url: http://www.aaronerlich.com/
   - label: Scholar
     url: https://scholar.google.com/citations?user=h8n98PQAAAAJ&hl=en
+Garrett Evans:
+  name: Garrett Evans
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Nicolas Ajzenman
+    affiliation: McGill University
+  auto_update_publications: false
 Benjamin Forest:
   name: Benjamin Forest
   current_role:
