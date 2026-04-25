@@ -462,6 +462,16 @@ Ezelbahar Metin:
     affiliation: McGill University
   orcid: 0009-0002-4832-666X
   auto_update_publications: true
+Alan Nemirovski:
+  name: Alan Nemirovski
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  orcid: 0009-0009-3106-9426
+  avatar: /assets/images/bio/Alan Nemirovski.jpg
+  auto_update_publications: true
 Nathan Di Pinto:
   name: Nathan Di Pinto
   current_role:
