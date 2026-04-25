@@ -106,6 +106,25 @@ Benjamin Forest:
     url: http://www.geog.mcgill.ca/faculty/forest/index.html
   - label: Scholar
     url: https://scholar.google.com/citations?user=tLfKPpgAAAAJ&hl=en&oi=ao
+Eric Hehman:
+  name: Eric Hehman
+  current_role:
+    type: Faculty / Professor
+    title: _No response_
+  bio: Eric Hehman is an Assistant Professor of Psychology at McGill University and
+    director of the Seeing Human Lab.  Generally, Dr. Hehman’s research examines how
+    individuals perceive and evaluate one another across group boundaries (e.g., race,
+    gender, sexual-orientation, occupation, etc). To address these questions, he takes
+    a multi-method approach, incorporating a broad range of behavioral (e.g., computer-mouse
+    tracking, digital face modeling, group interactions) and statistical techniques
+    (e.g., multilevel modeling, structural equation modeling).
+  orcid: https://orcid.org/0000-0003-2227-1517
+  auto_update_publications: true
+  social_media_links:
+  - label: Website
+    url: http://erichehman.com/
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=n8IeMMEAAAAJ
 Anne Imouza:
   name: Anne Imouza
   auto_update_publications: false
