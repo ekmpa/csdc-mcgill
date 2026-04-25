@@ -152,6 +152,34 @@ Emma Kondrup:
   bio: Web developer maintaining the McGill CSDC website and publication/member update
     workflow.
   avatar: /assets/images/bio/placeholder/default.jpg
+Juan Pablo Luna:
+  name: Juan Pablo Luna
+  current_role:
+    type: Faculty / Professor
+    title: Professor and Diamond-Brown Chair
+    affiliation: McGill University
+  bio: Juan Pablo Luna grew up in Montevideo, Uruguay, and is the Inaugural Diamond
+    Brown Chair in Democratic Studies at McGill. While mainly focused on comparative
+    Latin American politics, his research analyzes how socio-structural conditions
+    such as social inequality and state capacity shape democratic institutions and
+    development trajectories. In recent years, he has researched how organized crime
+    dynamics is contributing to reshape politics, states, and markets in Latin America.
+    His books include Latin American Party Systems (with Kitschelt, Hawkins, Rosas,
+    and Zechmeister; Cambridge, 2010); Segmented Representation, Political Party Strategies
+    ni Unequal Democracies (Oxford, 2014); The Resilience of the Latin American Right
+    (with Rovira-Kaltwasser; Johns Hopkins, 2014); En vez del optimismo. Crisis de
+    representación política en el Chile actual (Catalonia, 2017); Political Parties
+    and Diminished Subtypes (with Rosenblatt, Piñeiro, and Vommaro; Cambridge, 2021);
+    Latin American Politics and Society. A Comparative Historical Analysis (with Gerardo
+    Munck, Cambridge University Press, 2022); Criminal Politics and Botched Development
+    in Contemporary Latin America (with Andreas Feldmann, Cambridge University Press,
+    2024); and ¿Democracia Muerta? Chile, América Latina y un Modelo Estallado. (Ariel,
+    2024).
+  orcid: https://orcid.org/0000-0001-7597-203X
+  auto_update_publications: true
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
 Dietlind Stolle:
   name: Dietlind Stolle
   auto_update_publications: true
