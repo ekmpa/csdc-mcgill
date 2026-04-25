@@ -195,6 +195,15 @@ Benjamin Forest:
     url: http://www.geog.mcgill.ca/faculty/forest/index.html
   - label: Scholar
     url: https://scholar.google.com/citations?user=tLfKPpgAAAAJ&hl=en&oi=ao
+Kassandra Gervasi:
+  name: Kassandra Gervasi
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Leonardo Baccini
+    affiliation: McGill University
+  avatar: /assets/images/bio/Kassandra Gervasi.jpg
+  auto_update_publications: false
 Eric Hehman:
   name: Eric Hehman
   current_role:
