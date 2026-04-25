@@ -436,6 +436,15 @@ Victoria Mahon:
   orcid: 0009-0002-3577-3217
   avatar: /assets/images/bio/Victoria Mahon.jpg
   auto_update_publications: true
+Aiden McIlvaney:
+  name: Aiden McIlvaney
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Aaron Erlich
+    affiliation: McGill University
+  orcid: 0009-0000-7512-6554
+  auto_update_publications: true
 Nathan Di Pinto:
   name: Nathan Di Pinto
   current_role:
