@@ -93,6 +93,19 @@ Arianna Bondi:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=CuFbthUAAAAJ
+Rafael Campos-Gottardo:
+  name: Rafael Campos-Gottardo
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Aaron Erlich
+    affiliation: McGill University
+  orcid: 0000-0002-0632-1070
+  avatar: /assets/images/bio/Rafael Campos-Gottardo.jpg
+  auto_update_publications: true
+  social_media_links:
+  - label: Website
+    url: https://rafael-campos-gottardo.github.io
 Aaron Erlich:
   name: Aaron Erlich
   current_role:
