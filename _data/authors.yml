@@ -445,6 +445,14 @@ Aiden McIlvaney:
     affiliation: McGill University
   orcid: 0009-0000-7512-6554
   auto_update_publications: true
+Katerina McMulen:
+  name: Katerina McMulen
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Aaron Erlich
+    affiliation: McGill University
+  auto_update_publications: false
 Nathan Di Pinto:
   name: Nathan Di Pinto
   current_role:
