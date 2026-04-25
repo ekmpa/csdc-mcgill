@@ -349,6 +349,43 @@ Xuanchi Liu:
     advisor: Eran Shor
     affiliation: McGill University
   auto_update_publications: false
+Victor Livernoche:
+  name: Victor Livernoche
+  current_role:
+    type: Student
+    title: Doctorate Student
+    advisor: Reihaneh Rabbany
+    affiliation: McGill University
+  bio: 'Title: Building a Modern Benchmark Dataset for Deepfake DetectionThis project
+    addresses the urgent need for a modern, representative dataset to advance deepfake
+    detection research. As AI-generated images from proprietary models like Midjourney,
+    Ideogram, and FLUX.1 pro have reached unprecedented realism, traditional detection
+    methods—developed using outdated datasets from open-source models—are becoming
+    ineffective. This gap hinders the development of robust detection algorithms and
+    raises questions about the feasibility of large-scale deepfake detection, especially
+    given the implications for misinformation and election security.The primary goal
+    of the project is to create a comprehensive benchmark dataset featuring AI-generated
+    images from both leading proprietary and open-source models. The dataset will
+    be diverse, including human portraits, landscapes, and objects, with a particular
+    focus on images most likely to be used for misinformation. Each image will be
+    systematically labeled by generation settings, model, and content type, enabling
+    detailed analysis.Key objectives include:• Collecting a broad and current set
+    of AI-generated images that reflect state-of-the-art generative techniques.• Evaluating
+    whether images from advanced proprietary models exhibit detectable artifacts.•
+    Assessing the effectiveness and generalizability of existing deepfake detection
+    methods on this new dataset.• Investigating which types of images and content
+    present the greatest challenges for detection.• Providing insights to guide the
+    development of more effective detection strategies, particularly for high-stakes
+    contexts like elections.By filling this critical gap, the project will equip researchers
+    and practitioners with the tools needed to accurately evaluate and improve deepfake
+    detection, supporting efforts to safeguard public trust and media integrity in
+    the age of advanced AI imagery.'
+  orcid: 0000-0002-3819-730X
+  avatar: /assets/images/bio/Victor Livernoche.jpg
+  auto_update_publications: true
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=tuhCUyIAAAAJ
 Juan Pablo Luna:
   name: Juan Pablo Luna
   current_role:
