@@ -328,6 +328,19 @@ Rupinder Liddar:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=1cN1RpQAAAAJ
+Travis Lim:
+  name: Travis Lim
+  current_role:
+    type: Student
+    title: Student
+    advisor: Eric Hehman
+    affiliation: McGill University
+  orcid: 0000-0003-1662-7329
+  avatar: /assets/images/bio/Travis Lim.jpg
+  auto_update_publications: true
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=6mSqPZsAAAAJ
 Juan Pablo Luna:
   name: Juan Pablo Luna
   current_role:
