@@ -163,6 +163,18 @@ Garrett Evans:
     advisor: Nicolas Ajzenman
     affiliation: McGill University
   auto_update_publications: false
+Aarash Feizi:
+  name: Aarash Feizi
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Reihaneh Rabbany
+    affiliation: McGill University
+  avatar: /assets/images/bio/Aarash Feizi.jpg
+  auto_update_publications: false
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=wdZdCMoAAAAJ
 Benjamin Forest:
   name: Benjamin Forest
   current_role:
