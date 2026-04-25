@@ -68,24 +68,6 @@ body:
       description: "A short description (1 paragraph) of the member."
       placeholder: "Works on Artificial General Intelligence"
   
-  - type: input
-    id: orcid
-    attributes:
-      label: "ORCID"
-      description: "Your ORCID identifier (e.g. 0000-0002-1825-0097). Used to fetch publications via OpenAlex."
-      placeholder: "0000-0002-1825-0097"
-    validations:
-      required: false
-
-  - type: input
-    id: openalex_id
-    attributes:
-      label: "OpenAlex ID (Optional)"
-      description: "Your [OpenAlex](https://openalex.org) author ID or URL (e.g. A5023888391 or https://openalex.org/A5023888391)."
-      placeholder: "A5023888391"
-    validations:
-      required: false
-
   - type: dropdown
     id: current_role-type
     attributes:
@@ -126,6 +108,24 @@ body:
       label: "Current Role Advisor"
       description: "For students, who is/are the advisor(s)? Separate multiple names with a comma."
       placeholder: "John Doe Sr., Jane Doe"
+    validations:
+      required: false
+
+  - type: input
+    id: orcid
+    attributes:
+      label: "ORCID"
+      description: "Your ORCID identifier (e.g. 0000-0002-1825-0097). Used to fetch publications via OpenAlex."
+      placeholder: "0000-0002-1825-0097"
+    validations:
+      required: false
+
+  - type: input
+    id: openalex_id
+    attributes:
+      label: "OpenAlex ID (Optional)"
+      description: "Your [OpenAlex](https://openalex.org) author ID or URL (e.g. A5023888391 or https://openalex.org/A5023888391)."
+      placeholder: "A5023888391"
     validations:
       required: false
 
