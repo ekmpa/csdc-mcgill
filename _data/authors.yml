@@ -16,6 +16,15 @@ Nicolas Ajzenman:
     url: http://www.ajzenman.com
   - label: Scholar
     url: https://scholar.google.ca/citations?user=MdFqDJkAAAAJ&hl=en&oi=ao
+Brianne Anderson:
+  name: Brianne Anderson
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Leonardo Baccini
+    affiliation: McGill University
+  avatar: /assets/images/bio/Brianne Anderson.jpg
+  auto_update_publications: false
 Leonardo Baccini:
   name: Leonardo Baccini
   current_role:
