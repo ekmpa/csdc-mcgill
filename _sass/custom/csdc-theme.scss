@@ -79,7 +79,18 @@ a.csdc-red:focus {
   padding: 0.5rem 0.85rem;
   font-size: 0.92rem;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.08em;
+  transform: scale(1);
+  transition: transform 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.csdc-btn:hover,
+.csdc-btn:focus {
+  transform: scale(1.02);
+  text-decoration-color: currentColor;
 }
 
 .csdc-btn-primary {
@@ -108,7 +119,18 @@ a.csdc-red:focus {
   display: inline-block;
   color: $csdc-red;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.08em;
+  transform: scale(1);
+  transition: transform 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.csdc-events-cta:hover,
+.csdc-events-cta:focus {
+  transform: scale(1.02);
+  text-decoration-color: currentColor;
 }
 
 .csdc-events-cta:visited,
@@ -122,8 +144,30 @@ a.csdc-red:focus {
 }
 
 .csdc-page-header {
-  padding-top: 2.5rem;
-  margin-bottom: 1rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 55%, #eef2f7 100%);
+  padding: 2.1rem 0 1.5rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-bottom: 1.25rem;
+}
+
+.csdc-page-header .csdc-container {
+  background: transparent;
+  padding-left: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.csdc-page-header .csdc-kicker {
+  margin: 0 0 0.35rem;
+}
+
+.csdc-page-header .csdc-page-title {
+  margin: 0;
+}
+
+.csdc-page-header .csdc-page-subtitle {
+  margin-top: 0.35rem;
+  margin-bottom: 0;
 }
 
 .csdc-page-title {
@@ -148,6 +192,82 @@ a.csdc-red:focus {
   margin-top: 0;
   margin-bottom: 0.5rem;
   color: $csdc-red;
+}
+
+.csdc-news-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.csdc-news-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.6rem;
+  padding: 0.85rem 1rem;
+  max-width: 62rem;
+  margin-right: auto;
+}
+
+.csdc-news-item-title {
+  margin: 0;
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  line-height: 1.3;
+}
+
+.csdc-news-item-title a {
+  color: #9f1239;
+  text-decoration: none;
+}
+
+.csdc-news-item-title a:hover,
+.csdc-news-item-title a:focus {
+  color: #7f1d1d;
+  text-decoration: none;
+}
+
+.csdc-news-item-date {
+  margin: 0.35rem 0 0;
+  color: #6b7280;
+}
+
+.csdc-news-item-excerpt {
+  margin: 0.4rem 0 0;
+  color: #111827;
+  font-size: 0.92rem;
+}
+
+.csdc-news-item-by {
+  font-style: italic;
+}
+
+.csdc-news-read-more {
+  margin-top: 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 0;
+  background: transparent;
+  color: #c8102e;
+  border-radius: 0;
+  padding: 0;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.08em;
+  transition: text-decoration-color 0.2s ease;
+  cursor: pointer;
+}
+
+.csdc-news-read-more:hover,
+.csdc-news-read-more:focus {
+  color: #c8102e;
+  text-decoration-color: currentColor;
+}
+
+.csdc-news-read-more-arrow {
+  font-size: 0.95rem;
+  line-height: 1;
 }
 
 .csdc-pillars {
@@ -202,25 +322,72 @@ a.csdc-red:focus {
   border-radius: 0.6rem;
   padding: 0.9rem 1rem;
   text-decoration: none;
-  background: linear-gradient(110deg, #9f1239 0%, #c8102e 50%, #ef4444 100%);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(110deg, #9f1239 0%, #c8102e 52%, #1e3a5f 100%);
   color: #ffffff;
+  transform: scale(1);
+  transition: color 0.32s ease, transform 0.22s ease;
+}
+
+.csdc-team-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(112deg, rgba(255, 255, 255, 0) 56%, rgba(255, 255, 255, 0.92) 82%, #ffffff 100%);
+  transform: translateX(110%);
+  transition: transform 0.48s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.csdc-team-banner > * {
+  position: relative;
+  z-index: 1;
 }
 
 .csdc-team-banner:visited,
-.csdc-team-banner:hover,
 .csdc-team-banner:focus {
   color: #ffffff;
+}
+
+.csdc-team-banner:hover,
+.csdc-team-banner:focus {
+  color: #111827;
+  transform: scale(1.015);
+}
+
+.csdc-team-banner:hover::before,
+.csdc-team-banner:focus::before {
+  transform: translateX(0);
 }
 
 .csdc-team-banner-label {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.2;
+  display: inline-block;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 0.08em;
+  transition: text-decoration-color 0.3s ease;
+}
+
+.csdc-team-banner:hover .csdc-team-banner-label,
+.csdc-team-banner:focus .csdc-team-banner-label {
+  text-decoration-color: currentColor;
 }
 
 .csdc-team-banner-arrow {
   font-size: 1.1rem;
   font-weight: 800;
+  transition: color 0.3s ease;
+}
+
+.csdc-team-banner:hover .csdc-team-banner-arrow,
+.csdc-team-banner:focus .csdc-team-banner-arrow {
+  color: #1e3a5f;
 }
 
 .csdc-home-research {
@@ -251,7 +418,18 @@ a.csdc-red:focus {
   color: $csdc-red;
   font-size: 0.84rem;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.08em;
+  transform: scale(1);
+  transition: transform 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.csdc-arrow-link:hover,
+.csdc-arrow-link:focus {
+  transform: scale(1.02);
+  text-decoration-color: currentColor;
 }
 
 .csdc-arrow-link:visited,
@@ -385,6 +563,8 @@ a.csdc-red:focus {
 
 .csdc-calendar-card {
   max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .csdc-calendar-shell {
@@ -402,6 +582,19 @@ a.csdc-red:focus {
   width: 100%;
   height: 620px;
   border: 0;
+}
+
+.csdc-calendar-note {
+  max-width: 920px;
+  margin: 0.6rem auto 0;
+  color: #6b7280;
+}
+
+.csdc-calendar-title {
+  max-width: 920px;
+  margin: 0 0 0.55rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 600px) {

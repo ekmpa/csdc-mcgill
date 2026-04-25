@@ -192,3 +192,69 @@ a.site-title {
     font-size: 0.85rem;
     color: #9ca3af;
 }
+
+.csdc-footer-door-wrap {
+    position: relative;
+}
+
+.csdc-footer-door-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    color: #eff6ff;
+    font-weight: 700;
+    padding: 0.55rem 0.8rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.csdc-door-symbol {
+    width: 1.4rem;
+    height: 1.4rem;
+    display: inline-block;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.csdc-footer-door-btn:hover,
+.csdc-footer-door-btn:focus {
+    transform: translateY(-1px);
+}
+
+.csdc-footer-door-panel {
+    margin-top: 0.55rem;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.7rem;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, max-height 0.24s ease, padding-top 0.24s ease, padding-bottom 0.24s ease;
+}
+
+.csdc-footer-door-panel a {
+    color: #1e3a5f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.csdc-footer-door-panel a:hover,
+.csdc-footer-door-panel a:focus {
+    color: #c8102e;
+    text-decoration: underline;
+}
+
+.csdc-footer-door-wrap:hover .csdc-footer-door-panel,
+.csdc-footer-door-wrap:focus-within .csdc-footer-door-panel {
+    opacity: 1;
+    max-height: 12rem;
+    pointer-events: auto;
+}

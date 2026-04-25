@@ -1,24 +1,37 @@
 <section class="csdc-section csdc-home-research">
   <div class="csdc-container">
+    {% if include.show_heading != false %}
     <h2>Our Research Focus</h2>
+    {% endif %}
     <div class="csdc-pillars csdc-home-pillars-row">
       <article class="csdc-card" style="border-top:4px solid #c8102e;">
         <h3 class="csdc-card-title">Learning Democratic Citizenship in an Unequal World</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Focusing on:</p>
+        <ul>
+          <li>[topic modelling tbd]</li>
+        </ul>
       </article>
       <article class="csdc-card" style="border-top:4px solid #c8102e;">
         <h3 class="csdc-card-title">The Practice of Democratic Citizenship</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Focusing on:</p>
+        <ul>
+          <li>[topic modelling tbd]</li>
+        </ul>
       </article>
       <article class="csdc-card" style="border-top:4px solid #c8102e;">
         <h3 class="csdc-card-title">Citizen Representation and Governance</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Focusing on:</p>
+        <ul>
+          <li>[topic modelling tbd]</li>
+        </ul>
       </article>
     </div>
 
+    {% if include.show_publications_link != false %}
     <a href="{{ '/publications/' | relative_url }}" class="csdc-arrow-link" aria-label="See Publications">
       <span aria-hidden="true">&rarr;</span>
       <span>See Publications</span>
     </a>
+    {% endif %}
   </div>
 </section>

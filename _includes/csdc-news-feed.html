@@ -6,17 +6,58 @@
       <h2 class="csdc-card-title">Latest Updates</h2>
 
       {% if news_updates and news_updates.size > 0 %}
+      <div class="csdc-news-list" data-progressive-news>
         {% for post in news_updates limit:12 %}
-        <article style="padding:0.35rem 0 0.8rem; border-bottom:1px solid #e5e7eb; margin-bottom:0.7rem;">
-          <h3 style="margin:0 0 0.2rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          <p style="margin:0.2rem 0; color:#6b7280;">{{ post.date | date: "%B %-d, %Y" }}</p>
-          {% if post.excerpt %}
-          <p style="margin:0.2rem 0;">{{ post.excerpt | strip_html | truncate: 220 }}</p>
+        <article class="csdc-news-item">
+          {% assign news_title = post.title | default: post.slug %}
+          <h3 class="csdc-news-item-title"><a href="{{ post.url | relative_url }}">{{ news_title | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</a></h3>
+          <p class="csdc-news-item-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+          {% assign byline_raw = post.excerpt | default: post.content | strip_html | strip %}
+          {% if byline_raw != '' %}
+          {% assign byline = byline_raw | replace_first: 'By: ', '' | replace_first: 'By ', '' %}
+          <p class="csdc-news-item-excerpt"><span class="csdc-news-item-by">By</span> {{ byline | truncate: 220 }}</p>
           {% endif %}
         </article>
         {% endfor %}
+      </div>
+      <button type="button" class="csdc-news-read-more" data-news-read-more>
+        <span class="csdc-news-read-more-arrow" aria-hidden="true">&darr;</span>
+        <span>Read more</span>
+      </button>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var list = document.querySelector('[data-progressive-news]');
+          var button = document.querySelector('[data-news-read-more]');
+          if (!list || !button) return;
+
+          var items = Array.prototype.slice.call(list.querySelectorAll('.csdc-news-item'));
+          var visibleCount = 1;
+          var revealStep = 2;
+
+          function updateVisibility() {
+            items.forEach(function (item, index) {
+              item.hidden = index >= visibleCount;
+            });
+            if (visibleCount >= items.length) {
+              button.hidden = true;
+            }
+          }
+
+          if (items.length <= 1) {
+            button.hidden = true;
+            return;
+          }
+
+          updateVisibility();
+
+          button.addEventListener('click', function () {
+            visibleCount = Math.min(visibleCount + revealStep, items.length);
+            updateVisibility();
+          });
+        });
+      </script>
       {% else %}
-      <p style="margin:0.35rem 0 0.8rem;">No news updates posted yet.</p>
+      <p style="margin:0.35rem 0 0.8rem;">tba</p>
       {% endif %}
     </div>
   </div>
@@ -24,11 +65,12 @@
 
 <section class="csdc-section">
   <div class="csdc-container">
+    <h2 class="csdc-card-title csdc-calendar-title">Events</h2>
     <div class="csdc-card csdc-calendar-card">
       <div class="csdc-calendar-embed">
         <iframe src="https://calendar.google.com/calendar/embed?src=mcgillcsdc%40gmail.com&ctz=America%2FToronto&mode=WEEK&showTitle=0&showNav=1&showTabs=0&showCalendars=0&showTz=0" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
-    <p style="margin-top: 0.6rem; color: #6b7280;">For location or questions, <a href="mailto:anne.imouza@mcgill.ca">contact us</a>.</p>
+    <p class="csdc-calendar-note">For location or questions, <a href="mailto:anne.imouza@mcgill.ca">contact us</a>.</p>
   </div>
 </section>

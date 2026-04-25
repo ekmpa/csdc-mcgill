@@ -18,10 +18,32 @@ var store = [
     {%- assign include_page = false -%}
   {%- endif -%}
   {%- if include_page -%}
+    {%- capture page_search_text -%}
+      {{ page.excerpt | default: page.search_terms | default: page.content | markdownify | strip_html | strip_newlines }}
+      {{ page.title }}
+    {%- endcapture -%}
+    {%- assign page_search_text_ascii = page_search_text
+      | replace: 'É', 'E' | replace: 'é', 'e'
+      | replace: 'È', 'E' | replace: 'è', 'e'
+      | replace: 'Ê', 'E' | replace: 'ê', 'e'
+      | replace: 'Ë', 'E' | replace: 'ë', 'e'
+      | replace: 'À', 'A' | replace: 'à', 'a'
+      | replace: 'Â', 'A' | replace: 'â', 'a'
+      | replace: 'Î', 'I' | replace: 'î', 'i'
+      | replace: 'Ï', 'I' | replace: 'ï', 'i'
+      | replace: 'Ô', 'O' | replace: 'ô', 'o'
+      | replace: 'Ö', 'O' | replace: 'ö', 'o'
+      | replace: 'Ù', 'U' | replace: 'ù', 'u'
+      | replace: 'Û', 'U' | replace: 'û', 'u'
+      | replace: 'Ü', 'U' | replace: 'ü', 'u'
+      | replace: 'Ç', 'C' | replace: 'ç', 'c'
+      | replace: 'œ', 'oe' | replace: 'Œ', 'OE'
+      | replace: 'æ', 'ae' | replace: 'Æ', 'AE'
+      | replace: '’', "'" -%}
     {%- unless first_entry -%},{%- endunless -%}
     {
       "title": {{ page.title | default: page.url | jsonify }},
-      "excerpt": {{ page.excerpt | default: page.search_terms | default: page.content | markdownify | strip_html | strip_newlines | jsonify }},
+      "excerpt": {{ page_search_text | append: ' ' | append: page_search_text_ascii | strip | jsonify }},
       "categories": {{ page.categories | jsonify }},
       "tags": {{ page.tags | jsonify }},
       "url": {{ page.url | relative_url | jsonify }},
@@ -34,16 +56,40 @@ var store = [
 {%- for post in site.posts -%}
   {%- assign include_post = true -%}
   {%- if post.search == false -%}
-    {%- assign include_post = false -%}
+    {%- unless post.path contains '_posts/papers/' -%}
+      {%- assign include_post = false -%}
+    {%- endunless -%}
   {%- endif -%}
-  {%- unless post.url contains '/news/' -%}
-    {%- assign include_post = false -%}
-  {%- endunless -%}
   {%- if include_post -%}
+    {%- capture post_search_text -%}
+      {{ post.excerpt | default: post.content | markdownify | strip_html | strip_newlines }}
+      {{ post.title }}
+      {{ post.author }}
+      {{ post.names }}
+      {{ post.slug }}
+    {%- endcapture -%}
+    {%- assign post_search_text_ascii = post_search_text
+      | replace: 'É', 'E' | replace: 'é', 'e'
+      | replace: 'È', 'E' | replace: 'è', 'e'
+      | replace: 'Ê', 'E' | replace: 'ê', 'e'
+      | replace: 'Ë', 'E' | replace: 'ë', 'e'
+      | replace: 'À', 'A' | replace: 'à', 'a'
+      | replace: 'Â', 'A' | replace: 'â', 'a'
+      | replace: 'Î', 'I' | replace: 'î', 'i'
+      | replace: 'Ï', 'I' | replace: 'ï', 'i'
+      | replace: 'Ô', 'O' | replace: 'ô', 'o'
+      | replace: 'Ö', 'O' | replace: 'ö', 'o'
+      | replace: 'Ù', 'U' | replace: 'ù', 'u'
+      | replace: 'Û', 'U' | replace: 'û', 'u'
+      | replace: 'Ü', 'U' | replace: 'ü', 'u'
+      | replace: 'Ç', 'C' | replace: 'ç', 'c'
+      | replace: 'œ', 'oe' | replace: 'Œ', 'OE'
+      | replace: 'æ', 'ae' | replace: 'Æ', 'AE'
+      | replace: '’', "'" -%}
     {%- unless first_entry -%},{%- endunless -%}
     {
       "title": {{ post.title | jsonify }},
-      "excerpt": {{ post.excerpt | default: post.content | markdownify | strip_html | strip_newlines | jsonify }},
+      "excerpt": {{ post_search_text | append: ' ' | append: post_search_text_ascii | strip | jsonify }},
       "categories": {{ post.categories | jsonify }},
       "tags": {{ post.tags | jsonify }},
       "url": {{ post.url | relative_url | jsonify }},

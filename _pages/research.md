@@ -9,17 +9,16 @@ show_taxonomy_posts: false
 ---
 
 <div class="csdc-page">
-  <section class="csdc-hero">
+  <section class="csdc-section csdc-page-header">
     <div class="csdc-container">
       <p class="csdc-kicker"><span class="csdc-red">McGill Node</span></p>
-      <h1 class="csdc-hero-title">Our Research</h1>
-      <p class="csdc-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h1 id="page-title" class="page__title csdc-page-title">Research</h1>
+      <p class="csdc-page-subtitle">Our research focuses on democratic citizenship:</p>
     </div>
   </section>
 
   <section class="csdc-section">
     <div class="csdc-container">
-      <h2>Three CSDC Research Axes</h2>
       <div class="csdc-pillars csdc-pillars-two">
         <article class="csdc-card" style="border-top:4px solid #c8102e;">
           <h3 class="csdc-card-title">Learning Democratic Citizenship in an Unequal World</h3>
@@ -39,7 +38,8 @@ show_taxonomy_posts: false
 
   <section class="csdc-section">
     <div class="csdc-container">
-      <h2>Publications by Member Category</h2>
+      <h2>Publications</h2>
+      <p class="csdc-page-subtitle">Research outputs by the team's professors and students.</p>
       {% assign publications = site.posts | where_exp: "post", "post.path contains '_posts/papers/'" %}
       {% if publications and publications.size > 0 %}
       {% assign faculty_members = '' | split: '' %}

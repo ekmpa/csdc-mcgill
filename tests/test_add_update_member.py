@@ -88,5 +88,20 @@ class TestAddUpdateMember(unittest.TestCase):
             "https://github.com/user-attachments/assets/4c441e39-9859-48e0-9440-e743ddbd8838",
         )
 
+    def test_format_parsed_content_accepts_profile_picture_alias(self):
+        parsed = {
+            "name": "Jane Doe",
+            "profile_picture": "https://github.com/user-attachments/assets/example-image",
+            "current_role_type": "Student",
+            "current_role_title": "PhD",
+        }
+
+        formatted = mod.format_parsed_content(parsed)
+
+        self.assertEqual(
+            formatted["avatar"],
+            "https://github.com/user-attachments/assets/example-image",
+        )
+
         
     

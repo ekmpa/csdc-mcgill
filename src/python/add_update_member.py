@@ -28,6 +28,15 @@ def _normalize_avatar_value(value: str) -> str:
     return value
 
 
+def _get_avatar_input(parsed: Dict):
+    """Support both the old Avatar label and the new Profile picture label."""
+    avatar_value = parsed.get("avatar")
+    if not _is_empty_response(avatar_value):
+        return avatar_value
+
+    return parsed.get("profile_picture")
+
+
 def format_site_label(name: str) -> str:
     """Format social media site labels."""
     labels = {
@@ -106,11 +115,12 @@ def format_parsed_content(parsed: Dict) -> Dict:
     # Add optional fields if they exist and aren't empty
     optional_fields = ["bio", "note", "orcid", "openalex_id", "avatar"]
     for field in optional_fields:
-        if not _is_empty_response(parsed.get(field)):
+        value = _get_avatar_input(parsed) if field == "avatar" else parsed.get(field)
+        if not _is_empty_response(value):
             if field == "avatar":
-                formatted[field] = _normalize_avatar_value(parsed[field])
+                formatted[field] = _normalize_avatar_value(value)
             else:
-                formatted[field] = parsed[field]
+                formatted[field] = value
 
     # Auto-update is enabled whenever an ORCID or OpenAlex ID is present.
     formatted["auto_update_publications"] = bool(
