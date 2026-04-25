@@ -213,6 +213,25 @@ Eran Shor:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=vxVIFkIAAAAJ&hl=en&oi=ao
+Thomas Soehl:
+  name: Thomas Soehl
+  current_role:
+    type: Faculty / Professor
+    title: Assistant Professor
+    affiliation: McGill University
+  bio: Thomas Soehl is an Assistant Professor in the Department of Sociology at McGill
+    University. His work mainly examines the themes of international migration, race,
+    and ethnicity. More specifically, he studies these themes through the lens of
+    the family as a locus for the transmission of culture and political attachments.
+    Recently, he has looked at the acquisition of citizenship in Canada and France,
+    as well as at the determinants of anti-immigration attitudes. Professor Soehl's
+    research makes use of quantitative research methods such as using event history
+    analysis and multi-level modeling.
+  orcid: 0000-0002-6593-3376
+  auto_update_publications: true
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=paO09F8AAAAJ
 Dietlind Stolle:
   name: Dietlind Stolle
   auto_update_publications: true
