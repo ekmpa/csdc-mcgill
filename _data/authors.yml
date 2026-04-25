@@ -86,6 +86,26 @@ Aaron Erlich:
     url: http://www.aaronerlich.com/
   - label: Scholar
     url: https://scholar.google.com/citations?user=h8n98PQAAAAJ&hl=en
+Benjamin Forest:
+  name: Benjamin Forest
+  current_role:
+    type: Faculty / Professor
+    title: Associate Professor
+    affiliation: McGill University
+  bio: Benjamin Forest is an Associate Professor at McGill University in the Department
+    of Geography as well as an Associate Member of the Department of Political Science.
+    A specialist in the field of political geography, his work revolves around the
+    theme of diversity and electoral reform. In addition to being part of a project
+    studying monuments and memorials in the post-Soviet sphere, Professor Forest is
+    currently heading a project on diversity in party structures and constituencies
+    in Canada. He is also working on research exploring municipal LGBTQ policies.
+  orcid: https://orcid.org/0000-0002-4831-9403
+  auto_update_publications: true
+  social_media_links:
+  - label: Website
+    url: http://www.geog.mcgill.ca/faculty/forest/index.html
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=tLfKPpgAAAAJ&hl=en&oi=ao
 Anne Imouza:
   name: Anne Imouza
   auto_update_publications: false
