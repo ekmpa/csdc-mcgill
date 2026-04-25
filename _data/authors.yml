@@ -64,6 +64,16 @@ Elissa Berwick:
   social_media_links:
   - label: Website
     url: https://www.elissaberwick.com/
+Arianna Bondi:
+  name: Arianna Bondi
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Leonardo Baccini
+    affiliation: McGill University
+  orcid: 0000-0003-2491-2672
+  avatar: /assets/images/bio/Arianna Bondi.jpg
+  auto_update_publications: true
 Éric Bélanger:
   name: Éric Bélanger
   current_role:
