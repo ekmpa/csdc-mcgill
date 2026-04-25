@@ -126,6 +126,15 @@ Guila Cohen:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Rebecca Daviddi:
+  name: Rebecca Daviddi
+  current_role:
+    type: Faculty / Professor
+    title: Doctoral Student
+    advisor: Eran Shor
+    affiliation: McGill University
+  orcid: 0009-0009-7176-0115
+  auto_update_publications: true
 Aaron Erlich:
   name: Aaron Erlich
   current_role:
