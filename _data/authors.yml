@@ -180,6 +180,25 @@ Juan Pablo Luna:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
+Reihaneh Rabbany:
+  name: Reihaneh Rabbany
+  current_role:
+    type: Faculty / Professor
+    title: Assistant Professor
+    affiliation: McGill University, Mila
+  bio: Reihaneh Rabbany is an Assistant Professor at the School of Computer Science,
+    McGill University. Before that, she was a Postdoctoral fellow at the School of
+    Computer Science, Carnegie Mellon University. She completed her Ph.D. in Computing
+    Science Department at the University of Alberta. Her research is at the intersection
+    of network science, data mining and machine learning, with a focus on analyzing
+    real-world interconnected data, and social good applications.
+  orcid: 0000-0003-2348-0353
+  auto_update_publications: true
+  social_media_links:
+  - label: Website
+    url: https://www.reirab.com
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=Foh_c-QAAAAJ
 Dietlind Stolle:
   name: Dietlind Stolle
   auto_update_publications: true
