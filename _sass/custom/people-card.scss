@@ -325,3 +325,52 @@ div.author-avatar {
         margin-top: 0.6rem;
     }
 }
+
+// ── Alumni section ──────────────────────────────────────────────────────────
+
+.csdc-alumni-section {
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #e5e9ed;
+}
+
+.csdc-alumni-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #9ca3af;
+    margin-bottom: 0.75rem;
+}
+
+.csdc-people-page .author-card--alumni {
+    opacity: 0.55;
+    filter: grayscale(40%);
+    transition: opacity 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+
+    .author-avatar img {
+        filter: saturate(0.5);
+    }
+
+    .author-name a,
+    .author-name {
+        color: #6b7280;
+    }
+
+    .author-dates {
+        font-size: 0.78rem;
+        color: #9ca3af;
+        margin-top: 0.15rem;
+        font-style: italic;
+    }
+
+    .author-links a {
+        opacity: 0.6;
+    }
+}
+
+.csdc-people-page .author-card--alumni:hover,
+.csdc-people-page .author-card--alumni:focus-within {
+    opacity: 0.88;
+    filter: grayscale(0%);
+}

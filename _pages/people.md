@@ -19,12 +19,15 @@ classes:
 
 <h2>Faculty / Professors</h2>
 {% include card-authors-with-role.html authors=site.data.authors role="Faculty / Professor" render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors role="Faculty / Professor" alumni=true %}
 
 <h2>Staff</h2>
 {% include card-authors-with-role.html authors=site.data.authors role="Staff" render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors role="Staff" alumni=true %}
 
 <h2>Students</h2>
 {% include card-authors-with-role.html authors=site.data.authors role="Student" render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors role="Student" alumni=true %}
 
 <p>
     <span class="csdc-contact-pill">Interested in joining us? <a href="mailto:anne.imouza@mail.mcgill.ca">Contact us</a></span>

@@ -151,6 +151,11 @@ a.site-title {
     box-sizing: border-box;
 }
 
+.page__footer .csdc-footer .csdc-container {
+    padding-left: clamp(2rem, 5vw, 4rem);
+    padding-right: clamp(2rem, 5vw, 4rem);
+}
+
 .csdc-footer-grid {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));

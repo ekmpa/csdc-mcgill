@@ -31,3 +31,15 @@
         <div class="csdc-footer-copy">&copy; {{ site.time | date: '%Y' }} {{ site.copyright | default: site.title }}.</div>
     </div>
 </div>
+<script>
+(function () {
+    var wrap = document.querySelector('.csdc-footer-door-wrap');
+    if (!wrap) return;
+    wrap.addEventListener('mouseenter', function () {
+        // Wait for the panel max-height transition (0.24s) then scroll to bottom
+        setTimeout(function () {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }, 260);
+    });
+})();
+</script>

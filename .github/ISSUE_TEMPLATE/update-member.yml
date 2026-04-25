@@ -23,6 +23,36 @@ body:
       placeholder: "John Doe"
     validations:
       required: true
+
+  - type: dropdown
+    id: alumni
+    attributes:
+      label: "Member Status"
+      description: "Is this person a current member of the Centre, or an alumni / past member? Leave blank to keep unchanged."
+      multiple: false
+      options:
+        - "Current Member"
+        - "Alumni / Past Member"
+    validations:
+      required: false
+
+  - type: input
+    id: current_role-start_date
+    attributes:
+      label: "Start Date"
+      description: "When did they join the Centre? e.g. Fall 2024, 2022, January 2023. Leave blank to keep unchanged."
+      placeholder: "Fall 2024"
+    validations:
+      required: false
+
+  - type: input
+    id: current_role-end_date
+    attributes:
+      label: "End Date (Alumni only)"
+      description: "When did they leave? Leave blank for current members."
+      placeholder: "Spring 2026"
+    validations:
+      required: false
   
   - type: textarea
     id: avatar
@@ -35,7 +65,7 @@ body:
     validations:
       required: false
   
-  - type: input
+  - type: textarea
     id: bio
     attributes:
       label: "Bio"

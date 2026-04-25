@@ -1,5 +1,5 @@
 <!-- Show author next to post, should show most up to date info -->
-<article class="author-card">
+<article class="author-card{% if include.alumni %} author-card--alumni{% endif %}">
     <div class="author-avatar">
         {% if author.avatar %}
         <img loading="{{ loading }}" src="{{ author.avatar | relative_url }}" alt="An image of {{ author.name }}">
@@ -18,6 +18,12 @@
             {{ author.name }}
             {% endif %}
         </b>
+
+        {% if include.alumni and include.role_to_render %}
+        <div class="author-dates">
+            {% if include.role_to_render.start_date %}{{ include.role_to_render.start_date }}{% endif %}{% if include.role_to_render.start_date and include.role_to_render.end_date %} – {% endif %}{% if include.role_to_render.end_date %}{{ include.role_to_render.end_date }}{% endif %}
+        </div>
+        {% endif %}
 
         {% if include.role_to_render %}
 
