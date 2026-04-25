@@ -204,6 +204,14 @@ Kassandra Gervasi:
     affiliation: McGill University
   avatar: /assets/images/bio/Kassandra Gervasi.jpg
   auto_update_publications: false
+Terhas Ghebretecle:
+  name: Terhas Ghebretecle
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Thomas Soehl
+    affiliation: McGill University
+  auto_update_publications: false
 Eric Hehman:
   name: Eric Hehman
   current_role:
