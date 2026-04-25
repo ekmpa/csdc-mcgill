@@ -453,6 +453,15 @@ Katerina McMulen:
     advisor: Aaron Erlich
     affiliation: McGill University
   auto_update_publications: false
+Ezelbahar Metin:
+  name: Ezelbahar Metin
+  current_role:
+    type: Student
+    title: Doctorate Student
+    advisor: Eran Shor
+    affiliation: McGill University
+  orcid: 0009-0002-4832-666X
+  auto_update_publications: true
 Nathan Di Pinto:
   name: Nathan Di Pinto
   current_role:
