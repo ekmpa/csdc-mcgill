@@ -293,6 +293,14 @@ Emma Kondrup:
   bio: Web developer maintaining the McGill CSDC website and publication/member update
     workflow.
   avatar: /assets/images/bio/placeholder/default.jpg
+Maya Krishnan:
+  name: Maya Krishnan
+  current_role:
+    type: Student
+    title: Doctorate Student
+    advisor: Eran Shor
+    affiliation: McGill University
+  auto_update_publications: false
 Juan Pablo Luna:
   name: Juan Pablo Luna
   current_role:
