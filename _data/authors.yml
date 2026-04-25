@@ -231,6 +231,15 @@ Eric Hehman:
     url: http://erichehman.com/
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=n8IeMMEAAAAJ
+Esme Hood:
+  name: Esme Hood
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Eran Shor
+    affiliation: McGill University
+  orcid: 0009-0006-0758-9788
+  auto_update_publications: true
 Anne Imouza:
   name: Anne Imouza
   auto_update_publications: false
