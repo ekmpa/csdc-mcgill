@@ -139,6 +139,14 @@ Anne Imouza:
     CSDC.
   avatar: /assets/images/bio/placeholder/default.jpg
 
+Luis Alvarez Jimenez:
+  name: Luis Alvarez Jimenez
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Aaron Erlich
+    affiliation: McGill University
+  auto_update_publications: false
 Emma Kondrup:
   name: Emma Kondrup
   auto_update_publications: false
