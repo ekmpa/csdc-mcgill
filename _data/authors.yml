@@ -118,6 +118,14 @@ Kefan Chen:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=AzVYNOAAAAAJ&hl=en&oi=ao
+Guila Cohen:
+  name: Guila Cohen
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
 Aaron Erlich:
   name: Aaron Erlich
   current_role:
