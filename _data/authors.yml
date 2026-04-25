@@ -301,6 +301,20 @@ Maya Krishnan:
     advisor: Eran Shor
     affiliation: McGill University
   auto_update_publications: false
+Qinggang Li:
+  name: Qinggang Li
+  current_role:
+    type: Student
+    title: Doctoral Students
+    advisor: Aaron Erlich
+    affiliation: McGill University
+  bio: Qinggang is generally interested in state-society relations and the political
+    economy of developing countries. He is currently working on how different forms
+    of patron-client relations affect development and state capacity in developing
+    countries. He also has an interest in political participation in nondemocratic
+    contexts.
+  avatar: /assets/images/bio/Qinggang Li.jpg
+  auto_update_publications: false
 Juan Pablo Luna:
   name: Juan Pablo Luna
   current_role:
