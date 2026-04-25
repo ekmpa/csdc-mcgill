@@ -257,6 +257,14 @@ Juan Pablo Luna:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
+Nathan Di Pinto:
+  name: Nathan Di Pinto
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Benjamin Forest
+    affiliation: McGill University
+  auto_update_publications: false
 Farimah Poursafaei:
   name: Farimah Poursafaei
   current_role:
