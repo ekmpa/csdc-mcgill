@@ -199,6 +199,20 @@ Reihaneh Rabbany:
     url: https://www.reirab.com
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=Foh_c-QAAAAJ
+Eran Shor:
+  name: Eran Shor
+  current_role:
+    type: Faculty / Professor
+    title: Associate Professor
+    affiliation: McGill University
+  bio: Eran Shor is an Associate Professor in the Department of Sociology at McGill
+    University. His research interests center around the themes of political conflict,
+    human rights, and ethnicity and nationalism. Professor Shor's current research
+    projects evaluate inequalities in media coverage of women and ethnic minorities.
+  auto_update_publications: false
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=vxVIFkIAAAAJ&hl=en&oi=ao
 Dietlind Stolle:
   name: Dietlind Stolle
   auto_update_publications: true
