@@ -180,6 +180,20 @@ Juan Pablo Luna:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
+Farimah Poursafaei:
+  name: Farimah Poursafaei
+  current_role:
+    type: Postdoc
+    title: Postdoctoral fellow
+    affiliation: McGill University, Mila - Quebec AI Institute
+  bio: Farimah Poursafaei is a Postdoc Fellow at McGill University and Mila, Quebec
+    AI Institute. Her research interests include dynamic graph representation learning,
+    graph neural networks, graph machine learning, and real-world network data analysis.
+  avatar: /assets/images/bio/Farimah Poursafaei.jpg
+  auto_update_publications: false
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=gZ7HEsMAAAAJ
 Reihaneh Rabbany:
   name: Reihaneh Rabbany
   current_role:
