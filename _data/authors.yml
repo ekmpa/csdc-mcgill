@@ -216,6 +216,15 @@ Luis Alvarez Jimenez:
     advisor: Aaron Erlich
     affiliation: McGill University
   auto_update_publications: false
+Khaoula El Khalil:
+  name: Khaoula El Khalil
+  current_role:
+    type: Student
+    title: Doctoral Students
+    advisor: Éric Bélanger
+    affiliation: McGill University
+  avatar: /assets/images/bio/Khaoula El Khalil.jpg
+  auto_update_publications: false
 Emma Kondrup:
   name: Emma Kondrup
   auto_update_publications: false
