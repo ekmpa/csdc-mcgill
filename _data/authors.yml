@@ -320,6 +320,12 @@ Khaoula El Khalil:
     affiliation: McGill University
   avatar: /assets/images/bio/Khaoula El Khalil.jpg
   auto_update_publications: false
+Kira Killermann:
+  name: Kira Killermann
+  current_role:
+    type: Student
+    title: MA
+  auto_update_publications: false
 Emma Kondrup:
   name: Emma Kondrup
   auto_update_publications: false
