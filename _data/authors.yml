@@ -510,6 +510,13 @@ Ezelbahar Metin:
     affiliation: McGill University
   orcid: 0009-0002-4832-666X
   auto_update_publications: true
+Alexandre Miltsov:
+  name: Alexandre Miltsov
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Eran Shor
+  auto_update_publications: false
 Alan Nemirovski:
   name: Alan Nemirovski
   current_role:
