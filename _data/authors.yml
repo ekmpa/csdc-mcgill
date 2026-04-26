@@ -474,6 +474,13 @@ Juan Pablo Luna:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
+Shoshana Magnet:
+  name: Shoshana Magnet
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    affiliation: McGill University
+  auto_update_publications: false
 Victoria Mahon:
   name: Victoria Mahon
   current_role:
