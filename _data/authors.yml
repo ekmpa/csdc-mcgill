@@ -655,6 +655,12 @@ Thomas Soehl:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=paO09F8AAAAJ
+Dominik Stecula:
+  name: Dominik Stecula
+  current_role:
+    type: Student
+    title: MA
+  auto_update_publications: false
 Brooke Steinhauer:
   name: Brooke Steinhauer
   current_role:
