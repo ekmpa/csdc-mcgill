@@ -231,6 +231,13 @@ Terhas Ghebretecle:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+Elizabeth Goodyear-Grant:
+  name: Elizabeth Goodyear-Grant
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 Ian Van Haren:
   name: Ian Van Haren
   current_role:
