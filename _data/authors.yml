@@ -577,6 +577,13 @@ Rachel Rammal:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+Emma-Kate Ranachan:
+  name: Emma-Kate Ranachan
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
 Jeremy Rappel:
   name: Jeremy Rappel
   current_role:
