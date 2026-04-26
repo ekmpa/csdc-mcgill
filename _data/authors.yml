@@ -590,6 +590,12 @@ Jeremy Rappel:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
+Rafico Ruiz:
+  name: Rafico Ruiz
+  current_role:
+    type: Student
+    title: PhD
+  auto_update_publications: false
 Sahar Omidi Shayegan:
   name: Sahar Omidi Shayegan
   current_role:
