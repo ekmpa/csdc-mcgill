@@ -655,6 +655,12 @@ Thomas Soehl:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=paO09F8AAAAJ
+Cayley Sorochan:
+  name: Cayley Sorochan
+  current_role:
+    type: Faculty / Professor
+    title: PhD
+  auto_update_publications: false
 Brooke Steinhauer:
   name: Brooke Steinhauer
   current_role:
