@@ -368,6 +368,12 @@ Rupinder Liddar:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=1cN1RpQAAAAJ
+Evan Light:
+  name: Evan Light
+  current_role:
+    type: Student
+    title: PhD
+  auto_update_publications: false
 Travis Lim:
   name: Travis Lim
   current_role:
