@@ -474,6 +474,13 @@ Juan Pablo Luna:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
+Adam Mahon:
+  name: Adam Mahon
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
 Victoria Mahon:
   name: Victoria Mahon
   current_role:
