@@ -129,6 +129,13 @@ Kefan Chen:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=AzVYNOAAAAAJ&hl=en&oi=ao
+Ellen Claes:
+  name: Ellen Claes
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 Guila Cohen:
   name: Guila Cohen
   current_role:
