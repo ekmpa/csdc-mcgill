@@ -206,6 +206,13 @@ Benjamin Forest:
     url: http://www.geog.mcgill.ca/faculty/forest/index.html
   - label: Scholar
     url: https://scholar.google.com/citations?user=tLfKPpgAAAAJ&hl=en&oi=ao
+Patrick Forest:
+  name: Patrick Forest
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    advisor: Benjamin Forest
+  auto_update_publications: false
 Sarah Freund:
   name: Sarah Freund
   current_role:
