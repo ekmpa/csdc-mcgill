@@ -16,6 +16,12 @@ Nicolas Ajzenman:
     url: http://www.ajzenman.com
   - label: Scholar
     url: https://scholar.google.ca/citations?user=MdFqDJkAAAAJ&hl=en&oi=ao
+Mohammed Ali:
+  name: Mohammed Ali
+  current_role:
+    type: Student
+    title: PhD
+  auto_update_publications: false
 Sahar Ramazan Ali:
   name: Sahar Ramazan Ali
   current_role:
