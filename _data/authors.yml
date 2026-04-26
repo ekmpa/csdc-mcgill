@@ -722,6 +722,14 @@ Nicolas Vaxelaire:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Derek Volker:
+  name: Derek Volker
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
 Michelle Wang:
   name: Michelle Wang
   current_role:
