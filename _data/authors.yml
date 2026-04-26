@@ -264,6 +264,14 @@ Esme Hood:
     affiliation: McGill University
   orcid: 0009-0006-0758-9788
   auto_update_publications: true
+Sarah Houde:
+  name: Sarah Houde
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
 Anne Imouza:
   name: Anne Imouza
   auto_update_publications: false
