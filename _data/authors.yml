@@ -705,3 +705,15 @@ Michelle Wang:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=PujecSgAAAAJ
+Taisto Witt:
+  name: Taisto Witt
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Eran Shor
+    affiliation: McGill University
+  avatar: /assets/images/bio/Taisto Witt.jpg
+  auto_update_publications: false
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=0AYdib0AAAAJ
