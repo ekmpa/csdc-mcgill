@@ -129,6 +129,13 @@ Kefan Chen:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=AzVYNOAAAAAJ&hl=en&oi=ao
+Chris Chimm:
+  name: Chris Chimm
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Éric Bélanger
+  auto_update_publications: false
 Guila Cohen:
   name: Guila Cohen
   current_role:
