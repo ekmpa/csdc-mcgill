@@ -536,6 +536,14 @@ Nathan Di Pinto:
     advisor: Benjamin Forest
     affiliation: McGill University
   auto_update_publications: false
+Myriam Plourde:
+  name: Myriam Plourde
+  current_role:
+    type: Student
+    title: MA
+    advisor: Éric Bélanger
+    affiliation: McGill University
+  auto_update_publications: false
 Farimah Poursafaei:
   name: Farimah Poursafaei
   current_role:
