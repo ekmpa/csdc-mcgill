@@ -484,6 +484,14 @@ Victoria Mahon:
   orcid: 0009-0002-3577-3217
   avatar: /assets/images/bio/Victoria Mahon.jpg
   auto_update_publications: true
+Beatrice Marry:
+  name: Beatrice Marry
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
 Aiden McIlvaney:
   name: Aiden McIlvaney
   current_role:
