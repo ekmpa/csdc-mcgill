@@ -717,3 +717,15 @@ Taisto Witt:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=0AYdib0AAAAJ
+Zachary Yang:
+  name: Zachary Yang
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Reihaneh Rabbany
+    affiliation: McGill University
+  orcid: 0009-0009-6765-2293
+  auto_update_publications: true
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=ljOxbowAAAAJ
