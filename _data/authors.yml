@@ -75,6 +75,13 @@ Elissa Berwick:
   social_media_links:
   - label: Website
     url: https://www.elissaberwick.com/
+Kelly Blidook:
+  name: Kelly Blidook
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 Arianna Bondi:
   name: Arianna Bondi
   current_role:
