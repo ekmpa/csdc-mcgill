@@ -540,6 +540,19 @@ Rachel Rammal:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+Jeremy Rappel:
+  name: Jeremy Rappel
+  current_role:
+    type: Student
+    title: Doctorate Student
+    advisor: Eric Hehman
+    affiliation: McGill University
+  orcid: 0000-0002-7838-1187
+  avatar: /assets/images/bio/Jeremy Rappel.jpg
+  auto_update_publications: true
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
 Sahar Omidi Shayegan:
   name: Sahar Omidi Shayegan
   current_role:
