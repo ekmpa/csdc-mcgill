@@ -60,6 +60,14 @@ Leonardo Baccini:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=t621mGQAAAAJ&hl=en&oi=ao
+Sheena Bell:
+  name: Sheena Bell
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Éric Bélanger
+    affiliation: McGill University
+  auto_update_publications: false
 Elissa Berwick:
   name: Elissa Berwick
   current_role:
