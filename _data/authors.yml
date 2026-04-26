@@ -623,6 +623,13 @@ Harpeet Singh:
     advisor: Nicolas Ajzenman
     affiliation: McGill University
   auto_update_publications: false
+Shane Singh:
+  name: Shane Singh
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    affiliation: McGill University
+  auto_update_publications: false
 Étienne Sinotte:
   name: Étienne Sinotte
   current_role:
