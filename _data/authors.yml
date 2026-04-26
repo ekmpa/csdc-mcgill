@@ -520,6 +520,14 @@ Alan Nemirovski:
   orcid: 0009-0009-3106-9426
   avatar: /assets/images/bio/Alan Nemirovski.jpg
   auto_update_publications: true
+Eva Falk Pedersen:
+  name: Eva Falk Pedersen
+  current_role:
+    type: Student
+    title: MA
+    advisor: Éric Bélanger
+    affiliation: McGill University
+  auto_update_publications: false
 Teresa Pian:
   name: Teresa Pian
   current_role:
