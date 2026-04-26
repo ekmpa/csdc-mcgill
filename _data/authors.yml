@@ -311,6 +311,12 @@ Jordan Katz:
     affiliation: McGill University
   avatar: /assets/images/bio/Jordan Katz.jpg
   auto_update_publications: false
+Anthony Kevins:
+  name: Anthony Kevins
+  current_role:
+    type: Student
+    title: PhD
+  auto_update_publications: false
 Khaoula El Khalil:
   name: Khaoula El Khalil
   current_role:
