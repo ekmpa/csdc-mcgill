@@ -365,6 +365,14 @@ Travis Lim:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=6mSqPZsAAAAJ
+Natalia Lis:
+  name: Natalia Lis
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
 Xuanchi Liu:
   name: Xuanchi Liu
   current_role:
