@@ -532,6 +532,14 @@ Reihaneh Rabbany:
     url: https://www.reirab.com
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=Foh_c-QAAAAJ
+Rachel Rammal:
+  name: Rachel Rammal
+  current_role:
+    type: Student
+    title: Doctorate Student
+    advisor: Thomas Soehl
+    affiliation: McGill University
+  auto_update_publications: false
 Sahar Omidi Shayegan:
   name: Sahar Omidi Shayegan
   current_role:
