@@ -684,3 +684,11 @@ Jennifer Suliteanu:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=8XWdG_YAAAAJ&hl=en&oi=ao
+Nicolas Vaxelaire:
+  name: Nicolas Vaxelaire
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
