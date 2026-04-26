@@ -658,3 +658,16 @@ Vidya Sujaya:
     advisor: Reihaneh Rabbany
     affiliation: McGill University
   auto_update_publications: false
+Jennifer Suliteanu:
+  name: Jennifer Suliteanu
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Eric Hehman
+    affiliation: McGill University
+  orcid: 0000-0001-9636-9811
+  avatar: /assets/images/bio/Jennifer Suliteanu.jpg
+  auto_update_publications: true
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=8XWdG_YAAAAJ&hl=en&oi=ao
