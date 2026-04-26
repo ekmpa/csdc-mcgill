@@ -341,6 +341,12 @@ Maya Krishnan:
     advisor: Eran Shor
     affiliation: McGill University
   auto_update_publications: false
+Andrea Lawlor:
+  name: Andrea Lawlor
+  current_role:
+    type: Student
+    title: PhD
+  auto_update_publications: false
 Qinggang Li:
   name: Qinggang Li
   current_role:
