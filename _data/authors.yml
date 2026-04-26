@@ -137,6 +137,12 @@ Guila Cohen:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Bolette Danckert:
+  name: Bolette Danckert
+  current_role:
+    type: Student
+    title: PhD
+  auto_update_publications: false
 Rebecca Daviddi:
   name: Rebecca Daviddi
   current_role:
