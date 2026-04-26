@@ -722,6 +722,12 @@ Nicolas Vaxelaire:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Sara Vissers:
+  name: Sara Vissers
+  current_role:
+    type: Postdoc
+    title: _No response_
+  auto_update_publications: false
 Michelle Wang:
   name: Michelle Wang
   current_role:
