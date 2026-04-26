@@ -302,6 +302,12 @@ Luis Alvarez Jimenez:
     advisor: Aaron Erlich
     affiliation: McGill University
   auto_update_publications: false
+Jeroen Joly:
+  name: Jeroen Joly
+  current_role:
+    type: Postdoc
+    title: _No response_
+  auto_update_publications: false
 Jordan Katz:
   name: Jordan Katz
   current_role:
