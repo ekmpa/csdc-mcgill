@@ -231,6 +231,12 @@ Terhas Ghebretecle:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+Claire Girard:
+  name: Claire Girard
+  current_role:
+    type: Student
+    title: MA
+  auto_update_publications: false
 Ian Van Haren:
   name: Ian Van Haren
   current_role:
