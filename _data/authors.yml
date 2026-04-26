@@ -472,6 +472,14 @@ Alan Nemirovski:
   orcid: 0009-0009-3106-9426
   avatar: /assets/images/bio/Alan Nemirovski.jpg
   auto_update_publications: true
+Teresa Pian:
+  name: Teresa Pian
+  current_role:
+    type: Student
+    title: Dietlind Stolle
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
 Nathan Di Pinto:
   name: Nathan Di Pinto
   current_role:
