@@ -146,6 +146,13 @@ Rebecca Daviddi:
     affiliation: McGill University
   orcid: 0009-0009-7176-0115
   auto_update_publications: true
+Valérie Doucette:
+  name: Valérie Doucette
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
 Aaron Erlich:
   name: Aaron Erlich
   current_role:
