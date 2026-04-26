@@ -434,6 +434,12 @@ Victor Livernoche:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=tuhCUyIAAAAJ
+Jasmine Lorenzini:
+  name: Jasmine Lorenzini
+  current_role:
+    type: Student
+    title: PhD
+  auto_update_publications: false
 Zekai Lu:
   name: Zekai Lu
   current_role:
