@@ -280,6 +280,14 @@ Sarah Houde:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Raffaele Iacovino:
+  name: Raffaele Iacovino
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Éric Bélanger
+    affiliation: McGill University
+  auto_update_publications: false
 Anne Imouza:
   name: Anne Imouza
   auto_update_publications: false
