@@ -618,6 +618,15 @@ Thomas Soehl:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=paO09F8AAAAJ
+Brooke Steinhauer:
+  name: Brooke Steinhauer
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  avatar: /assets/images/bio/Brooke Steinhauer.jpg
+  auto_update_publications: false
 Dietlind Stolle:
   name: Dietlind Stolle
   auto_update_publications: true
