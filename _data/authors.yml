@@ -389,6 +389,13 @@ Natalia Lis:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Jean-Baptiste Litrico:
+  name: Jean-Baptiste Litrico
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 Xuanchi Liu:
   name: Xuanchi Liu
   current_role:
