@@ -650,3 +650,11 @@ Dietlind Stolle:
   - label: Scholar
     url: https://scholar.google.com/citations?user=mjqHdG4AAAAJ&hl=en
   orcid: 0000-0001-7839-0617
+Vidya Sujaya:
+  name: Vidya Sujaya
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Reihaneh Rabbany
+    affiliation: McGill University
+  auto_update_publications: false
