@@ -302,6 +302,14 @@ Luis Alvarez Jimenez:
     advisor: Aaron Erlich
     affiliation: McGill University
   auto_update_publications: false
+Natalie Kaiser:
+  name: Natalie Kaiser
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Benjamin Forest
+    affiliation: McGill University
+  auto_update_publications: false
 Jordan Katz:
   name: Jordan Katz
   current_role:
