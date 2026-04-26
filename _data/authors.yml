@@ -302,6 +302,12 @@ Luis Alvarez Jimenez:
     advisor: Aaron Erlich
     affiliation: McGill University
   auto_update_publications: false
+Janine Kanters:
+  name: Janine Kanters
+  current_role:
+    type: Student
+    title: MA
+  auto_update_publications: false
 Jordan Katz:
   name: Jordan Katz
   current_role:
