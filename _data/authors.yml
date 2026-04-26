@@ -714,6 +714,13 @@ Erika De Torres:
     type: Student
     title: Master's Student
   auto_update_publications: false
+David Trotter:
+  name: David Trotter
+  current_role:
+    type: Student
+    title: MA
+    advisor: Éric Bélanger
+  auto_update_publications: false
 Nicolas Vaxelaire:
   name: Nicolas Vaxelaire
   current_role:
