@@ -735,6 +735,12 @@ Michelle Wang:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=PujecSgAAAAJ
+Julie Whittet:
+  name: Julie Whittet
+  current_role:
+    type: Student
+    title: Master's Student
+  auto_update_publications: false
 Taisto Witt:
   name: Taisto Witt
   current_role:
