@@ -137,6 +137,14 @@ Guila Cohen:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Shadia El Dardiry:
+  name: Shadia El Dardiry
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
 Rebecca Daviddi:
   name: Rebecca Daviddi
   current_role:
