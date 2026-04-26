@@ -104,6 +104,12 @@ Arianna Bondi:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=CuFbthUAAAAJ
+Xavier Campbell:
+  name: Xavier Campbell
+  current_role:
+    type: Student
+    title: MA
+  auto_update_publications: false
 Rafael Campos-Gottardo:
   name: Rafael Campos-Gottardo
   current_role:
