@@ -1,3 +1,10 @@
+Aisha Ahmad:
+  name: Aisha Ahmad
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 Nicolas Ajzenman:
   name: Nicolas Ajzenman
   current_role:
