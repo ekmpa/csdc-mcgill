@@ -615,6 +615,12 @@ Eran Shor:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=vxVIFkIAAAAJ&hl=en&oi=ao
+Sula Sidnell-Green:
+  name: Sula Sidnell-Green
+  current_role:
+    type: Student
+    title: MA
+  auto_update_publications: false
 Harpeet Singh:
   name: Harpeet Singh
   current_role:
