@@ -16,6 +16,17 @@ Nicolas Ajzenman:
     url: http://www.ajzenman.com
   - label: Scholar
     url: https://scholar.google.ca/citations?user=MdFqDJkAAAAJ&hl=en&oi=ao
+Sahar Ramazan Ali:
+  name: Sahar Ramazan Ali
+  current_role:
+    type: Student
+    title: Doctorate Student
+    advisor: Eric Hehman
+    affiliation: McGill University
+  auto_update_publications: false
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=sF4qbXlF77oC&hl=en&oi=ao
 Brianne Anderson:
   name: Brianne Anderson
   current_role:
