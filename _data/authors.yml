@@ -692,3 +692,16 @@ Nicolas Vaxelaire:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Michelle Wang:
+  name: Michelle Wang
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Thomas Soehl
+    affiliation: McGill University
+  orcid: 0000-0002-3432-6899
+  avatar: /assets/images/bio/Michelle Wang.jpg
+  auto_update_publications: true
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=PujecSgAAAAJ
