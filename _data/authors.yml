@@ -186,6 +186,12 @@ Aarash Feizi:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=wdZdCMoAAAAJ
+Benjamin Ferland:
+  name: Benjamin Ferland
+  current_role:
+    type: Student
+    title: PhD
+  auto_update_publications: false
 Benjamin Forest:
   name: Benjamin Forest
   current_role:
