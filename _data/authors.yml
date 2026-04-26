@@ -510,6 +510,12 @@ Ezelbahar Metin:
     affiliation: McGill University
   orcid: 0009-0002-4832-666X
   auto_update_publications: true
+Paulina Mickiewicz:
+  name: Paulina Mickiewicz
+  current_role:
+    type: Student
+    title: MA
+  auto_update_publications: false
 Alan Nemirovski:
   name: Alan Nemirovski
   current_role:
