@@ -586,6 +586,19 @@ Harpeet Singh:
     advisor: Nicolas Ajzenman
     affiliation: McGill University
   auto_update_publications: false
+Étienne Sinotte:
+  name: Étienne Sinotte
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Juan Pablo Luna
+    affiliation: McGill University
+  orcid: 0000-0002-1198-8232
+  avatar: /assets/images/bio/Étienne Sinotte.jpg
+  auto_update_publications: true
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=jstFBx0AAAAJ
 Thomas Soehl:
   name: Thomas Soehl
   current_role:
