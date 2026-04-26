@@ -341,6 +341,12 @@ Maya Krishnan:
     advisor: Eran Shor
     affiliation: McGill University
   auto_update_publications: false
+Sarah Lebeau:
+  name: Sarah Lebeau
+  current_role:
+    type: Student
+    title: MA
+  auto_update_publications: false
 Qinggang Li:
   name: Qinggang Li
   current_role:
