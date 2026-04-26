@@ -333,6 +333,14 @@ Emma Kondrup:
   bio: Web developer maintaining the McGill CSDC website and publication/member update
     workflow.
   avatar: /assets/images/bio/placeholder/default.jpg
+Angela Kostelko:
+  name: Angela Kostelko
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
 Maya Krishnan:
   name: Maya Krishnan
   current_role:
