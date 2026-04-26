@@ -513,6 +513,17 @@ Reihaneh Rabbany:
     url: https://www.reirab.com
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=Foh_c-QAAAAJ
+Sahar Omidi Shayegan:
+  name: Sahar Omidi Shayegan
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Reihaneh Rabbany
+    affiliation: McGill University
+  auto_update_publications: false
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=1K-uTWgAAAAJ
 Eran Shor:
   name: Eran Shor
   current_role:
