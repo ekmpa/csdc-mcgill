@@ -590,6 +590,14 @@ Jeremy Rappel:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
+Ayanna Roberts:
+  name: Ayanna Roberts
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
 Sahar Omidi Shayegan:
   name: Sahar Omidi Shayegan
   current_role:
