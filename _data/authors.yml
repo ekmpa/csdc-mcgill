@@ -520,6 +520,13 @@ Alan Nemirovski:
   orcid: 0009-0009-3106-9426
   avatar: /assets/images/bio/Alan Nemirovski.jpg
   auto_update_publications: true
+Erin Penner:
+  name: Erin Penner
+  current_role:
+    type: Faculty / Professor
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
 Teresa Pian:
   name: Teresa Pian
   current_role:
