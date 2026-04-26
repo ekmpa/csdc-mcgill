@@ -223,6 +223,19 @@ Terhas Ghebretecle:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+Ian Van Haren:
+  name: Ian Van Haren
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Thomas Soehl
+    affiliation: McGill University
+  orcid: 0000-0002-1818-7577
+  avatar: /assets/images/bio/Ian Van Haren.jpg
+  auto_update_publications: true
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=_0j4tPAAAAAJ
 Eric Hehman:
   name: Eric Hehman
   current_role:
