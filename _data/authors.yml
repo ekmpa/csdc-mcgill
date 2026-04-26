@@ -36,6 +36,13 @@ Brianne Anderson:
     affiliation: McGill University
   avatar: /assets/images/bio/Brianne Anderson.jpg
   auto_update_publications: false
+Christopher Anderson:
+  name: Christopher Anderson
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 Borna Atrchian:
   name: Borna Atrchian
   current_role:
