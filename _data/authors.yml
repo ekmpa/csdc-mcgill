@@ -759,3 +759,10 @@ Zachary Yang:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=ljOxbowAAAAJ
+Jason R. Young:
+  name: Jason R. Young
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Benjamin Forest
+  auto_update_publications: false
