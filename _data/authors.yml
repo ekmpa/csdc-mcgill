@@ -214,6 +214,13 @@ Sarah Freund:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Lara Gauthier:
+  name: Lara Gauthier
+  current_role:
+    type: Postdoc
+    title: _No response_
+    advisor: Thomas Soehl
+  auto_update_publications: false
 Kassandra Gervasi:
   name: Kassandra Gervasi
   current_role:
