@@ -104,6 +104,13 @@ Arianna Bondi:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=CuFbthUAAAAJ
+Albert Manuel Orozco Camacho:
+  name: Albert Manuel Orozco Camacho
+  current_role:
+    type: Student
+    title: MA
+    advisor: Reihaneh Rabbany
+  auto_update_publications: false
 Rafael Campos-Gottardo:
   name: Rafael Campos-Gottardo
   current_role:
