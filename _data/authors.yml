@@ -590,6 +590,13 @@ Jeremy Rappel:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
+Daniel Sailofsky:
+  name: Daniel Sailofsky
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Eran Shor
+  auto_update_publications: false
 Sahar Omidi Shayegan:
   name: Sahar Omidi Shayegan
   current_role:
