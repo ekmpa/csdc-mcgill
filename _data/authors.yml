@@ -747,6 +747,13 @@ Taisto Witt:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=0AYdib0AAAAJ
+Chih-lan Winnie Yang:
+  name: Chih-lan Winnie Yang
+  current_role:
+    type: Student
+    title: PHD
+    advisor: Eran Shor
+  auto_update_publications: false
 Zachary Yang:
   name: Zachary Yang
   current_role:
