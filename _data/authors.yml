@@ -117,6 +117,13 @@ Rafael Campos-Gottardo:
   social_media_links:
   - label: Website
     url: https://rafael-campos-gottardo.github.io
+Yvonne Chang:
+  name: Yvonne Chang
+  current_role:
+    type: Student
+    title: PHD
+    advisor: Thomas Soehl
+  auto_update_publications: false
 Kefan Chen:
   name: Kefan Chen
   current_role:
