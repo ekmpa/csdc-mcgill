@@ -60,6 +60,13 @@ Leonardo Baccini:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=t621mGQAAAAJ&hl=en&oi=ao
+Olivier Bergeron-Boutin:
+  name: Olivier Bergeron-Boutin
+  current_role:
+    type: Student
+    title: MA
+    advisor: Dietlind Stolle
+  auto_update_publications: false
 Elissa Berwick:
   name: Elissa Berwick
   current_role:
