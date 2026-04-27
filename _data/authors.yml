@@ -590,6 +590,13 @@ Jeremy Rappel:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
+Colin Scott:
+  name: Colin Scott
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Dietlind Stolle
+  auto_update_publications: false
 Sahar Omidi Shayegan:
   name: Sahar Omidi Shayegan
   current_role:
