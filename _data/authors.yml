@@ -708,6 +708,13 @@ Jennifer Suliteanu:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=8XWdG_YAAAAJ&hl=en&oi=ao
+Hamid Ali Tiwana:
+  name: Hamid Ali Tiwana
+  current_role:
+    type: Student
+    title: MA
+    advisor: Aaron Erlich
+  auto_update_publications: false
 Erika De Torres:
   name: Erika De Torres
   current_role:
