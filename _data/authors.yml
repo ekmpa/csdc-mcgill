@@ -341,6 +341,13 @@ Maya Krishnan:
     advisor: Eran Shor
     affiliation: McGill University
   auto_update_publications: false
+Freya Lambrechts:
+  name: Freya Lambrechts
+  current_role:
+    type: Student
+    title: _No response_
+    advisor: Eran Shor
+  auto_update_publications: false
 Qinggang Li:
   name: Qinggang Li
   current_role:
