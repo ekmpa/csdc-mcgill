@@ -231,6 +231,13 @@ Terhas Ghebretecle:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+Giovanni Guiga:
+  name: Giovanni Guiga
+  current_role:
+    type: Student
+    title: MA
+    advisor: Éric Bélanger
+  auto_update_publications: false
 Ian Van Haren:
   name: Ian Van Haren
   current_role:
