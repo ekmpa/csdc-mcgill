@@ -520,6 +520,13 @@ Alan Nemirovski:
   orcid: 0009-0009-3106-9426
   avatar: /assets/images/bio/Alan Nemirovski.jpg
   auto_update_publications: true
+Kellin Pelrine:
+  name: Kellin Pelrine
+  current_role:
+    type: Student
+    title: PHD
+    advisor: Reihaneh Rabbany
+  auto_update_publications: false
 Teresa Pian:
   name: Teresa Pian
   current_role:
