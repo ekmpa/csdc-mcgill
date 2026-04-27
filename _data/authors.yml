@@ -51,6 +51,13 @@ Borna Atrchian:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Ayhan Eren Babayigit:
+  name: Ayhan Eren Babayigit
+  current_role:
+    type: Student
+    title: MA
+    advisor: Aaron Erlich
+  auto_update_publications: false
 Leonardo Baccini:
   name: Leonardo Baccini
   current_role:
