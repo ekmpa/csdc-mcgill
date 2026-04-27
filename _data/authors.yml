@@ -509,6 +509,13 @@ Juan Pablo Luna:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
+Pratik Mahajan:
+  name: Pratik Mahajan
+  current_role:
+    type: Student
+    title: MA
+    advisor: Aaron Erlich
+  auto_update_publications: false
 Victoria Mahon:
   name: Victoria Mahon
   current_role:
