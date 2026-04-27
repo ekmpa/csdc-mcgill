@@ -341,6 +341,13 @@ Maya Krishnan:
     advisor: Eran Shor
     affiliation: McGill University
   auto_update_publications: false
+Mathieu Lavigne:
+  name: Mathieu Lavigne
+  current_role:
+    type: Student
+    title: PHD
+    advisor: Éric Bélanger
+  auto_update_publications: false
 Qinggang Li:
   name: Qinggang Li
   current_role:
