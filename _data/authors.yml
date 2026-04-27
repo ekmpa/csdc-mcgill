@@ -263,6 +263,12 @@ Eric Hehman:
     url: http://erichehman.com/
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=n8IeMMEAAAAJ
+Shaden Hetu-Frankel:
+  name: Shaden Hetu-Frankel
+  current_role:
+    type: Student
+    title: MA
+  auto_update_publications: false
 Esme Hood:
   name: Esme Hood
   current_role:
