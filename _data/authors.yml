@@ -16,6 +16,13 @@ Nicolas Ajzenman:
     url: http://www.ajzenman.com
   - label: Scholar
     url: https://scholar.google.ca/citations?user=MdFqDJkAAAAJ&hl=en&oi=ao
+Fagar Al-Sayed:
+  name: Fagar Al-Sayed
+  current_role:
+    type: Student
+    title: MA
+    advisor: Dietlind Stolle
+  auto_update_publications: false
 Sahar Ramazan Ali:
   name: Sahar Ramazan Ali
   current_role:
