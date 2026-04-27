@@ -759,3 +759,10 @@ Zachary Yang:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=ljOxbowAAAAJ
+Julia Yingling:
+  name: Julia Yingling
+  current_role:
+    type: Postdoc
+    title: MA
+    advisor: Benjamin Forest
+  auto_update_publications: false
