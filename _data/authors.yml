@@ -569,6 +569,13 @@ Reihaneh Rabbany:
     url: https://www.reirab.com
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=Foh_c-QAAAAJ
+Reza Rahimian:
+  name: Reza Rahimian
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Jeremy Clark
+  auto_update_publications: false
 Rachel Rammal:
   name: Rachel Rammal
   current_role:
