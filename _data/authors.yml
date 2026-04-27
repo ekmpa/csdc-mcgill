@@ -249,6 +249,13 @@ Sarah Freund:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Thomas Gareau-Paquette:
+  name: Thomas Gareau-Paquette
+  current_role:
+    type: Student
+    title: MA
+    advisor: Éric Bélanger
+  auto_update_publications: false
 Kassandra Gervasi:
   name: Kassandra Gervasi
   current_role:
