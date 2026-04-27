@@ -501,6 +501,13 @@ Katerina McMulen:
     advisor: Aaron Erlich
     affiliation: McGill University
   auto_update_publications: false
+Denver McNeney:
+  name: Denver McNeney
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Dietlind Stolle
+  auto_update_publications: false
 Ezelbahar Metin:
   name: Ezelbahar Metin
   current_role:
