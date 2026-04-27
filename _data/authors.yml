@@ -117,6 +117,13 @@ Rafael Campos-Gottardo:
   social_media_links:
   - label: Website
     url: https://rafael-campos-gottardo.github.io
+Philippe Chassé:
+  name: Philippe Chassé
+  current_role:
+    type: Student
+    title: MA
+    advisor: Éric Bélanger
+  auto_update_publications: false
 Kefan Chen:
   name: Kefan Chen
   current_role:
