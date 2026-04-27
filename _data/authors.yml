@@ -129,6 +129,13 @@ Kefan Chen:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=AzVYNOAAAAAJ&hl=en&oi=ao
+Ethan Clow:
+  name: Ethan Clow
+  current_role:
+    type: Student
+    title: MA
+    affiliation: Dietlind Stolle
+  auto_update_publications: false
 Guila Cohen:
   name: Guila Cohen
   current_role:
