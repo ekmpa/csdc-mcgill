@@ -868,6 +868,12 @@ Zachary Yang:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=ljOxbowAAAAJ
+Chris Yurris:
+  name: Chris Yurris
+  current_role:
+    type: Student
+    title: MA
+    advisor: Éric Bélanger
 Julia Yingling:
   name: Julia Yingling
   current_role:
