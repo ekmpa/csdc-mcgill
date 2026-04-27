@@ -89,6 +89,13 @@ Elissa Berwick:
   social_media_links:
   - label: Website
     url: https://www.elissaberwick.com/
+Maxime Blanchard:
+  name: Maxime Blanchard
+  current_role:
+    type: Student
+    title: PHD
+    advisor: Dietlind Stolle
+  auto_update_publications: false
 Arianna Bondi:
   name: Arianna Bondi
   current_role:
