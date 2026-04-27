@@ -598,6 +598,13 @@ Ezelbahar Metin:
     affiliation: McGill University
   orcid: 0009-0002-4832-666X
   auto_update_publications: true
+Isadora Borges Monroy:
+  name: Isadora Borges Monroy
+  current_role:
+    type: Student
+    title: PHD
+    advisor: Dietlind Stolle
+  auto_update_publications: false
 Alan Nemirovski:
   name: Alan Nemirovski
   current_role:
