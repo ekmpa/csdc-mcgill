@@ -510,6 +510,13 @@ Ezelbahar Metin:
     affiliation: McGill University
   orcid: 0009-0002-4832-666X
   auto_update_publications: true
+Emma Myhre:
+  name: Emma Myhre
+  current_role:
+    type: Student
+    title: _No response_
+    advisor: Aaron Erlich
+  auto_update_publications: false
 Alan Nemirovski:
   name: Alan Nemirovski
   current_role:
