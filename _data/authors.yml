@@ -530,6 +530,12 @@ Juan Pablo Luna:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
+Félix Lévesque:
+  name: Félix Lévesque
+  current_role:
+    type: Student
+    title: MA
+    advisor: Éric Bélanger
 Pratik Mahajan:
   name: Pratik Mahajan
   current_role:
