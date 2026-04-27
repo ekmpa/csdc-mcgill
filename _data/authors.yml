@@ -75,6 +75,13 @@ Elissa Berwick:
   social_media_links:
   - label: Website
     url: https://www.elissaberwick.com/
+Danielle Bohonos:
+  name: Danielle Bohonos
+  current_role:
+    type: Student
+    title: MA
+    advisor: Dietlind Stolle
+  auto_update_publications: false
 Arianna Bondi:
   name: Arianna Bondi
   current_role:
