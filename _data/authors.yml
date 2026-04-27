@@ -118,6 +118,13 @@ Arianna Bondi:
   orcid: 0000-0003-2491-2672
   avatar: /assets/images/bio/Arianna Bondi.jpg
   auto_update_publications: true
+Aengus Bridgman:
+  name: Aengus Bridgman
+  current_role:
+    type: Student
+    title: PHD
+    advisor: Dietlind Stolle
+  auto_update_publications: false
 Éric Bélanger:
   name: Éric Bélanger
   current_role:
