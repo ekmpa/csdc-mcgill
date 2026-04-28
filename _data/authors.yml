@@ -251,6 +251,12 @@ Rebecca Daviddi:
     affiliation: McGill University
   orcid: 0009-0009-7176-0115
   auto_update_publications: true
+William East:
+  name: William East
+  current_role:
+    type: Student
+    title: MA
+    advisor: Dietlind Stolle
 Chris Erl:
   name: Chris Erl
   current_role:
