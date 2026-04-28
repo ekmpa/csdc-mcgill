@@ -1,4 +1,4 @@
-generated_at: '2026-04-28T07:08:24+00:00'
+generated_at: '2026-04-28T12:50:07+00:00'
 source:
   provider: google_calendar
   calendar_id: mcgillcsdc@gmail.com
@@ -24,6 +24,6 @@ upcoming_events:
 - title: CSDC Breakfast 🥐
   date_display: Thursday, May 7, 10:30 AM ET
   event_url: https://www.google.com/calendar/event?eid=N2tnYmhiNDVyOWdoczBvcW9kNzFicWpxdGFfMjAyNjA1MDdUMTQzMDAwWiBtY2dpbGxjc2RjQG0
-- title: CSDC Lab
-  date_display: Wednesday, May 13, 1:15 PM ET
-  event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA1MTNUMTcxNTAwWiBtY2dpbGxjc2RjQG0
+- title: Agents in Research
+  date_display: Monday, May 11, 3:00 PM ET
+  event_url: https://www.google.com/calendar/event?eid=MzNudG01bGtnbDZiOTdtb2hodXMybTRrcWIgbWNnaWxsY3NkY0Bt
