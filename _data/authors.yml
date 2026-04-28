@@ -545,6 +545,12 @@ Sarah Freund:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Jorge Frozzini:
+  name: Jorge Frozzini
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
 Etienne Gagnon:
   name: Etienne Gagnon
   current_role:
