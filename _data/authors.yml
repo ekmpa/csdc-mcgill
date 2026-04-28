@@ -968,6 +968,13 @@ Victoria Mahon:
   orcid: 0009-0002-3577-3217
   avatar: /assets/images/bio/Victoria Mahon.jpg
   auto_update_publications: true
+Janine Marshall:
+  name: Janine Marshall
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
 Beatrice Marry:
   name: Beatrice Marry
   current_role:
