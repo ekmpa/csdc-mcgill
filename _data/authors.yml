@@ -637,6 +637,12 @@ Ezelbahar Metin:
     affiliation: McGill University
   orcid: 0009-0002-4832-666X
   auto_update_publications: true
+Philippe Mongrain:
+  name: Philippe Mongrain
+  current_role:
+    type: Postdoc
+    title: _No response_
+    advisor: Éric Bélanger
 Emma Myhre:
   name: Emma Myhre
   current_role:
