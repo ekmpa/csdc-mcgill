@@ -425,6 +425,17 @@ Maya Krishnan:
     advisor: Eran Shor
     affiliation: McGill University
   auto_update_publications: false
+Mathieu Lavigne:
+  name: Mathieu Lavigne
+  current_role:
+    type: Student
+    title: PHD
+    advisor: Éric Bélanger
+Freya Lambrechts:
+  name: Freya Lambrechts
+  current_role:
+    type: Student
+    title: _No response_
 Zoé Hyman Levy:
   name: Zoé Hyman Levy
   current_role:
@@ -588,6 +599,11 @@ Victoria Mahon:
   orcid: 0009-0002-3577-3217
   avatar: /assets/images/bio/Victoria Mahon.jpg
   auto_update_publications: true
+Zachary Marshall:
+  name: Zachary Marshall
+  current_role:
+    type: Student
+    title: PHD
 Abigail Chaya Maza:
   name: Abigail Chaya Maza
   current_role:
@@ -627,6 +643,12 @@ Philippe Mongrain:
     type: Postdoc
     title: _No response_
     advisor: Éric Bélanger
+Emma Myhre:
+  name: Emma Myhre
+  current_role:
+    type: Student
+    title: _No response_
+    advisor: Aaron Erlich
 Isadora Borges Monroy:
   name: Isadora Borges Monroy
   current_role:
