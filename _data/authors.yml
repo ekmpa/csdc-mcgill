@@ -305,6 +305,13 @@ Aarash Feizi:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=wdZdCMoAAAAJ
+Ina Filkobski:
+  name: Ina Filkobski
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Eran Shor
+  auto_update_publications: false
 Benjamin Forest:
   name: Benjamin Forest
   current_role:
