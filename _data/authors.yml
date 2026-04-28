@@ -633,6 +633,13 @@ Sarah Houde:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Emmanuelle Hébert:
+  name: Emmanuelle Hébert
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
 Raffaele Iacovino:
   name: Raffaele Iacovino
   current_role:
