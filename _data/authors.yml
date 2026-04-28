@@ -157,6 +157,8 @@ Rafael Campos-Gottardo:
   social_media_links:
   - label: Website
     url: https://rafael-campos-gottardo.github.io
+Yvonne Chang:
+  name: Yvonne Chang
 Ana Canedo:
   name: Ana Canedo
   current_role:
@@ -429,6 +431,11 @@ Mathieu Lavigne:
     type: Student
     title: PHD
     advisor: Éric Bélanger
+Freya Lambrechts:
+  name: Freya Lambrechts
+  current_role:
+    type: Student
+    title: _No response_
 Zoé Hyman Levy:
   name: Zoé Hyman Levy
   current_role:
