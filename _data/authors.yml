@@ -701,6 +701,14 @@ Khaoula El Khalil:
   current_role:
     type: Student
   avatar: /assets/images/bio/Khaoula El Khalil.jpg
+  auto_update_publications: false
+Susanna Kislenko:
+  name: Susanna Kislenko
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
 
 Kira Killermann:
   name: Kira Killermann
