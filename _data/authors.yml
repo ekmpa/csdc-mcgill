@@ -1,3 +1,10 @@
+Aisha Ahmad:
+  name: Aisha Ahmad
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 Nicolas Ajzenman:
   name: Nicolas Ajzenman
   current_role:
@@ -78,6 +85,13 @@ Leonardo Baccini:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=t621mGQAAAAJ&hl=en&oi=ao
+Sheena Bell:
+  name: Sheena Bell
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Éric Bélanger
+    affiliation: McGill University
 
 Jessica Behnke:
   name: Jessica Behnke
@@ -119,6 +133,13 @@ Elissa Berwick:
   social_media_links:
   - label: Website
     url: https://www.elissaberwick.com/
+Marc André Bodet:
+  name: Marc André Bodet
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 
 Danielle Bohonos:
   name: Danielle Bohonos
@@ -220,6 +241,12 @@ Kefan Chen:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=AzVYNOAAAAAJ&hl=en&oi=ao
+Ellen Claes:
+  name: Ellen Claes
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
 
 Sarah Ciaglia:
   name: Sarah Ciaglia
@@ -248,6 +275,17 @@ Guila Cohen:
   name: Guila Cohen
   current_role:
     type: Student
+    title: Doctoral Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
+Shadia El Dardiry:
+  name: Shadia El Dardiry
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
 
 Maxime Coulon-Hamelin:
   name: Maxime Coulon-Hamelin
@@ -270,6 +308,9 @@ Rebecca Daviddi:
   current_role:
     type: Faculty / Professor
   orcid: 0009-0009-7176-0115
+  auto_update_publications: true
+Valérie Doucette:
+  name: Valérie Doucette
 
 Thomas Didier:
   name: Thomas Didier
@@ -330,6 +371,18 @@ Garrett Evans:
   name: Garrett Evans
   current_role:
     type: Student
+    title: Doctoral Student
+    advisor: Nicolas Ajzenman
+    affiliation: McGill University
+  auto_update_publications: false
+Jean-Simon Farrah:
+  name: Jean-Simon Farrah
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
 
 Fernando Feitosa:
   name: Fernando Feitosa
@@ -435,6 +488,29 @@ Terhas Ghebretecle:
   name: Terhas Ghebretecle
   current_role:
     type: Student
+    title: Doctoral Student
+    advisor: Thomas Soehl
+    affiliation: McGill University
+  auto_update_publications: false
+Andrew Gibson:
+  name: Andrew Gibson
+Adela Gotz:
+  name: Adela Gotz
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Éric Bélanger
+    affiliation: McGill University
+  auto_update_publications: false
+Caroline Habluetzl:
+  name: Caroline Habluetzl
+Dan Goldberg:
+  name: Dan Goldberg
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 
 Birte Gundelach:
   name: Birte Gundelach
@@ -486,6 +562,12 @@ Eric Hehman:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=n8IeMMEAAAAJ
+Richard Hink:
+  name: Richard Hink
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
 
 Joe Heywood:
   name: Joe Heywood
@@ -536,6 +618,17 @@ Luis Alvarez Jimenez:
   name: Luis Alvarez Jimenez
   current_role:
     type: Student
+    title: Master's Student
+    advisor: Aaron Erlich
+    affiliation: McGill University
+  auto_update_publications: false
+Natalie Kaiser:
+  name: Natalie Kaiser
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Benjamin Forest
+    affiliation: McGill University
 
 Jeroen Joly:
   name: Jeroen Joly
@@ -592,11 +685,30 @@ Emma Kondrup:
   bio: Web developer maintaining the McGill CSDC website and publication/member update
     workflow.
   avatar: /assets/images/bio/placeholder/default.jpg
+Angela Kostelko:
+  name: Angela Kostelko
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
 
 Maya Krishnan:
   name: Maya Krishnan
   current_role:
     type: Student
+    title: Doctorate Student
+    advisor: Eran Shor
+    affiliation: McGill University
+  auto_update_publications: false
+Anna Laurence:
+  name: Anna Laurence
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
 
 Andrea Lawlor:
   name: Andrea Lawlor
@@ -666,6 +778,18 @@ Natalia Lis:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    end_date: "2005"
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
+Jean-Baptiste Litrico:
+  name: Jean-Baptiste Litrico
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 
 Xuanchi Liu:
   name: Xuanchi Liu
@@ -745,6 +869,18 @@ Juan Pablo Luna:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
+Adam Mahon:
+  name: Adam Mahon
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+Shoshana Magnet:
+  name: Shoshana Magnet
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    affiliation: McGill University
 
 Justin Lutz:
   name: Justin Lutz
@@ -770,6 +906,14 @@ Victoria Mahon:
     type: Student
   orcid: 0009-0002-3577-3217
   avatar: /assets/images/bio/Victoria Mahon.jpg
+  auto_update_publications: true
+Beatrice Marry:
+  name: Beatrice Marry
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
 
 Brett Manzer:
   name: Brett Manzer
@@ -894,6 +1038,14 @@ Alan Nemirovski:
     type: Student
   orcid: 0009-0009-3106-9426
   avatar: /assets/images/bio/Alan Nemirovski.jpg
+  auto_update_publications: true
+Bethany Or:
+  name: Bethany Or
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
 
 Eva Falk Pedersen:
   name: Eva Falk Pedersen
@@ -1060,6 +1212,17 @@ Harpeet Singh:
   name: Harpeet Singh
   current_role:
     type: Student
+    title: Doctoral Student
+    advisor: Nicolas Ajzenman
+    affiliation: McGill University
+  auto_update_publications: false
+Shane Singh:
+  name: Shane Singh
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    affiliation: McGill University
+  auto_update_publications: false
 
 Étienne Sinotte:
   name: Étienne Sinotte
@@ -1093,6 +1256,13 @@ Thomas Soehl:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=paO09F8AAAAJ
+Cameron Stark:
+  name: Cameron Stark
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Éric Bélanger
+    affiliation: McGill University
 
 Dominik Stecula:
   name: Dominik Stecula
@@ -1144,6 +1314,14 @@ Jennifer Suliteanu:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=8XWdG_YAAAAJ&hl=en&oi=ao
+Melanee Thomas:
+  name: Melanee Thomas
+Neal Thomas:
+  name: Neal Thomas
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
 
 Hamid Ali Tiwana:
   name: Hamid Ali Tiwana
@@ -1172,6 +1350,17 @@ Nicolas Vaxelaire:
   name: Nicolas Vaxelaire
   current_role:
     type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
+Derek Volker:
+  name: Derek Volker
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
 
 Sara Vissers:
   name: Sara Vissers
