@@ -537,6 +537,12 @@ Eric Hehman:
     url: http://erichehman.com/
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=n8IeMMEAAAAJ
+Joe Heywood:
+  name: Joe Heywood
+  current_role:
+    type: Student
+    title: MA
+    advisor: Dietlind Stolle
 Shaden Hetu-Frankel:
   name: Shaden Hetu-Frankel
   current_role:
