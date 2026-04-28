@@ -658,6 +658,14 @@ Terhas Ghebretecle:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+Adela Gotz:
+  name: Adela Gotz
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Éric Bélanger
+    affiliation: McGill University
+  auto_update_publications: false
 Caroline Habluetzl:
   name: Caroline Habluetzl
 Dan Goldberg:
