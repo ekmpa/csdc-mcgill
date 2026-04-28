@@ -54,6 +54,14 @@ Brianne Anderson:
   current_role:
     type: Student
   avatar: /assets/images/bio/Brianne Anderson.jpg
+  auto_update_publications: false
+Christopher Anderson:
+  name: Christopher Anderson
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 
 Henry Atkins:
   name: Henry Atkins
