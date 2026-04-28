@@ -1,96 +1,197 @@
+Aisha Ahmad:
+  name: Aisha Ahmad
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 Nicolas Ajzenman:
   name: Nicolas Ajzenman
   current_role:
     type: Faculty / Professor
-    title: Assistant Professor
-    affiliation: McGill University, J-PAL, IZA.
   bio: Nicolas Ajzenman is an Assistant Professor at McGill (Economics Department)
     and an affiliated professor at J-PAL and IZA. He is working at the intersection
     of development economics, behavioral economics, and political economy. His research
     has appeared or is forthcoming in top scientific journals such as the American
     Economic Journal.
   avatar: https://github.com/user-attachments/assets/a0df0780-8d08-4e46-aaac-2bc460ee3b7b
-  auto_update_publications: false
   social_media_links:
-  - label: Website
-    url: http://www.ajzenman.com
   - label: Scholar
     url: https://scholar.google.ca/citations?user=MdFqDJkAAAAJ&hl=en&oi=ao
+
+Mohammed Ali:
+  name: Mohammed Ali
+  current_role:
+    type: Student
+
+Fagar Al-Sayed:
+  name: Fagar Al-Sayed
+  current_role:
+    type: Student
+
+Hubert Alain:
+  name: Hubert Alain
+  alumni: true
+  current_role:
+    type: Student
+
+Quinn Albaugh:
+  name: Quinn Albaugh
+  alumni: true
+  current_role:
+    type: Student
+
 Sahar Ramazan Ali:
   name: Sahar Ramazan Ali
   current_role:
     type: Student
-    title: Doctorate Student
-    advisor: Eric Hehman
-    affiliation: McGill University
-  auto_update_publications: false
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=sF4qbXlF77oC&hl=en&oi=ao
+
 Brianne Anderson:
   name: Brianne Anderson
   current_role:
     type: Student
-    title: Master's Student
-    advisor: Leonardo Baccini
-    affiliation: McGill University
   avatar: /assets/images/bio/Brianne Anderson.jpg
   auto_update_publications: false
+Christopher Anderson:
+  name: Christopher Anderson
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
+
+Henry Atkins:
+  name: Henry Atkins
+  alumni: true
+  current_role:
+    type: Student
+
 Borna Atrchian:
   name: Borna Atrchian
   current_role:
     type: Student
-    title: Doctoral Student
-    advisor: Dietlind Stolle
-    affiliation: McGill University
-  auto_update_publications: false
+
+Ayhan Eren Babayigit:
+  name: Ayhan Eren Babayigit
+  alumni: true
+  current_role:
+    type: Student
+
 Leonardo Baccini:
   name: Leonardo Baccini
   current_role:
     type: Faculty / Professor
-    title: Associate Professor
-    affiliation: McGill University
   bio: Leonardo Baccini is an Associate Professor in the Department of Political Science
     at McGill University. His research interests are in the area of international
     political economy and comparative political economy with a focus on the political
     effects of structural economic transformations.
   orcid: 0000-0002-6027-9192
   avatar: /assets/images/bio/Leonardo Baccini.jpg
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=t621mGQAAAAJ&hl=en&oi=ao
+Sheena Bell:
+  name: Sheena Bell
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Éric Bélanger
+    affiliation: McGill University
+
+Jessica Behnke:
+  name: Jessica Behnke
+  current_role:
+    type: Student
+
+Patrizia Barbone:
+  name: Patrizia Barbone
+  current_role:
+    type: Student
+
+Maxime Barbeau:
+  name: Maxime Barbeau
+  alumni: true
+  current_role:
+    type: Student
+
+Edana Beauvais:
+  name: Edana Beauvais
+  alumni: true
+  current_role:
+    type: Postdoc
+
+Olivier Bergeron-Boutin:
+  name: Olivier Bergeron-Boutin
+  alumni: true
+  current_role:
+    type: Student
+
 Elissa Berwick:
   name: Elissa Berwick
   current_role:
     type: Faculty / Professor
-    title: Assistant Professor
-    affiliation: McGill University
   bio: Prof Berwick’s interests span the sub-fields of comparative politics and quantitative
     methodology. Her research focuses on sub-state nationalism, exploring how the
     imagined communities of stateless nations mold actual political attitudes and
     behaviors.
   orcid: 0000-0002-0011-5073
-  auto_update_publications: true
   social_media_links:
   - label: Website
     url: https://www.elissaberwick.com/
+Kelly Blidook:
+  name: Kelly Blidook
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
+Arianna Bondi:
+  name: Arianna Bondi
+Marc André Bodet:
+  name: Marc André Bodet
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
+
+Danielle Bohonos:
+  name: Danielle Bohonos
+  alumni: true
+  current_role:
+    type: Student
+
+Maxime Blanchard:
+  name: Maxime Blanchard
+  alumni: true
+  current_role:
+    type: Student
+
 Arianna Bondi:
   name: Arianna Bondi
   current_role:
     type: Student
-    title: Doctoral Student
-    advisor: Leonardo Baccini
-    affiliation: McGill University
   orcid: 0000-0003-2491-2672
   avatar: /assets/images/bio/Arianna Bondi.jpg
-  auto_update_publications: true
+
+Tyler Braun:
+  name: Tyler Braun
+  current_role:
+    type: Student
+
+Aengus Bridgman:
+  name: Aengus Bridgman
+  alumni: true
+  current_role:
+    type: Student
+
 Éric Bélanger:
   name: Éric Bélanger
   current_role:
     type: Faculty / Professor
-    title: Professor
-    affiliation: McGill University
   bio: Éric Bélanger is Professor of Political Science at McGill University. He is
     also a member of the Royal Society of Canada’s College of New Scholars, Artists
     and Scientists. Though centered around Quebec and Canadian politics, his research
@@ -100,35 +201,93 @@ Arianna Bondi:
     also involved in research projects studying voting behaviour in Latin America,
     as well as a comparison of nationalism in Quebec and Scotland.
   orcid: 0000-0003-3289-6000
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=CuFbthUAAAAJ
+
+Xavier Campbell:
+  name: Xavier Campbell
+  alumni: true
+  current_role:
+    type: Student
+
+Albert Manuel Orozco Camacho:
+  name: Albert Manuel Orozco Camacho
+  alumni: true
+  current_role:
+    type: Student
+
 Rafael Campos-Gottardo:
   name: Rafael Campos-Gottardo
   current_role:
     type: Student
-    title: Master's Student
-    advisor: Aaron Erlich
-    affiliation: McGill University
   orcid: 0000-0002-0632-1070
   avatar: /assets/images/bio/Rafael Campos-Gottardo.jpg
-  auto_update_publications: true
   social_media_links:
   - label: Website
     url: https://rafael-campos-gottardo.github.io
+
+Ana Canedo:
+  name: Ana Canedo
+  alumni: true
+  current_role:
+    type: Student
+
+Annie Chen:
+  name: Annie Chen
+  alumni: true
+  current_role:
+    type: Student
+
+Yvonne Chang:
+  name: Yvonne Chang
+  current_role:
+    title: MA
+
+Philippe Chassé:
+  name: Philippe Chassé
+  alumni: true
+  current_role:
+    type: Student
+
 Kefan Chen:
   name: Kefan Chen
   current_role:
     type: Student
-    title: Doctoral Student
-    advisor: Nicolas Ajzenman
-    affiliation: McGill University
   orcid: 0009-0001-6812-5657
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=AzVYNOAAAAAJ&hl=en&oi=ao
+Ellen Claes:
+  name: Ellen Claes
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+
+Sarah Ciaglia:
+  name: Sarah Ciaglia
+  current_role:
+    type: Student
+
+Chris Chimm:
+  name: Chris Chimm
+  alumni: true
+  current_role:
+    type: Student
+
+Costin Ciobanu:
+  name: Costin Ciobanu
+  alumni: true
+  current_role:
+    type: Student
+
+Ethan Clow:
+  name: Ethan Clow
+  alumni: true
+  current_role:
+    type: Student
+
 Guila Cohen:
   name: Guila Cohen
   current_role:
@@ -137,21 +296,82 @@ Guila Cohen:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Shadia El Dardiry:
+  name: Shadia El Dardiry
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+
+Maxime Coulon-Hamelin:
+  name: Maxime Coulon-Hamelin
+  current_role:
+    type: Student
+
+Bolette Danckert:
+  name: Bolette Danckert
+  current_role:
+    type: Student
+
+Jacob Danovitch:
+  name: Jacob Danovitch
+  alumni: true
+  current_role:
+    type: Student
+
 Rebecca Daviddi:
   name: Rebecca Daviddi
   current_role:
     type: Faculty / Professor
-    title: Doctoral Student
-    advisor: Eran Shor
-    affiliation: McGill University
   orcid: 0009-0009-7176-0115
   auto_update_publications: true
+Valérie Doucette:
+  name: Valérie Doucette
+
+Thomas Didier:
+  name: Thomas Didier
+  current_role:
+    type: Student
+
+Natalie Delmonte:
+  name: Natalie Delmonte
+  alumni: true
+  current_role:
+    type: Student
+
+Clare Devereux:
+  name: Clare Devereux
+  alumni: true
+  current_role:
+    type: Student
+
+Didem Demirag:
+  name: Didem Demirag
+  current_role:
+    type: Student
+
+Merve Erdilmen:
+  name: Merve Erdilmen
+  alumni: true
+  current_role:
+    type: Student
+
+William East:
+  name: William East
+  alumni: true
+  current_role:
+    type: Student
+
+Chris Erl:
+  name: Chris Erl
+  current_role:
+    type: Student
+
 Aaron Erlich:
   name: Aaron Erlich
   current_role:
     type: Faculty / Professor
-    title: Assistant Professor
-    affiliation: McGill University
   bio: Aaron Erlich is an Assistant Professor of Political Science at McGill University.
     His research interests concern questions of democratization, information dissemination,
     political behavior, political participation, and public opinion in the Former
@@ -160,12 +380,10 @@ Aaron Erlich:
     and mixed-method research designs.
   orcid: 0000-0001-6571-9081
   avatar: https://github.com/user-attachments/assets/4c441e39-9859-48e0-9440-e743ddbd8838
-  auto_update_publications: true
   social_media_links:
-  - label: Website
-    url: http://www.aaronerlich.com/
   - label: Scholar
     url: https://scholar.google.com/citations?user=h8n98PQAAAAJ&hl=en
+
 Garrett Evans:
   name: Garrett Evans
   current_role:
@@ -174,24 +392,50 @@ Garrett Evans:
     advisor: Nicolas Ajzenman
     affiliation: McGill University
   auto_update_publications: false
+Jean-Simon Farrah:
+  name: Jean-Simon Farrah
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
+
+Fernando Feitosa:
+  name: Fernando Feitosa
+  alumni: true
+  current_role:
+    type: Postdoc
+
+Andréa Febres-Gagné:
+  name: Andréa Febres-Gagné
+  current_role:
+    type: Student
+
 Aarash Feizi:
   name: Aarash Feizi
   current_role:
     type: Student
-    title: Doctoral Student
-    advisor: Reihaneh Rabbany
-    affiliation: McGill University
   avatar: /assets/images/bio/Aarash Feizi.jpg
-  auto_update_publications: false
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=wdZdCMoAAAAJ
+
+Benjamin Ferland:
+  name: Benjamin Ferland
+  alumni: true
+  current_role:
+    type: Student
+
+Ina Filkobski:
+  name: Ina Filkobski
+  current_role:
+    type: Student
+
 Benjamin Forest:
   name: Benjamin Forest
   current_role:
     type: Faculty / Professor
-    title: Associate Professor
-    affiliation: McGill University
   bio: Benjamin Forest is an Associate Professor at McGill University in the Department
     of Geography as well as an Associate Member of the Department of Political Science.
     A specialist in the field of political geography, his work revolves around the
@@ -200,29 +444,63 @@ Benjamin Forest:
     currently heading a project on diversity in party structures and constituencies
     in Canada. He is also working on research exploring municipal LGBTQ policies.
   orcid: https://orcid.org/0000-0002-4831-9403
-  auto_update_publications: true
   social_media_links:
-  - label: Website
-    url: http://www.geog.mcgill.ca/faculty/forest/index.html
   - label: Scholar
     url: https://scholar.google.com/citations?user=tLfKPpgAAAAJ&hl=en&oi=ao
+
+Patrick Forest:
+  name: Patrick Forest
+  current_role:
+    type: Postdoc
+  avatar: /assets/images/bio/Benjamin Forest.jpg
+
 Sarah Freund:
   name: Sarah Freund
+  alumni: true
   current_role:
     type: Student
-    title: Master's Student
-    advisor: Dietlind Stolle
-    affiliation: McGill University
-  auto_update_publications: false
+
+Jorge Frozzini:
+  name: Jorge Frozzini
+  current_role:
+    type: Student
+
+Etienne Gagnon:
+  name: Etienne Gagnon
+  alumni: true
+  current_role:
+    type: Student
+
+Thomas Gareau-Paquette:
+  name: Thomas Gareau-Paquette
+  alumni: true
+  current_role:
+    type: Student
+
+Holly Garnett:
+  name: Holly Garnett
+  alumni: true
+  current_role:
+    type: Student
+
+Lara Gauthier:
+  name: Lara Gauthier
+  alumni: true
+  current_role:
+    type: Postdoc
+
+Daniel St. Germaine:
+  name: Daniel St. Germaine
+  alumni: true
+  current_role:
+    type: Student
+
 Kassandra Gervasi:
   name: Kassandra Gervasi
   current_role:
     type: Student
-    title: Master's Student
-    advisor: Leonardo Baccini
-    affiliation: McGill University
   avatar: /assets/images/bio/Kassandra Gervasi.jpg
-  auto_update_publications: false
+
 Terhas Ghebretecle:
   name: Terhas Ghebretecle
   current_role:
@@ -231,24 +509,80 @@ Terhas Ghebretecle:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
-Ian Van Haren:
-  name: Ian Van Haren
+Elizabeth Goodyear-Grant:
+  name: Elizabeth Goodyear-Grant
   current_role:
     type: Student
     title: Doctoral Student
-    advisor: Thomas Soehl
+Allison Harell:
+  name: Allison Harell
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Dietlind Stolle
     affiliation: McGill University
+  auto_update_publications: false
+Ian Van Haren:
+  name: Ian Van Haren
+Andrew Gibson:
+  name: Andrew Gibson
+Adela Gotz:
+  name: Adela Gotz
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Éric Bélanger
+    affiliation: McGill University
+  auto_update_publications: false
+Caroline Habluetzl:
+  name: Caroline Habluetzl
+Dan Goldberg:
+  name: Dan Goldberg
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
+
+Birte Gundelach:
+  name: Birte Gundelach
+  current_role:
+    type: Student
+
+Claire Girard:
+  name: Claire Girard
+  current_role:
+    type: Student
+
+Gaby Gonzalez-Sirois:
+  name: Gaby Gonzalez-Sirois
+  alumni: true
+  current_role:
+    type: Student
+
+Giovanni Guiga:
+  name: Giovanni Guiga
+
+Ian Van Haren:
+  name: Ian Van Haren
+  alumni: true
+  current_role:
+    type: Student
   orcid: 0000-0002-1818-7577
   avatar: /assets/images/bio/Ian Van Haren.jpg
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=_0j4tPAAAAAJ
+
+Ian Van Haren 2:
+  name: Ian Van Haren
+  current_role:
+    type: Student
+
 Eric Hehman:
   name: Eric Hehman
   current_role:
     type: Faculty / Professor
-    title: _No response_
   bio: Eric Hehman is an Assistant Professor of Psychology at McGill University and
     director of the Seeing Human Lab.  Generally, Dr. Hehman’s research examines how
     individuals perceive and evaluate one another across group boundaries (e.g., race,
@@ -257,42 +591,79 @@ Eric Hehman:
     tracking, digital face modeling, group interactions) and statistical techniques
     (e.g., multilevel modeling, structural equation modeling).
   orcid: https://orcid.org/0000-0003-2227-1517
-  auto_update_publications: true
   social_media_links:
-  - label: Website
-    url: http://erichehman.com/
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=n8IeMMEAAAAJ
+Richard Hink:
+  name: Richard Hink
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+
+Joe Heywood:
+  name: Joe Heywood
+  current_role:
+    type: Student
+
+Shaden Hetu-Frankel:
+  name: Shaden Hetu-Frankel
+  alumni: true
+  current_role:
+    type: Student
+
+John Hicks:
+  name: John Hicks
+  alumni: true
+  current_role:
+    type: Student
+
 Esme Hood:
   name: Esme Hood
   current_role:
     type: Student
-    title: Doctoral Student
-    advisor: Eran Shor
-    affiliation: McGill University
   orcid: 0009-0006-0758-9788
-  auto_update_publications: true
+
 Sarah Houde:
   name: Sarah Houde
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Emmanuelle Hébert:
+  name: Emmanuelle Hébert
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
+Raffaele Iacovino:
+  name: Raffaele Iacovino
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Éric Bélanger
+    affiliation: McGill University
+  auto_update_publications: false
+
 Anne Imouza:
   name: Anne Imouza
-  auto_update_publications: false
   current_role:
     type: Staff
-    title: Administrator
-    start_date: Fall 2026
-    affiliation: McGill CSDC
     research_directions:
     - poli-sci
   bio: Administrative lead supporting coordination, operations, and outreach for McGill
     CSDC.
   avatar: /assets/images/bio/placeholder/default.jpg
+
+Olivier Jacques:
+  name: Olivier Jacques
+  alumni: true
+  current_role:
+    type: Student
 
 Luis Alvarez Jimenez:
   name: Luis Alvarez Jimenez
@@ -302,37 +673,88 @@ Luis Alvarez Jimenez:
     advisor: Aaron Erlich
     affiliation: McGill University
   auto_update_publications: false
+Natalie Kaiser:
+  name: Natalie Kaiser
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Benjamin Forest
+    affiliation: McGill University
+
+Jeroen Joly:
+  name: Jeroen Joly
+  current_role:
+    type: Postdoc
+
+Janine Kanters:
+  name: Janine Kanters
+  alumni: true
+  current_role:
+    type: Student
+
+Sakeef Karim:
+  name: Sakeef Karim
+  alumni: true
+  current_role:
+    type: Student
+
 Jordan Katz:
   name: Jordan Katz
   current_role:
     type: Student
-    title: Student
-    advisor: Thomas Soehl
-    affiliation: McGill University
   avatar: /assets/images/bio/Jordan Katz.jpg
-  auto_update_publications: false
-Khaoula El Khalil:
-  name: Khaoula El Khalil
+
+Dilse Kaygisiz:
+  name: Dilse Kaygisiz
+  alumni: true
   current_role:
     type: Student
-    title: Doctoral Students
-    advisor: Éric Bélanger
-    affiliation: McGill University
+
+Anthony Kevins:
+  name: Anthony Kevins
+  current_role:
+    type: Student
+
+Khaoula El Khalil:
+  name: Khaoula El Khalil
+  alumni: true
+  current_role:
+    type: Student
   avatar: /assets/images/bio/Khaoula El Khalil.jpg
   auto_update_publications: false
+Katherine Kline:
+  name: Katherine Kline
+Susanna Kislenko:
+  name: Susanna Kislenko
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
+
+Kira Killermann:
+  name: Kira Killermann
+  current_role:
+    type: Student
+
 Emma Kondrup:
   name: Emma Kondrup
-  auto_update_publications: false
   current_role:
     type: Staff
-    title: Web Developer
-    start_date: Fall 2026
-    affiliation: McGill CSDC
     research_directions:
     - poli-sci
   bio: Web developer maintaining the McGill CSDC website and publication/member update
     workflow.
   avatar: /assets/images/bio/placeholder/default.jpg
+Angela Kostelko:
+  name: Angela Kostelko
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
+
 Maya Krishnan:
   name: Maya Krishnan
   current_role:
@@ -341,69 +763,104 @@ Maya Krishnan:
     advisor: Eran Shor
     affiliation: McGill University
   auto_update_publications: false
+Anna Laurence:
+  name: Anna Laurence
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+
+Andrea Lawlor:
+  name: Andrea Lawlor
+
+Sarah Lebeau:
+  name: Sarah Lebeau
+  alumni: true
+  current_role:
+    type: Student
+
+Freya Lambrechts:
+  name: Freya Lambrechts
+  alumni: true
+  current_role:
+    type: Student
+
+Mathieu Lavigne:
+  name: Mathieu Lavigne
+  alumni: true
+  current_role:
+    type: Student
+
+Zoé Hyman Levy:
+  name: Zoé Hyman Levy
+  alumni: true
+  current_role:
+    type: Student
+
 Qinggang Li:
   name: Qinggang Li
   current_role:
     type: Student
-    title: Doctoral Students
-    advisor: Aaron Erlich
-    affiliation: McGill University
   bio: Qinggang is generally interested in state-society relations and the political
     economy of developing countries. He is currently working on how different forms
     of patron-client relations affect development and state capacity in developing
     countries. He also has an interest in political participation in nondemocratic
     contexts.
   avatar: /assets/images/bio/Qinggang Li.jpg
-  auto_update_publications: false
+
 Rupinder Liddar:
   name: Rupinder Liddar
   current_role:
     type: Student
-    title: Doctoral Student
-    advisor: Éric Bélanger, Dietlind Stolle
-    affiliation: McGill University
   orcid: 0000-0002-2884-5684
   avatar: /assets/images/bio/Rupinder Liddar.jpg
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=1cN1RpQAAAAJ
+
+Evan Light:
+  name: Evan Light
+  current_role:
+    type: Student
+
 Travis Lim:
   name: Travis Lim
   current_role:
     type: Student
-    title: Student
-    advisor: Eric Hehman
-    affiliation: McGill University
   orcid: 0000-0003-1662-7329
   avatar: /assets/images/bio/Travis Lim.jpg
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=6mSqPZsAAAAJ
+
 Natalia Lis:
   name: Natalia Lis
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    end_date: "2005"
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Jean-Baptiste Litrico:
+  name: Jean-Baptiste Litrico
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
+
 Xuanchi Liu:
   name: Xuanchi Liu
   current_role:
     type: Student
-    title: Doctorate Student
-    advisor: Eran Shor
-    affiliation: McGill University
-  auto_update_publications: false
+
 Victor Livernoche:
   name: Victor Livernoche
   current_role:
     type: Student
-    title: Doctorate Student
-    advisor: Reihaneh Rabbany
-    affiliation: McGill University
   bio: 'Title: Building a Modern Benchmark Dataset for Deepfake DetectionThis project
     addresses the urgent need for a modern, representative dataset to advance deepfake
     detection research. As AI-generated images from proprietary models like Midjourney,
@@ -430,28 +887,28 @@ Victor Livernoche:
     the age of advanced AI imagery.'
   orcid: 0000-0002-3819-730X
   avatar: /assets/images/bio/Victor Livernoche.jpg
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=tuhCUyIAAAAJ
+
+Jasmine Lorenzini:
+  name: Jasmine Lorenzini
+  current_role:
+    type: Student
+
 Zekai Lu:
   name: Zekai Lu
   current_role:
     type: Student
-    title: Master's Student
-    advisor: Eran Shor
-    affiliation: McGill University
   orcid: 0000-0001-8015-3071
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=LDs-D4kAAAAJ
+
 Juan Pablo Luna:
   name: Juan Pablo Luna
   current_role:
     type: Faculty / Professor
-    title: Professor and Diamond-Brown Chair
-    affiliation: McGill University
   bio: Juan Pablo Luna grew up in Montevideo, Uruguay, and is the Inaugural Diamond
     Brown Chair in Democratic Studies at McGill. While mainly focused on comparative
     Latin American politics, his research analyzes how socio-structural conditions
@@ -470,17 +927,44 @@ Juan Pablo Luna:
     2024); and ¿Democracia Muerta? Chile, América Latina y un Modelo Estallado. (Ariel,
     2024).
   orcid: https://orcid.org/0000-0001-7597-203X
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
+Adam Mahon:
+  name: Adam Mahon
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+Shoshana Magnet:
+  name: Shoshana Magnet
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    affiliation: McGill University
+
+Justin Lutz:
+  name: Justin Lutz
+  alumni: true
+  current_role:
+    type: Student
+
+Félix Lévesque:
+  name: Félix Lévesque
+  alumni: true
+  current_role:
+    type: Student
+
+Pratik Mahajan:
+  name: Pratik Mahajan
+  alumni: true
+  current_role:
+    type: Student
+
 Victoria Mahon:
   name: Victoria Mahon
   current_role:
     type: Student
-    title: Doctorate Student
-    advisor: Dietlind Stolle
-    affiliation: McGill University
   orcid: 0009-0002-3577-3217
   avatar: /assets/images/bio/Victoria Mahon.jpg
   auto_update_publications: true
@@ -491,78 +975,205 @@ Janine Marshall:
     title: Master's Student
     affiliation: McGill University
   auto_update_publications: false
+Beatrice Marry:
+  name: Beatrice Marry
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+
+Brett Manzer:
+  name: Brett Manzer
+  alumni: true
+  current_role:
+    type: Student
+
+Zachary Marshall:
+  name: Zachary Marshall
+  alumni: true
+  current_role:
+    type: Student
+
+Nick Maturo:
+  name: Nick Maturo
+  alumni: true
+  current_role:
+    type: Student
+
+Julia Maynard:
+  name: Julia Maynard
+  alumni: true
+  current_role:
+    type: Student
+
+Abigail Chaya Maza:
+  name: Abigail Chaya Maza
+  alumni: true
+  current_role:
+    type: Student
+
+Andrew McCormack:
+  name: Andrew McCormack
+  alumni: true
+  current_role:
+    type: Student
+
 Aiden McIlvaney:
   name: Aiden McIlvaney
   current_role:
     type: Student
-    title: Master's Student
-    advisor: Aaron Erlich
-    affiliation: McGill University
   orcid: 0009-0000-7512-6554
-  auto_update_publications: true
+
 Katerina McMulen:
   name: Katerina McMulen
   current_role:
     type: Student
-    title: Master's Student
-    advisor: Aaron Erlich
-    affiliation: McGill University
-  auto_update_publications: false
+
+Eric Merkley:
+  name: Eric Merkley
+  current_role:
+    type: Student
+
+Denver McNeney:
+  name: Denver McNeney
+  alumni: true
+  current_role:
+    type: Student
+
 Ezelbahar Metin:
   name: Ezelbahar Metin
   current_role:
     type: Student
-    title: Doctorate Student
-    advisor: Eran Shor
-    affiliation: McGill University
   orcid: 0009-0002-4832-666X
-  auto_update_publications: true
+
+Brad Morrison:
+  name: Brad Morrison
+
+Paulina Mickiewicz:
+  name: Paulina Mickiewicz
+
+Rosalie Nadeau:
+  name: Rosalie Nadeau
+  alumni: true
+  current_role:
+    type: Student
+
+Alexandre Miltsov:
+  name: Alexandre Miltsov
+  alumni: true
+  current_role:
+    type: Student
+
+Philippe Mongrain:
+  name: Philippe Mongrain
+  alumni: true
+  current_role:
+    type: Postdoc
+
+Isadora Borges Monroy:
+  name: Isadora Borges Monroy
+  alumni: true
+  current_role:
+    type: Student
+
+Anaïs Légaré Morasse:
+  name: Anaïs Légaré Morasse
+  alumni: true
+  current_role:
+    type: Student
+
+Mahsa Moosavi:
+  name: Mahsa Moosavi
+  current_role:
+    type: Student
+
+Mahdi Nejadgholi:
+  name: Mahdi Nejadgholi
+  alumni: true
+  current_role:
+    type: Student
+
+Emma Myhre:
+  name: Emma Myhre
+  alumni: true
+  current_role:
+    type: Student
+
 Alan Nemirovski:
   name: Alan Nemirovski
   current_role:
     type: Student
-    title: Master's Student
-    advisor: Dietlind Stolle
-    affiliation: McGill University
   orcid: 0009-0009-3106-9426
   avatar: /assets/images/bio/Alan Nemirovski.jpg
   auto_update_publications: true
+Bethany Or:
+  name: Bethany Or
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+
+Eva Falk Pedersen:
+  name: Eva Falk Pedersen
+
+Saewon Park:
+  name: Saewon Park
+  alumni: true
+  current_role:
+    type: Student
+
+Ka U Ng:
+  name: Ka U Ng
+  alumni: true
+  current_role:
+    type: Student
+
+Eugene Ofosu:
+  name: Eugene Ofosu
+  alumni: true
+  current_role:
+    type: Student
+
+Kellin Pelrine:
+  name: Kellin Pelrine
+  alumni: true
+  current_role:
+    type: Student
+
 Teresa Pian:
   name: Teresa Pian
   current_role:
     type: Student
-    title: Dietlind Stolle
-    advisor: Dietlind Stolle
-    affiliation: McGill University
-  auto_update_publications: false
+
 Nathan Di Pinto:
   name: Nathan Di Pinto
   current_role:
     type: Student
-    title: Master's Student
-    advisor: Benjamin Forest
-    affiliation: McGill University
-  auto_update_publications: false
+
+Myriam Plourde:
+  name: Myriam Plourde
+  current_role:
+    type: Student
+
 Farimah Poursafaei:
   name: Farimah Poursafaei
+  alumni: true
   current_role:
     type: Postdoc
-    title: Postdoctoral fellow
-    affiliation: McGill University, Mila - Quebec AI Institute
   bio: Farimah Poursafaei is a Postdoc Fellow at McGill University and Mila, Quebec
     AI Institute. Her research interests include dynamic graph representation learning,
     graph neural networks, graph machine learning, and real-world network data analysis.
   avatar: /assets/images/bio/Farimah Poursafaei.jpg
-  auto_update_publications: false
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=gZ7HEsMAAAAJ
+
 Reihaneh Rabbany:
   name: Reihaneh Rabbany
   current_role:
     type: Faculty / Professor
-    title: Assistant Professor
-    affiliation: McGill University, Mila
   bio: Reihaneh Rabbany is an Assistant Professor at the School of Computer Science,
     McGill University. Before that, she was a Postdoctoral fellow at the School of
     Computer Science, Carnegie Mellon University. She completed her Ph.D. in Computing
@@ -570,12 +1181,15 @@ Reihaneh Rabbany:
     of network science, data mining and machine learning, with a focus on analyzing
     real-world interconnected data, and social good applications.
   orcid: 0000-0003-2348-0353
-  auto_update_publications: true
   social_media_links:
-  - label: Website
-    url: https://www.reirab.com
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=Foh_c-QAAAAJ
+
+Reza Rahimian:
+  name: Reza Rahimian
+  current_role:
+    type: Student
+
 Rachel Rammal:
   name: Rachel Rammal
   current_role:
@@ -584,44 +1198,102 @@ Rachel Rammal:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+Emma-Kate Ranachan:
+  name: Emma-Kate Ranachan
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
+
 Jeremy Rappel:
   name: Jeremy Rappel
   current_role:
     type: Student
-    title: Doctorate Student
-    advisor: Eric Hehman
-    affiliation: McGill University
   orcid: 0000-0002-7838-1187
   avatar: /assets/images/bio/Jeremy Rappel.jpg
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
+Tim Reeskens:
+  name: Tim Reeskens
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
+
+Joseph Sannicandro:
+  name: Joseph Sannicandro
+  current_role:
+    type: Student
+
+Steven Schnoor:
+  name: Steven Schnoor
+  current_role:
+    type: Student
+
+Christopher Ross:
+  name: Christopher Ross
+  alumni: true
+  current_role:
+    type: Student
+
+Nick Ruderman:
+  name: Nick Ruderman
+  alumni: true
+  current_role:
+    type: Postdoc
+
+Rafico Ruiz:
+  name: Rafico Ruiz
+  current_role:
+    type: Student
+
+Cassandra Ryan:
+  name: Cassandra Ryan
+  alumni: true
+  current_role:
+    type: Student
+
+Colin Scott:
+  name: Colin Scott
+  alumni: true
+  current_role:
+    type: Student
+
+Daniel Sailofsky:
+  name: Daniel Sailofsky
+  alumni: true
+  current_role:
+    type: Student
+
 Sahar Omidi Shayegan:
   name: Sahar Omidi Shayegan
   current_role:
     type: Student
-    title: Master's Student
-    advisor: Reihaneh Rabbany
-    affiliation: McGill University
-  auto_update_publications: false
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=1K-uTWgAAAAJ
+
 Eran Shor:
   name: Eran Shor
   current_role:
     type: Faculty / Professor
-    title: Associate Professor
-    affiliation: McGill University
   bio: Eran Shor is an Associate Professor in the Department of Sociology at McGill
     University. His research interests center around the themes of political conflict,
     human rights, and ethnicity and nationalism. Professor Shor's current research
     projects evaluate inequalities in media coverage of women and ethnic minorities.
-  auto_update_publications: false
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=vxVIFkIAAAAJ&hl=en&oi=ao
+
+Sula Sidnell-Green:
+  name: Sula Sidnell-Green
+  alumni: true
+  current_role:
+    type: Student
+
 Harpeet Singh:
   name: Harpeet Singh
   current_role:
@@ -630,25 +1302,34 @@ Harpeet Singh:
     advisor: Nicolas Ajzenman
     affiliation: McGill University
   auto_update_publications: false
+Shane Singh:
+  name: Shane Singh
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    affiliation: McGill University
+  auto_update_publications: false
+
 Étienne Sinotte:
   name: Étienne Sinotte
   current_role:
     type: Student
-    title: Doctoral Student
-    advisor: Juan Pablo Luna
-    affiliation: McGill University
   orcid: 0000-0002-1198-8232
   avatar: /assets/images/bio/Étienne Sinotte.jpg
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=jstFBx0AAAAJ
+
+Alan Michael Smith:
+  name: Alan Michael Smith
+  alumni: true
+  current_role:
+    type: Student
+
 Thomas Soehl:
   name: Thomas Soehl
   current_role:
     type: Faculty / Professor
-    title: Assistant Professor
-    affiliation: McGill University
   bio: Thomas Soehl is an Assistant Professor in the Department of Sociology at McGill
     University. His work mainly examines the themes of international migration, race,
     and ethnicity. More specifically, he studies these themes through the lens of
@@ -658,27 +1339,37 @@ Thomas Soehl:
     research makes use of quantitative research methods such as using event history
     analysis and multi-level modeling.
   orcid: 0000-0002-6593-3376
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=paO09F8AAAAJ
+Cameron Stark:
+  name: Cameron Stark
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Éric Bélanger
+    affiliation: McGill University
+
+Dominik Stecula:
+  name: Dominik Stecula
+  current_role:
+    type: Student
+
+Cayley Sorochan:
+  name: Cayley Sorochan
+  current_role:
+    type: Faculty / Professor
+
 Brooke Steinhauer:
   name: Brooke Steinhauer
   current_role:
     type: Student
-    title: Doctoral Student
-    advisor: Dietlind Stolle
-    affiliation: McGill University
   avatar: /assets/images/bio/Brooke Steinhauer.jpg
-  auto_update_publications: false
+
 Dietlind Stolle:
   name: Dietlind Stolle
-  auto_update_publications: true
   current_role:
     type: Faculty / Professor
-    title: Director
-    start_date: '2020'
-    affiliation: McGill University
   bio: Dietlind Stolle is a Professor of Political Science at McGill University. Her
     research looks at political mobilization, participation and knowledge, as well
     as social capital, ethnic and racial prejudice, and the consequences of ethnic
@@ -694,33 +1385,69 @@ Dietlind Stolle:
   - label: Scholar
     url: https://scholar.google.com/citations?user=mjqHdG4AAAAJ&hl=en
   orcid: 0000-0001-7839-0617
+
 Vidya Sujaya:
   name: Vidya Sujaya
   current_role:
     type: Student
-    title: Master's Student
-    advisor: Reihaneh Rabbany
-    affiliation: McGill University
-  auto_update_publications: false
+
 Jennifer Suliteanu:
   name: Jennifer Suliteanu
   current_role:
     type: Student
-    title: Doctoral Student
-    advisor: Eric Hehman
-    affiliation: McGill University
   orcid: 0000-0001-9636-9811
   avatar: /assets/images/bio/Jennifer Suliteanu.jpg
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=8XWdG_YAAAAJ&hl=en&oi=ao
-Erika De Torres:
-  name: Erika De Torres
+Matthew Surch:
+  name: Matthew Surch
   current_role:
     type: Student
     title: Master's Student
+    affiliation: McGill University
   auto_update_publications: false
+Erika De Torres:
+  name: Erika De Torres
+Paul Sutton:
+  name: Paul Sutton
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
+Melanee Thomas:
+  name: Melanee Thomas
+Neal Thomas:
+  name: Neal Thomas
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+
+Hamid Ali Tiwana:
+  name: Hamid Ali Tiwana
+  alumni: true
+  current_role:
+    type: Student
+
+Erika De Torres:
+  name: Erika De Torres
+  alumni: true
+  current_role:
+    type: Student
+
+Marc Trussler:
+  name: Marc Trussler
+  current_role:
+    type: Student
+
+David Trotter:
+  name: David Trotter
+  alumni: true
+  current_role:
+    type: Student
+
 Nicolas Vaxelaire:
   name: Nicolas Vaxelaire
   current_role:
@@ -729,40 +1456,89 @@ Nicolas Vaxelaire:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Derek Volker:
+  name: Derek Volker
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+
+Sara Vissers:
+  name: Sara Vissers
+
+Angelia Wagner:
+  name: Angelia Wagner
+  alumni: true
+  current_role:
+    type: Postdoc
+
 Michelle Wang:
   name: Michelle Wang
   current_role:
     type: Student
-    title: Master's Student
-    advisor: Thomas Soehl
-    affiliation: McGill University
   orcid: 0000-0002-3432-6899
   avatar: /assets/images/bio/Michelle Wang.jpg
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=PujecSgAAAAJ
+
+Julie Whittet:
+  name: Julie Whittet
+  current_role:
+    type: Student
+
 Taisto Witt:
   name: Taisto Witt
   current_role:
     type: Student
-    title: Doctoral Student
-    advisor: Eran Shor
-    affiliation: McGill University
   avatar: /assets/images/bio/Taisto Witt.jpg
-  auto_update_publications: false
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=0AYdib0AAAAJ
+
+Chih-lan Winnie Yang:
+  name: Chih-lan Winnie Yang
+  alumni: true
+  current_role:
+    type: Student
+
 Zachary Yang:
   name: Zachary Yang
   current_role:
     type: Student
-    title: Master's Student
-    advisor: Reihaneh Rabbany
-    affiliation: McGill University
   orcid: 0009-0009-6765-2293
-  auto_update_publications: true
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=ljOxbowAAAAJ
+Lori Young:
+  name: Lori Young
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
+
+Julia Yingling:
+  name: Julia Yingling
+  alumni: true
+  current_role:
+    type: Postdoc
+
+Jason R. Young:
+  name: Jason R. Young
+  alumni: true
+  current_role:
+    type: Student
+
+Ali Zeren:
+  name: Ali Zeren
+  alumni: true
+  current_role:
+    type: Student
+
+Chris Yurris:
+  name: Chris Yurris
+  alumni: true
+  current_role:
+    type: Student
