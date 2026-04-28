@@ -452,6 +452,13 @@ Anne Imouza:
     CSDC.
   avatar: /assets/images/bio/placeholder/default.jpg
 
+Olivier Jacques:
+  name: Olivier Jacques
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Dietlind Stolle
+  auto_update_publications: false
 Luis Alvarez Jimenez:
   name: Luis Alvarez Jimenez
   current_role:
