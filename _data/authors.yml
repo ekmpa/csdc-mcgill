@@ -1423,6 +1423,13 @@ Zachary Yang:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=ljOxbowAAAAJ
+Lori Young:
+  name: Lori Young
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
 
 Julia Yingling:
   name: Julia Yingling
