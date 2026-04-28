@@ -346,6 +346,12 @@ Sarah Freund:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Daniel St. Germaine:
+  name: Daniel St. Germaine
+  current_role:
+    type: Student
+    title: MA
+    advisor: Dietlind Stolle
 Thomas Gareau-Paquette:
   name: Thomas Gareau-Paquette
   current_role:
