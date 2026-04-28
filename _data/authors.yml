@@ -932,6 +932,12 @@ Jeremy Rappel:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
+Nick Ruderman:
+  name: Nick Ruderman
+  current_role:
+    type: Postdoc
+    title: _No response_
+    advisor: Dietlind Stolle
 Cassandra Ryan:
   name: Cassandra Ryan
   current_role:
