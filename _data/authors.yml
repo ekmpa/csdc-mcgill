@@ -1634,6 +1634,13 @@ Thomas Soehl:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=paO09F8AAAAJ
+Cameron Stark:
+  name: Cameron Stark
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Éric Bélanger
+    affiliation: McGill University
 Dominik Stecula:
   name: Dominik Stecula
   current_role:
