@@ -166,6 +166,11 @@ Aengus Bridgman:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=CuFbthUAAAAJ
+Xavier Campbell:
+  name: Xavier Campbell
+  current_role:
+    type: Student
+    title: MA
 Albert Manuel Orozco Camacho:
   name: Albert Manuel Orozco Camacho
   current_role:
