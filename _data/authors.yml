@@ -915,6 +915,13 @@ Harpeet Singh:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=jstFBx0AAAAJ
+Alan Michael Smith:
+  name: Alan Michael Smith
+  current_role:
+    type: Student
+    title: MA
+    advisor: Dietlind Stolle
+  auto_update_publications: false
 Thomas Soehl:
   name: Thomas Soehl
   current_role:
