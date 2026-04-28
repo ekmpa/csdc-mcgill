@@ -10,7 +10,8 @@ classes:
 <div class="csdc-page csdc-people-page">
 <section class="csdc-section csdc-page-header">
     <div class="csdc-container">
-        <h1 id="page-title" class="page__title csdc-page-title">Our Research Team</h1>
+        <p class="csdc-kicker"><span class="csdc-red">Members</span></p>
+        <h1 id="page-title" class="page__title csdc-page-title">Research Team</h1>
         <p class="csdc-page-subtitle">Meet the researchers and staff advancing democratic citizenship research at McGill.</p>
     </div>
 </section>
@@ -21,12 +22,13 @@ classes:
 {% include card-authors-with-role.html authors=site.data.authors role="Faculty / Professor" render_current_role=true %}
 {% include card-authors-with-role.html authors=site.data.authors role="Faculty / Professor" alumni=true %}
 
-<h2>Staff</h2>
-{% include card-authors-with-role.html authors=site.data.authors role="Staff" render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors role="Postdoc" section_title="Postdoctoral Fellows" render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors role="Postdoc" alumni=true %}
+
+{% include card-authors-with-role.html authors=site.data.authors role="Staff" section_title="Staff" render_current_role=true %}
 {% include card-authors-with-role.html authors=site.data.authors role="Staff" alumni=true %}
 
-<h2>Students</h2>
-{% include card-authors-with-role.html authors=site.data.authors role="Student" render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors role="Student" section_title="Students" render_current_role=true %}
 {% include card-authors-with-role.html authors=site.data.authors role="Student" alumni=true %}
 
 <p>

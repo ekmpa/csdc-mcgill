@@ -435,7 +435,6 @@ Patrick Forest:
   name: Patrick Forest
   current_role:
     type: Postdoc
-  avatar: /assets/images/bio/Benjamin Forest.jpg
 
 Sarah Freund:
   name: Sarah Freund
@@ -1272,7 +1271,7 @@ Dominik Stecula:
 Cayley Sorochan:
   name: Cayley Sorochan
   current_role:
-    type: Faculty / Professor
+    type: Student
 
 Brooke Steinhauer:
   name: Brooke Steinhauer

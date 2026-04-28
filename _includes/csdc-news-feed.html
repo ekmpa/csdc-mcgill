@@ -1,6 +1,18 @@
 {% assign news_updates = site.posts | where_exp: "post", "post.path contains '_posts/news/'" %}
 
-<section class="csdc-section">
+<section class="csdc-section csdc-news-events-section">
+  <div class="csdc-container">
+    <h2 class="csdc-card-title csdc-calendar-title">Events</h2>
+    <div class="csdc-card csdc-calendar-card">
+      <div class="csdc-calendar-embed">
+        <iframe src="https://calendar.google.com/calendar/embed?src=mcgillcsdc%40gmail.com&ctz=America%2FToronto&mode=WEEK&showTitle=0&showNav=1&showTabs=0&showCalendars=0&showTz=0" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+    <p class="csdc-calendar-note">For location or questions, <a href="mailto:anne.imouza@mcgill.ca">contact us</a>.</p>
+  </div>
+</section>
+
+<section class="csdc-section csdc-news-updates-section">
   <div class="csdc-container">
     <div class="csdc-card">
       <h2 class="csdc-card-title">Latest Updates</h2>
@@ -9,13 +21,40 @@
       <div class="csdc-news-list" data-progressive-news>
         {% for post in news_updates limit:12 %}
         <article class="csdc-news-item">
-          {% assign news_title = post.title | default: post.slug %}
-          <h3 class="csdc-news-item-title"><a href="{{ post.url | relative_url }}">{{ news_title | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</a></h3>
+          {% assign news_title = post.title | default: "" | strip %}
+          {% if news_title == "" %}
+          {% assign news_title = post.slug | replace: "-", " " %}
+          {% endif %}
+          {% assign rendered_news_title = news_title | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines | strip %}
+          <h3 class="csdc-news-item-title"><a href="{{ post.url | relative_url }}">{{ rendered_news_title }}</a></h3>
           <p class="csdc-news-item-date">{{ post.date | date: "%B %-d, %Y" }}</p>
-          {% assign byline_raw = post.excerpt | default: post.content | strip_html | strip %}
-          {% if byline_raw != '' %}
-          {% assign byline = byline_raw | replace_first: 'By: ', '' | replace_first: 'By ', '' %}
-          <p class="csdc-news-item-excerpt"><span class="csdc-news-item-by">By</span> {{ byline | truncate: 220 }}</p>
+          {% assign excerpt_raw = post.excerpt | default: '' | strip_html | strip %}
+          {% if excerpt_raw == '' %}
+          {% assign excerpt_raw = post.content | strip_html | strip %}
+          {% endif %}
+          {% assign excerpt_down = excerpt_raw | downcase %}
+          {% assign excerpt_prefix = excerpt_raw | slice: 0, 3 %}
+          {% assign show_byline = false %}
+          {% assign show_excerpt = false %}
+          {% assign excerpt_clean = excerpt_raw %}
+          {% if excerpt_raw != '' %}
+          {% if excerpt_down contains 'excerpt:' and excerpt_down contains 'title:' %}
+          {% assign excerpt_clean = excerpt_raw | split: 'excerpt:' | last | split: '---' | first | strip %}
+          {% endif %}
+          {% assign excerpt_clean_down = excerpt_clean | downcase %}
+          {% unless excerpt_clean_down contains 'title:' or excerpt_clean_down contains 'date:' or excerpt_clean_down contains 'categories:' %}
+          {% if excerpt_prefix == 'By ' or excerpt_prefix == 'By:' %}
+          {% assign excerpt_clean = excerpt_clean | replace_first: 'By: ', '' | replace_first: 'By ', '' %}
+          {% assign show_byline = true %}
+          {% else %}
+          {% assign show_excerpt = true %}
+          {% endif %}
+          {% endunless %}
+          {% endif %}
+          {% if show_byline %}
+          <p class="csdc-news-item-excerpt"><span class="csdc-news-item-by">By</span> {{ excerpt_clean | truncate: 220 }}</p>
+          {% elsif show_excerpt %}
+          <p class="csdc-news-item-excerpt">{{ excerpt_clean | truncate: 220 }}</p>
           {% endif %}
         </article>
         {% endfor %}
@@ -32,7 +71,7 @@
 
           var items = Array.prototype.slice.call(list.querySelectorAll('.csdc-news-item'));
           var visibleCount = 1;
-          var revealStep = 2;
+          var revealStep = 1;
 
           function updateVisibility() {
             items.forEach(function (item, index) {
@@ -60,17 +99,5 @@
       <p style="margin:0.35rem 0 0.8rem;">tba</p>
       {% endif %}
     </div>
-  </div>
-</section>
-
-<section class="csdc-section">
-  <div class="csdc-container">
-    <h2 class="csdc-card-title csdc-calendar-title">Events</h2>
-    <div class="csdc-card csdc-calendar-card">
-      <div class="csdc-calendar-embed">
-        <iframe src="https://calendar.google.com/calendar/embed?src=mcgillcsdc%40gmail.com&ctz=America%2FToronto&mode=WEEK&showTitle=0&showNav=1&showTabs=0&showCalendars=0&showTz=0" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      </div>
-    </div>
-    <p class="csdc-calendar-note">For location or questions, <a href="mailto:anne.imouza@mcgill.ca">contact us</a>.</p>
   </div>
 </section>

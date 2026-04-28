@@ -1,10 +1,20 @@
 <!-- Show author next to post, should show most up to date info -->
-<article class="author-card{% if include.alumni %} author-card--alumni{% endif %}">
+<article class="author-card{% if include.alumni %} author-card--alumni{% endif %}{% if include.compact_avatar %} author-card--compact{% endif %}">
     <div class="author-avatar">
-        {% if author.avatar %}
-        <img loading="{{ loading }}" src="{{ author.avatar | relative_url }}" alt="An image of {{ author.name }}">
+        {% assign avatar_value = author.avatar | default: "" | strip %}
+        {% assign use_person_placeholder = false %}
+        {% if avatar_value == "" %}
+        {% assign use_person_placeholder = true %}
+        {% elsif avatar_value contains "/assets/images/bio/placeholder/" %}
+        {% assign use_person_placeholder = true %}
+        {% elsif avatar_value == site.author.avatar %}
+        {% assign use_person_placeholder = true %}
+        {% endif %}
+
+        {% if use_person_placeholder %}
+        <img loading="{{ loading }}" class="author-avatar-placeholder" src="{{ '/assets/images/icons/person.png' | relative_url }}" alt="No profile photo for {{ author.name }}">
         {% else %}
-        <img loading="{{ loading }}" src="{{ site.author.avatar | relative_url }}" alt="An image of {{ author.name }}">
+        <img loading="{{ loading }}" src="{{ author.avatar | relative_url }}" alt="An image of {{ author.name }}">
         {% endif %}
     </div>
 
@@ -19,16 +29,26 @@
             {% endif %}
         </b>
 
-        {% if include.alumni and include.role_to_render %}
+        {% if include.role_to_render and (include.role_to_render.start_date or include.role_to_render.end_date) %}
         <div class="author-dates">
             {% if include.role_to_render.start_date %}{{ include.role_to_render.start_date }}{% endif %}{% if include.role_to_render.start_date and include.role_to_render.end_date %} – {% endif %}{% if include.role_to_render.end_date %}{{ include.role_to_render.end_date }}{% endif %}
         </div>
         {% endif %}
 
         {% if include.role_to_render %}
+        {% assign advisor_value = include.role_to_render.advisor | default: "" | strip %}
+        {% assign title_value = include.role_to_render.title | default: "" | strip %}
+        {% assign title_down = title_value | downcase %}
+        {% assign advisor_down = advisor_value | downcase %}
 
+        {% if include.role_to_render.type != "Postdoc" and title_value != "" and title_down != "_no response_" and title_down != "no response" %}
         <div class="author-advisor">
-            {% if include.role_to_render.type == "Student" %}
+            <b>{{ title_value }}</b>
+        </div>
+        {% endif %}
+
+        {% if include.role_to_render.type == "Student" and advisor_value != "" and advisor_down != "_no response_" and advisor_down != "no response" %}
+        <div class="author-advisor">
             <b>
                 {% if include.role_to_render.title == "Intern" %}
                 Hosted by:
@@ -36,11 +56,9 @@
                 Advised by:
                 {% endif %}
             </b>
-            {{ include.role_to_render.advisor }}
-            {% else %}
-            <b>{{ include.role_to_render.title }}</b>
-            {% endif %}
+            {{ advisor_value }}
         </div>
+        {% endif %}
         {% endif %}
 
         {% if author.bio %}
@@ -55,11 +73,13 @@
         </div>
         {% endif %}
 
-        {% unless include.render_current_role %}
+        {% assign current_title_value = author.current_role.title | default: "" | strip %}
+        {% assign current_title_down = current_title_value | downcase %}
+        {% if include.render_current_role == false and include.alumni != true and current_title_value != "" and current_title_down != "_no response_" and current_title_down != "no response" %}
         <div class="author-note">
             <b>➡️ </b> {{ author.current_role.title }}
         </div>
-        {% endunless %}
+        {% endif %}
 
         {% if author.social_media_links %}
         <div class="author-links">

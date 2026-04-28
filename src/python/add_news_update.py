@@ -20,6 +20,13 @@ def _build_filename(parsed):
     return f"{date_str}-{slug}.md"
 
 
+def _yaml_quote(value: str) -> str:
+    """Return a YAML-safe double-quoted scalar."""
+    escaped = value.replace("\\", "\\\\").replace('"', '\\"')
+    escaped = escaped.replace("\n", " ").strip()
+    return f'"{escaped}"'
+
+
 def _build_content(parsed):
     title = parsed["title"].strip()
     date_str = parsed["date"].strip()
@@ -28,10 +35,10 @@ def _build_content(parsed):
 
     front_matter = dedent(
         f"""---
-        title: {title}
+        title: {_yaml_quote(title)}
         date: {date_str}
         categories: News
-        excerpt: {summary}
+        excerpt: {_yaml_quote(summary)}
         ---
         """
     )

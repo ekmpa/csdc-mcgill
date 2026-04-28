@@ -1,7 +1,7 @@
-<section class="csdc-section csdc-home-research">
+<section class="csdc-section csdc-home-research{% if include.extra_class %} {{ include.extra_class }}{% endif %}">
   <div class="csdc-container">
     {% if include.show_heading != false %}
-    <h2>Our Research Focus</h2>
+    <h2>{{ include.heading_text | default: "Our Research Focus" }}</h2>
     {% endif %}
     <div class="csdc-pillars csdc-home-pillars-row">
       <article class="csdc-card" style="border-top:4px solid #c8102e;">

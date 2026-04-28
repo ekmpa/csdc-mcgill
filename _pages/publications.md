@@ -14,11 +14,12 @@ show_taxonomy_posts: false
 
 <section class="csdc-section csdc-page-header">
     <div class="csdc-container">
+        <p class="csdc-kicker"><span class="csdc-red">Research Focus and Publications</span></p>
         <h1 id="page-title" class="page__title csdc-page-title">Research</h1>
     </div>
 </section>
 
-{% include csdc-research-pillars.html show_publications_link=false show_heading=false %}
+{% include csdc-research-pillars.html show_publications_link=false show_heading=true heading_text="Research Focus" extra_class="csdc-publications-focus-section" %}
 
 <section class="csdc-section">
     <div class="csdc-container">

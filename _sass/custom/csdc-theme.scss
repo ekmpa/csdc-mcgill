@@ -200,7 +200,7 @@ a.csdc-red:focus {
 }
 
 .csdc-news-item {
-  background: #ffffff;
+  background: #f6f7f9;
   border: 1px solid #e5e7eb;
   border-radius: 0.6rem;
   padding: 0.85rem 1rem;
@@ -270,6 +270,16 @@ a.csdc-red:focus {
   line-height: 1;
 }
 
+.csdc-news-updates-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.csdc-news-events-section {
+  margin-top: 3.4rem;
+  margin-bottom: 3.6rem;
+}
+
 .csdc-pillars {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -313,8 +323,13 @@ a.csdc-red:focus {
   text-transform: uppercase;
 }
 
+.csdc-home-events {
+  margin-bottom: 3.2rem;
+}
+
 .csdc-team-banner {
-  margin-top: 0.9rem;
+  margin-top: 2.2rem;
+  margin-bottom: 2.4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -390,8 +405,14 @@ a.csdc-red:focus {
   color: #1e3a5f;
 }
 
-.csdc-home-research {
-  margin-bottom: 2.25rem;
+.csdc-home-research:not(.csdc-publications-focus-section) {
+  margin-top: 4.4rem;
+  margin-bottom: 4.8rem;
+}
+
+.csdc-publications-focus-section {
+  margin-top: 5.2rem;
+  margin-bottom: 5.4rem;
 }
 
 .csdc-home-research .csdc-container {
@@ -408,6 +429,16 @@ a.csdc-red:focus {
   width: 100%;
   max-width: 22rem;
   justify-self: center;
+}
+
+.csdc-home-research:not(.csdc-publications-focus-section) .csdc-home-pillars-row .csdc-card {
+  background: rgba(254, 202, 202, 0.12);
+  border: 1px solid #fecaca;
+}
+
+.csdc-publications-focus-section .csdc-home-pillars-row .csdc-card {
+  background: rgba(254, 202, 202, 0.12);
+  border: 1px solid #fecaca;
 }
 
 .csdc-arrow-link {
@@ -586,7 +617,7 @@ a.csdc-red:focus {
 
 .csdc-calendar-note {
   max-width: 920px;
-  margin: 0.6rem auto 0;
+  margin: 1rem auto 4.2rem;
   color: #6b7280;
 }
 
