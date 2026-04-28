@@ -672,6 +672,12 @@ Alan Nemirovski:
   orcid: 0009-0009-3106-9426
   avatar: /assets/images/bio/Alan Nemirovski.jpg
   auto_update_publications: true
+Ka U Ng:
+  name: Ka U Ng
+  current_role:
+    type: Student
+    title: PHD
+    advisor: Thomas Soehl
 Kellin Pelrine:
   name: Kellin Pelrine
   current_role:
