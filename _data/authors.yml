@@ -454,6 +454,13 @@ Luis Alvarez Jimenez:
     advisor: Aaron Erlich
     affiliation: McGill University
   auto_update_publications: false
+Sakeef Karim:
+  name: Sakeef Karim
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Thomas Soehl
+  auto_update_publications: false
 Jordan Katz:
   name: Jordan Katz
   current_role:
