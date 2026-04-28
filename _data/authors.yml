@@ -368,6 +368,11 @@ Sarah Freund:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Holly Garnett:
+  name: Holly Garnett
+  current_role:
+    type: Student
+    title: PhD
 Lara Gauthier:
   name: Lara Gauthier
   current_role:
