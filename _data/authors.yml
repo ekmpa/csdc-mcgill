@@ -869,6 +869,12 @@ Jeremy Rappel:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
+Colin Scott:
+  name: Colin Scott
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Dietlind Stolle
 Daniel Sailofsky:
   name: Daniel Sailofsky
   current_role:
