@@ -621,6 +621,13 @@ Terhas Ghebretecle:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+Dan Goldberg:
+  name: Dan Goldberg
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 Birte Gundelach:
   name: Birte Gundelach
   current_role:
