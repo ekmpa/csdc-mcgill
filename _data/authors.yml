@@ -171,6 +171,12 @@ Rafael Campos-Gottardo:
   social_media_links:
   - label: Website
     url: https://rafael-campos-gottardo.github.io
+Annie Chen:
+  name: Annie Chen
+  current_role:
+    type: Student
+    title: MA
+    advisor: Aaron Erlich
 Philippe Chassé:
   name: Philippe Chassé
   current_role:
