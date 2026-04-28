@@ -352,6 +352,12 @@ Sarah Freund:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Lara Gauthier:
+  name: Lara Gauthier
+  current_role:
+    type: Postdoc
+    title: _No response_
+    advisor: Thomas Soehl
 Etienne Gagnon:
   name: Etienne Gagnon
   current_role:
