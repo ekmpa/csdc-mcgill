@@ -509,6 +509,11 @@ Terhas Ghebretecle:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+Elizabeth Goodyear-Grant:
+  name: Elizabeth Goodyear-Grant
+  current_role:
+    type: Student
+    title: Doctoral Student
 Allison Harell:
   name: Allison Harell
   current_role:
