@@ -794,6 +794,11 @@ Victoria Mahon:
   orcid: 0009-0002-3577-3217
   avatar: /assets/images/bio/Victoria Mahon.jpg
   auto_update_publications: true
+Nick Maturo:
+  name: Nick Maturo
+  current_role:
+    type: Student
+    title: MA
 Julia Maynard:
   name: Julia Maynard
   current_role:
