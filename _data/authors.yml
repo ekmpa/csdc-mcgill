@@ -719,6 +719,12 @@ Ezelbahar Metin:
     affiliation: McGill University
   orcid: 0009-0002-4832-666X
   auto_update_publications: true
+Mahsa Moosavi:
+  name: Mahsa Moosavi
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Jeremy Clark
 Mahdi Nejadgholi:
   name: Mahdi Nejadgholi
   current_role:
