@@ -1626,6 +1626,12 @@ Jennifer Suliteanu:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=8XWdG_YAAAAJ&hl=en&oi=ao
+Neal Thomas:
+  name: Neal Thomas
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
 Hamid Ali Tiwana:
   name: Hamid Ali Tiwana
   alumni: true
