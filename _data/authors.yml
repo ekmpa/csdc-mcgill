@@ -794,6 +794,11 @@ Ezelbahar Metin:
     affiliation: McGill University
   orcid: 0009-0002-4832-666X
   auto_update_publications: true
+Anaïs Légaré Morasse:
+  name: Anaïs Légaré Morasse
+  current_role:
+    type: Student
+    title: MA
 Mahsa Moosavi:
   name: Mahsa Moosavi
   current_role:
