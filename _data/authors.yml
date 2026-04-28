@@ -472,6 +472,12 @@ Terhas Ghebretecle:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+Birte Gundelach:
+  name: Birte Gundelach
+  current_role:
+    type: Student
+    title: PhD
+  auto_update_publications: false
 Claire Girard:
   name: Claire Girard
   current_role:
