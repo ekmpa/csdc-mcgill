@@ -281,6 +281,13 @@ Garrett Evans:
     advisor: Nicolas Ajzenman
     affiliation: McGill University
   auto_update_publications: false
+Andréa Febres-Gagné:
+  name: Andréa Febres-Gagné
+  current_role:
+    type: Student
+    title: MA
+    advisor: Éric Bélanger
+  auto_update_publications: false
 Aarash Feizi:
   name: Aarash Feizi
   current_role:
