@@ -1291,6 +1291,11 @@ Erika De Torres:
     type: Student
     title: Master's Student
   auto_update_publications: false
+Marc Trussler:
+  name: Marc Trussler
+  current_role:
+    type: Student
+    title: MA
 David Trotter:
   name: David Trotter
   current_role:
