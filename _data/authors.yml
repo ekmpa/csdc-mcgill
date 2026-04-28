@@ -352,6 +352,12 @@ Sarah Freund:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+Etienne Gagnon:
+  name: Etienne Gagnon
+  current_role:
+    type: Student
+    title: MA
+    advisor: Aaron Erlich
 Daniel St. Germaine:
   name: Daniel St. Germaine
   current_role:
