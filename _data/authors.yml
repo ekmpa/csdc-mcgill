@@ -272,6 +272,11 @@ Rebecca Daviddi:
     affiliation: McGill University
   orcid: 0009-0009-7176-0115
   auto_update_publications: true
+Clare Devereux:
+  name: Clare Devereux
+  current_role:
+    type: Student
+    title: MA
 Merve Erdilmen:
   name: Merve Erdilmen
   current_role:
