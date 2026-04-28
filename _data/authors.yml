@@ -904,6 +904,12 @@ Katerina McMulen:
     advisor: Aaron Erlich
     affiliation: McGill University
   auto_update_publications: false
+Eric Merkley:
+  name: Eric Merkley
+  current_role:
+    type: Student
+    title: MA
+    advisor: Éric Bélanger
 Denver McNeney:
   name: Denver McNeney
   current_role:
