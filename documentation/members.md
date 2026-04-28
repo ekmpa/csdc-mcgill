@@ -16,7 +16,6 @@ John Doe:  # Your full name; this will be used for post `author`
   note: "Co-advised by Amasa L." # Additional notes (optional)
   alumni: false # Whether the new member is an alumni
   new_role: "Professing at Leland Junior S. University" # If an alumni, their new role
-  auto_update_publications: false. # Whether to automatically look for new papers published by this author every 2 weeks
   links:
     - label: "Website"
       url: "https://john-doe.github.io/" # Link to website
