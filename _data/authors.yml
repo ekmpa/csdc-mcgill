@@ -323,6 +323,12 @@ Kefan Chen:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=AzVYNOAAAAAJ&hl=en&oi=ao
+Ellen Claes:
+  name: Ellen Claes
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
 Sarah Ciaglia:
   name: Sarah Ciaglia
   current_role:
