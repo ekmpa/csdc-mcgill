@@ -1136,6 +1136,13 @@ Jeremy Rappel:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
+Tim Reeskens:
+  name: Tim Reeskens
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 
 Joseph Sannicandro:
   name: Joseph Sannicandro
