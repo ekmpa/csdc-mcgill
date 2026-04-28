@@ -234,6 +234,12 @@ Rebecca Daviddi:
     affiliation: McGill University
   orcid: 0009-0009-7176-0115
   auto_update_publications: true
+Didem Demirag:
+  name: Didem Demirag
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Jeremy Clark
 Natalie Delmonte:
   name: Natalie Delmonte
   current_role:
