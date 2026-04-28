@@ -893,6 +893,11 @@ Jeremy Rappel:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
+Cassandra Ryan:
+  name: Cassandra Ryan
+  current_role:
+    type: Student
+    title: MA
 Colin Scott:
   name: Colin Scott
   current_role:
