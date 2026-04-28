@@ -251,6 +251,11 @@ Rebecca Daviddi:
     affiliation: McGill University
   orcid: 0009-0009-7176-0115
   auto_update_publications: true
+Merve Erdilmen:
+  name: Merve Erdilmen
+  current_role:
+    type: Student
+    title: MA
 William East:
   name: William East
   current_role:
