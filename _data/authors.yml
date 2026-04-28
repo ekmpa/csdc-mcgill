@@ -574,6 +574,11 @@ Maya Krishnan:
     advisor: Eran Shor
     affiliation: McGill University
   auto_update_publications: false
+Sarah Lebeau:
+  name: Sarah Lebeau
+  current_role:
+    type: Student
+    title: MA
 Mathieu Lavigne:
   name: Mathieu Lavigne
   current_role:
