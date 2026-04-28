@@ -368,6 +368,12 @@ Rebecca Daviddi:
     affiliation: McGill University
   orcid: 0009-0009-7176-0115
   auto_update_publications: true
+Thomas Didier:
+  name: Thomas Didier
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
 Natalie Delmonte:
   name: Natalie Delmonte
 Clare Devereux:
