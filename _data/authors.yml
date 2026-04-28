@@ -157,8 +157,13 @@ Rafael Campos-Gottardo:
   social_media_links:
   - label: Website
     url: https://rafael-campos-gottardo.github.io
+<<<<<<< gh-actions/process-form-issue-483-1777254778
+Yvonne Chang:
+  name: Yvonne Chang
+=======
 Ana Canedo:
   name: Ana Canedo
+>>>>>>> main
   current_role:
     type: Student
     title: PHD
