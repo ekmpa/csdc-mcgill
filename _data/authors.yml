@@ -501,6 +501,16 @@ Terhas Ghebretecle:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+Allison Harell:
+  name: Allison Harell
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
+Ian Van Haren:
+  name: Ian Van Haren
 Andrew Gibson:
   name: Andrew Gibson
 Adela Gotz:
