@@ -192,6 +192,11 @@ Kefan Chen:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=AzVYNOAAAAAJ&hl=en&oi=ao
+Costin Ciobanu:
+  name: Costin Ciobanu
+  current_role:
+    type: Student
+    title: PhD
 Ethan Clow:
   name: Ethan Clow
   current_role:
