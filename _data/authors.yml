@@ -470,6 +470,13 @@ Jordan Katz:
     affiliation: McGill University
   avatar: /assets/images/bio/Jordan Katz.jpg
   auto_update_publications: false
+Dilse Kaygisiz:
+  name: Dilse Kaygisiz
+  current_role:
+    type: Student
+    title: MA
+    advisor: Aaron Erlich
+  auto_update_publications: false
 Khaoula El Khalil:
   name: Khaoula El Khalil
   current_role:
