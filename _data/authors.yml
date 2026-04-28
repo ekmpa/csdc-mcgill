@@ -328,6 +328,13 @@ Ian Van Haren:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=_0j4tPAAAAAJ
+Ian Van Haren 2:
+  name: Ian Van Haren
+  current_role:
+    type: Student
+    title: phd
+    advisor: Thomas Soehl
+  auto_update_publications: false
 Eric Hehman:
   name: Eric Hehman
   current_role:
