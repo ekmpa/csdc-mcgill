@@ -1247,6 +1247,12 @@ Jeremy Rappel:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
+Ayanna Roberts:
+  name: Ayanna Roberts
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
 Marie-Pierre Rouette:
   name: Marie-Pierre Rouette
   current_role:
