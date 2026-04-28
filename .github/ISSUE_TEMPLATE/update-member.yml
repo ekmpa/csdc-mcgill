@@ -1,6 +1,6 @@
-name: Update member profile 
+name: Update member profile
 description: |
-  Update a Center member's profile.
+  Update a Centre member profile.
 title: "[Update member]"
 labels: ["automatic-update-member"]
 assignees:
@@ -9,9 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        *Only* fill out the required fields and the fields that you want to modify. Leave everything else blank.
-        
-        When updating a profile, it will match the profile with the same full `name`. If multiple people have the same full name, it will match the first one encountered. In this case, you might want to to either make the change manually or move an older profile to the bottom (both require editing the YAML file).
+        Fill out the required fields and only the fields you want to modify. Leave everything else blank.
 
         This form will automatically generate a PR that will be reviewed by the maintainers.
   
@@ -28,7 +26,7 @@ body:
     id: alumni
     attributes:
       label: "Member Status"
-      description: "Is this person a current member of the Centre, or an alumni / past member? Leave blank to keep unchanged."
+      description: "Is this person a current member of the Centre, or an alumni / past member?"
       multiple: false
       options:
         - "Current Member"
@@ -40,7 +38,7 @@ body:
     id: current_role-start_date
     attributes:
       label: "Start Date"
-      description: "When did they join the Centre? e.g. Fall 2024, 2022, January 2023. Leave blank to keep unchanged."
+      description: "When did they join the Centre? e.g. Fall 2024, 2022, January 2023"
       placeholder: "Fall 2024"
     validations:
       required: false
@@ -69,26 +67,8 @@ body:
     id: bio
     attributes:
       label: "Bio"
-      description: "A description of the lab member in one sentence (or less than 10 words)."
-      placeholder: "Works on Artificial Generic Intelligence"
-  
-  - type: input
-    id: orcid
-    attributes:
-      label: "ORCID"
-      description: "Your ORCID identifier (e.g. 0000-0002-1825-0097). Used to fetch publications via OpenAlex."
-      placeholder: "0000-0002-1825-0097"
-    validations:
-      required: false
-
-  - type: input
-    id: openalex_id
-    attributes:
-      label: "OpenAlex ID (Optional)"
-      description: "Your [OpenAlex](https://openalex.org) author ID or URL (e.g. A5023888391 or https://openalex.org/A5023888391)."
-      placeholder: "A5023888391"
-    validations:
-      required: false
+      description: "A short description (1 paragraph) of the member."
+      placeholder: "Works on Artificial General Intelligence"
 
   - type: dropdown
     id: current_role-type
@@ -105,13 +85,22 @@ body:
         - "Unaffiliated"
     validations:
       required: false
-  
+
   - type: input
     id: current_role-title
     attributes:
       label: "Current Role Title"
-      description: For students, please choose between "PhD", "Master", "Undergraduate", "Intern".
-      placeholder: "PhD"
+      description: "Role title (e.g., Professor, Director, Administrator, Postdoc, PhD)."
+      placeholder: "Professor"
+    validations:
+      required: false
+
+  - type: "input"
+    id: current_role-affiliation
+    attributes:
+      label: "Current Role Affiliation"
+      description: "Affiliation"
+      placeholder: "McGill, Université de Montréal"
     validations:
       required: false
 
@@ -123,13 +112,22 @@ body:
       placeholder: "John Doe Sr., Jane Doe"
     validations:
       required: false
-
-  - type: "input"
-    id: current_role-affiliation
+  
+  - type: input
+    id: orcid
     attributes:
-      label: "Current Role Affiliation"
-      description: "Affiliation"
-      placeholder: "McGill, Université de Montréal"
+      label: "ORCID"
+      description: "Your ORCID identifier (e.g. 0000-0002-1825-0097). Used to fetch publications via OpenAlex."
+      placeholder: "0000-0002-1825-0097"
+    validations:
+      required: false
+
+  - type: input
+    id: openalex_id
+    attributes:
+      label: "OpenAlex ID (Optional)"
+      description: "Your [OpenAlex](https://openalex.org) author ID or URL (e.g. A5023888391 or https://openalex.org/A5023888391)."
+      placeholder: "A5023888391"
     validations:
       required: false
 
@@ -157,66 +155,5 @@ body:
       label: "Website"
       description: "Full URL of the lab member's website"
       placeholder: "https://john-doe.github.io/"
-    validations:
-      required: false
-
-  - type: markdown
-    attributes:
-      value: |
-        With the limits of GitHub Issues, you can only add / update one past role at a time.
-  
-  - type: dropdown
-    id: past_role-type
-    attributes:
-      label: "Past Role Type"
-      description: What's the past role of this person?
-      multiple: false
-      options:
-        - "Faculty / Professor"
-        - "Staff"
-        - "Postdoc"
-        - "Student"
-        - "Collaborator"
-    validations:
-      required: false
-  
-  - type: input
-    id: past_role-title
-    attributes:
-      label: "Past Role Title"
-      description: What's the past title of this person? For students, please choose between ["PhD, "Master", "Undergraduate", "Intern"]
-      placeholder: "PhD"
-    validations:
-      required: false
-
-  - type: "input"
-    id: past_role-affiliation
-    attributes:
-      label: "Past Role Affiliation"
-      description: "Affiliation"
-      placeholder: "Mila, McGill1"
-    validations:
-      required: false
-  
-  - type: "dropdown"
-    id: past_role-research-directions
-    attributes:
-      label: "Past Role Research Directions"
-      description: "What research direction are you in"
-      multiple: true
-      options:
-        - "online-toxicity"
-        - "poli-sci"
-        - "online-crime"
-        - "temporal-graph-learning"
-    validations:
-      required: false
-
-  - type: input
-    id: past_role-advisor
-    attributes:
-      label: "Advisor"
-      description: "For students, who was/were the advisor(s)? Separate multiple names with a comma."
-      placeholder: "John Doe Sr., Jane Doe"
     validations:
       required: false
