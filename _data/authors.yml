@@ -1200,6 +1200,11 @@ Zachary Yang:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=ljOxbowAAAAJ
+Ali Zeren:
+  name: Ali Zeren
+  current_role:
+    type: Student
+    title: PhD
 Chris Yurris:
   name: Chris Yurris
   current_role:
