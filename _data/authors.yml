@@ -182,10 +182,13 @@ Juan Pablo Luna:
     url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
 Farimah Poursafaei:
   name: Farimah Poursafaei
+  alumni: true
   current_role:
     type: Postdoc
     title: Postdoctoral fellow
     affiliation: McGill University, Mila - Quebec AI Institute
+    start_date: "2022"
+    end_date: "2024"
   bio: Farimah Poursafaei is a Postdoc Fellow at McGill University and Mila, Quebec
     AI Institute. Her research interests include dynamic graph representation learning,
     graph neural networks, graph machine learning, and real-world network data analysis.
