@@ -637,6 +637,12 @@ Ezelbahar Metin:
     affiliation: McGill University
   orcid: 0009-0002-4832-666X
   auto_update_publications: true
+Mahdi Nejadgholi:
+  name: Mahdi Nejadgholi
+  current_role:
+    type: Student
+    title: MA
+    advisor: Jeremy Clark
 Philippe Mongrain:
   name: Philippe Mongrain
   current_role:
