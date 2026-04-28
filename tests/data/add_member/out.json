@@ -2,7 +2,6 @@
     "name": "John Doe",
     "avatar": "/tests/scratch/assets/images/bio/John Doe.jpg",
     "orcid": "0000-0002-1825-0097",
-    "auto_update_publications": true,
     "current_role": {
         "type": "Student",
         "title": "PhD",
