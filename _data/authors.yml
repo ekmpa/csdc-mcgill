@@ -532,6 +532,11 @@ Luis Alvarez Jimenez:
     advisor: Aaron Erlich
     affiliation: McGill University
   auto_update_publications: false
+Janine Kanters:
+  name: Janine Kanters
+  current_role:
+    type: Student
+    title: MA
 Sakeef Karim:
   name: Sakeef Karim
   current_role:
