@@ -234,6 +234,12 @@ Rebecca Daviddi:
     affiliation: McGill University
   orcid: 0009-0009-7176-0115
   auto_update_publications: true
+Chris Erl:
+  name: Chris Erl
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Benjamin Forest
 Didem Demirag:
   name: Didem Demirag
   current_role:
