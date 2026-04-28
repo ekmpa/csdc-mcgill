@@ -18,14 +18,18 @@ Nicolas Ajzenman:
     url: https://scholar.google.ca/citations?user=MdFqDJkAAAAJ&hl=en&oi=ao
 Hubert Alain:
   name: Hubert Alain
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2015"
 Fagar Al-Sayed:
   name: Fagar Al-Sayed
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2025"
     advisor: Dietlind Stolle
   auto_update_publications: false
 Sahar Ramazan Ali:
@@ -50,9 +54,11 @@ Brianne Anderson:
   auto_update_publications: false
 Henry Atkins:
   name: Henry Atkins
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2022"
     advisor: Aaron Erlich
   auto_update_publications: false
 Borna Atrchian:
@@ -65,9 +71,11 @@ Borna Atrchian:
   auto_update_publications: false
 Ayhan Eren Babayigit:
   name: Ayhan Eren Babayigit
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2025"
     advisor: Aaron Erlich
   auto_update_publications: false
 Leonardo Baccini:
@@ -88,19 +96,25 @@ Leonardo Baccini:
     url: https://scholar.google.com/citations?user=t621mGQAAAAJ&hl=en&oi=ao
 Maxime Barbeau:
   name: Maxime Barbeau
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2016"
 Edana Beauvais:
   name: Edana Beauvais
+  alumni: true
   current_role:
     type: Postdoc
     title: _No response_
+    end_date: "2019"
 Olivier Bergeron-Boutin:
   name: Olivier Bergeron-Boutin
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2024"
     advisor: Dietlind Stolle
   auto_update_publications: false
 Elissa Berwick:
@@ -120,14 +134,18 @@ Elissa Berwick:
     url: https://www.elissaberwick.com/
 Danielle Bohonos:
   name: Danielle Bohonos
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2023"
 Maxime Blanchard:
   name: Maxime Blanchard
+  alumni: true
   current_role:
     type: Student
     title: PHD
+    end_date: "2024"
     advisor: Dietlind Stolle
   auto_update_publications: false
 Arianna Bondi:
@@ -142,9 +160,11 @@ Arianna Bondi:
   auto_update_publications: true
 Aengus Bridgman:
   name: Aengus Bridgman
+  alumni: true
   current_role:
     type: Student
     title: PHD
+    end_date: "2023"
     advisor: Dietlind Stolle
   auto_update_publications: false
 Éric Bélanger:
@@ -168,14 +188,18 @@ Aengus Bridgman:
     url: https://scholar.google.com/citations?hl=en&user=CuFbthUAAAAJ
 Xavier Campbell:
   name: Xavier Campbell
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2015"
 Albert Manuel Orozco Camacho:
   name: Albert Manuel Orozco Camacho
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2023"
     advisor: Reihaneh Rabbany
   auto_update_publications: false
 Rafael Campos-Gottardo:
@@ -193,23 +217,29 @@ Rafael Campos-Gottardo:
     url: https://rafael-campos-gottardo.github.io
 Annie Chen:
   name: Annie Chen
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2020"
     advisor: Aaron Erlich
 Philippe Chassé:
   name: Philippe Chassé
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2021"
     advisor: Éric Bélanger
 Yvonne Chang:
   name: Yvonne Chang
 Ana Canedo:
   name: Ana Canedo
+  alumni: true
   current_role:
     type: Student
     title: PHD
+    end_date: "2023"
     advisor: Thomas Soehl
   auto_update_publications: false
 Kefan Chen:
@@ -226,20 +256,26 @@ Kefan Chen:
     url: https://scholar.google.com/citations?user=AzVYNOAAAAAJ&hl=en&oi=ao
 Chris Chimm:
   name: Chris Chimm
+  alumni: true
   current_role:
     type: Student
     title: PhD
+    end_date: "2016"
     advisor: Éric Bélanger
 Costin Ciobanu:
   name: Costin Ciobanu
+  alumni: true
   current_role:
     type: Student
     title: PhD
+    end_date: "2022"
 Ethan Clow:
   name: Ethan Clow
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2023"
     affiliation: Dietlind Stolle
   auto_update_publications: false
 Guila Cohen:
@@ -258,9 +294,11 @@ Maxime Coulon-Hamelin:
     advisor: Éric Bélanger
 Jacob Danovitch:
   name: Jacob Danovitch
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2023"
     advisor: Reihaneh Rabbany
   auto_update_publications: false
 Rebecca Daviddi:
@@ -274,19 +312,25 @@ Rebecca Daviddi:
   auto_update_publications: true
 Clare Devereux:
   name: Clare Devereux
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2015"
 Merve Erdilmen:
   name: Merve Erdilmen
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2018"
 William East:
   name: William East
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2019"
     advisor: Dietlind Stolle
 Chris Erl:
   name: Chris Erl
@@ -302,9 +346,11 @@ Didem Demirag:
     advisor: Jeremy Clark
 Natalie Delmonte:
   name: Natalie Delmonte
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2024"
     advisor: Elissa Berwick
   auto_update_publications: false
 Aaron Erlich:
@@ -337,9 +383,11 @@ Garrett Evans:
   auto_update_publications: false
 Fernando Feitosa:
   name: Fernando Feitosa
+  alumni: true
   current_role:
     type: Postdoc
     title: _No response_
+    end_date: "2021"
 Andréa Febres-Gagné:
   name: Andréa Febres-Gagné
   current_role:
@@ -361,9 +409,11 @@ Aarash Feizi:
     url: https://scholar.google.com/citations?hl=en&user=wdZdCMoAAAAJ
 Benjamin Ferland:
   name: Benjamin Ferland
+  alumni: true
   current_role:
     type: Student
     title: PhD
+    end_date: "2015"
 Ina Filkobski:
   name: Ina Filkobski
   current_role:
@@ -393,40 +443,52 @@ Benjamin Forest:
     url: https://scholar.google.com/citations?user=tLfKPpgAAAAJ&hl=en&oi=ao
 Sarah Freund:
   name: Sarah Freund
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    end_date: "2005"
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
 Holly Garnett:
   name: Holly Garnett
+  alumni: true
   current_role:
     type: Student
     title: PhD
+    end_date: "2017"
 Lara Gauthier:
   name: Lara Gauthier
+  alumni: true
   current_role:
     type: Postdoc
     title: _No response_
+    end_date: "2020"
     advisor: Thomas Soehl
 Etienne Gagnon:
   name: Etienne Gagnon
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2020"
     advisor: Aaron Erlich
 Daniel St. Germaine:
   name: Daniel St. Germaine
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2021"
     advisor: Dietlind Stolle
 Thomas Gareau-Paquette:
   name: Thomas Gareau-Paquette
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2024"
     advisor: Éric Bélanger
   auto_update_publications: false
 Kassandra Gervasi:
@@ -450,16 +512,20 @@ Giovanni Guiga:
   name: Giovanni Guiga
 Gaby Gonzalez-Sirois:
   name: Gaby Gonzalez-Sirois
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2019"
     advisor: Éric Bélanger
   auto_update_publications: false
 Ian Van Haren:
   name: Ian Van Haren
+  alumni: true
   current_role:
     type: Student
     title: Doctoral Student
+    end_date: "2023"
     advisor: Thomas Soehl
     affiliation: McGill University
   orcid: 0000-0002-1818-7577
@@ -496,14 +562,18 @@ Eric Hehman:
     url: https://scholar.google.com/citations?hl=en&user=n8IeMMEAAAAJ
 Shaden Hetu-Frankel:
   name: Shaden Hetu-Frankel
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2022"
 John Hicks:
   name: John Hicks
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2024"
     advisor: Leonardo Baccini
   auto_update_publications: false
 Esme Hood:
@@ -517,9 +587,11 @@ Esme Hood:
   auto_update_publications: true
 Sarah Houde:
   name: Sarah Houde
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    end_date: "2005"
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
@@ -539,9 +611,11 @@ Anne Imouza:
 
 Olivier Jacques:
   name: Olivier Jacques
+  alumni: true
   current_role:
     type: Student
     title: PhD
+    end_date: "2025"
     advisor: Dietlind Stolle
   auto_update_publications: false
 Luis Alvarez Jimenez:
@@ -554,14 +628,18 @@ Luis Alvarez Jimenez:
   auto_update_publications: false
 Janine Kanters:
   name: Janine Kanters
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2016"
 Sakeef Karim:
   name: Sakeef Karim
+  alumni: true
   current_role:
     type: Student
     title: PhD
+    end_date: "2022"
     advisor: Thomas Soehl
   auto_update_publications: false
 Jordan Katz:
@@ -575,16 +653,20 @@ Jordan Katz:
   auto_update_publications: false
 Dilse Kaygisiz:
   name: Dilse Kaygisiz
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2022"
     advisor: Aaron Erlich
   auto_update_publications: false
 Khaoula El Khalil:
   name: Khaoula El Khalil
+  alumni: true
   current_role:
     type: Student
     title: Doctoral Students
+    end_date: "2022"
     advisor: Éric Bélanger
     affiliation: McGill University
   avatar: /assets/images/bio/Khaoula El Khalil.jpg
@@ -612,25 +694,33 @@ Maya Krishnan:
   auto_update_publications: false
 Sarah Lebeau:
   name: Sarah Lebeau
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2017"
 Mathieu Lavigne:
   name: Mathieu Lavigne
+  alumni: true
   current_role:
     type: Student
     title: PHD
+    end_date: "2023"
     advisor: Éric Bélanger
 Freya Lambrechts:
   name: Freya Lambrechts
+  alumni: true
   current_role:
     type: Student
     title: _No response_
+    end_date: "2023"
 Zoé Hyman Levy:
   name: Zoé Hyman Levy
+  alumni: true
   current_role:
     type: Student
     title: PHD
+    end_date: "2024"
     advisor: Eran Shor
   auto_update_publications: false
 Qinggang Li:
@@ -675,9 +765,11 @@ Travis Lim:
     url: https://scholar.google.com/citations?hl=en&user=6mSqPZsAAAAJ
 Natalia Lis:
   name: Natalia Lis
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    end_date: "2005"
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
@@ -768,20 +860,26 @@ Juan Pablo Luna:
     url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
 Justin Lutz:
   name: Justin Lutz
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2015"
 Félix Lévesque:
   name: Félix Lévesque
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2024"
     advisor: Éric Bélanger
 Pratik Mahajan:
   name: Pratik Mahajan
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2024"
     advisor: Aaron Erlich
   auto_update_publications: false
 Victoria Mahon:
@@ -796,36 +894,48 @@ Victoria Mahon:
   auto_update_publications: true
 Nick Maturo:
   name: Nick Maturo
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2015"
 Julia Maynard:
   name: Julia Maynard
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2017"
 Brett Manzer:
   name: Brett Manzer
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2018"
     advisor: Éric Bélanger
 Andrew McCormack:
   name: Andrew McCormack
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2019"
     advisor: Dietlind Stolle
 Zachary Marshall:
   name: Zachary Marshall
+  alumni: true
   current_role:
     type: Student
     title: PHD
+    end_date: "2023"
 Abigail Chaya Maza:
   name: Abigail Chaya Maza
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2023"
     advisor: Thomas Soehl
   auto_update_publications: false
 Aiden McIlvaney:
@@ -847,9 +957,11 @@ Katerina McMulen:
   auto_update_publications: false
 Denver McNeney:
   name: Denver McNeney
+  alumni: true
   current_role:
     type: Student
     title: PhD
+    end_date: "2019"
     advisor: Dietlind Stolle
   auto_update_publications: false
 Ezelbahar Metin:
@@ -863,20 +975,26 @@ Ezelbahar Metin:
   auto_update_publications: true
 Rosalie Nadeau:
   name: Rosalie Nadeau
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2018"
 Alexandre Miltsov:
   name: Alexandre Miltsov
+  alumni: true
   current_role:
     type: Student
     title: PhD
+    end_date: "2018"
     advisor: Eran Shor
 Anaïs Légaré Morasse:
   name: Anaïs Légaré Morasse
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2018"
 Mahsa Moosavi:
   name: Mahsa Moosavi
   current_role:
@@ -885,27 +1003,35 @@ Mahsa Moosavi:
     advisor: Jeremy Clark
 Mahdi Nejadgholi:
   name: Mahdi Nejadgholi
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2023"
     advisor: Jeremy Clark
 Philippe Mongrain:
   name: Philippe Mongrain
+  alumni: true
   current_role:
     type: Postdoc
     title: _No response_
+    end_date: "2023"
     advisor: Éric Bélanger
 Emma Myhre:
   name: Emma Myhre
+  alumni: true
   current_role:
     type: Student
     title: _No response_
+    end_date: "2023"
     advisor: Aaron Erlich
 Isadora Borges Monroy:
   name: Isadora Borges Monroy
+  alumni: true
   current_role:
     type: Student
     title: PHD
+    end_date: "2023"
     advisor: Dietlind Stolle
   auto_update_publications: false
 Alan Nemirovski:
@@ -920,27 +1046,35 @@ Alan Nemirovski:
   auto_update_publications: true
 Saewon Park:
   name: Saewon Park
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2019"
     advisor: Aaron Erlich
 Eugene Ofosu:
   name: Eugene Ofosu
+  alumni: true
   current_role:
     type: Student
     title: PHD
+    end_date: "2023"
     advisor: Eric Hehman
 Ka U Ng:
   name: Ka U Ng
+  alumni: true
   current_role:
     type: Student
     title: PHD
+    end_date: "2023"
     advisor: Thomas Soehl
 Kellin Pelrine:
   name: Kellin Pelrine
+  alumni: true
   current_role:
     type: Student
     title: PHD
+    end_date: "2025"
     advisor: Reihaneh Rabbany
   auto_update_publications: false
 Teresa Pian:
@@ -1025,32 +1159,42 @@ Jeremy Rappel:
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
 Nick Ruderman:
   name: Nick Ruderman
+  alumni: true
   current_role:
     type: Postdoc
     title: _No response_
+    end_date: "2019"
     advisor: Dietlind Stolle
 Cassandra Ryan:
   name: Cassandra Ryan
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2020"
 Colin Scott:
   name: Colin Scott
+  alumni: true
   current_role:
     type: Student
     title: PhD
+    end_date: "2024"
     advisor: Dietlind Stolle
 Daniel Sailofsky:
   name: Daniel Sailofsky
+  alumni: true
   current_role:
     type: Student
     title: PhD
+    end_date: "2022"
     advisor: Eran Shor
 Christopher Ross:
   name: Christopher Ross
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2023"
     advisor: Aaron Erlich
   auto_update_publications: false
 Sahar Omidi Shayegan:
@@ -1080,9 +1224,11 @@ Eran Shor:
     url: https://scholar.google.com/citations?user=vxVIFkIAAAAJ&hl=en&oi=ao
 Sula Sidnell-Green:
   name: Sula Sidnell-Green
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2015"
   auto_update_publications: false
 Harpeet Singh:
   name: Harpeet Singh
@@ -1107,9 +1253,11 @@ Harpeet Singh:
     url: https://scholar.google.com/citations?hl=en&user=jstFBx0AAAAJ
 Alan Michael Smith:
   name: Alan Michael Smith
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2022"
     advisor: Dietlind Stolle
   auto_update_publications: false
 Thomas Soehl:
@@ -1186,22 +1334,28 @@ Jennifer Suliteanu:
     url: https://scholar.google.com/citations?user=8XWdG_YAAAAJ&hl=en&oi=ao
 Hamid Ali Tiwana:
   name: Hamid Ali Tiwana
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2024"
     advisor: Aaron Erlich
   auto_update_publications: false
 Erika De Torres:
   name: Erika De Torres
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    end_date: "2003"
   auto_update_publications: false
 David Trotter:
   name: David Trotter
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2016"
     advisor: Éric Bélanger
   auto_update_publications: false
 Nicolas Vaxelaire:
@@ -1214,9 +1368,11 @@ Nicolas Vaxelaire:
   auto_update_publications: false
 Angelia Wagner:
   name: Angelia Wagner
+  alumni: true
   current_role:
     type: Postdoc
     title: _No response_
+    end_date: "2017"
   auto_update_publications: false
 Michelle Wang:
   name: Michelle Wang
@@ -1245,9 +1401,11 @@ Taisto Witt:
     url: https://scholar.google.com/citations?hl=en&user=0AYdib0AAAAJ
 Chih-lan Winnie Yang:
   name: Chih-lan Winnie Yang
+  alumni: true
   current_role:
     type: Student
     title: PHD
+    end_date: "2025"
     advisor: Eran Shor
   auto_update_publications: false
 Zachary Yang:
@@ -1264,24 +1422,32 @@ Zachary Yang:
     url: https://scholar.google.com/citations?hl=en&user=ljOxbowAAAAJ
 Jason R. Young:
   name: Jason R. Young
+  alumni: true
   current_role:
     type: Student
     title: PhD
+    end_date: "2015"
 Ali Zeren:
   name: Ali Zeren
+  alumni: true
   current_role:
     type: Student
     title: PhD
+    end_date: "2017"
 Chris Yurris:
   name: Chris Yurris
+  alumni: true
   current_role:
     type: Student
     title: MA
+    end_date: "2024"
     advisor: Éric Bélanger
 Julia Yingling:
   name: Julia Yingling
+  alumni: true
   current_role:
     type: Postdoc
     title: MA
+    end_date: "2025"
     advisor: Benjamin Forest
   auto_update_publications: false
