@@ -122,11 +122,6 @@ def format_parsed_content(parsed: Dict) -> Dict:
             else:
                 formatted[field] = value
 
-    # Auto-update is enabled whenever an ORCID or OpenAlex ID is present.
-    formatted["auto_update_publications"] = bool(
-        formatted.get("orcid") or formatted.get("openalex_id")
-    )
-
     # Format social media links
     social_links = format_social_media_links(parsed)
     if social_links:
@@ -143,11 +138,6 @@ def merge_profile_data(old_profile: Dict, new_profile: Dict) -> Dict:
     for field in ["bio", "note", "orcid", "openalex_id", "avatar"]:
         if field in new_profile:
             merged[field] = new_profile[field]
-
-    # Keep this derived from identifiers rather than user input.
-    merged["auto_update_publications"] = bool(
-        merged.get("orcid") or merged.get("openalex_id")
-    )
 
     # Update current role if provided
     if "current_role" in new_profile:
