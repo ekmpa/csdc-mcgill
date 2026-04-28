@@ -29,10 +29,10 @@
             {% endif %}
         </b>
 
-        {% if include.role_to_render and (include.role_to_render.start_date or include.role_to_render.end_date) %}
-        <div class="author-dates">
-            {% if include.role_to_render.start_date %}{{ include.role_to_render.start_date }}{% endif %}{% if include.role_to_render.start_date and include.role_to_render.end_date %} – {% endif %}{% if include.role_to_render.end_date %}{{ include.role_to_render.end_date }}{% endif %}
-        </div>
+        {% assign role_start = include.role_to_render.start_date | default: "" | strip %}
+        {% assign role_end = include.role_to_render.end_date | default: "" | strip %}
+        {% if include.role_to_render and (role_start != "" or role_end != "") %}
+        <div class="author-dates">{% if role_start != "" %}{{ role_start }}{% if role_end != "" %} -- {{ role_end }}{% else %} --{% endif %}{% else %}-- {{ role_end }}{% endif %}</div>
         {% endif %}
 
         {% if include.role_to_render %}
