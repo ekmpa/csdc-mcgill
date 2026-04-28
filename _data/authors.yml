@@ -800,6 +800,11 @@ Ezelbahar Metin:
     affiliation: McGill University
   orcid: 0009-0002-4832-666X
   auto_update_publications: true
+Rosalie Nadeau:
+  name: Rosalie Nadeau
+  current_role:
+    type: Student
+    title: MA
 Alexandre Miltsov:
   name: Alexandre Miltsov
   current_role:
