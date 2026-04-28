@@ -16,16 +16,6 @@ Nicolas Ajzenman:
     url: http://www.ajzenman.com
   - label: Scholar
     url: https://scholar.google.ca/citations?user=MdFqDJkAAAAJ&hl=en&oi=ao
-Quinn Albaugh:
-  name: Quinn Albaugh
-  current_role:
-    type: Student
-    title: MA
-Hubert Alain:
-  name: Hubert Alain
-  current_role:
-    type: Student
-    title: MA
 Fagar Al-Sayed:
   name: Fagar Al-Sayed
   current_role:
@@ -33,6 +23,16 @@ Fagar Al-Sayed:
     title: MA
     advisor: Dietlind Stolle
   auto_update_publications: false
+Hubert Alain:
+  name: Hubert Alain
+  current_role:
+    type: Student
+    title: MA
+Quinn Albaugh:
+  name: Quinn Albaugh
+  current_role:
+    type: Student
+    title: MA
 Sahar Ramazan Ali:
   name: Sahar Ramazan Ali
   current_role:
@@ -123,11 +123,6 @@ Elissa Berwick:
   social_media_links:
   - label: Website
     url: https://www.elissaberwick.com/
-Danielle Bohonos:
-  name: Danielle Bohonos
-  current_role:
-    type: Student
-    title: MA
 Maxime Blanchard:
   name: Maxime Blanchard
   current_role:
@@ -135,6 +130,11 @@ Maxime Blanchard:
     title: PHD
     advisor: Dietlind Stolle
   auto_update_publications: false
+Danielle Bohonos:
+  name: Danielle Bohonos
+  current_role:
+    type: Student
+    title: MA
 Arianna Bondi:
   name: Arianna Bondi
   current_role:
@@ -171,11 +171,6 @@ Aengus Bridgman:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=CuFbthUAAAAJ
-Xavier Campbell:
-  name: Xavier Campbell
-  current_role:
-    type: Student
-    title: MA
 Albert Manuel Orozco Camacho:
   name: Albert Manuel Orozco Camacho
   current_role:
@@ -183,6 +178,11 @@ Albert Manuel Orozco Camacho:
     title: MA
     advisor: Reihaneh Rabbany
   auto_update_publications: false
+Xavier Campbell:
+  name: Xavier Campbell
+  current_role:
+    type: Student
+    title: MA
 Rafael Campos-Gottardo:
   name: Rafael Campos-Gottardo
   current_role:
@@ -196,20 +196,6 @@ Rafael Campos-Gottardo:
   social_media_links:
   - label: Website
     url: https://rafael-campos-gottardo.github.io
-Annie Chen:
-  name: Annie Chen
-  current_role:
-    type: Student
-    title: MA
-    advisor: Aaron Erlich
-Philippe Chassé:
-  name: Philippe Chassé
-  current_role:
-    type: Student
-    title: MA
-    advisor: Éric Bélanger
-Yvonne Chang:
-  name: Yvonne Chang
 Ana Canedo:
   name: Ana Canedo
   current_role:
@@ -217,6 +203,20 @@ Ana Canedo:
     title: PHD
     advisor: Thomas Soehl
   auto_update_publications: false
+Yvonne Chang:
+  name: Yvonne Chang
+Philippe Chassé:
+  name: Philippe Chassé
+  current_role:
+    type: Student
+    title: MA
+    advisor: Éric Bélanger
+Annie Chen:
+  name: Annie Chen
+  current_role:
+    type: Student
+    title: MA
+    advisor: Aaron Erlich
 Kefan Chen:
   name: Kefan Chen
   current_role:
@@ -255,17 +255,17 @@ Guila Cohen:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
-Bolette Danckert:
-  name: Bolette Danckert
-  current_role:
-    type: Student
-    title: PhD
 Maxime Coulon-Hamelin:
   name: Maxime Coulon-Hamelin
   current_role:
     type: Student
     title: MA
     advisor: Éric Bélanger
+Bolette Danckert:
+  name: Bolette Danckert
+  current_role:
+    type: Student
+    title: PhD
 Jacob Danovitch:
   name: Jacob Danovitch
   current_role:
@@ -282,13 +282,21 @@ Rebecca Daviddi:
     affiliation: McGill University
   orcid: 0009-0009-7176-0115
   auto_update_publications: true
-Clare Devereux:
-  name: Clare Devereux
+Natalie Delmonte:
+  name: Natalie Delmonte
   current_role:
     type: Student
     title: MA
-Merve Erdilmen:
-  name: Merve Erdilmen
+    advisor: Elissa Berwick
+  auto_update_publications: false
+Didem Demirag:
+  name: Didem Demirag
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Jeremy Clark
+Clare Devereux:
+  name: Clare Devereux
   current_role:
     type: Student
     title: MA
@@ -298,25 +306,17 @@ William East:
     type: Student
     title: MA
     advisor: Dietlind Stolle
+Merve Erdilmen:
+  name: Merve Erdilmen
+  current_role:
+    type: Student
+    title: MA
 Chris Erl:
   name: Chris Erl
   current_role:
     type: Student
     title: PhD
     advisor: Benjamin Forest
-Didem Demirag:
-  name: Didem Demirag
-  current_role:
-    type: Student
-    title: PhD
-    advisor: Jeremy Clark
-Natalie Delmonte:
-  name: Natalie Delmonte
-  current_role:
-    type: Student
-    title: MA
-    advisor: Elissa Berwick
-  auto_update_publications: false
 Aaron Erlich:
   name: Aaron Erlich
   current_role:
@@ -345,11 +345,6 @@ Garrett Evans:
     advisor: Nicolas Ajzenman
     affiliation: McGill University
   auto_update_publications: false
-Fernando Feitosa:
-  name: Fernando Feitosa
-  current_role:
-    type: Postdoc
-    title: _No response_
 Andréa Febres-Gagné:
   name: Andréa Febres-Gagné
   current_role:
@@ -357,6 +352,11 @@ Andréa Febres-Gagné:
     title: MA
     advisor: Éric Bélanger
   auto_update_publications: false
+Fernando Feitosa:
+  name: Fernando Feitosa
+  current_role:
+    type: Postdoc
+    title: _No response_
 Aarash Feizi:
   name: Aarash Feizi
   current_role:
@@ -401,6 +401,7 @@ Benjamin Forest:
     url: http://www.geog.mcgill.ca/faculty/forest/index.html
   - label: Scholar
     url: https://scholar.google.com/citations?user=tLfKPpgAAAAJ&hl=en&oi=ao
+  avatar: /assets/images/bio/Benjamin Forest.jpg
 Sarah Freund:
   name: Sarah Freund
   current_role:
@@ -408,6 +409,19 @@ Sarah Freund:
     title: Master's Student
     advisor: Dietlind Stolle
     affiliation: McGill University
+  auto_update_publications: false
+Etienne Gagnon:
+  name: Etienne Gagnon
+  current_role:
+    type: Student
+    title: MA
+    advisor: Aaron Erlich
+Thomas Gareau-Paquette:
+  name: Thomas Gareau-Paquette
+  current_role:
+    type: Student
+    title: MA
+    advisor: Éric Bélanger
   auto_update_publications: false
 Holly Garnett:
   name: Holly Garnett
@@ -420,25 +434,12 @@ Lara Gauthier:
     type: Postdoc
     title: _No response_
     advisor: Thomas Soehl
-Etienne Gagnon:
-  name: Etienne Gagnon
-  current_role:
-    type: Student
-    title: MA
-    advisor: Aaron Erlich
 Daniel St. Germaine:
   name: Daniel St. Germaine
   current_role:
     type: Student
     title: MA
     advisor: Dietlind Stolle
-Thomas Gareau-Paquette:
-  name: Thomas Gareau-Paquette
-  current_role:
-    type: Student
-    title: MA
-    advisor: Éric Bélanger
-  auto_update_publications: false
 Kassandra Gervasi:
   name: Kassandra Gervasi
   current_role:
@@ -456,8 +457,6 @@ Terhas Ghebretecle:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
-Giovanni Guiga:
-  name: Giovanni Guiga
 Gaby Gonzalez-Sirois:
   name: Gaby Gonzalez-Sirois
   current_role:
@@ -465,6 +464,8 @@ Gaby Gonzalez-Sirois:
     title: MA
     advisor: Éric Bélanger
   auto_update_publications: false
+Giovanni Guiga:
+  name: Giovanni Guiga
 Ian Van Haren:
   name: Ian Van Haren
   current_role:
@@ -588,11 +589,6 @@ Jordan Katz:
     affiliation: McGill University
   avatar: /assets/images/bio/Jordan Katz.jpg
   auto_update_publications: false
-Anthony Kevins:
-  name: Anthony Kevins
-  current_role:
-    type: Student
-    title: PhD
 Dilse Kaygisiz:
   name: Dilse Kaygisiz
   current_role:
@@ -600,6 +596,11 @@ Dilse Kaygisiz:
     title: MA
     advisor: Aaron Erlich
   auto_update_publications: false
+Anthony Kevins:
+  name: Anthony Kevins
+  current_role:
+    type: Student
+    title: PhD
 Khaoula El Khalil:
   name: Khaoula El Khalil
   current_role:
@@ -630,22 +631,22 @@ Maya Krishnan:
     advisor: Eran Shor
     affiliation: McGill University
   auto_update_publications: false
-Sarah Lebeau:
-  name: Sarah Lebeau
+Freya Lambrechts:
+  name: Freya Lambrechts
   current_role:
     type: Student
-    title: MA
+    title: _No response_
 Mathieu Lavigne:
   name: Mathieu Lavigne
   current_role:
     type: Student
     title: PHD
     advisor: Éric Bélanger
-Freya Lambrechts:
-  name: Freya Lambrechts
+Sarah Lebeau:
+  name: Sarah Lebeau
   current_role:
     type: Student
-    title: _No response_
+    title: MA
 Zoé Hyman Levy:
   name: Zoé Hyman Levy
   current_role:
@@ -814,6 +815,17 @@ Victoria Mahon:
   orcid: 0009-0002-3577-3217
   avatar: /assets/images/bio/Victoria Mahon.jpg
   auto_update_publications: true
+Brett Manzer:
+  name: Brett Manzer
+  current_role:
+    type: Student
+    title: MA
+    advisor: Éric Bélanger
+Zachary Marshall:
+  name: Zachary Marshall
+  current_role:
+    type: Student
+    title: PHD
 Nick Maturo:
   name: Nick Maturo
   current_role:
@@ -824,23 +836,6 @@ Julia Maynard:
   current_role:
     type: Student
     title: MA
-Brett Manzer:
-  name: Brett Manzer
-  current_role:
-    type: Student
-    title: MA
-    advisor: Éric Bélanger
-Andrew McCormack:
-  name: Andrew McCormack
-  current_role:
-    type: Student
-    title: MA
-    advisor: Dietlind Stolle
-Zachary Marshall:
-  name: Zachary Marshall
-  current_role:
-    type: Student
-    title: PHD
 Abigail Chaya Maza:
   name: Abigail Chaya Maza
   current_role:
@@ -848,6 +843,12 @@ Abigail Chaya Maza:
     title: MA
     advisor: Thomas Soehl
   auto_update_publications: false
+Andrew McCormack:
+  name: Andrew McCormack
+  current_role:
+    type: Student
+    title: MA
+    advisor: Dietlind Stolle
 Aiden McIlvaney:
   name: Aiden McIlvaney
   current_role:
@@ -881,46 +882,18 @@ Ezelbahar Metin:
     affiliation: McGill University
   orcid: 0009-0002-4832-666X
   auto_update_publications: true
-Rosalie Nadeau:
-  name: Rosalie Nadeau
-  current_role:
-    type: Student
-    title: MA
 Alexandre Miltsov:
   name: Alexandre Miltsov
   current_role:
     type: Student
     title: PhD
     advisor: Eran Shor
-Anaïs Légaré Morasse:
-  name: Anaïs Légaré Morasse
-  current_role:
-    type: Student
-    title: MA
-Mahsa Moosavi:
-  name: Mahsa Moosavi
-  current_role:
-    type: Student
-    title: PhD
-    advisor: Jeremy Clark
-Mahdi Nejadgholi:
-  name: Mahdi Nejadgholi
-  current_role:
-    type: Student
-    title: MA
-    advisor: Jeremy Clark
 Philippe Mongrain:
   name: Philippe Mongrain
   current_role:
     type: Postdoc
     title: _No response_
     advisor: Éric Bélanger
-Emma Myhre:
-  name: Emma Myhre
-  current_role:
-    type: Student
-    title: _No response_
-    advisor: Aaron Erlich
 Isadora Borges Monroy:
   name: Isadora Borges Monroy
   current_role:
@@ -928,6 +901,34 @@ Isadora Borges Monroy:
     title: PHD
     advisor: Dietlind Stolle
   auto_update_publications: false
+Mahsa Moosavi:
+  name: Mahsa Moosavi
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Jeremy Clark
+Anaïs Légaré Morasse:
+  name: Anaïs Légaré Morasse
+  current_role:
+    type: Student
+    title: MA
+Emma Myhre:
+  name: Emma Myhre
+  current_role:
+    type: Student
+    title: _No response_
+    advisor: Aaron Erlich
+Rosalie Nadeau:
+  name: Rosalie Nadeau
+  current_role:
+    type: Student
+    title: MA
+Mahdi Nejadgholi:
+  name: Mahdi Nejadgholi
+  current_role:
+    type: Student
+    title: MA
+    advisor: Jeremy Clark
 Alan Nemirovski:
   name: Alan Nemirovski
   current_role:
@@ -938,24 +939,24 @@ Alan Nemirovski:
   orcid: 0009-0009-3106-9426
   avatar: /assets/images/bio/Alan Nemirovski.jpg
   auto_update_publications: true
-Saewon Park:
-  name: Saewon Park
-  current_role:
-    type: Student
-    title: MA
-    advisor: Aaron Erlich
-Eugene Ofosu:
-  name: Eugene Ofosu
-  current_role:
-    type: Student
-    title: PHD
-    advisor: Eric Hehman
 Ka U Ng:
   name: Ka U Ng
   current_role:
     type: Student
     title: PHD
     advisor: Thomas Soehl
+Eugene Ofosu:
+  name: Eugene Ofosu
+  current_role:
+    type: Student
+    title: PHD
+    advisor: Eric Hehman
+Saewon Park:
+  name: Saewon Park
+  current_role:
+    type: Student
+    title: MA
+    advisor: Aaron Erlich
 Kellin Pelrine:
   name: Kellin Pelrine
   current_role:
@@ -1040,34 +1041,6 @@ Jeremy Rappel:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
-Rafico Ruiz:
-  name: Rafico Ruiz
-  current_role:
-    type: Student
-    title: PhD
-Nick Ruderman:
-  name: Nick Ruderman
-  current_role:
-    type: Postdoc
-    title: _No response_
-    advisor: Dietlind Stolle
-Cassandra Ryan:
-  name: Cassandra Ryan
-  current_role:
-    type: Student
-    title: MA
-Colin Scott:
-  name: Colin Scott
-  current_role:
-    type: Student
-    title: PhD
-    advisor: Dietlind Stolle
-Daniel Sailofsky:
-  name: Daniel Sailofsky
-  current_role:
-    type: Student
-    title: PhD
-    advisor: Eran Shor
 Christopher Ross:
   name: Christopher Ross
   current_role:
@@ -1075,6 +1048,34 @@ Christopher Ross:
     title: MA
     advisor: Aaron Erlich
   auto_update_publications: false
+Nick Ruderman:
+  name: Nick Ruderman
+  current_role:
+    type: Postdoc
+    title: _No response_
+    advisor: Dietlind Stolle
+Rafico Ruiz:
+  name: Rafico Ruiz
+  current_role:
+    type: Student
+    title: PhD
+Cassandra Ryan:
+  name: Cassandra Ryan
+  current_role:
+    type: Student
+    title: MA
+Daniel Sailofsky:
+  name: Daniel Sailofsky
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Eran Shor
+Colin Scott:
+  name: Colin Scott
+  current_role:
+    type: Student
+    title: PhD
+    advisor: Dietlind Stolle
 Sahar Omidi Shayegan:
   name: Sahar Omidi Shayegan
   current_role:
@@ -1284,13 +1285,15 @@ Zachary Yang:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=ljOxbowAAAAJ
+Julia Yingling:
+  name: Julia Yingling
+  current_role:
+    type: Postdoc
+    title: MA
+    advisor: Benjamin Forest
+  auto_update_publications: false
 Jason R. Young:
   name: Jason R. Young
-  current_role:
-    type: Student
-    title: PhD
-Ali Zeren:
-  name: Ali Zeren
   current_role:
     type: Student
     title: PhD
@@ -1300,10 +1303,8 @@ Chris Yurris:
     type: Student
     title: MA
     advisor: Éric Bélanger
-Julia Yingling:
-  name: Julia Yingling
+Ali Zeren:
+  name: Ali Zeren
   current_role:
-    type: Postdoc
-    title: MA
-    advisor: Benjamin Forest
-  auto_update_publications: false
+    type: Student
+    title: PhD
