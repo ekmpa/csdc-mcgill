@@ -739,6 +739,12 @@ Eric Hehman:
     url: http://erichehman.com/
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=n8IeMMEAAAAJ
+Richard Hink:
+  name: Richard Hink
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
 Joe Heywood:
   name: Joe Heywood
   current_role:
