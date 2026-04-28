@@ -91,6 +91,11 @@ Leonardo Baccini:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=t621mGQAAAAJ&hl=en&oi=ao
+Patrizia Barbone:
+  name: Patrizia Barbone
+  current_role:
+    type: Student
+    title: PhD
 Maxime Barbeau:
   name: Maxime Barbeau
   current_role:
