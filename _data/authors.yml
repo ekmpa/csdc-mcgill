@@ -425,6 +425,12 @@ Maya Krishnan:
     advisor: Eran Shor
     affiliation: McGill University
   auto_update_publications: false
+Mathieu Lavigne:
+  name: Mathieu Lavigne
+  current_role:
+    type: Student
+    title: PHD
+    advisor: Éric Bélanger
 Freya Lambrechts:
   name: Freya Lambrechts
   current_role:
