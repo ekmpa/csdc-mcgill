@@ -599,6 +599,11 @@ Victoria Mahon:
   orcid: 0009-0002-3577-3217
   avatar: /assets/images/bio/Victoria Mahon.jpg
   auto_update_publications: true
+Zachary Marshall:
+  name: Zachary Marshall
+  current_role:
+    type: Student
+    title: PHD
 Abigail Chaya Maza:
   name: Abigail Chaya Maza
   current_role:
