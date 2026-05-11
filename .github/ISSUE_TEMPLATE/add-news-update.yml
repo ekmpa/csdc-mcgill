@@ -1,7 +1,7 @@
-name: Add news update announcement
+name: Add news update -- Ajouter une nouvelle
 
 description: |
-  Centre announcements and other news updates.
+  Centre announcements and other news updates -- Nouvelles du Centre.
 title: "[News update]"
 labels: ["automatic-add-news-update"]
 
@@ -9,13 +9,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this form for announcements and miscellaneous updates that should appear on `/news/`.
+        Use this form for announcements to appear on the 'News' page / Utilisez ce formulaire pour les annonces à afficher sur la page 'Actualités'.
 
   - type: input
     id: title
     attributes:
-      label: Title
-      description: Headline shown on the News page
+      label: Title 
+      description: Headline / Title (EN)
       placeholder: "CSDC receives new partnership grant"
     validations:
       required: true
@@ -23,8 +23,8 @@ body:
   - type: input
     id: title_fr
     attributes:
-      label: Title French
-      description: French headline shown on /fr/news/
+      label: Titre
+      description: Titre (FR)
       placeholder: "Le CÉCD obtient une nouvelle subvention de partenariat"
     validations:
       required: false

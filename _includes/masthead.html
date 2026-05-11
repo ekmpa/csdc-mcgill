@@ -60,6 +60,13 @@
 {% endunless %}
 
 {% assign base_section = base_path | split: '/' | slice: 1, 1 | first %}
+{% assign nav_section = base_section %}
+{% if nav_section == '' %}
+  {% assign nav_section = 'home' %}
+{% endif %}
+{% if nav_section == 'publications' or nav_section == 'research' %}
+  {% assign nav_section = 'research' %}
+{% endif %}
 {% if is_fr %}
   {% assign section_fallback = '/' %}
   {% if base_section == 'about' or base_section == 'people' or base_section == 'research' or base_section == 'publications' or base_section == 'news' or base_section == 'events' or base_section == 'teaching' or base_section == 'tools-and-resources' or base_section == 'venues' %}
@@ -97,41 +104,41 @@
         <ul class="visible-links">
           {% if is_fr %}
             <li class="masthead__menu-item">
-              <a class="csdc-nav-link" data-nav="home" href="{{ '/fr/' | relative_url }}">Accueil</a>
+              <a class="csdc-nav-link{% if nav_section == 'home' %} is-active{% endif %}" data-nav="home" href="{{ '/fr/' | relative_url }}">Accueil</a>
             </li>
             <li class="masthead__menu-item">
-              <a class="csdc-nav-link" data-nav="about" href="{{ '/fr/about/' | relative_url }}">À propos</a>
+              <a class="csdc-nav-link{% if nav_section == 'about' %} is-active{% endif %}" data-nav="about" href="{{ '/fr/about/' | relative_url }}">À propos</a>
             </li>
             <li class="masthead__menu-item">
-              <a class="csdc-nav-link" data-nav="people" href="{{ '/fr/people/' | relative_url }}">Équipe</a>
+              <a class="csdc-nav-link{% if nav_section == 'people' %} is-active{% endif %}" data-nav="people" href="{{ '/fr/people/' | relative_url }}">Équipe</a>
             </li>
             <li class="masthead__menu-item">
-              <a class="csdc-nav-link" data-nav="research" href="{{ '/fr/publications/' | relative_url }}">Recherche</a>
+              <a class="csdc-nav-link{% if nav_section == 'research' %} is-active{% endif %}" data-nav="research" href="{{ '/fr/publications/' | relative_url }}">Recherche</a>
             </li>
             <li class="masthead__menu-item">
-              <a class="csdc-nav-link" data-nav="news" href="{{ '/fr/news/' | relative_url }}">Actualités</a>
+              <a class="csdc-nav-link{% if nav_section == 'news' %} is-active{% endif %}" data-nav="news" href="{{ '/fr/news/' | relative_url }}">Actualités</a>
             </li>
             <li class="masthead__menu-item">
-              <a class="csdc-nav-link" data-nav="events" href="{{ '/fr/events/' | relative_url }}">Événements</a>
+              <a class="csdc-nav-link{% if nav_section == 'events' %} is-active{% endif %}" data-nav="events" href="{{ '/fr/events/' | relative_url }}">Événements</a>
             </li>
           {% else %}
             <li class="masthead__menu-item">
-              <a class="csdc-nav-link" data-nav="home" href="{{ '/' | relative_url }}">Home</a>
+              <a class="csdc-nav-link{% if nav_section == 'home' %} is-active{% endif %}" data-nav="home" href="{{ '/' | relative_url }}">Home</a>
             </li>
             <li class="masthead__menu-item">
-              <a class="csdc-nav-link" data-nav="about" href="{{ '/about/' | relative_url }}">About</a>
+              <a class="csdc-nav-link{% if nav_section == 'about' %} is-active{% endif %}" data-nav="about" href="{{ '/about/' | relative_url }}">About</a>
             </li>
             <li class="masthead__menu-item">
-              <a class="csdc-nav-link" data-nav="people" href="{{ '/people/' | relative_url }}">Team</a>
+              <a class="csdc-nav-link{% if nav_section == 'people' %} is-active{% endif %}" data-nav="people" href="{{ '/people/' | relative_url }}">Team</a>
             </li>
             <li class="masthead__menu-item">
-              <a class="csdc-nav-link" data-nav="research" href="{{ '/publications/' | relative_url }}">Research</a>
+              <a class="csdc-nav-link{% if nav_section == 'research' %} is-active{% endif %}" data-nav="research" href="{{ '/publications/' | relative_url }}">Research</a>
             </li>
             <li class="masthead__menu-item">
-              <a class="csdc-nav-link" data-nav="news" href="{{ '/news/' | relative_url }}">News</a>
+              <a class="csdc-nav-link{% if nav_section == 'news' %} is-active{% endif %}" data-nav="news" href="{{ '/news/' | relative_url }}">News</a>
             </li>
             <li class="masthead__menu-item">
-              <a class="csdc-nav-link" data-nav="events" href="{{ '/events/' | relative_url }}">Events</a>
+              <a class="csdc-nav-link{% if nav_section == 'events' %} is-active{% endif %}" data-nav="events" href="{{ '/events/' | relative_url }}">Events</a>
             </li>
           {% endif %}
         </ul>

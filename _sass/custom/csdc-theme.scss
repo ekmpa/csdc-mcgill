@@ -145,7 +145,7 @@ a.csdc-red:focus {
 
 .csdc-page-header {
   background: linear-gradient(180deg, #ffffff 0%, #f8fafc 55%, #eef2f7 100%);
-  padding: 2.1rem 0 1.5rem;
+  padding: 5rem 0 1.5rem;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -157,7 +157,7 @@ a.csdc-red:focus {
   max-width: 70rem;
   margin: 0 auto;
   padding: 0 clamp(1.5rem, 3vw, 2.25rem);
-  padding-top: 0.45rem;
+  padding-top: 0;
 }
 
 .csdc-page-header .csdc-kicker {
@@ -228,14 +228,14 @@ a.csdc-red:focus {
   background: #f6f7f9;
   border: 1px solid #e5e7eb;
   border-radius: 0.6rem;
-  padding: 0.85rem 1rem;
-  max-width: 62rem;
+  padding: 0.7rem 0.85rem;
+  max-width: 46rem;
   margin-right: auto;
 }
 
 .csdc-news-item-title {
   margin: 0;
-  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  font-size: clamp(0.96rem, 1.75vw, 1.12rem);
   line-height: 1.3;
 }
 
@@ -253,12 +253,13 @@ a.csdc-red:focus {
 .csdc-news-item-date {
   margin: 0.35rem 0 0;
   color: #6b7280;
+  font-size: 0.82rem;
 }
 
 .csdc-news-item-excerpt {
   margin: 0.4rem 0 0;
   color: #111827;
-  font-size: 0.92rem;
+  font-size: 0.86rem;
 }
 
 .csdc-news-item-by {
@@ -282,6 +283,7 @@ a.csdc-red:focus {
   text-decoration-thickness: 0.08em;
   transition: text-decoration-color 0.2s ease;
   cursor: pointer;
+  font-size: 0.84rem;
 }
 
 .csdc-news-read-more:hover,
@@ -291,13 +293,27 @@ a.csdc-red:focus {
 }
 
 .csdc-news-read-more-arrow {
-  font-size: 0.95rem;
+  font-size: 0.82rem;
   line-height: 1;
 }
 
 .csdc-news-updates-section {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.csdc-news-updates-section .csdc-container {
+  max-width: 52rem;
+}
+
+.csdc-news-updates-section .csdc-card {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0.8rem;
+}
+
+.csdc-news-updates-section .csdc-card-title {
+  font-size: 1.1rem;
 }
 
 .csdc-news-events-section {
@@ -650,14 +666,6 @@ a.csdc-red:focus {
 .csdc-news-venue {
   color: #4b5563;
   font-weight: 600;
-}
-
-.csdc-people-page {
-  padding-top: 3rem;
-
-  @media (max-width: 600px) {
-    padding-top: 2.2rem;
-  }
 }
 
 .csdc-about-hero,
