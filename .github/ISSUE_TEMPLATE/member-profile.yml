@@ -1,0 +1,189 @@
+name: Member profile (add/update)
+description: |
+  Add a new Centre member or update an existing member profile.
+title: "[Member profile]"
+labels: ["automatic-member-profile"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this single form for both **adding** and **updating** members.
+
+        This form automatically triggers a PR workflow.
+
+  - type: dropdown
+    id: action
+    attributes:
+      label: Action
+      description: What do you want to do?
+      options:
+        - Add member
+        - Update member
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Full name of the member.
+      placeholder: John Doe
+    validations:
+      required: true
+
+  - type: dropdown
+    id: alumni
+    attributes:
+      label: Member Status
+      description: Is this person a current member or alumni/past member?
+      multiple: false
+      options:
+        - Current Member
+        - Alumni / Past Member
+    validations:
+      required: false
+
+  - type: input
+    id: current_role-start_date
+    attributes:
+      label: Start Date
+      description: When did they join the Centre? (e.g. Fall 2024, 2022, January 2023)
+      placeholder: Fall 2024
+    validations:
+      required: false
+
+  - type: input
+    id: current_role-end_date
+    attributes:
+      label: End Date (Alumni only)
+      description: When did they leave? Leave blank for current members.
+      placeholder: Spring 2026
+    validations:
+      required: false
+
+  - type: textarea
+    id: avatar
+    attributes:
+      label: Profile picture
+      description: |
+        Drag-and-drop profile picture here, or paste an image URL.
+      placeholder: Click here and drag an image to upload, or paste an image URL
+    validations:
+      required: false
+
+  - type: textarea
+    id: bio
+    attributes:
+      label: Bio
+      description: A short description (1 paragraph) of the member.
+      placeholder: Works on ...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: current_role-type
+    attributes:
+      label: Current Role Type
+      description: Current role type (set to Unaffiliated for alumni if needed).
+      multiple: false
+      options:
+        - Faculty / Professor
+        - Staff
+        - Postdoc
+        - Student
+        - Collaborator
+        - Unaffiliated
+    validations:
+      required: false
+
+  - type: input
+    id: current_role-title
+    attributes:
+      label: Current Role Title
+      description: Role title (e.g., Professor, Director, Administrator, Postdoc, PhD).
+      placeholder: Professor
+    validations:
+      required: false
+
+  - type: input
+    id: current_role-affiliation
+    attributes:
+      label: Current Role Affiliation
+      description: Affiliation
+      placeholder: McGill, Universite de Montreal
+    validations:
+      required: false
+
+  - type: input
+    id: current_role-advisor
+    attributes:
+      label: Current Role Advisor
+      description: For students, advisor(s). Separate multiple names with commas.
+      placeholder: John Doe Sr., Jane Doe
+    validations:
+      required: false
+
+  - type: input
+    id: orcid
+    attributes:
+      label: ORCID
+      description: ORCID identifier (e.g. 0000-0002-1825-0097).
+      placeholder: 0000-0002-1825-0097
+    validations:
+      required: false
+
+  - type: input
+    id: openalex_id
+    attributes:
+      label: OpenAlex ID
+      description: OpenAlex author ID (e.g. A1234567890).
+      placeholder: A1234567890
+    validations:
+      required: false
+
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      description: Personal or lab website URL.
+      placeholder: https://example.com
+    validations:
+      required: false
+
+  - type: input
+    id: scholar
+    attributes:
+      label: Google Scholar
+      description: Scholar profile URL.
+      placeholder: https://scholar.google.com/citations?user=...
+    validations:
+      required: false
+
+  - type: input
+    id: twitter
+    attributes:
+      label: Twitter/X
+      description: Twitter or X profile URL.
+      placeholder: https://x.com/username
+    validations:
+      required: false
+
+  - type: input
+    id: linkedin
+    attributes:
+      label: LinkedIn
+      description: LinkedIn profile URL.
+      placeholder: https://www.linkedin.com/in/username
+    validations:
+      required: false
+
+  - type: input
+    id: github
+    attributes:
+      label: GitHub
+      description: GitHub profile URL.
+      placeholder: https://github.com/username
+    validations:
+      required: false

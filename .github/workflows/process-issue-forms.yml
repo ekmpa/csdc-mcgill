@@ -2,11 +2,15 @@ name: "Parse and process issue forms"
 on:
   issues:
     types:
+      - opened
       - labeled
+      - reopened
 
 jobs:
   process-issue-forms:
-    if: startsWith(github.event.label.name, 'automatic-')
+    if: |
+      (github.event.action == 'labeled' && startsWith(github.event.label.name, 'automatic-')) ||
+      contains(join(github.event.issue.labels.*.name, ','), 'automatic-')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -20,39 +24,51 @@ jobs:
         run: pip install -r src/python/requirements.txt
 
       - name: "Update _data/authors.yml with src/python/add_update_member.py"
-        if: github.event.label.name == 'automatic-add-member'
+        if: github.event.label.name == 'automatic-add-member' || contains(github.event.issue.labels.*.name, 'automatic-add-member')
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ACTION: Add member
         run: python -m src.python.add_update_member
       
       - name: "Update _data/authors.yml with src/python/add_update_member.py"
-        if: github.event.label.name == 'automatic-update-member'
+        if: github.event.label.name == 'automatic-update-member' || contains(github.event.issue.labels.*.name, 'automatic-update-member')
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ACTION: Update member
         run: python -m src.python.add_update_member
 
+      - name: "Update _data/authors.yml with src/python/add_update_member.py"
+        if: github.event.label.name == 'automatic-member-profile' || contains(github.event.issue.labels.*.name, 'automatic-member-profile')
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: python -m src.python.add_update_member
+
       - name: "Auto-sync publications for members with ORCID/OpenAlex IDs"
-        if: github.event.label.name == 'automatic-add-member' || github.event.label.name == 'automatic-update-member'
+        if: |
+          github.event.label.name == 'automatic-add-member' ||
+          github.event.label.name == 'automatic-update-member' ||
+          github.event.label.name == 'automatic-member-profile' ||
+          contains(github.event.issue.labels.*.name, 'automatic-add-member') ||
+          contains(github.event.issue.labels.*.name, 'automatic-update-member') ||
+          contains(github.event.issue.labels.*.name, 'automatic-member-profile')
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python -m src.python.auto_update_publications
       
       - name: "Create post in _posts/papers with src/python/add_update_publication.py"
-        if: github.event.label.name == 'automatic-add-update-publication'
+        if: github.event.label.name == 'automatic-add-update-publication' || contains(github.event.issue.labels.*.name, 'automatic-add-update-publication')
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: python -m src.python.add_update_publication
       
       - name: "Create post in _posts/papers with src/python/add_publication_by_id.py"
-        if: github.event.label.name == 'automatic-add-publication-by-id'
+        if: github.event.label.name == 'automatic-add-publication-by-id' || contains(github.event.issue.labels.*.name, 'automatic-add-publication-by-id')
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: python -m src.python.add_publication_by_id
       
       - name: "Create post in _posts/news with src/python/add_news_update.py"
-        if: github.event.label.name == 'automatic-add-news-update'
+        if: github.event.label.name == 'automatic-add-news-update' || contains(github.event.issue.labels.*.name, 'automatic-add-news-update')
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: python -m src.python.add_news_update
@@ -62,7 +78,7 @@ jobs:
         with:
           delete-branch: true
           branch-suffix: timestamp
-          commit-message: "[GH Actions] ${{ github.event.label.name }}"
+          commit-message: "[GH Actions] process issue form"
           title: "[Automatic PR] ${{ github.event.issue.title }}"
           body: >
             Closes #${{ github.event.issue.number }}. This pull request was 
