@@ -45,7 +45,12 @@ jobs:
       - name: Build the Jekyll site
         run: |
           bundle install
-          bundle exec jekyll build --source ./ --destination ./_site --baseurl "" --verbose
+          if [[ "${{ github.repository }}" == *.github.io ]]; then
+            BASEURL=""
+          else
+            BASEURL="/${{ github.event.repository.name }}"
+          fi
+          bundle exec jekyll build --source ./ --destination ./_site --baseurl "$BASEURL" --verbose
         env:
           JEKYLL_ENV: production
           PAGES_REPO_NWO: ${{ github.repository }}
