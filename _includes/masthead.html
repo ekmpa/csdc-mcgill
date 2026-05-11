@@ -37,6 +37,8 @@
         </button>
         {% endif %}
 
+        <button class="csdc-lang-toggle" type="button" aria-label="Switch to French">FR</button>
+
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
@@ -49,49 +51,164 @@
   </div>
 </div>
 
+<div id="google_translate_element" class="csdc-google-translate-anchor" aria-hidden="true"></div>
+
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  var links = document.querySelectorAll('.csdc-shell-nav .csdc-nav-link');
-  if (!links.length) {
-    return;
+(function () {
+  var STORAGE_KEY = 'csdc-site-language';
+
+  function getCookie(name) {
+    var cookies = document.cookie ? document.cookie.split('; ') : [];
+    for (var i = 0; i < cookies.length; i += 1) {
+      var parts = cookies[i].split('=');
+      var key = parts.shift();
+      if (key === name) {
+        return decodeURIComponent(parts.join('='));
+      }
+    }
+    return '';
   }
 
-  links.forEach(function (link) {
-    link.classList.remove('is-active');
+  function setGoogTransCookie(lang) {
+    var value = '/en/' + lang;
+    var expires = new Date();
+    expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000));
+    var cookie = 'googtrans=' + value + '; path=/; expires=' + expires.toUTCString();
+
+    document.cookie = cookie;
+    document.cookie = cookie + '; domain=' + window.location.hostname;
+  }
+
+  function normalizeLanguage(value) {
+    return value === 'fr' ? 'fr' : 'en';
+  }
+
+  function getPreferredLanguage() {
+    var stored = localStorage.getItem(STORAGE_KEY);
+    if (stored === 'fr' || stored === 'en') {
+      return stored;
+    }
+
+    var cookieValue = getCookie('googtrans');
+    if (cookieValue === '/en/fr') {
+      return 'fr';
+    }
+
+    return 'en';
+  }
+
+  function updateToggleLabel(lang) {
+    var toggle = document.querySelector('.csdc-lang-toggle');
+    if (!toggle) {
+      return;
+    }
+
+    if (lang === 'fr') {
+      toggle.textContent = 'EN';
+      toggle.setAttribute('aria-label', 'Switch to English');
+    } else {
+      toggle.textContent = 'FR';
+      toggle.setAttribute('aria-label', 'Switch to French');
+    }
+  }
+
+  function applyLanguage(lang, options) {
+    var nextLanguage = normalizeLanguage(lang);
+    var settings = options || {};
+
+    localStorage.setItem(STORAGE_KEY, nextLanguage);
+    setGoogTransCookie(nextLanguage);
+    updateToggleLabel(nextLanguage);
+
+    var combo = document.querySelector('.goog-te-combo');
+    if (combo) {
+      combo.value = nextLanguage === 'fr' ? 'fr' : '';
+      combo.dispatchEvent(new Event('change'));
+      return;
+    }
+
+    if (!settings.silent) {
+      window.location.reload();
+    }
+  }
+
+  function applyActiveNav() {
+    var links = document.querySelectorAll('.csdc-shell-nav .csdc-nav-link');
+    if (!links.length) {
+      return;
+    }
+
+    links.forEach(function (link) {
+      link.classList.remove('is-active');
+    });
+
+    var homeLink = document.querySelector('.csdc-shell-nav .csdc-nav-link[data-nav="home"]');
+    var basePath = '';
+    if (homeLink) {
+      basePath = new URL(homeLink.href, window.location.origin).pathname.replace(/\/$/, '');
+    }
+
+    var currentPath = window.location.pathname;
+    if (basePath && currentPath.indexOf(basePath) === 0) {
+      currentPath = currentPath.slice(basePath.length);
+    }
+
+    if (!currentPath || currentPath === '') {
+      currentPath = '/';
+    }
+
+    currentPath = currentPath.replace(/\/index\.html$/, '');
+    if (!currentPath.startsWith('/')) {
+      currentPath = '/' + currentPath;
+    }
+
+    var section = currentPath.split('/')[1] || 'home';
+    if (section === 'publications' || section === 'research') {
+      section = 'research';
+    }
+
+    var active = document.querySelector('.csdc-shell-nav .csdc-nav-link[data-nav="' + section + '"]');
+    if (!active) {
+      active = document.querySelector('.csdc-shell-nav .csdc-nav-link[data-nav="home"]');
+    }
+
+    if (active) {
+      active.classList.add('is-active');
+    }
+  }
+
+  window.csdcInitTranslate = function () {
+    if (!(window.google && window.google.translate && window.google.translate.TranslateElement)) {
+      return;
+    }
+
+    new window.google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'en,fr',
+        autoDisplay: false,
+        layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+
+    applyLanguage(getPreferredLanguage(), { silent: true });
+  };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    applyActiveNav();
+    applyLanguage(getPreferredLanguage(), { silent: true });
+
+    var toggle = document.querySelector('.csdc-lang-toggle');
+    if (!toggle) {
+      return;
+    }
+
+    toggle.addEventListener('click', function () {
+      var nextLanguage = getPreferredLanguage() === 'fr' ? 'en' : 'fr';
+      applyLanguage(nextLanguage);
+    });
   });
-
-  var homeLink = document.querySelector('.csdc-shell-nav .csdc-nav-link[data-nav="home"]');
-  var basePath = '';
-  if (homeLink) {
-    basePath = new URL(homeLink.href, window.location.origin).pathname.replace(/\/$/, '');
-  }
-
-  var currentPath = window.location.pathname;
-  if (basePath && currentPath.indexOf(basePath) === 0) {
-    currentPath = currentPath.slice(basePath.length);
-  }
-
-  if (!currentPath || currentPath === '') {
-    currentPath = '/';
-  }
-
-  currentPath = currentPath.replace(/\/index\.html$/, '');
-  if (!currentPath.startsWith('/')) {
-    currentPath = '/' + currentPath;
-  }
-
-  var section = currentPath.split('/')[1] || 'home';
-  if (section === 'publications' || section === 'research') {
-    section = 'research';
-  }
-
-  var active = document.querySelector('.csdc-shell-nav .csdc-nav-link[data-nav="' + section + '"]');
-  if (!active) {
-    active = document.querySelector('.csdc-shell-nav .csdc-nav-link[data-nav="home"]');
-  }
-
-  if (active) {
-    active.classList.add('is-active');
-  }
-});
+})();
 </script>
+<script src="https://translate.google.com/translate_a/element.js?cb=csdcInitTranslate"></script>

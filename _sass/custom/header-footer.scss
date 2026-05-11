@@ -53,8 +53,40 @@ a.site-title {
 
 .csdc-shell-nav .visible-links a,
 .csdc-shell-nav .hidden-links a,
-.csdc-shell-nav .search__toggle {
+.csdc-shell-nav .search__toggle,
+.csdc-shell-nav .csdc-lang-toggle {
     color: #f9fafb;
+}
+
+.csdc-shell-nav .csdc-lang-toggle {
+    margin-left: 0.45rem;
+    border: 1px solid rgba(249, 250, 251, 0.4);
+    border-radius: 0.35rem;
+    padding: 0.18rem 0.38rem;
+    background: transparent;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: border-color 0.18s ease, color 0.18s ease, background-color 0.18s ease;
+}
+
+.csdc-shell-nav .csdc-lang-toggle:hover,
+.csdc-shell-nav .csdc-lang-toggle:focus {
+    color: #fda4af;
+    border-color: #fda4af;
+    background: rgba(253, 164, 175, 0.12);
+}
+
+.csdc-google-translate-anchor,
+.skiptranslate.goog-te-gadget,
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0 !important;
 }
 
 .csdc-shell-nav .visible-links a:hover,
