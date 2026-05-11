@@ -22,11 +22,11 @@ classes:
 {% include card-authors-with-role.html authors=site.data.authors role="Faculty / Professor" render_current_role=true %}
 {% include card-authors-with-role.html authors=site.data.authors role="Faculty / Professor" alumni=true %}
 
-{% include card-authors-with-role.html authors=site.data.authors role="Postdoc" section_title="Postdoctoral Fellows" render_current_role=true %}
-{% include card-authors-with-role.html authors=site.data.authors role="Postdoc" alumni=true %}
-
 {% include card-authors-with-role.html authors=site.data.authors role="Staff" section_title="Staff" render_current_role=true %}
 {% include card-authors-with-role.html authors=site.data.authors role="Staff" alumni=true %}
+
+{% include card-authors-with-role.html authors=site.data.authors role="Postdoc" section_title="Postdoctoral Fellows" render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors role="Postdoc" alumni=true %}
 
 {% include card-authors-with-role.html authors=site.data.authors role="Student" section_title="Students" render_current_role=true %}
 {% include card-authors-with-role.html authors=site.data.authors role="Student" alumni=true %}

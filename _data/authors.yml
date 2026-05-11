@@ -11,6 +11,7 @@ Nicolas Ajzenman:
   name: Nicolas Ajzenman
   current_role:
     type: Faculty / Professor
+    title: Assistant Professor
   bio: Nicolas Ajzenman is an Assistant Professor at McGill (Economics Department)
     and an affiliated professor at J-PAL and IZA. He is working at the intersection
     of development economics, behavioral economics, and political economy. His research
@@ -98,6 +99,7 @@ Leonardo Baccini:
   name: Leonardo Baccini
   current_role:
     type: Faculty / Professor
+    title: Associate Professor
   bio: Leonardo Baccini is an Associate Professor in the Department of Political Science
     at McGill University. His research interests are in the area of international
     political economy and comparative political economy with a focus on the political
@@ -217,6 +219,8 @@ Aengus Bridgman:
   name: Éric Bélanger
   current_role:
     type: Faculty / Professor
+    title: Professor
+    start_date: "2003"
   bio: Éric Bélanger is Professor of Political Science at McGill University. He is
     also a member of the Royal Society of Canada’s College of New Scholars, Artists
     and Scientists. Though centered around Quebec and Canadian politics, his research
@@ -439,6 +443,8 @@ Aaron Erlich:
   name: Aaron Erlich
   current_role:
     type: Faculty / Professor
+    title: Assistant Professor
+    start_date: "2016"
   bio: Aaron Erlich is an Assistant Professor of Political Science at McGill University.
     His research interests concern questions of democratization, information dissemination,
     political behavior, political participation, and public opinion in the Former
@@ -517,6 +523,7 @@ Benjamin Forest:
   name: Benjamin Forest
   current_role:
     type: Faculty / Professor
+    title: Associate Professor
   bio: Benjamin Forest is an Associate Professor at McGill University in the Department
     of Geography as well as an Associate Member of the Department of Political Science.
     A specialist in the field of political geography, his work revolves around the
@@ -677,6 +684,7 @@ Eric Hehman:
   name: Eric Hehman
   current_role:
     type: Faculty / Professor
+    title: Assistant Professor
   bio: Eric Hehman is an Assistant Professor of Psychology at McGill University and
     director of the Seeing Human Lab.  Generally, Dr. Hehman’s research examines how
     individuals perceive and evaluate one another across group boundaries (e.g., race,
@@ -743,6 +751,11 @@ Anne Imouza:
     title: Admin
     research_directions:
     - poli-sci
+  secondary_roles:
+  - type: Student
+    title: Doctoral Student
+    start_date: "2023"
+    advisor: Dietlind Stolle
   bio: Administrative lead supporting coordination, operations, and outreach for McGill
     CSDC.
   avatar: /assets/images/bio/placeholder/default.jpg
@@ -838,8 +851,14 @@ Emma Kondrup:
   name: Emma Kondrup
   current_role:
     type: Staff
+    title: Web Developer
     research_directions:
     - poli-sci
+  secondary_roles:
+  - type: Student
+    title: Doctoral Student
+    start_date: "2026"
+    advisor: Reihaneh Rabbany, Catherine Régis
   bio: Web developer maintaining the McGill CSDC website and publication/member update
     workflow.
   avatar: /assets/images/bio/placeholder/default.jpg
@@ -1046,6 +1065,7 @@ Juan Pablo Luna:
   name: Juan Pablo Luna
   current_role:
     type: Faculty / Professor
+    title: Inaugural Diamond Brown Chair in Democratic Studies
   bio: Juan Pablo Luna grew up in Montevideo, Uruguay, and is the Inaugural Diamond
     Brown Chair in Democratic Studies at McGill. While mainly focused on comparative
     Latin American politics, his research analyzes how socio-structural conditions
@@ -1367,6 +1387,7 @@ Reihaneh Rabbany:
   name: Reihaneh Rabbany
   current_role:
     type: Faculty / Professor
+    title: Assistant Professor
   bio: Reihaneh Rabbany is an Assistant Professor at the School of Computer Science,
     McGill University. Before that, she was a Postdoctoral fellow at the School of
     Computer Science, Carnegie Mellon University. She completed her Ph.D. in Computing
@@ -1475,6 +1496,8 @@ Eran Shor:
   name: Eran Shor
   current_role:
     type: Faculty / Professor
+    title: Associate Professor
+    start_date: "2010"
   bio: Eran Shor is an Associate Professor in the Department of Sociology at McGill
     University. His research interests center around the themes of political conflict,
     human rights, and ethnicity and nationalism. Professor Shor's current research
@@ -1535,6 +1558,7 @@ Thomas Soehl:
   name: Thomas Soehl
   current_role:
     type: Faculty / Professor
+    title: Assistant Professor
   bio: Thomas Soehl is an Assistant Professor in the Department of Sociology at McGill
     University. His work mainly examines the themes of international migration, race,
     and ethnicity. More specifically, he studies these themes through the lens of
@@ -1584,6 +1608,7 @@ Dietlind Stolle:
   name: Dietlind Stolle
   current_role:
     type: Faculty / Professor
+    title: "Director & Professor"
   bio: Dietlind Stolle is a Professor of Political Science at McGill University. Her
     research looks at political mobilization, participation and knowledge, as well
     as social capital, ethnic and racial prejudice, and the consequences of ethnic

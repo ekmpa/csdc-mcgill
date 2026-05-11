@@ -50,6 +50,23 @@ div.author-avatar {
     height: 44px;
 }
 
+.author-card--compact.author-card--compact-wide-avatar .author-avatar {
+    max-height: 80px;
+    max-width: 80px;
+    height: 80px;
+    width: 80px;
+}
+
+.author-card--compact.author-card--compact-wide-avatar .author-avatar img {
+    width: 80px;
+    height: 80px;
+}
+
+.author-card--compact.author-card--compact-wide-avatar .author-avatar .author-avatar-placeholder {
+    width: 64px;
+    height: 64px;
+}
+
 .author-card--compact {
     align-items: center;
     padding: 0.55rem 0.75rem;
@@ -329,6 +346,57 @@ div.author-avatar {
     transition: box-shadow 0.3s ease;
 }
 
+.csdc-people-page .csdc-container {
+    max-width: 64rem;
+}
+
+.csdc-people-page .csdc-page-title {
+    font-size: clamp(1.95rem, 3.8vw, 2.35rem);
+}
+
+.csdc-people-page .csdc-page-subtitle {
+    font-size: 0.98rem;
+    max-width: 52ch;
+}
+
+.csdc-people-page .author-card {
+    padding: 1rem;
+}
+
+.csdc-people-page .author-avatar {
+    max-height: 112px;
+    max-width: 112px;
+    height: 112px;
+    width: 112px;
+}
+
+.csdc-people-page .author-name {
+    font-size: 1.24rem;
+}
+
+.csdc-people-page .author-bio {
+    font-size: 0.92rem;
+    line-height: 1.52;
+}
+
+.csdc-people-page .author-note,
+.csdc-people-page .author-advisor {
+    font-size: 0.9rem;
+}
+
+.csdc-people-page .author-button {
+    font-size: 1.16rem;
+}
+
+.csdc-people-page .csdc-contact-pill {
+    font-size: 0.92rem;
+}
+
+.csdc-people-page .author-card:not(.author-card--alumni) {
+    background: #f4f6f9;
+    border-color: #e5e9ef;
+}
+
 .csdc-people-page .author-card::after {
     content: "";
     position: absolute;
@@ -346,12 +414,14 @@ div.author-avatar {
 }
 
 .csdc-people-page .author-card:hover,
-.csdc-people-page .author-card:focus-within {
+.csdc-people-page .author-card:focus-within,
+.csdc-people-page .author-card.author-card--default-open {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .csdc-people-page .author-card:hover::after,
-.csdc-people-page .author-card:focus-within::after {
+.csdc-people-page .author-card:focus-within::after,
+.csdc-people-page .author-card.author-card--default-open::after {
     opacity: 1;
 }
 
@@ -367,8 +437,10 @@ div.author-avatar {
 
 .csdc-people-page .author-card:hover .author-bio,
 .csdc-people-page .author-card:focus-within .author-bio,
+.csdc-people-page .author-card.author-card--default-open .author-bio,
 .csdc-people-page .author-card:hover .author-note,
-.csdc-people-page .author-card:focus-within .author-note {
+.csdc-people-page .author-card:focus-within .author-note,
+.csdc-people-page .author-card.author-card--default-open .author-note {
     max-height: 20rem;
     opacity: 1;
     margin-top: 0.6rem;
@@ -379,6 +451,26 @@ div.author-avatar {
    when the team area is hovered and the current card is not active. */
 .csdc-people-page:hover .author-card:not(:hover):not(:focus-within) .author-bio,
 .csdc-people-page:hover .author-card:not(:hover):not(:focus-within) .author-note {
+    transition-delay: 0s;
+}
+
+.csdc-people-page:hover .author-card.author-card--default-open:not(:hover):not(:focus-within),
+.csdc-people-page:focus-within .author-card.author-card--default-open:not(:hover):not(:focus-within) {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.csdc-people-page:hover .author-card.author-card--default-open:not(:hover):not(:focus-within)::after,
+.csdc-people-page:focus-within .author-card.author-card--default-open:not(:hover):not(:focus-within)::after {
+    opacity: 0;
+}
+
+.csdc-people-page:hover .author-card.author-card--default-open:not(:hover):not(:focus-within) .author-bio,
+.csdc-people-page:hover .author-card.author-card--default-open:not(:hover):not(:focus-within) .author-note,
+.csdc-people-page:focus-within .author-card.author-card--default-open:not(:hover):not(:focus-within) .author-bio,
+.csdc-people-page:focus-within .author-card.author-card--default-open:not(:hover):not(:focus-within) .author-note {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
     transition-delay: 0s;
 }
 

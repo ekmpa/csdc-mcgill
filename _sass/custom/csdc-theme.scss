@@ -8,7 +8,7 @@ html, body {
 }
 
 .csdc-page {
-  background: linear-gradient(135deg, $csdc-bg-a 0%, $csdc-bg-b 100%);
+  background: #ffffff;
 }
 
 .csdc-container {
@@ -20,7 +20,7 @@ html, body {
 .csdc-hero {
   background: linear-gradient(180deg, #ffffff 0%, #f8fafc 55%, #eef2f7 100%);
   padding: 2.4rem 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
   /* Full-bleed: break out of #main's max-width/padding */
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -180,6 +180,11 @@ a.csdc-red:focus {
   color: #6b7280;
 }
 
+.csdc-section-subtitle {
+  margin: 0.2rem 0 1rem;
+  color: #6b7280;
+}
+
 .csdc-card {
   background: #ffffff;
   border: 1px solid #e5e7eb;
@@ -324,7 +329,87 @@ a.csdc-red:focus {
 }
 
 .csdc-home-events {
-  margin-bottom: 3.2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.csdc-home-team-stats {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 2.4rem 1.2rem;
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 0.75rem;
+}
+
+.csdc-home-team-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.1rem;
+  text-align: center;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.csdc-home-team-stat {
+  padding: 0.45rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.csdc-home-team-stat-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+
+.csdc-home-team-stat-link:visited,
+.csdc-home-team-stat-link:hover,
+.csdc-home-team-stat-link:focus {
+  text-decoration: none !important;
+}
+
+.csdc-home-team-stat-link:hover,
+.csdc-home-team-stat-link:focus {
+  transform: scale(1.03);
+}
+
+.csdc-home-team-stat-link *,
+.csdc-home-team-stat-link:hover *,
+.csdc-home-team-stat-link:focus * {
+  text-decoration: none !important;
+}
+
+.csdc-home-team-stat-number {
+  color: $csdc-red;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: 0.01em;
+}
+
+.csdc-home-team-stat-link,
+.csdc-home-team-stat-link:visited,
+.csdc-home-team-stat-link:hover,
+.csdc-home-team-stat-link:focus {
+  color: inherit;
+}
+
+.csdc-home-team-stat-label {
+  margin: 0.55rem 0 0;
+  color: #4b5563;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .csdc-team-banner {
@@ -368,7 +453,7 @@ a.csdc-red:focus {
 
 .csdc-team-banner:hover,
 .csdc-team-banner:focus {
-  color: #111827;
+  color: #ffffff;
   transform: scale(1.015);
 }
 
@@ -557,7 +642,30 @@ a.csdc-red:focus {
 
 .csdc-about-hero,
 .csdc-news-hero {
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.csdc-about-mission-section {
+  margin-top: 3.5rem;
+  margin-bottom: 5rem;
+}
+
+.csdc-about-mission-section .csdc-card {
+  padding-top: 1.35rem;
+  padding-bottom: 1.35rem;
+}
+
+.csdc-about-axes-section {
+  margin-top: 5rem;
+  margin-bottom: 5.5rem;
+}
+
+.csdc-about-axes-section h2 {
+  margin-bottom: 1.35rem;
+}
+
+.csdc-about-axes-section .csdc-pillars {
+  gap: 1.35rem;
 }
 
 .csdc-contact-pill {

@@ -16,6 +16,8 @@ main:
         url: /about/
       - page: "News"
         url: /news/
+      - page: "Events"
+        url: /events/
       - page: "People"
         url: /people/
       - page: "Teaching"

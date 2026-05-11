@@ -1,5 +1,5 @@
 <!-- Show author next to post, should show most up to date info -->
-<article class="author-card{% if include.alumni %} author-card--alumni{% endif %}{% if include.compact_avatar %} author-card--compact{% endif %}">
+<article class="author-card{% if include.alumni %} author-card--alumni{% endif %}{% if include.compact_avatar %} author-card--compact{% endif %}{% if include.compact_avatar and include.role_to_render and (include.role_to_render.type == 'Student' or include.role_to_render.type == 'Staff' or include.role_to_render.type == 'Postdoc') %} author-card--compact-wide-avatar{% endif %}{% if include.alumni != true and author.name == 'Dietlind Stolle' %} author-card--default-open{% endif %}">
     <div class="author-avatar">
         {% assign avatar_value = author.avatar | default: "" | strip %}
         {% assign use_person_placeholder = false %}
@@ -32,7 +32,7 @@
         {% assign role_start = include.role_to_render.start_date | default: "" | strip %}
         {% assign role_end = include.role_to_render.end_date | default: "" | strip %}
         {% if include.role_to_render and (role_start != "" or role_end != "") %}
-        <div class="author-dates">{% if role_start != "" %}{{ role_start }}{% if role_end != "" %} -- {{ role_end }}{% else %} --{% endif %}{% else %}-- {{ role_end }}{% endif %}</div>
+        <div class="author-dates">{% if role_start != "" %}{{ role_start }}{% if role_end != "" %}&thinsp;&mdash;&thinsp;{{ role_end }}{% else %}&thinsp;&mdash;{% endif %}{% else %}&mdash;&thinsp;{{ role_end }}{% endif %}</div>
         {% endif %}
 
         {% if include.role_to_render %}

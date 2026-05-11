@@ -15,7 +15,7 @@ permalink: /about/
     </div>
   </section>
 
-  <section class="csdc-section">
+  <section class="csdc-section csdc-about-mission-section">
     <div class="csdc-container">
       <article class="csdc-card">
         <h2 class="csdc-card-title">Our Mission</h2>
@@ -24,7 +24,7 @@ permalink: /about/
     </div>
   </section>
 
-  <section class="csdc-section">
+  <section class="csdc-section csdc-about-axes-section">
     <div class="csdc-container">
       <h2>Our Research Axes</h2>
       <div class="csdc-pillars csdc-pillars-two">

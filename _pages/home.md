@@ -8,4 +8,5 @@ excerpt: "The McGill node of the CSDC researches trust, participation, and democ
 
 {% include csdc-home-hero.html %}
 {% include csdc-research-pillars.html %}
+{% include csdc-home-stats.html %}
 {% include csdc-featured-event.html %}
