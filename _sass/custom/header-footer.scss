@@ -59,6 +59,9 @@ a.site-title {
 }
 
 .csdc-shell-nav .csdc-lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 0.45rem;
     border: 1px solid rgba(249, 250, 251, 0.4);
     border-radius: 0.35rem;
@@ -69,6 +72,7 @@ a.site-title {
     line-height: 1;
     letter-spacing: 0.02em;
     cursor: pointer;
+    text-decoration: none;
     transition: border-color 0.18s ease, color 0.18s ease, background-color 0.18s ease;
 }
 

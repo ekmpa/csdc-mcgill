@@ -1,0 +1,32 @@
+---
+title: Publications
+layout: splash_v2
+excerpt: ""
+classes:
+    - no-sidebar
+    - wide
+    - csdc-page
+permalink: /fr/publications/
+taxonomy: Publications
+show_view_by_venue: false
+show_taxonomy_posts: false
+---
+
+<div class="csdc-page csdc-publications-page">
+<section class="csdc-section csdc-page-header">
+    <div class="csdc-container">
+        <p class="csdc-kicker"><span class="csdc-red">Axe de recherche et publications</span></p>
+        <h1 id="page-title" class="page__title csdc-page-title">Recherche</h1>
+    </div>
+</section>
+
+{% include csdc-research-pillars.html show_publications_link=false show_heading=true heading_text="Axes de recherche" subtitle_text="Au CÉCD, nous travaillons sur :" extra_class="csdc-publications-focus-section" %}
+
+<section class="csdc-section">
+    <div class="csdc-container">
+        <h2>Publications</h2>
+        <p class="csdc-page-subtitle">Productions scientifiques des professeur(e)s et etudiant(e)s de l'equipe.</p>
+        {% include posts-publication.html taxonomy=page.taxonomy %}
+    </div>
+</section>
+</div>

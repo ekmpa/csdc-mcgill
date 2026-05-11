@@ -1,43 +1,93 @@
 <!-- Overrides and modified from: https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/_includes/masthead.html -->
+{% assign current_path = page.url | default: page.permalink | default: '/' %}
+{% assign is_fr = false %}
+{% if current_path == '/fr/' or current_path contains '/fr/' %}
+  {% assign is_fr = true %}
+{% endif %}
+
+{% if is_fr %}
+  {% assign lang_switch_path = current_path | remove_first: '/fr' %}
+  {% if lang_switch_path == '' %}
+    {% assign lang_switch_path = '/' %}
+  {% endif %}
+{% else %}
+  {% if current_path == '/' %}
+    {% assign lang_switch_path = '/fr/' %}
+  {% else %}
+    {% assign lang_switch_path = '/fr' | append: current_path %}
+  {% endif %}
+{% endif %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav csdc-shell-nav">
-        <a class="site-title" href="{{ '/' | relative_url }}">
-          <span class="site-title-text" data-i18n="site_title">McGill CSDC</span>
-          <span class="site-subtitle" data-i18n="site_subtitle">Centre for the Study of Democratic Citizenship</span>
-        </a>
-        <ul class="visible-links">
-          <li class="masthead__menu-item">
-            <a class="csdc-nav-link" data-nav="home" href="{{ '/' | relative_url }}" data-i18n="nav_home">Home</a>
-          </li>
-          <li class="masthead__menu-item">
-            <a class="csdc-nav-link" data-nav="about" href="{{ '/about/' | relative_url }}" data-i18n="nav_about">About</a>
-          </li>
-          <li class="masthead__menu-item">
-            <a class="csdc-nav-link" data-nav="people" href="{{ '/people/' | relative_url }}" data-i18n="nav_people">Team</a>
-          </li>
-          <li class="masthead__menu-item">
-            <a class="csdc-nav-link" data-nav="research" href="{{ '/publications/' | relative_url }}" data-i18n="nav_research">Research</a>
-          </li>
-          <li class="masthead__menu-item">
-            <a class="csdc-nav-link" data-nav="news" href="{{ '/news/' | relative_url }}" data-i18n="nav_news">News</a>
-          </li>
-          <li class="masthead__menu-item">
-            <a class="csdc-nav-link" data-nav="events" href="{{ '/events/' | relative_url }}" data-i18n="nav_events">Events</a>
-          </li>
-
-        </ul>
-        {% if site.search == true %}
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search"
-            }}</span>
-          <i class="fas fa-search search-button"></i>
-        </button>
+        {% if is_fr %}
+          <a class="site-title" href="{{ '/fr/' | relative_url }}">
+            <span class="site-title-text">CÉCD McGill</span>
+            <span class="site-subtitle">Centre pour l'etude de la citoyennete democratique</span>
+          </a>
+        {% else %}
+          <a class="site-title" href="{{ '/' | relative_url }}">
+            <span class="site-title-text">McGill CSDC</span>
+            <span class="site-subtitle">Centre for the Study of Democratic Citizenship</span>
+          </a>
         {% endif %}
 
-        <button class="csdc-lang-toggle" type="button" data-i18n="lang_button" data-i18n-aria="lang_toggle_label">FR</button>
+        <ul class="visible-links">
+          {% if is_fr %}
+            <li class="masthead__menu-item">
+              <a class="csdc-nav-link" data-nav="home" href="{{ '/fr/' | relative_url }}">Accueil</a>
+            </li>
+            <li class="masthead__menu-item">
+              <a class="csdc-nav-link" data-nav="about" href="{{ '/fr/about/' | relative_url }}">A propos</a>
+            </li>
+            <li class="masthead__menu-item">
+              <a class="csdc-nav-link" data-nav="people" href="{{ '/fr/people/' | relative_url }}">Equipe</a>
+            </li>
+            <li class="masthead__menu-item">
+              <a class="csdc-nav-link" data-nav="research" href="{{ '/fr/publications/' | relative_url }}">Recherche</a>
+            </li>
+            <li class="masthead__menu-item">
+              <a class="csdc-nav-link" data-nav="news" href="{{ '/fr/news/' | relative_url }}">Actualites</a>
+            </li>
+            <li class="masthead__menu-item">
+              <a class="csdc-nav-link" data-nav="events" href="{{ '/fr/events/' | relative_url }}">Evenements</a>
+            </li>
+          {% else %}
+            <li class="masthead__menu-item">
+              <a class="csdc-nav-link" data-nav="home" href="{{ '/' | relative_url }}">Home</a>
+            </li>
+            <li class="masthead__menu-item">
+              <a class="csdc-nav-link" data-nav="about" href="{{ '/about/' | relative_url }}">About</a>
+            </li>
+            <li class="masthead__menu-item">
+              <a class="csdc-nav-link" data-nav="people" href="{{ '/people/' | relative_url }}">Team</a>
+            </li>
+            <li class="masthead__menu-item">
+              <a class="csdc-nav-link" data-nav="research" href="{{ '/publications/' | relative_url }}">Research</a>
+            </li>
+            <li class="masthead__menu-item">
+              <a class="csdc-nav-link" data-nav="news" href="{{ '/news/' | relative_url }}">News</a>
+            </li>
+            <li class="masthead__menu-item">
+              <a class="csdc-nav-link" data-nav="events" href="{{ '/events/' | relative_url }}">Events</a>
+            </li>
+          {% endif %}
+        </ul>
+
+        {% if site.search == true %}
+          <button class="search__toggle" type="button">
+            <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
+            <i class="fas fa-search search-button"></i>
+          </button>
+        {% endif %}
+
+        {% if is_fr %}
+          <a class="csdc-lang-toggle" href="{{ lang_switch_path | relative_url }}" aria-label="Passer en anglais">EN</a>
+        {% else %}
+          <a class="csdc-lang-toggle" href="{{ lang_switch_path | relative_url }}" aria-label="Passer en francais">FR</a>
+        {% endif %}
 
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
@@ -45,7 +95,6 @@
         </button>
 
         <ul class="hidden-links hidden"></ul>
-
       </nav>
     </div>
   </div>
@@ -53,82 +102,6 @@
 
 <script>
 (function () {
-  var STORAGE_KEY = 'csdc-site-language';
-  var translations = {
-    en: {
-      site_title: "McGill CSDC",
-      site_subtitle: "Centre for the Study of Democratic Citizenship",
-      nav_home: "Home",
-      nav_about: "About",
-      nav_people: "Team",
-      nav_research: "Research",
-      nav_news: "News",
-      nav_events: "Events",
-      lang_toggle_label: "Switch to French",
-      lang_button: "FR"
-    },
-    fr: {
-      site_title: "CSDC McGill",
-      site_subtitle: "Centre pour l'étude de la citoyenneté démocratique",
-      nav_home: "Accueil",
-      nav_about: "À propos",
-      nav_people: "Équipe",
-      nav_research: "Recherche",
-      nav_news: "Actualités",
-      nav_events: "Événements",
-      lang_toggle_label: "Passer à l'anglais",
-      lang_button: "EN"
-    }
-  };
-
-  function normalizeLanguage(value) {
-    return value === 'fr' ? 'fr' : 'en';
-  }
-
-  function getPreferredLanguage() {
-    var stored = localStorage.getItem(STORAGE_KEY);
-    if (stored === 'fr' || stored === 'en') {
-      return stored;
-    }
-    // Try to detect from browser language
-    var browserLang = navigator.language || navigator.userLanguage;
-    if (browserLang.startsWith('fr')) {
-      return 'fr';
-    }
-    return 'en';
-  }
-
-  function getTranslation(key, lang) {
-    lang = normalizeLanguage(lang);
-    return (translations[lang] && translations[lang][key]) || key;
-  }
-
-  function applyTranslations(lang) {
-    lang = normalizeLanguage(lang);
-    localStorage.setItem(STORAGE_KEY, lang);
-
-    // Update all elements with data-i18n attribute
-    var elements = document.querySelectorAll('[data-i18n]');
-    elements.forEach(function (element) {
-      var key = element.getAttribute('data-i18n');
-      var text = getTranslation(key, lang);
-      element.textContent = text;
-    });
-
-    // Update all elements with data-i18n-aria attribute
-    var ariaElements = document.querySelectorAll('[data-i18n-aria]');
-    ariaElements.forEach(function (element) {
-      var key = element.getAttribute('data-i18n-aria');
-      var text = getTranslation(key, lang);
-      element.setAttribute('aria-label', text);
-    });
-
-    // Update HTML lang attribute
-    if (document.documentElement) {
-      document.documentElement.lang = lang;
-    }
-  }
-
   function applyActiveNav() {
     var links = document.querySelectorAll('.csdc-shell-nav .csdc-nav-link');
     if (!links.length) {
@@ -139,22 +112,18 @@
       link.classList.remove('is-active');
     });
 
-    var homeLink = document.querySelector('.csdc-shell-nav .csdc-nav-link[data-nav="home"]');
-    var basePath = '';
-    if (homeLink) {
-      basePath = new URL(homeLink.href, window.location.origin).pathname.replace(/\/$/, '');
+    var currentPath = window.location.pathname.replace(/\/index\.html$/, '');
+    if (currentPath === '/fr') {
+      currentPath = '/fr/';
     }
 
-    var currentPath = window.location.pathname;
-    if (basePath && currentPath.indexOf(basePath) === 0) {
-      currentPath = currentPath.slice(basePath.length);
+    if (currentPath.indexOf('/fr/') === 0) {
+      currentPath = currentPath.slice(3);
+      if (!currentPath || currentPath === '') {
+        currentPath = '/';
+      }
     }
 
-    if (!currentPath || currentPath === '') {
-      currentPath = '/';
-    }
-
-    currentPath = currentPath.replace(/\/index\.html$/, '');
     if (!currentPath.startsWith('/')) {
       currentPath = '/' + currentPath;
     }
@@ -174,20 +143,6 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var currentLang = getPreferredLanguage();
-    applyTranslations(currentLang);
-    applyActiveNav();
-
-    var toggle = document.querySelector('.csdc-lang-toggle');
-    if (!toggle) {
-      return;
-    }
-
-    toggle.addEventListener('click', function () {
-      var nextLanguage = getPreferredLanguage() === 'fr' ? 'en' : 'fr';
-      applyTranslations(nextLanguage);
-    });
-  });
+  document.addEventListener('DOMContentLoaded', applyActiveNav);
 })();
 </script>
