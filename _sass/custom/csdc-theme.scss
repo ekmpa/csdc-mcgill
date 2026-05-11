@@ -185,6 +185,23 @@ a.csdc-red:focus {
   color: #6b7280;
 }
 
+.csdc-about-page .csdc-page-title,
+.csdc-research-page .csdc-page-title,
+.csdc-news-page .csdc-page-title,
+.csdc-events-page .csdc-page-title,
+.csdc-publications-page .csdc-page-title {
+  font-size: clamp(1.95rem, 3.8vw, 2.35rem);
+}
+
+.csdc-about-page .csdc-page-subtitle,
+.csdc-research-page .csdc-page-subtitle,
+.csdc-news-page .csdc-page-subtitle,
+.csdc-events-page .csdc-page-subtitle,
+.csdc-publications-page .csdc-page-subtitle {
+  font-size: 0.98rem;
+  max-width: 52ch;
+}
+
 .csdc-card {
   background: #ffffff;
   border: 1px solid #e5e7eb;

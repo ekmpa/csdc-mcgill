@@ -5,27 +5,27 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav csdc-shell-nav">
         <a class="site-title" href="{{ '/' | relative_url }}">
-          McGill CSDC
-          <span class="site-subtitle">Centre for the Study of Democratic Citizenship</span>
+          <span class="site-title-text" data-i18n="site_title">McGill CSDC</span>
+          <span class="site-subtitle" data-i18n="site_subtitle">Centre for the Study of Democratic Citizenship</span>
         </a>
         <ul class="visible-links">
           <li class="masthead__menu-item">
-            <a class="csdc-nav-link" data-nav="home" href="{{ '/' | relative_url }}">Home</a>
+            <a class="csdc-nav-link" data-nav="home" href="{{ '/' | relative_url }}" data-i18n="nav_home">Home</a>
           </li>
           <li class="masthead__menu-item">
-            <a class="csdc-nav-link" data-nav="about" href="{{ '/about/' | relative_url }}">About</a>
+            <a class="csdc-nav-link" data-nav="about" href="{{ '/about/' | relative_url }}" data-i18n="nav_about">About</a>
           </li>
           <li class="masthead__menu-item">
-            <a class="csdc-nav-link" data-nav="people" href="{{ '/people/' | relative_url }}">Team</a>
+            <a class="csdc-nav-link" data-nav="people" href="{{ '/people/' | relative_url }}" data-i18n="nav_people">Team</a>
           </li>
           <li class="masthead__menu-item">
-            <a class="csdc-nav-link" data-nav="research" href="{{ '/publications/' | relative_url }}">Research</a>
+            <a class="csdc-nav-link" data-nav="research" href="{{ '/publications/' | relative_url }}" data-i18n="nav_research">Research</a>
           </li>
           <li class="masthead__menu-item">
-            <a class="csdc-nav-link" data-nav="news" href="{{ '/news/' | relative_url }}">News</a>
+            <a class="csdc-nav-link" data-nav="news" href="{{ '/news/' | relative_url }}" data-i18n="nav_news">News</a>
           </li>
           <li class="masthead__menu-item">
-            <a class="csdc-nav-link" data-nav="events" href="{{ '/events/' | relative_url }}">Events</a>
+            <a class="csdc-nav-link" data-nav="events" href="{{ '/events/' | relative_url }}" data-i18n="nav_events">Events</a>
           </li>
 
         </ul>
@@ -37,7 +37,7 @@
         </button>
         {% endif %}
 
-        <button class="csdc-lang-toggle" type="button" aria-label="Switch to French">FR</button>
+        <button class="csdc-lang-toggle" type="button" data-i18n="lang_button" data-i18n-aria="lang_toggle_label">FR</button>
 
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
@@ -51,33 +51,35 @@
   </div>
 </div>
 
-<div id="google_translate_element" class="csdc-google-translate-anchor" aria-hidden="true"></div>
-
 <script>
 (function () {
   var STORAGE_KEY = 'csdc-site-language';
-
-  function getCookie(name) {
-    var cookies = document.cookie ? document.cookie.split('; ') : [];
-    for (var i = 0; i < cookies.length; i += 1) {
-      var parts = cookies[i].split('=');
-      var key = parts.shift();
-      if (key === name) {
-        return decodeURIComponent(parts.join('='));
-      }
+  var translations = {
+    en: {
+      site_title: "McGill CSDC",
+      site_subtitle: "Centre for the Study of Democratic Citizenship",
+      nav_home: "Home",
+      nav_about: "About",
+      nav_people: "Team",
+      nav_research: "Research",
+      nav_news: "News",
+      nav_events: "Events",
+      lang_toggle_label: "Switch to French",
+      lang_button: "FR"
+    },
+    fr: {
+      site_title: "CSDC McGill",
+      site_subtitle: "Centre pour l'étude de la citoyenneté démocratique",
+      nav_home: "Accueil",
+      nav_about: "À propos",
+      nav_people: "Équipe",
+      nav_research: "Recherche",
+      nav_news: "Actualités",
+      nav_events: "Événements",
+      lang_toggle_label: "Passer à l'anglais",
+      lang_button: "EN"
     }
-    return '';
-  }
-
-  function setGoogTransCookie(lang) {
-    var value = '/en/' + lang;
-    var expires = new Date();
-    expires.setTime(expires.getTime() + (365 * 24 * 60 * 60 * 1000));
-    var cookie = 'googtrans=' + value + '; path=/; expires=' + expires.toUTCString();
-
-    document.cookie = cookie;
-    document.cookie = cookie + '; domain=' + window.location.hostname;
-  }
+  };
 
   function normalizeLanguage(value) {
     return value === 'fr' ? 'fr' : 'en';
@@ -88,47 +90,42 @@
     if (stored === 'fr' || stored === 'en') {
       return stored;
     }
-
-    var cookieValue = getCookie('googtrans');
-    if (cookieValue === '/en/fr') {
+    // Try to detect from browser language
+    var browserLang = navigator.language || navigator.userLanguage;
+    if (browserLang.startsWith('fr')) {
       return 'fr';
     }
-
     return 'en';
   }
 
-  function updateToggleLabel(lang) {
-    var toggle = document.querySelector('.csdc-lang-toggle');
-    if (!toggle) {
-      return;
-    }
-
-    if (lang === 'fr') {
-      toggle.textContent = 'EN';
-      toggle.setAttribute('aria-label', 'Switch to English');
-    } else {
-      toggle.textContent = 'FR';
-      toggle.setAttribute('aria-label', 'Switch to French');
-    }
+  function getTranslation(key, lang) {
+    lang = normalizeLanguage(lang);
+    return (translations[lang] && translations[lang][key]) || key;
   }
 
-  function applyLanguage(lang, options) {
-    var nextLanguage = normalizeLanguage(lang);
-    var settings = options || {};
+  function applyTranslations(lang) {
+    lang = normalizeLanguage(lang);
+    localStorage.setItem(STORAGE_KEY, lang);
 
-    localStorage.setItem(STORAGE_KEY, nextLanguage);
-    setGoogTransCookie(nextLanguage);
-    updateToggleLabel(nextLanguage);
+    // Update all elements with data-i18n attribute
+    var elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(function (element) {
+      var key = element.getAttribute('data-i18n');
+      var text = getTranslation(key, lang);
+      element.textContent = text;
+    });
 
-    var combo = document.querySelector('.goog-te-combo');
-    if (combo) {
-      combo.value = nextLanguage === 'fr' ? 'fr' : '';
-      combo.dispatchEvent(new Event('change'));
-      return;
-    }
+    // Update all elements with data-i18n-aria attribute
+    var ariaElements = document.querySelectorAll('[data-i18n-aria]');
+    ariaElements.forEach(function (element) {
+      var key = element.getAttribute('data-i18n-aria');
+      var text = getTranslation(key, lang);
+      element.setAttribute('aria-label', text);
+    });
 
-    if (!settings.silent) {
-      window.location.reload();
+    // Update HTML lang attribute
+    if (document.documentElement) {
+      document.documentElement.lang = lang;
     }
   }
 
@@ -177,27 +174,10 @@
     }
   }
 
-  window.csdcInitTranslate = function () {
-    if (!(window.google && window.google.translate && window.google.translate.TranslateElement)) {
-      return;
-    }
-
-    new window.google.translate.TranslateElement(
-      {
-        pageLanguage: 'en',
-        includedLanguages: 'en,fr',
-        autoDisplay: false,
-        layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE
-      },
-      'google_translate_element'
-    );
-
-    applyLanguage(getPreferredLanguage(), { silent: true });
-  };
-
   document.addEventListener('DOMContentLoaded', function () {
+    var currentLang = getPreferredLanguage();
+    applyTranslations(currentLang);
     applyActiveNav();
-    applyLanguage(getPreferredLanguage(), { silent: true });
 
     var toggle = document.querySelector('.csdc-lang-toggle');
     if (!toggle) {
@@ -206,9 +186,8 @@
 
     toggle.addEventListener('click', function () {
       var nextLanguage = getPreferredLanguage() === 'fr' ? 'en' : 'fr';
-      applyLanguage(nextLanguage);
+      applyTranslations(nextLanguage);
     });
   });
 })();
 </script>
-<script src="https://translate.google.com/translate_a/element.js?cb=csdcInitTranslate"></script>

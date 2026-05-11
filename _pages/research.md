@@ -8,7 +8,7 @@ excerpt: "Research priorities and topic areas at the McGill CSDC."
 show_taxonomy_posts: false
 ---
 
-<div class="csdc-page">
+<div class="csdc-page csdc-research-page">
   <section class="csdc-section csdc-page-header">
     <div class="csdc-container">
       <p class="csdc-kicker"><span class="csdc-red">McGill Node</span></p>

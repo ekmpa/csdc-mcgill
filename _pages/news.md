@@ -12,6 +12,7 @@ show_taxonomy_posts: false
 
 ---
 
+<div class="csdc-page csdc-news-page">
 <section class="csdc-section csdc-page-header">
     <div class="csdc-container">
         <p class="csdc-kicker"><span class="csdc-red">News and announcements</span></p>
@@ -20,3 +21,4 @@ show_taxonomy_posts: false
 </section>
 
 {% include csdc-news-only-feed.html %}
+</div>

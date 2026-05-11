@@ -10,6 +10,7 @@ classes:
 
 ---
 
+<div class="csdc-page csdc-events-page">
 <section class="csdc-section csdc-page-header">
     <div class="csdc-container">
         <p class="csdc-kicker"><span class="csdc-red">Seminars and other events</span></p>
@@ -18,3 +19,4 @@ classes:
 </section>
 
 {% include csdc-events-feed.html %}
+</div>

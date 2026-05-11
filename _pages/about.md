@@ -7,9 +7,10 @@ taxonomy: About
 permalink: /about/
 ---
 
-<div class="csdc-page">
+<div class="csdc-page csdc-about-page">
   <section class="csdc-section csdc-page-header">
     <div class="csdc-container">
+      <p class="csdc-kicker"><span class="csdc-red">About the Centre</span></p>
       <h1 id="page-title" class="page__title csdc-page-title">About Us</h1>
       <p class="csdc-page-subtitle">The McGill node of the CSDC advances research on trust, democratic participation, and inclusion.</p>
     </div>

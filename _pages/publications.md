@@ -12,6 +12,7 @@ show_view_by_venue: false
 show_taxonomy_posts: false
 ---
 
+<div class="csdc-page csdc-publications-page">
 <section class="csdc-section csdc-page-header">
     <div class="csdc-container">
         <p class="csdc-kicker"><span class="csdc-red">Research Focus and Publications</span></p>
@@ -28,3 +29,4 @@ show_taxonomy_posts: false
         {% include posts-publication.html taxonomy=page.taxonomy %}
     </div>
 </section>
+</div>

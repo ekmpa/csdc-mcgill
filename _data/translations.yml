@@ -1,0 +1,23 @@
+en:
+  site_title: "McGill CSDC"
+  site_subtitle: "Centre for the Study of Democratic Citizenship"
+  nav_home: "Home"
+  nav_about: "About"
+  nav_people: "Team"
+  nav_research: "Research"
+  nav_news: "News"
+  nav_events: "Events"
+  lang_toggle_label: "Switch to French"
+  lang_button: "FR"
+
+fr:
+  site_title: "CSDC McGill"
+  site_subtitle: "Centre pour l'étude de la citoyenneté démocratique"
+  nav_home: "Accueil"
+  nav_about: "À propos"
+  nav_people: "Équipe"
+  nav_research: "Recherche"
+  nav_news: "Actualités"
+  nav_events: "Événements"
+  lang_toggle_label: "Passer à l'anglais"
+  lang_button: "EN"
