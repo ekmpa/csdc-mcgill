@@ -71,6 +71,23 @@ Brianne Anderson:
     end_date: "2027"
     advisor: Leonardo Baccini
   avatar: /assets/images/bio/Brianne Anderson.jpg
+  auto_update_publications: false
+Cameron Anderson:
+  name: Cameron Anderson
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
+Borna Atrchian:
+  name: Borna Atrchian
+Christopher Anderson:
+  name: Christopher Anderson
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 
 Henry Atkins:
   name: Henry Atkins
@@ -166,6 +183,15 @@ Elissa Berwick:
   social_media_links:
   - label: Website
     url: https://www.elissaberwick.com/
+Kelly Blidook:
+  name: Kelly Blidook
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
+Arianna Bondi:
+  name: Arianna Bondi
 Marc André Bodet:
   name: Marc André Bodet
   alumni: true
@@ -200,6 +226,14 @@ Arianna Bondi:
     advisor: Leonardo Baccini
   orcid: 0000-0003-2491-2672
   avatar: /assets/images/bio/Arianna Bondi.jpg
+  auto_update_publications: true
+Maialene Boutin-Wilkins:
+  name: Maialene Boutin-Wilkins
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
 
 Tyler Braun:
   name: Tyler Braun
@@ -612,6 +646,21 @@ Terhas Ghebretecle:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+Elizabeth Goodyear-Grant:
+  name: Elizabeth Goodyear-Grant
+  current_role:
+    type: Student
+    title: Doctoral Student
+Allison Harell:
+  name: Allison Harell
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
+Ian Van Haren:
+  name: Ian Van Haren
 Andrew Gibson:
   name: Andrew Gibson
   alumni: true
@@ -741,7 +790,25 @@ Sarah Houde:
   alumni: true
   current_role:
     type: Student
-    end_date: "2005"
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
+Emmanuelle Hébert:
+  name: Emmanuelle Hébert
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
+Raffaele Iacovino:
+  name: Raffaele Iacovino
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Éric Bélanger
+    affiliation: McGill University
+  auto_update_publications: false
 
 Anne Imouza:
   name: Anne Imouza
@@ -839,6 +906,16 @@ Khaoula El Khalil:
     type: Student
     end_date: "2022"
   avatar: /assets/images/bio/Khaoula El Khalil.jpg
+  auto_update_publications: false
+Katherine Kline:
+  name: Katherine Kline
+Susanna Kislenko:
+  name: Susanna Kislenko
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
 
 Kira Killermann:
   name: Kira Killermann
@@ -1087,6 +1164,12 @@ Juan Pablo Luna:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
+Michael Mackenzie:
+  name: Michael Mackenzie
+  current_role:
+    type: Student
+    title: Master's Student
+  auto_update_publications: false
 Adam Mahon:
   name: Adam Mahon
   alumni: true
@@ -1136,6 +1219,13 @@ Victoria Mahon:
   orcid: 0009-0002-3577-3217
   avatar: /assets/images/bio/Victoria Mahon.jpg
   auto_update_publications: true
+Janine Marshall:
+  name: Janine Marshall
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
 Beatrice Marry:
   name: Beatrice Marry
   alumni: true
@@ -1306,6 +1396,15 @@ Alan Nemirovski:
   orcid: 0009-0009-3106-9426
   avatar: /assets/images/bio/Alan Nemirovski.jpg
   auto_update_publications: true
+Erin Penner:
+  name: Erin Penner
+  current_role:
+    type: Faculty / Professor
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
+Teresa Pian:
+  name: Teresa Pian
 Bethany Or:
   name: Bethany Or
   alumni: true
@@ -1410,10 +1509,17 @@ Rachel Rammal:
   name: Rachel Rammal
   current_role:
     type: Student
-    title: Doctoral Student
-    start_date: "2020"
-    end_date: "2025"
+    title: Doctorate Student
     advisor: Thomas Soehl
+    affiliation: McGill University
+  auto_update_publications: false
+Emma-Kate Ranachan:
+  name: Emma-Kate Ranachan
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
 
 Jeremy Rappel:
   name: Jeremy Rappel
@@ -1427,6 +1533,29 @@ Jeremy Rappel:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
+Ayanna Roberts:
+  name: Ayanna Roberts
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+Marie-Pierre Rouette:
+  name: Marie-Pierre Rouette
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Éric Bélanger
+    affiliation: McGill University
+  auto_update_publications: false
+Sahar Omidi Shayegan:
+  name: Sahar Omidi Shayegan
+Tim Reeskens:
+  name: Tim Reeskens
+  current_role:
+    type: Student
+    title: Doctoral Student
+    affiliation: McGill University
+  auto_update_publications: false
 
 Joseph Sannicandro:
   name: Joseph Sannicandro
@@ -1647,6 +1776,22 @@ Jennifer Suliteanu:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=8XWdG_YAAAAJ&hl=en&oi=ao
+Matthew Surch:
+  name: Matthew Surch
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
+Erika De Torres:
+  name: Erika De Torres
+Paul Sutton:
+  name: Paul Sutton
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
 Melanee Thomas:
   name: Melanee Thomas
   alumni: true
@@ -1771,6 +1916,13 @@ Zachary Yang:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=ljOxbowAAAAJ
+Lori Young:
+  name: Lori Young
+  current_role:
+    type: Student
+    title: Master's Student
+    affiliation: McGill University
+  auto_update_publications: false
 
 Julia Yingling:
   name: Julia Yingling
