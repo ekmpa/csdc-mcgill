@@ -37,3 +37,31 @@ classes:
 
 </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var defaultOpen = document.querySelector('.csdc-people-page .author-card--default-open');
+    if (!defaultOpen) {
+        return;
+    }
+
+    var closeDefaultOpen = function (event) {
+        var activeCard = event.target.closest('.author-card');
+        if (!activeCard || activeCard === defaultOpen) {
+            return;
+        }
+
+        defaultOpen.classList.remove('author-card--default-open');
+
+        document.querySelectorAll('.csdc-people-page .author-card').forEach(function (card) {
+            card.removeEventListener('mouseenter', closeDefaultOpen);
+            card.removeEventListener('focusin', closeDefaultOpen);
+        });
+    };
+
+    document.querySelectorAll('.csdc-people-page .author-card').forEach(function (card) {
+        card.addEventListener('mouseenter', closeDefaultOpen);
+        card.addEventListener('focusin', closeDefaultOpen);
+    });
+});
+</script>

@@ -454,26 +454,6 @@ div.author-avatar {
     transition-delay: 0s;
 }
 
-.csdc-people-page:hover .author-card.author-card--default-open:not(:hover):not(:focus-within),
-.csdc-people-page:focus-within .author-card.author-card--default-open:not(:hover):not(:focus-within) {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-.csdc-people-page:hover .author-card.author-card--default-open:not(:hover):not(:focus-within)::after,
-.csdc-people-page:focus-within .author-card.author-card--default-open:not(:hover):not(:focus-within)::after {
-    opacity: 0;
-}
-
-.csdc-people-page:hover .author-card.author-card--default-open:not(:hover):not(:focus-within) .author-bio,
-.csdc-people-page:hover .author-card.author-card--default-open:not(:hover):not(:focus-within) .author-note,
-.csdc-people-page:focus-within .author-card.author-card--default-open:not(:hover):not(:focus-within) .author-bio,
-.csdc-people-page:focus-within .author-card.author-card--default-open:not(:hover):not(:focus-within) .author-note {
-    max-height: 0;
-    opacity: 0;
-    margin-top: 0;
-    transition-delay: 0s;
-}
-
 @media (hover: none), (max-width: 720px) {
     .csdc-people-page .author-card .author-bio,
     .csdc-people-page .author-card .author-note {

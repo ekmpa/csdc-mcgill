@@ -73,6 +73,10 @@ a.site-title {
     font-size: 0.84rem;
 }
 
+.csdc-shell-nav .csdc-nav-link.is-active {
+    font-weight: 700;
+}
+
 .csdc-shell-nav .visible-links {
     margin-left: auto;
     gap: 0 !important;
