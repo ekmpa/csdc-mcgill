@@ -8,6 +8,20 @@ from ruamel.yaml import YAML
 
 from . import save_url_image, parse_issue_body, write_content_to_file
 
+
+def _is_empty_response(value):
+    if value is None:
+        return True
+    return str(value).strip() in ("", "_No response_", "None")
+
+
+def _first_non_empty(parsed, *keys):
+    for key in keys:
+        value = parsed.get(key)
+        if not _is_empty_response(value):
+            return value
+    return None
+
 def front_matters_from_dict(d):
     # Convert to dict
     d = json.loads(json.dumps(d))
@@ -33,13 +47,34 @@ def get_filename(parsed):
     return "-".join([str(parsed[k]) for k in ["year", "month", "day", "shorthand"]]) + ".md"
 
 
-def preprocess_parsed(parsed, keys_removed):
+def preprocess_parsed(parsed, keys_removed, for_update=False):
     """
     Removes any key with a value of "_No response_" or in `keys_removed`.
     """
 
+    parsed = dict(parsed)
+
     # First need to add some keys
     parsed["categories"] = "Publications"
+
+    # Normalize alternative key names from issue form labels.
+    if "title_french" in parsed and "title_fr" not in parsed and not _is_empty_response(parsed.get("title_french")):
+        parsed["title_fr"] = parsed.get("title_french")
+    if "venue_french" in parsed and "venue_fr" not in parsed and not _is_empty_response(parsed.get("venue_french")):
+        parsed["venue_fr"] = parsed.get("venue_french")
+    if "abstract_french" in parsed and "abstract_fr" not in parsed and not _is_empty_response(parsed.get("abstract_french")):
+        parsed["abstract_fr"] = parsed.get("abstract_french")
+
+    if not for_update:
+        # Bilingual fields: if French is missing, fall back to English.
+        title_fr = _first_non_empty(parsed, "title_fr")
+        parsed["title_fr"] = title_fr if title_fr is not None else parsed.get("title")
+
+        venue_fr = _first_non_empty(parsed, "venue_fr")
+        parsed["venue_fr"] = venue_fr if venue_fr is not None else parsed.get("venue")
+
+        abstract_fr = _first_non_empty(parsed, "abstract_fr")
+        parsed["abstract_fr"] = abstract_fr if abstract_fr is not None else parsed.get("abstract")
 
     # Sanitize some keys
     parsed["shorthand"] = parsed["shorthand"].replace("/", "-")
@@ -48,8 +83,11 @@ def preprocess_parsed(parsed, keys_removed):
     if parsed["tags"] != "_No response_":
         parsed["tags"] = [x.strip() for x in parsed["tags"].split(",")]
 
-    if parsed["abstract"] == "_No response_":
+    if parsed["abstract"] == "_No response_" and not for_update:
         parsed["abstract"] = "_Unavailable_"
+
+    if parsed.get("abstract_fr") == "_No response_" and not for_update:
+        parsed["abstract_fr"] = parsed["abstract"]
 
     # Then, remove keys
     return {
@@ -65,7 +103,7 @@ def generate_publication_post(parsed):
     """
 
     d = preprocess_parsed(
-        parsed, keys_removed=["year", "month", "day", "shorthand", "abstract", "action"]
+        parsed, keys_removed=["year", "month", "day", "shorthand", "abstract", "action", "title_french", "venue_french", "abstract_french"]
     )
 
     front_matter = front_matters_from_dict(d)
@@ -75,17 +113,29 @@ def generate_publication_post(parsed):
         """
     *{{ page.names }}*
 
-    **{{ page.venue }}**
+    {% assign current_path = page.url | default: page.permalink | default: '/' %}
+    {% assign is_fr = false %}
+    {% if current_path == '/fr/' or current_path contains '/fr/' %}
+    {% assign is_fr = true %}
+    {% endif %}
+
+    **{% if is_fr and page.venue_fr %}{{ page.venue_fr }}{% else %}{{ page.venue }}{% endif %}**
 
     {% include display-publication-links.html pub=page %}
 
+    {% if is_fr %}
+    ## Resume
+    {% if page.abstract_fr %}{{ page.abstract_fr }}{% else %}{{ page.abstract }}{% endif %}
+    {% else %}
     ## Abstract
+    {{ page.abstract }}
+    {% endif %}
     
     """
     )
 
     try:
-        content = top + bottom + str(parsed.get("abstract"))
+        content = top + bottom
     except TypeError as e:
         raise Exception(f"{e}\n{top=}\n{bottom=}\n{parsed=}") 
 
@@ -97,7 +147,9 @@ def generate_publication_post(parsed):
 
 def update_publication_post(parsed, load_dir="_posts/papers"):
     new_data = preprocess_parsed(
-        parsed, keys_removed=["year", "month", "day", "shorthand", "abstract", "action"]
+        parsed,
+        keys_removed=["year", "month", "day", "shorthand", "abstract", "abstract_fr", "action", "title_french", "venue_french", "abstract_french"],
+        for_update=True,
     )
 
     filename = get_filename(parsed)

@@ -1,4 +1,9 @@
 <article class="publication-card{% if post.thumbnail %} has-thumbnail{% endif %}" itemscope itemtype="https://schema.org/CreativeWork">
+    {% assign current_path = page.url | default: page.permalink | default: '/' %}
+    {% assign is_fr = false %}
+    {% if current_path == '/fr/' or current_path contains '/fr/' %}
+    {% assign is_fr = true %}
+    {% endif %}
 
     {% if post.thumbnail %}
     {% assign currentYear = 'now' | date: "%Y" %}
@@ -12,8 +17,20 @@
         alt="A thumbnail that highlights the contribution of the paper">
     {% endif %}
 
+    {% if is_fr and post.title_fr %}
+    {% assign publication_title = post.title_fr %}
+    {% else %}
+    {% assign publication_title = post.title %}
+    {% endif %}
+
+    {% if is_fr and post.venue_fr %}
+    {% assign publication_venue = post.venue_fr %}
+    {% else %}
+    {% assign publication_venue = post.venue %}
+    {% endif %}
+
     <h2 class="publication-title" itemprop="headline">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <a href="{{ post.url | relative_url }}">{{ publication_title }}</a>
     </h2>
 
     {% if post.names %}
@@ -40,8 +57,8 @@
     <div class="publication-venue">
         {% if post.venue_full %}
         {{ post.venue_full }}
-        {% elsif post.venue %}
-        {{ post.venue }}
+        {% elsif publication_venue %}
+        {{ publication_venue }}
         {% endif %}
         ({{ post.date | date: "%Y" }})
     </div>

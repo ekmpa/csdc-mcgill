@@ -1,21 +1,81 @@
 <!-- Overrides and modified from: https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/_includes/masthead.html -->
 {% assign current_path = page.url | default: page.permalink | default: '/' %}
+{% assign current_path = current_path | replace: '/index.html', '/' %}
+{% if current_path == '' %}
+  {% assign current_path = '/' %}
+{% endif %}
+{% if current_path == '/fr' %}
+  {% assign current_path = '/fr/' %}
+{% endif %}
+
+{% assign current_last_char = current_path | slice: -1, 1 %}
+{% if current_path != '/' and current_path != '/fr/' and current_last_char != '/' and current_path contains '.' == false %}
+  {% assign current_path = current_path | append: '/' %}
+{% endif %}
+
 {% assign is_fr = false %}
 {% if current_path == '/fr/' or current_path contains '/fr/' %}
   {% assign is_fr = true %}
 {% endif %}
 
+{% assign base_path = current_path %}
 {% if is_fr %}
-  {% assign lang_switch_path = current_path | remove_first: '/fr' %}
-  {% if lang_switch_path == '' %}
-    {% assign lang_switch_path = '/' %}
+  {% assign base_path = current_path | remove_first: '/fr' %}
+{% endif %}
+{% if base_path == '' %}
+  {% assign base_path = '/' %}
+{% endif %}
+
+{% assign base_last_char = base_path | slice: -1, 1 %}
+{% if base_path != '/' and base_last_char != '/' and base_path contains '.' == false %}
+  {% assign base_path = base_path | append: '/' %}
+{% endif %}
+
+{% if is_fr %}
+  {% assign lang_switch_candidate = base_path %}
+{% else %}
+  {% if base_path == '/' %}
+    {% assign lang_switch_candidate = '/fr/' %}
+  {% else %}
+    {% assign lang_switch_candidate = '/fr' | append: base_path %}
+  {% endif %}
+{% endif %}
+
+{% assign switch_exists = false %}
+{% for p in site.pages %}
+  {% assign p_url = p.url | replace: '/index.html', '/' %}
+  {% if p_url == lang_switch_candidate %}
+    {% assign switch_exists = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% unless switch_exists %}
+  {% for p in site.posts %}
+    {% assign p_url = p.url | replace: '/index.html', '/' %}
+    {% if p_url == lang_switch_candidate %}
+      {% assign switch_exists = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endunless %}
+
+{% assign base_section = base_path | split: '/' | slice: 1, 1 | first %}
+{% if is_fr %}
+  {% assign section_fallback = '/' %}
+  {% if base_section == 'about' or base_section == 'people' or base_section == 'research' or base_section == 'publications' or base_section == 'news' or base_section == 'events' or base_section == 'teaching' or base_section == 'tools-and-resources' or base_section == 'venues' %}
+    {% assign section_fallback = '/' | append: base_section | append: '/' %}
   {% endif %}
 {% else %}
-  {% if current_path == '/' %}
-    {% assign lang_switch_path = '/fr/' %}
-  {% else %}
-    {% assign lang_switch_path = '/fr' | append: current_path %}
+  {% assign section_fallback = '/fr/' %}
+  {% if base_section == 'about' or base_section == 'people' or base_section == 'research' or base_section == 'publications' or base_section == 'news' or base_section == 'events' or base_section == 'teaching' or base_section == 'tools-and-resources' or base_section == 'venues' %}
+    {% assign section_fallback = '/fr/' | append: base_section | append: '/' %}
   {% endif %}
+{% endif %}
+
+{% if switch_exists %}
+  {% assign lang_switch_path = lang_switch_candidate %}
+{% else %}
+  {% assign lang_switch_path = section_fallback %}
 {% endif %}
 
 <div class="masthead">

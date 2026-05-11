@@ -99,6 +99,11 @@ def wrangle_fetched_content(parsed, paper_json):
     for key in ["title", "names", "tags", "venue", "shorthand", "link"]:
         paper_json[key] = (paper_json[key] or "").replace("\n", " ")
 
+    # Auto-populate French fields so /fr/publications/ is always functional.
+    paper_json["title_fr"] = paper_json.get("title", "")
+    paper_json["venue_fr"] = paper_json.get("venue", "")
+    paper_json["abstract_fr"] = paper_json.get("abstract", "")
+
     fullname_to_username = create_attr_to_username_map(lab_members, "name")
 
     for author in paper_json["authors"]:

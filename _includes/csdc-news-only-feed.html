@@ -1,22 +1,46 @@
+{% assign current_path = page.url | default: page.permalink | default: '/' %}
+{% assign is_fr = false %}
+{% if current_path == '/fr/' or current_path contains '/fr/' %}
+{% assign is_fr = true %}
+{% endif %}
 {% assign news_updates = site.posts | where_exp: "post", "post.path contains '_posts/news/'" %}
 
 <section class="csdc-section csdc-news-updates-section">
   <div class="csdc-container">
     <div class="csdc-card">
-      <h2 class="csdc-card-title">Latest Updates</h2>
+      <h2 class="csdc-card-title">{% if is_fr %}Dernieres mises a jour{% else %}Latest Updates{% endif %}</h2>
 
       {% if news_updates and news_updates.size > 0 %}
+      {% assign rendered_news_count = 0 %}
       <div class="csdc-news-list" data-progressive-news>
-        {% for post in news_updates limit:12 %}
+        {% for post in news_updates limit:40 %}
+        {% if is_fr %}
+        {% unless post.path contains '_posts/news/fr/' %}
+        {% continue %}
+        {% endunless %}
+        {% else %}
+        {% if post.path contains '_posts/news/fr/' %}
+        {% continue %}
+        {% endif %}
+        {% endif %}
+        {% assign rendered_news_count = rendered_news_count | plus: 1 %}
         <article class="csdc-news-item">
+          {% if is_fr and post.title_fr %}
+          {% assign news_title = post.title_fr | default: "" | strip %}
+          {% else %}
           {% assign news_title = post.title | default: "" | strip %}
+          {% endif %}
           {% if news_title == "" %}
           {% assign news_title = post.slug | replace: "-", " " %}
           {% endif %}
           {% assign rendered_news_title = news_title | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines | strip %}
           <h3 class="csdc-news-item-title"><a href="{{ post.url | relative_url }}">{{ rendered_news_title }}</a></h3>
           <p class="csdc-news-item-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+          {% if is_fr and post.excerpt_fr %}
+          {% assign excerpt_raw = post.excerpt_fr | default: '' | strip_html | strip %}
+          {% else %}
           {% assign excerpt_raw = post.excerpt | default: '' | strip_html | strip %}
+          {% endif %}
           {% if excerpt_raw == '' %}
           {% assign excerpt_raw = post.content | strip_html | strip %}
           {% endif %}
@@ -47,9 +71,10 @@
         </article>
         {% endfor %}
       </div>
+      {% if rendered_news_count > 0 %}
       <button type="button" class="csdc-news-read-more" data-news-read-more>
         <span class="csdc-news-read-more-arrow" aria-hidden="true">&darr;</span>
-        <span>Read more</span>
+        <span>{% if is_fr %}Voir plus{% else %}Read more{% endif %}</span>
       </button>
       <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -79,7 +104,10 @@
         });
       </script>
       {% else %}
-      <p>No news updates yet.</p>
+      <p>{% if is_fr %}Aucune nouvelle pour le moment.{% else %}No news updates yet.{% endif %}</p>
+      {% endif %}
+      {% else %}
+      <p>{% if is_fr %}Aucune nouvelle pour le moment.{% else %}No news updates yet.{% endif %}</p>
       {% endif %}
     </div>
   </div>

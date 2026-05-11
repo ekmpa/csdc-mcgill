@@ -1,5 +1,10 @@
 <!-- Show author next to post, should show most up to date info -->
 <article class="author-card{% if include.alumni %} author-card--alumni{% endif %}{% if include.compact_avatar %} author-card--compact{% endif %}{% if include.compact_avatar and include.role_to_render and (include.role_to_render.type == 'Student' or include.role_to_render.type == 'Staff' or include.role_to_render.type == 'Postdoc') %} author-card--compact-wide-avatar{% endif %}{% if include.alumni != true and author.name == 'Dietlind Stolle' %} author-card--default-open{% endif %}">
+    {% assign current_path = page.url | default: page.permalink | default: '/' %}
+    {% assign is_fr = false %}
+    {% if current_path == '/fr/' or current_path contains '/fr/' %}
+    {% assign is_fr = true %}
+    {% endif %}
     <div class="author-avatar">
         {% assign avatar_value = author.avatar | default: "" | strip %}
         {% assign use_person_placeholder = false %}
@@ -37,7 +42,11 @@
 
         {% if include.role_to_render %}
         {% assign advisor_value = include.role_to_render.advisor | default: "" | strip %}
+        {% if is_fr and include.role_to_render.title_fr %}
+        {% assign title_value = include.role_to_render.title_fr | default: "" | strip %}
+        {% else %}
         {% assign title_value = include.role_to_render.title | default: "" | strip %}
+        {% endif %}
         {% assign title_down = title_value | downcase %}
         {% assign advisor_down = advisor_value | downcase %}
 
@@ -61,15 +70,25 @@
         {% endif %}
         {% endif %}
 
-        {% if author.bio %}
+        {% if is_fr and author.bio_fr %}
+        {% assign bio_value = author.bio_fr %}
+        {% else %}
+        {% assign bio_value = author.bio %}
+        {% endif %}
+        {% if bio_value %}
         <div class="author-bio">
-            {{ author.bio }}
+            {{ bio_value }}
         </div>
         {% endif %}
 
-        {% if author.note %}
+        {% if is_fr and author.note_fr %}
+        {% assign note_value = author.note_fr %}
+        {% else %}
+        {% assign note_value = author.note %}
+        {% endif %}
+        {% if note_value %}
         <div class="author-note">
-            {{ author.note }}
+            {{ note_value }}
         </div>
         {% endif %}
 
