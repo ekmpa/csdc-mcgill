@@ -1,0 +1,13 @@
+{% assign lang = include.lang | default: page.lang_code | default: 'en' %}
+{% assign t = site.data.site_text[lang] %}
+
+<div class="csdc-page csdc-events-page">
+<section class="csdc-section csdc-page-header">
+    <div class="csdc-container">
+        <p class="csdc-kicker"><span class="csdc-red">{{ t.home.headers.events_kicker }}</span></p>
+        <h1 id="page-title" class="page__title csdc-page-title">{{ t.home.headers.events_title }}</h1>
+    </div>
+</section>
+
+{% include csdc-events-feed.html lang=lang %}
+</div>

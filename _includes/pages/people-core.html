@@ -1,0 +1,61 @@
+{% assign lang = include.lang | default: page.lang_code | default: 'en' %}
+{% assign t = site.data.site_text[lang] %}
+
+<div class="csdc-page csdc-people-page">
+<section class="csdc-section csdc-page-header">
+    <div class="csdc-container">
+        <p class="csdc-kicker"><span class="csdc-red">{{ t.home.headers.people_kicker }}</span></p>
+        <h1 id="page-title" class="page__title csdc-page-title">{{ t.home.headers.people_title }}</h1>
+        <p class="csdc-page-subtitle">{{ t.home.headers.people_subtitle }}</p>
+    </div>
+</section>
+
+<div class="csdc-container">
+
+<h2>{{ t.home.people.faculty }}</h2>
+{% include card-authors-with-role.html authors=site.data.authors role="Faculty / Professor" section_title=t.home.people.faculty render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors role="Faculty / Professor" alumni=true %}
+
+{% include card-authors-with-role.html authors=site.data.authors role="Staff" section_title=t.home.people.staff render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors role="Staff" alumni=true %}
+
+{% include card-authors-with-role.html authors=site.data.authors role="Postdoc" section_title=t.home.people.postdocs render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors role="Postdoc" alumni=true %}
+
+{% include card-authors-with-role.html authors=site.data.authors role="Student" section_title=t.home.people.students render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors role="Student" alumni=true %}
+
+<p>
+    <span class="csdc-contact-pill">{{ t.home.headers.contact }} <a href="mailto:anne.imouza@mail.mcgill.ca">{{ t.home.headers.contact_link }}</a></span>
+</p>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var defaultOpen = document.querySelector('.csdc-people-page .author-card--default-open');
+    if (!defaultOpen) {
+        return;
+    }
+
+    var closeDefaultOpen = function (event) {
+        var activeCard = event.target.closest('.author-card');
+        if (!activeCard || activeCard === defaultOpen) {
+            return;
+        }
+
+        defaultOpen.classList.remove('author-card--default-open');
+
+        document.querySelectorAll('.csdc-people-page .author-card').forEach(function (card) {
+            card.removeEventListener('mouseenter', closeDefaultOpen);
+            card.removeEventListener('focusin', closeDefaultOpen);
+        });
+    };
+
+    document.querySelectorAll('.csdc-people-page .author-card').forEach(function (card) {
+        card.addEventListener('mouseenter', closeDefaultOpen);
+        card.addEventListener('focusin', closeDefaultOpen);
+    });
+});
+</script>

@@ -21,6 +21,15 @@ body:
       required: true
 
   - type: input
+    id: title_fr
+    attributes:
+      label: Title French
+      description: French headline shown on /fr/news/
+      placeholder: "Le CÉCD obtient une nouvelle subvention de partenariat"
+    validations:
+      required: false
+
+  - type: input
     id: date
     attributes:
       label: Date
@@ -37,6 +46,15 @@ body:
       placeholder: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     validations:
       required: true
+
+  - type: textarea
+    id: summary_fr
+    attributes:
+      label: Summary French
+      description: French summary shown on /fr/news/
+      placeholder: "Breve mise a jour affichee sur la page des actualites."
+    validations:
+      required: false
 
   - type: input
     id: external_link

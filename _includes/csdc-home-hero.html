@@ -1,18 +1,22 @@
+{% assign lang = include.lang | default: page.lang_code | default: 'en' %}
+{% assign t = site.data.site_text[lang] %}
+{% assign base = '' %}
+{% if lang == 'fr' %}
+{% assign base = '/fr' %}
+{% endif %}
+
 <section class="csdc-hero csdc-page">
   <div class="csdc-container">
     <p class="csdc-kicker"><span class="csdc-red">CSDC / </span><span>CECD</span></p>
-    <h1 class="csdc-hero-title">Centre for the Study of Democratic Citizenship</h1>
-    <p class="csdc-hero-subtitle">Centre pour l'Étude de la Citoyenneté démocratique</p>
+    <h1 class="csdc-hero-title">{{ t.home.hero.title }}</h1>
+    <p class="csdc-hero-subtitle">{{ t.home.hero.subtitle }}</p>
 
-    <p class="csdc-lead">
-      The McGill CSDC team studies democratic citizenship, justice and political behaviors.
-      More about our team, research and upcoming events below.
-    </p>
+    <p class="csdc-lead">{{ t.home.hero.lead }}</p>
 
     <div class="csdc-actions">
-      <a class="csdc-btn csdc-btn-primary" href="{{ '/publications/' | relative_url }}">Our Research</a>
-      <a class="csdc-btn csdc-btn-secondary" href="{{ '/events/' | relative_url }}">View Upcoming Events</a>
-      <a class="csdc-btn csdc-btn-secondary" href="{{ '/news/' | relative_url }}">See Recent News</a>
+      <a class="csdc-btn csdc-btn-primary" href="{{ base | append: '/publications/' | relative_url }}">{{ t.home.hero.cta_research }}</a>
+      <a class="csdc-btn csdc-btn-secondary" href="{{ base | append: '/events/' | relative_url }}">{{ t.home.hero.cta_events }}</a>
+      <a class="csdc-btn csdc-btn-secondary" href="{{ base | append: '/news/' | relative_url }}">{{ t.home.hero.cta_news }}</a>
     </div>
   </div>
 </section>

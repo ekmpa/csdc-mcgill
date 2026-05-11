@@ -1,0 +1,21 @@
+{% assign lang = include.lang | default: page.lang_code | default: 'en' %}
+{% assign t = site.data.site_text[lang] %}
+
+<div class="csdc-page csdc-publications-page">
+<section class="csdc-section csdc-page-header">
+    <div class="csdc-container">
+        <p class="csdc-kicker"><span class="csdc-red">{{ t.home.headers.publications_kicker }}</span></p>
+        <h1 id="page-title" class="page__title csdc-page-title">{{ t.home.headers.publications_title }}</h1>
+    </div>
+</section>
+
+{% include csdc-research-pillars.html lang=lang show_publications_link=false show_heading=true heading_text=t.home.research.heading subtitle_text=t.home.research.subtitle extra_class="csdc-publications-focus-section" %}
+
+<section class="csdc-section">
+    <div class="csdc-container">
+        <h2>{{ t.home.stats.publications }}</h2>
+        <p class="csdc-page-subtitle">{{ t.home.headers.publications_subtitle }}</p>
+        {% include posts-publication.html taxonomy=page.taxonomy %}
+    </div>
+</section>
+</div>

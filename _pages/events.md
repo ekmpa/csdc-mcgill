@@ -7,16 +7,8 @@ classes:
     - no-sidebar
     - wide
     - csdc-page
+lang_code: en
 
 ---
 
-<div class="csdc-page csdc-events-page">
-<section class="csdc-section csdc-page-header">
-    <div class="csdc-container">
-        <p class="csdc-kicker"><span class="csdc-red">Seminars and other events</span></p>
-        <h1 id="page-title" class="page__title csdc-page-title">Happening at the CSDC</h1>
-    </div>
-</section>
-
-{% include csdc-events-feed.html %}
-</div>
+{% include pages/events-core.html lang='en' %}

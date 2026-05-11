@@ -1,31 +1,38 @@
+{% assign lang = include.lang | default: page.lang_code | default: 'en' %}
+{% assign t = site.data.site_text[lang] %}
+{% assign base = '' %}
+{% if lang == 'fr' %}
+{% assign base = '/fr' %}
+{% endif %}
+
 <section class="csdc-section csdc-home-events">
   <div class="csdc-container">
     {% assign upcoming = site.data.events.upcoming_events %}
 
-    <p class="csdc-home-events-title">Upcoming Events</p>
+    <p class="csdc-home-events-title">{{ t.home.events.title }}</p>
     <div class="csdc-card csdc-featured">
       {% if upcoming and upcoming.size > 0 %}
         {% assign event_limit = include.limit | default: 3 %}
         {% for event in upcoming limit:event_limit %}
         <div style="padding:0.35rem 0 0.8rem; border-bottom:1px solid #e5e7eb; margin-bottom:0.7rem;">
           <h3 style="margin:0 0 0.25rem;">{{ event.title }}</h3>
-          <p style="margin:0.2rem 0;"><strong>Date:</strong> {{ event.date_display }}</p>
+          <p style="margin:0.2rem 0;"><strong>{{ t.home.events.date_label }}</strong> {{ event.date_display }}</p>
           {% if event.event_url and event.event_url != '' %}
-          <p style="margin:0.25rem 0 0;"><a href="{{ event.event_url }}" target="_blank" rel="noopener noreferrer" class="csdc-red" style="font-weight:700; text-decoration:none;">Event details</a></p>
+          <p style="margin:0.25rem 0 0;"><a href="{{ event.event_url }}" target="_blank" rel="noopener noreferrer" class="csdc-red" style="font-weight:700; text-decoration:none;">{{ t.home.events.details }}</a></p>
           {% endif %}
         </div>
         {% endfor %}
       {% else %}
-      <p style="margin:0.35rem 0 0.8rem;">No upcoming events synced yet.</p>
+      <p style="margin:0.35rem 0 0.8rem;">{{ t.home.events.empty }}</p>
       {% endif %}
 
       {% if include.show_calendar_link != false %}
-      <a href="{{ '/news/' | relative_url }}" class="csdc-events-cta" aria-label="Go to Events">&rarr; Events</a>
+      <a href="{{ base | append: '/news/' | relative_url }}" class="csdc-events-cta" aria-label="{{ t.home.events.events_link }}">&rarr; {{ t.home.events.events_link }}</a>
       {% endif %}
     </div>
 
-    <a href="{{ '/people/' | relative_url }}" class="csdc-team-banner" aria-label="Learn more about our team">
-      <span class="csdc-team-banner-label">Learn more about our team</span>
+    <a href="{{ base | append: '/people/' | relative_url }}" class="csdc-team-banner" aria-label="{{ t.home.events.team_banner }}">
+      <span class="csdc-team-banner-label">{{ t.home.events.team_banner }}</span>
       <span class="csdc-team-banner-arrow" aria-hidden="true">&rarr;</span>
     </a>
   </div>

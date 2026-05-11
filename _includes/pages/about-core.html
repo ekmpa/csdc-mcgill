@@ -1,0 +1,49 @@
+{% assign lang = include.lang | default: page.lang_code | default: 'en' %}
+{% assign t = site.data.site_text[lang] %}
+
+<div class="csdc-page csdc-about-page">
+  <section class="csdc-section csdc-page-header">
+    <div class="csdc-container">
+      <p class="csdc-kicker"><span class="csdc-red">{{ t.home.headers.about_kicker }}</span></p>
+      <h1 id="page-title" class="page__title csdc-page-title">{{ t.home.headers.about_title }}</h1>
+      <p class="csdc-page-subtitle">{{ t.home.headers.about_subtitle }}</p>
+    </div>
+  </section>
+
+  <section class="csdc-section csdc-about-mission-section">
+    <div class="csdc-container">
+      <article class="csdc-card">
+        <h2 class="csdc-card-title">{{ t.home.headers.about_mission }}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="csdc-section csdc-about-axes-section">
+    <div class="csdc-container">
+      <h2>{{ t.home.headers.about_axes }}</h2>
+      <div class="csdc-pillars csdc-pillars-two">
+        <article class="csdc-card" style="border-top:4px solid #c8102e;">
+          <h3 class="csdc-card-title">{{ t.home.research.card_1_title }}</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </article>
+        <article class="csdc-card" style="border-top:4px solid #c8102e;">
+          <h3 class="csdc-card-title">{{ t.home.research.card_2_title }}</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </article>
+        <article class="csdc-card" style="border-top:4px solid #c8102e;">
+          <h3 class="csdc-card-title">{{ t.home.research.card_3_title }}</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="csdc-section">
+    <div class="csdc-container">
+      <p>
+        <span class="csdc-contact-pill">{{ t.home.headers.contact }} <a href="mailto:anne.imouza@mail.mcgill.ca">{{ t.home.headers.contact_link }}</a></span>
+      </p>
+    </div>
+  </section>
+</div>

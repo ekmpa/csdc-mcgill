@@ -37,6 +37,15 @@ body:
       required: true
 
   - type: input
+    id: title_fr
+    attributes:
+      label: Title French
+      description: French title for /fr/publications/ displays.
+      placeholder: "La recursion est tout ce qu'il faut"
+    validations:
+      required: false
+
+  - type: input
     id: shorthand
     attributes:
       label: Shorthand
@@ -74,6 +83,15 @@ body:
       placeholder: "ACL"
     validations:
       required: true
+
+  - type: input
+    id: venue_fr
+    attributes:
+      label: Venue French
+      description: French venue label for /fr/publications/ displays.
+      placeholder: "ACL"
+    validations:
+      required: false
 
   - type: input
     id: link
@@ -235,5 +253,15 @@ body:
         Note: If you select "Update publication", this field is completely ignored.
       placeholder: >
         Our paper introduces recursion. We show it achieves state-of-the-art results on MNIST. We  believe it is all you need because...
+    validations:
+      required: false
+
+  - type: textarea
+    id: abstract_fr
+    attributes:
+      label: Abstract French
+      description: French abstract used on /fr/publications/ and publication cards.
+      placeholder: >
+        Notre article introduit la recursion. Nous montrons des resultats de pointe sur MNIST...
     validations:
       required: false

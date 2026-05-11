@@ -1,21 +1,16 @@
-name: Member profile (add/update)
+name: Member profile (add/update) -- Profil de membre (ajouter/mettre à jour)
 description: |
-  Add a new Centre member or update an existing member profile.
+  Add or update a member profile / Ajouter ou mettre à jour un profil de membre.
 title: "[Member profile]"
 labels: ["automatic-member-profile"]
 assignees:
   - octocat
 body:
-  - type: markdown
-    attributes:
-      value: |
-        This form automatically triggers a PR workflow.
-
   - type: input
     id: name
     attributes:
-      label: Name
-      description: Full name of the member.
+      label: Name / Nom
+      description: Full name of the member / Nom complet du membre.
       placeholder: John Doe
     validations:
       required: true
@@ -23,29 +18,29 @@ body:
   - type: dropdown
     id: alumni
     attributes:
-      label: Member Status
-      description: Is this person a current member or alumni/past member?
+      label: Status / Statut
+      description: Are you a current member or alumnus? / Êtes-vous membre actuel ou ancien?
       multiple: false
       options:
-        - Current Member
-        - Alumni / Past Member
+        - Current Member / Membre actuel
+        - Alumni / Ancien membre
     validations:
       required: false
 
   - type: input
     id: current_role-start_date
     attributes:
-      label: Start Date
-      description: When did they join the Centre? (e.g. Fall 2024, 2022, January 2023)
-      placeholder: Fall 2024
+      label: Start Date / Date de début
+      description: When did you join the center? (Month YYYY) / Quand avez-vous rejoint le centre? (Mois AAAA)
+      placeholder: Fall 2024 
     validations:
       required: false
 
   - type: input
     id: current_role-end_date
     attributes:
-      label: End Date (Alumni only)
-      description: When did they leave? Leave blank for current members.
+      label: End Date (Alumni only) / Date de fin (anciens membres seulement)
+      description: When did you leave? Leave blank for current members. / Quand avez-vous quitté? Laisser vide pour les membres actuels.
       placeholder: Spring 2026
     validations:
       required: false
@@ -53,9 +48,9 @@ body:
   - type: textarea
     id: avatar
     attributes:
-      label: Profile picture
+      label: Profile picture / Photo de profil
       description: |
-        Drag-and-drop profile picture here, or paste an image URL.
+        Drag-and-drop profile picture here, or paste an image URL. / Glissez-déposez la photo de profil ici, ou collez une URL d'image.
       placeholder: Click here and drag an image to upload, or paste an image URL
     validations:
       required: false
@@ -63,41 +58,50 @@ body:
   - type: textarea
     id: bio
     attributes:
-      label: Bio
+      label: Bio (EN)
       description: A short description (1 paragraph) of the member.
       placeholder: Works on ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: bio_fr
+    attributes:
+      label: Bio (FR)
+      description: Version francaise du bio.
+      placeholder: Travaille sur ...
     validations:
       required: false
 
   - type: dropdown
     id: current_role-type
     attributes:
-      label: Current Role Type
-      description: Current role type (set to Unaffiliated for alumni if needed).
+      label: Current Role / Rôle actuel
+      description: Current role type / Type de rôle actuel
       multiple: false
       options:
-        - Faculty / Professor
-        - Staff
-        - Postdoc
-        - Student
-        - Collaborator
-        - Unaffiliated
+        - Faculty or Professor / Faculté ou Professeur
+        - Staff / Personnel
+        - Postdoc / Postdoctorant
+        - Student / Étudiant
+        - Collaborator / Collaborateur
+        - Unaffiliated / Non affilié
     validations:
       required: false
 
   - type: input
     id: current_role-title
     attributes:
-      label: Current Role Title
-      description: Role title (e.g., Professor, Director, Administrator, Postdoc, PhD).
-      placeholder: Professor
+      label: Current Role Title 
+      description: Role title (e.g., Master's or PhD) / Titre du rôle (par exemple, Maitrise ou Doctorat).
+      placeholder: Professor / Professeur
     validations:
       required: false
 
   - type: input
     id: current_role-affiliation
     attributes:
-      label: Current Role Affiliation
+      label: Current Affiliation / Affiliation actuelle
       description: Affiliation
       placeholder: McGill, Universite de Montreal
     validations:
@@ -106,8 +110,8 @@ body:
   - type: input
     id: current_role-advisor
     attributes:
-      label: Current Role Advisor
-      description: For students, advisor(s). Separate multiple names with commas.
+      label: Current Role Advisor / Superviseur(e) actuel(le)
+      description: For students, advisor(s). Separate multiple names with commas. / Pour les étudiants, superviseur(s). Séparez plusieurs noms par des virgules.
       placeholder: John Doe Sr., Jane Doe
     validations:
       required: false
@@ -124,7 +128,7 @@ body:
   - type: input
     id: openalex_id
     attributes:
-      label: OpenAlex ID
+      label: OpenAlex ID (Optional)
       description: OpenAlex author ID (e.g. A1234567890).
       placeholder: A1234567890
     validations:
@@ -133,7 +137,7 @@ body:
   - type: input
     id: website
     attributes:
-      label: Website
+      label: Website / Site personnel.
       description: Personal or lab website URL.
       placeholder: https://example.com
     validations:
@@ -149,28 +153,10 @@ body:
       required: false
 
   - type: input
-    id: twitter
-    attributes:
-      label: Twitter/X
-      description: Twitter or X profile URL.
-      placeholder: https://x.com/username
-    validations:
-      required: false
-
-  - type: input
     id: linkedin
     attributes:
       label: LinkedIn
       description: LinkedIn profile URL.
       placeholder: https://www.linkedin.com/in/username
-    validations:
-      required: false
-
-  - type: input
-    id: github
-    attributes:
-      label: GitHub
-      description: GitHub profile URL.
-      placeholder: https://github.com/username
     validations:
       required: false

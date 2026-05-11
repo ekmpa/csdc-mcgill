@@ -3,10 +3,8 @@ permalink: /
 title: Home
 layout: splash
 excerpt: "The McGill node of the CSDC researches trust, participation, and democratic inclusion."
+lang_code: en
 
 ---
 
-{% include csdc-home-hero.html %}
-{% include csdc-research-pillars.html %}
-{% include csdc-home-stats.html %}
-{% include csdc-featured-event.html %}
+{% include pages/home-core.html lang='en' %}

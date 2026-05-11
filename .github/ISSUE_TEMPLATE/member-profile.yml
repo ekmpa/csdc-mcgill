@@ -69,6 +69,33 @@ body:
     validations:
       required: false
 
+  - type: textarea
+    id: bio_fr
+    attributes:
+      label: Bio French
+      description: Version francaise du bio.
+      placeholder: Travaille sur ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: note
+    attributes:
+      label: Note
+      description: Optional short note shown on the profile card.
+      placeholder: Affiliated researcher at ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: note_fr
+    attributes:
+      label: Note French
+      description: Version francaise de la note.
+      placeholder: Chercheuse associee a ...
+    validations:
+      required: false
+
   - type: dropdown
     id: current_role-type
     attributes:
@@ -91,6 +118,15 @@ body:
       label: Current Role Title
       description: Role title (e.g., Professor, Director, Administrator, Postdoc, PhD).
       placeholder: Professor
+    validations:
+      required: false
+
+  - type: input
+    id: current_role-title_fr
+    attributes:
+      label: Current Role Title French
+      description: Version francaise du titre de role.
+      placeholder: Professeure
     validations:
       required: false
 

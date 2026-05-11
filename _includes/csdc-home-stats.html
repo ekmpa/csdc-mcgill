@@ -1,3 +1,10 @@
+{% assign lang = include.lang | default: page.lang_code | default: 'en' %}
+{% assign t = site.data.site_text[lang] %}
+{% assign base = '' %}
+{% if lang == 'fr' %}
+{% assign base = '/fr' %}
+{% endif %}
+
 <section class="csdc-section" aria-label="CSDC at a glance">
   <div class="csdc-container">
     {% assign members_count = 0 %}
@@ -23,21 +30,21 @@
     <div class="csdc-home-team-stats">
       <div class="csdc-home-team-stats-grid">
         <article class="csdc-home-team-stat">
-          <a class="csdc-home-team-stat-link" href="{{ '/people/' | relative_url }}" aria-label="View team members">
+          <a class="csdc-home-team-stat-link" href="{{ base | append: '/people/' | relative_url }}" aria-label="{{ t.home.stats.members }}">
             <div class="csdc-home-team-stat-number">{{ members_display }}+</div>
-            <p class="csdc-home-team-stat-label">Members</p>
+            <p class="csdc-home-team-stat-label">{{ t.home.stats.members }}</p>
           </a>
         </article>
         <article class="csdc-home-team-stat">
-          <a class="csdc-home-team-stat-link" href="{{ '/people/' | relative_url }}" aria-label="View alumni and team">
+          <a class="csdc-home-team-stat-link" href="{{ base | append: '/people/' | relative_url }}" aria-label="{{ t.home.stats.alumni }}">
             <div class="csdc-home-team-stat-number">{{ alumni_display }}+</div>
-            <p class="csdc-home-team-stat-label">Alumni</p>
+            <p class="csdc-home-team-stat-label">{{ t.home.stats.alumni }}</p>
           </a>
         </article>
         <article class="csdc-home-team-stat">
-          <a class="csdc-home-team-stat-link" href="{{ '/research/' | relative_url }}" aria-label="View research publications">
+          <a class="csdc-home-team-stat-link" href="{{ base | append: '/research/' | relative_url }}" aria-label="{{ t.home.stats.publications }}">
             <div class="csdc-home-team-stat-number">{{ publications_display }}+</div>
-            <p class="csdc-home-team-stat-label">Publications</p>
+            <p class="csdc-home-team-stat-label">{{ t.home.stats.publications }}</p>
           </a>
         </article>
       </div>

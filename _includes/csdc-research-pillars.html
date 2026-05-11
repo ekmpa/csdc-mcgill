@@ -1,29 +1,38 @@
+{% assign lang = include.lang | default: page.lang_code | default: 'en' %}
+{% assign t = site.data.site_text[lang] %}
+{% assign base = '' %}
+{% if lang == 'fr' %}
+{% assign base = '/fr' %}
+{% endif %}
+
 <section class="csdc-section csdc-home-research{% if include.extra_class %} {{ include.extra_class }}{% endif %}">
   <div class="csdc-container">
     {% if include.show_heading != false %}
-    <h2>{{ include.heading_text | default: "Our Research Focus" }}</h2>
+    <h2>{{ include.heading_text | default: t.home.research.heading }}</h2>
     {% if include.subtitle_text %}
     <p class="csdc-section-subtitle">{{ include.subtitle_text }}</p>
+    {% elsif include.show_default_subtitle %}
+    <p class="csdc-section-subtitle">{{ t.home.research.subtitle }}</p>
     {% endif %}
     {% endif %}
     <div class="csdc-pillars csdc-home-pillars-row">
       <article class="csdc-card" style="border-top:4px solid #c8102e;">
-        <h3 class="csdc-card-title">Learning Democratic Citizenship in an Unequal World</h3>
-        <p>Focusing on:</p>
+        <h3 class="csdc-card-title">{{ t.home.research.card_1_title }}</h3>
+        <p>{{ t.home.research.focusing }}</p>
         <ul>
           <li>[topic modelling tbd]</li>
         </ul>
       </article>
       <article class="csdc-card" style="border-top:4px solid #c8102e;">
-        <h3 class="csdc-card-title">The Practice of Democratic Citizenship</h3>
-        <p>Focusing on:</p>
+        <h3 class="csdc-card-title">{{ t.home.research.card_2_title }}</h3>
+        <p>{{ t.home.research.focusing }}</p>
         <ul>
           <li>[topic modelling tbd]</li>
         </ul>
       </article>
       <article class="csdc-card" style="border-top:4px solid #c8102e;">
-        <h3 class="csdc-card-title">Citizen Representation and Governance</h3>
-        <p>Focusing on:</p>
+        <h3 class="csdc-card-title">{{ t.home.research.card_3_title }}</h3>
+        <p>{{ t.home.research.focusing }}</p>
         <ul>
           <li>[topic modelling tbd]</li>
         </ul>
@@ -31,9 +40,9 @@
     </div>
 
     {% if include.show_publications_link != false %}
-    <a href="{{ '/publications/' | relative_url }}" class="csdc-arrow-link" aria-label="See Publications">
+    <a href="{{ base | append: '/publications/' | relative_url }}" class="csdc-arrow-link" aria-label="{{ t.home.research.publications_link }}">
       <span aria-hidden="true">&rarr;</span>
-      <span>See Publications</span>
+      <span>{{ t.home.research.publications_link }}</span>
     </a>
     {% endif %}
   </div>

@@ -1,0 +1,7 @@
+{% assign lang = include.lang | default: page.lang_code | default: 'en' %}
+{% assign t = site.data.site_text[lang] %}
+
+{% include csdc-home-hero.html lang=lang %}
+{% include csdc-research-pillars.html lang=lang show_default_subtitle=true %}
+{% include csdc-home-stats.html lang=lang %}
+{% include csdc-featured-event.html lang=lang %}

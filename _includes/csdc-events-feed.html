@@ -1,11 +1,14 @@
+{% assign lang = include.lang | default: page.lang_code | default: 'en' %}
+{% assign t = site.data.site_text[lang] %}
+
 <section class="csdc-section csdc-news-events-section">
   <div class="csdc-container">
-    <h2 class="csdc-card-title csdc-calendar-title">Upcoming Events</h2>
+    <h2 class="csdc-card-title csdc-calendar-title">{{ t.events.calendar_title }}</h2>
     <div class="csdc-card csdc-calendar-card">
       <div class="csdc-calendar-embed">
         <iframe src="https://calendar.google.com/calendar/embed?src=mcgillcsdc%40gmail.com&ctz=America%2FToronto&mode=WEEK&showTitle=0&showNav=1&showTabs=0&showCalendars=0&showTz=0" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
-    <p class="csdc-calendar-note">For location or questions, <a href="mailto:anne.imouza@mcgill.ca">contact us</a>.</p>
+    <p class="csdc-calendar-note">{{ t.events.contact_note }} <a href="mailto:anne.imouza@mcgill.ca">{{ t.events.contact_link }}</a>.</p>
   </div>
 </section>

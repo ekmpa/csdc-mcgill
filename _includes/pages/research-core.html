@@ -1,0 +1,43 @@
+{% assign lang = include.lang | default: page.lang_code | default: 'en' %}
+{% assign t = site.data.site_text[lang] %}
+{% assign base = '' %}
+{% if lang == 'fr' %}
+{% assign base = '/fr' %}
+{% endif %}
+
+<div class="csdc-page csdc-research-page">
+  <section class="csdc-section csdc-page-header">
+    <div class="csdc-container">
+      <p class="csdc-kicker"><span class="csdc-red">{% if lang == 'fr' %}Noeud McGill{% else %}McGill Node{% endif %}</span></p>
+      <h1 id="page-title" class="page__title csdc-page-title">{% if lang == 'fr' %}Recherche{% else %}Research{% endif %}</h1>
+      <p class="csdc-page-subtitle">{% if lang == 'fr' %}Nos recherches portent sur la citoyennete democratique :{% else %}Our research focuses on democratic citizenship:{% endif %}</p>
+    </div>
+  </section>
+
+  <section class="csdc-section">
+    <div class="csdc-container">
+      <div class="csdc-pillars csdc-pillars-two">
+        <article class="csdc-card" style="border-top:4px solid #c8102e;">
+          <h3 class="csdc-card-title">{{ t.home.research.card_1_title }}</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </article>
+        <article class="csdc-card" style="border-top:4px solid #c8102e;">
+          <h3 class="csdc-card-title">{{ t.home.research.card_2_title }}</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </article>
+        <article class="csdc-card" style="border-top:4px solid #c8102e;">
+          <h3 class="csdc-card-title">{{ t.home.research.card_3_title }}</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="csdc-section">
+    <div class="csdc-container">
+      <h2>{{ t.home.stats.publications }}</h2>
+      <p class="csdc-page-subtitle">{{ t.home.headers.publications_subtitle }}</p>
+      <p><a href="{{ base | append: '/publications/' | relative_url }}">{% if lang == 'fr' %}Parcourir toutes les publications{% else %}Browse all publications{% endif %}</a></p>
+    </div>
+  </section>
+</div>
