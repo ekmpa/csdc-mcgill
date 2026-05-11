@@ -9,20 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this single form for both **adding** and **updating** members.
-
         This form automatically triggers a PR workflow.
-
-  - type: dropdown
-    id: action
-    attributes:
-      label: Action
-      description: What do you want to do?
-      options:
-        - Add member
-        - Update member
-    validations:
-      required: true
 
   - type: input
     id: name

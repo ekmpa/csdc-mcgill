@@ -350,6 +350,10 @@ div.author-avatar {
     max-width: 64rem;
 }
 
+.csdc-people-page {
+    overflow-anchor: none;
+}
+
 .csdc-people-page .csdc-page-title {
     font-size: clamp(1.95rem, 3.8vw, 2.35rem);
 }
@@ -432,7 +436,7 @@ div.author-avatar {
     overflow: hidden;
     margin-top: 0;
     transition: max-height 0.3s ease, opacity 0.24s ease, margin-top 0.3s ease;
-    transition-delay: 2s;
+    transition-delay: 0s;
 }
 
 .csdc-people-page .author-card:hover .author-bio,

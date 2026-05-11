@@ -183,7 +183,7 @@ def sort_by_lastname(authors: Dict) -> None:
         authors.insert(0, user, desc)
 
 
-def main(parsed: Dict, action: str, site_data_dir: str = "_data/", image_dir: str = "assets/images/bio") -> Dict:
+def main(parsed: Dict, action: str = "", site_data_dir: str = "_data/", image_dir: str = "assets/images/bio") -> Dict:
     site_data_dir = Path(site_data_dir)
     profile = format_parsed_content(parsed)
 
@@ -192,6 +192,13 @@ def main(parsed: Dict, action: str, site_data_dir: str = "_data/", image_dir: st
     with open(site_data_dir / "authors.yml") as f:
         authors = yaml.load(f)
    
+    if action not in {"Add member", "Update member"}:
+        name_to_username = {authors[username]["name"]: username for username in authors}
+        if profile["name"] in name_to_username:
+            action = "Update member"
+        else:
+            action = "Add member"
+
     if action == "Add member":
         # Handle new member addition
         if profile["name"] in authors:
@@ -241,8 +248,5 @@ if __name__ == "__main__":
         parsed_action = str(parsed.get("action", "")).strip()
         if parsed_action in {"Add member", "Update member"}:
             action = parsed_action
-
-    if not action:
-        action = "Update member"
 
     main(parsed, action)

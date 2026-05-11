@@ -1,5 +1,4 @@
 <!-- Overrides and modified from: https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/_includes/masthead.html -->
-{% assign current_path = page.url | default: '/' %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -11,22 +10,22 @@
         </a>
         <ul class="visible-links">
           <li class="masthead__menu-item">
-            <a class="csdc-nav-link{% if current_path == '/' or current_path == '/index.html' %} is-active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+            <a class="csdc-nav-link" data-nav="home" href="{{ '/' | relative_url }}">Home</a>
           </li>
           <li class="masthead__menu-item">
-            <a class="csdc-nav-link{% if current_path == '/about/' or current_path contains '/about/' %} is-active{% endif %}" href="{{ '/about/' | relative_url }}">About</a>
+            <a class="csdc-nav-link" data-nav="about" href="{{ '/about/' | relative_url }}">About</a>
           </li>
           <li class="masthead__menu-item">
-            <a class="csdc-nav-link{% if current_path == '/people/' or current_path contains '/people/' %} is-active{% endif %}" href="{{ '/people/' | relative_url }}">Team</a>
+            <a class="csdc-nav-link" data-nav="people" href="{{ '/people/' | relative_url }}">Team</a>
           </li>
           <li class="masthead__menu-item">
-            <a class="csdc-nav-link{% if current_path == '/publications/' or current_path contains '/publications/' or current_path == '/research/' or current_path contains '/research/' %} is-active{% endif %}" href="{{ '/publications/' | relative_url }}">Research</a>
+            <a class="csdc-nav-link" data-nav="research" href="{{ '/publications/' | relative_url }}">Research</a>
           </li>
           <li class="masthead__menu-item">
-            <a class="csdc-nav-link{% if current_path == '/news/' or current_path contains '/news/' %} is-active{% endif %}" href="{{ '/news/' | relative_url }}">News</a>
+            <a class="csdc-nav-link" data-nav="news" href="{{ '/news/' | relative_url }}">News</a>
           </li>
           <li class="masthead__menu-item">
-            <a class="csdc-nav-link{% if current_path == '/events/' or current_path contains '/events/' %} is-active{% endif %}" href="{{ '/events/' | relative_url }}">Events</a>
+            <a class="csdc-nav-link" data-nav="events" href="{{ '/events/' | relative_url }}">Events</a>
           </li>
 
         </ul>
@@ -49,3 +48,50 @@
     </div>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var links = document.querySelectorAll('.csdc-shell-nav .csdc-nav-link');
+  if (!links.length) {
+    return;
+  }
+
+  links.forEach(function (link) {
+    link.classList.remove('is-active');
+  });
+
+  var homeLink = document.querySelector('.csdc-shell-nav .csdc-nav-link[data-nav="home"]');
+  var basePath = '';
+  if (homeLink) {
+    basePath = new URL(homeLink.href, window.location.origin).pathname.replace(/\/$/, '');
+  }
+
+  var currentPath = window.location.pathname;
+  if (basePath && currentPath.indexOf(basePath) === 0) {
+    currentPath = currentPath.slice(basePath.length);
+  }
+
+  if (!currentPath || currentPath === '') {
+    currentPath = '/';
+  }
+
+  currentPath = currentPath.replace(/\/index\.html$/, '');
+  if (!currentPath.startsWith('/')) {
+    currentPath = '/' + currentPath;
+  }
+
+  var section = currentPath.split('/')[1] || 'home';
+  if (section === 'publications' || section === 'research') {
+    section = 'research';
+  }
+
+  var active = document.querySelector('.csdc-shell-nav .csdc-nav-link[data-nav="' + section + '"]');
+  if (!active) {
+    active = document.querySelector('.csdc-shell-nav .csdc-nav-link[data-nav="home"]');
+  }
+
+  if (active) {
+    active.classList.add('is-active');
+  }
+});
+</script>
