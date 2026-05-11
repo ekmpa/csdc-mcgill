@@ -1,8 +1,8 @@
 ---
 permalink: /fr/news/
-title: Actualites
+title: Actualités
 layout: splash_v2
-excerpt: Dernieres nouvelles et annonces
+excerpt: Dernières nouvelles et annonces
 classes:
     - no-sidebar
     - wide

@@ -1,6 +1,6 @@
 ---
 permalink: /fr/people/
-title: Equipe
+title: Équipe
 layout: splash_v2
 search_terms: "Dietlind Stolle Anne Imouza Emma Kondrup"
 classes:

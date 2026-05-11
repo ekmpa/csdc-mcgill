@@ -4,16 +4,16 @@ layout: splash_v2
 permalink: /fr/research/
 classes:
   - csdc-page
-excerpt: "Priorites et domaines de recherche du CÉCD McGill."
+excerpt: "Priorités et domaines de recherche du CÉCD McGill."
 show_taxonomy_posts: false
 ---
 
 <div class="csdc-page csdc-research-page">
   <section class="csdc-section csdc-page-header">
     <div class="csdc-container">
-      <p class="csdc-kicker"><span class="csdc-red">Noeud McGill</span></p>
+      <p class="csdc-kicker"><span class="csdc-red">Nœud McGill</span></p>
       <h1 id="page-title" class="page__title csdc-page-title">Recherche</h1>
-      <p class="csdc-page-subtitle">Nos recherches portent sur la citoyennete democratique :</p>
+      <p class="csdc-page-subtitle">Nos recherches portent sur la citoyenneté démocratique :</p>
     </div>
   </section>
 
@@ -21,16 +21,16 @@ show_taxonomy_posts: false
     <div class="csdc-container">
       <div class="csdc-pillars csdc-pillars-two">
         <article class="csdc-card" style="border-top:4px solid #c8102e;">
-          <h3 class="csdc-card-title">Apprendre la citoyennete democratique dans un monde inegal</h3>
-          <p>Travaux sur les parcours citoyens, les inegalites sociales et les conditions de formation politique.</p>
+          <h3 class="csdc-card-title">Apprendre la citoyenneté démocratique dans un monde inégal</h3>
+          <p>Travaux sur les parcours citoyens, les inégalités sociales et les conditions de formation politique.</p>
         </article>
         <article class="csdc-card" style="border-top:4px solid #c8102e;">
-          <h3 class="csdc-card-title">La pratique de la citoyennete democratique</h3>
-          <p>Etudes sur la participation, l'engagement civique, la deliberation et les transformations de la vie democratique.</p>
+          <h3 class="csdc-card-title">La pratique de la citoyenneté démocratique</h3>
+          <p>Études sur la participation, l'engagement civique, la délibération et les transformations de la vie démocratique.</p>
         </article>
         <article class="csdc-card" style="border-top:4px solid #c8102e;">
-          <h3 class="csdc-card-title">Representation citoyenne et gouvernance</h3>
-          <p>Analyses de la representation politique, de la confiance institutionnelle et des mecanismes de gouvernance.</p>
+          <h3 class="csdc-card-title">Représentation citoyenne et gouvernance</h3>
+          <p>Analyses de la représentation politique, de la confiance institutionnelle et des mécanismes de gouvernance.</p>
         </article>
       </div>
     </div>

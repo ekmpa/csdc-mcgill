@@ -1,0 +1,7 @@
+/*
+In dark mode, used to replace: https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss
+Source: https://github.com/mmistakes/minimal-mistakes/discussions/2033#discussioncomment-257421
+*/
+
+@import "skins/dark.scss"; // Imports the light skin
+@import "minimal-mistakes"; // main partials

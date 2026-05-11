@@ -1,8 +1,8 @@
 ---
 permalink: /fr/events/
-title: Evenements
+title: Événements
 layout: splash_v2
-excerpt: Evenements a venir et passes du CÉCD McGill
+excerpt: Événements à venir et passés du CÉCD McGill
 classes:
     - no-sidebar
     - wide
