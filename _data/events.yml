@@ -1,4 +1,4 @@
-generated_at: '2026-05-13T12:58:31+00:00'
+generated_at: '2026-05-14T18:50:09+00:00'
 source:
   provider: google_calendar
   calendar_id: mcgillcsdc@gmail.com
@@ -6,18 +6,12 @@ source:
 featured_event:
   banner_label: Featured Seminar
   title: CSDC Lab
-  date_display: Wednesday, May 13, 1:15 PM ET
+  date_display: Wednesday, May 20, 1:15 PM ET
   blurb: ''
   cta_text: View all seminars
   cta_url: /news/
-  event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA1MTNUMTcxNTAwWiBtY2dpbGxjc2RjQG0
+  event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA1MjBUMTcxNTAwWiBtY2dpbGxjc2RjQG0
 upcoming_events:
-- title: CSDC Lab
-  date_display: Wednesday, May 13, 1:15 PM ET
-  event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA1MTNUMTcxNTAwWiBtY2dpbGxjc2RjQG0
-- title: CSDC Breakfast 🥐
-  date_display: Thursday, May 14, 10:30 AM ET
-  event_url: https://www.google.com/calendar/event?eid=N2tnYmhiNDVyOWdoczBvcW9kNzFicWpxdGFfMjAyNjA1MTRUMTQzMDAwWiBtY2dpbGxjc2RjQG0
 - title: CSDC Lab
   date_display: Wednesday, May 20, 1:15 PM ET
   event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA1MjBUMTcxNTAwWiBtY2dpbGxjc2RjQG0
@@ -27,3 +21,9 @@ upcoming_events:
 - title: CSDC Lab
   date_display: Wednesday, May 27, 1:15 PM ET
   event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA1MjdUMTcxNTAwWiBtY2dpbGxjc2RjQG0
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, May 28, 10:30 AM ET
+  event_url: https://www.google.com/calendar/event?eid=N2tnYmhiNDVyOWdoczBvcW9kNzFicWpxdGFfMjAyNjA1MjhUMTQzMDAwWiBtY2dpbGxjc2RjQG0
+- title: CSDC Lab
+  date_display: Wednesday, June 3, 1:15 PM ET
+  event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA2MDNUMTcxNTAwWiBtY2dpbGxjc2RjQG0
