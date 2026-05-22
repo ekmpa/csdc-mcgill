@@ -6,6 +6,10 @@ This is the source code of the [McGill Centre for the Study of Democratic Citize
 
 ## Contribution Guide
 
+<!-- 
+RUN LOCAL
+eval "$(rbenv init - zsh)" && bundle _2.4.22_ exec jekyll serve --livereload
+-->
 | Action | How-to | 
 | -- | -- | 
 | Add or update a member profile or publications | [Open a Github Issue](https://github.com/ekmpa/csdc-mcgill/issues/new/choose) | 
@@ -28,6 +32,44 @@ For other types of contribution (not covered by the issue form), please follow t
 | Utility (e.g. image-resizing) | [here](./documentation/utility.md) | 
 | Creating pages under _post (paper publications, blogs, teaching) | [here](./documentation/creating-posts.md) |
 | Modifying pages / dependicies / Local setup | [here](./documentation/advanced_mode.md) | 
+
+## Topic Tags For Research Axes
+
+The research cards under Research/Publications can display lightweight topic tags generated from publication metadata.
+
+Run:
+
+```bash
+python -m src.python.generate_research_axis_topics
+```
+
+This command scans markdown files in `_posts/papers` and updates `_data/research_axis_topics.yml`, which is consumed by the shared include used in both English and French pages.
+
+By default, it produces 2-3 word topic phrases, with 3-4 tags per axis.
+
+Matching is robust and bilingual-aware:
+
+- Publication text is normalized with accent folding (e.g. `citoyenneté` -> `citoyennete`) and token mapping to shared concepts.
+- A publication can contribute to multiple axes (weighted relevance), instead of being forced into a single axis.
+- Final tags are selected from axis-specific phrase banks with explicit EN/FR labels.
+- The generated YAML includes a `matching` section with thresholds, axis document counts, and sample assignments for auditing.
+
+To tune output density:
+
+```bash
+python -m src.python.generate_research_axis_topics --max_tags 6
+```
+
+You can also set a minimum:
+
+```bash
+python -m src.python.generate_research_axis_topics --min_tags 3 --max_tags 4
+```
+
+Language toggling on the site:
+
+- The shared include reads `tags_en` or `tags_fr` based on the current page language.
+- French variants like `fr` and `fr-*` are handled as French.
 
 ## FAQ
 

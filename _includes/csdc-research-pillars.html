@@ -1,8 +1,29 @@
 {% assign lang = include.lang | default: page.lang_code | default: 'en' %}
 {% assign t = site.data.site_text[lang] %}
+{% assign axis_topics = site.data.research_axis_topics.axes %}
+{% assign is_french = false %}
+{% if lang == 'fr' or lang contains 'fr-' %}
+{% assign is_french = true %}
+{% endif %}
 {% assign base = '' %}
-{% if lang == 'fr' %}
+{% if is_french %}
 {% assign base = '/fr' %}
+{% endif %}
+
+{% assign axis_1_tags = '' | split: '' %}
+{% assign axis_2_tags = '' | split: '' %}
+{% assign axis_3_tags = '' | split: '' %}
+
+{% if axis_topics %}
+  {% if is_french %}
+    {% assign axis_1_tags = axis_topics.axis_1.tags_fr | default: axis_topics.axis_1.tags_en %}
+    {% assign axis_2_tags = axis_topics.axis_2.tags_fr | default: axis_topics.axis_2.tags_en %}
+    {% assign axis_3_tags = axis_topics.axis_3.tags_fr | default: axis_topics.axis_3.tags_en %}
+  {% else %}
+    {% assign axis_1_tags = axis_topics.axis_1.tags_en | default: axis_topics.axis_1.tags_fr %}
+    {% assign axis_2_tags = axis_topics.axis_2.tags_en | default: axis_topics.axis_2.tags_fr %}
+    {% assign axis_3_tags = axis_topics.axis_3.tags_en | default: axis_topics.axis_3.tags_fr %}
+  {% endif %}
 {% endif %}
 
 <section class="csdc-section csdc-home-research{% if include.extra_class %} {{ include.extra_class }}{% endif %}">
@@ -20,21 +41,39 @@
         <h3 class="csdc-card-title">{{ t.home.research.card_1_title }}</h3>
         <p>{{ t.home.research.focusing }}</p>
         <ul>
-          <li>[topic modelling tbd]</li>
+          {% if axis_1_tags and axis_1_tags.size > 0 %}
+            {% for topic in axis_1_tags %}
+            <li>{{ topic }}</li>
+            {% endfor %}
+          {% else %}
+          <li>{% if is_french %}Modélisation thématique en attente{% else %}Topic modelling pending{% endif %}</li>
+          {% endif %}
         </ul>
       </article>
       <article class="csdc-card" style="border-top:4px solid #c8102e;">
         <h3 class="csdc-card-title">{{ t.home.research.card_2_title }}</h3>
         <p>{{ t.home.research.focusing }}</p>
         <ul>
-          <li>[topic modelling tbd]</li>
+          {% if axis_2_tags and axis_2_tags.size > 0 %}
+            {% for topic in axis_2_tags %}
+            <li>{{ topic }}</li>
+            {% endfor %}
+          {% else %}
+          <li>{% if is_french %}Modélisation thématique en attente{% else %}Topic modelling pending{% endif %}</li>
+          {% endif %}
         </ul>
       </article>
       <article class="csdc-card" style="border-top:4px solid #c8102e;">
         <h3 class="csdc-card-title">{{ t.home.research.card_3_title }}</h3>
         <p>{{ t.home.research.focusing }}</p>
         <ul>
-          <li>[topic modelling tbd]</li>
+          {% if axis_3_tags and axis_3_tags.size > 0 %}
+            {% for topic in axis_3_tags %}
+            <li>{{ topic }}</li>
+            {% endfor %}
+          {% else %}
+          <li>{% if is_french %}Modélisation thématique en attente{% else %}Topic modelling pending{% endif %}</li>
+          {% endif %}
         </ul>
       </article>
     </div>
