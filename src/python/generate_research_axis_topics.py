@@ -1,203 +1,143 @@
 import argparse
 import datetime
-import math
 import re
 import unicodedata
 from collections import Counter
+from dataclasses import dataclass
 from pathlib import Path
+from typing import Dict, List, Sequence, Set, Tuple
 
 from ruamel.yaml import YAML
 
 
-AXIS_KEYWORDS = {
-    "axis_1": {
-        "tokens": {
+AxisId = str
+Phrase = Tuple[str, str, Set[str]]  # (en_label, fr_label, signal_tokens)
+
+
+@dataclass(frozen=True)
+class AxisDefinition:
+    axis_id: AxisId
+    title_en: str
+    title_fr: str
+    core_tokens: Set[str]
+    phrase_bank: Sequence[Phrase]
+
+
+AXES: Sequence[AxisDefinition] = (
+    AxisDefinition(
+        axis_id="axis_1",
+        title_en="Learning Democratic Citizenship in an Unequal World",
+        title_fr="L'apprentissage de la citoyennete democratique",
+        core_tokens={
+            "citizenship",
             "learning",
             "education",
-            "educational",
-            "school",
-            "schools",
-            "student",
-            "students",
-            "teaching",
-            "classroom",
-            "inequality",
-            "inequalities",
-            "equity",
+            "identity",
+            "trust",
             "social",
-            "mobility",
+            "cohesion",
+            "information",
+            "literacy",
+            "inequality",
             "youth",
-            "young",
-            "apprendre",
-            "education",
-            "ecole",
-            "ecoles",
-            "eleve",
-            "eleves",
-            "inegalite",
-            "inegalites",
-            "jeunesse",
-            "jeunes",
-        }
-    },
-    "axis_2": {
-        "tokens": {
-            "practice",
-            "practices",
+            "student",
+            "community",
+        },
+        phrase_bank=(
+            ("Citizen identity", "Identite citoyenne", {"identity", "citizenship", "community"}),
+            ("Political trust", "Confiance politique", {"trust", "institution", "political"}),
+            ("Social cohesion", "Cohesion sociale", {"social", "cohesion", "community"}),
+            ("Information literacy", "Competences informationnelles", {"information", "literacy", "media"}),
+            ("Civic learning", "Apprentissage civique", {"civic", "learning", "citizenship"}),
+            ("Educational inequality", "Inegalites educatives", {"education", "inequality", "student"}),
+        ),
+    ),
+    AxisDefinition(
+        axis_id="axis_2",
+        title_en="The Practice of Democratic Citizenship",
+        title_fr="La pratique de la citoyennete democratique",
+        core_tokens={
             "participation",
-            "participatory",
-            "civic",
-            "citizenship",
+            "vote",
+            "voting",
+            "opinion",
+            "information",
+            "media",
+            "partisan",
+            "polarization",
             "engagement",
-            "collective",
-            "mobilization",
-            "mobilisation",
-            "activism",
-            "protest",
             "deliberation",
-            "debate",
             "public",
-            "pratique",
-            "participation",
-            "civique",
-            "citoyennete",
-            "engagement",
-            "mobilisation",
-            "deliberation",
-            "debat",
-        }
-    },
-    "axis_3": {
-        "tokens": {
+            "electoral",
+            "citizenship",
+        },
+        phrase_bank=(
+            ("Information consumption", "Consommation de l'information", {"information", "media", "news"}),
+            ("Opinion formation", "Formation des opinions politiques", {"opinion", "attitude", "political"}),
+            ("Citizen participation", "Participation citoyenne", {"participation", "citizenship", "engagement"}),
+            ("Partisan polarization", "Polarisation partisane", {"partisan", "polarization", "party"}),
+            ("Electoral behavior", "Comportement electoral", {"electoral", "vote", "voting"}),
+            ("Public deliberation", "Deliberation publique", {"public", "deliberation", "debate"}),
+        ),
+    ),
+    AxisDefinition(
+        axis_id="axis_3",
+        title_en="Citizen Representation and Governance",
+        title_fr="La representation des citoyens et la gouvernance",
+        core_tokens={
             "representation",
-            "representative",
             "governance",
-            "government",
-            "policy",
-            "policies",
             "institution",
-            "institutions",
             "parliament",
             "legislative",
-            "election",
+            "government",
+            "responsiveness",
             "electoral",
+            "system",
+            "policy",
             "party",
-            "parties",
-            "state",
             "trust",
-            "gouvernance",
-            "representation",
-            "institution",
-            "institutions",
-            "election",
-            "electoral",
-            "gouvernement",
-            "politique",
-        }
-    },
+            "democratic",
+        },
+        phrase_bank=(
+            ("Citizen-institution relations", "Relation citoyens-institutions", {"citizen", "institution", "trust"}),
+            ("Parliamentary institutions", "Institutions parlementaires", {"parliament", "legislative", "institution"}),
+            ("Government responsiveness", "Reactivite des gouvernements", {"government", "responsiveness", "policy"}),
+            ("Political representation", "Representation politique", {"representation", "party", "electoral"}),
+            ("Democratic governance", "Gouvernance democratique", {"governance", "democratic", "government"}),
+            ("Electoral systems", "Systemes electoraux", {"electoral", "system", "institution"}),
+        ),
+    ),
+)
+
+
+STOPWORDS: Set[str] = {
+    "the", "a", "an", "and", "or", "for", "of", "to", "in", "on", "at", "from", "by", "with", "without",
+    "we", "our", "this", "that", "these", "those", "is", "are", "was", "were", "be", "been", "being", "as",
+    "it", "its", "their", "they", "them", "you", "your", "about", "across", "into", "between", "during",
+    "through", "using", "use", "new", "can", "could", "would", "should", "may", "might", "also", "more",
+    "most", "than", "such", "based", "within", "toward", "towards", "under", "over", "de", "la", "le", "les",
+    "des", "du", "dans", "sur", "pour", "par", "avec", "sans", "entre", "chez", "nous", "vous", "ils", "elles",
+    "est", "sont", "ete", "etre", "au", "aux", "ce", "cet", "cette", "ces", "une", "un", "d", "l", "et", "ou",
+    "qui", "que", "dont", "mais", "plus", "moins", "tout", "tous", "toutes", "notre", "nos", "vos", "leurs",
 }
 
 
-AXIS_DEFAULTS = {
-    "axis_1": {
-        "tags_en": [
-            "Civic learning",
-            "Social inequality",
-            "Youth development",
-            "Education pathways",
-        ],
-        "tags_fr": [
-            "Apprentissage civique",
-            "Inegalites sociales",
-            "Developpement des jeunes",
-            "Parcours educatifs",
-        ],
-    },
-    "axis_2": {
-        "tags_en": [
-            "Civic participation",
-            "Democratic engagement",
-            "Public deliberation",
-            "Collective action",
-        ],
-        "tags_fr": [
-            "Participation civique",
-            "Engagement democratique",
-            "Deliberation publique",
-            "Action collective",
-        ],
-    },
-    "axis_3": {
-        "tags_en": [
-            "Political representation",
-            "Democratic governance",
-            "Electoral institutions",
-            "Institutional trust",
-        ],
-        "tags_fr": [
-            "Representation politique",
-            "Gouvernance democratique",
-            "Institutions electorales",
-            "Confiance institutionnelle",
-        ],
-    },
+NOISE_TERMS: Set[str] = {
+    "supplementary", "dataset", "data", "static", "stats", "zenodo", "metric", "waveform", "inversion",
+    "sensor", "branch", "synchronous", "prediction", "therapy", "antiretroviral", "software", "package",
 }
 
 
-AXIS_PHRASE_BANK = {
-    "axis_1": [
-        ("Civic learning", "Apprentissage civique", {"civic", "learning", "citizenship", "education"}),
-        ("Social inequality", "Inegalites sociales", {"social", "inequality", "equity"}),
-        ("Youth development", "Developpement des jeunes", {"youth", "student", "young"}),
-        ("Education pathways", "Parcours educatifs", {"education", "learning", "school"}),
-        ("Identity formation", "Construction identitaire", {"identity", "social", "youth"}),
-        ("Community belonging", "Appartenance communautaire", {"community", "social", "citizenship"}),
-    ],
-    "axis_2": [
-        ("Civic participation", "Participation civique", {"civic", "participation", "citizenship"}),
-        ("Democratic engagement", "Engagement democratique", {"democratic", "engagement", "citizenship"}),
-        ("Public deliberation", "Deliberation publique", {"public", "deliberation", "debate"}),
-        ("Collective action", "Action collective", {"collective", "mobilization", "activism"}),
-        ("Partisan polarization", "Polarisation partisane", {"partisan", "polarization", "party"}),
-        ("Political attitudes", "Attitudes politiques", {"political", "public", "democratic"}),
-    ],
-    "axis_3": [
-        ("Political representation", "Representation politique", {"political", "representation", "party"}),
-        ("Democratic governance", "Gouvernance democratique", {"democratic", "governance", "government"}),
-        ("Electoral institutions", "Institutions electorales", {"electoral", "election", "institution"}),
-        ("Institutional trust", "Confiance institutionnelle", {"institution", "trust", "government"}),
-        ("Election integrity", "Integrite electorale", {"election", "electoral", "democratic"}),
-        ("Policy compliance", "Conformite aux politiques", {"policy", "compliance", "government"}),
-    ],
-}
-
-
-NOISE_TERMS = {
-    "supplementary",
-    "dataset",
-    "data",
-    "static",
-    "stats",
-    "cgan",
-    "zenodo",
-    "metric",
-    "waveform",
-    "inversion",
-    "sensor",
-    "branch",
-    "synchronous",
-    "prediction",
-    "therapy",
-    "antiretroviral",
-}
-
-
-TOKEN_NORMALIZATION = {
+TOKEN_NORMALIZATION: Dict[str, str] = {
     "citoyennete": "citizenship",
+    "citoyen": "citizen",
+    "citoyens": "citizen",
     "civique": "civic",
     "gouvernance": "governance",
     "democratique": "democratic",
-    "elections": "election",
+    "democratie": "democracy",
+    "elections": "electoral",
     "electorales": "electoral",
     "electorale": "electoral",
     "institutions": "institution",
@@ -205,160 +145,26 @@ TOKEN_NORMALIZATION = {
     "inegalite": "inequality",
     "jeunes": "youth",
     "jeunesse": "youth",
+    "etudiants": "student",
     "students": "student",
     "schools": "school",
     "parties": "party",
     "policies": "policy",
     "governments": "government",
-}
-
-
-WORD_TRANSLATIONS_FR = {
-    "civic": "civique",
-    "learning": "apprentissage",
-    "social": "sociales",
-    "inequality": "inegalites",
-    "youth": "jeunesse",
-    "development": "developpement",
-    "education": "education",
-    "pathways": "parcours",
-    "participation": "participation",
-    "democratic": "democratique",
-    "engagement": "engagement",
-    "public": "publique",
-    "deliberation": "deliberation",
-    "collective": "collective",
-    "action": "action",
-    "political": "politique",
+    "confiance": "trust",
+    "cohesion": "cohesion",
+    "competences": "literacy",
+    "informationnelles": "information",
+    "reactivite": "responsiveness",
+    "parlementaires": "parliamentary",
     "representation": "representation",
-    "governance": "gouvernance",
-    "electoral": "electorales",
-    "institution": "institutionnelles",
-    "trust": "confiance",
-    "polarization": "polarisation",
-    "partisan": "partisane",
-    "regional": "regionale",
-    "regionalism": "regionalisme",
-    "democracy": "democratie",
-    "citizenship": "citoyennete",
-    "backsliding": "recul",
 }
 
 
-STOPWORDS = {
-    "the",
-    "a",
-    "an",
-    "and",
-    "or",
-    "for",
-    "of",
-    "to",
-    "in",
-    "on",
-    "at",
-    "from",
-    "by",
-    "with",
-    "without",
-    "we",
-    "our",
-    "this",
-    "that",
-    "these",
-    "those",
-    "is",
-    "are",
-    "was",
-    "were",
-    "be",
-    "been",
-    "being",
-    "as",
-    "it",
-    "its",
-    "their",
-    "they",
-    "them",
-    "you",
-    "your",
-    "about",
-    "across",
-    "into",
-    "between",
-    "during",
-    "through",
-    "using",
-    "use",
-    "new",
-    "can",
-    "could",
-    "would",
-    "should",
-    "may",
-    "might",
-    "also",
-    "more",
-    "most",
-    "than",
-    "such",
-    "based",
-    "within",
-    "toward",
-    "towards",
-    "under",
-    "over",
-    "de",
-    "la",
-    "le",
-    "les",
-    "des",
-    "du",
-    "dans",
-    "sur",
-    "pour",
-    "par",
-    "avec",
-    "sans",
-    "entre",
-    "chez",
-    "nous",
-    "vous",
-    "ils",
-    "elles",
-    "est",
-    "sont",
-    "ete",
-    "etre",
-    "au",
-    "aux",
-    "ce",
-    "cet",
-    "cette",
-    "ces",
-    "une",
-    "un",
-    "d",
-    "l",
-    "et",
-    "ou",
-    "qui",
-    "que",
-    "dont",
-    "mais",
-    "plus",
-    "moins",
-    "tout",
-    "tous",
-    "toutes",
-    "notre",
-    "nos",
-    "vos",
-    "leurs",
-}
+AXIS_BY_ID: Dict[AxisId, AxisDefinition] = {axis.axis_id: axis for axis in AXES}
 
 
-def normalize_text(text):
+def normalize_text(text: str) -> str:
     lowered = text.lower()
     lowered = unicodedata.normalize("NFKD", lowered)
     lowered = "".join(ch for ch in lowered if not unicodedata.combining(ch))
@@ -369,14 +175,13 @@ def normalize_text(text):
     return lowered
 
 
-def tokenize(text):
-    text = normalize_text(text)
-    words = re.findall(r"[a-z]{3,}", text)
-    normalized = [TOKEN_NORMALIZATION.get(w, w) for w in words]
-    return [w for w in normalized if w not in STOPWORDS and w not in NOISE_TERMS]
+def tokenize(text: str) -> List[str]:
+    words = re.findall(r"[a-z]{3,}", normalize_text(text))
+    normalized = [TOKEN_NORMALIZATION.get(word, word) for word in words]
+    return [word for word in normalized if word not in STOPWORDS and word not in NOISE_TERMS]
 
 
-def read_front_matter(path):
+def read_front_matter(path: Path) -> Tuple[dict, str]:
     content = path.read_text(encoding="utf-8")
     if not content.startswith("---"):
         return {}, ""
@@ -392,329 +197,174 @@ def read_front_matter(path):
     return data, body_text
 
 
-def normalize_tag(value):
-    if not value:
-        return ""
+def normalize_tag(value: str) -> str:
     return re.sub(r"\s+", " ", str(value).strip())
 
 
-def split_sentences(text):
-    return [s.strip() for s in re.split(r"[.!?\n]+", normalize_text(text)) if s.strip()]
+def build_documents(posts_dir: Path) -> List[dict]:
+    documents: List[dict] = []
 
-
-def build_documents(posts_dir):
-    documents = []
     for path in sorted(posts_dir.glob("*.md")):
         data, body = read_front_matter(path)
-        title = data.get("title", "")
-        title_fr = data.get("title_fr", "")
-        abstract = data.get("abstract", "")
-        abstract_fr = data.get("abstract_fr", "")
+
+        title = str(data.get("title", "") or "")
+        title_fr = str(data.get("title_fr", "") or "")
+        abstract = str(data.get("abstract", "") or "")
+        abstract_fr = str(data.get("abstract_fr", "") or "")
+
         tags = data.get("tags", []) or []
+        clean_tags = [
+            normalize_tag(tag)
+            for tag in tags
+            if normalize_tag(tag) and normalize_tag(tag) not in {"_No response_", "_Unavailable_"}
+        ]
 
-        clean_tags = []
-        for item in tags:
-            tag = normalize_tag(item)
-            if tag and tag not in {"_No response_", "_Unavailable_"}:
-                clean_tags.append(tag)
+        title_text = " ".join(part for part in [title, title_fr] if part)
+        abstract_text = " ".join(part for part in [abstract, abstract_fr] if part)
+        full_text = "\n".join(part for part in [title_text, abstract_text, body, " ".join(clean_tags)] if part)
 
-        text_parts = [title, title_fr, abstract, abstract_fr, body, " ".join(clean_tags)]
-        full_text = "\n".join([str(p) for p in text_parts if p])
-        tokens = tokenize(full_text)
-
-        title_text = " ".join([str(p) for p in [title, title_fr] if p])
-        abstract_text = " ".join([str(p) for p in [abstract, abstract_fr] if p])
-        title_tokens = tokenize(title_text)
-        abstract_tokens = tokenize(abstract_text)
         documents.append(
             {
                 "path": str(path),
-                "tokens": tokens,
-                "title_tokens": title_tokens,
-                "abstract_tokens": abstract_tokens,
-                "title_sentences": split_sentences(title_text),
-                "abstract_sentences": split_sentences(abstract_text),
+                "tokens": tokenize(full_text),
+                "title_tokens": tokenize(title_text),
+                "abstract_tokens": tokenize(abstract_text),
             }
         )
 
     return documents
 
 
-def assign_axis(doc_tokens):
-    scores = {}
-    token_counter = Counter(doc_tokens)
-    for axis_key, axis_data in AXIS_KEYWORDS.items():
-        axis_terms = axis_data["tokens"]
-        score = sum(token_counter.get(term, 0) for term in axis_terms)
-        scores[axis_key] = score
-
-    best_axis = max(scores, key=scores.get)
-    if scores[best_axis] == 0:
-        return None
-    return best_axis
-
-
-def axis_scores_for_doc(doc_tokens):
-    token_counter = Counter(doc_tokens)
-    raw_scores = {}
-    for axis_key, axis_data in AXIS_KEYWORDS.items():
-        axis_terms = axis_data["tokens"]
-        raw_scores[axis_key] = sum(token_counter.get(term, 0) for term in axis_terms)
+def get_axis_scores(tokens: Sequence[str]) -> Tuple[Dict[AxisId, int], Dict[AxisId, float]]:
+    token_counts = Counter(tokens)
+    raw_scores: Dict[AxisId, int] = {}
+    for axis in AXES:
+        raw_scores[axis.axis_id] = sum(token_counts.get(token, 0) for token in axis.core_tokens)
 
     total = sum(raw_scores.values())
     if total == 0:
-        normalized = {"axis_1": 0.0, "axis_2": 0.0, "axis_3": 0.0}
+        normalized = {axis.axis_id: 0.0 for axis in AXES}
     else:
-        normalized = {k: raw_scores[k] / total for k in raw_scores}
+        normalized = {axis_id: score / total for axis_id, score in raw_scores.items()}
 
     return raw_scores, normalized
 
 
-def assign_axes_with_weights(documents, min_share=0.24, min_hits=2):
-    axis_docs = {"axis_1": [], "axis_2": [], "axis_3": []}
-    diagnostics = {}
+def assign_documents_to_axes(
+    documents: List[dict],
+    min_share: float = 0.24,
+    min_hits: int = 2,
+) -> Tuple[Dict[AxisId, List[dict]], Dict[str, dict]]:
+    axis_docs: Dict[AxisId, List[dict]] = {axis.axis_id: [] for axis in AXES}
+    diagnostics: Dict[str, dict] = {}
 
     for doc in documents:
-        raw_scores, normalized_scores = axis_scores_for_doc(doc["tokens"])
+        raw_scores, relevance = get_axis_scores(doc["tokens"])
         doc["axis_raw_scores"] = raw_scores
-        doc["axis_relevance"] = normalized_scores
+        doc["axis_relevance"] = relevance
 
-        chosen_axes = []
-        for axis_key in ("axis_1", "axis_2", "axis_3"):
-            if raw_scores[axis_key] >= min_hits and normalized_scores[axis_key] >= min_share:
-                axis_docs[axis_key].append(doc)
-                chosen_axes.append(axis_key)
+        assigned: List[AxisId] = []
+        for axis in AXES:
+            axis_id = axis.axis_id
+            if raw_scores[axis_id] >= min_hits and relevance[axis_id] >= min_share:
+                axis_docs[axis_id].append(doc)
+                assigned.append(axis_id)
 
-        # Fallback: if a document has axis signals but misses thresholds, still assign best axis.
-        if not chosen_axes and sum(raw_scores.values()) > 0:
+        if not assigned and sum(raw_scores.values()) > 0:
             best_axis = max(raw_scores, key=raw_scores.get)
             axis_docs[best_axis].append(doc)
-            chosen_axes.append(best_axis)
+            assigned = [best_axis]
 
         diagnostics[doc["path"]] = {
             "raw": raw_scores,
-            "relevance": {k: round(v, 3) for k, v in normalized_scores.items()},
-            "assigned_axes": chosen_axes,
+            "relevance": {k: round(v, 3) for k, v in relevance.items()},
+            "assigned_axes": assigned,
         }
 
     return axis_docs, diagnostics
 
 
-def extract_phrases_from_sentence(sentence):
-    tokens = tokenize(sentence)
-    phrases = []
-    for size in (2, 3):
-        if len(tokens) < size:
-            continue
-        for i in range(len(tokens) - size + 1):
-            ngram = tokens[i : i + size]
-            if any(token in NOISE_TERMS for token in ngram):
-                continue
-            if not any(len(token) > 3 for token in ngram):
-                continue
-            phrases.append(" ".join(ngram))
-    return phrases
+def score_axis_phrase_bank(axis: AxisDefinition, docs: Sequence[dict]) -> List[Tuple[str, str, float]]:
+    weighted_tokens: Counter = Counter()
+    weighted_title_tokens: Counter = Counter()
+
+    for doc in docs:
+        weight = max(0.25, doc["axis_relevance"].get(axis.axis_id, 0.0))
+        for token, freq in Counter(doc["tokens"]).items():
+            weighted_tokens[token] += freq * weight
+        for token, freq in Counter(doc["title_tokens"]).items():
+            weighted_title_tokens[token] += freq * weight
+
+    scores: List[Tuple[str, str, float]] = []
+    for en_label, fr_label, signals in axis.phrase_bank:
+        signal_score = sum(weighted_tokens.get(token, 0.0) for token in signals)
+        title_bonus = 0.4 * sum(weighted_title_tokens.get(token, 0.0) for token in signals)
+        deterministic_tie_breaker = 1e-6 * len(en_label)
+        scores.append((en_label, fr_label, signal_score + title_bonus + deterministic_tie_breaker))
+
+    scores.sort(key=lambda item: item[2], reverse=True)
+    return scores
 
 
-def phrase_matches_axis(phrase, axis_key):
-    phrase_tokens = set(phrase.split())
-    return len(phrase_tokens.intersection(AXIS_KEYWORDS[axis_key]["tokens"])) > 0
+def pick_axis_phrases(
+    axis: AxisDefinition,
+    docs: Sequence[dict],
+    min_tags: int,
+    max_tags: int,
+) -> Tuple[List[str], List[str]]:
+    scored = score_axis_phrase_bank(axis, docs)
+    selected = scored[:max_tags]
 
-
-def score_phrases_by_axis(axis_docs, all_docs):
-    phrase_df = Counter()
-    doc_phrases = []
-
-    for doc in all_docs:
-        phrases = set()
-        for sentence in doc["title_sentences"] + doc["abstract_sentences"]:
-            for phrase in extract_phrases_from_sentence(sentence):
-                phrases.add(phrase)
-        doc_phrases.append(phrases)
-        for phrase in phrases:
-            phrase_df[phrase] += 1
-
-    axis_scores = {"axis_1": Counter(), "axis_2": Counter(), "axis_3": Counter()}
-    total_docs = max(1, len(all_docs))
-
-    for axis_key, docs in axis_docs.items():
-        if not docs:
-            continue
-
-        axis_paths = {doc["path"] for doc in docs}
-        for doc, phrases in zip(all_docs, doc_phrases):
-            if doc["path"] not in axis_paths:
-                continue
-
-            for phrase in phrases:
-                if not phrase_matches_axis(phrase, axis_key):
-                    continue
-
-                idf = math.log((total_docs + 1) / (phrase_df[phrase] + 1)) + 1
-                # Slightly boost phrases sourced from titles, which are often cleaner.
-                title_boost = 1.0
-                for sentence in doc["title_sentences"]:
-                    if phrase in " ".join(tokenize(sentence)):
-                        title_boost = 1.3
-                        break
-                axis_scores[axis_key][phrase] += idf * title_boost
-
-    return axis_scores
-
-
-def title_case_phrase(phrase):
-    return " ".join(token.capitalize() for token in phrase.split())
-
-
-def fr_label_from_en_phrase(phrase):
-    translated = [WORD_TRANSLATIONS_FR.get(token, token) for token in phrase.split()]
-    return " ".join(token.capitalize() for token in translated)
-
-
-def dedupe_similar_phrases(candidates, max_tags):
-    chosen = []
-    chosen_sets = []
-    for phrase in candidates:
-        pset = set(phrase.split())
-        if any(len(pset.intersection(other)) >= 2 for other in chosen_sets):
-            continue
-        chosen.append(phrase)
-        chosen_sets.append(pset)
-        if len(chosen) >= max_tags:
-            break
-    return chosen
-
-
-def score_phrase_bank(axis_docs):
-    bank_scores = {"axis_1": [], "axis_2": [], "axis_3": []}
-
-    for axis_key, docs in axis_docs.items():
-        weighted_tokens = Counter()
-        weighted_title_tokens = Counter()
-        for doc in docs:
-            relevance_weight = max(0.25, doc.get("axis_relevance", {}).get(axis_key, 0.0))
-            for token, freq in Counter(doc["tokens"]).items():
-                weighted_tokens[token] += freq * relevance_weight
-            for token, freq in Counter(doc.get("title_tokens", [])).items():
-                weighted_title_tokens[token] += freq * relevance_weight
-
-        for en_label, fr_label, signal_tokens in AXIS_PHRASE_BANK[axis_key]:
-            score = 0.0
-            for token in signal_tokens:
-                score += weighted_tokens.get(token, 0.0)
-                score += 0.4 * weighted_title_tokens.get(token, 0.0)
-            # Keep deterministic output even when scores tie.
-            bank_scores[axis_key].append((en_label, fr_label, score + 1e-6 * len(en_label)))
-
-        bank_scores[axis_key] = sorted(bank_scores[axis_key], key=lambda x: x[2], reverse=True)
-
-    return bank_scores
-
-
-def pick_top_tags(axis_phrase_scores, min_tags, max_tags):
-    result = {}
-    for axis_key, scores in axis_phrase_scores.items():
-        ordered = sorted(scores.items(), key=lambda x: x[1], reverse=True)
-        phrases = [phrase for phrase, _ in ordered]
-        selected = dedupe_similar_phrases(phrases, max_tags=max_tags)
-
-        defaults = [s.lower() for s in AXIS_DEFAULTS[axis_key]["tags_en"]]
-        for phrase in defaults:
+    if len(selected) < min_tags:
+        existing_en = {item[0] for item in selected}
+        for en_label, fr_label, _ in axis.phrase_bank:
             if len(selected) >= min_tags:
                 break
-            if phrase not in selected:
-                selected.append(phrase)
+            if en_label in existing_en:
+                continue
+            selected.append((en_label, fr_label, 0.0))
+            existing_en.add(en_label)
 
-        result[axis_key] = selected[:max_tags]
-
-    return result
-
-
-def build_output(documents, tags_per_axis):
-    output = {
-        "generated_at": datetime.date.today().isoformat(),
-        "source_publication_count": len(documents),
-        "axes": {
-            "axis_1": {
-                "tags_en": [title_case_phrase(t) for t in tags_per_axis.get("axis_1", [])],
-                "tags_fr": [fr_label_from_en_phrase(t) for t in tags_per_axis.get("axis_1", [])],
-            },
-            "axis_2": {
-                "tags_en": [title_case_phrase(t) for t in tags_per_axis.get("axis_2", [])],
-                "tags_fr": [fr_label_from_en_phrase(t) for t in tags_per_axis.get("axis_2", [])],
-            },
-            "axis_3": {
-                "tags_en": [title_case_phrase(t) for t in tags_per_axis.get("axis_3", [])],
-                "tags_fr": [fr_label_from_en_phrase(t) for t in tags_per_axis.get("axis_3", [])],
-            },
-        },
-    }
-    return output
+    selected = selected[:max_tags]
+    tags_en = [item[0] for item in selected]
+    tags_fr = [item[1] for item in selected]
+    return tags_en, tags_fr
 
 
-def write_yaml(data, output_path):
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    yaml = YAML()
-    yaml.default_flow_style = False
-    yaml.indent(mapping=2, sequence=4, offset=2)
-    with output_path.open("w", encoding="utf-8") as f:
-        yaml.dump(data, f)
-
-
-def main(
-    posts_dir="_posts/papers",
-    output_path="_data/research_axis_topics.yml",
-    min_tags=3,
-    max_tags=4,
-):
-    posts_dir = Path(posts_dir)
-    output_path = Path(output_path)
-
-    documents = build_documents(posts_dir)
-    axis_docs, diagnostics = assign_axes_with_weights(documents)
-
-    bank_scores = score_phrase_bank(axis_docs)
+def build_output(
+    documents: Sequence[dict],
+    axis_docs: Dict[AxisId, List[dict]],
+    diagnostics: Dict[str, dict],
+    min_share: float,
+    min_hits: int,
+    min_tags: int,
+    max_tags: int,
+) -> dict:
     output = {
         "generated_at": datetime.date.today().isoformat(),
         "source_publication_count": len(documents),
         "matching": {
-            "method": "weighted multi-axis relevance (bilingual normalized tokens)",
-            "axis_document_counts": {
-                "axis_1": len(axis_docs["axis_1"]),
-                "axis_2": len(axis_docs["axis_2"]),
-                "axis_3": len(axis_docs["axis_3"]),
-            },
+            "method": "weighted multi-axis relevance (CECD-aligned bilingual vocabulary)",
             "thresholds": {
-                "min_share": 0.24,
-                "min_hits": 2,
+                "min_share": min_share,
+                "min_hits": min_hits,
+                "min_tags": min_tags,
+                "max_tags": max_tags,
             },
+            "axis_document_counts": {axis.axis_id: len(axis_docs[axis.axis_id]) for axis in AXES},
+            "sample_assignments": [],
         },
         "axes": {},
     }
 
-    for axis_key in ("axis_1", "axis_2", "axis_3"):
-        picks = bank_scores[axis_key][:max_tags]
-        if len(picks) < min_tags:
-            defaults_en = AXIS_DEFAULTS[axis_key]["tags_en"]
-            defaults_fr = AXIS_DEFAULTS[axis_key]["tags_fr"]
-            existing_en = {item[0] for item in picks}
-            for en_tag, fr_tag in zip(defaults_en, defaults_fr):
-                if len(picks) >= min_tags:
-                    break
-                if en_tag in existing_en:
-                    continue
-                picks.append((en_tag, fr_tag, 0.0))
-                existing_en.add(en_tag)
-
-        picks = picks[:max_tags]
-        output["axes"][axis_key] = {
-            "tags_en": [item[0] for item in picks],
-            "tags_fr": [item[1] for item in picks],
+    for axis in AXES:
+        tags_en, tags_fr = pick_axis_phrases(axis, axis_docs[axis.axis_id], min_tags=min_tags, max_tags=max_tags)
+        output["axes"][axis.axis_id] = {
+            "tags_en": tags_en,
+            "tags_fr": tags_fr,
         }
 
-    # Keep a compact debug trace for spot-checking assignments.
-    output["matching"]["sample_assignments"] = []
-    for path in sorted(diagnostics.keys())[:5]:
+    for path in sorted(diagnostics.keys())[:6]:
         output["matching"]["sample_assignments"].append(
             {
                 "path": path,
@@ -723,15 +373,47 @@ def main(
             }
         )
 
-    write_yaml(output, output_path)
+    return output
 
-    print(f"Wrote axis topics to {output_path} from {len(documents)} publication files.")
+
+def write_yaml(data: dict, output_path: Path) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    yaml = YAML()
+    yaml.default_flow_style = False
+    yaml.indent(mapping=2, sequence=4, offset=2)
+    with output_path.open("w", encoding="utf-8") as file_handle:
+        yaml.dump(data, file_handle)
+
+
+def main(
+    posts_dir: str = "_posts/papers",
+    output_path: str = "_data/research_axis_topics.yml",
+    min_share: float = 0.24,
+    min_hits: int = 2,
+    min_tags: int = 3,
+    max_tags: int = 4,
+) -> None:
+    docs = build_documents(Path(posts_dir))
+    axis_docs, diagnostics = assign_documents_to_axes(docs, min_share=min_share, min_hits=min_hits)
+    output = build_output(
+        documents=docs,
+        axis_docs=axis_docs,
+        diagnostics=diagnostics,
+        min_share=min_share,
+        min_hits=min_hits,
+        min_tags=min_tags,
+        max_tags=max_tags,
+    )
+    write_yaml(output, Path(output_path))
+    print(f"Wrote axis topics to {output_path} from {len(docs)} publication files.")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--posts_dir", default="_posts/papers")
     parser.add_argument("--output_path", default="_data/research_axis_topics.yml")
+    parser.add_argument("--min_share", default=0.24, type=float)
+    parser.add_argument("--min_hits", default=2, type=int)
     parser.add_argument("--min_tags", default=3, type=int)
     parser.add_argument("--max_tags", default=4, type=int)
     args = parser.parse_args()
