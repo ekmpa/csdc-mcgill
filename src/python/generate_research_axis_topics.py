@@ -186,12 +186,22 @@ def read_front_matter(path: Path) -> Tuple[dict, str]:
     if not content.startswith("---"):
         return {}, ""
 
-    parts = content.split("---", 2)
-    if len(parts) < 3:
+    # Parse only YAML delimiter lines to avoid breaking on inline '---' in abstracts.
+    lines = content.splitlines(keepends=True)
+    if not lines or lines[0].strip() != "---":
         return {}, content
 
-    yaml_text = parts[1]
-    body_text = parts[2]
+    closing_idx = None
+    for idx in range(1, len(lines)):
+        if lines[idx].strip() == "---":
+            closing_idx = idx
+            break
+
+    if closing_idx is None:
+        return {}, content
+
+    yaml_text = "".join(lines[1:closing_idx])
+    body_text = "".join(lines[closing_idx + 1 :])
     yaml = YAML(typ="safe")
     data = yaml.load(yaml_text) or {}
     return data, body_text

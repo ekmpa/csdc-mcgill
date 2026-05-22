@@ -1,5 +1,5 @@
 generated_at: '2026-05-22'
-source_publication_count: 19
+source_publication_count: 1088
 matching:
   method: weighted multi-axis relevance (CECD-aligned bilingual vocabulary)
   thresholds:
@@ -8,43 +8,41 @@ matching:
     min_tags: 3
     max_tags: 4
   axis_document_counts:
-    axis_1: 2
-    axis_2: 2
-    axis_3: 3
+    axis_1: 355
+    axis_2: 288
+    axis_3: 279
   sample_assignments:
-    - path: _posts/papers/2025-12-15-2512.13915.md
-      assigned_axes:
-        - axis_2
-      relevance:
-        axis_1: 0.25
-        axis_2: 0.5
-        axis_3: 0.25
-    - path: _posts/papers/2026-01-01-10.1007-978-3-032-06918-4_202-1.md
+    - path: _posts/papers/1968-10-01-10.1016-0006-3207(68)90028-1.md
       assigned_axes: []
       relevance:
         axis_1: 0.0
         axis_2: 0.0
         axis_3: 0.0
-    - path: _posts/papers/2026-01-01-10.2139-ssrn.6212105.md
+    - path: _posts/papers/1969-04-01-10.1016-0006-3207(69)90140-2.md
       assigned_axes: []
       relevance:
         axis_1: 0.0
         axis_2: 0.0
         axis_3: 0.0
-    - path: _posts/papers/2026-01-01-10.2139-ssrn.6386718.md
-      assigned_axes:
-        - axis_3
-      relevance:
-        axis_1: 0.0
-        axis_2: 0.0
-        axis_3: 1.0
-    - path: _posts/papers/2026-01-01-10.7802-2986.md
+    - path: _posts/papers/1988-01-01-10.2870-843482.md
       assigned_axes: []
       relevance:
         axis_1: 0.0
         axis_2: 0.0
         axis_3: 0.0
-    - path: _posts/papers/2026-01-01-10.7802-2988.md
+    - path: _posts/papers/1993-06-01-10.1080-07349165.1993.9725751.md
+      assigned_axes: []
+      relevance:
+        axis_1: 0.0
+        axis_2: 0.0
+        axis_3: 0.0
+    - path: _posts/papers/1994-06-01-10.1016-0035-5054(94)90006-x.md
+      assigned_axes: []
+      relevance:
+        axis_1: 0.0
+        axis_2: 0.0
+        axis_3: 0.0
+    - path: _posts/papers/1995-02-01-10.1007-bf01267748.md
       assigned_axes: []
       relevance:
         axis_1: 0.0
@@ -53,34 +51,34 @@ matching:
 axes:
   axis_1:
     tags_en:
-      - Citizen identity
       - Social cohesion
       - Political trust
-      - Educational inequality
+      - Citizen identity
+      - Civic learning
     tags_fr:
-      - Identite citoyenne
       - Cohesion sociale
       - Confiance politique
-      - Inegalites educatives
+      - Identite citoyenne
+      - Apprentissage civique
   axis_2:
     tags_en:
-      - Partisan polarization
-      - Public deliberation
+      - Electoral behavior
       - Opinion formation
       - Information consumption
+      - Citizen participation
     tags_fr:
-      - Polarisation partisane
-      - Deliberation publique
+      - Comportement electoral
       - Formation des opinions politiques
       - Consommation de l'information
+      - Participation citoyenne
   axis_3:
     tags_en:
       - Political representation
-      - Democratic governance
       - Electoral systems
-      - Citizen-institution relations
+      - Government responsiveness
+      - Democratic governance
     tags_fr:
       - Representation politique
-      - Gouvernance democratique
       - Systemes electoraux
-      - Relation citoyens-institutions
+      - Reactivite des gouvernements
+      - Gouvernance democratique

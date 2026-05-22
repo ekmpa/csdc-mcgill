@@ -7,8 +7,6 @@ main:
         url: /tools-and-resources/
       - page: "STAMINA"
         url: /stamina/
-      - page: "Publications"
-        url: /publications/
     url: /research/
   - tab: "About"
     subpages:

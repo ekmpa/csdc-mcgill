@@ -17,7 +17,7 @@
         {% assign members_count = members_count | plus: 1 %}
       {% endif %}
     {% endfor %}
-    {% assign publications_count = site.categories.Publications | size | default: 0 %}
+    {% assign publications_count = site.posts | where_exp: "post", "post.path contains '_posts/papers/'" | size | default: 0 %}
 
     {% assign members_remainder = members_count | modulo: 10 %}
     {% assign alumni_remainder = alumni_count | modulo: 10 %}
