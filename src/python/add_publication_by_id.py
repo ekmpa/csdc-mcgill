@@ -115,10 +115,28 @@ def wrangle_fetched_content(parsed, paper_json):
 
 
 def main(parsed, save_dir="_posts/papers"):
-    paper_json = fetch_content(parsed)
-    paper_json = wrangle_fetched_content(parsed, paper_json)  # in-place
-    formatted = generate_publication_post(paper_json)
-    write_content_to_file(formatted, save_dir)
+    """Process one or more identifiers from a parsed issue body.
+
+    The ``identifier`` field may contain multiple DOIs/URLs separated by ``';'``.
+    Each is fetched and written as a separate publication file.
+    Failed lookups are reported but do not abort the remaining entries.
+    """
+    identifiers = [s.strip() for s in parsed.get("identifier", "").split(";") if s.strip()]
+    if not identifiers:
+        print("No identifier provided.", file=sys.stderr)
+        sys.exit(1)
+
+    for identifier in identifiers:
+        print(f"Fetching {identifier} …")
+        entry = dict(parsed, identifier=identifier)
+        try:
+            paper_json = fetch_content(entry)
+        except SystemExit:
+            continue  # fetch_content already printed the error; skip to next
+        paper_json = wrangle_fetched_content(entry, paper_json)
+        formatted = generate_publication_post(paper_json)
+        write_content_to_file(formatted, save_dir)
+        print(f"  → wrote {formatted['filename']}")
 
 
 if __name__ == "__main__":

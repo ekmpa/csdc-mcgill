@@ -28,11 +28,11 @@ body:
     attributes:
       label: Identifier
       description: |
-        The identifier of the publication.
-        For DOI, it should be for example "10.1038/nphys1170".
-        For URL, it should be the URL of the publication. Only the following are accepted: 
-        semanticscholar.org, arxiv.org, aclweb.org, acm.org, biorxiv.org
-      placeholder: "https://arxiv.org/abs/1904.1234"
+        One or more identifiers separated by ';'.
+        DOI example: "10.1038/nphys1170" or "10.1038/nphys1170; 10.1093/poq/nfab012"
+        URL example: "https://arxiv.org/abs/1904.1234"
+        Accepted URL domains: semanticscholar.org, arxiv.org, aclweb.org, acm.org, biorxiv.org
+      placeholder: "10.1038/nphys1170; 10.1093/poq/nfab012"
     validations:
       required: true
 
