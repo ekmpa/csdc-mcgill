@@ -1,22 +1,24 @@
 generated_at: '2026-05-22'
 source_publication_count: 19
 matching:
-  method: weighted multi-axis relevance (bilingual normalized tokens)
-  axis_document_counts:
-    axis_1: 1
-    axis_2: 1
-    axis_3: 5
+  method: weighted multi-axis relevance (CECD-aligned bilingual vocabulary)
   thresholds:
     min_share: 0.24
     min_hits: 2
+    min_tags: 3
+    max_tags: 4
+  axis_document_counts:
+    axis_1: 2
+    axis_2: 2
+    axis_3: 3
   sample_assignments:
     - path: _posts/papers/2025-12-15-2512.13915.md
       assigned_axes:
-        - axis_3
+        - axis_2
       relevance:
-        axis_1: 0.167
-        axis_2: 0.167
-        axis_3: 0.667
+        axis_1: 0.25
+        axis_2: 0.5
+        axis_3: 0.25
     - path: _posts/papers/2026-01-01-10.1007-978-3-032-06918-4_202-1.md
       assigned_axes: []
       relevance:
@@ -30,12 +32,19 @@ matching:
         axis_2: 0.0
         axis_3: 0.0
     - path: _posts/papers/2026-01-01-10.2139-ssrn.6386718.md
+      assigned_axes:
+        - axis_3
+      relevance:
+        axis_1: 0.0
+        axis_2: 0.0
+        axis_3: 1.0
+    - path: _posts/papers/2026-01-01-10.7802-2986.md
       assigned_axes: []
       relevance:
         axis_1: 0.0
         axis_2: 0.0
         axis_3: 0.0
-    - path: _posts/papers/2026-01-01-10.7802-2986.md
+    - path: _posts/papers/2026-01-01-10.7802-2988.md
       assigned_axes: []
       relevance:
         axis_1: 0.0
@@ -44,34 +53,34 @@ matching:
 axes:
   axis_1:
     tags_en:
-      - Identity formation
-      - Community belonging
-      - Youth development
-      - Education pathways
+      - Citizen identity
+      - Social cohesion
+      - Political trust
+      - Educational inequality
     tags_fr:
-      - Construction identitaire
-      - Appartenance communautaire
-      - Developpement des jeunes
-      - Parcours educatifs
+      - Identite citoyenne
+      - Cohesion sociale
+      - Confiance politique
+      - Inegalites educatives
   axis_2:
     tags_en:
       - Partisan polarization
-      - Political attitudes
       - Public deliberation
-      - Democratic engagement
+      - Opinion formation
+      - Information consumption
     tags_fr:
       - Polarisation partisane
-      - Attitudes politiques
       - Deliberation publique
-      - Engagement democratique
+      - Formation des opinions politiques
+      - Consommation de l'information
   axis_3:
     tags_en:
       - Political representation
-      - Election integrity
-      - Electoral institutions
-      - Policy compliance
+      - Democratic governance
+      - Electoral systems
+      - Citizen-institution relations
     tags_fr:
       - Representation politique
-      - Integrite electorale
-      - Institutions electorales
-      - Conformite aux politiques
+      - Gouvernance democratique
+      - Systemes electoraux
+      - Relation citoyens-institutions

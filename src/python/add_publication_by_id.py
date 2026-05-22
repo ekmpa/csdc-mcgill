@@ -24,31 +24,28 @@ def fetch_content(parsed, max_retry=3):
         f"https://api.semanticscholar.org/graph/v1/paper/{method}:{identifier}"
         "?fields=title,venue,year,publicationDate,authors.name,externalIds,url,abstract"
     )
-    try:
-        response = urlopen(url)
-        data = json.loads(response.read())
-    except HTTPError as e:
-        if e.code == 404:
-            # Fail loudly so the workflow shows an error and the user knows to resubmit.
-            print(
-                f"ERROR: Semantic Scholar paper not found for {method}:{identifier} (HTTP 404).\n"
-                "Please verify the identifier is correct and re-submit the issue.",
-                file=sys.stderr,
-            )
-            sys.exit(1)
 
-        # Retry only for transient errors (rate limits / server issues).
-        if max_retry > 0 and e.code in (408, 409, 425, 429, 500, 502, 503, 504):
-            time.sleep(20)
-            return fetch_content(parsed, max_retry - 1)
-        raise
-    except URLError:
-        if max_retry > 0:
-            time.sleep(20)
-            return fetch_content(parsed, max_retry - 1)
-        raise
-
-    return data
+    for attempt in range(max_retry + 1):
+        try:
+            response = urlopen(url)
+            return json.loads(response.read())
+        except HTTPError as e:
+            if e.code == 404:
+                print(
+                    f"ERROR: Semantic Scholar paper not found for {method}:{identifier} (HTTP 404).\n"
+                    "Please verify the identifier is correct and re-submit the issue.",
+                    file=sys.stderr,
+                )
+                sys.exit(1)
+            if attempt < max_retry and e.code in (408, 409, 425, 429, 500, 502, 503, 504):
+                time.sleep(20)
+                continue
+            raise
+        except URLError:
+            if attempt < max_retry:
+                time.sleep(20)
+                continue
+            raise
 
 
 def create_attr_to_username_map(lab_members, attribute):
@@ -111,13 +108,8 @@ def wrangle_fetched_content(parsed, paper_json):
             paper_json["author"] = fullname_to_username[author["name"]]
             break
 
-    del (
-        paper_json["externalIds"],
-        paper_json["paperId"],
-        paper_json["url"],
-        paper_json["authors"],
-        paper_json['publicationDate']
-    )
+    for key in ("externalIds", "paperId", "url", "authors", "publicationDate"):
+        paper_json.pop(key, None)
 
     return paper_json
 

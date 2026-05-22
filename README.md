@@ -45,25 +45,22 @@ python -m src.python.generate_research_axis_topics
 
 This command scans markdown files in `_posts/papers` and updates `_data/research_axis_topics.yml`, which is consumed by the shared include used in both English and French pages.
 
-By default, it produces 2-3 word topic phrases, with 3-4 tags per axis.
+By default, it produces CECD-aligned 2-3 word topic phrases, with 3-4 tags per axis.
 
 Matching is robust and bilingual-aware:
 
 - Publication text is normalized with accent folding (e.g. `citoyenneté` -> `citoyennete`) and token mapping to shared concepts.
 - A publication can contribute to multiple axes (weighted relevance), instead of being forced into a single axis.
-- Final tags are selected from axis-specific phrase banks with explicit EN/FR labels.
+- Final tags are selected from CECD-aligned axis phrase banks:
+  - Axis 1: citizen identity, political trust, social cohesion, information literacy.
+  - Axis 2: information consumption, opinion formation, citizen participation.
+  - Axis 3: citizen-institution relations, parliamentary institutions, government responsiveness.
 - The generated YAML includes a `matching` section with thresholds, axis document counts, and sample assignments for auditing.
 
-To tune output density:
+To tune matching and output density:
 
 ```bash
-python -m src.python.generate_research_axis_topics --max_tags 6
-```
-
-You can also set a minimum:
-
-```bash
-python -m src.python.generate_research_axis_topics --min_tags 3 --max_tags 4
+python -m src.python.generate_research_axis_topics --min_share 0.24 --min_hits 2 --min_tags 3 --max_tags 4
 ```
 
 Language toggling on the site:

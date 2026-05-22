@@ -19,7 +19,7 @@ def main(save_dir="_posts/papers", site_data_dir="_data/", use_ignore_list=True)
         openalex_id = author.get("openalex_id", "")
 
         if orcid or openalex_id:
-            year = int(datetime.datetime.now().year)
+            year = datetime.datetime.now().year
             print(f"Updating publications for {author['name']} via OpenAlex...")
             add_publications_by_author_openalex.main(
                 orcid=orcid or None,

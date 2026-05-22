@@ -1,5 +1,4 @@
 import argparse
-import json
 import os
 from io import StringIO
 from textwrap import dedent
@@ -22,17 +21,21 @@ def _first_non_empty(parsed, *keys):
             return value
     return None
 
-def front_matters_from_dict(d):
-    # Convert to dict
-    d = json.loads(json.dumps(d))
+def _to_plain(obj):
+    """Recursively convert ruamel CommentedMap/Seq to plain dict/list."""
+    if isinstance(obj, dict):
+        return {k: _to_plain(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_to_plain(v) for v in obj]
+    return obj
 
+
+def front_matters_from_dict(d):
     file_object = StringIO()
     yaml = YAML()
     yaml.preserve_quotes = True
-    yaml.dump(d, file_object)
-    front_matter = file_object.getvalue()
-
-    return front_matter
+    yaml.dump(_to_plain(d), file_object)
+    return file_object.getvalue()
 
 
 def front_matters_to_dict(front_matter):
@@ -80,7 +83,7 @@ def preprocess_parsed(parsed, keys_removed, for_update=False):
     parsed["shorthand"] = parsed["shorthand"].replace("/", "-")
 
     # Then, modify some keys
-    if parsed["tags"] != "_No response_":
+    if not _is_empty_response(parsed.get("tags")):
         parsed["tags"] = [x.strip() for x in parsed["tags"].split(",")]
 
     if parsed["abstract"] == "_No response_" and not for_update:
@@ -134,10 +137,7 @@ def generate_publication_post(parsed):
     """
     )
 
-    try:
-        content = top + bottom
-    except TypeError as e:
-        raise Exception(f"{e}\n{top=}\n{bottom=}\n{parsed=}") 
+    content = top + bottom
 
     return {
         "filename": get_filename(parsed),

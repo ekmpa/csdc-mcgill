@@ -28,12 +28,9 @@ def _format_date_display(start_dt: dt.datetime, all_day: bool, tz_name: str) -> 
     if all_day:
         return f"{day_name}, {month_name} {day} (All day)"
 
-    hour_24 = local_dt.hour
-    hour_12 = hour_24 % 12
-    if hour_12 == 0:
-        hour_12 = 12
+    hour_12 = int(local_dt.strftime("%I"))
     minute = local_dt.minute
-    am_pm = "AM" if hour_24 < 12 else "PM"
+    am_pm = "AM" if local_dt.hour < 12 else "PM"
     return f"{day_name}, {month_name} {day}, {hour_12}:{minute:02d} {am_pm} ET"
 
 
@@ -96,9 +93,6 @@ def _fetch_events(calendar_id: str, api_key: str, timezone_name: str, max_result
                     f"Failed to fetch Google Calendar events after {attempts} attempts: {exc}"
                 ) from exc
             time.sleep(attempt * 2)
-
-    if payload is None:
-        raise RuntimeError("Google Calendar payload is empty.")
 
     items = payload.get("items", [])
     events = []
