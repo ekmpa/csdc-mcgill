@@ -61,10 +61,17 @@ def create_attr_to_username_map(lab_members, attribute):
     }
 
 def wrangle_fetched_content(parsed, paper_json):
-    with open("_data/authors.yml") as f:
-        yaml = YAML()
-        yaml.preserve_quotes = True
-        lab_members = yaml.load(f)
+    try:
+        with open("_data/authors.yml") as f:
+            yaml = YAML()
+            yaml.preserve_quotes = True
+            # This lookup is only for optional author auto-linking, so do not fail
+            # publication creation if authors.yml contains duplicate keys.
+            yaml.allow_duplicate_keys = True
+            lab_members = yaml.load(f) or {}
+    except Exception as e:
+        print(f"Warning: could not parse _data/authors.yml ({e}); continuing without author matching.")
+        lab_members = {}
 
     parsed = remove_items_with_values(parsed, "_No response_")
 
@@ -95,6 +102,7 @@ def wrangle_fetched_content(parsed, paper_json):
 
     for key in ["title", "names", "tags", "venue", "shorthand", "link"]:
         paper_json[key] = (paper_json[key] or "").replace("\n", " ")
+    paper_json["shorthand"] = paper_json["shorthand"].replace("/", "-")
 
     # Auto-populate French fields so /fr/publications/ is always functional.
     paper_json["title_fr"] = paper_json.get("title", "")
