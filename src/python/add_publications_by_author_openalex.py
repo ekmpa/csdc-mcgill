@@ -181,6 +181,7 @@ def main(
     year_end: int = None,
     save_dir: str = "_posts/papers",
     use_ignore_list: bool = True,
+    doi_only: bool = False,
 ):
     if year_start is None:
         year_start = datetime.datetime.now().year
@@ -203,6 +204,9 @@ def main(
     cleaned = []
 
     for work in works:
+        if doi_only and not ((work.get("ids") or {}).get("doi")):
+            continue
+
         wrangled = _wrangle_work(work)
         dedup_key = wrangled.pop("_openalex_id")
 

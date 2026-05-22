@@ -2,6 +2,7 @@ name: "Automatically fetch and update publications for authors with ORCID/OpenAl
 on:
   schedule:
     - cron: '0 8 1,15 * *'
+  workflow_dispatch:
 
 jobs:
   auto-update-publications:
@@ -18,7 +19,7 @@ jobs:
         run: pip install -r src/python/requirements.txt
       
       - name: "Automatically add papers from authors with ORCID/OpenAlex IDs"
-        run: python -m src.python.auto_update_publications
+        run: python -m src.python.auto_update_publications --all_years true
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
 

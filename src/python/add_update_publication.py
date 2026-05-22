@@ -1,5 +1,7 @@
 import argparse
+import datetime as dt
 import os
+from pathlib import Path
 from io import StringIO
 from textwrap import dedent
 
@@ -46,8 +48,37 @@ def front_matters_to_dict(front_matter):
     return d
 
 
+def _date_parts(parsed):
+    """Resolve filename date parts with backward-compatible defaults."""
+    today_year = str(dt.date.today().year)
+    year = str(_first_non_empty(parsed, "year") or today_year)
+    month = str(_first_non_empty(parsed, "month") or "01").zfill(2)
+    day = str(_first_non_empty(parsed, "day") or "01").zfill(2)
+    return year, month, day
+
+
 def get_filename(parsed):
-    return "-".join([str(parsed[k]) for k in ["year", "month", "day", "shorthand"]]) + ".md"
+    year, month, day = _date_parts(parsed)
+    shorthand = str(parsed["shorthand"]).replace("/", "-")
+    return f"{year}-{month}-{day}-{shorthand}.md"
+
+
+def _find_filename_by_shorthand(parsed, load_dir):
+    shorthand = str(parsed["shorthand"]).replace("/", "-")
+    matches = sorted(Path(load_dir).glob(f"*-*-*-{shorthand}.md"))
+
+    if not matches:
+        raise FileNotFoundError(
+            f"Could not find publication with shorthand '{shorthand}' in {load_dir}."
+        )
+    if len(matches) > 1:
+        candidates = ", ".join(m.name for m in matches)
+        raise ValueError(
+            f"Found multiple publications for shorthand '{shorthand}': {candidates}. "
+            "Please provide year/month/day to disambiguate."
+        )
+
+    return matches[0].name
 
 
 def preprocess_parsed(parsed, keys_removed, for_update=False):
@@ -152,7 +183,8 @@ def update_publication_post(parsed, load_dir="_posts/papers"):
         for_update=True,
     )
 
-    filename = get_filename(parsed)
+    has_explicit_date = all(not _is_empty_response(parsed.get(k)) for k in ("year", "month", "day"))
+    filename = get_filename(parsed) if has_explicit_date else _find_filename_by_shorthand(parsed, load_dir)
 
     with open(os.path.join(load_dir, filename), "r") as f:
         lines = f.read()
@@ -171,6 +203,9 @@ def update_publication_post(parsed, load_dir="_posts/papers"):
     }
 
 def main(parsed, save_dir="_posts/papers", image_dir="assets/images/papers"):
+    parsed = dict(parsed)
+    parsed["shorthand"] = str(parsed["shorthand"]).replace("/", "-")
+
     img_path = save_url_image(
         fname=parsed["shorthand"],
         profile=parsed,
