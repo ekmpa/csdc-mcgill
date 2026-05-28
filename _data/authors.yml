@@ -1789,6 +1789,8 @@ Paul Sutton:
     title: Master's Student
     affiliation: McGill University
   auto_update_publications: false
+Test:
+  name: Test
 Melanee Thomas:
   name: Melanee Thomas
   alumni: true
