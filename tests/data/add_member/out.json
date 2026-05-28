@@ -5,6 +5,7 @@
     "current_role": {
         "type": "Student",
         "title": "PhD",
+        "title_fr": "Doctorat",
         "affiliation": "Mila, McGill",
         "research_directions": [
             "online-toxicity",

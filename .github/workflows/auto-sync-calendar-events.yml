@@ -43,14 +43,26 @@ jobs:
             Automatically syncs Google Calendar events to `_data/events.yml`.
 
       - name: Enable auto-merge
-        if: steps.create-pr.outputs.pull-request-number != ''
+        if: steps.create-pr.outputs.pull-request-number != '' && secrets.CALENDAR_AUTOMERGE_TOKEN == ''
         uses: peter-evans/enable-pull-request-automerge@v3
         with:
           pull-request-number: ${{ steps.create-pr.outputs.pull-request-number }}
           merge-method: squash
 
       - name: Request auto-merge via gh
-        if: steps.create-pr.outputs.pull-request-number != ''
+        if: steps.create-pr.outputs.pull-request-number != '' && secrets.CALENDAR_AUTOMERGE_TOKEN == ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh pr merge "${{ steps.create-pr.outputs.pull-request-number }}" --squash --auto
+
+      - name: Auto-approve PR (optional)
+        if: steps.create-pr.outputs.pull-request-number != '' && secrets.CALENDAR_AUTOMERGE_TOKEN != ''
+        env:
+          GH_TOKEN: ${{ secrets.CALENDAR_AUTOMERGE_TOKEN }}
+        run: gh pr review "${{ steps.create-pr.outputs.pull-request-number }}" --approve
+
+      - name: Merge PR with admin token (optional)
+        if: steps.create-pr.outputs.pull-request-number != '' && secrets.CALENDAR_AUTOMERGE_TOKEN != ''
+        env:
+          GH_TOKEN: ${{ secrets.CALENDAR_AUTOMERGE_TOKEN }}
+        run: gh pr merge "${{ steps.create-pr.outputs.pull-request-number }}" --squash --delete-branch --admin

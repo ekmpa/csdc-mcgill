@@ -7,6 +7,7 @@
     "current_role": {
         "type": "Unaffiliated",
         "title": "Professing at Leland S. Junior University",
+        "title_fr": "Professing at Leland S. Junior University",
         "research_directions": [
             "online-toxicity",
             "poli-sci",
@@ -17,6 +18,7 @@
         {
             "type": "Student",
             "title": "PhD",
+            "title_fr": "Doctorat",
             "advisor": "Reihaneh Rabbany"
         }
     ],
