@@ -1,0 +1,42 @@
+name: "Auto-label issues from templates"
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  auto-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto-label based on issue template
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+            let label = '';
+            
+            // Detect template based on form markers in issue body
+            // Member profile form fields
+            if ((body.includes('### Name / Nom') || body.includes('### Name')) && 
+                (body.includes('### Status / Statut') || body.includes('### Member Status'))) {
+              label = 'automatic-member-profile';
+            }
+            // Publication by ID form fields
+            else if (body.includes('### Method') && body.includes('### Identifier')) {
+              label = 'automatic-add-publication-by-id';
+            }
+            // News update form fields
+            else if (body.includes('### Title') && body.includes('### Date') && body.includes('### Summary')) {
+              label = 'automatic-add-news-update';
+            }
+            
+            if (label) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: [label]
+              });
+              console.log('✓ Applied label: ' + label);
+            } else {
+              console.log('⚠ Could not detect template type from issue body');
+            }
