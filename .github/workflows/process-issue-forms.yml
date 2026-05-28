@@ -29,28 +29,9 @@ jobs:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ACTION: Add member
         run: python -m src.python.add_update_member
-      
-      - name: "Update _data/authors.yml with src/python/add_update_member.py"
-        if: github.event.label.name == 'automatic-update-member' || contains(github.event.issue.labels.*.name, 'automatic-update-member')
-        env:
-          ISSUE_BODY: ${{ github.event.issue.body }}
-          ACTION: Update member
-        run: python -m src.python.add_update_member
-
-      - name: "Update _data/authors.yml with src/python/add_update_member.py"
-        if: github.event.label.name == 'automatic-member-profile' || contains(github.event.issue.labels.*.name, 'automatic-member-profile')
-        env:
-          ISSUE_BODY: ${{ github.event.issue.body }}
-        run: python -m src.python.add_update_member
 
       - name: "Auto-sync publications for members with ORCID/OpenAlex IDs"
-        if: |
-          github.event.label.name == 'automatic-add-member' ||
-          github.event.label.name == 'automatic-update-member' ||
-          github.event.label.name == 'automatic-member-profile' ||
-          contains(github.event.issue.labels.*.name, 'automatic-add-member') ||
-          contains(github.event.issue.labels.*.name, 'automatic-update-member') ||
-          contains(github.event.issue.labels.*.name, 'automatic-member-profile')
+        if: github.event.label.name == 'automatic-add-member' || contains(github.event.issue.labels.*.name, 'automatic-add-member')
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python -m src.python.auto_update_publications

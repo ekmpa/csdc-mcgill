@@ -2,7 +2,7 @@ name: Member profile (add/update) -- Profil de membre (ajouter/mettre à jour)
 description: |
   Add or update a member profile / Ajouter ou mettre à jour un profil de membre.
 title: "[Member profile]"
-labels: ["automatic-member-profile"]
+labels: ["automatic-add-member"]
 assignees:
   - octocat
 body:

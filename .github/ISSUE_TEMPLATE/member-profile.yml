@@ -2,7 +2,7 @@ name: Member profile (add/update)
 description: |
   Add a new Centre member or update an existing member profile.
 title: "[Member profile]"
-labels: ["automatic-member-profile"]
+labels: ["automatic-add-member"]
 assignees:
   - octocat
 body:
