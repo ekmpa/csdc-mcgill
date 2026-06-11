@@ -104,6 +104,20 @@ var store = [{
       "url": "/tools-and-resources/",
       "teaser": null
     },{
+      "title": "EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations",
+      "excerpt": "Sneheel Sarangi, Maximilian Puelma Touzel, Aurélien Bück-Kaeffer, Zachary Yang, Jean-François Godbout, Reihaneh Rabbany\n      EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations\n      \n      Sneheel Sarangi, Maximilian Puelma Touzel, Aurélien Bück-Kaeffer, Zachary Yang, Jean-François Godbout, Reihaneh Rabbany\n      W7162893632 Sneheel Sarangi, Maximilian Puelma Touzel, Aurelien Buck-Kaeffer, Zachary Yang, Jean-Francois Godbout, Reihaneh Rabbany\n      EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations\n      \n      Sneheel Sarangi, Maximilian Puelma Touzel, Aurelien Buck-Kaeffer, Zachary Yang, Jean-Francois Godbout, Reihaneh Rabbany\n      W7162893632",
+      "categories": ["Publications"],
+      "tags": ["ArXiv.org"],
+      "url": "/publications/W7162893632/",
+      "teaser": null
+    },{
+      "title": "EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations",
+      "excerpt": "Sneheel Sarangi, Maximilian Puelma Touzel, Aurélien Bück-Kaeffer, Zachary Yang, Jean-François Godbout, Reihaneh Rabbany\n      EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations\n      \n      Sneheel Sarangi, Maximilian Puelma Touzel, Aurélien Bück-Kaeffer, Zachary Yang, Jean-François Godbout, Reihaneh Rabbany\n      10.48550-arxiv.2605.30258 Sneheel Sarangi, Maximilian Puelma Touzel, Aurelien Buck-Kaeffer, Zachary Yang, Jean-Francois Godbout, Reihaneh Rabbany\n      EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations\n      \n      Sneheel Sarangi, Maximilian Puelma Touzel, Aurelien Buck-Kaeffer, Zachary Yang, Jean-Francois Godbout, Reihaneh Rabbany\n      10.48550-arxiv.2605.30258",
+      "categories": ["Publications"],
+      "tags": ["arXiv (Cornell University)"],
+      "url": "/publications/10.48550-arxiv.2605.30258/",
+      "teaser": null
+    },{
       "title": "Who should vote? Membership and claims to expatriate political participation in the Nigerian diaspora",
       "excerpt": "Aaron Erlich, Thomas Soehl\n      Who should vote? Membership and claims to expatriate political participation in the Nigerian diaspora\n      \n      Aaron Erlich, Thomas Soehl\n      10.1186-s40878-026-00546-3 Aaron Erlich, Thomas Soehl\n      Who should vote? Membership and claims to expatriate political participation in the Nigerian diaspora\n      \n      Aaron Erlich, Thomas Soehl\n      10.1186-s40878-026-00546-3",
       "categories": ["Publications"],
@@ -1140,6 +1154,13 @@ var store = [{
       "url": "/publications/10.1177-08944393241247420/",
       "teaser": null
     },{
+      "title": "What Affects Willingness to Give Bribes? A Conjoint Experiment in Ukraine",
+      "excerpt": "Aaron Erlich, Simeon Nichter, Jordan Gans-Morse\n      What Affects Willingness to Give Bribes? A Conjoint Experiment in Ukraine\n      \n      Aaron Erlich, Simeon Nichter, Jordan Gans-Morse\n      W7160730062 Aaron Erlich, Simeon Nichter, Jordan Gans-Morse\n      What Affects Willingness to Give Bribes? A Conjoint Experiment in Ukraine\n      \n      Aaron Erlich, Simeon Nichter, Jordan Gans-Morse\n      W7160730062",
+      "categories": ["Publications"],
+      "tags": ["OSF Preprints (OSF Preprints)"],
+      "url": "/publications/W7160730062/",
+      "teaser": null
+    },{
       "title": "T-NET: Weakly Supervised Graph Learning for Combatting Human Trafficking",
       "excerpt": "Pratheeksha Nair, Jiaqi Liu, Catalina Vajiac, Andreas Olligschlaeger, Duen Horng Chau, Mirela T. Cazzolato, Cara Jones, Christos Faloutsos, Reihaneh Rabbany\n      T-NET: Weakly Supervised Graph Learning for Combatting Human Trafficking\n      \n      Pratheeksha Nair, Jiaqi Liu, Catalina Vajiac, Andreas Olligschlaeger, Duen Horng Chau, Mirela T. Cazzolato, Cara Jones, Christos Faloutsos, Reihaneh Rabbany\n      10.1609-aaai.v38i20.30233 Pratheeksha Nair, Jiaqi Liu, Catalina Vajiac, Andreas Olligschlaeger, Duen Horng Chau, Mirela T. Cazzolato, Cara Jones, Christos Faloutsos, Reihaneh Rabbany\n      T-NET: Weakly Supervised Graph Learning for Combatting Human Trafficking\n      \n      Pratheeksha Nair, Jiaqi Liu, Catalina Vajiac, Andreas Olligschlaeger, Duen Horng Chau, Mirela T. Cazzolato, Cara Jones, Christos Faloutsos, Reihaneh Rabbany\n      10.1609-aaai.v38i20.30233",
       "categories": ["Publications"],
@@ -1623,6 +1644,13 @@ var store = [{
       "url": "/publications/10.20982-tqmp.19.2.p123/",
       "teaser": null
     },{
+      "title": "Civil society organizations and collective sponsorship of refugees in Quebec",
+      "excerpt": "Clothilde Parent-Chartier, Neal Santamaria, Ian Van Haren\n      Civil society organizations and collective sponsorship of refugees in Quebec\n      \n      Clothilde Parent-Chartier, Neal Santamaria, Ian Van Haren\n      10.31235-osf.io-em6z2 Clothilde Parent-Chartier, Neal Santamaria, Ian Van Haren\n      Civil society organizations and collective sponsorship of refugees in Quebec\n      \n      Clothilde Parent-Chartier, Neal Santamaria, Ian Van Haren\n      10.31235-osf.io-em6z2",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/10.31235-osf.io-em6z2/",
+      "teaser": null
+    },{
       "title": "[ Sans Titre - No Title ]Voice and Inequality: Poverty and Political Participation in Latin American Democracies, de Carew Boulding et Claudio A. Holzner, New York, Oxford University Press, 2021, 244 p.",
       "excerpt": "Étienne Sinotte\n      [ Sans Titre - No Title ]Voice and Inequality: Poverty and Political Participation in Latin American Democracies, de Carew Boulding et Claudio A. Holzner, New York, Oxford University Press, 2021, 244 p.\n      \n      Étienne Sinotte\n      10.7202-1106146ar Etienne Sinotte\n      [ Sans Titre - No Title ]Voice and Inequality: Poverty and Political Participation in Latin American Democracies, de Carew Boulding et Claudio A. Holzner, New York, Oxford University Press, 2021, 244 p.\n      \n      Etienne Sinotte\n      10.7202-1106146ar",
       "categories": ["Publications"],
@@ -2064,6 +2092,13 @@ var store = [{
       "url": "/publications/10.1017-s0003055422000430/",
       "teaser": null
     },{
+      "title": "Forecasting Elections in Latin America: an Overview",
+      "excerpt": "María Celeste Ratto, Michael S. Lewis‐Beck, Éric Bélanger\n      Forecasting Elections in Latin America: an Overview\n      \n      María Celeste Ratto, Michael S. Lewis‐Beck, Éric Bélanger\n      W4367594441 María Celeste Ratto, Michael S. Lewis‐Beck, Eric Belanger\n      Forecasting Elections in Latin America: an Overview\n      \n      María Celeste Ratto, Michael S. Lewis‐Beck, Eric Belanger\n      W4367594441",
+      "categories": ["Publications"],
+      "tags": ["DOAJ (DOAJ: Directory of Open Access Journals)"],
+      "url": "/publications/W4367594441/",
+      "teaser": null
+    },{
       "title": "Everyday Perceiver-Context Influences on Impression Formation: No Evidence of Consistent Effects",
       "excerpt": "Sally Y Xie, Sabrina Thai, Eric Hehman\n      Everyday Perceiver-Context Influences on Impression Formation: No Evidence of Consistent Effects\n      \n      Sally Y Xie, Sabrina Thai, Eric Hehman\n      10.1177-01461672221085088 Sally Y Xie, Sabrina Thai, Eric Hehman\n      Everyday Perceiver-Context Influences on Impression Formation: No Evidence of Consistent Effects\n      \n      Sally Y Xie, Sabrina Thai, Eric Hehman\n      10.1177-01461672221085088",
       "categories": ["Publications"],
@@ -2183,6 +2218,13 @@ var store = [{
       "url": "/publications/10.1017-s0008423921000986/",
       "teaser": null
     },{
+      "title": "Mexican Migration to Canada: Temporary Worker Programs, Visa Imposition, and NAFTA Shape Flows",
+      "excerpt": "Ian Van Haren, Claudia Masferrer\n      Mexican Migration to Canada: Temporary Worker Programs, Visa Imposition, and NAFTA Shape Flows\n      \n      Ian Van Haren, Claudia Masferrer\n      10.31235-osf.io-pkfza Ian Van Haren, Claudia Masferrer\n      Mexican Migration to Canada: Temporary Worker Programs, Visa Imposition, and NAFTA Shape Flows\n      \n      Ian Van Haren, Claudia Masferrer\n      10.31235-osf.io-pkfza",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/10.31235-osf.io-pkfza/",
+      "teaser": null
+    },{
       "title": "Populism",
       "excerpt": "Elisabeth Gidengil, Dietlind Stolle\n      Populism\n      \n      Elisabeth Gidengil, Dietlind Stolle\n      10.1017-9781108779104.031 Elisabeth Gidengil, Dietlind Stolle\n      Populism\n      \n      Elisabeth Gidengil, Dietlind Stolle\n      10.1017-9781108779104.031",
       "categories": ["Publications"],
@@ -2230,6 +2272,20 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["SSRN Electronic Journal"],
       "url": "/publications/10.2139-ssrn.4090862/",
+      "teaser": null
+    },{
+      "title": "Non-trade Objectives and EU External Policy: Survey Responses on RESPECT Research Findings",
+      "excerpt": "Bernard Hoekman, Arianna Bondi\n      Non-trade Objectives and EU External Policy: Survey Responses on RESPECT Research Findings\n      \n      Bernard Hoekman, Arianna Bondi\n      10.2139-ssrn.4071705 Bernard Hoekman, Arianna Bondi\n      Non-trade Objectives and EU External Policy: Survey Responses on RESPECT Research Findings\n      \n      Bernard Hoekman, Arianna Bondi\n      10.2139-ssrn.4071705",
+      "categories": ["Publications"],
+      "tags": ["SSRN Electronic Journal"],
+      "url": "/publications/10.2139-ssrn.4071705/",
+      "teaser": null
+    },{
+      "title": "A policy framework for trade and non-trade objectives: Interviews with practitioners and stakeholders on RESPECT research findings",
+      "excerpt": "Arianna Bondi\n      A policy framework for trade and non-trade objectives: Interviews with practitioners and stakeholders on RESPECT research findings\n      \n      Arianna Bondi\n      10.2139-ssrn.4071700 Arianna Bondi\n      A policy framework for trade and non-trade objectives: Interviews with practitioners and stakeholders on RESPECT research findings\n      \n      Arianna Bondi\n      10.2139-ssrn.4071700",
+      "categories": ["Publications"],
+      "tags": ["SSRN Electronic Journal"],
+      "url": "/publications/10.2139-ssrn.4071700/",
       "teaser": null
     },{
       "title": "Using Communications Technology to Promote Democratic Participation: Experimental Evidence Fromsouth Africa",
@@ -2407,6 +2463,13 @@ var store = [{
       "url": "/publications/10.1080-00224545.2021.1975619/",
       "teaser": null
     },{
+      "title": "Visitor Visa Policy Changes and Mexico-Canada Migration",
+      "excerpt": "Ian Van Haren, Claudia Masferrer\n      Visitor Visa Policy Changes and Mexico-Canada Migration\n      \n      Ian Van Haren, Claudia Masferrer\n      10.1080-15562948.2021.1995924 Ian Van Haren, Claudia Masferrer\n      Visitor Visa Policy Changes and Mexico-Canada Migration\n      \n      Ian Van Haren, Claudia Masferrer\n      10.1080-15562948.2021.1995924",
+      "categories": ["Publications"],
+      "tags": ["Journal of Immigrant & Refugee Studies"],
+      "url": "/publications/10.1080-15562948.2021.1995924/",
+      "teaser": null
+    },{
       "title": "Little Between-Region and Between-Country Variance When People Form Impressions of Others",
       "excerpt": "Neil Hester, Sally Y Xie, Eric Hehman\n      Little Between-Region and Between-Country Variance When People Form Impressions of Others\n      \n      Neil Hester, Sally Y Xie, Eric Hehman\n      10.1177-09567976211019950 Neil Hester, Sally Y Xie, Eric Hehman\n      Little Between-Region and Between-Country Variance When People Form Impressions of Others\n      \n      Neil Hester, Sally Y Xie, Eric Hehman\n      10.1177-09567976211019950",
       "categories": ["Publications"],
@@ -2419,6 +2482,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Canadian Journal of Political Science"],
       "url": "/publications/10.1017-s0008423921000780/",
+      "teaser": null
+    },{
+      "title": "Canada’s Private Sponsorship Model Represents a Complementary Pathway for Refugee Resettlement",
+      "excerpt": "Ian Van Haren\n      Canada’s Private Sponsorship Model Represents a Complementary Pathway for Refugee Resettlement\n      \n      Ian Van Haren\n      10.31235-osf.io-aqw4m Ian Van Haren\n      Canada's Private Sponsorship Model Represents a Complementary Pathway for Refugee Resettlement\n      \n      Ian Van Haren\n      10.31235-osf.io-aqw4m",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/10.31235-osf.io-aqw4m/",
       "teaser": null
     },{
       "title": "Is pro-Kremlin Disinformation Effective? Evidence from Ukraine",
@@ -2447,6 +2517,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["London School of Economics and Political Science Research Online (London School of Economics and Political Science)"],
       "url": "/publications/10.7910-dvn-yhtaty/",
+      "teaser": null
+    },{
+      "title": "TrafficVis: Visualizing Suspicious Meta-Clusters for Human Trafficking Detection",
+      "excerpt": "Catalina Vajiac, Andreas Olligschlaeger, Yifei Li, Pratheeksha Nair, Meng-Chieh Lee, Namyong Park, Reihaneh Rabbany, Duen Horng Chau, Christos Faloutsos\n      TrafficVis: Visualizing Suspicious Meta-Clusters for Human Trafficking Detection\n      \n      Catalina Vajiac, Andreas Olligschlaeger, Yifei Li, Pratheeksha Nair, Meng-Chieh Lee, Namyong Park, Reihaneh Rabbany, Duen Horng Chau, Christos Faloutsos\n      W3205544584 Catalina Vajiac, Andreas Olligschlaeger, Yifei Li, Pratheeksha Nair, Meng-Chieh Lee, Namyong Park, Reihaneh Rabbany, Duen Horng Chau, Christos Faloutsos\n      TrafficVis: Visualizing Suspicious Meta-Clusters for Human Trafficking Detection\n      \n      Catalina Vajiac, Andreas Olligschlaeger, Yifei Li, Pratheeksha Nair, Meng-Chieh Lee, Namyong Park, Reihaneh Rabbany, Duen Horng Chau, Christos Faloutsos\n      W3205544584",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W3205544584/",
       "teaser": null
     },{
       "title": "Doing Better Data Visualization",
@@ -2482,6 +2559,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Frontiers in Political Science"],
       "url": "/publications/10.3389-fpos.2021.745331/",
+      "teaser": null
+    },{
+      "title": "Externalisation in Refugee Sponsorship Through Refugee Status Determination Requirements",
+      "excerpt": "Ian Van Haren\n      Externalisation in Refugee Sponsorship Through Refugee Status Determination Requirements\n      \n      Ian Van Haren\n      10.31235-osf.io-67x9k Ian Van Haren\n      Externalisation in Refugee Sponsorship Through Refugee Status Determination Requirements\n      \n      Ian Van Haren\n      10.31235-osf.io-67x9k",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/10.31235-osf.io-67x9k/",
       "teaser": null
     },{
       "title": "Replication Data for: Is pro-Kremlin Disinformation Effective? Evidence from Ukraine",
@@ -2573,6 +2657,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["arXiv (Cornell University)"],
       "url": "/publications/10.48550-arxiv.2105.04037/",
+      "teaser": null
+    },{
+      "title": "In explaining the rise of populism, it’s not economic anxiety vs. identity politics – it’s both.",
+      "excerpt": "Leonardo Baccini, Stephen Weymouth\n      In explaining the rise of populism, it’s not economic anxiety vs. identity politics – it’s both.\n      \n      Leonardo Baccini, Stephen Weymouth\n      W3188747983 Leonardo Baccini, Stephen Weymouth\n      In explaining the rise of populism, it's not economic anxiety vs. identity politics – it's both.\n      \n      Leonardo Baccini, Stephen Weymouth\n      W3188747983",
+      "categories": ["Publications"],
+      "tags": ["London School of Economics and Political Science Research Online (London School of Economics and Political Science)"],
+      "url": "/publications/W3188747983/",
       "teaser": null
     },{
       "title": "Trade Liberalization and Labor Market Institutions",
@@ -2727,6 +2818,20 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Nature Human Behaviour"],
       "url": "/publications/10.1038-s41562-020-01007-2/",
+      "teaser": null
+    },{
+      "title": "La incorporación de la computadora a la enseñanza de funciones cuadráticas",
+      "excerpt": "Carmen Sessa, Gema Fioriti, Marina Andrés, Valeria Borsani, Eduardo Cirigliano, María Teresa Coronel, Betina Duarte, Claudia Kerlakian, Juan Pablo Luna, Débora Sanguinetti\n      La incorporación de la computadora a la enseñanza de funciones cuadráticas\n      \n      Carmen Sessa, Gema Fioriti, Marina Andrés, Valeria Borsani, Eduardo Cirigliano, María Teresa Coronel, Betina Duarte, Claudia Kerlakian, Juan Pablo Luna, Débora Sanguinetti\n      W3208863060 Carmen Sessa, Gema Fioriti, Marina Andres, Valeria Borsani, Eduardo Cirigliano, María Teresa Coronel, Betina Duarte, Claudia Kerlakian, Juan Pablo Luna, Debora Sanguinetti\n      La incorporación de la computadora a la enseñanza de funciones cuadráticas\n      \n      Carmen Sessa, Gema Fioriti, Marina Andres, Valeria Borsani, Eduardo Cirigliano, María Teresa Coronel, Betina Duarte, Claudia Kerlakian, Juan Pablo Luna, Debora Sanguinetti\n      W3208863060",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W3208863060/",
+      "teaser": null
+    },{
+      "title": "Terrorism and Voting Behavior: Evidence from the United States",
+      "excerpt": "Leonardo Baccini, Abel Brodeur, Sean Nossek, Eran Shor\n      Terrorism and Voting Behavior: Evidence from the United States\n      \n      Leonardo Baccini, Abel Brodeur, Sean Nossek, Eran Shor\n      W3124934401 Leonardo Baccini, Abel Brodeur, Sean Nossek, Eran Shor\n      Terrorism and Voting Behavior: Evidence from the United States\n      \n      Leonardo Baccini, Abel Brodeur, Sean Nossek, Eran Shor\n      W3124934401",
+      "categories": ["Publications"],
+      "tags": ["RePEc: Research Papers in Economics"],
+      "url": "/publications/W3124934401/",
       "teaser": null
     },{
       "title": "L’exception canadienne à la loi de Duverger se confirme-t-elle au niveau subétatique ?",
@@ -2911,6 +3016,13 @@ var store = [{
       "url": "/publications/10.17615-26ks-q396/",
       "teaser": null
     },{
+      "title": "Framing risky choices: how the Leave campaign convinced Britain to take a leap into the unknown",
+      "excerpt": "Ece Özlem Atikcan, Richard Nadeau, Éric Bélanger\n      Framing risky choices: how the Leave campaign convinced Britain to take a leap into the unknown\n      \n      Ece Özlem Atikcan, Richard Nadeau, Éric Bélanger\n      W3149837007 Ece Ozlem Atikcan, Richard Nadeau, Eric Belanger\n      Framing risky choices: how the Leave campaign convinced Britain to take a leap into the unknown\n      \n      Ece Ozlem Atikcan, Richard Nadeau, Eric Belanger\n      W3149837007",
+      "categories": ["Publications"],
+      "tags": ["London School of Economics and Political Science Research Online (London School of Economics and Political Science)"],
+      "url": "/publications/W3149837007/",
+      "teaser": null
+    },{
       "title": "Perceived femininity and masculinity contribute independently to facial impressions.",
       "excerpt": "Neil Hester, Benedict C. Jones, Eric Hehman\n      Perceived femininity and masculinity contribute independently to facial impressions.\n      \n      Neil Hester, Benedict C. Jones, Eric Hehman\n      10.1037-xge0000989 Neil Hester, Benedict C. Jones, Eric Hehman\n      Perceived femininity and masculinity contribute independently to facial impressions.\n      \n      Neil Hester, Benedict C. Jones, Eric Hehman\n      10.1037-xge0000989",
       "categories": ["Publications"],
@@ -3030,6 +3142,13 @@ var store = [{
       "url": "/publications/10.7910-dvn-7qyfli/",
       "teaser": null
     },{
+      "title": "Elder, you're Right! Age-Group Differences in Social and Political Interactions in Africa",
+      "excerpt": "Aaron Erlich, Andrew McCormack\n      Elder, you're Right! Age-Group Differences in Social and Political Interactions in Africa\n      \n      Aaron Erlich, Andrew McCormack\n      W3094550472 Aaron Erlich, Andrew McCormack\n      Elder, you're Right! Age-Group Differences in Social and Political Interactions in Africa\n      \n      Aaron Erlich, Andrew McCormack\n      W3094550472",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W3094550472/",
+      "teaser": null
+    },{
       "title": "Seroprevalence of Antibodies to SARS-CoV-2 in Six Sites in the United States, March 23-May 3, 2020",
       "excerpt": "Fiona P. Havers, Carrie Reed, Travis Lim, Joel M. Montgomery, John D. Klena, Aron J. Hall, Alicia M. Fry, Deborah Cannon, Cheng‐Feng Chiang, Aridth Gibbons, Inna Krapiunaya, Maria Morales-Betoulle, Katherine Roguski, Mohammad Rasheed, Brandi Freeman, Sandra Lester, Lisa Mills, Darin S. Carroll, S. Michele Owen, Jeffrey A. Johnson, Vera Semenova, State Collaborator Group, Jarad Schiffer, Natalie J. Thornburg, Carina Blackmore, Debra Blog, Angela Dunn, Scott Lindquist, Scott Pritchard, Lynn Sosa, George Turabelidze, John Wiesman, Randall Williams\n      Seroprevalence of Antibodies to SARS-CoV-2 in Six Sites in the United States, March 23-May 3, 2020\n      \n      Fiona P. Havers, Carrie Reed, Travis Lim, Joel M. Montgomery, John D. Klena, Aron J. Hall, Alicia M. Fry, Deborah Cannon, Cheng‐Feng Chiang, Aridth Gibbons, Inna Krapiunaya, Maria Morales-Betoulle, Katherine Roguski, Mohammad Rasheed, Brandi Freeman, Sandra Lester, Lisa Mills, Darin S. Carroll, S. Michele Owen, Jeffrey A. Johnson, Vera Semenova, State Collaborator Group, Jarad Schiffer, Natalie J. Thornburg, Carina Blackmore, Debra Blog, Angela Dunn, Scott Lindquist, Scott Pritchard, Lynn Sosa, George Turabelidze, John Wiesman, Randall Williams\n      10.1101-2020.06.25.20140384 Fiona P. Havers, Carrie Reed, Travis Lim, Joel M. Montgomery, John D. Klena, Aron J. Hall, Alicia M. Fry, Deborah Cannon, Cheng‐Feng Chiang, Aridth Gibbons, Inna Krapiunaya, Maria Morales-Betoulle, Katherine Roguski, Mohammad Rasheed, Brandi Freeman, Sandra Lester, Lisa Mills, Darin S. Carroll, S. Michele Owen, Jeffrey A. Johnson, Vera Semenova, State Collaborator Group, Jarad Schiffer, Natalie J. Thornburg, Carina Blackmore, Debra Blog, Angela Dunn, Scott Lindquist, Scott Pritchard, Lynn Sosa, George Turabelidze, John Wiesman, Randall Williams\n      Seroprevalence of Antibodies to SARS-CoV-2 in Six Sites in the United States, March 23-May 3, 2020\n      \n      Fiona P. Havers, Carrie Reed, Travis Lim, Joel M. Montgomery, John D. Klena, Aron J. Hall, Alicia M. Fry, Deborah Cannon, Cheng‐Feng Chiang, Aridth Gibbons, Inna Krapiunaya, Maria Morales-Betoulle, Katherine Roguski, Mohammad Rasheed, Brandi Freeman, Sandra Lester, Lisa Mills, Darin S. Carroll, S. Michele Owen, Jeffrey A. Johnson, Vera Semenova, State Collaborator Group, Jarad Schiffer, Natalie J. Thornburg, Carina Blackmore, Debra Blog, Angela Dunn, Scott Lindquist, Scott Pritchard, Lynn Sosa, George Turabelidze, John Wiesman, Randall Williams\n      10.1101-2020.06.25.20140384",
       "categories": ["Publications"],
@@ -3042,6 +3161,20 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Political Science Research and Methods"],
       "url": "/publications/10.1017-psrm.2020.25/",
+      "teaser": null
+    },{
+      "title": "Crisis de la representación política en América Latina y los ciclos pendulares de coaliciones electorales oligárquicas y antisistema",
+      "excerpt": "Juan Pablo Luna\n      Crisis de la representación política en América Latina y los ciclos pendulares de coaliciones electorales oligárquicas y antisistema\n      \n      Juan Pablo Luna\n      W3100681221 Juan Pablo Luna\n      Crisis de la representación política en America Latina y los ciclos pendulares de coaliciones electorales oligárquicas y antisistema\n      \n      Juan Pablo Luna\n      W3100681221",
+      "categories": ["Publications"],
+      "tags": ["DIGITAL REPOSITORY Economic Commission for Latin America and the Caribbean (United Nations)"],
+      "url": "/publications/W3100681221/",
+      "teaser": null
+    },{
+      "title": "Framing Risky Choices: Brexit and the Dynamics of High-Stakes Referendums",
+      "excerpt": "Ece Özlem Atikcan, Richard Nadeau, Éric Bélanger\n      Framing Risky Choices: Brexit and the Dynamics of High-Stakes Referendums\n      \n      Ece Özlem Atikcan, Richard Nadeau, Éric Bélanger\n      W3033607718 Ece Ozlem Atikcan, Richard Nadeau, Eric Belanger\n      Framing Risky Choices: Brexit and the Dynamics of High-Stakes Referendums\n      \n      Ece Ozlem Atikcan, Richard Nadeau, Eric Belanger\n      W3033607718",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W3033607718/",
       "teaser": null
     },{
       "title": "Acknowledgments",
@@ -3070,6 +3203,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Party Politics"],
       "url": "/publications/10.1177-1354068820923723/",
+      "teaser": null
+    },{
+      "title": "Target ICCs & social judgment accuracy",
+      "excerpt": "R. Thora Bjornsdottir, Eric Hehman, Lauren J. Human\n      Target ICCs & social judgment accuracy\n      \n      R. Thora Bjornsdottir, Eric Hehman, Lauren J. Human\n      W3207667120 R. Thora Bjornsdottir, Eric Hehman, Lauren J. Human\n      Target ICCs & social judgment accuracy\n      \n      R. Thora Bjornsdottir, Eric Hehman, Lauren J. Human\n      W3207667120",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W3207667120/",
       "teaser": null
     },{
       "title": "How to survey citizens’ compliance with COVID-19 public health measures? Evidence from three survey experiments",
@@ -3182,6 +3322,41 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Journal of the European Economic Association"],
       "url": "/publications/10.1093-jeea-jvz060/",
+      "teaser": null
+    },{
+      "title": "Face-Saving Strategies Increase Self-Reported Non-Compliance with COVID-19 Preventive Measures: Experimental Evidence from 12 Countries",
+      "excerpt": "Jean‐François Daoust, Éric Bélanger, Ruth Dassonneville, Érick Lachapelle, Richard Nadeau, Michael Becher, Sylvain Brouard, Martial Foucault, Christoph Hönnige, Daniel Stegmueller\n      Face-Saving Strategies Increase Self-Reported Non-Compliance with COVID-19 Preventive Measures: Experimental Evidence from 12 Countries\n      \n      Jean‐François Daoust, Éric Bélanger, Ruth Dassonneville, Érick Lachapelle, Richard Nadeau, Michael Becher, Sylvain Brouard, Martial Foucault, Christoph Hönnige, Daniel Stegmueller\n      W3158111383 Jean‐Francois Daoust, Eric Belanger, Ruth Dassonneville, Erick Lachapelle, Richard Nadeau, Michael Becher, Sylvain Brouard, Martial Foucault, Christoph Honnige, Daniel Stegmueller\n      Face-Saving Strategies Increase Self-Reported Non-Compliance with COVID-19 Preventive Measures: Experimental Evidence from 12 Countries\n      \n      Jean‐Francois Daoust, Eric Belanger, Ruth Dassonneville, Erick Lachapelle, Richard Nadeau, Michael Becher, Sylvain Brouard, Martial Foucault, Christoph Honnige, Daniel Stegmueller\n      W3158111383",
+      "categories": ["Publications"],
+      "tags": ["RePEc: Research Papers in Economics"],
+      "url": "/publications/W3158111383/",
+      "teaser": null
+    },{
+      "title": "Agricultural Comparative Advantage andLegislators' Support for Trade Agreements",
+      "excerpt": "Giorgio Chiovelli, Francesco Amodio, Leonardo Baccini, Michele Di Maio\n      Agricultural Comparative Advantage andLegislators' Support for Trade Agreements\n      \n      Giorgio Chiovelli, Francesco Amodio, Leonardo Baccini, Michele Di Maio\n      W3141418831 Giorgio Chiovelli, Francesco Amodio, Leonardo Baccini, Michele Di Maio\n      Agricultural Comparative Advantage andLegislators' Support for Trade Agreements\n      \n      Giorgio Chiovelli, Francesco Amodio, Leonardo Baccini, Michele Di Maio\n      W3141418831",
+      "categories": ["Publications"],
+      "tags": ["RePEc: Research Papers in Economics"],
+      "url": "/publications/W3141418831/",
+      "teaser": null
+    },{
+      "title": "Scriptural legitimation and the mobilisation of support for religious violence: experimental evidence across three religions and seven countries",
+      "excerpt": "Ruud Koopmans, Eylem Kanol, Dietlind Stolle\n      Scriptural legitimation and the mobilisation of support for religious violence: experimental evidence across three religions and seven countries\n      \n      Ruud Koopmans, Eylem Kanol, Dietlind Stolle\n      W3122895639 Ruud Koopmans, Eylem Kanol, Dietlind Stolle\n      Scriptural legitimation and the mobilisation of support for religious violence: experimental evidence across three religions and seven countries\n      \n      Ruud Koopmans, Eylem Kanol, Dietlind Stolle\n      W3122895639",
+      "categories": ["Publications"],
+      "tags": ["EconStor Open Access Articles"],
+      "url": "/publications/W3122895639/",
+      "teaser": null
+    },{
+      "title": "Trade liberalization and political violence : evidence from North-South preferential trade agreements",
+      "excerpt": "Francesco Amodio, Leonardo Baccini, Giorgio Chiovelli, Michele Di Maio\n      Trade liberalization and political violence : evidence from North-South preferential trade agreements\n      \n      Francesco Amodio, Leonardo Baccini, Giorgio Chiovelli, Michele Di Maio\n      W3089571250 Francesco Amodio, Leonardo Baccini, Giorgio Chiovelli, Michele Di Maio\n      Trade liberalization and political violence : evidence from North-South preferential trade agreements\n      \n      Francesco Amodio, Leonardo Baccini, Giorgio Chiovelli, Michele Di Maio\n      W3089571250",
+      "categories": ["Publications"],
+      "tags": ["Cadmus - EUI Research Repository (European University Institute)"],
+      "url": "/publications/W3089571250/",
+      "teaser": null
+    },{
+      "title": "Acoso Visual: Staring Back at the State and Gender Conformity",
+      "excerpt": "Juan Pablo Luna\n      Acoso Visual: Staring Back at the State and Gender Conformity\n      \n      Juan Pablo Luna\n      W3026999422 Juan Pablo Luna\n      Acoso Visual: Staring Back at the State and Gender Conformity\n      \n      Juan Pablo Luna\n      W3026999422",
+      "categories": ["Publications"],
+      "tags": ["Digital Commons - Colby (Colby College)"],
+      "url": "/publications/W3026999422/",
       "teaser": null
     },{
       "title": "Replication Data for: Returning Homestyles to congressional politics",
@@ -3793,6 +3968,13 @@ var store = [{
       "url": "/publications/10.1177-0197918319882628/",
       "teaser": null
     },{
+      "title": "SGP: Spotting Groups Polluting the Online Political Discourse.",
+      "excerpt": "Junhao Wang, Sacha Lévy, Ren Wang, Aayushi Kulshrestha, Reihaneh Rabbany\n      SGP: Spotting Groups Polluting the Online Political Discourse.\n      \n      Junhao Wang, Sacha Lévy, Ren Wang, Aayushi Kulshrestha, Reihaneh Rabbany\n      W2980909738 Junhao Wang, Sacha Levy, Ren Wang, Aayushi Kulshrestha, Reihaneh Rabbany\n      SGP: Spotting Groups Polluting the Online Political Discourse.\n      \n      Junhao Wang, Sacha Levy, Ren Wang, Aayushi Kulshrestha, Reihaneh Rabbany\n      W2980909738",
+      "categories": ["Publications"],
+      "tags": ["arXiv (Cornell University)"],
+      "url": "/publications/W2980909738/",
+      "teaser": null
+    },{
       "title": "SCG: Spotting Coordinated Groups in Social Media",
       "excerpt": "Junhao Wang, Sacha Lévy, Ren Wang, Aayushi Kulshrestha, Reihaneh Rabbany\n      SCG: Spotting Coordinated Groups in Social Media\n      \n      Junhao Wang, Sacha Lévy, Ren Wang, Aayushi Kulshrestha, Reihaneh Rabbany\n      10.48550-arxiv.1910.07130 Junhao Wang, Sacha Levy, Ren Wang, Aayushi Kulshrestha, Reihaneh Rabbany\n      SCG: Spotting Coordinated Groups in Social Media\n      \n      Junhao Wang, Sacha Levy, Ren Wang, Aayushi Kulshrestha, Reihaneh Rabbany\n      10.48550-arxiv.1910.07130",
       "categories": ["Publications"],
@@ -3856,11 +4038,25 @@ var store = [{
       "url": "/publications/10.1037-xge0000623/",
       "teaser": null
     },{
+      "title": "Gender and Candidate Communication: Is there a “Double Bind”?",
+      "excerpt": "Elisabeth Gidengil, Delia Dumitrescu, Dietlind Stolle\n      Gender and Candidate Communication: Is there a “Double Bind”?\n      \n      Elisabeth Gidengil, Delia Dumitrescu, Dietlind Stolle\n      W2999381934 Elisabeth Gidengil, Delia Dumitrescu, Dietlind Stolle\n      Gender and Candidate Communication: Is there a “Double Bind”?\n      \n      Elisabeth Gidengil, Delia Dumitrescu, Dietlind Stolle\n      W2999381934",
+      "categories": ["Publications"],
+      "tags": ["UEA Digital Repository (University of East Anglia)"],
+      "url": "/publications/W2999381934/",
+      "teaser": null
+    },{
       "title": "10 Gender and Candidate Communication",
       "excerpt": "Elisabeth Gidengil, Delia Dumitrescu, Dietlind Stolle\n      10 Gender and Candidate Communication\n      \n      Elisabeth Gidengil, Delia Dumitrescu, Dietlind Stolle\n      10.59962-9780774860574-012 Elisabeth Gidengil, Delia Dumitrescu, Dietlind Stolle\n      10 Gender and Candidate Communication\n      \n      Elisabeth Gidengil, Delia Dumitrescu, Dietlind Stolle\n      10.59962-9780774860574-012",
       "categories": ["Publications"],
       "tags": ["University of British Columbia Press eBooks"],
       "url": "/publications/10.59962-9780774860574-012/",
+      "teaser": null
+    },{
+      "title": "Tools for Plotting Canadian Choropleth Maps and Choropleth Alternatives [R package mapcan version 0.0.1]",
+      "excerpt": "Andrew McCormack, Aaron Erlich\n      Tools for Plotting Canadian Choropleth Maps and Choropleth Alternatives [R package mapcan version 0.0.1]\n      \n      Andrew McCormack, Aaron Erlich\n      W3109412541 Andrew McCormack, Aaron Erlich\n      Tools for Plotting Canadian Choropleth Maps and Choropleth Alternatives [R package mapcan version 0.0.1]\n      \n      Andrew McCormack, Aaron Erlich\n      W3109412541",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W3109412541/",
       "teaser": null
     },{
       "title": "mapcan: Tools for Plotting Canadian Choropleth Maps and Choropleth Alternatives",
@@ -3905,6 +4101,13 @@ var store = [{
       "url": "/publications/10.1080-17457289.2019.1604528/",
       "teaser": null
     },{
+      "title": "Spatial Disorder Analysis",
+      "excerpt": "Eric Hehman, Ryan M. Stolier\n      Spatial Disorder Analysis\n      \n      Eric Hehman, Ryan M. Stolier\n      W2947697284 Eric Hehman, Ryan M. Stolier\n      Spatial Disorder Analysis\n      \n      Eric Hehman, Ryan M. Stolier\n      W2947697284",
+      "categories": ["Publications"],
+      "tags": ["OSF Preprints (OSF Preprints)"],
+      "url": "/publications/W2947697284/",
+      "teaser": null
+    },{
       "title": "Weaponizing Election Petitions",
       "excerpt": "Aaron Erlich, Nicholas Kerr, Saewon Park\n      Weaponizing Election Petitions\n      \n      Aaron Erlich, Nicholas Kerr, Saewon Park\n      10.31219-osf.io-tsmvz Aaron Erlich, Nicholas Kerr, Saewon Park\n      Weaponizing Election Petitions\n      \n      Aaron Erlich, Nicholas Kerr, Saewon Park\n      10.31219-osf.io-tsmvz",
       "categories": ["Publications"],
@@ -3933,6 +4136,13 @@ var store = [{
       "url": "/publications/10.3726-b14874/",
       "teaser": null
     },{
+      "title": "Person Perception Across Group Boundaries: A Shifting Trait Space Across Race and Gender Lines",
+      "excerpt": "Sally Y Xie, Eric Hehman\n      Person Perception Across Group Boundaries: A Shifting Trait Space Across Race and Gender Lines\n      \n      Sally Y Xie, Eric Hehman\n      W2951210062 Sally Y Xie, Eric Hehman\n      Person Perception Across Group Boundaries: A Shifting Trait Space Across Race and Gender Lines\n      \n      Sally Y Xie, Eric Hehman\n      W2951210062",
+      "categories": ["Publications"],
+      "tags": ["OSF Preprints (OSF Preprints)"],
+      "url": "/publications/W2951210062/",
+      "teaser": null
+    },{
       "title": "Replication Data for: Can Information Campaigns Impact Preferences toward Vote Selling? Theory and Evidence from Kenya",
       "excerpt": "Aaron Erlich\n      Replication Data for: Can Information Campaigns Impact Preferences toward Vote Selling? Theory and Evidence from Kenya\n      \n      Aaron Erlich\n      10.7910-dvn-vrqfep Aaron Erlich\n      Replication Data for: Can Information Campaigns Impact Preferences toward Vote Selling? Theory and Evidence from Kenya\n      \n      Aaron Erlich\n      10.7910-dvn-vrqfep",
       "categories": ["Publications"],
@@ -3945,6 +4155,20 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Social and Personality Psychology Compass"],
       "url": "/publications/10.1111-spc3.12431/",
+      "teaser": null
+    },{
+      "title": "Glocalization: A Critical Introduction by Victor Roudometof",
+      "excerpt": "Éric Bélanger\n      Glocalization: A Critical Introduction by Victor Roudometof\n      \n      Éric Bélanger\n      W3103176807 Eric Belanger\n      Glocalization: A Critical Introduction by Victor Roudometof\n      \n      Eric Belanger\n      W3103176807",
+      "categories": ["Publications"],
+      "tags": ["Journal of Political & Military Sociology"],
+      "url": "/publications/W3103176807/",
+      "teaser": null
+    },{
+      "title": "Sub-state nationalism and social solidarity : essays on Spain and the United Kingdom",
+      "excerpt": "Elissa Berwick\n      Sub-state nationalism and social solidarity : essays on Spain and the United Kingdom\n      \n      Elissa Berwick\n      W3016012747 Elissa Berwick\n      Sub-state nationalism and social solidarity : essays on Spain and the United Kingdom\n      \n      Elissa Berwick\n      W3016012747",
+      "categories": ["Publications"],
+      "tags": ["DSpace@MIT (Massachusetts Institute of Technology)"],
+      "url": "/publications/W3016012747/",
       "teaser": null
     },{
       "title": "anchoring_vignettes_calc.Rda",
@@ -4206,6 +4430,13 @@ var store = [{
       "url": "/publications/10.1016-j.electstud.2018.10.006/",
       "teaser": null
     },{
+      "title": "Origins and Destinations: The Making of the Second Generation",
+      "excerpt": "Renee Luthra, Thomas Soehl, Roger Waldinger\n      Origins and Destinations: The Making of the Second Generation\n      \n      Renee Luthra, Thomas Soehl, Roger Waldinger\n      W2898148464 Renee Luthra, Thomas Soehl, Roger Waldinger\n      Origins and Destinations: The Making of the Second Generation\n      \n      Renee Luthra, Thomas Soehl, Roger Waldinger\n      W2898148464",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2898148464/",
+      "teaser": null
+    },{
       "title": "Origins and Destinations",
       "excerpt": "Renee Luthra, Thomas Soehl, Roger Waldinger\n      Origins and Destinations\n      \n      Renee Luthra, Thomas Soehl, Roger Waldinger\n      10.7758-9781610448758 Renee Luthra, Thomas Soehl, Roger Waldinger\n      Origins and Destinations\n      \n      Renee Luthra, Thomas Soehl, Roger Waldinger\n      10.7758-9781610448758",
       "categories": ["Publications"],
@@ -4283,11 +4514,25 @@ var store = [{
       "url": "/publications/10.1145-3219819.3220103/",
       "teaser": null
     },{
+      "title": "Facial appearance distinguishes leaders from followers and is associated with sentencing outcomes among youth criminal group members",
+      "excerpt": "Eric Hehman, Jessica E. Sutherland, Ana M. Cojocariu\n      Facial appearance distinguishes leaders from followers and is associated with sentencing outcomes among youth criminal group members\n      \n      Eric Hehman, Jessica E. Sutherland, Ana M. Cojocariu\n      W3043451525 Eric Hehman, Jessica E. Sutherland, Ana M. Cojocariu\n      Facial appearance distinguishes leaders from followers and is associated with sentencing outcomes among youth criminal group members\n      \n      Eric Hehman, Jessica E. Sutherland, Ana M. Cojocariu\n      W3043451525",
+      "categories": ["Publications"],
+      "tags": ["OSF Preprints (OSF Preprints)"],
+      "url": "/publications/W3043451525/",
+      "teaser": null
+    },{
       "title": "Covering the Campaign: Computational Tools for Measuring Differences in Candidate and Party News Coverage with Application to an Emerging Democracy",
       "excerpt": "Aaron Erlich, Danielle F. Jung, James D. Long\n      Covering the Campaign: Computational Tools for Measuring Differences in Candidate and Party News Coverage with Application to an Emerging Democracy\n      \n      Aaron Erlich, Danielle F. Jung, James D. Long\n      10.31235-osf.io-af9jq Aaron Erlich, Danielle F. Jung, James D. Long\n      Covering the Campaign: Computational Tools for Measuring Differences in Candidate and Party News Coverage with Application to an Emerging Democracy\n      \n      Aaron Erlich, Danielle F. Jung, James D. Long\n      10.31235-osf.io-af9jq",
       "categories": ["Publications"],
       "tags": [],
       "url": "/publications/10.31235-osf.io-af9jq/",
+      "teaser": null
+    },{
+      "title": "Trait knowledge forms a common structure across social cognition (materials, data, analysis)",
+      "excerpt": "Ryan M. Stolier, Eric Hehman, Jonathan B. Freeman\n      Trait knowledge forms a common structure across social cognition (materials, data, analysis)\n      \n      Ryan M. Stolier, Eric Hehman, Jonathan B. Freeman\n      W2983068250 Ryan M. Stolier, Eric Hehman, Jonathan B. Freeman\n      Trait knowledge forms a common structure across social cognition (materials, data, analysis)\n      \n      Ryan M. Stolier, Eric Hehman, Jonathan B. Freeman\n      W2983068250",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2983068250/",
       "teaser": null
     },{
       "title": "Trait knowledge forms a common structure across social cognition",
@@ -4302,6 +4547,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["International Studies Quarterly"],
       "url": "/publications/10.1093-isq-sqy006/",
+      "teaser": null
+    },{
+      "title": "Regional Competition, Business Politicians, and Subnational Fiscal Policy",
+      "excerpt": "Leonardo Baccini, Quan Li, Irina Mirkina, Kristina Johnson\n      Regional Competition, Business Politicians, and Subnational Fiscal Policy\n      \n      Leonardo Baccini, Quan Li, Irina Mirkina, Kristina Johnson\n      W3121779459 Leonardo Baccini, Quan Li, Irina Mirkina, Kristina Johnson\n      Regional Competition, Business Politicians, and Subnational Fiscal Policy\n      \n      Leonardo Baccini, Quan Li, Irina Mirkina, Kristina Johnson\n      W3121779459",
+      "categories": ["Publications"],
+      "tags": ["SSRN Electronic Journal"],
+      "url": "/publications/W3121779459/",
       "teaser": null
     },{
       "title": "Regional competition, business politicians, and subnational fiscal policy",
@@ -4346,11 +4598,25 @@ var store = [{
       "url": "/publications/10.31234-osf.io-d9ha7/",
       "teaser": null
     },{
+      "title": "The conceptual structure of face impressions (materials, data, analysis)",
+      "excerpt": "Ryan M. Stolier, Eric Hehman, Matthias Keller, Mirella Walker, Jonathan B. Freeman\n      The conceptual structure of face impressions (materials, data, analysis)\n      \n      Ryan M. Stolier, Eric Hehman, Matthias Keller, Mirella Walker, Jonathan B. Freeman\n      W2893917766 Ryan M. Stolier, Eric Hehman, Matthias Keller, Mirella Walker, Jonathan B. Freeman\n      The conceptual structure of face impressions (materials, data, analysis)\n      \n      Ryan M. Stolier, Eric Hehman, Matthias Keller, Mirella Walker, Jonathan B. Freeman\n      W2893917766",
+      "categories": ["Publications"],
+      "tags": ["OSF Preprints (OSF Preprints)"],
+      "url": "/publications/W2893917766/",
+      "teaser": null
+    },{
       "title": "Is the Parti Québécois Bound to Disappear? A Study of the Current Generational Dynamics of Electoral Behaviour in Quebec",
       "excerpt": "Valérie-Anne Mahéo, Éric Bélanger\n      Is the Parti Québécois Bound to Disappear? A Study of the Current Generational Dynamics of Electoral Behaviour in Quebec\n      \n      Valérie-Anne Mahéo, Éric Bélanger\n      10.1017-s0008423917001147 Valerie-Anne Maheo, Eric Belanger\n      Is the Parti Quebecois Bound to Disappear? A Study of the Current Generational Dynamics of Electoral Behaviour in Quebec\n      \n      Valerie-Anne Maheo, Eric Belanger\n      10.1017-s0008423917001147",
       "categories": ["Publications"],
       "tags": ["Canadian Journal of Political Science"],
       "url": "/publications/10.1017-s0008423917001147/",
+      "teaser": null
+    },{
+      "title": "Bootstrapping confidence intervals around ICCs & variance components (in a mixed-effects model)",
+      "excerpt": "Eric Hehman, Sally Y Xie\n      Bootstrapping confidence intervals around ICCs & variance components (in a mixed-effects model)\n      \n      Eric Hehman, Sally Y Xie\n      W2947200079 Eric Hehman, Sally Y Xie\n      Bootstrapping confidence intervals around ICCs & variance components (in a mixed-effects model)\n      \n      Eric Hehman, Sally Y Xie\n      W2947200079",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2947200079/",
       "teaser": null
     },{
       "title": "Can you deliver a baby and vote? The effect of the first stages of parenthood on voter turnout",
@@ -4395,6 +4661,20 @@ var store = [{
       "url": "/publications/10.1016-j.tics.2017.12.003/",
       "teaser": null
     },{
+      "title": "How Old Are You? Effects of Differences in Age Between Interviewer and Respondent in Survey Data",
+      "excerpt": "Aaron Erlich, Tsisana Khundadze, Rati Shubladze\n      How Old Are You? Effects of Differences in Age Between Interviewer and Respondent in Survey Data\n      \n      Aaron Erlich, Tsisana Khundadze, Rati Shubladze\n      W2783640559 Aaron Erlich, Tsisana Khundadze, Rati Shubladze\n      How Old Are You? Effects of Differences in Age Between Interviewer and Respondent in Survey Data\n      \n      Aaron Erlich, Tsisana Khundadze, Rati Shubladze\n      W2783640559",
+      "categories": ["Publications"],
+      "tags": ["OSF Preprints (OSF Preprints)"],
+      "url": "/publications/W2783640559/",
+      "teaser": null
+    },{
+      "title": "Group-mean centering tool",
+      "excerpt": "Eric Hehman\n      Group-mean centering tool\n      \n      Eric Hehman\n      W2897160931 Eric Hehman\n      Group-mean centering tool\n      \n      Eric Hehman\n      W2897160931",
+      "categories": ["Publications"],
+      "tags": ["OSF Preprints (OSF Preprints)"],
+      "url": "/publications/W2897160931/",
+      "teaser": null
+    },{
       "title": "Modular Networks for Validating Community Detection Algorithms",
       "excerpt": "Justin Fagnan, Afra Abnar, Reihaneh Rabbany, Osmar R. Zaı̈ane\n      Modular Networks for Validating Community Detection Algorithms\n      \n      Justin Fagnan, Afra Abnar, Reihaneh Rabbany, Osmar R. Zaı̈ane\n      10.48550-arxiv.1801.01229 Justin Fagnan, Afra Abnar, Reihaneh Rabbany, Osmar R. Zaı̈ane\n      Modular Networks for Validating Community Detection Algorithms\n      \n      Justin Fagnan, Afra Abnar, Reihaneh Rabbany, Osmar R. Zaı̈ane\n      10.48550-arxiv.1801.01229",
       "categories": ["Publications"],
@@ -4414,6 +4694,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["The AAG Review of Books"],
       "url": "/publications/10.1080-2325548x.2018.1402286/",
+      "teaser": null
+    },{
+      "title": "Conducting a Large Public Health Data Collection Project in Uganda: Methods, Tools, and Lessons Learned.",
+      "excerpt": "Bert Stover, Flavia Lubega, Aidah Namubiru, Evelyn Bakengesa, Samuel Abimerech Luboga, Frederick Makumbi, Noah Kiwanuka, Assay Ndizihiwe, Eddie Mukooyo, Erin Hurley, Travis Lim, Nagesh N. Borse, James Bernhardt, Angela Wood, Lianne Sheppard, Scott Barnhart, Amy Hagopian\n      Conducting a Large Public Health Data Collection Project in Uganda: Methods, Tools, and Lessons Learned.\n      \n      Bert Stover, Flavia Lubega, Aidah Namubiru, Evelyn Bakengesa, Samuel Abimerech Luboga, Frederick Makumbi, Noah Kiwanuka, Assay Ndizihiwe, Eddie Mukooyo, Erin Hurley, Travis Lim, Nagesh N. Borse, James Bernhardt, Angela Wood, Lianne Sheppard, Scott Barnhart, Amy Hagopian\n      W2809357026 Bert Stover, Flavia Lubega, Aidah Namubiru, Evelyn Bakengesa, Samuel Abimerech Luboga, Frederick Makumbi, Noah Kiwanuka, Assay Ndizihiwe, Eddie Mukooyo, Erin Hurley, Travis Lim, Nagesh N. Borse, James Bernhardt, Angela Wood, Lianne Sheppard, Scott Barnhart, Amy Hagopian\n      Conducting a Large Public Health Data Collection Project in Uganda: Methods, Tools, and Lessons Learned.\n      \n      Bert Stover, Flavia Lubega, Aidah Namubiru, Evelyn Bakengesa, Samuel Abimerech Luboga, Frederick Makumbi, Noah Kiwanuka, Assay Ndizihiwe, Eddie Mukooyo, Erin Hurley, Travis Lim, Nagesh N. Borse, James Bernhardt, Angela Wood, Lianne Sheppard, Scott Barnhart, Amy Hagopian\n      W2809357026",
+      "categories": ["Publications"],
+      "tags": ["PubMed"],
+      "url": "/publications/W2809357026/",
       "teaser": null
     },{
       "title": "all_polls_IEBC2.tab",
@@ -4507,6 +4794,20 @@ var store = [{
       "url": "/publications/10.1111-gec3.12352/",
       "teaser": null
     },{
+      "title": "Ability Dimension in Impression Formation is Context-Dependent, While Other Dimensions are Invariant across Contexts",
+      "excerpt": "Sally Y Xie, Eric Hehman\n      Ability Dimension in Impression Formation is Context-Dependent, While Other Dimensions are Invariant across Contexts\n      \n      Sally Y Xie, Eric Hehman\n      W2787013817 Sally Y Xie, Eric Hehman\n      Ability Dimension in Impression Formation is Context-Dependent, While Other Dimensions are Invariant across Contexts\n      \n      Sally Y Xie, Eric Hehman\n      W2787013817",
+      "categories": ["Publications"],
+      "tags": ["OSF Preprints (OSF Preprints)"],
+      "url": "/publications/W2787013817/",
+      "teaser": null
+    },{
+      "title": "Pre-registration of Data Cleaning Procedure",
+      "excerpt": "Sally Y Xie, Eric Hehman\n      Pre-registration of Data Cleaning Procedure\n      \n      Sally Y Xie, Eric Hehman\n      W2909566927 Sally Y Xie, Eric Hehman\n      Pre-registration of Data Cleaning Procedure\n      \n      Sally Y Xie, Eric Hehman\n      W2909566927",
+      "categories": ["Publications"],
+      "tags": ["OSF Preprints (OSF Preprints)"],
+      "url": "/publications/W2909566927/",
+      "teaser": null
+    },{
       "title": "Kaufen, um die Welt zu retten: Wie Verbraucherinnen und Verbraucher globale Probleme lösen wollen",
       "excerpt": "Dietlind Stolle\n      Kaufen, um die Welt zu retten: Wie Verbraucherinnen und Verbraucher globale Probleme lösen wollen\n      \n      Dietlind Stolle\n      10.1007-978-3-658-19339-3_1 Dietlind Stolle\n      Kaufen, um die Welt zu retten: Wie Verbraucherinnen und Verbraucher globale Probleme losen wollen\n      \n      Dietlind Stolle\n      10.1007-978-3-658-19339-3_1",
       "categories": ["Publications"],
@@ -4533,6 +4834,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Revue Organisations & territoires"],
       "url": "/publications/10.1522-revueot.v26i1-2.210/",
+      "teaser": null
+    },{
+      "title": "Globalization and State Capitalism: Assessing Vietnam's Accession to the WTO",
+      "excerpt": "Leonardo Baccini, Giammario Impullitti, Edmund Malesky\n      Globalization and State Capitalism: Assessing Vietnam's Accession to the WTO\n      \n      Leonardo Baccini, Giammario Impullitti, Edmund Malesky\n      W3131008289 Leonardo Baccini, Giammario Impullitti, Edmund Malesky\n      Globalization and State Capitalism: Assessing Vietnam's Accession to the WTO\n      \n      Leonardo Baccini, Giammario Impullitti, Edmund Malesky\n      W3131008289",
+      "categories": ["Publications"],
+      "tags": ["LSE Research Online"],
+      "url": "/publications/W3131008289/",
       "teaser": null
     },{
       "title": "With an Open Mind: Openness to Experience Moderates the Effect of Interethnic Encounters on Support for Immigration",
@@ -4612,6 +4920,13 @@ var store = [{
       "url": "/publications/10.1080-1057610x.2017.1314653/",
       "teaser": null
     },{
+      "title": "The Future of Additive Manufacturing in Air Force Acquisition",
+      "excerpt": "Benjamin Forest\n      The Future of Additive Manufacturing in Air Force Acquisition\n      \n      Benjamin Forest\n      W2763394808 Benjamin Forest\n      The Future of Additive Manufacturing in Air Force Acquisition\n      \n      Benjamin Forest\n      W2763394808",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2763394808/",
+      "teaser": null
+    },{
       "title": "Legal Geography",
       "excerpt": "Benjamin Forest\n      Legal Geography\n      \n      Benjamin Forest\n      10.1002-9781118786352.wbieg0988 Benjamin Forest\n      Legal Geography\n      \n      Benjamin Forest\n      10.1002-9781118786352.wbieg0988",
       "categories": ["Publications"],
@@ -4661,6 +4976,13 @@ var store = [{
       "url": "/publications/10.1017-cbo9781316665657.005/",
       "teaser": null
     },{
+      "title": "Latin American Elections: Choice and Change",
+      "excerpt": "Richard Nadeau, Michael S. Lewis‐Beck, Éric Bélanger, Mathieu Turgeon, François Gélineau\n      Latin American Elections: Choice and Change\n      \n      Richard Nadeau, Michael S. Lewis‐Beck, Éric Bélanger, Mathieu Turgeon, François Gélineau\n      W2526736967 Richard Nadeau, Michael S. Lewis‐Beck, Eric Belanger, Mathieu Turgeon, Francois Gelineau\n      Latin American Elections: Choice and Change\n      \n      Richard Nadeau, Michael S. Lewis‐Beck, Eric Belanger, Mathieu Turgeon, Francois Gelineau\n      W2526736967",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2526736967/",
+      "teaser": null
+    },{
       "title": "Social capital, civic culture and political trust",
       "excerpt": "Christopher Liu, Dietlind Stolle\n      Social capital, civic culture and political trust\n      \n      Christopher Liu, Dietlind Stolle\n      10.4337-9781782545118.00032 Christopher Liu, Dietlind Stolle\n      Social capital, civic culture and political trust\n      \n      Christopher Liu, Dietlind Stolle\n      10.4337-9781782545118.00032",
       "categories": ["Publications"],
@@ -4673,6 +4995,27 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Edward Elgar Publishing eBooks"],
       "url": "/publications/10.4337-9781782545118.00026/",
+      "teaser": null
+    },{
+      "title": "La vida social del mundo político : investigaciones recientes en sociología política",
+      "excerpt": "Martín Armelino, Jacqueline Behrend, Mariana Gené, Mariana Heredia, Matías Landau, Fernando Leite, Federico Lorenç Valcarce, Juan Pablo Luna, Luisina Perelmiter, Sebastián Pereyra, Germán J. Pérez, Renato Perissinotto, Gabriel Vommaro, Ariel Wilkis\n      La vida social del mundo político : investigaciones recientes en sociología política\n      \n      Martín Armelino, Jacqueline Behrend, Mariana Gené, Mariana Heredia, Matías Landau, Fernando Leite, Federico Lorenç Valcarce, Juan Pablo Luna, Luisina Perelmiter, Sebastián Pereyra, Germán J. Pérez, Renato Perissinotto, Gabriel Vommaro, Ariel Wilkis\n      W3203980634 Martín Armelino, Jacqueline Behrend, Mariana Gene, Mariana Heredia, Matías Landau, Fernando Leite, Federico Lorenc Valcarce, Juan Pablo Luna, Luisina Perelmiter, Sebastián Pereyra, Germán J. Perez, Renato Perissinotto, Gabriel Vommaro, Ariel Wilkis\n      La vida social del mundo político : investigaciones recientes en sociología política\n      \n      Martín Armelino, Jacqueline Behrend, Mariana Gene, Mariana Heredia, Matías Landau, Fernando Leite, Federico Lorenc Valcarce, Juan Pablo Luna, Luisina Perelmiter, Sebastián Pereyra, Germán J. Perez, Renato Perissinotto, Gabriel Vommaro, Ariel Wilkis\n      W3203980634",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W3203980634/",
+      "teaser": null
+    },{
+      "title": "Toying Around with the Future : Sustainability within Families",
+      "excerpt": "Michele Micheletti, Dietlind Stolle\n      Toying Around with the Future : Sustainability within Families\n      \n      Michele Micheletti, Dietlind Stolle\n      W2898597659 Michele Micheletti, Dietlind Stolle\n      Toying Around with the Future : Sustainability within Families\n      \n      Michele Micheletti, Dietlind Stolle\n      W2898597659",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2898597659/",
+      "teaser": null
+    },{
+      "title": "The Consequences of Preferential Trade Agreements: Lessons for U.S.-Latin America Trade Relations",
+      "excerpt": "Pablo M. Pinto, Leonardo Baccini, Stephen Weymouth\n      The Consequences of Preferential Trade Agreements: Lessons for U.S.-Latin America Trade Relations\n      \n      Pablo M. Pinto, Leonardo Baccini, Stephen Weymouth\n      W2787476646 Pablo M. Pinto, Leonardo Baccini, Stephen Weymouth\n      The Consequences of Preferential Trade Agreements: Lessons for U.S.-Latin America Trade Relations\n      \n      Pablo M. Pinto, Leonardo Baccini, Stephen Weymouth\n      W2787476646",
+      "categories": ["Publications"],
+      "tags": ["Issue Brief"],
+      "url": "/publications/W2787476646/",
       "teaser": null
     },{
       "title": "Interpersonal Incomparability in Citizenss Views of Democracy: Survey Evidence from Ukraine",
@@ -4766,6 +5109,13 @@ var store = [{
       "url": "/publications/10.1017-cbo9781316550564.004/",
       "teaser": null
     },{
+      "title": "Acquiring and Exercising Citizenship: The New Second Generation in the United States",
+      "excerpt": "Renee Luthra, Thomas Soehl, Roger Waldinger\n      Acquiring and Exercising Citizenship: The New Second Generation in the United States\n      \n      Renee Luthra, Thomas Soehl, Roger Waldinger\n      W2950252471 Renee Luthra, Thomas Soehl, Roger Waldinger\n      Acquiring and Exercising Citizenship: The New Second Generation in the United States\n      \n      Renee Luthra, Thomas Soehl, Roger Waldinger\n      W2950252471",
+      "categories": ["Publications"],
+      "tags": ["HAL (Le Centre pour la Communication Scientifique Directe)"],
+      "url": "/publications/W2950252471/",
+      "teaser": null
+    },{
       "title": "Acquisition de contrôle : le sens fiscal de la notion de contrôle",
       "excerpt": "Éric Bélanger, Marc Bachand\n      Acquisition de contrôle : le sens fiscal de la notion de contrôle\n      \n      Éric Bélanger, Marc Bachand\n      10.1522-revueot.v25i1.66 Eric Belanger, Marc Bachand\n      Acquisition de controle : le sens fiscal de la notion de controle\n      \n      Eric Belanger, Marc Bachand\n      10.1522-revueot.v25i1.66",
       "categories": ["Publications"],
@@ -4785,6 +5135,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["International Migration Review"],
       "url": "/publications/10.1111-imre.12289/",
+      "teaser": null
+    },{
+      "title": "Is the Parti Québécois Bound to Disappear",
+      "excerpt": "Valérie-Anne Mahéo, Éric Bélanger\n      Is the Parti Québécois Bound to Disappear\n      \n      Valérie-Anne Mahéo, Éric Bélanger\n      W2896473273 Valerie-Anne Maheo, Eric Belanger\n      Is the Parti Quebecois Bound to Disappear\n      \n      Valerie-Anne Maheo, Eric Belanger\n      W2896473273",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2896473273/",
       "teaser": null
     },{
       "title": "Blacks’ Death Rate Due to Circulatory Diseases Is Positively Related to Whites’ Explicit Racial Bias",
@@ -4815,6 +5172,13 @@ var store = [{
       "url": "/publications/10.15171-ijhpm.2016.98/",
       "teaser": null
     },{
+      "title": "The Political Economy of Information Provision in Developing Democracies",
+      "excerpt": "Aaron Erlich\n      The Political Economy of Information Provision in Developing Democracies\n      \n      Aaron Erlich\n      W2568037010 Aaron Erlich\n      The Political Economy of Information Provision in Developing Democracies\n      \n      Aaron Erlich\n      W2568037010",
+      "categories": ["Publications"],
+      "tags": ["ResearchWorks at the University of Washington (University of Washington)"],
+      "url": "/publications/W2568037010/",
+      "teaser": null
+    },{
       "title": "The Promise and Limits of Private Power: Promoting Labor Standards in a Global Economy. By Richard M. Locke. New York: Cambridge University Press, 2013. 228p. $89.99 cloth, $29.99 paper.",
       "excerpt": "Dietlind Stolle\n      The Promise and Limits of Private Power: Promoting Labor Standards in a Global Economy. By Richard M. Locke. New York: Cambridge University Press, 2013. 228p. $89.99 cloth, $29.99 paper.\n      \n      Dietlind Stolle\n      10.1017-s1537592716000426 Dietlind Stolle\n      The Promise and Limits of Private Power: Promoting Labor Standards in a Global Economy. By Richard M. Locke. New York: Cambridge University Press, 2013. 228p. $89.99 cloth, $29.99 paper.\n      \n      Dietlind Stolle\n      10.1017-s1537592716000426",
       "categories": ["Publications"],
@@ -4843,6 +5207,13 @@ var store = [{
       "url": "/publications/10.1017-s0008423916000561/",
       "teaser": null
     },{
+      "title": "Principled Agents: Building Governance Capacity Among Bureaucrats and Civil Servants",
+      "excerpt": "Elissa Berwick, Fotini Christia\n      Principled Agents: Building Governance Capacity Among Bureaucrats and Civil Servants\n      \n      Elissa Berwick, Fotini Christia\n      W2482748351 Elissa Berwick, Fotini Christia\n      Principled Agents: Building Governance Capacity Among Bureaucrats and Civil Servants\n      \n      Elissa Berwick, Fotini Christia\n      W2482748351",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2482748351/",
+      "teaser": null
+    },{
       "title": "Experiencing political diversity: The mobilizing effect among youth",
       "excerpt": "Allison Harell, Dietlind Stolle, Ellen Quintelier\n      Experiencing political diversity: The mobilizing effect among youth\n      \n      Allison Harell, Dietlind Stolle, Ellen Quintelier\n      10.1057-ap.2016.2 Allison Harell, Dietlind Stolle, Ellen Quintelier\n      Experiencing political diversity: The mobilizing effect among youth\n      \n      Allison Harell, Dietlind Stolle, Ellen Quintelier\n      10.1057-ap.2016.2",
       "categories": ["Publications"],
@@ -4862,6 +5233,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Health Policy and Planning"],
       "url": "/publications/10.1093-heapol-czw009/",
+      "teaser": null
+    },{
+      "title": "Do Political and Economic Choices Rely on Common Neural Substrates? A Systematic Review of the Emerging Neuropolitics Literature",
+      "excerpt": "Joseph T McGuire, Sekoul Krastev, Joseph W. Kable, Denver McNeney, Dietlind Stolle, Elisabeth Gidengil, Lesley K. Fellows\n      Do Political and Economic Choices Rely on Common Neural Substrates? A Systematic Review of the Emerging Neuropolitics Literature\n      \n      Joseph T McGuire, Sekoul Krastev, Joseph W. Kable, Denver McNeney, Dietlind Stolle, Elisabeth Gidengil, Lesley K. Fellows\n      W7135295907 Joseph T McGuire, Sekoul Krastev, Joseph W. Kable, Denver McNeney, Dietlind Stolle, Elisabeth Gidengil, Lesley K. Fellows\n      Do Political and Economic Choices Rely on Common Neural Substrates? A Systematic Review of the Emerging Neuropolitics Literature\n      \n      Joseph T McGuire, Sekoul Krastev, Joseph W. Kable, Denver McNeney, Dietlind Stolle, Elisabeth Gidengil, Lesley K. Fellows\n      W7135295907",
+      "categories": ["Publications"],
+      "tags": ["ScholarlyCommons (University of Pennsylvania)"],
+      "url": "/publications/W7135295907/",
       "teaser": null
     },{
       "title": "Do Political and Economic Choices Rely on Common Neural Substrates? A Systematic Review of the Emerging Neuropolitics Literature",
@@ -4890,6 +5268,27 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Journal of Ethnic and Migration Studies"],
       "url": "/publications/10.1080-1369183x.2015.1126171/",
+      "teaser": null
+    },{
+      "title": "A common ingroup identity: Categorization, identity, and intergroup relations.",
+      "excerpt": "Samuel L. Gaertner, John F. Dovidio, Rita Guerra, Eric Hehman, Tamar Saguy\n      A common ingroup identity: Categorization, identity, and intergroup relations.\n      \n      Samuel L. Gaertner, John F. Dovidio, Rita Guerra, Eric Hehman, Tamar Saguy\n      W3009492134 Samuel L. Gaertner, John F. Dovidio, Rita Guerra, Eric Hehman, Tamar Saguy\n      A common ingroup identity: Categorization, identity, and intergroup relations.\n      \n      Samuel L. Gaertner, John F. Dovidio, Rita Guerra, Eric Hehman, Tamar Saguy\n      W3009492134",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W3009492134/",
+      "teaser": null
+    },{
+      "title": "Internet effects in times of political crisis: online newsgathering and attitudes towards the European Union",
+      "excerpt": "Leonardo Baccini, Maria Laura Sudulich, Matthew Wall\n      Internet effects in times of political crisis: online newsgathering and attitudes towards the European Union\n      \n      Leonardo Baccini, Maria Laura Sudulich, Matthew Wall\n      W2973742635 Leonardo Baccini, Maria Laura Sudulich, Matthew Wall\n      Internet effects in times of political crisis: online newsgathering and attitudes towards the European Union\n      \n      Leonardo Baccini, Maria Laura Sudulich, Matthew Wall\n      W2973742635",
+      "categories": ["Publications"],
+      "tags": ["London School of Economics and Political Science Research Online (London School of Economics and Political Science)"],
+      "url": "/publications/W2973742635/",
+      "teaser": null
+    },{
+      "title": "Review Article: Inaccurate, Exceptional, One-Sided or Irrelevant? The Debate about the Alleged Decline of Social Capital and Civic Engagement in Western",
+      "excerpt": "Dietlind Stolle, Marc Hooghe\n      Review Article: Inaccurate, Exceptional, One-Sided or Irrelevant? The Debate about the Alleged Decline of Social Capital and Civic Engagement in Western\n      \n      Dietlind Stolle, Marc Hooghe\n      W2423458344 Dietlind Stolle, Marc Hooghe\n      Review Article: Inaccurate, Exceptional, One-Sided or Irrelevant? The Debate about the Alleged Decline of Social Capital and Civic Engagement in Western\n      \n      Dietlind Stolle, Marc Hooghe\n      W2423458344",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2423458344/",
       "teaser": null
     },{
       "title": "Deflecting my burden, hindering redistribution: How elites influence tax legislation in Latin America",
@@ -5039,11 +5438,25 @@ var store = [{
       "url": "/publications/10.1017-s1755773915000351/",
       "teaser": null
     },{
+      "title": "Economía y elecciones en Argentina: las dimensiones clásica, posicional y patrimonial de la teoría del voto económico",
+      "excerpt": "Richard Nadeau, María Celeste Ratto, Michael S. Lewis‐Beck, Éric Bélanger, François Gélineau, Mathieu Turgeon\n      Economía y elecciones en Argentina: las dimensiones clásica, posicional y patrimonial de la teoría del voto económico\n      \n      Richard Nadeau, María Celeste Ratto, Michael S. Lewis‐Beck, Éric Bélanger, François Gélineau, Mathieu Turgeon\n      W2504084029 Richard Nadeau, María Celeste Ratto, Michael S. Lewis‐Beck, Eric Belanger, Francois Gelineau, Mathieu Turgeon\n      Economía y elecciones en Argentina: las dimensiones clásica, posicional y patrimonial de la teoría del voto económico\n      \n      Richard Nadeau, María Celeste Ratto, Michael S. Lewis‐Beck, Eric Belanger, Francois Gelineau, Mathieu Turgeon\n      W2504084029",
+      "categories": ["Publications"],
+      "tags": ["Americanae (AECID Library)"],
+      "url": "/publications/W2504084029/",
+      "teaser": null
+    },{
       "title": "Contact Tracing Activities during the Ebola Virus Disease Epidemic in Kindia and Faranah, Guinea, 2014",
       "excerpt": "Meredith G. Dixon, Melanie Taylor, Jacob Dee, Avi J. Hakim, Paul T. Cantey, Travis Lim, Hawa Bah, Sékou Mohamed Camara, Clement B. Ndongmo, Mory Togba, Leonie Yvonne Touré, Pépé Bilivogui, Mohammed Sylla, Michael H. Kinzer, Fátima Coronado, Jon Eric Tongren, Mahesh Swaminathan, Lise Mandigny, Boubacar Alpha Diallo, Thomas Seyler, Marc Rondy, G Rodier, William Perea, Benjamin A. Dahl\n      Contact Tracing Activities during the Ebola Virus Disease Epidemic in Kindia and Faranah, Guinea, 2014\n      \n      Meredith G. Dixon, Melanie Taylor, Jacob Dee, Avi J. Hakim, Paul T. Cantey, Travis Lim, Hawa Bah, Sékou Mohamed Camara, Clement B. Ndongmo, Mory Togba, Leonie Yvonne Touré, Pépé Bilivogui, Mohammed Sylla, Michael H. Kinzer, Fátima Coronado, Jon Eric Tongren, Mahesh Swaminathan, Lise Mandigny, Boubacar Alpha Diallo, Thomas Seyler, Marc Rondy, G Rodier, William Perea, Benjamin A. Dahl\n      10.3201-eid2111.150684 Meredith G. Dixon, Melanie Taylor, Jacob Dee, Avi J. Hakim, Paul T. Cantey, Travis Lim, Hawa Bah, Sekou Mohamed Camara, Clement B. Ndongmo, Mory Togba, Leonie Yvonne Toure, Pepe Bilivogui, Mohammed Sylla, Michael H. Kinzer, Fátima Coronado, Jon Eric Tongren, Mahesh Swaminathan, Lise Mandigny, Boubacar Alpha Diallo, Thomas Seyler, Marc Rondy, G Rodier, William Perea, Benjamin A. Dahl\n      Contact Tracing Activities during the Ebola Virus Disease Epidemic in Kindia and Faranah, Guinea, 2014\n      \n      Meredith G. Dixon, Melanie Taylor, Jacob Dee, Avi J. Hakim, Paul T. Cantey, Travis Lim, Hawa Bah, Sekou Mohamed Camara, Clement B. Ndongmo, Mory Togba, Leonie Yvonne Toure, Pepe Bilivogui, Mohammed Sylla, Michael H. Kinzer, Fátima Coronado, Jon Eric Tongren, Mahesh Swaminathan, Lise Mandigny, Boubacar Alpha Diallo, Thomas Seyler, Marc Rondy, G Rodier, William Perea, Benjamin A. Dahl\n      10.3201-eid2111.150684",
       "categories": ["Publications"],
       "tags": ["DOAJ (DOAJ: Directory of Open Access Journals)"],
       "url": "/publications/10.3201-eid2111.150684/",
+      "teaser": null
+    },{
+      "title": "TPP may benefit both global businesses and the developing countries where they operate",
+      "excerpt": "Leonardo Baccini\n      TPP may benefit both global businesses and the developing countries where they operate\n      \n      Leonardo Baccini\n      W1898720247 Leonardo Baccini\n      TPP may benefit both global businesses and the developing countries where they operate\n      \n      Leonardo Baccini\n      W1898720247",
+      "categories": ["Publications"],
+      "tags": ["London School of Economics and Political Science Research Online (London School of Economics and Political Science)"],
+      "url": "/publications/W1898720247/",
       "teaser": null
     },{
       "title": "SSRM: structural social role mining for dynamic social networks",
@@ -5151,6 +5564,13 @@ var store = [{
       "url": "/publications/10.1002-9781119071570.about/",
       "teaser": null
     },{
+      "title": "Success and Succession: Unlocking Value, Power, and Potential in the Professional Services and Advisory Space",
+      "excerpt": "Eric Hehman, Jay Hummel, Tim Kochis\n      Success and Succession: Unlocking Value, Power, and Potential in the Professional Services and Advisory Space\n      \n      Eric Hehman, Jay Hummel, Tim Kochis\n      W2481922947 Eric Hehman, Jay Hummel, Tim Kochis\n      Success and Succession: Unlocking Value, Power, and Potential in the Professional Services and Advisory Space\n      \n      Eric Hehman, Jay Hummel, Tim Kochis\n      W2481922947",
+      "categories": ["Publications"],
+      "tags": ["CERN Document Server (European Organization for Nuclear Research)"],
+      "url": "/publications/W2481922947/",
+      "teaser": null
+    },{
       "title": "PUBLIC OPINION ON INCOME INEQUALITIES IN LATIN AMERICA",
       "excerpt": "Merike Blofield, Juan Pablo Luna\n      PUBLIC OPINION ON INCOME INEQUALITIES IN LATIN AMERICA\n      \n      Merike Blofield, Juan Pablo Luna\n      10.5325-j.ctv14gp9cw.9 Merike Blofield, Juan Pablo Luna\n      PUBLIC OPINION ON INCOME INEQUALITIES IN LATIN AMERICA\n      \n      Merike Blofield, Juan Pablo Luna\n      10.5325-j.ctv14gp9cw.9",
       "categories": ["Publications"],
@@ -5193,6 +5613,13 @@ var store = [{
       "url": "/publications/10.1523-jneurosci.0526-15.2015/",
       "teaser": null
     },{
+      "title": "Investment discrimination and the proliferation of preferential trade agreements",
+      "excerpt": "Leonardo Baccini, Andreas Dür\n      Investment discrimination and the proliferation of preferential trade agreements\n      \n      Leonardo Baccini, Andreas Dür\n      W2604945764 Leonardo Baccini, Andreas Dur\n      Investment discrimination and the proliferation of preferential trade agreements\n      \n      Leonardo Baccini, Andreas Dur\n      W2604945764",
+      "categories": ["Publications"],
+      "tags": ["London School of Economics and Political Science Research Online (London School of Economics and Political Science)"],
+      "url": "/publications/W2604945764/",
+      "teaser": null
+    },{
       "title": "Quantitative methods in political science: Research in France and the United States",
       "excerpt": "Michael S. Lewis‐Beck, Éric Bélanger\n      Quantitative methods in political science: Research in France and the United States\n      \n      Michael S. Lewis‐Beck, Éric Bélanger\n      10.1057-fp.2015.7 Michael S. Lewis‐Beck, Eric Belanger\n      Quantitative methods in political science: Research in France and the United States\n      \n      Michael S. Lewis‐Beck, Eric Belanger\n      10.1057-fp.2015.7",
       "categories": ["Publications"],
@@ -5226,6 +5653,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Demography"],
       "url": "/publications/10.1007-s13524-015-0376-3/",
+      "teaser": null
+    },{
+      "title": "Merger as a Means to (Re-)Gain Office for Right-Wing Federal Parties in Canada",
+      "excerpt": "Jean-françois Godbout, Éric Bélanger, Université De Montréal\n      Merger as a Means to (Re-)Gain Office for Right-Wing Federal Parties in Canada\n      \n      Jean-françois Godbout, Éric Bélanger, Université De Montréal\n      W2125715650 Jean-francois Godbout, Eric Belanger, Universite De Montreal\n      Merger as a Means to (Re-)Gain Office for Right-Wing Federal Parties in Canada\n      \n      Jean-francois Godbout, Eric Belanger, Universite De Montreal\n      W2125715650",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2125715650/",
       "teaser": null
     },{
       "title": "La position de l’Agence du revenu du Canada dans la technique du pipeline en planification post mortem",
@@ -5263,6 +5697,13 @@ var store = [{
       "url": "/publications/10.1016-j.ssresearch.2015.01.013/",
       "teaser": null
     },{
+      "title": "Imitation and Innovation in International Governance: The Diffusion of Trade Agreement Design",
+      "excerpt": "Leonardo Baccini, Andreas Dür, Yoram Z. Haftel\n      Imitation and Innovation in International Governance: The Diffusion of Trade Agreement Design\n      \n      Leonardo Baccini, Andreas Dür, Yoram Z. Haftel\n      W2346739118 Leonardo Baccini, Andreas Dur, Yoram Z. Haftel\n      Imitation and Innovation in International Governance: The Diffusion of Trade Agreement Design\n      \n      Leonardo Baccini, Andreas Dur, Yoram Z. Haftel\n      W2346739118",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2346739118/",
+      "teaser": null
+    },{
       "title": "The Politics of Trade Agreement Design: Revisiting the Depth-Flexibility Nexus",
       "excerpt": "Leonardo Baccini, Andreas Dür, Manfred Elsig\n      The Politics of Trade Agreement Design: Revisiting the Depth-Flexibility Nexus\n      \n      Leonardo Baccini, Andreas Dür, Manfred Elsig\n      10.1111-isqu.12188 Leonardo Baccini, Andreas Dur, Manfred Elsig\n      The Politics of Trade Agreement Design: Revisiting the Depth-Flexibility Nexus\n      \n      Leonardo Baccini, Andreas Dur, Manfred Elsig\n      10.1111-isqu.12188",
       "categories": ["Publications"],
@@ -5289,6 +5730,20 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Cambridge University Press eBooks"],
       "url": "/publications/10.1017-cbo9781316018453/",
+      "teaser": null
+    },{
+      "title": "Rendición de cuentas en las democRacias en desaRRollo: el votante latinoameRicano* 1 Economic Accountability in Low-Income Democracies: The Latin American Voter",
+      "excerpt": "Richard Nadeau, María Celeste Ratto, Michael S. Lewis‐Beck, Éric Bélanger, François Gélineau\n      Rendición de cuentas en las democRacias en desaRRollo: el votante latinoameRicano* 1 Economic Accountability in Low-Income Democracies: The Latin American Voter\n      \n      Richard Nadeau, María Celeste Ratto, Michael S. Lewis‐Beck, Éric Bélanger, François Gélineau\n      W2564494887 Richard Nadeau, María Celeste Ratto, Michael S. Lewis‐Beck, Eric Belanger, Francois Gelineau\n      Rendición de cuentas en las democRacias en desaRRollo: el votante latinoameRicano* 1 Economic Accountability in Low-Income Democracies: The Latin American Voter\n      \n      Richard Nadeau, María Celeste Ratto, Michael S. Lewis‐Beck, Eric Belanger, Francois Gelineau\n      W2564494887",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2564494887/",
+      "teaser": null
+    },{
+      "title": "AssociationBetweenHIV ProgramsandQualityof MaternalHealthInputs andProcessesinKenya",
+      "excerpt": "Margaret E. Kruk, Miriam Rabkin, Davies Kimanga, Francis Kundu, Travis Lim, Vane Lumumba, Tom Oluoch, Katherine A. Robinson, Wafaa El‐Sadr\n      AssociationBetweenHIV ProgramsandQualityof MaternalHealthInputs andProcessesinKenya\n      \n      Margaret E. Kruk, Miriam Rabkin, Davies Kimanga, Francis Kundu, Travis Lim, Vane Lumumba, Tom Oluoch, Katherine A. Robinson, Wafaa El‐Sadr\n      W2551576227 Margaret E. Kruk, Miriam Rabkin, Davies Kimanga, Francis Kundu, Travis Lim, Vane Lumumba, Tom Oluoch, Katherine A. Robinson, Wafaa El‐Sadr\n      AssociationBetweenHIV ProgramsandQualityof MaternalHealthInputs andProcessesinKenya\n      \n      Margaret E. Kruk, Miriam Rabkin, Davies Kimanga, Francis Kundu, Travis Lim, Vane Lumumba, Tom Oluoch, Katherine A. Robinson, Wafaa El‐Sadr\n      W2551576227",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2551576227/",
       "teaser": null
     },{
       "title": "Interviews Chapter 5 for Appendix.docx",
@@ -5424,6 +5879,20 @@ var store = [{
       "url": "/publications/10.1093-oxfordhb-9780199678402.013.45/",
       "teaser": null
     },{
+      "title": "ASSOCIATION BETWEEN HIV KNOWLEDGE AND RISK BEHAVIOR IN PERSONS WHO INJECT DRUGS IN THAI NGUYEN, VIETNAM.",
+      "excerpt": "Travis Lim, Wendy Davis, Vu Minh Quan, Constantine Frangakis, Trần Việt Hà, Nguyen Le Minh, Carl A. Latkin, Carla E. Zelaya, Tran Thi Mo, Vivian F. Go\n      ASSOCIATION BETWEEN HIV KNOWLEDGE AND RISK BEHAVIOR IN PERSONS WHO INJECT DRUGS IN THAI NGUYEN, VIETNAM.\n      \n      Travis Lim, Wendy Davis, Vu Minh Quan, Constantine Frangakis, Trần Việt Hà, Nguyen Le Minh, Carl A. Latkin, Carla E. Zelaya, Tran Thi Mo, Vivian F. Go\n      W2187282968 Travis Lim, Wendy Davis, Vu Minh Quan, Constantine Frangakis, Trần Việt Ha, Nguyen Le Minh, Carl A. Latkin, Carla E. Zelaya, Tran Thi Mo, Vivian F. Go\n      ASSOCIATION BETWEEN HIV KNOWLEDGE AND RISK BEHAVIOR IN PERSONS WHO INJECT DRUGS IN THAI NGUYEN, VIETNAM.\n      \n      Travis Lim, Wendy Davis, Vu Minh Quan, Constantine Frangakis, Trần Việt Ha, Nguyen Le Minh, Carl A. Latkin, Carla E. Zelaya, Tran Thi Mo, Vivian F. Go\n      W2187282968",
+      "categories": ["Publications"],
+      "tags": ["PubMed"],
+      "url": "/publications/W2187282968/",
+      "teaser": null
+    },{
+      "title": "Cutting the Gordian Knot of Economic Reform: When and How International Institutions Help",
+      "excerpt": "Leonardo Baccini, Johannes Urpelainen\n      Cutting the Gordian Knot of Economic Reform: When and How International Institutions Help\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W1535797045 Leonardo Baccini, Johannes Urpelainen\n      Cutting the Gordian Knot of Economic Reform: When and How International Institutions Help\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W1535797045",
+      "categories": ["Publications"],
+      "tags": ["RePEc: Research Papers in Economics"],
+      "url": "/publications/W1535797045/",
+      "teaser": null
+    },{
       "title": "Positive Expectations Encourage Generalization From a Positive Intergroup Interaction to Outgroup Attitudes",
       "excerpt": "Matthew P. Deegan, Eric Hehman, Samuel L. Gaertner, John F. Dovidio\n      Positive Expectations Encourage Generalization From a Positive Intergroup Interaction to Outgroup Attitudes\n      \n      Matthew P. Deegan, Eric Hehman, Samuel L. Gaertner, John F. Dovidio\n      10.1177-0146167214556240 Matthew P. Deegan, Eric Hehman, Samuel L. Gaertner, John F. Dovidio\n      Positive Expectations Encourage Generalization From a Positive Intergroup Interaction to Outgroup Attitudes\n      \n      Matthew P. Deegan, Eric Hehman, Samuel L. Gaertner, John F. Dovidio\n      10.1177-0146167214556240",
       "categories": ["Publications"],
@@ -5464,6 +5933,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Journal of Policy Analysis and Management"],
       "url": "/publications/10.1002-pam.21786/",
+      "teaser": null
+    },{
+      "title": "Who assimilates? Statistical artefacts and intergenerational mobility in immigrant families",
+      "excerpt": "Renee Luthra, Thomas Soehl\n      Who assimilates? Statistical artefacts and intergenerational mobility in immigrant families\n      \n      Renee Luthra, Thomas Soehl\n      W133009617 Renee Luthra, Thomas Soehl\n      Who assimilates? Statistical artefacts and intergenerational mobility in immigrant families\n      \n      Renee Luthra, Thomas Soehl\n      W133009617",
+      "categories": ["Publications"],
+      "tags": ["Econstor (Econstor)"],
+      "url": "/publications/W133009617/",
       "teaser": null
     },{
       "title": "SSRM: structural social role mining for dynamic social networks",
@@ -5550,6 +6026,13 @@ var store = [{
       "url": "/publications/10.48550-arxiv.1406.0941/",
       "teaser": null
     },{
+      "title": "Cameron, Maxwell A.. 2013. Strong Constitutions. Social-Cognitive Origins of the Separation of Powers",
+      "excerpt": "Juan Pablo Luna\n      Cameron, Maxwell A.. 2013. Strong Constitutions. Social-Cognitive Origins of the Separation of Powers\n      \n      Juan Pablo Luna\n      W2409803927 Juan Pablo Luna\n      Cameron, Maxwell A.. 2013. Strong Constitutions. Social-Cognitive Origins of the Separation of Powers\n      \n      Juan Pablo Luna\n      W2409803927",
+      "categories": ["Publications"],
+      "tags": ["Americanae (AECID Library)"],
+      "url": "/publications/W2409803927/",
+      "teaser": null
+    },{
       "title": "Sustainable Citizenship: The Role of Citizens and Consumers as Agents of the Environmental State",
       "excerpt": "Michele Micheletti, Dietlind Stolle, Daniel Berlin\n      Sustainable Citizenship: The Role of Citizens and Consumers as Agents of the Environmental State\n      \n      Michele Micheletti, Dietlind Stolle, Daniel Berlin\n      10.7551-mitpress-9094.003.0013 Michele Micheletti, Dietlind Stolle, Daniel Berlin\n      Sustainable Citizenship: The Role of Citizens and Consumers as Agents of the Environmental State\n      \n      Michele Micheletti, Dietlind Stolle, Daniel Berlin\n      10.7551-mitpress-9094.003.0013",
       "categories": ["Publications"],
@@ -5562,6 +6045,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Social Psychological and Personality Science"],
       "url": "/publications/10.1177-1948550614534701/",
+      "teaser": null
+    },{
+      "title": "Segmented Representation: Political Party Strategies in Unequal Democracies",
+      "excerpt": "Juan Pablo Luna\n      Segmented Representation: Political Party Strategies in Unequal Democracies\n      \n      Juan Pablo Luna\n      W607058606 Juan Pablo Luna\n      Segmented Representation: Political Party Strategies in Unequal Democracies\n      \n      Juan Pablo Luna\n      W607058606",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W607058606/",
       "teaser": null
     },{
       "title": "Plausibility and Scope",
@@ -5627,6 +6117,13 @@ var store = [{
       "url": "/publications/10.1057-fp.2014.3/",
       "teaser": null
     },{
+      "title": "Cheap talk: transaction costs, quality of institutions, and trade agreements",
+      "excerpt": "Leonardo Baccini\n      Cheap talk: transaction costs, quality of institutions, and trade agreements\n      \n      Leonardo Baccini\n      W3125553492 Leonardo Baccini\n      Cheap talk: transaction costs, quality of institutions, and trade agreements\n      \n      Leonardo Baccini\n      W3125553492",
+      "categories": ["Publications"],
+      "tags": ["London School of Economics and Political Science Research Online (London School of Economics and Political Science)"],
+      "url": "/publications/W3125553492/",
+      "teaser": null
+    },{
       "title": "Before Ratification: Understanding the Timing of International Treaty Effects on Domestic Policies",
       "excerpt": "Leonardo Baccini, Urpelainen, Johannes\n      Before Ratification: Understanding the Timing of International Treaty Effects on Domestic Policies\n      \n      Leonardo Baccini, Urpelainen, Johannes\n      10.7910-dvn-bohz2r Leonardo Baccini, Urpelainen, Johannes\n      Before Ratification: Understanding the Timing of International Treaty Effects on Domestic Policies\n      \n      Leonardo Baccini, Urpelainen, Johannes\n      10.7910-dvn-bohz2r",
       "categories": ["Publications"],
@@ -5648,6 +6145,13 @@ var store = [{
       "url": "/publications/10.1073-pnas.1320901111/",
       "teaser": null
     },{
+      "title": "Before ratification: understanding the timing of international treaty effects on domestic policies",
+      "excerpt": "Leonardo Baccini, Johannes Urpelainen\n      Before ratification: understanding the timing of international treaty effects on domestic policies\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W3144752829 Leonardo Baccini, Johannes Urpelainen\n      Before ratification: understanding the timing of international treaty effects on domestic policies\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W3144752829",
+      "categories": ["Publications"],
+      "tags": ["London School of Economics and Political Science Research Online (London School of Economics and Political Science)"],
+      "url": "/publications/W3144752829/",
+      "teaser": null
+    },{
       "title": "Wired Voters: The Effects of Internet Use on Voters’ Electoral Uncertainty",
       "excerpt": "Laura Sudulich, Matthew Wall, Leonardo Baccini\n      Wired Voters: The Effects of Internet Use on Voters’ Electoral Uncertainty\n      \n      Laura Sudulich, Matthew Wall, Leonardo Baccini\n      10.1017-s0007123413000513 Laura Sudulich, Matthew Wall, Leonardo Baccini\n      Wired Voters: The Effects of Internet Use on Voters' Electoral Uncertainty\n      \n      Laura Sudulich, Matthew Wall, Leonardo Baccini\n      10.1017-s0007123413000513",
       "categories": ["Publications"],
@@ -5660,6 +6164,48 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Journal of Information Technology & Politics"],
       "url": "/publications/10.1080-19331681.2014.888383/",
+      "teaser": null
+    },{
+      "title": "State Capacity and Democratic Governance in Latin America: A Survey Data-Based Approach to Measurement and Assessment",
+      "excerpt": "Juan Pablo Luna\n      State Capacity and Democratic Governance in Latin America: A Survey Data-Based Approach to Measurement and Assessment\n      \n      Juan Pablo Luna\n      W2560283421 Juan Pablo Luna\n      State Capacity and Democratic Governance in Latin America: A Survey Data-Based Approach to Measurement and Assessment\n      \n      Juan Pablo Luna\n      W2560283421",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2560283421/",
+      "teaser": null
+    },{
+      "title": "Siyasi partiler içindeki gençlik örgütleri: Siyasi destegin ve parti sistemlerinin dönüşümü",
+      "excerpt": "Marc Hooghe, Dietlind Stolle\n      Siyasi partiler içindeki gençlik örgütleri: Siyasi destegin ve parti sistemlerinin dönüşümü\n      \n      Marc Hooghe, Dietlind Stolle\n      W2522069534 Marc Hooghe, Dietlind Stolle\n      Siyasi partiler icindeki genclik orgutleri: Siyasi destegin ve parti sistemlerinin donuşumu\n      \n      Marc Hooghe, Dietlind Stolle\n      W2522069534",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2522069534/",
+      "teaser": null
+    },{
+      "title": "Modes of Difference and Connection: Language, Education and Religion in Migrant Families",
+      "excerpt": "Thomas Soehl\n      Modes of Difference and Connection: Language, Education and Religion in Migrant Families\n      \n      Thomas Soehl\n      W2511424450 Thomas Soehl\n      Modes of Difference and Connection: Language, Education and Religion in Migrant Families\n      \n      Thomas Soehl\n      W2511424450",
+      "categories": ["Publications"],
+      "tags": ["eScholarship (California Digital Library)"],
+      "url": "/publications/W2511424450/",
+      "teaser": null
+    },{
+      "title": "Why do states commit to international labor standards?: interdependent ratification of core ILO conventions, 1948-2009",
+      "excerpt": "Leonardo Baccini, Mathias Koenig‐Archibugi\n      Why do states commit to international labor standards?: interdependent ratification of core ILO conventions, 1948-2009\n      \n      Leonardo Baccini, Mathias Koenig‐Archibugi\n      W2300887260 Leonardo Baccini, Mathias Koenig‐Archibugi\n      Why do states commit to international labor standards?: interdependent ratification of core ILO conventions, 1948-2009\n      \n      Leonardo Baccini, Mathias Koenig‐Archibugi\n      W2300887260",
+      "categories": ["Publications"],
+      "tags": ["London School of Economics and Political Science Research Online (London School of Economics and Political Science)"],
+      "url": "/publications/W2300887260/",
+      "teaser": null
+    },{
+      "title": "Global Supply Chains and the Political Economy of Preferential Tariff Liberalization 1",
+      "excerpt": "Leonardo Baccini, Andreas Dür, Manfred Elsig\n      Global Supply Chains and the Political Economy of Preferential Tariff Liberalization 1\n      \n      Leonardo Baccini, Andreas Dür, Manfred Elsig\n      W2186109126 Leonardo Baccini, Andreas Dur, Manfred Elsig\n      Global Supply Chains and the Political Economy of Preferential Tariff Liberalization 1\n      \n      Leonardo Baccini, Andreas Dur, Manfred Elsig\n      W2186109126",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2186109126/",
+      "teaser": null
+    },{
+      "title": "Mining Large Scale Data from National Educational Achievement Tests A Case Study",
+      "excerpt": "Reihaneh Rabbany, Osmar R. Zaı̈ane, Samira ElAtia\n      Mining Large Scale Data from National Educational Achievement Tests A Case Study\n      \n      Reihaneh Rabbany, Osmar R. Zaı̈ane, Samira ElAtia\n      W2185566375 Reihaneh Rabbany, Osmar R. Zaı̈ane, Samira ElAtia\n      Mining Large Scale Data from National Educational Achievement Tests A Case Study\n      \n      Reihaneh Rabbany, Osmar R. Zaı̈ane, Samira ElAtia\n      W2185566375",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2185566375/",
       "teaser": null
     },{
       "title": "Adaptive Disengagement Scale",
@@ -5977,6 +6523,41 @@ var store = [{
       "url": "/publications/10.1093-scan-nst018/",
       "teaser": null
     },{
+      "title": "Preferential trade agreements: design matters!",
+      "excerpt": "Leonardo Baccini, Andreas Dür, Manfred Elsig\n      Preferential trade agreements: design matters!\n      \n      Leonardo Baccini, Andreas Dür, Manfred Elsig\n      W3087885608 Leonardo Baccini, Andreas Dur, Manfred Elsig\n      Preferential trade agreements: design matters!\n      \n      Leonardo Baccini, Andreas Dur, Manfred Elsig\n      W3087885608",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W3087885608/",
+      "teaser": null
+    },{
+      "title": "The Politics of Preferential Trade Agreements in Autocratic Regimes",
+      "excerpt": "Wilfred Chow, Leonardo Baccini\n      The Politics of Preferential Trade Agreements in Autocratic Regimes\n      \n      Wilfred Chow, Leonardo Baccini\n      W2612161649 Wilfred Chow, Leonardo Baccini\n      The Politics of Preferential Trade Agreements in Autocratic Regimes\n      \n      Wilfred Chow, Leonardo Baccini\n      W2612161649",
+      "categories": ["Publications"],
+      "tags": ["The HKU Scholars Hub (University of Hong Kong)"],
+      "url": "/publications/W2612161649/",
+      "teaser": null
+    },{
+      "title": "Political Consumerism: List of Figures",
+      "excerpt": "Dietlind Stolle, Michele Micheletti\n      Political Consumerism: List of Figures\n      \n      Dietlind Stolle, Michele Micheletti\n      W2240636010 Dietlind Stolle, Michele Micheletti\n      Political Consumerism: List of Figures\n      \n      Dietlind Stolle, Michele Micheletti\n      W2240636010",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2240636010/",
+      "teaser": null
+    },{
+      "title": "An Informed 'No': Voting Behaviour in the Irish Fiscal Compact Referendum",
+      "excerpt": "Maria Laura Sudulich, Leonardo Baccini\n      An Informed 'No': Voting Behaviour in the Irish Fiscal Compact Referendum\n      \n      Maria Laura Sudulich, Leonardo Baccini\n      W2145774481 Maria Laura Sudulich, Leonardo Baccini\n      An Informed 'No': Voting Behaviour in the Irish Fiscal Compact Referendum\n      \n      Maria Laura Sudulich, Leonardo Baccini\n      W2145774481",
+      "categories": ["Publications"],
+      "tags": ["SSRN Electronic Journal"],
+      "url": "/publications/W2145774481/",
+      "teaser": null
+    },{
+      "title": "Emigrants and the Body Politic Left Behind",
+      "excerpt": "Roger Waldinger, Thomas Soehl, Nelson Lim\n      Emigrants and the Body Politic Left Behind\n      \n      Roger Waldinger, Thomas Soehl, Nelson Lim\n      W126106896 Roger Waldinger, Thomas Soehl, Nelson Lim\n      Emigrants and the Body Politic Left Behind\n      \n      Roger Waldinger, Thomas Soehl, Nelson Lim\n      W126106896",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W126106896/",
+      "teaser": null
+    },{
       "title": "Graphs.rar",
       "excerpt": "Leonardo Baccini, Veronica Lenzi, Paul W. Thurner\n      Graphs.rar\n      \n      Leonardo Baccini, Veronica Lenzi, Paul W. Thurner\n      10.7910-dvn-wqvvdv-zyicbw Leonardo Baccini, Veronica Lenzi, Paul W. Thurner\n      Graphs.rar\n      \n      Leonardo Baccini, Veronica Lenzi, Paul W. Thurner\n      10.7910-dvn-wqvvdv-zyicbw",
       "categories": ["Publications"],
@@ -6082,6 +6663,20 @@ var store = [{
       "url": "/publications/10.1017-s0022381612001089/",
       "teaser": null
     },{
+      "title": "Preventing protectionism: international institutions and trade policy",
+      "excerpt": "Leonardo Baccini, Soo Yeon Kim\n      Preventing protectionism: international institutions and trade policy\n      \n      Leonardo Baccini, Soo Yeon Kim\n      W2304661754 Leonardo Baccini, Soo Yeon Kim\n      Preventing protectionism: international institutions and trade policy\n      \n      Leonardo Baccini, Soo Yeon Kim\n      W2304661754",
+      "categories": ["Publications"],
+      "tags": ["London School of Economics and Political Science Research Online (London School of Economics and Political Science)"],
+      "url": "/publications/W2304661754/",
+      "teaser": null
+    },{
+      "title": "Incorporation Crisis in Latin America: The limits of ''Conservative Modernization",
+      "excerpt": "Fernando Filgueira, Luis Reygadas, Juan Pablo Luna, Pablo Alegre\n      Incorporation Crisis in Latin America: The limits of ''Conservative Modernization\n      \n      Fernando Filgueira, Luis Reygadas, Juan Pablo Luna, Pablo Alegre\n      W183770379 Fernando Filgueira, Luis Reygadas, Juan Pablo Luna, Pablo Alegre\n      Incorporation Crisis in Latin America: The limits of ''Conservative Modernization\n      \n      Fernando Filgueira, Luis Reygadas, Juan Pablo Luna, Pablo Alegre\n      W183770379",
+      "categories": ["Publications"],
+      "tags": ["Perfiles Latinoamericanos"],
+      "url": "/publications/W183770379/",
+      "teaser": null
+    },{
       "title": "Choosing the dependent variable: Sarkozy's forecasting lesson",
       "excerpt": "Éric Bélanger, Michael S. Lewis‐Beck, Richard Nadeau\n      Choosing the dependent variable: Sarkozy's forecasting lesson\n      \n      Éric Bélanger, Michael S. Lewis‐Beck, Richard Nadeau\n      10.1057-fp.2012.15 Eric Belanger, Michael S. Lewis‐Beck, Richard Nadeau\n      Choosing the dependent variable: Sarkozy's forecasting lesson\n      \n      Eric Belanger, Michael S. Lewis‐Beck, Richard Nadeau\n      10.1057-fp.2012.15",
       "categories": ["Publications"],
@@ -6152,6 +6747,13 @@ var store = [{
       "url": "/publications/10.1017-s0022381612000485/",
       "teaser": null
     },{
+      "title": "Who Assimilates? Statistical Artifacts and Intergenerational Mobility in Migrant Families",
+      "excerpt": "Renee Luthra, Thomas Soehl\n      Who Assimilates? Statistical Artifacts and Intergenerational Mobility in Migrant Families\n      \n      Renee Luthra, Thomas Soehl\n      W2231999002 Renee Luthra, Thomas Soehl\n      Who Assimilates? Statistical Artifacts and Intergenerational Mobility in Migrant Families\n      \n      Renee Luthra, Thomas Soehl\n      W2231999002",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2231999002/",
+      "teaser": null
+    },{
       "title": "Relative Validity Criteria for Community Mining Algorithms",
       "excerpt": "Reihaneh Rabbany, Mansoureh Takaffoli, Justin Fagnan, O. R. Zaane, R. J. G. B. Campello\n      Relative Validity Criteria for Community Mining Algorithms\n      \n      Reihaneh Rabbany, Mansoureh Takaffoli, Justin Fagnan, O. R. Zaane, R. J. G. B. Campello\n      10.1109-asonam.2012.52 Reihaneh Rabbany, Mansoureh Takaffoli, Justin Fagnan, O. R. Zaane, R. J. G. B. Campello\n      Relative Validity Criteria for Community Mining Algorithms\n      \n      Reihaneh Rabbany, Mansoureh Takaffoli, Justin Fagnan, O. R. Zaane, R. J. G. B. Campello\n      10.1109-asonam.2012.52",
       "categories": ["Publications"],
@@ -6178,6 +6780,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Canadian Geographies / Géographies canadiennes"],
       "url": "/publications/10.1111-j.1541-0064.2012.00437.x/",
+      "teaser": null
+    },{
+      "title": "Legislative fractionalization and partisan shifts to the left increase the volatility of public energy R&D expenditures",
+      "excerpt": "Leonardo Baccini, Johannes Urpelainen\n      Legislative fractionalization and partisan shifts to the left increase the volatility of public energy R&D expenditures\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W2309815116 Leonardo Baccini, Johannes Urpelainen\n      Legislative fractionalization and partisan shifts to the left increase the volatility of public energy R&D expenditures\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W2309815116",
+      "categories": ["Publications"],
+      "tags": ["London School of Economics and Political Science Research Online (London School of Economics and Political Science)"],
+      "url": "/publications/W2309815116/",
       "teaser": null
     },{
       "title": "Election forecasting in neglected democracies: An introduction",
@@ -6236,6 +6845,48 @@ var store = [{
       "url": "/publications/10.1057-fp.2011.20/",
       "teaser": null
     },{
+      "title": "Chapitre 2. Les variables socio-économiques",
+      "excerpt": "Richard Nadeau, Éric Bélanger, Michael S. Lewis‐Beck, Bruno Cautrès, Martial Foucault\n      Chapitre 2. Les variables socio-économiques\n      \n      Richard Nadeau, Éric Bélanger, Michael S. Lewis‐Beck, Bruno Cautrès, Martial Foucault\n      W2119085366 Richard Nadeau, Eric Belanger, Michael S. Lewis‐Beck, Bruno Cautres, Martial Foucault\n      Chapitre 2. Les variables socio-economiques\n      \n      Richard Nadeau, Eric Belanger, Michael S. Lewis‐Beck, Bruno Cautres, Martial Foucault\n      W2119085366",
+      "categories": ["Publications"],
+      "tags": ["Cairn.info"],
+      "url": "/publications/W2119085366/",
+      "teaser": null
+    },{
+      "title": "Chapitre 5. L'image des candidats",
+      "excerpt": "Richard Nadeau, Éric Bélanger, Michael S. Lewis‐Beck, Bruno Cautrès, Martial Foucault\n      Chapitre 5. L'image des candidats\n      \n      Richard Nadeau, Éric Bélanger, Michael S. Lewis‐Beck, Bruno Cautrès, Martial Foucault\n      W1693853194 Richard Nadeau, Eric Belanger, Michael S. Lewis‐Beck, Bruno Cautres, Martial Foucault\n      Chapitre 5. L'image des candidats\n      \n      Richard Nadeau, Eric Belanger, Michael S. Lewis‐Beck, Bruno Cautres, Martial Foucault\n      W1693853194",
+      "categories": ["Publications"],
+      "tags": ["Cairn.info"],
+      "url": "/publications/W1693853194/",
+      "teaser": null
+    },{
+      "title": "Chapitre 6. Les effets des campagnes électorales",
+      "excerpt": "Richard Nadeau, Éric Bélanger, Michael S. Lewis‐Beck, Bruno Cautrès, Martial Foucault\n      Chapitre 6. Les effets des campagnes électorales\n      \n      Richard Nadeau, Éric Bélanger, Michael S. Lewis‐Beck, Bruno Cautrès, Martial Foucault\n      W1679082873 Richard Nadeau, Eric Belanger, Michael S. Lewis‐Beck, Bruno Cautres, Martial Foucault\n      Chapitre 6. Les effets des campagnes electorales\n      \n      Richard Nadeau, Eric Belanger, Michael S. Lewis‐Beck, Bruno Cautres, Martial Foucault\n      W1679082873",
+      "categories": ["Publications"],
+      "tags": ["Académique"],
+      "url": "/publications/W1679082873/",
+      "teaser": null
+    },{
+      "title": "Chapitre 3. L'Idéologie",
+      "excerpt": "Richard Nadeau, Éric Bélanger, Michael S. Lewis‐Beck, Bruno Cautrès, Martial Foucault\n      Chapitre 3. L'Idéologie\n      \n      Richard Nadeau, Éric Bélanger, Michael S. Lewis‐Beck, Bruno Cautrès, Martial Foucault\n      W1628942103 Richard Nadeau, Eric Belanger, Michael S. Lewis‐Beck, Bruno Cautres, Martial Foucault\n      Chapitre 3. L'Ideologie\n      \n      Richard Nadeau, Eric Belanger, Michael S. Lewis‐Beck, Bruno Cautres, Martial Foucault\n      W1628942103",
+      "categories": ["Publications"],
+      "tags": ["Cairn.info"],
+      "url": "/publications/W1628942103/",
+      "teaser": null
+    },{
+      "title": "Chapitre 1. Les variables sociodémographiques",
+      "excerpt": "Richard Nadeau, Éric Bélanger, Michael S. Lewis‐Beck, Bruno Cautrès, Martial Foucault\n      Chapitre 1. Les variables sociodémographiques\n      \n      Richard Nadeau, Éric Bélanger, Michael S. Lewis‐Beck, Bruno Cautrès, Martial Foucault\n      W1574434960 Richard Nadeau, Eric Belanger, Michael S. Lewis‐Beck, Bruno Cautres, Martial Foucault\n      Chapitre 1. Les variables sociodemographiques\n      \n      Richard Nadeau, Eric Belanger, Michael S. Lewis‐Beck, Bruno Cautres, Martial Foucault\n      W1574434960",
+      "categories": ["Publications"],
+      "tags": ["Cairn.info"],
+      "url": "/publications/W1574434960/",
+      "teaser": null
+    },{
+      "title": "Chapitre 4. Le rôle des enjeux",
+      "excerpt": "Richard Nadeau, Éric Bélanger, Michael S. Lewis‐Beck, Bruno Cautrès, Martial Foucault\n      Chapitre 4. Le rôle des enjeux\n      \n      Richard Nadeau, Éric Bélanger, Michael S. Lewis‐Beck, Bruno Cautrès, Martial Foucault\n      W1486825713 Richard Nadeau, Eric Belanger, Michael S. Lewis‐Beck, Bruno Cautres, Martial Foucault\n      Chapitre 4. Le role des enjeux\n      \n      Richard Nadeau, Eric Belanger, Michael S. Lewis‐Beck, Bruno Cautres, Martial Foucault\n      W1486825713",
+      "categories": ["Publications"],
+      "tags": ["Cairn.info"],
+      "url": "/publications/W1486825713/",
+      "teaser": null
+    },{
       "title": "Le vote des Français de Mitterrand à Sarkozy",
       "excerpt": "Bruno Cautrès, Martial Foucault, Michael S. Lewis‐Beck, Richard Nadeau, Éric Bélanger\n      Le vote des Français de Mitterrand à Sarkozy\n      \n      Bruno Cautrès, Martial Foucault, Michael S. Lewis‐Beck, Richard Nadeau, Éric Bélanger\n      10.3917-scpo.belan.2012.01 Bruno Cautres, Martial Foucault, Michael S. Lewis‐Beck, Richard Nadeau, Eric Belanger\n      Le vote des Francais de Mitterrand a Sarkozy\n      \n      Bruno Cautres, Martial Foucault, Michael S. Lewis‐Beck, Richard Nadeau, Eric Belanger\n      10.3917-scpo.belan.2012.01",
       "categories": ["Publications"],
@@ -6264,6 +6915,20 @@ var store = [{
       "url": "/publications/10.1007-s11558-011-9140-7/",
       "teaser": null
     },{
+      "title": "Preferential trading agreements and economic reforms in developing countries",
+      "excerpt": "Leonardo Baccini, Johannes Urpelainen\n      Preferential trading agreements and economic reforms in developing countries\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W2277889066 Leonardo Baccini, Johannes Urpelainen\n      Preferential trading agreements and economic reforms in developing countries\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W2277889066",
+      "categories": ["Publications"],
+      "tags": ["London School of Economics and Political Science Research Online (London School of Economics and Political Science)"],
+      "url": "/publications/W2277889066/",
+      "teaser": null
+    },{
+      "title": "It's not all about trade: preferential trading agreements induce economic reforms in developing countries",
+      "excerpt": "Leonardo Baccini, Johannes Urpelainen\n      It's not all about trade: preferential trading agreements induce economic reforms in developing countries\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W123447458 Leonardo Baccini, Johannes Urpelainen\n      It's not all about trade: preferential trading agreements induce economic reforms in developing countries\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W123447458",
+      "categories": ["Publications"],
+      "tags": ["London School of Economics and Political Science Research Online (London School of Economics and Political Science)"],
+      "url": "/publications/W123447458/",
+      "teaser": null
+    },{
       "title": "L'Électeur Québécois et Les Partis",
       "excerpt": "Éric Bélanger, Richard Nadeau\n      L'Électeur Québécois et Les Partis\n      \n      Éric Bélanger, Richard Nadeau\n      10.1515-9782763797359-007 Eric Belanger, Richard Nadeau\n      L'Electeur Quebecois et Les Partis\n      \n      Eric Belanger, Richard Nadeau\n      10.1515-9782763797359-007",
       "categories": ["Publications"],
@@ -6276,6 +6941,41 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Political Geography"],
       "url": "/publications/10.1016-j.polgeo.2011.11.005/",
+      "teaser": null
+    },{
+      "title": "The “Diversity and Contact” (DIVCON) Survey 2010 (wave 1) - Technical Report",
+      "excerpt": "Sören Petermann, Joe Heywood, Miles Hewstone, Jörg Hüttermann, Katharina Schmid, Thomas M. Schmitt, Karen Schönwälder, Dietlind Stolle, Steven Vertovec\n      The “Diversity and Contact” (DIVCON) Survey 2010 (wave 1) - Technical Report\n      \n      Sören Petermann, Joe Heywood, Miles Hewstone, Jörg Hüttermann, Katharina Schmid, Thomas M. Schmitt, Karen Schönwälder, Dietlind Stolle, Steven Vertovec\n      W792474933 Soren Petermann, Joe Heywood, Miles Hewstone, Jorg Huttermann, Katharina Schmid, Thomas M. Schmitt, Karen Schonwälder, Dietlind Stolle, Steven Vertovec\n      The “Diversity and Contact” (DIVCON) Survey 2010 (wave 1) - Technical Report\n      \n      Soren Petermann, Joe Heywood, Miles Hewstone, Jorg Huttermann, Katharina Schmid, Thomas M. Schmitt, Karen Schonwälder, Dietlind Stolle, Steven Vertovec\n      W792474933",
+      "categories": ["Publications"],
+      "tags": ["MPG.PuRe (Max Planck Society)"],
+      "url": "/publications/W792474933/",
+      "teaser": null
+    },{
+      "title": "Strategic Side Payments: Preferential Trading Agreements, Economic Reform, and Foreign Aid",
+      "excerpt": "Leonardo Baccini, Johannes Urpelainen\n      Strategic Side Payments: Preferential Trading Agreements, Economic Reform, and Foreign Aid\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W2743258016 Leonardo Baccini, Johannes Urpelainen\n      Strategic Side Payments: Preferential Trading Agreements, Economic Reform, and Foreign Aid\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W2743258016",
+      "categories": ["Publications"],
+      "tags": ["London School of Economics and Political Science Research Online (London School of Economics and Political Science)"],
+      "url": "/publications/W2743258016/",
+      "teaser": null
+    },{
+      "title": "The Politics of Trade Agreement Design: Depth, Scope and Flexibility",
+      "excerpt": "Leonardo Baccini\n      The Politics of Trade Agreement Design: Depth, Scope and Flexibility\n      \n      Leonardo Baccini\n      W2554426429 Leonardo Baccini\n      The Politics of Trade Agreement Design: Depth, Scope and Flexibility\n      \n      Leonardo Baccini\n      W2554426429",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2554426429/",
+      "teaser": null
+    },{
+      "title": "Habits of Sustainable Citizenship : The Example of Political Consumerism",
+      "excerpt": "Michele Micheletti, Dietlind Stolle, Daniel Berlin\n      Habits of Sustainable Citizenship : The Example of Political Consumerism\n      \n      Michele Micheletti, Dietlind Stolle, Daniel Berlin\n      W1831730783 Michele Micheletti, Dietlind Stolle, Daniel Berlin\n      Habits of Sustainable Citizenship : The Example of Political Consumerism\n      \n      Michele Micheletti, Dietlind Stolle, Daniel Berlin\n      W1831730783",
+      "categories": ["Publications"],
+      "tags": ["Työväentutkimus Vuosikirja"],
+      "url": "/publications/W1831730783/",
+      "teaser": null
+    },{
+      "title": "Information and Voting - How Voters Update Beliefs After Natural Disasters",
+      "excerpt": "Leonardo Baccini, Lucas Leemann\n      Information and Voting - How Voters Update Beliefs After Natural Disasters\n      \n      Leonardo Baccini, Lucas Leemann\n      W1540982388 Leonardo Baccini, Lucas Leemann\n      Information and Voting - How Voters Update Beliefs After Natural Disasters\n      \n      Leonardo Baccini, Lucas Leemann\n      W1540982388",
+      "categories": ["Publications"],
+      "tags": ["SSRN Electronic Journal"],
+      "url": "/publications/W1540982388/",
       "teaser": null
     },{
       "title": "Presentación",
@@ -6369,11 +7069,25 @@ var store = [{
       "url": "/publications/10.1017-s0008423911000461/",
       "teaser": null
     },{
+      "title": "Timing of union formation and partner choice in two immigrant societies: The U.S. and Germany",
+      "excerpt": "Jenjira Yahirun, Thomas Soehl\n      Timing of union formation and partner choice in two immigrant societies: The U.S. and Germany\n      \n      Jenjira Yahirun, Thomas Soehl\n      W2283317912 Jenjira Yahirun, Thomas Soehl\n      Timing of union formation and partner choice in two immigrant societies: The U.S. and Germany\n      \n      Jenjira Yahirun, Thomas Soehl\n      W2283317912",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2283317912/",
+      "teaser": null
+    },{
       "title": "Politics in Peer Groups",
       "excerpt": "Ellen Quintelier, Dietlind Stolle, Allison Harell\n      Politics in Peer Groups\n      \n      Ellen Quintelier, Dietlind Stolle, Allison Harell\n      10.1177-1065912911411099 Ellen Quintelier, Dietlind Stolle, Allison Harell\n      Politics in Peer Groups\n      \n      Ellen Quintelier, Dietlind Stolle, Allison Harell\n      10.1177-1065912911411099",
       "categories": ["Publications"],
       "tags": ["Political Research Quarterly"],
       "url": "/publications/10.1177-1065912911411099/",
+      "teaser": null
+    },{
+      "title": "The Ambiguities of Political Opportunity: Political claims making of Russian-Jewish Immigrants in New York City",
+      "excerpt": "Thomas Soehl\n      The Ambiguities of Political Opportunity: Political claims making of Russian-Jewish Immigrants in New York City\n      \n      Thomas Soehl\n      W2173273040 Thomas Soehl\n      The Ambiguities of Political Opportunity: Political claims making of Russian-Jewish Immigrants in New York City\n      \n      Thomas Soehl\n      W2173273040",
+      "categories": ["Publications"],
+      "tags": ["eScholarship (California Digital Library)"],
+      "url": "/publications/W2173273040/",
       "teaser": null
     },{
       "title": "Monumental Politics: Regime Type and Public Memory in Post-Communist States",
@@ -6404,6 +7118,20 @@ var store = [{
       "url": "/publications/10.1093-acprof-oso-9780199735204.003.0011/",
       "teaser": null
     },{
+      "title": "Democratization, New Leaders, and the Need for Economic Reform: Can Preferential Trading Agreements Help?",
+      "excerpt": "Leonardo Baccini, Johannes Urpelainen\n      Democratization, New Leaders, and the Need for Economic Reform: Can Preferential Trading Agreements Help?\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W324435896 Leonardo Baccini, Johannes Urpelainen\n      Democratization, New Leaders, and the Need for Economic Reform: Can Preferential Trading Agreements Help?\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W324435896",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W324435896/",
+      "teaser": null
+    },{
+      "title": "US, EU, and Trade Agreements with the Developing World",
+      "excerpt": "Soo Yeon Kim, Leonardo Baccini\n      US, EU, and Trade Agreements with the Developing World\n      \n      Soo Yeon Kim, Leonardo Baccini\n      W2307168777 Soo Yeon Kim, Leonardo Baccini\n      US, EU, and Trade Agreements with the Developing World\n      \n      Soo Yeon Kim, Leonardo Baccini\n      W2307168777",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2307168777/",
+      "teaser": null
+    },{
       "title": "Democratization and trade policy: An empirical analysis of developing countries",
       "excerpt": "Leonardo Baccini\n      Democratization and trade policy: An empirical analysis of developing countries\n      \n      Leonardo Baccini\n      10.1177-1354066110391307 Leonardo Baccini\n      Democratization and trade policy: An empirical analysis of developing countries\n      \n      Leonardo Baccini\n      10.1177-1354066110391307",
       "categories": ["Publications"],
@@ -6416,6 +7144,76 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Social Science Computer Review"],
       "url": "/publications/10.1177-0894439310396485/",
+      "teaser": null
+    },{
+      "title": "Immigration-related diversity, interactions and trust in German cities",
+      "excerpt": "Sören Petermann, Karen Schönwälder, Dietlind Stolle\n      Immigration-related diversity, interactions and trust in German cities\n      \n      Sören Petermann, Karen Schönwälder, Dietlind Stolle\n      W842804382 Soren Petermann, Karen Schonwälder, Dietlind Stolle\n      Immigration-related diversity, interactions and trust in German cities\n      \n      Soren Petermann, Karen Schonwälder, Dietlind Stolle\n      W842804382",
+      "categories": ["Publications"],
+      "tags": ["MPG.PuRe (Max Planck Society)"],
+      "url": "/publications/W842804382/",
+      "teaser": null
+    },{
+      "title": "Does immigration challenge societal integration? Social interactions in diverse neighbourhoods",
+      "excerpt": "Sören Petermann, Karen Schönwälder, Dietlind Stolle\n      Does immigration challenge societal integration? Social interactions in diverse neighbourhoods\n      \n      Sören Petermann, Karen Schönwälder, Dietlind Stolle\n      W807025010 Soren Petermann, Karen Schonwälder, Dietlind Stolle\n      Does immigration challenge societal integration? Social interactions in diverse neighbourhoods\n      \n      Soren Petermann, Karen Schonwälder, Dietlind Stolle\n      W807025010",
+      "categories": ["Publications"],
+      "tags": ["MPG.PuRe (Max Planck Society)"],
+      "url": "/publications/W807025010/",
+      "teaser": null
+    },{
+      "title": "Diversity and contact in German cities : the project and its findings after the first wave",
+      "excerpt": "Sören Petermann, Karen Schönwälder, Thomas M. Schmitt, Dietlind Stolle, Katharina Schmid\n      Diversity and contact in German cities : the project and its findings after the first wave\n      \n      Sören Petermann, Karen Schönwälder, Thomas M. Schmitt, Dietlind Stolle, Katharina Schmid\n      W749211302 Soren Petermann, Karen Schonwälder, Thomas M. Schmitt, Dietlind Stolle, Katharina Schmid\n      Diversity and contact in German cities : the project and its findings after the first wave\n      \n      Soren Petermann, Karen Schonwälder, Thomas M. Schmitt, Dietlind Stolle, Katharina Schmid\n      W749211302",
+      "categories": ["Publications"],
+      "tags": ["MPG.PuRe (Max Planck Society)"],
+      "url": "/publications/W749211302/",
+      "teaser": null
+    },{
+      "title": "Analyzing Participation of Students in Online Courses Using Social Network Analysis Techniques.",
+      "excerpt": "Reihaneh Rabbany, Mansoureh Takaffoli, Osmar R. Zaı̈ane\n      Analyzing Participation of Students in Online Courses Using Social Network Analysis Techniques.\n      \n      Reihaneh Rabbany, Mansoureh Takaffoli, Osmar R. Zaı̈ane\n      W2405817496 Reihaneh Rabbany, Mansoureh Takaffoli, Osmar R. Zaı̈ane\n      Analyzing Participation of Students in Online Courses Using Social Network Analysis Techniques.\n      \n      Reihaneh Rabbany, Mansoureh Takaffoli, Osmar R. Zaı̈ane\n      W2405817496",
+      "categories": ["Publications"],
+      "tags": ["Educational Data Mining"],
+      "url": "/publications/W2405817496/",
+      "teaser": null
+    },{
+      "title": "Informe acerca de la “Encuesta para los formadores de los Institutos de Formación Docente de las carreras de profesorado en Matemática",
+      "excerpt": "Carmen Sessa, Daniel Arias, Valeria Borsani, Verónica Cambriglia, Silvia Colacelli, Silvia Etchegaray, Patricia García, Gustavo Krimker, Juan Pablo Luna, Graciela Sessa\n      Informe acerca de la “Encuesta para los formadores de los Institutos de Formación Docente de las carreras de profesorado en Matemática\n      \n      Carmen Sessa, Daniel Arias, Valeria Borsani, Verónica Cambriglia, Silvia Colacelli, Silvia Etchegaray, Patricia García, Gustavo Krimker, Juan Pablo Luna, Graciela Sessa\n      W2099512063 Carmen Sessa, Daniel Arias, Valeria Borsani, Verónica Cambriglia, Silvia Colacelli, Silvia Etchegaray, Patricia García, Gustavo Krimker, Juan Pablo Luna, Graciela Sessa\n      Informe acerca de la “Encuesta para los formadores de los Institutos de Formación Docente de las carreras de profesorado en Matemática\n      \n      Carmen Sessa, Daniel Arias, Valeria Borsani, Verónica Cambriglia, Silvia Colacelli, Silvia Etchegaray, Patricia García, Gustavo Krimker, Juan Pablo Luna, Graciela Sessa\n      W2099512063",
+      "categories": ["Publications"],
+      "tags": ["Repositorio Institucional"],
+      "url": "/publications/W2099512063/",
+      "teaser": null
+    },{
+      "title": "EL SECRETO DE MI ÉXITO: PARTE II. LOS CAMINOS A VALPARAÍSO EN 2009",
+      "excerpt": "Pilar Giannini, Héctor A. Bahamonde, Juan Pablo Luna, Rodolfo López, Martín Ordóñez Astete, Gonzalo Recart\n      EL SECRETO DE MI ÉXITO: PARTE II. LOS CAMINOS A VALPARAÍSO EN 2009\n      \n      Pilar Giannini, Héctor A. Bahamonde, Juan Pablo Luna, Rodolfo López, Martín Ordóñez Astete, Gonzalo Recart\n      W1758080439 Pilar Giannini, Hector A. Bahamonde, Juan Pablo Luna, Rodolfo López, Martín Ordóñez Astete, Gonzalo Recart\n      EL SECRETO DE MI EXITO: PARTE II. LOS CAMINOS A VALPARAÍSO EN 2009\n      \n      Pilar Giannini, Hector A. Bahamonde, Juan Pablo Luna, Rodolfo López, Martín Ordóñez Astete, Gonzalo Recart\n      W1758080439",
+      "categories": ["Publications"],
+      "tags": ["Americanae (AECID Library)"],
+      "url": "/publications/W1758080439/",
+      "teaser": null
+    },{
+      "title": "The Market as an Arena for Transnational Politics",
+      "excerpt": "Michele Micheletti, Dietlind Stolle\n      The Market as an Arena for Transnational Politics\n      \n      Michele Micheletti, Dietlind Stolle\n      W1526573725 Michele Micheletti, Dietlind Stolle\n      The Market as an Arena for Transnational Politics\n      \n      Michele Micheletti, Dietlind Stolle\n      W1526573725",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W1526573725/",
+      "teaser": null
+    },{
+      "title": "Weak Stateness vs. Challenged States: An Explanatory Typology",
+      "excerpt": "Maria Giraudy, Juan Pablo Luna\n      Weak Stateness vs. Challenged States: An Explanatory Typology\n      \n      Maria Giraudy, Juan Pablo Luna\n      W1524766515 Maria Giraudy, Juan Pablo Luna\n      Weak Stateness vs. Challenged States: An Explanatory Typology\n      \n      Maria Giraudy, Juan Pablo Luna\n      W1524766515",
+      "categories": ["Publications"],
+      "tags": ["SSRN Electronic Journal"],
+      "url": "/publications/W1524766515/",
+      "teaser": null
+    },{
+      "title": "Institutions, Information, and Trade Policy in Times of Crisis",
+      "excerpt": "Leonardo Baccini, Kim, Soo Yeon\n      Institutions, Information, and Trade Policy in Times of Crisis\n      \n      Leonardo Baccini, Kim, Soo Yeon\n      W142784282 Leonardo Baccini, Kim, Soo Yeon\n      Institutions, Information, and Trade Policy in Times of Crisis\n      \n      Leonardo Baccini, Kim, Soo Yeon\n      W142784282",
+      "categories": ["Publications"],
+      "tags": ["IMT Institutional Repository (IMT School for Advanced Studies Lucca)"],
+      "url": "/publications/W142784282/",
+      "teaser": null
+    },{
+      "title": "The Design of Preferential Trade Agreements",
+      "excerpt": "Leonardo Baccini, Andreas Duer, Manfred Elsig, Karolina M. Milewicz\n      The Design of Preferential Trade Agreements\n      \n      Leonardo Baccini, Andreas Duer, Manfred Elsig, Karolina M. Milewicz\n      W105870712 Leonardo Baccini, Andreas Duer, Manfred Elsig, Karolina M. Milewicz\n      The Design of Preferential Trade Agreements\n      \n      Leonardo Baccini, Andreas Duer, Manfred Elsig, Karolina M. Milewicz\n      W105870712",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W105870712/",
       "teaser": null
     },{
       "title": "7 Third-Party Support in Canadian Elections: The Role of the Economy",
@@ -6535,6 +7333,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Globe Revue internationale d’études québécoises"],
       "url": "/publications/10.7202-1000094ar/",
+      "teaser": null
+    },{
+      "title": "The Political Sociology of International Migration: Borders, boundaries, rights, and politics",
+      "excerpt": "Roger Waldinger, Thomas Soehl\n      The Political Sociology of International Migration: Borders, boundaries, rights, and politics\n      \n      Roger Waldinger, Thomas Soehl\n      W150075938 Roger Waldinger, Thomas Soehl\n      The Political Sociology of International Migration: Borders, boundaries, rights, and politics\n      \n      Roger Waldinger, Thomas Soehl\n      W150075938",
+      "categories": ["Publications"],
+      "tags": ["eScholarship (California Digital Library)"],
+      "url": "/publications/W150075938/",
       "teaser": null
     },{
       "title": "Meerkat: Community Mining with Dynamic Social Networks",
@@ -6768,11 +7573,74 @@ var store = [{
       "url": "/publications/10.1080-17457280903450757/",
       "teaser": null
     },{
+      "title": "Easing the Pain of Adjustment? Preferential Trading Agreements, Foreign Aid, and Credible Commitment to Economic Reform",
+      "excerpt": "Leonardo Baccini, Johannes Urpelainen\n      Easing the Pain of Adjustment? Preferential Trading Agreements, Foreign Aid, and Credible Commitment to Economic Reform\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W35850657 Leonardo Baccini, Johannes Urpelainen\n      Easing the Pain of Adjustment? Preferential Trading Agreements, Foreign Aid, and Credible Commitment to Economic Reform\n      \n      Leonardo Baccini, Johannes Urpelainen\n      W35850657",
+      "categories": ["Publications"],
+      "tags": ["IMT Institutional Repository (IMT School for Advanced Studies Lucca)"],
+      "url": "/publications/W35850657/",
+      "teaser": null
+    },{
+      "title": "Why Do Parties Merge? The Case of the Conservative Party of Canada",
+      "excerpt": "Éric Bélanger, Jean‐François Godbout\n      Why Do Parties Merge? The Case of the Conservative Party of Canada\n      \n      Éric Bélanger, Jean‐François Godbout\n      W3123445621 Eric Belanger, Jean‐Francois Godbout\n      Why Do Parties Merge? The Case of the Conservative Party of Canada\n      \n      Eric Belanger, Jean‐Francois Godbout\n      W3123445621",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W3123445621/",
+      "teaser": null
+    },{
+      "title": "Diversified Political Targeting Strategies in Non-Machine Party Systems: The Distribution of Central GovernmentS Social Funds in Chile",
+      "excerpt": "Juan Pablo Luna, Rodrigo Z. Mardones\n      Diversified Political Targeting Strategies in Non-Machine Party Systems: The Distribution of Central GovernmentS Social Funds in Chile\n      \n      Juan Pablo Luna, Rodrigo Z. Mardones\n      W3048235482 Juan Pablo Luna, Rodrigo Z. Mardones\n      Diversified Political Targeting Strategies in Non-Machine Party Systems: The Distribution of Central GovernmentS Social Funds in Chile\n      \n      Juan Pablo Luna, Rodrigo Z. Mardones\n      W3048235482",
+      "categories": ["Publications"],
+      "tags": ["SSRN Electronic Journal"],
+      "url": "/publications/W3048235482/",
+      "teaser": null
+    },{
+      "title": "E-democratie in België en Canada",
+      "excerpt": "Ruud Wouters, Dietlind Stolle\n      E-democratie in België en Canada\n      \n      Ruud Wouters, Dietlind Stolle\n      W2771966989 Ruud Wouters, Dietlind Stolle\n      E-democratie in Belgie en Canada\n      \n      Ruud Wouters, Dietlind Stolle\n      W2771966989",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2771966989/",
+      "teaser": null
+    },{
+      "title": "Bringing Political Parties Back In. Cultural Diversity, Social Cohesion and Political Mobilization",
+      "excerpt": "Marc Helbling, Tim Reeskens, Dietlind Stolle\n      Bringing Political Parties Back In. Cultural Diversity, Social Cohesion and Political Mobilization\n      \n      Marc Helbling, Tim Reeskens, Dietlind Stolle\n      W2519589195 Marc Helbling, Tim Reeskens, Dietlind Stolle\n      Bringing Political Parties Back In. Cultural Diversity, Social Cohesion and Political Mobilization\n      \n      Marc Helbling, Tim Reeskens, Dietlind Stolle\n      W2519589195",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2519589195/",
+      "teaser": null
+    },{
+      "title": "Explaining formation and design of EU trade agreements: the role of transparency and flexibility",
+      "excerpt": "Leonardo Baccini\n      Explaining formation and design of EU trade agreements: the role of transparency and flexibility\n      \n      Leonardo Baccini\n      W2289360195 Leonardo Baccini\n      Explaining formation and design of EU trade agreements: the role of transparency and flexibility\n      \n      Leonardo Baccini\n      W2289360195",
+      "categories": ["Publications"],
+      "tags": ["IMT Institutional Repository (IMT School for Advanced Studies Lucca)"],
+      "url": "/publications/W2289360195/",
+      "teaser": null
+    },{
+      "title": "Politik, konsumtion och delaktighet",
+      "excerpt": "Dietlind Stolle, Michele Micheletti, Daniel Berlin\n      Politik, konsumtion och delaktighet\n      \n      Dietlind Stolle, Michele Micheletti, Daniel Berlin\n      W1503214279 Dietlind Stolle, Michele Micheletti, Daniel Berlin\n      Politik, konsumtion och delaktighet\n      \n      Dietlind Stolle, Michele Micheletti, Daniel Berlin\n      W1503214279",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W1503214279/",
+      "teaser": null
+    },{
+      "title": "Globalization and Economic Crisis: Does Information Really Matter?",
+      "excerpt": "Leonardo Baccini, Soo Yeon Kim\n      Globalization and Economic Crisis: Does Information Really Matter?\n      \n      Leonardo Baccini, Soo Yeon Kim\n      W118171345 Leonardo Baccini, Soo Yeon Kim\n      Globalization and Economic Crisis: Does Information Really Matter?\n      \n      Leonardo Baccini, Soo Yeon Kim\n      W118171345",
+      "categories": ["Publications"],
+      "tags": ["IMT Institutional Repository (IMT School for Advanced Studies Lucca)"],
+      "url": "/publications/W118171345/",
+      "teaser": null
+    },{
       "title": "Why Do Parties Merge? The Case of the Conservative Party of Canada",
       "excerpt": "Éric Bélanger, J.-F. Godbout\n      Why Do Parties Merge? The Case of the Conservative Party of Canada\n      \n      Éric Bélanger, J.-F. Godbout\n      10.1093-pa-gsp041 Eric Belanger, J.-F. Godbout\n      Why Do Parties Merge? The Case of the Conservative Party of Canada\n      \n      Eric Belanger, J.-F. Godbout\n      10.1093-pa-gsp041",
       "categories": ["Publications"],
       "tags": ["Parliamentary Affairs"],
       "url": "/publications/10.1093-pa-gsp041/",
+      "teaser": null
+    },{
+      "title": "X-ray Properties of Sub-millimeter Galaxies in the Extended Chandra Deep Field-south",
+      "excerpt": "Elissa Berwick, S. Virani, C. M. Urry, Juan R. Cortés, Carolin N. Cardamone, Eric Gawiser, P. Lira, Aste, AzTEC Team\n      X-ray Properties of Sub-millimeter Galaxies in the Extended Chandra Deep Field-south\n      \n      Elissa Berwick, S. Virani, C. M. Urry, Juan R. Cortés, Carolin N. Cardamone, Eric Gawiser, P. Lira, Aste, AzTEC Team\n      W3010692353 Elissa Berwick, S. Virani, C. M. Urry, Juan R. Cortes, Carolin N. Cardamone, Eric Gawiser, P. Lira, Aste, AzTEC Team\n      X-ray Properties of Sub-millimeter Galaxies in the Extended Chandra Deep Field-south\n      \n      Elissa Berwick, S. Virani, C. M. Urry, Juan R. Cortes, Carolin N. Cardamone, Eric Gawiser, P. Lira, Aste, AzTEC Team\n      W3010692353",
+      "categories": ["Publications"],
+      "tags": ["AAS"],
+      "url": "/publications/W3010692353/",
       "teaser": null
     },{
       "title": "The Role of Social Networks in Immigrant Women's Political Incorporation",
@@ -6838,6 +7706,20 @@ var store = [{
       "url": "/publications/10.1515-9782760627512/",
       "teaser": null
     },{
+      "title": "Shifting Inequalities? Patterns of Exlusion and Inclusion in Emerging Forms of Political Participation",
+      "excerpt": "Dietlind Stolle, Marc Hooghe\n      Shifting Inequalities? Patterns of Exlusion and Inclusion in Emerging Forms of Political Participation\n      \n      Dietlind Stolle, Marc Hooghe\n      W2527346064 Dietlind Stolle, Marc Hooghe\n      Shifting Inequalities? Patterns of Exlusion and Inclusion in Emerging Forms of Political Participation\n      \n      Dietlind Stolle, Marc Hooghe\n      W2527346064",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2527346064/",
+      "teaser": null
+    },{
+      "title": "Do Diverse Networks Demobilise Young People",
+      "excerpt": "Ellen Quintelier, Dietlind Stolle, Allison Harell\n      Do Diverse Networks Demobilise Young People\n      \n      Ellen Quintelier, Dietlind Stolle, Allison Harell\n      W2520853834 Ellen Quintelier, Dietlind Stolle, Allison Harell\n      Do Diverse Networks Demobilise Young People\n      \n      Ellen Quintelier, Dietlind Stolle, Allison Harell\n      W2520853834",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2520853834/",
+      "teaser": null
+    },{
       "title": "Electoral forecasting in France: A multi-equation solution",
       "excerpt": "Richard Nadeau, Michael S. Lewis‐Beck, Éric Bélanger\n      Electoral forecasting in France: A multi-equation solution\n      \n      Richard Nadeau, Michael S. Lewis‐Beck, Éric Bélanger\n      10.1016-j.ijforecast.2009.04.002 Richard Nadeau, Michael S. Lewis‐Beck, Eric Belanger\n      Electoral forecasting in France: A multi-equation solution\n      \n      Richard Nadeau, Michael S. Lewis‐Beck, Eric Belanger\n      10.1016-j.ijforecast.2009.04.002",
       "categories": ["Publications"],
@@ -6899,6 +7781,62 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Circulation Research"],
       "url": "/publications/10.1161-circresaha.108.192179/",
+      "teaser": null
+    },{
+      "title": "Consumers as political actors",
+      "excerpt": "Michele Micheletti, Dietlind Stolle\n      Consumers as political actors\n      \n      Michele Micheletti, Dietlind Stolle\n      W585694932 Michele Micheletti, Dietlind Stolle\n      Consumers as political actors\n      \n      Michele Micheletti, Dietlind Stolle\n      W585694932",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W585694932/",
+      "teaser": null
+    },{
+      "title": "Shifting inequalities? Patterns of exclusion and inclusion in emerging forms of political participation",
+      "excerpt": "Dietlind Stolle, Marc Hooghe\n      Shifting inequalities? Patterns of exclusion and inclusion in emerging forms of political participation\n      \n      Dietlind Stolle, Marc Hooghe\n      W3125678056 Dietlind Stolle, Marc Hooghe\n      Shifting inequalities? Patterns of exclusion and inclusion in emerging forms of political participation\n      \n      Dietlind Stolle, Marc Hooghe\n      W3125678056",
+      "categories": ["Publications"],
+      "tags": ["RePEc: Research Papers in Economics"],
+      "url": "/publications/W3125678056/",
+      "teaser": null
+    },{
+      "title": "Explaining the new regionalism : the political economy of trade agreements",
+      "excerpt": "Leonardo Baccini\n      Explaining the new regionalism : the political economy of trade agreements\n      \n      Leonardo Baccini\n      W2982264986 Leonardo Baccini\n      Explaining the new regionalism : the political economy of trade agreements\n      \n      Leonardo Baccini\n      W2982264986",
+      "categories": ["Publications"],
+      "tags": ["Arrow@dit (Dublin Institute of Technology)"],
+      "url": "/publications/W2982264986/",
+      "teaser": null
+    },{
+      "title": "The Impact of Online and Offline mobilization on Participation Modes",
+      "excerpt": "Sara Vissers, Marc Hooghe, Dietlind Stolle, Valérie-Anne Mahéo\n      The Impact of Online and Offline mobilization on Participation Modes\n      \n      Sara Vissers, Marc Hooghe, Dietlind Stolle, Valérie-Anne Mahéo\n      W2525933183 Sara Vissers, Marc Hooghe, Dietlind Stolle, Valerie-Anne Maheo\n      The Impact of Online and Offline mobilization on Participation Modes\n      \n      Sara Vissers, Marc Hooghe, Dietlind Stolle, Valerie-Anne Maheo\n      W2525933183",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2525933183/",
+      "teaser": null
+    },{
+      "title": "Why Young Citizens keep away from politics",
+      "excerpt": "Valérie-Anne Mahéo, Dietlind Stolle, Yves Dejaeghere\n      Why Young Citizens keep away from politics\n      \n      Valérie-Anne Mahéo, Dietlind Stolle, Yves Dejaeghere\n      W2521016446 Valerie-Anne Maheo, Dietlind Stolle, Yves Dejaeghere\n      Why Young Citizens keep away from politics\n      \n      Valerie-Anne Maheo, Dietlind Stolle, Yves Dejaeghere\n      W2521016446",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2521016446/",
+      "teaser": null
+    },{
+      "title": "Het potentieel van politieke mobilisatie. Een experiment over internet en face-to-face mobilisatie",
+      "excerpt": "Marc Hooghe, Sara Vissers, Valérie-Anne Mahéo, Dietlind Stolle\n      Het potentieel van politieke mobilisatie. Een experiment over internet en face-to-face mobilisatie\n      \n      Marc Hooghe, Sara Vissers, Valérie-Anne Mahéo, Dietlind Stolle\n      W2520105673 Marc Hooghe, Sara Vissers, Valerie-Anne Maheo, Dietlind Stolle\n      Het potentieel van politieke mobilisatie. Een experiment over internet en face-to-face mobilisatie\n      \n      Marc Hooghe, Sara Vissers, Valerie-Anne Maheo, Dietlind Stolle\n      W2520105673",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2520105673/",
+      "teaser": null
+    },{
+      "title": "The Political Targeting of Social Programs in a Least Likely Case: Chile 2000-2006",
+      "excerpt": "Juan Pablo Luna, Rodrigo Z. Mardones\n      The Political Targeting of Social Programs in a Least Likely Case: Chile 2000-2006\n      \n      Juan Pablo Luna, Rodrigo Z. Mardones\n      W1572063858 Juan Pablo Luna, Rodrigo Z. Mardones\n      The Political Targeting of Social Programs in a Least Likely Case: Chile 2000-2006\n      \n      Juan Pablo Luna, Rodrigo Z. Mardones\n      W1572063858",
+      "categories": ["Publications"],
+      "tags": ["SSRN Electronic Journal"],
+      "url": "/publications/W1572063858/",
+      "teaser": null
+    },{
+      "title": "Caged: Expatriate Voting and its Limits",
+      "excerpt": "Roger Waldinger, Rafael Porzecanski, Thomas Soehl\n      Caged: Expatriate Voting and its Limits\n      \n      Roger Waldinger, Rafael Porzecanski, Thomas Soehl\n      W156366183 Roger Waldinger, Rafael Porzecanski, Thomas Soehl\n      Caged: Expatriate Voting and its Limits\n      \n      Roger Waldinger, Rafael Porzecanski, Thomas Soehl\n      W156366183",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W156366183/",
       "teaser": null
     },{
       "title": "Party System Institutionalization: The Case of Chile and Why We Need to Un-Pack the Concept and its Measurement",
@@ -7055,11 +7993,32 @@ var store = [{
       "url": "/publications/10.1080-13537110802473274/",
       "teaser": null
     },{
+      "title": "Public opinion and the use of political websites: an analysis of political attitudes online and offline in Ireland",
+      "excerpt": "Matthew Wall, Robert Costello, Maria Laura Sudulich, Eric Miguel Ávila Ponce de León, Leonardo Baccini\n      Public opinion and the use of political websites: an analysis of political attitudes online and offline in Ireland\n      \n      Matthew Wall, Robert Costello, Maria Laura Sudulich, Eric Miguel Ávila Ponce de León, Leonardo Baccini\n      W2739027805 Matthew Wall, Robert Costello, Maria Laura Sudulich, Eric Miguel Ávila Ponce de León, Leonardo Baccini\n      Public opinion and the use of political websites: an analysis of political attitudes online and offline in Ireland\n      \n      Matthew Wall, Robert Costello, Maria Laura Sudulich, Eric Miguel Ávila Ponce de León, Leonardo Baccini\n      W2739027805",
+      "categories": ["Publications"],
+      "tags": ["University of Twente Research Information"],
+      "url": "/publications/W2739027805/",
+      "teaser": null
+    },{
       "title": "Ethnic Diversity and Generalized Trust in Europe",
       "excerpt": "Marc Hooghe, Tim Reeskens, Dietlind Stolle, Ann Trappers\n      Ethnic Diversity and Generalized Trust in Europe\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle, Ann Trappers\n      10.1177-0010414008325286 Marc Hooghe, Tim Reeskens, Dietlind Stolle, Ann Trappers\n      Ethnic Diversity and Generalized Trust in Europe\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle, Ann Trappers\n      10.1177-0010414008325286",
       "categories": ["Publications"],
       "tags": ["Comparative Political Studies"],
       "url": "/publications/10.1177-0010414008325286/",
+      "teaser": null
+    },{
+      "title": "An analysis of military use of commercial satellite communications",
+      "excerpt": "Benjamin Forest\n      An analysis of military use of commercial satellite communications\n      \n      Benjamin Forest\n      W57594284 Benjamin Forest\n      An analysis of military use of commercial satellite communications\n      \n      Benjamin Forest\n      W57594284",
+      "categories": ["Publications"],
+      "tags": ["Defense Technical Information Center (DTIC)"],
+      "url": "/publications/W57594284/",
+      "teaser": null
+    },{
+      "title": "Ethnic Ties in Multinational States: Ethnic Diversity and the Development of Generalized Trust",
+      "excerpt": "Allison Harell, Dietlind Stolle\n      Ethnic Ties in Multinational States: Ethnic Diversity and the Development of Generalized Trust\n      \n      Allison Harell, Dietlind Stolle\n      W2281886673 Allison Harell, Dietlind Stolle\n      Ethnic Ties in Multinational States: Ethnic Diversity and the Development of Generalized Trust\n      \n      Allison Harell, Dietlind Stolle\n      W2281886673",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2281886673/",
       "teaser": null
     },{
       "title": "FASHIONING SOCIAL JUSTICE THROUGH POLITICAL CONSUMERISM, CAPITALISM, AND THE INTERNET1",
@@ -7074,6 +8033,20 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Transactions in GIS"],
       "url": "/publications/10.1111-j.1467-9671.2008.01109.x/",
+      "teaser": null
+    },{
+      "title": "Who are the young people that do not participate",
+      "excerpt": "Yves Dejaeghere, Valérie-Anne Mahéo, Dietlind Stolle\n      Who are the young people that do not participate\n      \n      Yves Dejaeghere, Valérie-Anne Mahéo, Dietlind Stolle\n      W2526181704 Yves Dejaeghere, Valerie-Anne Maheo, Dietlind Stolle\n      Who are the young people that do not participate\n      \n      Yves Dejaeghere, Valerie-Anne Maheo, Dietlind Stolle\n      W2526181704",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2526181704/",
+      "teaser": null
+    },{
+      "title": "The Potential of Political Mobilization: Results of a Cross-Cultural Experiment on Internet and Face-to-Face Mobilization Efforts",
+      "excerpt": "Marc Hooghe, Sara Vissers, Valérie-Anne Mahéo, Dietlind Stolle\n      The Potential of Political Mobilization: Results of a Cross-Cultural Experiment on Internet and Face-to-Face Mobilization Efforts\n      \n      Marc Hooghe, Sara Vissers, Valérie-Anne Mahéo, Dietlind Stolle\n      W2521753639 Marc Hooghe, Sara Vissers, Valerie-Anne Maheo, Dietlind Stolle\n      The Potential of Political Mobilization: Results of a Cross-Cultural Experiment on Internet and Face-to-Face Mobilization Efforts\n      \n      Marc Hooghe, Sara Vissers, Valerie-Anne Maheo, Dietlind Stolle\n      W2521753639",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2521753639/",
       "teaser": null
     },{
       "title": "The State and Social Capital: An Institutional Theory of Generalized Trust",
@@ -7095,6 +8068,20 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Cellular Microbiology"],
       "url": "/publications/10.1111-j.1462-5822.2008.01165.x/",
+      "teaser": null
+    },{
+      "title": "Integration policies and social cohesion Indicators in Europe: a multilevel test on 19 countries",
+      "excerpt": "Tim Reeskens, Marc Hooghe, Dietlind Stolle\n      Integration policies and social cohesion Indicators in Europe: a multilevel test on 19 countries\n      \n      Tim Reeskens, Marc Hooghe, Dietlind Stolle\n      W2522284212 Tim Reeskens, Marc Hooghe, Dietlind Stolle\n      Integration policies and social cohesion Indicators in Europe: a multilevel test on 19 countries\n      \n      Tim Reeskens, Marc Hooghe, Dietlind Stolle\n      W2522284212",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2522284212/",
+      "teaser": null
+    },{
+      "title": "What do Women Really Know: A Gendered Analysis of Political Knowledge",
+      "excerpt": "Dietlind Stolle, Elisabeth Gidengil\n      What do Women Really Know: A Gendered Analysis of Political Knowledge\n      \n      Dietlind Stolle, Elisabeth Gidengil\n      W2211411338 Dietlind Stolle, Elisabeth Gidengil\n      What do Women Really Know: A Gendered Analysis of Political Knowledge\n      \n      Dietlind Stolle, Elisabeth Gidengil\n      W2211411338",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2211411338/",
       "teaser": null
     },{
       "title": "Issue salience, issue ownership, and issue-based vote choice",
@@ -7132,6 +8119,13 @@ var store = [{
       "url": "/publications/10.1111-j.1467-9248.2007.00714.x/",
       "teaser": null
     },{
+      "title": "Does ethnic drive down generalized trust in Europe? A comparative investigation of ESS and OECD figures",
+      "excerpt": "Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      Does ethnic drive down generalized trust in Europe? A comparative investigation of ESS and OECD figures\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      W2527094592 Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      Does ethnic drive down generalized trust in Europe? A comparative investigation of ESS and OECD figures\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      W2527094592",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2527094592/",
+      "teaser": null
+    },{
       "title": "The Territorial Politics of Representation",
       "excerpt": "Benjamin Forest\n      The Territorial Politics of Representation\n      \n      Benjamin Forest\n      10.4135-9781848607880.n23 Benjamin Forest\n      The Territorial Politics of Representation\n      \n      Benjamin Forest\n      10.4135-9781848607880.n23",
       "categories": ["Publications"],
@@ -7160,11 +8154,32 @@ var store = [{
       "url": "/publications/10.1111-j.1944-8287.2008.tb00400.x/",
       "teaser": null
     },{
+      "title": "The potential of political mobilization: an experiment on internet and face-to-face mobilization efforts",
+      "excerpt": "Marc Hooghe, Valérie-Anne Mahéo, Dietlind Stolle, Sara Vissers\n      The potential of political mobilization: an experiment on internet and face-to-face mobilization efforts\n      \n      Marc Hooghe, Valérie-Anne Mahéo, Dietlind Stolle, Sara Vissers\n      W2520811710 Marc Hooghe, Valerie-Anne Maheo, Dietlind Stolle, Sara Vissers\n      The potential of political mobilization: an experiment on internet and face-to-face mobilization efforts\n      \n      Marc Hooghe, Valerie-Anne Maheo, Dietlind Stolle, Sara Vissers\n      W2520811710",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2520811710/",
+      "teaser": null
+    },{
+      "title": "Representación política en América Latina: el estado de la cuestión y una propuesta de agenda",
+      "excerpt": "Juan Pablo Luna\n      Representación política en América Latina: el estado de la cuestión y una propuesta de agenda\n      \n      Juan Pablo Luna\n      W1858930128 Juan Pablo Luna\n      Representación política en America Latina: el estado de la cuestión y una propuesta de agenda\n      \n      Juan Pablo Luna\n      W1858930128",
+      "categories": ["Publications"],
+      "tags": ["Americanae (AECID Library)"],
+      "url": "/publications/W1858930128/",
+      "teaser": null
+    },{
       "title": "Predicting Solar Flares by Data Assimilation in Avalanche Models",
       "excerpt": "Éric Bélanger, Alain Vincent, Paul Charbonneau\n      Predicting Solar Flares by Data Assimilation in Avalanche Models\n      \n      Éric Bélanger, Alain Vincent, Paul Charbonneau\n      10.1007-s11207-007-9009-3 Eric Belanger, Alain Vincent, Paul Charbonneau\n      Predicting Solar Flares by Data Assimilation in Avalanche Models\n      \n      Eric Belanger, Alain Vincent, Paul Charbonneau\n      10.1007-s11207-007-9009-3",
       "categories": ["Publications"],
       "tags": ["Solar Physics"],
       "url": "/publications/10.1007-s11207-007-9009-3/",
+      "teaser": null
+    },{
+      "title": "What does politics mean to you? Young citizens and extra-parliamentary forms of political action",
+      "excerpt": "Dietlind Stolle, Ellen Quintelier, Allison Harell, Laura Nishikawa\n      What does politics mean to you? Young citizens and extra-parliamentary forms of political action\n      \n      Dietlind Stolle, Ellen Quintelier, Allison Harell, Laura Nishikawa\n      W2522726965 Dietlind Stolle, Ellen Quintelier, Allison Harell, Laura Nishikawa\n      What does politics mean to you? Young citizens and extra-parliamentary forms of political action\n      \n      Dietlind Stolle, Ellen Quintelier, Allison Harell, Laura Nishikawa\n      W2522726965",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2522726965/",
       "teaser": null
     },{
       "title": "How Sophisticated Can a Voter Be to Make Causal Attributions? A Response to Gomez and Wilson's Comment",
@@ -7195,11 +8210,88 @@ var store = [{
       "url": "/publications/10.1177-0002716206298712/",
       "teaser": null
     },{
+      "title": "Young sovereignists and attitudes about federalism",
+      "excerpt": "Éric Bélanger, Andrea M. L. Perrella\n      Young sovereignists and attitudes about federalism\n      \n      Éric Bélanger, Andrea M. L. Perrella\n      W2160877986 Eric Belanger, Andrea M. L. Perrella\n      Young sovereignists and attitudes about federalism\n      \n      Eric Belanger, Andrea M. L. Perrella\n      W2160877986",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2160877986/",
+      "teaser": null
+    },{
       "title": "Specific interaction of HeLa cell proteins with coxsackievirus B3 3'UTR: La autoantigen binds the 3' and 5'UTR independently of the poly(A) tail",
       "excerpt": "Paul Cheung, Travis Lim, Jane Yuan, Mary Zhang, David Chau, Bruce M. McManus, Decheng Yang\n      Specific interaction of HeLa cell proteins with coxsackievirus B3 3'UTR: La autoantigen binds the 3' and 5'UTR independently of the poly(A) tail\n      \n      Paul Cheung, Travis Lim, Jane Yuan, Mary Zhang, David Chau, Bruce M. McManus, Decheng Yang\n      10.1111-j.1462-5822.2007.00904.x Paul Cheung, Travis Lim, Jane Yuan, Mary Zhang, David Chau, Bruce M. McManus, Decheng Yang\n      Specific interaction of HeLa cell proteins with coxsackievirus B3 3'UTR: La autoantigen binds the 3' and 5'UTR independently of the poly(A) tail\n      \n      Paul Cheung, Travis Lim, Jane Yuan, Mary Zhang, David Chau, Bruce M. McManus, Decheng Yang\n      10.1111-j.1462-5822.2007.00904.x",
       "categories": ["Publications"],
       "tags": ["Cellular Microbiology"],
       "url": "/publications/10.1111-j.1462-5822.2007.00904.x/",
+      "teaser": null
+    },{
+      "title": "The Quality of Government and Social Capital: A Theory of Political Institutions and Generalized Trust",
+      "excerpt": "Bo Rothstein, Dietlind Stolle\n      The Quality of Government and Social Capital: A Theory of Political Institutions and Generalized Trust\n      \n      Bo Rothstein, Dietlind Stolle\n      W2189129948 Bo Rothstein, Dietlind Stolle\n      The Quality of Government and Social Capital: A Theory of Political Institutions and Generalized Trust\n      \n      Bo Rothstein, Dietlind Stolle\n      W2189129948",
+      "categories": ["Publications"],
+      "tags": ["Gothenburg University Publications Electronic Archive (Gothenburg University)"],
+      "url": "/publications/W2189129948/",
+      "teaser": null
+    },{
+      "title": "Mobilizing Consumers for Global Social Justice Responsibility-Taking : The Politics of Consumption / The Consumption of Politics",
+      "excerpt": "Michele Micheletti, Dietlind Stolle\n      Mobilizing Consumers for Global Social Justice Responsibility-Taking : The Politics of Consumption / The Consumption of Politics\n      \n      Michele Micheletti, Dietlind Stolle\n      W561747264 Michele Micheletti, Dietlind Stolle\n      Mobilizing Consumers for Global Social Justice Responsibility-Taking : The Politics of Consumption / The Consumption of Politics\n      \n      Michele Micheletti, Dietlind Stolle\n      W561747264",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W561747264/",
+      "teaser": null
+    },{
+      "title": "Network Diversity and Political Participation: A Complication or an Asset?",
+      "excerpt": "Allison Harrell, Dietlind Stolle, Ellen Quintelier\n      Network Diversity and Political Participation: A Complication or an Asset?\n      \n      Allison Harrell, Dietlind Stolle, Ellen Quintelier\n      W2525944837 Allison Harrell, Dietlind Stolle, Ellen Quintelier\n      Network Diversity and Political Participation: A Complication or an Asset?\n      \n      Allison Harrell, Dietlind Stolle, Ellen Quintelier\n      W2525944837",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2525944837/",
+      "teaser": null
+    },{
+      "title": "Socializing new citizens : citizenship education and students' political resources in Belgium and Canada",
+      "excerpt": "Ellen Claes, Dietlind Stolle, Marc Hooghe\n      Socializing new citizens : citizenship education and students' political resources in Belgium and Canada\n      \n      Ellen Claes, Dietlind Stolle, Marc Hooghe\n      W2524630985 Ellen Claes, Dietlind Stolle, Marc Hooghe\n      Socializing new citizens : citizenship education and students' political resources in Belgium and Canada\n      \n      Ellen Claes, Dietlind Stolle, Marc Hooghe\n      W2524630985",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2524630985/",
+      "teaser": null
+    },{
+      "title": "Integration regimes, social trust and ethnocentrism: the effects of integration policies on social cohesion in Europe",
+      "excerpt": "Marc Hooghe, Tim Reeskens, Dietlind Stolle, Ann Trappers\n      Integration regimes, social trust and ethnocentrism: the effects of integration policies on social cohesion in Europe\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle, Ann Trappers\n      W2522226623 Marc Hooghe, Tim Reeskens, Dietlind Stolle, Ann Trappers\n      Integration regimes, social trust and ethnocentrism: the effects of integration policies on social cohesion in Europe\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle, Ann Trappers\n      W2522226623",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2522226623/",
+      "teaser": null
+    },{
+      "title": "Diversity, ethnocentrism and trust in Europe",
+      "excerpt": "Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      Diversity, ethnocentrism and trust in Europe\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      W2520681105 Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      Diversity, ethnocentrism and trust in Europe\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      W2520681105",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2520681105/",
+      "teaser": null
+    },{
+      "title": "Diversity, multiculturalism and social cohesion: Trust and ethnocentrism in European societies",
+      "excerpt": "Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      Diversity, multiculturalism and social cohesion: Trust and ethnocentrism in European societies\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      W2520625806 Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      Diversity, multiculturalism and social cohesion: Trust and ethnocentrism in European societies\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      W2520625806",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2520625806/",
+      "teaser": null
+    },{
+      "title": "Ethnic diversity, integration policy and social cohesion in Europe: a multilevel analysis of 20 European countries",
+      "excerpt": "Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      Ethnic diversity, integration policy and social cohesion in Europe: a multilevel analysis of 20 European countries\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      W2519102682 Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      Ethnic diversity, integration policy and social cohesion in Europe: a multilevel analysis of 20 European countries\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      W2519102682",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2519102682/",
+      "teaser": null
+    },{
+      "title": "Desafección cívica, polarización\\nideológica y calidad de la\\ndemocracia: una introducción al\\nanuario político de América Latina",
+      "excerpt": "David Altman, Juan Pablo Luna\n      Desafección cívica, polarización\\nideológica y calidad de la\\ndemocracia: una introducción al\\nanuario político de América Latina\n      \n      David Altman, Juan Pablo Luna\n      W2027256727 David Altman, Juan Pablo Luna\n      Desafección cívica, polarización\\nideológica y calidad de la\\ndemocracia: una introducción al\\nanuario político de America Latina\n      \n      David Altman, Juan Pablo Luna\n      W2027256727",
+      "categories": ["Publications"],
+      "tags": ["Redalyc (Universidad Autónoma del Estado de México)"],
+      "url": "/publications/W2027256727/",
+      "teaser": null
+    },{
+      "title": "Iowa couronne Royal",
+      "excerpt": "Éric Bélanger, Christine Fauvelle‐Aymar, Michael S. Lewis‐Beck\n      Iowa couronne Royal\n      \n      Éric Bélanger, Christine Fauvelle‐Aymar, Michael S. Lewis‐Beck\n      W13077926 Eric Belanger, Christine Fauvelle‐Aymar, Michael S. Lewis‐Beck\n      Iowa couronne Royal\n      \n      Eric Belanger, Christine Fauvelle‐Aymar, Michael S. Lewis‐Beck\n      W13077926",
+      "categories": ["Publications"],
+      "tags": ["Libération"],
+      "url": "/publications/W13077926/",
       "teaser": null
     },{
       "title": "Desafección cívica, polarización ideológica y calidad de la democracia: una introducción al Anuario Político de América Latina",
@@ -7238,6 +8330,13 @@ var store = [{
       "teaser": null
     },{
       "title": "Party, Ideology, and Vote Intentions: Dynamics from the 2002 French Electoral Panel",
+      "excerpt": "Éric Bélanger, Michael S. Lewis‐Beck, Jean Chiche, Vincent Tiberj\n      Party, Ideology, and Vote Intentions: Dynamics from the 2002 French Electoral Panel\n      \n      Éric Bélanger, Michael S. Lewis‐Beck, Jean Chiche, Vincent Tiberj\n      W4298872393 Eric Belanger, Michael S. Lewis‐Beck, Jean Chiche, Vincent Tiberj\n      Party, Ideology, and Vote Intentions: Dynamics from the 2002 French Electoral Panel\n      \n      Eric Belanger, Michael S. Lewis‐Beck, Jean Chiche, Vincent Tiberj\n      W4298872393",
+      "categories": ["Publications"],
+      "tags": ["SPIRE (Sciences Po)"],
+      "url": "/publications/W4298872393/",
+      "teaser": null
+    },{
+      "title": "Party, Ideology, and Vote Intentions: Dynamics from the 2002 French Electoral Panel",
       "excerpt": "Éric Bélanger, Michael S. Lewis‐Beck, Jean Chiche, Vincent Tiberj\n      Party, Ideology, and Vote Intentions: Dynamics from the 2002 French Electoral Panel\n      \n      Éric Bélanger, Michael S. Lewis‐Beck, Jean Chiche, Vincent Tiberj\n      10.1177-106591290605900401 Eric Belanger, Michael S. Lewis‐Beck, Jean Chiche, Vincent Tiberj\n      Party, Ideology, and Vote Intentions: Dynamics from the 2002 French Electoral Panel\n      \n      Eric Belanger, Michael S. Lewis‐Beck, Jean Chiche, Vincent Tiberj\n      10.1177-106591290605900401",
       "categories": ["Publications"],
       "tags": ["Political Research Quarterly"],
@@ -7265,11 +8364,46 @@ var store = [{
       "url": "/publications/10.1111-j.1365-246x.2006.02926.x/",
       "teaser": null
     },{
+      "title": "Nucleic-acid-based antiviral agents against positive single-stranded RNA viruses.",
+      "excerpt": "Travis Lim, Ji Yuan, Zhen Liu, Dexin Qiu, Alhousseynou Sall, Decheng Yang\n      Nucleic-acid-based antiviral agents against positive single-stranded RNA viruses.\n      \n      Travis Lim, Ji Yuan, Zhen Liu, Dexin Qiu, Alhousseynou Sall, Decheng Yang\n      W2417861565 Travis Lim, Ji Yuan, Zhen Liu, Dexin Qiu, Alhousseynou Sall, Decheng Yang\n      Nucleic-acid-based antiviral agents against positive single-stranded RNA viruses.\n      \n      Travis Lim, Ji Yuan, Zhen Liu, Dexin Qiu, Alhousseynou Sall, Decheng Yang\n      W2417861565",
+      "categories": ["Publications"],
+      "tags": ["PubMed"],
+      "url": "/publications/W2417861565/",
+      "teaser": null
+    },{
       "title": "Explaining the Rise of the LPF: Issues, Discontent, and the 2002 Dutch Election",
       "excerpt": "Éric Bélanger, Kees Aarts\n      Explaining the Rise of the LPF: Issues, Discontent, and the 2002 Dutch Election\n      \n      Éric Bélanger, Kees Aarts\n      10.1057-palgrave.ap.5500135 Eric Belanger, Kees Aarts\n      Explaining the Rise of the LPF: Issues, Discontent, and the 2002 Dutch Election\n      \n      Eric Belanger, Kees Aarts\n      10.1057-palgrave.ap.5500135",
       "categories": ["Publications"],
       "tags": ["Acta Politica"],
       "url": "/publications/10.1057-palgrave.ap.5500135/",
+      "teaser": null
+    },{
+      "title": "The Gender Gap Reversed : Political Consumerism as a Women-Friendly Form of Civic and Political Engagement",
+      "excerpt": "Dietlind Stolle, Michele Micheletti\n      The Gender Gap Reversed : Political Consumerism as a Women-Friendly Form of Civic and Political Engagement\n      \n      Dietlind Stolle, Michele Micheletti\n      W589546286 Dietlind Stolle, Michele Micheletti\n      The Gender Gap Reversed : Political Consumerism as a Women-Friendly Form of Civic and Political Engagement\n      \n      Dietlind Stolle, Michele Micheletti\n      W589546286",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W589546286/",
+      "teaser": null
+    },{
+      "title": "Een verschuiving van de politieke participatie : politieke participatie en ongelijkheid, 1974-2002",
+      "excerpt": "Marc Hooghe, Dietlind Stolle\n      Een verschuiving van de politieke participatie : politieke participatie en ongelijkheid, 1974-2002\n      \n      Marc Hooghe, Dietlind Stolle\n      W2525411328 Marc Hooghe, Dietlind Stolle\n      Een verschuiving van de politieke participatie : politieke participatie en ongelijkheid, 1974-2002\n      \n      Marc Hooghe, Dietlind Stolle\n      W2525411328",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2525411328/",
+      "teaser": null
+    },{
+      "title": "Variaties in samenleven : het samenleven in etnisch diverse gemeenschappen",
+      "excerpt": "Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      Variaties in samenleven : het samenleven in etnisch diverse gemeenschappen\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      W2520833399 Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      Variaties in samenleven : het samenleven in etnisch diverse gemeenschappen\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      W2520833399",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2520833399/",
+      "teaser": null
+    },{
+      "title": "Ethnic diversity, trust and ethnocentrism and Europe : a multi-level analysis of 21 European countries",
+      "excerpt": "Marc Hooghe, Tim Reeskens, Dietlind Stolle, Ann Trappers\n      Ethnic diversity, trust and ethnocentrism and Europe : a multi-level analysis of 21 European countries\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle, Ann Trappers\n      W2303928069 Marc Hooghe, Tim Reeskens, Dietlind Stolle, Ann Trappers\n      Ethnic diversity, trust and ethnocentrism and Europe : a multi-level analysis of 21 European countries\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle, Ann Trappers\n      W2303928069",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2303928069/",
       "teaser": null
     },{
       "title": "El secreto de mi éxito: Seis caminos para llegar y permanecer en Valparaíso",
@@ -7307,11 +8441,39 @@ var store = [{
       "url": "/publications/10.1073-pnas.0507314102/",
       "teaser": null
     },{
+      "title": "The Expansion of Political Action Repertoires: Theoretical Reflections on Results from the Nike Email Exchange Internet Campaign",
+      "excerpt": "Dietlind Stolle, Michele Micheletti\n      The Expansion of Political Action Repertoires: Theoretical Reflections on Results from the Nike Email Exchange Internet Campaign\n      \n      Dietlind Stolle, Michele Micheletti\n      W2305091858 Dietlind Stolle, Michele Micheletti\n      The Expansion of Political Action Repertoires: Theoretical Reflections on Results from the Nike Email Exchange Internet Campaign\n      \n      Dietlind Stolle, Michele Micheletti\n      W2305091858",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2305091858/",
+      "teaser": null
+    },{
+      "title": "Economic Voting and Political Sophistication in the U.S.: A Reassessment",
+      "excerpt": "Éric Bélanger, Jean‐François Godbout\n      Economic Voting and Political Sophistication in the U.S.: A Reassessment\n      \n      Éric Bélanger, Jean‐François Godbout\n      W1127036205 Eric Belanger, Jean‐Francois Godbout\n      Economic Voting and Political Sophistication in the U.S.: A Reassessment\n      \n      Eric Belanger, Jean‐Francois Godbout\n      W1127036205",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W1127036205/",
+      "teaser": null
+    },{
+      "title": "Solar Flares: Avalanche Models and Data Assimilation",
+      "excerpt": "Éric Bélanger, Paul Charbonneau, Alain Vincent\n      Solar Flares: Avalanche Models and Data Assimilation\n      \n      Éric Bélanger, Paul Charbonneau, Alain Vincent\n      W3023481660 Eric Belanger, Paul Charbonneau, Alain Vincent\n      Solar Flares: Avalanche Models and Data Assimilation\n      \n      Eric Belanger, Paul Charbonneau, Alain Vincent\n      W3023481660",
+      "categories": ["Publications"],
+      "tags": ["JRASC"],
+      "url": "/publications/W3023481660/",
+      "teaser": null
+    },{
       "title": "Politics in the Supermarket: Political Consumerism as a Form of Political Participation",
       "excerpt": "Dietlind Stolle, Marc Hooghe, Michele Micheletti\n      Politics in the Supermarket: Political Consumerism as a Form of Political Participation\n      \n      Dietlind Stolle, Marc Hooghe, Michele Micheletti\n      10.1177-0192512105053784 Dietlind Stolle, Marc Hooghe, Michele Micheletti\n      Politics in the Supermarket: Political Consumerism as a Form of Political Participation\n      \n      Dietlind Stolle, Marc Hooghe, Michele Micheletti\n      10.1177-0192512105053784",
       "categories": ["Publications"],
       "tags": ["International Political Science Review"],
       "url": "/publications/10.1177-0192512105053784/",
+      "teaser": null
+    },{
+      "title": "Religion and Identity in Modern Russia: The Revival of Orthodoxy and Islam",
+      "excerpt": "Benjamin Forest, Juliet Johnson, Мариэтта Степанянц\n      Religion and Identity in Modern Russia: The Revival of Orthodoxy and Islam\n      \n      Benjamin Forest, Juliet Johnson, Мариэтта Степанянц\n      W2892339813 Benjamin Forest, Juliet Johnson, Мариэтта Степанянц\n      Religion and Identity in Modern Russia: The Revival of Orthodoxy and Islam\n      \n      Benjamin Forest, Juliet Johnson, Мариэтта Степанянц\n      W2892339813",
+      "categories": ["Publications"],
+      "tags": ["Medical Entomology and Zoology"],
+      "url": "/publications/W2892339813/",
       "teaser": null
     },{
       "title": "United States Citizenship, Involvement, Democracy (CID) Survey, 2006",
@@ -7340,6 +8502,62 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Nonlinear processes in geophysics"],
       "url": "/publications/10.5194-npg-12-257-2005/",
+      "teaser": null
+    },{
+      "title": "La Victoire Anticipée des Travaillistes",
+      "excerpt": "Michael S. Lewis‐Beck, Richard Nadeau, Éric Bélanger\n      La Victoire Anticipée des Travaillistes\n      \n      Michael S. Lewis‐Beck, Richard Nadeau, Éric Bélanger\n      W944768634 Michael S. Lewis‐Beck, Richard Nadeau, Eric Belanger\n      La Victoire Anticipee des Travaillistes\n      \n      Michael S. Lewis‐Beck, Richard Nadeau, Eric Belanger\n      W944768634",
+      "categories": ["Publications"],
+      "tags": ["Libération"],
+      "url": "/publications/W944768634/",
+      "teaser": null
+    },{
+      "title": "A Case of Discursive Political Consumerism : The Nike Email Exchange",
+      "excerpt": "Michele Micheletti, Dietlind Stolle, Laura Nishikawa, Matthew Wright\n      A Case of Discursive Political Consumerism : The Nike Email Exchange\n      \n      Michele Micheletti, Dietlind Stolle, Laura Nishikawa, Matthew Wright\n      W597673372 Michele Micheletti, Dietlind Stolle, Laura Nishikawa, Matthew Wright\n      A Case of Discursive Political Consumerism : The Nike Email Exchange\n      \n      Michele Micheletti, Dietlind Stolle, Laura Nishikawa, Matthew Wright\n      W597673372",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W597673372/",
+      "teaser": null
+    },{
+      "title": "Clientelismo, patronaje y representación política: sobre el comentario de La política del llano",
+      "excerpt": "Juan Pablo Luna\n      Clientelismo, patronaje y representación política: sobre el comentario de La política del llano\n      \n      Juan Pablo Luna\n      W2728833041 Juan Pablo Luna\n      Clientelismo, patronaje y representación política: sobre el comentario de La política del llano\n      \n      Juan Pablo Luna\n      W2728833041",
+      "categories": ["Publications"],
+      "tags": ["Americanae (AECID Library)"],
+      "url": "/publications/W2728833041/",
+      "teaser": null
+    },{
+      "title": "Kroniek van een aangekondigde oorlog : een vergelijkend onderzoek naar de verslaggeving in de aanloop naar de oorlog in Irak",
+      "excerpt": "Marc Hooghe, Dietlind Stolle\n      Kroniek van een aangekondigde oorlog : een vergelijkend onderzoek naar de verslaggeving in de aanloop naar de oorlog in Irak\n      \n      Marc Hooghe, Dietlind Stolle\n      W2521681753 Marc Hooghe, Dietlind Stolle\n      Kroniek van een aangekondigde oorlog : een vergelijkend onderzoek naar de verslaggeving in de aanloop naar de oorlog in Irak\n      \n      Marc Hooghe, Dietlind Stolle\n      W2521681753",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2521681753/",
+      "teaser": null
+    },{
+      "title": "Etnische diversiteit, etnocentrisme en vertrouwen in Europa",
+      "excerpt": "Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      Etnische diversiteit, etnocentrisme en vertrouwen in Europa\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      W2520198497 Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      Etnische diversiteit, etnocentrisme en vertrouwen in Europa\n      \n      Marc Hooghe, Tim Reeskens, Dietlind Stolle\n      W2520198497",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2520198497/",
+      "teaser": null
+    },{
+      "title": "Gemeenschap der burgers",
+      "excerpt": "Beate Völker, Henk Flap, Herman Lelieveldt, Henk van der Kolk, René Veenstra, Anne Dijkstra, Julien Peschar, Herman G. van der Werfhorts, Ronan Van Rossem, Chris Baerveldt, René Bekkers, Marc Hooghe, Dietlind Stolle\n      Gemeenschap der burgers\n      \n      Beate Völker, Henk Flap, Herman Lelieveldt, Henk van der Kolk, René Veenstra, Anne Dijkstra, Julien Peschar, Herman G. van der Werfhorts, Ronan Van Rossem, Chris Baerveldt, René Bekkers, Marc Hooghe, Dietlind Stolle\n      W2477148934 Beate Volker, Henk Flap, Herman Lelieveldt, Henk van der Kolk, Rene Veenstra, Anne Dijkstra, Julien Peschar, Herman G. van der Werfhorts, Ronan Van Rossem, Chris Baerveldt, Rene Bekkers, Marc Hooghe, Dietlind Stolle\n      Gemeenschap der burgers\n      \n      Beate Volker, Henk Flap, Herman Lelieveldt, Henk van der Kolk, Rene Veenstra, Anne Dijkstra, Julien Peschar, Herman G. van der Werfhorts, Ronan Van Rossem, Chris Baerveldt, Rene Bekkers, Marc Hooghe, Dietlind Stolle\n      W2477148934",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2477148934/",
+      "teaser": null
+    },{
+      "title": "¿Un callejón sin salida? trayectorias políticas y alternativas de reforma en Uruguay",
+      "excerpt": "Juan Pablo Luna, Pablo Alegre\n      ¿Un callejón sin salida? trayectorias políticas y alternativas de reforma en Uruguay\n      \n      Juan Pablo Luna, Pablo Alegre\n      W197553783 Juan Pablo Luna, Pablo Alegre\n      ¿Un callejón sin salida? trayectorias políticas y alternativas de reforma en Uruguay\n      \n      Juan Pablo Luna, Pablo Alegre\n      W197553783",
+      "categories": ["Publications"],
+      "tags": ["Prisma eBooks"],
+      "url": "/publications/W197553783/",
+      "teaser": null
+    },{
+      "title": "Gemeenschap der burgers: Sociaal kapitaal in buurt, school en verenigingen",
+      "excerpt": "Beate Völker, Henk Flap, Herman Lelieveldt, Henk van der Kolk, René Veenstra, Anne M. Dijkstra, Julien Peschar, Herman G. van der Werfhorts, Ronan Van Rossem, Chris Baerveldt, René Bekkers, Marc Hooghe, Dietlind Stolle\n      Gemeenschap der burgers: Sociaal kapitaal in buurt, school en verenigingen\n      \n      Beate Völker, Henk Flap, Herman Lelieveldt, Henk van der Kolk, René Veenstra, Anne M. Dijkstra, Julien Peschar, Herman G. van der Werfhorts, Ronan Van Rossem, Chris Baerveldt, René Bekkers, Marc Hooghe, Dietlind Stolle\n      W1681982447 Beate Volker, Henk Flap, Herman Lelieveldt, Henk van der Kolk, Rene Veenstra, Anne M. Dijkstra, Julien Peschar, Herman G. van der Werfhorts, Ronan Van Rossem, Chris Baerveldt, Rene Bekkers, Marc Hooghe, Dietlind Stolle\n      Gemeenschap der burgers: Sociaal kapitaal in buurt, school en verenigingen\n      \n      Beate Volker, Henk Flap, Herman Lelieveldt, Henk van der Kolk, Rene Veenstra, Anne M. Dijkstra, Julien Peschar, Herman G. van der Werfhorts, Ronan Van Rossem, Chris Baerveldt, Rene Bekkers, Marc Hooghe, Dietlind Stolle\n      W1681982447",
+      "categories": ["Publications"],
+      "tags": ["University of Groningen research database (University of Groningen / Centre for Information Technology)"],
+      "url": "/publications/W1681982447/",
       "teaser": null
     },{
       "title": "Swedish Political Consumers : Who They Are and Why They Use the Market as an Arena for Politics",
@@ -7377,6 +8595,13 @@ var store = [{
       "url": "/publications/10.1017-s0007123405000074/",
       "teaser": null
     },{
+      "title": "Thermal evolution of the Mantle: Attractor and/or repeller?",
+      "excerpt": "E. M. Bunge, David S. Yuen, Alain Vincent, Éric Bélanger\n      Thermal evolution of the Mantle: Attractor and/or repeller?\n      \n      E. M. Bunge, David S. Yuen, Alain Vincent, Éric Bélanger\n      W2989854661 E. M. Bunge, David S. Yuen, Alain Vincent, Eric Belanger\n      Thermal evolution of the Mantle: Attractor and/or repeller?\n      \n      E. M. Bunge, David S. Yuen, Alain Vincent, Eric Belanger\n      W2989854661",
+      "categories": ["Publications"],
+      "tags": ["AGU Fall Meeting Abstracts"],
+      "url": "/publications/W2989854661/",
+      "teaser": null
+    },{
       "title": "The Roots of Social Capital: Attitudinal and Network Mechanisms in the Relation between Youth and Adult Indicators of Social Capital",
       "excerpt": "Dietlind Stolle, Marc Hooghe\n      The Roots of Social Capital: Attitudinal and Network Mechanisms in the Relation between Youth and Adult Indicators of Social Capital\n      \n      Dietlind Stolle, Marc Hooghe\n      10.1057-palgrave.ap.5500081 Dietlind Stolle, Marc Hooghe\n      The Roots of Social Capital: Attitudinal and Network Mechanisms in the Relation between Youth and Adult Indicators of Social Capital\n      \n      Dietlind Stolle, Marc Hooghe\n      10.1057-palgrave.ap.5500081",
       "categories": ["Publications"],
@@ -7396,6 +8621,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["National Identities"],
       "url": "/publications/10.1080-1460894042000312358/",
+      "teaser": null
+    },{
+      "title": "Issues, discontent, and third-party voting: The case of the Netherlands",
+      "excerpt": "Éric Bélanger, Kees Aarts\n      Issues, discontent, and third-party voting: The case of the Netherlands\n      \n      Éric Bélanger, Kees Aarts\n      W1685709322 Eric Belanger, Kees Aarts\n      Issues, discontent, and third-party voting: The case of the Netherlands\n      \n      Eric Belanger, Kees Aarts\n      W1685709322",
+      "categories": ["Publications"],
+      "tags": ["RePub (Erasmus University Rotterdam)"],
+      "url": "/publications/W1685709322/",
       "teaser": null
     },{
       "title": "Antipartyism and Third-Party Vote Choice",
@@ -7468,6 +8700,41 @@ var store = [{
       "url": "/publications/10.2747-0272-3638.25.1.31/",
       "teaser": null
     },{
+      "title": "Krävande unga politiska konsumenter (op-ed)",
+      "excerpt": "Michele Micheletti, Dietlind Stolle\n      Krävande unga politiska konsumenter (op-ed)\n      \n      Michele Micheletti, Dietlind Stolle\n      W611749607 Michele Micheletti, Dietlind Stolle\n      Krävande unga politiska konsumenter (op-ed)\n      \n      Michele Micheletti, Dietlind Stolle\n      W611749607",
+      "categories": ["Publications"],
+      "tags": ["Tvärsnitt"],
+      "url": "/publications/W611749607/",
+      "teaser": null
+    },{
+      "title": "Langetermijneffecten van jeugdparticipatie: Persistente effecten van deelname aan jeugdverenigingen in Nederland en de Verenigde Staten",
+      "excerpt": "René Bekkers, Marc Hooghe, Dietlind Stolle\n      Langetermijneffecten van jeugdparticipatie: Persistente effecten van deelname aan jeugdverenigingen in Nederland en de Verenigde Staten\n      \n      René Bekkers, Marc Hooghe, Dietlind Stolle\n      W2570283717 Rene Bekkers, Marc Hooghe, Dietlind Stolle\n      Langetermijneffecten van jeugdparticipatie: Persistente effecten van deelname aan jeugdverenigingen in Nederland en de Verenigde Staten\n      \n      Rene Bekkers, Marc Hooghe, Dietlind Stolle\n      W2570283717",
+      "categories": ["Publications"],
+      "tags": ["Data Archiving and Networked Services (DANS)"],
+      "url": "/publications/W2570283717/",
+      "teaser": null
+    },{
+      "title": "Jong geleerd is oud gedaan: onderzoek naar de verhouding tussen jongeren en politiek",
+      "excerpt": "Marc Hooghe, Dietlind Stolle\n      Jong geleerd is oud gedaan: onderzoek naar de verhouding tussen jongeren en politiek\n      \n      Marc Hooghe, Dietlind Stolle\n      W2523506683 Marc Hooghe, Dietlind Stolle\n      Jong geleerd is oud gedaan: onderzoek naar de verhouding tussen jongeren en politiek\n      \n      Marc Hooghe, Dietlind Stolle\n      W2523506683",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2523506683/",
+      "teaser": null
+    },{
+      "title": "Consumers as political participants? Shifts in political action repertoires in Western societies",
+      "excerpt": "Dietlind Stolle, Marc Hooghe\n      Consumers as political participants? Shifts in political action repertoires in Western societies\n      \n      Dietlind Stolle, Marc Hooghe\n      W2519446158 Dietlind Stolle, Marc Hooghe\n      Consumers as political participants? Shifts in political action repertoires in Western societies\n      \n      Dietlind Stolle, Marc Hooghe\n      W2519446158",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2519446158/",
+      "teaser": null
+    },{
+      "title": "Lange termijneffecten van jeugdparticipatie",
+      "excerpt": "René Bekkers, Marc Hooghe, Dietlind Stolle\n      Lange termijneffecten van jeugdparticipatie\n      \n      René Bekkers, Marc Hooghe, Dietlind Stolle\n      W2477377418 Rene Bekkers, Marc Hooghe, Dietlind Stolle\n      Lange termijneffecten van jeugdparticipatie\n      \n      Rene Bekkers, Marc Hooghe, Dietlind Stolle\n      W2477377418",
+      "categories": ["Publications"],
+      "tags": ["Default journal"],
+      "url": "/publications/W2477377418/",
+      "teaser": null
+    },{
       "title": "Ideología y competencia partidaria en dos post-transiciones: Chile y Uruguay en perspectiva comparada",
       "excerpt": "Manuel Alcántara Saéz, Juan Pablo Luna\n      Ideología y competencia partidaria en dos post-transiciones: Chile y Uruguay en perspectiva comparada\n      \n      Manuel Alcántara Saéz, Juan Pablo Luna\n      10.4067-s0718-090x2004000100006 Manuel Alcántara Saez, Juan Pablo Luna\n      Ideología y competencia partidaria en dos post-transiciones: Chile y Uruguay en perspectiva comparada\n      \n      Manuel Alcántara Saez, Juan Pablo Luna\n      10.4067-s0718-090x2004000100006",
       "categories": ["Publications"],
@@ -7538,6 +8805,55 @@ var store = [{
       "url": "/publications/10.1111-1467-9477.t01-1-00077/",
       "teaser": null
     },{
+      "title": "Konsumtion har blivit politiskt medel (op-ed)",
+      "excerpt": "Michele Micheletti, Dietlind Stolle\n      Konsumtion har blivit politiskt medel (op-ed)\n      \n      Michele Micheletti, Dietlind Stolle\n      W640651411 Michele Micheletti, Dietlind Stolle\n      Konsumtion har blivit politiskt medel (op-ed)\n      \n      Michele Micheletti, Dietlind Stolle\n      W640651411",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W640651411/",
+      "teaser": null
+    },{
+      "title": "Politiska konsumenter: Marknaden som arena för politiska val",
+      "excerpt": "Michele Micheletti, Dietlind Stolle\n      Politiska konsumenter: Marknaden som arena för politiska val\n      \n      Michele Micheletti, Dietlind Stolle\n      W586902415 Michele Micheletti, Dietlind Stolle\n      Politiska konsumenter: Marknaden som arena for politiska val\n      \n      Michele Micheletti, Dietlind Stolle\n      W586902415",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W586902415/",
+      "teaser": null
+    },{
+      "title": "Age matters: age and cohort specific socialization effects of participation",
+      "excerpt": "Marc Hooghe, Dietlind Stolle\n      Age matters: age and cohort specific socialization effects of participation\n      \n      Marc Hooghe, Dietlind Stolle\n      W2521493121 Marc Hooghe, Dietlind Stolle\n      Age matters: age and cohort specific socialization effects of participation\n      \n      Marc Hooghe, Dietlind Stolle\n      W2521493121",
+      "categories": ["Publications"],
+      "tags": ["European Political Science"],
+      "url": "/publications/W2521493121/",
+      "teaser": null
+    },{
+      "title": "Conclusion: new directions for social capital research",
+      "excerpt": "Dietlind Stolle, Marc Hooghe\n      Conclusion: new directions for social capital research\n      \n      Dietlind Stolle, Marc Hooghe\n      W2520904144 Dietlind Stolle, Marc Hooghe\n      Conclusion: new directions for social capital research\n      \n      Dietlind Stolle, Marc Hooghe\n      W2520904144",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2520904144/",
+      "teaser": null
+    },{
+      "title": "Youth organisations within political parties: political recruitment and the transformation of party systems",
+      "excerpt": "Marc Hooghe, Dietlind Stolle, Patrick Stouthuysen\n      Youth organisations within political parties: political recruitment and the transformation of party systems\n      \n      Marc Hooghe, Dietlind Stolle, Patrick Stouthuysen\n      W2519669960 Marc Hooghe, Dietlind Stolle, Patrick Stouthuysen\n      Youth organisations within political parties: political recruitment and the transformation of party systems\n      \n      Marc Hooghe, Dietlind Stolle, Patrick Stouthuysen\n      W2519669960",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2519669960/",
+      "teaser": null
+    },{
+      "title": "Zwischen Markt und Zivilgesellschaft : Politischer Konsum als Bürgerliches Engagement",
+      "excerpt": "Dietlind Stolle, Marc Hooghe, Michele Micheletti\n      Zwischen Markt und Zivilgesellschaft : Politischer Konsum als Bürgerliches Engagement\n      \n      Dietlind Stolle, Marc Hooghe, Michele Micheletti\n      W1574848164 Dietlind Stolle, Marc Hooghe, Michele Micheletti\n      Zwischen Markt und Zivilgesellschaft : Politischer Konsum als Burgerliches Engagement\n      \n      Dietlind Stolle, Marc Hooghe, Michele Micheletti\n      W1574848164",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W1574848164/",
+      "teaser": null
+    },{
+      "title": "Generating Social Capital. Civil Society and Institutions in Comparative Perspective.",
+      "excerpt": "Marc Hooghe, Dietlind Stolle\n      Generating Social Capital. Civil Society and Institutions in Comparative Perspective.\n      \n      Marc Hooghe, Dietlind Stolle\n      W1525734066 Marc Hooghe, Dietlind Stolle\n      Generating Social Capital. Civil Society and Institutions in Comparative Perspective.\n      \n      Marc Hooghe, Dietlind Stolle\n      W1525734066",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W1525734066/",
+      "teaser": null
+    },{
       "title": "Conflicting Approaches to the Study of Social Capital",
       "excerpt": "Dietlind Stolle, Marc Hooghe\n      Conflicting Approaches to the Study of Social Capital\n      \n      Dietlind Stolle, Marc Hooghe\n      10.2143-ep.10.1.503869 Dietlind Stolle, Marc Hooghe\n      Conflicting Approaches to the Study of Social Capital\n      \n      Dietlind Stolle, Marc Hooghe\n      10.2143-ep.10.1.503869",
       "categories": ["Publications"],
@@ -7578,6 +8894,13 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Revista Española de Geriatría y Gerontología"],
       "url": "/publications/10.1016-s0211-139x(03)74874-4/",
+      "teaser": null
+    },{
+      "title": "Comparison of very high Prandtl Number and Infinite Prandtl Number Plumes Using the Adjoint Equations",
+      "excerpt": "Catherine A. Hier Majumder, Éric Bélanger, David A. Yuen, Alain Vincent\n      Comparison of very high Prandtl Number and Infinite Prandtl Number Plumes Using the Adjoint Equations\n      \n      Catherine A. Hier Majumder, Éric Bélanger, David A. Yuen, Alain Vincent\n      W3120477647 Catherine A. Hier Majumder, Eric Belanger, David A. Yuen, Alain Vincent\n      Comparison of very high Prandtl Number and Infinite Prandtl Number Plumes Using the Adjoint Equations\n      \n      Catherine A. Hier Majumder, Eric Belanger, David A. Yuen, Alain Vincent\n      W3120477647",
+      "categories": ["Publications"],
+      "tags": ["AGU Fall Meeting Abstracts"],
+      "url": "/publications/W3120477647/",
       "teaser": null
     },{
       "title": "Book Review: Who am I? An autobiography of emotion, mind and spirit",
@@ -7622,11 +8945,67 @@ var store = [{
       "url": "/publications/10.1515-9781474400589-010/",
       "teaser": null
     },{
+      "title": "Sociaal kapitaal: een taak voor het verenigingsleven?",
+      "excerpt": "Marc Hooghe, Dietlind Stolle\n      Sociaal kapitaal: een taak voor het verenigingsleven?\n      \n      Marc Hooghe, Dietlind Stolle\n      W3131419052 Marc Hooghe, Dietlind Stolle\n      Sociaal kapitaal: een taak voor het verenigingsleven?\n      \n      Marc Hooghe, Dietlind Stolle\n      W3131419052",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W3131419052/",
+      "teaser": null
+    },{
+      "title": "Pesimismo estructural o voto económico",
+      "excerpt": "Juan Pablo Luna\n      Pesimismo estructural o voto económico\n      \n      Juan Pablo Luna\n      W3099015487 Juan Pablo Luna\n      Pesimismo estructural o voto económico\n      \n      Juan Pablo Luna\n      W3099015487",
+      "categories": ["Publications"],
+      "tags": ["Revista Uruguaya de Ciencia Política"],
+      "url": "/publications/W3099015487/",
+      "teaser": null
+    },{
+      "title": "¿Pesimismo estructural o voto económico? : macropolitics en Uruguay",
+      "excerpt": "Juan Pablo Luna\n      ¿Pesimismo estructural o voto económico? : macropolitics en Uruguay\n      \n      Juan Pablo Luna\n      W2947229762 Juan Pablo Luna\n      ¿Pesimismo estructural o voto económico? : macropolitics en Uruguay\n      \n      Juan Pablo Luna\n      W2947229762",
+      "categories": ["Publications"],
+      "tags": ["LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Científicas)"],
+      "url": "/publications/W2947229762/",
+      "teaser": null
+    },{
+      "title": "The effect of youth participation on adult participation",
+      "excerpt": "Dietlind Stolle, Marc Hooghe\n      The effect of youth participation on adult participation\n      \n      Dietlind Stolle, Marc Hooghe\n      W2527610372 Dietlind Stolle, Marc Hooghe\n      The effect of youth participation on adult participation\n      \n      Dietlind Stolle, Marc Hooghe\n      W2527610372",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2527610372/",
+      "teaser": null
+    },{
+      "title": "Preparing for the Learning School of Democracy. Socialization Effects of Youth Participation.",
+      "excerpt": "Marc Hooghe, Dietlind Stolle\n      Preparing for the Learning School of Democracy. Socialization Effects of Youth Participation.\n      \n      Marc Hooghe, Dietlind Stolle\n      W2527282636 Marc Hooghe, Dietlind Stolle\n      Preparing for the Learning School of Democracy. Socialization Effects of Youth Participation.\n      \n      Marc Hooghe, Dietlind Stolle\n      W2527282636",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2527282636/",
+      "teaser": null
+    },{
+      "title": "Youth Socialization and the Creation of Social Capital.",
+      "excerpt": "Dietlind Stolle, Marc Hooghe\n      Youth Socialization and the Creation of Social Capital.\n      \n      Dietlind Stolle, Marc Hooghe\n      W2523659655 Dietlind Stolle, Marc Hooghe\n      Youth Socialization and the Creation of Social Capital.\n      \n      Dietlind Stolle, Marc Hooghe\n      W2523659655",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2523659655/",
+      "teaser": null
+    },{
+      "title": "Jeugdparticipatie en sociaal kapitaal-indicatoren op volwassen leeftijd",
+      "excerpt": "Marc Hooghe, Dietlind Stolle\n      Jeugdparticipatie en sociaal kapitaal-indicatoren op volwassen leeftijd\n      \n      Marc Hooghe, Dietlind Stolle\n      W2461238489 Marc Hooghe, Dietlind Stolle\n      Jeugdparticipatie en sociaal kapitaal-indicatoren op volwassen leeftijd\n      \n      Marc Hooghe, Dietlind Stolle\n      W2461238489",
+      "categories": ["Publications"],
+      "tags": ["Lirias (KU Leuven)"],
+      "url": "/publications/W2461238489/",
+      "teaser": null
+    },{
       "title": "United States Citizenship, Involvement, Democracy (CID) Survey, 2006",
       "excerpt": "Marc Morjé Howard, James L. Gibson, Dietlind Stolle\n      United States Citizenship, Involvement, Democracy (CID) Survey, 2006\n      \n      Marc Morjé Howard, James L. Gibson, Dietlind Stolle\n      10.3886-icpsr04607 Marc Morje Howard, James L. Gibson, Dietlind Stolle\n      United States Citizenship, Involvement, Democracy (CID) Survey, 2006\n      \n      Marc Morje Howard, James L. Gibson, Dietlind Stolle\n      10.3886-icpsr04607",
       "categories": ["Publications"],
       "tags": ["ICPSR Data Holdings"],
       "url": "/publications/10.3886-icpsr04607/",
+      "teaser": null
+    },{
+      "title": "Different Equals Less? The Effect of Quantitative and Qualitative Changes in the Political Action Repertoire of Western Populations",
+      "excerpt": "Marc Hooghe, Dietlind Stolle\n      Different Equals Less? The Effect of Quantitative and Qualitative Changes in the Political Action Repertoire of Western Populations\n      \n      Marc Hooghe, Dietlind Stolle\n      W2521098828 Marc Hooghe, Dietlind Stolle\n      Different Equals Less? The Effect of Quantitative and Qualitative Changes in the Political Action Repertoire of Western Populations\n      \n      Marc Hooghe, Dietlind Stolle\n      W2521098828",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2521098828/",
       "teaser": null
     },{
       "title": "Reviews: Scholar's Choice, California and the Fictions of Capital, Managing Displacement: Refugees and the Politics of Humanitarianism, Geography and Ethics: Journeys in a Moral Terrain",
@@ -7641,6 +9020,27 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Annals of the Association of American Geographers"],
       "url": "/publications/10.1111-0004-5608.00237/",
+      "teaser": null
+    },{
+      "title": "Jugando a los bolos, jugando solos: el desarrollo de confianza generalizada en las asociaciones voluntarias",
+      "excerpt": "Dietlind Stolle\n      Jugando a los bolos, jugando solos: el desarrollo de confianza generalizada en las asociaciones voluntarias\n      \n      Dietlind Stolle\n      W974056396 Dietlind Stolle\n      Jugando a los bolos, jugando solos: el desarrollo de confianza generalizada en las asociaciones voluntarias\n      \n      Dietlind Stolle\n      W974056396",
+      "categories": ["Publications"],
+      "tags": ["Zona abierta"],
+      "url": "/publications/W974056396/",
+      "teaser": null
+    },{
+      "title": "Social Capital and Street-Level Bureaucracy: An Institutional Theory of Generalized Trust",
+      "excerpt": "Bo Rothstein, Dietlind Stolle\n      Social Capital and Street-Level Bureaucracy: An Institutional Theory of Generalized Trust\n      \n      Bo Rothstein, Dietlind Stolle\n      W154505215 Bo Rothstein, Dietlind Stolle\n      Social Capital and Street-Level Bureaucracy: An Institutional Theory of Generalized Trust\n      \n      Bo Rothstein, Dietlind Stolle\n      W154505215",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W154505215/",
+      "teaser": null
+    },{
+      "title": "Placing the Law in Geography",
+      "excerpt": "Benjamin Forest\n      Placing the Law in Geography\n      \n      Benjamin Forest\n      W2337464917 Benjamin Forest\n      Placing the Law in Geography\n      \n      Benjamin Forest\n      W2337464917",
+      "categories": ["Publications"],
+      "tags": ["Historical geography"],
+      "url": "/publications/W2337464917/",
       "teaser": null
     },{
       "title": "Onderzoek naar sociaal kapitaal: naar een attitudinale benadering",
@@ -7685,6 +9085,20 @@ var store = [{
       "url": "/publications/10.1068-d160247/",
       "teaser": null
     },{
+      "title": "Bowling Together, Bowling Alone: The Development of Generalized Trust in Voluntary Associations",
+      "excerpt": "Dietlind Stolle\n      Bowling Together, Bowling Alone: The Development of Generalized Trust in Voluntary Associations\n      \n      Dietlind Stolle\n      W2523192323 Dietlind Stolle\n      Bowling Together, Bowling Alone: The Development of Generalized Trust in Voluntary Associations\n      \n      Dietlind Stolle\n      W2523192323",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W2523192323/",
+      "teaser": null
+    },{
+      "title": "La privatización en la transición a una economía de mercado",
+      "excerpt": "Renzo Daviddi\n      La privatización en la transición a una economía de mercado\n      \n      Renzo Daviddi\n      W185295012 Renzo Daviddi\n      La privatización en la transición a una economía de mercado\n      \n      Renzo Daviddi\n      W185295012",
+      "categories": ["Publications"],
+      "tags": ["Gestión y Política Pública"],
+      "url": "/publications/W185295012/",
+      "teaser": null
+    },{
       "title": "The Eastern enlargement of the European Union: Major challenges for macro-economic policies and institutions of Central and East European countries",
       "excerpt": "Renzo Daviddi, Fabienne Ilzkovitz\n      The Eastern enlargement of the European Union: Major challenges for macro-economic policies and institutions of Central and East European countries\n      \n      Renzo Daviddi, Fabienne Ilzkovitz\n      10.1016-s0014-2921(97)00047-0 Renzo Daviddi, Fabienne Ilzkovitz\n      The Eastern enlargement of the European Union: Major challenges for macro-economic policies and institutions of Central and East European countries\n      \n      Renzo Daviddi, Fabienne Ilzkovitz\n      10.1016-s0014-2921(97)00047-0",
       "categories": ["Publications"],
@@ -7727,6 +9141,13 @@ var store = [{
       "url": "/publications/10.1016-0035-5054(94)90006-x/",
       "teaser": null
     },{
+      "title": "Privatization in the Transition to a Market Economy",
+      "excerpt": "Renzo Daviddi\n      Privatization in the Transition to a Market Economy\n      \n      Renzo Daviddi\n      W1556817860 Renzo Daviddi\n      Privatization in the Transition to a Market Economy\n      \n      Renzo Daviddi\n      W1556817860",
+      "categories": ["Publications"],
+      "tags": ["Cadmus - EUI Research Repository (European University Institute)"],
+      "url": "/publications/W1556817860/",
+      "teaser": null
+    },{
       "title": "IMPACT ASSESSMENT OF METAL MINES IN BRITISH COLUMBIA: DOES IT WORK?<sup>1</sup>",
       "excerpt": "Thomas Soehl, John C. Day\n      IMPACT ASSESSMENT OF METAL MINES IN BRITISH COLUMBIA: DOES IT WORK?<sup>1</sup>\n      \n      Thomas Soehl, John C. Day\n      10.1080-07349165.1993.9725751 Thomas Soehl, John C. Day\n      IMPACT ASSESSMENT OF METAL MINES IN BRITISH COLUMBIA: DOES IT WORK?<sup>1</sup>\n      \n      Thomas Soehl, John C. Day\n      10.1080-07349165.1993.9725751",
       "categories": ["Publications"],
@@ -7734,11 +9155,67 @@ var store = [{
       "url": "/publications/10.1080-07349165.1993.9725751/",
       "teaser": null
     },{
+      "title": "External financing, conditionality and trade in Central and Eastern Europe",
+      "excerpt": "Renzo Daviddi\n      External financing, conditionality and trade in Central and Eastern Europe\n      \n      Renzo Daviddi\n      W57738454 Renzo Daviddi\n      External financing, conditionality and trade in Central and Eastern Europe\n      \n      Renzo Daviddi\n      W57738454",
+      "categories": ["Publications"],
+      "tags": ["Cadmus - EUI Research Repository (European University Institute)"],
+      "url": "/publications/W57738454/",
+      "teaser": null
+    },{
+      "title": "Rouble convertibility : a realistic target?",
+      "excerpt": "Renzo Daviddi\n      Rouble convertibility : a realistic target?\n      \n      Renzo Daviddi\n      W608502673 Renzo Daviddi\n      Rouble convertibility : a realistic target?\n      \n      Renzo Daviddi\n      W608502673",
+      "categories": ["Publications"],
+      "tags": ["Cadmus - EUI Research Repository (European University Institute)"],
+      "url": "/publications/W608502673/",
+      "teaser": null
+    },{
       "title": "The evolution of Soviet foreign trade :an attempt to assess Soviet dependence on foreign trade",
       "excerpt": "Renzo Daviddi\n      The evolution of Soviet foreign trade :an attempt to assess Soviet dependence on foreign trade\n      \n      Renzo Daviddi\n      10.2870-843482 Renzo Daviddi\n      The evolution of Soviet foreign trade :an attempt to assess Soviet dependence on foreign trade\n      \n      Renzo Daviddi\n      10.2870-843482",
       "categories": ["Publications"],
       "tags": ["Cadmus - EUI Research Repository (European University Institute)"],
       "url": "/publications/10.2870-843482/",
+      "teaser": null
+    },{
+      "title": "Rainfall, abundance of Aedes aegypti and dengue infection in Selangor, Malaysia.",
+      "excerpt": "C F Li, Travis Lim, Lijing Han, R Fang\n      Rainfall, abundance of Aedes aegypti and dengue infection in Selangor, Malaysia.\n      \n      C F Li, Travis Lim, Lijing Han, R Fang\n      W144146219 C F Li, Travis Lim, Lijing Han, R Fang\n      Rainfall, abundance of Aedes aegypti and dengue infection in Selangor, Malaysia.\n      \n      C F Li, Travis Lim, Lijing Han, R Fang\n      W144146219",
+      "categories": ["Publications"],
+      "tags": ["PubMed"],
+      "url": "/publications/W144146219/",
+      "teaser": null
+    },{
+      "title": "The 1982 dengue epidemic in Malaysia: epidemiological, serological and virological aspects.",
+      "excerpt": "R Fang, Eugene Siu Kai Lo, Travis Lim\n      The 1982 dengue epidemic in Malaysia: epidemiological, serological and virological aspects.\n      \n      R Fang, Eugene Siu Kai Lo, Travis Lim\n      W2404940384 R Fang, Eugene Siu Kai Lo, Travis Lim\n      The 1982 dengue epidemic in Malaysia: epidemiological, serological and virological aspects.\n      \n      R Fang, Eugene Siu Kai Lo, Travis Lim\n      W2404940384",
+      "categories": ["Publications"],
+      "tags": ["PubMed"],
+      "url": "/publications/W2404940384/",
+      "teaser": null
+    },{
+      "title": "Entomological aspects of endemic dengue fever in Sarawak 1973 - 1980.",
+      "excerpt": "Mau-Sun Chang, Paweł Rubiś, N Jute, Travis Lim\n      Entomological aspects of endemic dengue fever in Sarawak 1973 - 1980.\n      \n      Mau-Sun Chang, Paweł Rubiś, N Jute, Travis Lim\n      W2185789273 Mau-Sun Chang, Paweł Rubiś, N Jute, Travis Lim\n      Entomological aspects of endemic dengue fever in Sarawak 1973 - 1980.\n      \n      Mau-Sun Chang, Paweł Rubiś, N Jute, Travis Lim\n      W2185789273",
+      "categories": ["Publications"],
+      "tags": ["PubMed"],
+      "url": "/publications/W2185789273/",
+      "teaser": null
+    },{
+      "title": "Dengue hemorrhagic fever in Malaysia: the 1973 epidemic.",
+      "excerpt": "H G Wallace, Travis Lim, A. Rudnick, Amy B. Knudsen, Weng Hooi Cheong, Valerie S. Y. Chew\n      Dengue hemorrhagic fever in Malaysia: the 1973 epidemic.\n      \n      H G Wallace, Travis Lim, A. Rudnick, Amy B. Knudsen, Weng Hooi Cheong, Valerie S. Y. Chew\n      W1501677208 H G Wallace, Travis Lim, A. Rudnick, Amy B. Knudsen, Weng Hooi Cheong, Valerie S. Y. Chew\n      Dengue hemorrhagic fever in Malaysia: the 1973 epidemic.\n      \n      H G Wallace, Travis Lim, A. Rudnick, Amy B. Knudsen, Weng Hooi Cheong, Valerie S. Y. Chew\n      W1501677208",
+      "categories": ["Publications"],
+      "tags": ["PubMed"],
+      "url": "/publications/W1501677208/",
+      "teaser": null
+    },{
+      "title": "The 1973 epidemic of dengue haemorrhagic fever in Malaysia: (a preliminary report).",
+      "excerpt": "Travis Lim, H G Wallace, A. Rudnick, Weng Hooi Cheong, Amy B. Knudsen, Valerie S. Y. Chew\n      The 1973 epidemic of dengue haemorrhagic fever in Malaysia: (a preliminary report).\n      \n      Travis Lim, H G Wallace, A. Rudnick, Weng Hooi Cheong, Amy B. Knudsen, Valerie S. Y. Chew\n      W2411314256 Travis Lim, H G Wallace, A. Rudnick, Weng Hooi Cheong, Amy B. Knudsen, Valerie S. Y. Chew\n      The 1973 epidemic of dengue haemorrhagic fever in Malaysia: (a preliminary report).\n      \n      Travis Lim, H G Wallace, A. Rudnick, Weng Hooi Cheong, Amy B. Knudsen, Valerie S. Y. Chew\n      W2411314256",
+      "categories": ["Publications"],
+      "tags": ["PubMed"],
+      "url": "/publications/W2411314256/",
+      "teaser": null
+    },{
+      "title": "Latin American Politics and Society: A Comparative and Historical Analysis",
+      "excerpt": "Gerardo L. Munck, Juan Pablo Luna\n      Latin American Politics and Society: A Comparative and Historical Analysis\n      \n      Gerardo L. Munck, Juan Pablo Luna\n      W3208757010 Gerardo L. Munck, Juan Pablo Luna\n      Latin American Politics and Society: A Comparative and Historical Analysis\n      \n      Gerardo L. Munck, Juan Pablo Luna\n      W3208757010",
+      "categories": ["Publications"],
+      "tags": [],
+      "url": "/publications/W3208757010/",
       "teaser": null
     },{
       "title": "The international union for conservation of nature and natural resources: Current activities and situation",

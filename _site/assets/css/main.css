@@ -1712,6 +1712,8 @@ a.csdc-red, a.csdc-red:visited, a.csdc-red:hover, a.csdc-red:focus { color: #c81
 
 .csdc-news-events-section { margin-top: 3.4rem; margin-bottom: 3.6rem; }
 
+.csdc-news-events-section .csdc-container { max-width: 76rem; }
+
 .csdc-pillars { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 1rem; }
 @media (min-width: 48em) { .csdc-pillars { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 64em) { .csdc-pillars { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
@@ -1832,17 +1834,17 @@ a.csdc-red, a.csdc-red:visited, a.csdc-red:hover, a.csdc-red:focus { color: #c81
 
 .csdc-page img, .csdc-page svg, .csdc-page video, .csdc-page iframe, .csdc-page table { max-width: 100%; height: auto; }
 
-.csdc-calendar-card { max-width: 920px; margin-left: auto; margin-right: auto; }
+.csdc-calendar-card { max-width: 1080px; padding: 0.35rem; border-radius: 0.35rem; margin-left: auto; margin-right: auto; }
 
-.csdc-calendar-shell { max-width: 920px; margin: 0 auto; }
+.csdc-calendar-shell { max-width: 1080px; margin: 0 auto; }
 
 .csdc-calendar-embed { position: relative; width: 100%; min-height: 620px; }
 
-.csdc-calendar-embed iframe { width: 100%; height: 620px; border: 0; }
+.csdc-calendar-embed iframe { width: 100%; height: 620px; border: 0; border-radius: 0.2rem; }
 
-.csdc-calendar-note { max-width: 920px; margin: 1rem auto 4.2rem; color: #6b7280; }
+.csdc-calendar-note { max-width: 1080px; margin: 1rem auto 4.2rem; color: #6b7280; }
 
-.csdc-calendar-title { max-width: 920px; margin: 0 0 0.55rem; margin-left: auto; margin-right: auto; }
+.csdc-calendar-title { max-width: 1080px; margin: 0 0 0.55rem; margin-left: auto; margin-right: auto; }
 
 @media (max-width: 600px) { .csdc-container { padding: 0 0.75rem; }
   .csdc-contact-pill { display: block; }
