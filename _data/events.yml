@@ -1,29 +1,14 @@
-generated_at: '2026-05-28T13:32:03+00:00'
+generated_at: '2026-06-11T16:55:35+00:00'
 source:
-  provider: google_calendar
-  calendar_id: mcgillcsdc@gmail.com
+  provider: outlook_published_calendar
+  calendar_url: https://outlook.office365.com/owa/calendar/7fb5d6f8890f4776af6224301bea023b@mail.mcgill.ca/90fc976dc03e4fdcabbcdf8ce7795ea78987418656938045875/calendar.html
   timezone: America/Toronto
 featured_event:
   banner_label: Featured Seminar
-  title: CSDC Breakfast 🥐
-  date_display: Thursday, May 28, 10:30 AM ET
+  title: No upcoming seminar scheduled.
+  date_display: Check back soon
   blurb: ''
   cta_text: View all seminars
   cta_url: /news/
-  event_url: https://www.google.com/calendar/event?eid=N2tnYmhiNDVyOWdoczBvcW9kNzFicWpxdGFfMjAyNjA1MjhUMTQzMDAwWiBtY2dpbGxjc2RjQG0
-upcoming_events:
-- title: CSDC Breakfast 🥐
-  date_display: Thursday, May 28, 10:30 AM ET
-  event_url: https://www.google.com/calendar/event?eid=N2tnYmhiNDVyOWdoczBvcW9kNzFicWpxdGFfMjAyNjA1MjhUMTQzMDAwWiBtY2dpbGxjc2RjQG0
-- title: CSDC Lab
-  date_display: Wednesday, June 3, 1:15 PM ET
-  event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA2MDNUMTcxNTAwWiBtY2dpbGxjc2RjQG0
-- title: CSDC Breakfast 🥐
-  date_display: Thursday, June 4, 10:30 AM ET
-  event_url: https://www.google.com/calendar/event?eid=N2tnYmhiNDVyOWdoczBvcW9kNzFicWpxdGFfMjAyNjA2MDRUMTQzMDAwWiBtY2dpbGxjc2RjQG0
-- title: CSDC Lab
-  date_display: Wednesday, June 10, 1:15 PM ET
-  event_url: https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA2MTBUMTcxNTAwWiBtY2dpbGxjc2RjQG0
-- title: CSDC Breakfast 🥐
-  date_display: Thursday, June 11, 10:30 AM ET
-  event_url: https://www.google.com/calendar/event?eid=N2tnYmhiNDVyOWdoczBvcW9kNzFicWpxdGFfMjAyNjA2MTFUMTQzMDAwWiBtY2dpbGxjc2RjQG0
+  event_url: ''
+upcoming_events: []
