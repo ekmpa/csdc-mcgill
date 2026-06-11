@@ -104,6 +104,13 @@ var store = [{
       "url": "/tools-and-resources/",
       "teaser": null
     },{
+      "title": "Who should vote? Membership and claims to expatriate political participation in the Nigerian diaspora",
+      "excerpt": "Aaron Erlich, Thomas Soehl\n      Who should vote? Membership and claims to expatriate political participation in the Nigerian diaspora\n      \n      Aaron Erlich, Thomas Soehl\n      10.1186-s40878-026-00546-3 Aaron Erlich, Thomas Soehl\n      Who should vote? Membership and claims to expatriate political participation in the Nigerian diaspora\n      \n      Aaron Erlich, Thomas Soehl\n      10.1186-s40878-026-00546-3",
+      "categories": ["Publications"],
+      "tags": ["Comparative Migration Studies"],
+      "url": "/publications/10.1186-s40878-026-00546-3/",
+      "teaser": null
+    },{
       "title": "Countering Authoritarian Censorship via Grassroots Communication Campaigns: Evidence from an Experimental Mega-Study in Wartime Russia",
       "excerpt": "Julia Minson, Aaron Erlich, Jordan Gans-Morse, Christopher Higgins, Ruth Elizabeth Appel, Christiane Baumann, Hui Bai, Sarah Chen, Sierra Davis Thomander, Charles Dorison, Eran Halperin, John Jost, Fabian Falch, I Min Lee, Jennifer Lerner, Alexey Makarin, Molly Moore, Nimrod Nir, Scott Radnitz, Jane Risen, Maurice Schweitzer, Антон Шириков, Georgiy Syunyaev, Madalina Vlasceanu, K Wang, Nimrod Zeldin\n      Countering Authoritarian Censorship via Grassroots Communication Campaigns: Evidence from an Experimental Mega-Study in Wartime Russia\n      \n      Julia Minson, Aaron Erlich, Jordan Gans-Morse, Christopher Higgins, Ruth Elizabeth Appel, Christiane Baumann, Hui Bai, Sarah Chen, Sierra Davis Thomander, Charles Dorison, Eran Halperin, John Jost, Fabian Falch, I Min Lee, Jennifer Lerner, Alexey Makarin, Molly Moore, Nimrod Nir, Scott Radnitz, Jane Risen, Maurice Schweitzer, Антон Шириков, Georgiy Syunyaev, Madalina Vlasceanu, K Wang, Nimrod Zeldin\n      10.21203-rs.3.rs-8633606-v1 Julia Minson, Aaron Erlich, Jordan Gans-Morse, Christopher Higgins, Ruth Elizabeth Appel, Christiane Baumann, Hui Bai, Sarah Chen, Sierra Davis Thomander, Charles Dorison, Eran Halperin, John Jost, Fabian Falch, I Min Lee, Jennifer Lerner, Alexey Makarin, Molly Moore, Nimrod Nir, Scott Radnitz, Jane Risen, Maurice Schweitzer, Антон Шириков, Georgiy Syunyaev, Madalina Vlasceanu, K Wang, Nimrod Zeldin\n      Countering Authoritarian Censorship via Grassroots Communication Campaigns: Evidence from an Experimental Mega-Study in Wartime Russia\n      \n      Julia Minson, Aaron Erlich, Jordan Gans-Morse, Christopher Higgins, Ruth Elizabeth Appel, Christiane Baumann, Hui Bai, Sarah Chen, Sierra Davis Thomander, Charles Dorison, Eran Halperin, John Jost, Fabian Falch, I Min Lee, Jennifer Lerner, Alexey Makarin, Molly Moore, Nimrod Nir, Scott Radnitz, Jane Risen, Maurice Schweitzer, Антон Шириков, Georgiy Syunyaev, Madalina Vlasceanu, K Wang, Nimrod Zeldin\n      10.21203-rs.3.rs-8633606-v1",
       "categories": ["Publications"],
@@ -126,10 +133,24 @@ var store = [{
       "teaser": null
     },{
       "title": "Kurtosis-Guided Denoising Score Matching for Tabular Anomaly Detection",
+      "excerpt": "Victor Livernoche, Jie Zan, Reihaneh Rabbany\n      Kurtosis-Guided Denoising Score Matching for Tabular Anomaly Detection\n      \n      Victor Livernoche, Jie Zan, Reihaneh Rabbany\n      W7160969082 Victor Livernoche, Jie Zan, Reihaneh Rabbany\n      Kurtosis-Guided Denoising Score Matching for Tabular Anomaly Detection\n      \n      Victor Livernoche, Jie Zan, Reihaneh Rabbany\n      W7160969082",
+      "categories": ["Publications"],
+      "tags": ["ArXiv.org"],
+      "url": "/publications/W7160969082/",
+      "teaser": null
+    },{
+      "title": "Kurtosis-Guided Denoising Score Matching for Tabular Anomaly Detection",
       "excerpt": "Victor Livernoche, Jie Zan, Reihaneh Rabbany\n      Kurtosis-Guided Denoising Score Matching for Tabular Anomaly Detection\n      \n      Victor Livernoche, Jie Zan, Reihaneh Rabbany\n      10.48550-arxiv.2605.06955 Victor Livernoche, Jie Zan, Reihaneh Rabbany\n      Kurtosis-Guided Denoising Score Matching for Tabular Anomaly Detection\n      \n      Victor Livernoche, Jie Zan, Reihaneh Rabbany\n      10.48550-arxiv.2605.06955",
       "categories": ["Publications"],
       "tags": ["arXiv (Cornell University)"],
       "url": "/publications/10.48550-arxiv.2605.06955/",
+      "teaser": null
+    },{
+      "title": "The $\\textit{Silicon Society}$ Cookbook: Design Space of LLM-based Social Simulations",
+      "excerpt": "Aurélien Bück-Kaeffer, Sneheel Sarangi, Maximilian Puelma Touzel, Reihaneh Rabbany, Zachary Yang, Jean-François Godbout\n      The $\\textit{Silicon Society}$ Cookbook: Design Space of LLM-based Social Simulations\n      \n      Aurélien Bück-Kaeffer, Sneheel Sarangi, Maximilian Puelma Touzel, Reihaneh Rabbany, Zachary Yang, Jean-François Godbout\n      W7160360527 Aurelien Buck-Kaeffer, Sneheel Sarangi, Maximilian Puelma Touzel, Reihaneh Rabbany, Zachary Yang, Jean-Francois Godbout\n      The $\\textit{Silicon Society}$ Cookbook: Design Space of LLM-based Social Simulations\n      \n      Aurelien Buck-Kaeffer, Sneheel Sarangi, Maximilian Puelma Touzel, Reihaneh Rabbany, Zachary Yang, Jean-Francois Godbout\n      W7160360527",
+      "categories": ["Publications"],
+      "tags": ["arXiv (Cornell University)"],
+      "url": "/publications/W7160360527/",
       "teaser": null
     },{
       "title": "The $\\textit{Silicon Society}$ Cookbook: Design Space of LLM-based Social Simulations",

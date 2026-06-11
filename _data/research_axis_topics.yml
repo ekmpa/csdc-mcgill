@@ -1,84 +1,99 @@
-generated_at: '2026-05-22'
-source_publication_count: 1088
+generated_at: '2026-06-11'
+source_publication_count: 1091
+selected_publication_count: 82
 matching:
-  method: weighted multi-axis relevance (CECD-aligned bilingual vocabulary)
+  method: weighted multi-axis relevance (recent faculty-focused CECD bilingual 
+    vocabulary)
   thresholds:
     min_share: 0.24
     min_hits: 2
-    min_tags: 3
+    min_tags: 4
     max_tags: 4
+  selection:
+    recent_years: 4
+    min_year: 2023
+    faculty_only: true
+    selected_publication_count: 82
+    available_publication_count: 1091
   axis_document_counts:
-    axis_1: 355
-    axis_2: 288
-    axis_3: 279
+    axis_1: 32
+    axis_2: 34
+    axis_3: 28
   sample_assignments:
-    - path: _posts/papers/1968-10-01-10.1016-0006-3207(68)90028-1.md
+    - path: _posts/papers/2023-01-01-10.1007-978-3-031-28089-4_3.md
+      assigned_axes:
+        - axis_1
+      relevance:
+        axis_1: 1.0
+        axis_2: 0.0
+        axis_3: 0.0
+    - path: _posts/papers/2023-01-01-10.1007-978-3-031-32205-1_3.md
       assigned_axes: []
       relevance:
         axis_1: 0.0
         axis_2: 0.0
         axis_3: 0.0
-    - path: _posts/papers/1969-04-01-10.1016-0006-3207(69)90140-2.md
+    - path: _posts/papers/2023-01-01-10.2139-ssrn.4392501.md
       assigned_axes: []
       relevance:
         axis_1: 0.0
         axis_2: 0.0
         axis_3: 0.0
-    - path: _posts/papers/1988-01-01-10.2870-843482.md
-      assigned_axes: []
+    - path: _posts/papers/2023-01-01-10.6084-m9.figshare.24649929.md
+      assigned_axes:
+        - axis_2
+        - axis_3
       relevance:
         axis_1: 0.0
-        axis_2: 0.0
-        axis_3: 0.0
-    - path: _posts/papers/1993-06-01-10.1080-07349165.1993.9725751.md
-      assigned_axes: []
+        axis_2: 0.5
+        axis_3: 0.5
+    - path: _posts/papers/2023-01-01-10.6084-m9.figshare.24649929.v1.md
+      assigned_axes:
+        - axis_2
+        - axis_3
       relevance:
         axis_1: 0.0
-        axis_2: 0.0
-        axis_3: 0.0
-    - path: _posts/papers/1994-06-01-10.1016-0035-5054(94)90006-x.md
-      assigned_axes: []
+        axis_2: 0.5
+        axis_3: 0.5
+    - path: _posts/papers/2023-02-20-10.31234-osf.io-avm36.md
+      assigned_axes:
+        - axis_1
+        - axis_2
       relevance:
-        axis_1: 0.0
-        axis_2: 0.0
-        axis_3: 0.0
-    - path: _posts/papers/1995-02-01-10.1007-bf01267748.md
-      assigned_axes: []
-      relevance:
-        axis_1: 0.0
-        axis_2: 0.0
+        axis_1: 0.25
+        axis_2: 0.75
         axis_3: 0.0
 axes:
   axis_1:
     tags_en:
-      - Social cohesion
+      - Digital civic literacy
+      - Online political socialization
+      - Information literacy
       - Political trust
-      - Citizen identity
-      - Civic learning
     tags_fr:
-      - Cohesion sociale
+      - Litteratie civique numerique
+      - Socialisation politique en ligne
+      - Competences informationnelles
       - Confiance politique
-      - Identite citoyenne
-      - Apprentissage civique
   axis_2:
     tags_en:
-      - Electoral behavior
-      - Opinion formation
+      - Public perceptions of AI
       - Information consumption
-      - Citizen participation
+      - AI and deepfake detection
+      - Misinformation and fact-checking
     tags_fr:
-      - Comportement electoral
-      - Formation des opinions politiques
+      - Perceptions publiques de l'IA
       - Consommation de l'information
-      - Participation citoyenne
+      - IA et detection des hypertrucages
+      - Desinformation et verification des faits
   axis_3:
     tags_en:
+      - AI governance and institutions
+      - Platform governance and regulation
+      - Algorithmic accountability
       - Political representation
-      - Electoral systems
-      - Government responsiveness
-      - Democratic governance
     tags_fr:
+      - Gouvernance de l'IA et institutions
+      - Gouvernance et regulation des plateformes
+      - Responsabilite algorithmique
       - Representation politique
-      - Systemes electoraux
-      - Reactivite des gouvernements
-      - Gouvernance democratique

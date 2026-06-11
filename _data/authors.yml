@@ -171,6 +171,7 @@ Olivier Bergeron-Boutin:
 
 Elissa Berwick:
   name: Elissa Berwick
+  avatar: /assets/images/bio/Elissa Berwick 2.jpg
   current_role:
     type: Faculty / Professor
   bio: Prof Berwick’s interests span the sub-fields of comparative politics and quantitative
@@ -181,9 +182,6 @@ Elissa Berwick:
   social_media_links:
   - label: Website
     url: https://www.elissaberwick.com/
-Elissa Berwick 2:
-  name: Elissa Berwick
-  avatar: /assets/images/bio/Elissa Berwick 2.jpg
 Maxime Blanchard:
   name: Maxime Blanchard
   alumni: true
@@ -554,6 +552,7 @@ Ina Filkobski:
 
 Benjamin Forest:
   name: Benjamin Forest
+  avatar: /assets/images/bio/Benjamin Forest 2.jpg
   current_role:
     type: Faculty / Professor
     title: Associate Professor
@@ -568,10 +567,6 @@ Benjamin Forest:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=tLfKPpgAAAAJ&hl=en&oi=ao
-
-Benjamin Forest 2:
-  name: Benjamin Forest
-  avatar: /assets/images/bio/Benjamin Forest 2.jpg
 Patrick Forest:
   name: Patrick Forest
   alumni: true

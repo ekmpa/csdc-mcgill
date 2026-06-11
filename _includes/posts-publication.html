@@ -33,5 +33,118 @@
     &uarr;</a>
 </section>
 {% endfor %}
+
+{% if sortedYears.size > 1 %}
+<div class="csdc-year-jump-nav" data-csdc-year-jump hidden>
+  <button type="button" class="csdc-year-jump-btn" data-csdc-year-jump-dir="up" aria-label="Jump to previous year section">
+    <span class="csdc-year-jump-arrow">&uarr;</span>
+    <span class="csdc-year-jump-label" data-csdc-year-jump-label="up">--</span>
+  </button>
+  <button type="button" class="csdc-year-jump-btn" data-csdc-year-jump-dir="down" aria-label="Jump to next year section">
+    <span class="csdc-year-jump-arrow">&darr;</span>
+    <span class="csdc-year-jump-label" data-csdc-year-jump-label="down">--</span>
+  </button>
+</div>
+
+<script>
+(function () {
+  if (window.__csdcYearJumpBound) {
+    return;
+  }
+
+  window.__csdcYearJumpBound = true;
+
+  function extractYearLabel(section) {
+    var heading = section.querySelector('.archive__subtitle');
+    if (!heading) {
+      return '--';
+    }
+    var text = (heading.textContent || '').trim();
+    var match = text.match(/^([^()]+)/);
+    return (match ? match[1] : text).trim() || '--';
+  }
+
+  function initYearJump() {
+    var nav = document.querySelector('[data-csdc-year-jump]');
+    if (!nav) {
+      return;
+    }
+
+    var sections = Array.prototype.slice.call(
+      document.querySelectorAll('.csdc-publications-page .taxonomy__section[id]')
+    );
+
+    if (sections.length < 2) {
+      return;
+    }
+
+    var upBtn = nav.querySelector('[data-csdc-year-jump-dir="up"]');
+    var downBtn = nav.querySelector('[data-csdc-year-jump-dir="down"]');
+    var upLabel = nav.querySelector('[data-csdc-year-jump-label="up"]');
+    var downLabel = nav.querySelector('[data-csdc-year-jump-label="down"]');
+
+    function nearestSectionIndex() {
+      var pointerY = window.scrollY + 170;
+      var idx = 0;
+      for (var i = 0; i < sections.length; i += 1) {
+        if (sections[i].offsetTop <= pointerY) {
+          idx = i;
+        }
+      }
+      return idx;
+    }
+
+    function scrollToSection(section) {
+      var top = section.getBoundingClientRect().top + window.pageYOffset - 92;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    }
+
+    function refreshState() {
+      var idx = nearestSectionIndex();
+      var upIdx = Math.max(0, idx - 1);
+      var downIdx = Math.min(sections.length - 1, idx + 1);
+      var showNav = window.scrollY > (sections[0].offsetTop + 120);
+
+      nav.hidden = !showNav;
+
+      var upTarget = sections[upIdx];
+      var downTarget = sections[downIdx];
+
+      upBtn.disabled = idx === 0;
+      downBtn.disabled = idx === sections.length - 1;
+
+      upLabel.textContent = extractYearLabel(upTarget);
+      downLabel.textContent = extractYearLabel(downTarget);
+    }
+
+    upBtn.addEventListener('click', function () {
+      var idx = nearestSectionIndex();
+      if (idx <= 0) {
+        return;
+      }
+      scrollToSection(sections[idx - 1]);
+    });
+
+    downBtn.addEventListener('click', function () {
+      var idx = nearestSectionIndex();
+      if (idx >= sections.length - 1) {
+        return;
+      }
+      scrollToSection(sections[idx + 1]);
+    });
+
+    window.addEventListener('scroll', refreshState, { passive: true });
+    window.addEventListener('resize', refreshState);
+    refreshState();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initYearJump);
+  } else {
+    initYearJump();
+  }
+})();
+</script>
+{% endif %}
 {% endif %}
 {% endif %}

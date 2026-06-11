@@ -4345,7 +4345,15 @@
 <lastmod>2026-04-30T00:00:00-04:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/publications/W7160360527/</loc>
+<lastmod>2026-04-30T00:00:00-04:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/publications/10.48550-arxiv.2605.06955/</loc>
+<lastmod>2026-05-07T00:00:00-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/publications/W7160969082/</loc>
 <lastmod>2026-05-07T00:00:00-04:00</lastmod>
 </url>
 <url>
@@ -4359,6 +4367,10 @@
 <url>
 <loc>http://localhost:4000/publications/10.21203-rs.3.rs-8633606-v1/</loc>
 <lastmod>2026-05-12T00:00:00-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/publications/10.1186-s40878-026-00546-3/</loc>
+<lastmod>2026-05-22T00:00:00-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about/</loc>

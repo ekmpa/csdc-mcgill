@@ -33,6 +33,13 @@ html, body {
   margin-bottom: 0.35rem;
 }
 
+.csdc-kicker-mcgill {
+  color: #c28e0e;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.92em;
+}
+
 .csdc-red {
   color: $csdc-red;
 }
@@ -223,10 +230,23 @@ a.csdc-red:focus {
   margin: 1.5rem 0 1.75rem;
 }
 
+.csdc-publications-page .taxonomy__section .archive__subtitle {
+  margin-top: 2.8rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
 .csdc-research-year-heading {
-  margin: 1.75rem 0 0.75rem;
+  margin: 2.85rem 0 1rem;
+  padding-bottom: 0.62rem;
+  border-bottom: 1px solid #d8dde4;
   color: #4b5563;
   font-size: 1.05rem;
+}
+
+.csdc-research-year-section:first-of-type .csdc-research-year-heading {
+  margin-top: 1.25rem;
 }
 
 .csdc-research-page .csdc-card-title a {
@@ -716,6 +736,7 @@ a.csdc-red:focus {
 .csdc-about-mission-section .csdc-card {
   padding-top: 1.35rem;
   padding-bottom: 1.35rem;
+  background: #f3f4f6;
 }
 
 .csdc-about-axes-section {
