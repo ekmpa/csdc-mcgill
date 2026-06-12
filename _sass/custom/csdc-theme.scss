@@ -59,10 +59,21 @@ a.csdc-red:focus {
 }
 
 .csdc-hero-subtitle {
-  margin-top: 0.35rem;
+  margin-top: 0.65rem;
   color: #6b7280;
   font-size: clamp(1rem, 2.5vw, 1.45rem);
   line-height: 1.25;
+}
+
+.csdc-hero-subtitle a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.csdc-hero-subtitle a:hover,
+.csdc-hero-subtitle a:focus {
+  color: $csdc-dark;
 }
 
 .csdc-lead {
@@ -309,6 +320,10 @@ a.csdc-red:focus {
   margin: 0.35rem 0 0;
   color: #6b7280;
   font-size: 0.82rem;
+}
+
+.csdc-news-item--title-only .csdc-news-item-date {
+  margin-bottom: 0.05rem;
 }
 
 .csdc-news-item-excerpt {

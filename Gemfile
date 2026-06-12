@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+ruby "3.3.11"
+
 gem "webrick"
 gem "github-pages", group: :jekyll_plugins
 # If github-pages starts to fail, try to use the following line instead

@@ -6,16 +6,31 @@ This is the source code of the [McGill Centre for the Study of Democratic Citize
 
 ## Contribution Guide
 
-<!-- 
-RUN LOCAL
-eval "$(rbenv init - zsh)" && bundle _2.4.22_ exec jekyll serve --livereload
--->
 | Action | How-to | 
 | -- | -- | 
 | Add or update a member profile or publications | [Open a Github Issue](https://github.com/ekmpa/csdc-mcgill/issues/new/choose) | 
 | Calendar sync setup | [Calendar documentation](./documentation/calendar.md) |
 | Mistake made in the form | Refer to the [FAQ](#faq) below | 
 | Technical issue | [Contact Developer](mailto:emma.kondrup@mila.quebec) |
+
+## Local site launch
+
+This repo is pinned to Ruby 3.3.11 via `.ruby-version`. Use `rbenv` so `bundle` and `jekyll` run against that version instead of the system Ruby.
+
+From the project root:
+
+```bash
+source /Users/emmakondrup/Dr.Bias/venv/bin/activate
+eval "$(rbenv init - zsh)"
+./serve-local.sh
+```
+
+What this does:
+
+- Initializes `rbenv` in the current shell.
+- Ensures Ruby 3.3.11 is active.
+- Runs `bundle install` automatically if gems are missing.
+- Launches the local site at `http://127.0.0.1:4000` with livereload enabled.
 
 ## Further contributions
 

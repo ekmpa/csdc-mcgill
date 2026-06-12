@@ -20,6 +20,13 @@ def _first_non_empty(parsed, *keys):
     return ""
 
 
+def _normalize_summary(value: str) -> str:
+    cleaned = str(value or "").strip()
+    if cleaned.lower() == "x":
+        return ""
+    return cleaned
+
+
 def _slugify(text: str) -> str:
     text = text.lower().strip()
     text = re.sub(r"[^a-z0-9]+", "-", text)
@@ -53,26 +60,26 @@ def _yaml_quote(value: str) -> str:
 def _build_content(parsed):
     title = _first_non_empty(parsed, "title")
     date_str = _first_non_empty(parsed, "date")
-    summary = _first_non_empty(parsed, "summary")
+    summary = _normalize_summary(_first_non_empty(parsed, "summary"))
     title_fr = _first_non_empty(parsed, "title_fr", "title_french") or title
-    summary_fr = _first_non_empty(parsed, "summary_fr", "summary_french") or summary
+    summary_fr = _normalize_summary(_first_non_empty(parsed, "summary_fr", "summary_french")) or summary
     external_link = _first_non_empty(parsed, "external_link", "external_link_(optional)")
 
-    front_matter = dedent(
-        f"""---
-        title: {_yaml_quote(title)}
-        title_fr: {_yaml_quote(title_fr)}
-        date: {date_str}
-        categories: News
-        excerpt: {_yaml_quote(summary)}
-        excerpt_fr: {_yaml_quote(summary_fr)}
-        ---
-        """
+    front_matter = (
+        "---\n"
+        f"title: {_yaml_quote(title)}\n"
+        f"title_fr: {_yaml_quote(title_fr)}\n"
+        f"date: {date_str}\n"
+        "categories: News\n"
+        f"excerpt: {_yaml_quote(summary)}\n"
+        f"excerpt_en: {_yaml_quote(summary)}\n"
+        f"excerpt_fr: {_yaml_quote(summary_fr)}\n"
+        "---"
     )
 
     body = summary
     if external_link:
-        body += f"\n\n[Read more]({external_link})"
+        body += ("\n\n" if body else "") + f"[Read more]({external_link})"
 
     return front_matter + "\n" + body + "\n"
 
@@ -80,26 +87,26 @@ def _build_content(parsed):
 def _build_fr_content(parsed):
     title = _first_non_empty(parsed, "title")
     date_str = _first_non_empty(parsed, "date")
-    summary = _first_non_empty(parsed, "summary")
+    summary = _normalize_summary(_first_non_empty(parsed, "summary"))
     title_fr = _first_non_empty(parsed, "title_fr", "title_french") or title
-    summary_fr = _first_non_empty(parsed, "summary_fr", "summary_french") or summary
+    summary_fr = _normalize_summary(_first_non_empty(parsed, "summary_fr", "summary_french")) or summary
     external_link = _first_non_empty(parsed, "external_link", "external_link_(optional)")
 
-    front_matter = dedent(
-        f"""---
-        title: {_yaml_quote(title_fr)}
-        title_en: {_yaml_quote(title)}
-        date: {date_str}
-        categories: [fr, news]
-        excerpt: {_yaml_quote(summary_fr)}
-        excerpt_en: {_yaml_quote(summary)}
-        ---
-        """
+    front_matter = (
+        "---\n"
+        f"title: {_yaml_quote(title_fr)}\n"
+        f"title_en: {_yaml_quote(title)}\n"
+        f"date: {date_str}\n"
+        "categories: [fr, news]\n"
+        f"excerpt: {_yaml_quote(summary_fr)}\n"
+        f"excerpt_fr: {_yaml_quote(summary_fr)}\n"
+        f"excerpt_en: {_yaml_quote(summary)}\n"
+        "---"
     )
 
     body = summary_fr
     if external_link:
-        body += f"\n\n[Lire plus]({external_link})"
+        body += ("\n\n" if body else "") + f"[Lire plus]({external_link})"
 
     return front_matter + "\n" + body + "\n"
 

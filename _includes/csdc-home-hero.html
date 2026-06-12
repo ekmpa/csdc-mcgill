@@ -4,12 +4,16 @@
 {% if lang == 'fr' %}
 {% assign base = '/fr' %}
 {% endif %}
+{% assign hero_subtitle = t.home.hero.subtitle %}
+{% if lang == 'en' %}
+{% assign hero_subtitle = hero_subtitle | replace: 'CSDC/CECD based at Laval University', '<a href="https://csdc-cecd.ca/" target="_blank" rel="noopener noreferrer">CSDC/CECD based at Laval University</a>' %}
+{% endif %}
 
 <section class="csdc-hero csdc-page">
   <div class="csdc-container">
     <p class="csdc-kicker"><span class="csdc-red">CSDC / </span><span>CECD</span> <span class="csdc-kicker-mcgill">at McGill University</span></p>
     <h1 class="csdc-hero-title">{{ t.home.hero.title }}</h1>
-    <p class="csdc-hero-subtitle">{{ t.home.hero.subtitle }}</p>
+    <p class="csdc-hero-subtitle">{{ hero_subtitle }}</p>
 
     <p class="csdc-lead">{{ t.home.hero.lead }}</p>
 

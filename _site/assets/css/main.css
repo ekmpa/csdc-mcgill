@@ -1632,7 +1632,11 @@ a.csdc-red, a.csdc-red:visited, a.csdc-red:hover, a.csdc-red:focus { color: #c81
 
 .csdc-hero-title { color: #1f2937; font-size: clamp(1.25rem, 3vw, 1.8rem); line-height: 1.2; margin: 0; }
 
-.csdc-hero-subtitle { margin-top: 0.35rem; color: #6b7280; font-size: clamp(1rem, 2.5vw, 1.45rem); line-height: 1.25; }
+.csdc-hero-subtitle { margin-top: 0.65rem; color: #6b7280; font-size: clamp(1rem, 2.5vw, 1.45rem); line-height: 1.25; }
+
+.csdc-hero-subtitle a { color: inherit; text-decoration: underline; text-underline-offset: 0.12em; }
+
+.csdc-hero-subtitle a:hover, .csdc-hero-subtitle a:focus { color: #1f2937; }
 
 .csdc-lead { margin-top: 1rem; margin-bottom: 1rem; max-width: 46rem; color: #374151; font-size: 0.94rem; line-height: 1.6; }
 
@@ -1709,6 +1713,8 @@ a.csdc-red, a.csdc-red:visited, a.csdc-red:hover, a.csdc-red:focus { color: #c81
 .csdc-news-item-title a:hover, .csdc-news-item-title a:focus { color: #7f1d1d; text-decoration: none; }
 
 .csdc-news-item-date { margin: 0.35rem 0 0; color: #6b7280; font-size: 0.82rem; }
+
+.csdc-news-item--title-only .csdc-news-item-date { margin-bottom: 0.05rem; }
 
 .csdc-news-item-excerpt { margin: 0.4rem 0 0; color: #111827; font-size: 0.86rem; }
 

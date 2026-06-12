@@ -392,9 +392,89 @@
         
         
         
+        
+        
+        
+        
+        
+        <article class="csdc-news-item">
+          
+          
+          
+          <h3 class="csdc-news-item-title"><a href="/fr/news/rupin-liddar-wins-the-best-paper-award-in-asian-pacific-american-politics-at-the-western-political-science-association-s-conference/">Rupin Liddar wins the Best Paper Award in Asian Pacific American Politics at the Western Political Science Association’s conference</a></h3>
+          <p class="csdc-news-item-date">June 11, 2026</p>
+          
+          <p class="csdc-news-item-excerpt">Rupin Liddar a remporté le prix du meilleur article en politique asiatique-américaine et du Pacifique lors de la conférence de la Western Political Science Association, qu'elle a fréquentée l'année dernière.</p>
+          
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article class="csdc-news-item">
+          
+          
+          
+          <h3 class="csdc-news-item-title"><a href="/fr/news/brooke-steinhauer-awarded-the-lemieux-fellowship/">Brooke Steinhauer awarded the Lemieux Fellowship</a></h3>
+          <p class="csdc-news-item-date">June 11, 2026</p>
+          
+          <p class="csdc-news-item-excerpt">Brooke Steinhauer, doctorante au CSDC sous la supervision de Dietlind Stolle, reçoit la bourse Lemieux Family 2026 !</p>
+          
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
       </div>
       
-      <p>Aucune nouvelle pour le moment.</p>
+      <button type="button" class="csdc-news-read-more" data-news-read-more="">
+        <span class="csdc-news-read-more-arrow" aria-hidden="true">&darr;</span>
+        <span>Voir plus</span>
+      </button>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var list = document.querySelector('[data-progressive-news]');
+          var button = document.querySelector('[data-news-read-more]');
+          if (!list || !button) return;
+
+          var items = Array.prototype.slice.call(list.querySelectorAll('.csdc-news-item'));
+          var visibleCount = 1;
+          var revealStep = 1;
+
+          function updateVisibility() {
+            items.forEach(function (item, index) {
+              item.hidden = index >= visibleCount;
+            });
+            if (visibleCount >= items.length) {
+              button.hidden = true;
+            }
+          }
+
+          button.addEventListener('click', function () {
+            visibleCount = Math.min(visibleCount + revealStep, items.length);
+            updateVisibility();
+          });
+
+          updateVisibility();
+        });
+      </script>
       
       
     </div>

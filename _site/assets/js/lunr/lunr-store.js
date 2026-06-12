@@ -104,6 +104,34 @@ var store = [{
       "url": "/tools-and-resources/",
       "teaser": null
     },{
+      "title": "Rupin Liddar wins the Best Paper Award in Asian Pacific American Politics at the Western Political Science Association's conference",
+      "excerpt": "Rupin Liddar a remporté le prix du meilleur article en politique asiatique-américaine et du Pacifique lors de la conférence de la Western Political Science Association, qu’elle a fréquentée l’année dernière.\n      Rupin Liddar wins the Best Paper Award in Asian Pacific American Politics at the Western Political Science Association's conference\n      \n      \n      rupin-liddar-wins-the-best-paper-award-in-asian-pacific-american-politics-at-the-western-political-science-association-s-conference Rupin Liddar a remporte le prix du meilleur article en politique asiatique-americaine et du Pacifique lors de la conference de la Western Political Science Association, qu'elle a frequentee l'annee derniere.\n      Rupin Liddar wins the Best Paper Award in Asian Pacific American Politics at the Western Political Science Association's conference\n      \n      \n      rupin-liddar-wins-the-best-paper-award-in-asian-pacific-american-politics-at-the-western-political-science-association-s-conference",
+      "categories": ["fr","news"],
+      "tags": [],
+      "url": "/fr/news/rupin-liddar-wins-the-best-paper-award-in-asian-pacific-american-politics-at-the-western-political-science-association-s-conference/",
+      "teaser": null
+    },{
+      "title": "Brooke Steinhauer awarded the Lemieux Fellowship",
+      "excerpt": "Brooke Steinhauer, doctorante au CSDC sous la supervision de Dietlind Stolle, reçoit la bourse Lemieux Family 2026 !\n      Brooke Steinhauer awarded the Lemieux Fellowship\n      \n      \n      brooke-steinhauer-awarded-the-lemieux-fellowship Brooke Steinhauer, doctorante au CSDC sous la supervision de Dietlind Stolle, recoit la bourse Lemieux Family 2026 !\n      Brooke Steinhauer awarded the Lemieux Fellowship\n      \n      \n      brooke-steinhauer-awarded-the-lemieux-fellowship",
+      "categories": ["fr","news"],
+      "tags": [],
+      "url": "/fr/news/brooke-steinhauer-awarded-the-lemieux-fellowship/",
+      "teaser": null
+    },{
+      "title": "Rupin Liddar wins the Best Paper Award in Asian Pacific American Politics at the Western Political Science Association's conference",
+      "excerpt": "Rupin Liddar won the Best Paper Award in Asian Pacific American Politics from the Western Political Science Association’s conference that she attended last year.\n      Rupin Liddar wins the Best Paper Award in Asian Pacific American Politics at the Western Political Science Association's conference\n      \n      \n      rupin-liddar-wins-the-best-paper-award-in-asian-pacific-american-politics-at-the-western-political-science-association-s-conference Rupin Liddar won the Best Paper Award in Asian Pacific American Politics from the Western Political Science Association's conference that she attended last year.\n      Rupin Liddar wins the Best Paper Award in Asian Pacific American Politics at the Western Political Science Association's conference\n      \n      \n      rupin-liddar-wins-the-best-paper-award-in-asian-pacific-american-politics-at-the-western-political-science-association-s-conference",
+      "categories": ["News"],
+      "tags": [],
+      "url": "/news/rupin-liddar-wins-the-best-paper-award-in-asian-pacific-american-politics-at-the-western-political-science-association-s-conference/",
+      "teaser": null
+    },{
+      "title": "Brooke Steinhauer awarded the Lemieux Fellowship",
+      "excerpt": "Brooke Steinhauer, PhD Student at the CSDC supervised by Dietlind Stolle, receives the 2026 Lemieux Family Fellowship!\n      Brooke Steinhauer awarded the Lemieux Fellowship\n      \n      \n      brooke-steinhauer-awarded-the-lemieux-fellowship Brooke Steinhauer, PhD Student at the CSDC supervised by Dietlind Stolle, receives the 2026 Lemieux Family Fellowship!\n      Brooke Steinhauer awarded the Lemieux Fellowship\n      \n      \n      brooke-steinhauer-awarded-the-lemieux-fellowship",
+      "categories": ["News"],
+      "tags": [],
+      "url": "/news/brooke-steinhauer-awarded-the-lemieux-fellowship/",
+      "teaser": null
+    },{
       "title": "EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations",
       "excerpt": "Sneheel Sarangi, Maximilian Puelma Touzel, Aurélien Bück-Kaeffer, Zachary Yang, Jean-François Godbout, Reihaneh Rabbany\n      EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations\n      \n      Sneheel Sarangi, Maximilian Puelma Touzel, Aurélien Bück-Kaeffer, Zachary Yang, Jean-François Godbout, Reihaneh Rabbany\n      W7162893632 Sneheel Sarangi, Maximilian Puelma Touzel, Aurelien Buck-Kaeffer, Zachary Yang, Jean-Francois Godbout, Reihaneh Rabbany\n      EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations\n      \n      Sneheel Sarangi, Maximilian Puelma Touzel, Aurelien Buck-Kaeffer, Zachary Yang, Jean-Francois Godbout, Reihaneh Rabbany\n      W7162893632",
       "categories": ["Publications"],

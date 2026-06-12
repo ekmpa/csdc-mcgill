@@ -71,6 +71,19 @@
 {% assign show_author = true %}
 {% assign role_to_render = latest_role %}
 {% endif %}
+{% if include.include_secondary_doctoral and show_author == false %}
+{% if author_group == "staff" or author_group == "researchers" %}
+{% for sec_role in author.secondary_roles %}
+{% assign sec_title = sec_role.title | default: "" | downcase %}
+{% assign sec_type = sec_role.type | default: "" %}
+{% if sec_type == "Student" and (sec_title contains "doctor" or sec_title contains "phd") %}
+{% assign show_author = true %}
+{% assign role_to_render = sec_role %}
+{% break %}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endif %}
 {% elsif latest_role.type == include.role %}
 {% assign title_match = true %}
 {% assign role_title = latest_role.title | default: "" | downcase %}
@@ -100,6 +113,20 @@
 {% assign show_author = true %}
 {% assign role_to_render = latest_role %}
 {% endif %}
+{% endif %}
+{% endif %}
+{% elsif include.include_secondary_doctoral %}
+{% if author.alumni != true %}
+{% if author_group == "staff" or author_group == "researchers" %}
+{% for sec_role in author.secondary_roles %}
+{% assign sec_title = sec_role.title | default: "" | downcase %}
+{% assign sec_type = sec_role.type | default: "" %}
+{% if sec_type == "Student" and (sec_title contains "doctor" or sec_title contains "phd") %}
+{% assign show_author = true %}
+{% assign role_to_render = sec_role %}
+{% break %}
+{% endif %}
+{% endfor %}
 {% endif %}
 {% endif %}
 {% elsif include.render_secondary_doctoral %}
@@ -138,9 +165,7 @@
 
 {% if show_author %}
 {% assign entry = "" | split: "" %}
-{% assign _name_parts = author.name | split: " " %}
-{% assign _last_name = _name_parts | last | downcase %}
-{% assign sort_key = _last_name | append: "|" | append: author.name | downcase %}
+{% assign sort_key = author.name | downcase | replace: "é","e" | replace: "è","e" | replace: "ê","e" | replace: "ë","e" | replace: "à","a" | replace: "â","a" | replace: "ä","a" | replace: "î","i" | replace: "ï","i" | replace: "ô","o" | replace: "ö","o" | replace: "ù","u" | replace: "û","u" | replace: "ü","u" | replace: "ç","c" | replace: "ñ","n" %}
 {% assign entry = entry | push: sort_key %}
 {% assign entry = entry | push: author %}
 {% assign entry = entry | push: role_to_render %}

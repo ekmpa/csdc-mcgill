@@ -24,7 +24,25 @@
         {% endif %}
         {% endif %}
         {% assign rendered_news_count = rendered_news_count | plus: 1 %}
-        <article class="csdc-news-item">
+        {% if is_fr %}
+        {% assign excerpt_raw = post.excerpt_fr | default: post.excerpt | default: '' | strip_html | strip %}
+        {% else %}
+        {% assign excerpt_raw = post.excerpt_en | default: post.excerpt | default: '' | strip_html | strip %}
+        {% endif %}
+        {% assign excerpt_down = excerpt_raw | downcase %}
+        {% assign excerpt_prefix = excerpt_raw | slice: 0, 3 %}
+        {% assign show_byline = false %}
+        {% assign show_excerpt = false %}
+        {% assign excerpt_clean = excerpt_raw %}
+        {% if excerpt_raw != '' and excerpt_down != 'x' %}
+        {% if excerpt_prefix == 'By ' or excerpt_prefix == 'By:' %}
+        {% assign excerpt_clean = excerpt_clean | replace_first: 'By: ', '' | replace_first: 'By ', '' %}
+        {% assign show_byline = true %}
+        {% else %}
+        {% assign show_excerpt = true %}
+        {% endif %}
+        {% endif %}
+        <article class="csdc-news-item{% unless show_byline or show_excerpt %} csdc-news-item--title-only{% endunless %}">
           {% if is_fr and post.title_fr %}
           {% assign news_title = post.title_fr | default: "" | strip %}
           {% else %}
@@ -36,33 +54,6 @@
           {% assign rendered_news_title = news_title | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines | strip %}
           <h3 class="csdc-news-item-title"><a href="{{ post.url | relative_url }}">{{ rendered_news_title }}</a></h3>
           <p class="csdc-news-item-date">{{ post.date | date: "%B %-d, %Y" }}</p>
-          {% if is_fr and post.excerpt_fr %}
-          {% assign excerpt_raw = post.excerpt_fr | default: '' | strip_html | strip %}
-          {% else %}
-          {% assign excerpt_raw = post.excerpt | default: '' | strip_html | strip %}
-          {% endif %}
-          {% if excerpt_raw == '' %}
-          {% assign excerpt_raw = post.content | strip_html | strip %}
-          {% endif %}
-          {% assign excerpt_down = excerpt_raw | downcase %}
-          {% assign excerpt_prefix = excerpt_raw | slice: 0, 3 %}
-          {% assign show_byline = false %}
-          {% assign show_excerpt = false %}
-          {% assign excerpt_clean = excerpt_raw %}
-          {% if excerpt_raw != '' %}
-          {% if excerpt_down contains 'excerpt:' and excerpt_down contains 'title:' %}
-          {% assign excerpt_clean = excerpt_raw | split: 'excerpt:' | last | split: '---' | first | strip %}
-          {% endif %}
-          {% assign excerpt_clean_down = excerpt_clean | downcase %}
-          {% unless excerpt_clean_down contains 'title:' or excerpt_clean_down contains 'date:' or excerpt_clean_down contains 'categories:' %}
-          {% if excerpt_prefix == 'By ' or excerpt_prefix == 'By:' %}
-          {% assign excerpt_clean = excerpt_clean | replace_first: 'By: ', '' | replace_first: 'By ', '' %}
-          {% assign show_byline = true %}
-          {% else %}
-          {% assign show_excerpt = true %}
-          {% endif %}
-          {% endunless %}
-          {% endif %}
           {% if show_byline %}
           <p class="csdc-news-item-excerpt"><span class="csdc-news-item-by">By</span> {{ excerpt_clean | truncate: 220 }}</p>
           {% elsif show_excerpt %}
