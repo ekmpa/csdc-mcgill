@@ -165,6 +165,23 @@ article.publication-card {
     border-bottom: 1px solid #d8dde4;
 }
 
+.csdc-research-page .csdc-research-search-form {
+    max-width: 34rem;
+    margin-top: 0.45rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.csdc-research-page .csdc-research-search-input {
+    margin: 0;
+}
+
+.csdc-research-page .csdc-research-no-results {
+    margin-top: 0.65rem;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
 .csdc-year-jump-nav {
     position: fixed;
     right: 1rem;
@@ -176,7 +193,7 @@ article.publication-card {
     opacity: 0;
     transform: translateY(8px);
     pointer-events: none;
-    transition: opacity 0.22s ease, transform 0.22s ease;
+    transition: opacity 0.38s ease, transform 0.38s ease;
 }
 
 .csdc-year-jump-nav.is-visible {

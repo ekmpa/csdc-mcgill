@@ -1,5 +1,6 @@
 {
     "name": "John Doe",
+    "team_group": "researchers",
     "avatar": "/tests/scratch/assets/images/bio/John Doe.jpg",
     "bio": "I'm a very happy student",
     "note": "Allergic to reviewer 2",

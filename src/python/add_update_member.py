@@ -54,6 +54,39 @@ def _normalize_role_title(value: str) -> str:
     return cleaned
 
 
+def _normalize_team_group(value: str) -> str:
+    """Normalize team group labels to canonical keys used by the People page."""
+    if _is_empty_response(value):
+        return ""
+
+    norm = _normalize_heading_key(str(value))
+    if "faculty" in norm or "professor" in norm or "corps" in norm:
+        return "faculty_members"
+    if "phd" in norm or "doctor" in norm or "postdoc" in norm:
+        return "phd_students_and_postdocs"
+    if "master" in norm or "maitrise" in norm:
+        return "masters_students"
+    if "research" in norm or "chercheur" in norm:
+        return "researchers"
+    return ""
+
+
+def _infer_team_group(role_type: str, role_title: str) -> str:
+    """Infer a team group from role type/title when the form does not provide one."""
+    role_type_norm = _normalize_heading_key(str(role_type or ""))
+    role_title_norm = _normalize_heading_key(_normalize_role_title(str(role_title or "")))
+
+    if "faculty" in role_type_norm or "professor" in role_type_norm:
+        return "faculty_members"
+    if "postdoc" in role_type_norm:
+        return "phd_students_and_postdocs"
+    if "student" in role_type_norm and ("phd" in role_title_norm or "doctor" in role_title_norm):
+        return "phd_students_and_postdocs"
+    if "student" in role_type_norm and ("master" in role_title_norm or "maitrise" in role_title_norm):
+        return "masters_students"
+    return "researchers"
+
+
 def _translate_role_title_fr(value: str) -> str:
     """Auto-generate a French title when no explicit French title is provided."""
     if _is_empty_response(value):
@@ -89,6 +122,13 @@ def _canonicalize_member_parsed_input(parsed: Dict) -> Dict:
         "note": ["note"],
         "note_fr": ["note_fr", "note_french"],
         "current_role_type": ["current_role_type", "current_role_role_actuel"],
+        "team_group": [
+            "team_group",
+            "team_group_group",
+            "team_group_groupe",
+            "team_group_grouping",
+            "team_group_groupe_de_l_equipe",
+        ],
         "current_role_title": ["current_role_title"],
         "current_role_affiliation": ["current_role_affiliation", "current_affiliation_affiliation_actuelle"],
         "current_role_advisor": ["current_role_advisor", "current_role_advisor_superviseur_e_actuel_le"],
@@ -239,6 +279,15 @@ def format_parsed_content(parsed: Dict) -> Dict:
     if current_role:
         formatted["current_role"] = current_role
 
+    provided_team_group = _normalize_team_group(parsed.get("team_group", ""))
+    if provided_team_group:
+        formatted["team_group"] = provided_team_group
+    elif current_role:
+        formatted["team_group"] = _infer_team_group(
+            current_role.get("type", ""),
+            current_role.get("title", ""),
+        )
+
     # Process past role if it exists (for updates)
     past_role = process_role_data(parsed, "past_role_")
     if past_role:
@@ -279,9 +328,17 @@ def merge_profile_data(old_profile: Dict, new_profile: Dict) -> Dict:
         if field in new_profile:
             merged[field] = new_profile[field]
 
+    if "team_group" in new_profile and not _is_empty_response(new_profile["team_group"]):
+        merged["team_group"] = new_profile["team_group"]
+
     # Update current role if provided
     if "current_role" in new_profile:
         merged["current_role"] = new_profile["current_role"]
+        if "team_group" not in new_profile:
+            merged["team_group"] = _infer_team_group(
+                merged["current_role"].get("type", ""),
+                merged["current_role"].get("title", ""),
+            )
             
     # Handle past roles
     if "past_roles" in new_profile:

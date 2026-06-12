@@ -7,21 +7,24 @@ Aisha Ahmad:
     title: Doctoral Student
     affiliation: McGill University
   auto_update_publications: false
+  team_group: phd_students_and_postdocs
 Nicolas Ajzenman:
   name: Nicolas Ajzenman
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
-  bio: Nicolas Ajzenman is an Assistant Professor at McGill (Economics Department)
-    and an affiliated professor at J-PAL and IZA. He is working at the intersection
-    of development economics, behavioral economics, and political economy. His research
-    has appeared or is forthcoming in top scientific journals such as the American
-    Economic Journal.
-  avatar: https://github.com/user-attachments/assets/a0df0780-8d08-4e46-aaac-2bc460ee3b7b
+  bio: Nicolas Ajzenman is an Assistant Professor at McGill (Economics 
+    Department) and an affiliated professor at J-PAL and IZA. He is working at 
+    the intersection of development economics, behavioral economics, and 
+    political economy. His research has appeared or is forthcoming in top 
+    scientific journals such as the American Economic Journal.
+  avatar: 
+    https://github.com/user-attachments/assets/a0df0780-8d08-4e46-aaac-2bc460ee3b7b
   social_media_links:
   - label: Scholar
     url: https://scholar.google.ca/citations?user=MdFqDJkAAAAJ&hl=en&oi=ao
 
+  team_group: faculty_members
 Fagar Al-Sayed:
   name: Fagar Al-Sayed
   alumni: true
@@ -29,6 +32,7 @@ Fagar Al-Sayed:
     type: Student
     end_date: "2025"
 
+  team_group: researchers
 Hubert Alain:
   name: Hubert Alain
   alumni: true
@@ -36,6 +40,7 @@ Hubert Alain:
     type: Student
     end_date: "2015"
 
+  team_group: researchers
 Quinn Albaugh:
   name: Quinn Albaugh
   alumni: true
@@ -43,6 +48,7 @@ Quinn Albaugh:
     type: Student
     end_date: "2014"
 
+  team_group: researchers
 Mohammed Ali:
   name: Mohammed Ali
   alumni: true
@@ -50,6 +56,7 @@ Mohammed Ali:
     type: Student
     end_date: "2011"
 
+  team_group: researchers
 Sahar Ramazan Ali:
   name: Sahar Ramazan Ali
   current_role:
@@ -62,6 +69,7 @@ Sahar Ramazan Ali:
   - label: Scholar
     url: https://scholar.google.com/citations?user=sF4qbXlF77oC&hl=en&oi=ao
 
+  team_group: phd_students_and_postdocs
 Brianne Anderson:
   name: Brianne Anderson
   current_role:
@@ -72,6 +80,7 @@ Brianne Anderson:
     advisor: Leonardo Baccini
   avatar: /assets/images/bio/Brianne Anderson.jpg
   auto_update_publications: false
+  team_group: masters_students
 Cameron Anderson:
   name: Cameron Anderson
   current_role:
@@ -79,6 +88,7 @@ Cameron Anderson:
     title: Doctoral Student
     affiliation: McGill University
   auto_update_publications: false
+  team_group: phd_students_and_postdocs
 Christopher Anderson:
   name: Christopher Anderson
   current_role:
@@ -87,6 +97,7 @@ Christopher Anderson:
     affiliation: McGill University
   auto_update_publications: false
 
+  team_group: phd_students_and_postdocs
 Henry Atkins:
   name: Henry Atkins
   alumni: true
@@ -94,6 +105,7 @@ Henry Atkins:
     type: Student
     end_date: "2022"
 
+  team_group: researchers
 Borna Atrchian:
   name: Borna Atrchian
   current_role:
@@ -103,6 +115,7 @@ Borna Atrchian:
     end_date: "2030"
     advisor: Dietlind Stolle
 
+  team_group: phd_students_and_postdocs
 Ayhan Eren Babayigit:
   name: Ayhan Eren Babayigit
   alumni: true
@@ -110,20 +123,22 @@ Ayhan Eren Babayigit:
     type: Student
     end_date: "2025"
 
+  team_group: researchers
 Leonardo Baccini:
   name: Leonardo Baccini
   current_role:
     type: Faculty / Professor
     title: Associate Professor
-  bio: Leonardo Baccini is an Associate Professor in the Department of Political Science
-    at McGill University. His research interests are in the area of international
-    political economy and comparative political economy with a focus on the political
-    effects of structural economic transformations.
+  bio: Leonardo Baccini is an Associate Professor in the Department of Political
+    Science at McGill University. His research interests are in the area of 
+    international political economy and comparative political economy with a 
+    focus on the political effects of structural economic transformations.
   orcid: 0000-0002-6027-9192
   avatar: /assets/images/bio/Leonardo Baccini.jpg
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=t621mGQAAAAJ&hl=en&oi=ao
+  team_group: faculty_members
 Maxime Barbeau:
   name: Maxime Barbeau
   alumni: true
@@ -131,6 +146,7 @@ Maxime Barbeau:
     type: Student
     end_date: "2016"
 
+  team_group: researchers
 Patrizia Barbone:
   name: Patrizia Barbone
   alumni: true
@@ -138,6 +154,7 @@ Patrizia Barbone:
     type: Student
     end_date: "2013"
 
+  team_group: researchers
 Edana Beauvais:
   name: Edana Beauvais
   alumni: true
@@ -145,6 +162,7 @@ Edana Beauvais:
     type: Postdoc
     end_date: "2019"
 
+  team_group: phd_students_and_postdocs
 Jessica Behnke:
   name: Jessica Behnke
   alumni: true
@@ -152,6 +170,7 @@ Jessica Behnke:
     type: Student
     end_date: "2013"
 
+  team_group: researchers
 Sheena Bell:
   name: Sheena Bell
   alumni: true
@@ -162,6 +181,7 @@ Sheena Bell:
     advisor: Éric Bélanger
     affiliation: McGill University
 
+  team_group: masters_students
 Olivier Bergeron-Boutin:
   name: Olivier Bergeron-Boutin
   alumni: true
@@ -169,19 +189,21 @@ Olivier Bergeron-Boutin:
     type: Student
     end_date: "2024"
 
+  team_group: researchers
 Elissa Berwick:
   name: Elissa Berwick
   avatar: /assets/images/bio/Elissa Berwick 2.jpg
   current_role:
     type: Faculty / Professor
-  bio: Prof Berwick’s interests span the sub-fields of comparative politics and quantitative
-    methodology. Her research focuses on sub-state nationalism, exploring how the
-    imagined communities of stateless nations mold actual political attitudes and
-    behaviors.
+  bio: Prof Berwick’s interests span the sub-fields of comparative politics and 
+    quantitative methodology. Her research focuses on sub-state nationalism, 
+    exploring how the imagined communities of stateless nations mold actual 
+    political attitudes and behaviors.
   orcid: 0000-0002-0011-5073
   social_media_links:
   - label: Website
     url: https://www.elissaberwick.com/
+  team_group: faculty_members
 Maxime Blanchard:
   name: Maxime Blanchard
   alumni: true
@@ -189,6 +211,7 @@ Maxime Blanchard:
     type: Student
     end_date: "2024"
 
+  team_group: researchers
 Kelly Blidook:
   name: Kelly Blidook
   current_role:
@@ -196,6 +219,7 @@ Kelly Blidook:
     title: Doctoral Student
     affiliation: McGill University
   auto_update_publications: false
+  team_group: phd_students_and_postdocs
 Marc André Bodet:
   name: Marc André Bodet
   alumni: true
@@ -206,6 +230,7 @@ Marc André Bodet:
     affiliation: McGill University
   auto_update_publications: false
 
+  team_group: phd_students_and_postdocs
 Danielle Bohonos:
   name: Danielle Bohonos
   alumni: true
@@ -213,6 +238,7 @@ Danielle Bohonos:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Arianna Bondi:
   name: Arianna Bondi
   current_role:
@@ -224,6 +250,7 @@ Arianna Bondi:
   orcid: 0000-0003-2491-2672
   avatar: /assets/images/bio/Arianna Bondi.jpg
   auto_update_publications: true
+  team_group: phd_students_and_postdocs
 Maialene Boutin-Wilkins:
   name: Maialene Boutin-Wilkins
   current_role:
@@ -232,6 +259,7 @@ Maialene Boutin-Wilkins:
     affiliation: McGill University
   auto_update_publications: false
 
+  team_group: masters_students
 Tyler Braun:
   name: Tyler Braun
   alumni: true
@@ -239,6 +267,7 @@ Tyler Braun:
     type: Student
     end_date: "2013"
 
+  team_group: researchers
 Aengus Bridgman:
   name: Aengus Bridgman
   alumni: true
@@ -246,25 +275,28 @@ Aengus Bridgman:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Éric Bélanger:
   name: Éric Bélanger
   current_role:
     type: Faculty / Professor
     title: Professor
     start_date: "2003"
-  bio: Éric Bélanger is Professor of Political Science at McGill University. He is
-    also a member of the Royal Society of Canada’s College of New Scholars, Artists
-    and Scientists. Though centered around Quebec and Canadian politics, his research
-    focuses on the general themes of political parties, public opinion, and voting
-    behaviour using a variety of quantitative methods. Some of his prior research
-    has been concerned with economic voting and Quebec provincial elections. He is
-    also involved in research projects studying voting behaviour in Latin America,
-    as well as a comparison of nationalism in Quebec and Scotland.
+  bio: Éric Bélanger is Professor of Political Science at McGill University. He 
+    is also a member of the Royal Society of Canada’s College of New Scholars, 
+    Artists and Scientists. Though centered around Quebec and Canadian politics,
+    his research focuses on the general themes of political parties, public 
+    opinion, and voting behaviour using a variety of quantitative methods. Some 
+    of his prior research has been concerned with economic voting and Quebec 
+    provincial elections. He is also involved in research projects studying 
+    voting behaviour in Latin America, as well as a comparison of nationalism in
+    Quebec and Scotland.
   orcid: 0000-0003-3289-6000
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=CuFbthUAAAAJ
 
+  team_group: faculty_members
 Albert Manuel Orozco Camacho:
   name: Albert Manuel Orozco Camacho
   alumni: true
@@ -272,6 +304,7 @@ Albert Manuel Orozco Camacho:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Xavier Campbell:
   name: Xavier Campbell
   alumni: true
@@ -279,6 +312,7 @@ Xavier Campbell:
     type: Student
     end_date: "2015"
 
+  team_group: researchers
 Rafael Campos-Gottardo:
   name: Rafael Campos-Gottardo
   current_role:
@@ -293,6 +327,7 @@ Rafael Campos-Gottardo:
   - label: Website
     url: https://rafael-campos-gottardo.github.io
 
+  team_group: masters_students
 Ana Canedo:
   name: Ana Canedo
   alumni: true
@@ -300,6 +335,7 @@ Ana Canedo:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Yvonne Chang:
   name: Yvonne Chang
   alumni: true
@@ -307,6 +343,7 @@ Yvonne Chang:
     title: MA
     end_date: "2023"
 
+  team_group: researchers
 Philippe Chassé:
   name: Philippe Chassé
   alumni: true
@@ -314,6 +351,7 @@ Philippe Chassé:
     type: Student
     end_date: "2021"
 
+  team_group: researchers
 Annie Chen:
   name: Annie Chen
   alumni: true
@@ -321,6 +359,7 @@ Annie Chen:
     type: Student
     end_date: "2020"
 
+  team_group: researchers
 Kefan Chen:
   name: Kefan Chen
   current_role:
@@ -333,6 +372,7 @@ Kefan Chen:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=AzVYNOAAAAAJ&hl=en&oi=ao
+  team_group: phd_students_and_postdocs
 Chris Chimm:
   name: Chris Chimm
   alumni: true
@@ -340,6 +380,7 @@ Chris Chimm:
     type: Student
     end_date: "2016"
 
+  team_group: researchers
 Sarah Ciaglia:
   name: Sarah Ciaglia
   alumni: true
@@ -347,6 +388,7 @@ Sarah Ciaglia:
     type: Student
     end_date: "2012"
 
+  team_group: researchers
 Costin Ciobanu:
   name: Costin Ciobanu
   alumni: true
@@ -354,6 +396,7 @@ Costin Ciobanu:
     type: Student
     end_date: "2022"
 
+  team_group: researchers
 Ellen Claes:
   name: Ellen Claes
   alumni: true
@@ -363,6 +406,7 @@ Ellen Claes:
     title: Doctoral Student
     affiliation: McGill University
 
+  team_group: phd_students_and_postdocs
 Ethan Clow:
   name: Ethan Clow
   alumni: true
@@ -370,6 +414,7 @@ Ethan Clow:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Guila Cohen:
   name: Guila Cohen
   current_role:
@@ -380,6 +425,7 @@ Guila Cohen:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+  team_group: phd_students_and_postdocs
 Maxime Coulon-Hamelin:
   name: Maxime Coulon-Hamelin
   alumni: true
@@ -387,6 +433,7 @@ Maxime Coulon-Hamelin:
     type: Student
     end_date: "2022"
 
+  team_group: researchers
 Bolette Danckert:
   name: Bolette Danckert
   alumni: true
@@ -394,6 +441,7 @@ Bolette Danckert:
     type: Student
     end_date: "2014"
 
+  team_group: researchers
 Jacob Danovitch:
   name: Jacob Danovitch
   alumni: true
@@ -401,6 +449,7 @@ Jacob Danovitch:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Shadia El Dardiry:
   name: Shadia El Dardiry
   alumni: true
@@ -411,12 +460,14 @@ Shadia El Dardiry:
     advisor: Dietlind Stolle
     affiliation: McGill University
 
+  team_group: masters_students
 Rebecca Daviddi:
   name: Rebecca Daviddi
   current_role:
     type: Faculty / Professor
   orcid: 0009-0009-7176-0115
   auto_update_publications: true
+  team_group: faculty_members
 Natalie Delmonte:
   name: Natalie Delmonte
   alumni: true
@@ -424,6 +475,7 @@ Natalie Delmonte:
     type: Student
     end_date: "2024"
 
+  team_group: researchers
 Didem Demirag:
   name: Didem Demirag
   alumni: true
@@ -431,6 +483,7 @@ Didem Demirag:
     type: Student
     end_date: "2022"
 
+  team_group: researchers
 Clare Devereux:
   name: Clare Devereux
   alumni: true
@@ -438,6 +491,7 @@ Clare Devereux:
     type: Student
     end_date: "2015"
 
+  team_group: researchers
 Thomas Didier:
   name: Thomas Didier
   alumni: true
@@ -445,6 +499,7 @@ Thomas Didier:
     type: Student
     end_date: "2011"
 
+  team_group: researchers
 Valérie Doucette:
   name: Valérie Doucette
   alumni: true
@@ -456,6 +511,7 @@ William East:
     type: Student
     end_date: "2019"
 
+  team_group: researchers
 Merve Erdilmen:
   name: Merve Erdilmen
   alumni: true
@@ -463,6 +519,7 @@ Merve Erdilmen:
     type: Student
     end_date: "2018"
 
+  team_group: researchers
 Chris Erl:
   name: Chris Erl
   alumni: true
@@ -470,24 +527,27 @@ Chris Erl:
     type: Student
     end_date: "2022"
 
+  team_group: researchers
 Aaron Erlich:
   name: Aaron Erlich
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
     start_date: "2016"
-  bio: Aaron Erlich is an Assistant Professor of Political Science at McGill University.
-    His research interests concern questions of democratization, information dissemination,
-    political behavior, political participation, and public opinion in the Former
-    Soviet Union, Eastern and Southern Africa, and Mexico. Professor Erlich's research
-    makes use of a variety of methods, such as field experiments, survey experiments,
-    and mixed-method research designs.
+  bio: Aaron Erlich is an Assistant Professor of Political Science at McGill 
+    University. His research interests concern questions of democratization, 
+    information dissemination, political behavior, political participation, and 
+    public opinion in the Former Soviet Union, Eastern and Southern Africa, and 
+    Mexico. Professor Erlich's research makes use of a variety of methods, such 
+    as field experiments, survey experiments, and mixed-method research designs.
   orcid: 0000-0001-6571-9081
-  avatar: https://github.com/user-attachments/assets/4c441e39-9859-48e0-9440-e743ddbd8838
+  avatar: 
+    https://github.com/user-attachments/assets/4c441e39-9859-48e0-9440-e743ddbd8838
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=h8n98PQAAAAJ&hl=en
 
+  team_group: faculty_members
 Garrett Evans:
   name: Garrett Evans
   current_role:
@@ -498,6 +558,7 @@ Garrett Evans:
     advisor: Nicolas Ajzenman
     affiliation: McGill University
   auto_update_publications: false
+  team_group: phd_students_and_postdocs
 Jean-Simon Farrah:
   name: Jean-Simon Farrah
   alumni: true
@@ -509,6 +570,7 @@ Jean-Simon Farrah:
     affiliation: McGill University
   auto_update_publications: false
 
+  team_group: masters_students
 Andréa Febres-Gagné:
   name: Andréa Febres-Gagné
   alumni: true
@@ -516,6 +578,7 @@ Andréa Febres-Gagné:
     type: Student
     end_date: "2022"
 
+  team_group: researchers
 Fernando Feitosa:
   name: Fernando Feitosa
   alumni: true
@@ -523,6 +586,7 @@ Fernando Feitosa:
     type: Postdoc
     end_date: "2022"
 
+  team_group: phd_students_and_postdocs
 Aarash Feizi:
   name: Aarash Feizi
   current_role:
@@ -536,6 +600,7 @@ Aarash Feizi:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=wdZdCMoAAAAJ
 
+  team_group: phd_students_and_postdocs
 Benjamin Ferland:
   name: Benjamin Ferland
   alumni: true
@@ -543,6 +608,7 @@ Benjamin Ferland:
     type: Student
     end_date: "2015"
 
+  team_group: researchers
 Ina Filkobski:
   name: Ina Filkobski
   alumni: true
@@ -550,23 +616,26 @@ Ina Filkobski:
     type: Student
     end_date: "2022"
 
+  team_group: researchers
 Benjamin Forest:
   name: Benjamin Forest
   avatar: /assets/images/bio/Benjamin Forest 2.jpg
   current_role:
     type: Faculty / Professor
     title: Associate Professor
-  bio: Benjamin Forest is an Associate Professor at McGill University in the Department
-    of Geography as well as an Associate Member of the Department of Political Science.
-    A specialist in the field of political geography, his work revolves around the
-    theme of diversity and electoral reform. In addition to being part of a project
-    studying monuments and memorials in the post-Soviet sphere, Professor Forest is
-    currently heading a project on diversity in party structures and constituencies
-    in Canada. He is also working on research exploring municipal LGBTQ policies.
+  bio: Benjamin Forest is an Associate Professor at McGill University in the 
+    Department of Geography as well as an Associate Member of the Department of 
+    Political Science. A specialist in the field of political geography, his 
+    work revolves around the theme of diversity and electoral reform. In 
+    addition to being part of a project studying monuments and memorials in the 
+    post-Soviet sphere, Professor Forest is currently heading a project on 
+    diversity in party structures and constituencies in Canada. He is also 
+    working on research exploring municipal LGBTQ policies.
   orcid: https://orcid.org/0000-0002-4831-9403
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=tLfKPpgAAAAJ&hl=en&oi=ao
+  team_group: faculty_members
 Patrick Forest:
   name: Patrick Forest
   alumni: true
@@ -574,6 +643,7 @@ Patrick Forest:
     type: Postdoc
     end_date: "2011"
 
+  team_group: phd_students_and_postdocs
 Sarah Freund:
   name: Sarah Freund
   alumni: true
@@ -581,6 +651,7 @@ Sarah Freund:
     type: Student
     end_date: "2005"
 
+  team_group: researchers
 Jorge Frozzini:
   name: Jorge Frozzini
   alumni: true
@@ -588,6 +659,7 @@ Jorge Frozzini:
     type: Student
     end_date: "2011"
 
+  team_group: researchers
 Etienne Gagnon:
   name: Etienne Gagnon
   alumni: true
@@ -595,6 +667,7 @@ Etienne Gagnon:
     type: Student
     end_date: "2020"
 
+  team_group: researchers
 Thomas Gareau-Paquette:
   name: Thomas Gareau-Paquette
   alumni: true
@@ -602,6 +675,7 @@ Thomas Gareau-Paquette:
     type: Student
     end_date: "2024"
 
+  team_group: researchers
 Holly Garnett:
   name: Holly Garnett
   alumni: true
@@ -609,6 +683,7 @@ Holly Garnett:
     type: Student
     end_date: "2017"
 
+  team_group: researchers
 Lara Gauthier:
   name: Lara Gauthier
   alumni: true
@@ -616,6 +691,7 @@ Lara Gauthier:
     type: Postdoc
     end_date: "2020"
 
+  team_group: phd_students_and_postdocs
 Daniel St. Germaine:
   name: Daniel St. Germaine
   alumni: true
@@ -623,6 +699,7 @@ Daniel St. Germaine:
     type: Student
     end_date: "2021"
 
+  team_group: researchers
 Kassandra Gervasi:
   name: Kassandra Gervasi
   current_role:
@@ -633,6 +710,7 @@ Kassandra Gervasi:
     advisor: Leonardo Baccini
   avatar: /assets/images/bio/Kassandra Gervasi.jpg
 
+  team_group: masters_students
 Terhas Ghebretecle:
   name: Terhas Ghebretecle
   current_role:
@@ -643,6 +721,7 @@ Terhas Ghebretecle:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+  team_group: phd_students_and_postdocs
 Andrew Gibson:
   name: Andrew Gibson
   alumni: true
@@ -653,6 +732,7 @@ Claire Girard:
     type: Student
     end_date: "2013"
 
+  team_group: researchers
 Dan Goldberg:
   name: Dan Goldberg
   alumni: true
@@ -663,6 +743,7 @@ Dan Goldberg:
     affiliation: McGill University
   auto_update_publications: false
 
+  team_group: phd_students_and_postdocs
 Gaby Gonzalez-Sirois:
   name: Gaby Gonzalez-Sirois
   alumni: true
@@ -670,11 +751,13 @@ Gaby Gonzalez-Sirois:
     type: Student
     end_date: "2019"
 
+  team_group: researchers
 Elizabeth Goodyear-Grant:
   name: Elizabeth Goodyear-Grant
   current_role:
     type: Student
     title: Doctoral Student
+  team_group: phd_students_and_postdocs
 Adela Gotz:
   name: Adela Gotz
   alumni: true
@@ -685,6 +768,7 @@ Adela Gotz:
     advisor: Éric Bélanger
     affiliation: McGill University
   auto_update_publications: false
+  team_group: masters_students
 Giovanni Guiga:
   name: Giovanni Guiga
   alumni: true
@@ -696,6 +780,7 @@ Birte Gundelach:
     type: Student
     end_date: "2013"
 
+  team_group: researchers
 Caroline Habluetzl:
   name: Caroline Habluetzl
   alumni: true
@@ -707,6 +792,7 @@ Allison Harell:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+  team_group: phd_students_and_postdocs
 Ian Van Haren:
   name: Ian Van Haren
   alumni: true
@@ -719,27 +805,31 @@ Ian Van Haren:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=_0j4tPAAAAAJ
 
+  team_group: researchers
 Ian Van Haren 2:
   name: Ian Van Haren
   current_role:
     type: Student
 
+  team_group: researchers
 Eric Hehman:
   name: Eric Hehman
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
-  bio: Eric Hehman is an Assistant Professor of Psychology at McGill University and
-    director of the Seeing Human Lab.  Generally, Dr. Hehman’s research examines how
-    individuals perceive and evaluate one another across group boundaries (e.g., race,
-    gender, sexual-orientation, occupation, etc). To address these questions, he takes
-    a multi-method approach, incorporating a broad range of behavioral (e.g., computer-mouse
-    tracking, digital face modeling, group interactions) and statistical techniques
-    (e.g., multilevel modeling, structural equation modeling).
+  bio: Eric Hehman is an Assistant Professor of Psychology at McGill University 
+    and director of the Seeing Human Lab.  Generally, Dr. Hehman’s research 
+    examines how individuals perceive and evaluate one another across group 
+    boundaries (e.g., race, gender, sexual-orientation, occupation, etc). To 
+    address these questions, he takes a multi-method approach, incorporating a 
+    broad range of behavioral (e.g., computer-mouse tracking, digital face 
+    modeling, group interactions) and statistical techniques (e.g., multilevel 
+    modeling, structural equation modeling).
   orcid: https://orcid.org/0000-0003-2227-1517
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=n8IeMMEAAAAJ
+  team_group: faculty_members
 Shaden Hetu-Frankel:
   name: Shaden Hetu-Frankel
   alumni: true
@@ -747,6 +837,7 @@ Shaden Hetu-Frankel:
     type: Student
     end_date: "2022"
 
+  team_group: researchers
 Joe Heywood:
   name: Joe Heywood
   alumni: true
@@ -754,6 +845,7 @@ Joe Heywood:
     type: Student
     end_date: "2012"
 
+  team_group: researchers
 John Hicks:
   name: John Hicks
   alumni: true
@@ -761,6 +853,7 @@ John Hicks:
     type: Student
     end_date: "2024"
 
+  team_group: researchers
 Richard Hink:
   name: Richard Hink
   alumni: true
@@ -770,6 +863,7 @@ Richard Hink:
     title: Doctoral Student
     affiliation: McGill University
 
+  team_group: phd_students_and_postdocs
 Esme Hood:
   name: Esme Hood
   current_role:
@@ -780,6 +874,7 @@ Esme Hood:
     advisor: Eran Shor
   orcid: 0009-0006-0758-9788
 
+  team_group: phd_students_and_postdocs
 Sarah Houde:
   name: Sarah Houde
   alumni: true
@@ -789,6 +884,7 @@ Sarah Houde:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+  team_group: masters_students
 Emmanuelle Hébert:
   name: Emmanuelle Hébert
   current_role:
@@ -796,6 +892,7 @@ Emmanuelle Hébert:
     title: Master's Student
     affiliation: McGill University
   auto_update_publications: false
+  team_group: masters_students
 Raffaele Iacovino:
   name: Raffaele Iacovino
   current_role:
@@ -805,6 +902,7 @@ Raffaele Iacovino:
     affiliation: McGill University
   auto_update_publications: false
 
+  team_group: phd_students_and_postdocs
 Anne Imouza:
   name: Anne Imouza
   alumni: false
@@ -818,10 +916,11 @@ Anne Imouza:
     title: Doctoral Student
     start_date: "2023"
     advisor: Dietlind Stolle
-  bio: Administrative lead supporting coordination, operations, and outreach for McGill
-    CSDC.
+  bio: Administrative lead supporting coordination, operations, and outreach for
+    McGill CSDC.
   avatar: /assets/images/bio/placeholder/default.jpg
 
+  team_group: researchers
 Olivier Jacques:
   name: Olivier Jacques
   alumni: true
@@ -829,6 +928,7 @@ Olivier Jacques:
     type: Student
     end_date: "2021"
 
+  team_group: researchers
 Luis Alvarez Jimenez:
   name: Luis Alvarez Jimenez
   current_role:
@@ -839,6 +939,7 @@ Luis Alvarez Jimenez:
     advisor: Aaron Erlich
     affiliation: McGill University
   auto_update_publications: false
+  team_group: masters_students
 Jeroen Joly:
   name: Jeroen Joly
   alumni: true
@@ -846,6 +947,7 @@ Jeroen Joly:
     type: Postdoc
     end_date: "2014"
 
+  team_group: phd_students_and_postdocs
 Natalie Kaiser:
   name: Natalie Kaiser
   alumni: true
@@ -856,6 +958,7 @@ Natalie Kaiser:
     advisor: Benjamin Forest
     affiliation: McGill University
 
+  team_group: masters_students
 Janine Kanters:
   name: Janine Kanters
   alumni: true
@@ -863,6 +966,7 @@ Janine Kanters:
     type: Student
     end_date: "2016"
 
+  team_group: researchers
 Sakeef Karim:
   name: Sakeef Karim
   alumni: true
@@ -870,6 +974,7 @@ Sakeef Karim:
     type: Student
     end_date: "2022"
 
+  team_group: researchers
 Jordan Katz:
   name: Jordan Katz
   current_role:
@@ -880,6 +985,7 @@ Jordan Katz:
     advisor: Thomas Soehl
   avatar: /assets/images/bio/Jordan Katz.jpg
 
+  team_group: phd_students_and_postdocs
 Dilse Kaygisiz:
   name: Dilse Kaygisiz
   alumni: true
@@ -887,6 +993,7 @@ Dilse Kaygisiz:
     type: Student
     end_date: "2022"
 
+  team_group: researchers
 Anthony Kevins:
   name: Anthony Kevins
   alumni: true
@@ -894,6 +1001,7 @@ Anthony Kevins:
     type: Student
     end_date: "2014"
 
+  team_group: researchers
 Khaoula El Khalil:
   name: Khaoula El Khalil
   alumni: true
@@ -902,6 +1010,7 @@ Khaoula El Khalil:
     end_date: "2022"
   avatar: /assets/images/bio/Khaoula El Khalil.jpg
   auto_update_publications: false
+  team_group: researchers
 Kira Killermann:
   name: Kira Killermann
   alumni: true
@@ -909,6 +1018,7 @@ Kira Killermann:
     type: Student
     end_date: "2012"
 
+  team_group: researchers
 Susanna Kislenko:
   name: Susanna Kislenko
   current_role:
@@ -917,6 +1027,7 @@ Susanna Kislenko:
     affiliation: McGill University
   auto_update_publications: false
 
+  team_group: masters_students
 Katherine Kline:
   name: Katherine Kline
 Emma Kondrup:
@@ -931,9 +1042,10 @@ Emma Kondrup:
     title: Doctoral Student
     start_date: "2026"
     advisor: Reihaneh Rabbany, Catherine Régis
-  bio: Web developer maintaining the McGill CSDC website and publication/member update
-    workflow.
+  bio: Web developer maintaining the McGill CSDC website and publication/member 
+    update workflow.
   avatar: /assets/images/bio/placeholder/default.jpg
+  team_group: researchers
 Angela Kostelko:
   name: Angela Kostelko
   alumni: true
@@ -945,6 +1057,7 @@ Angela Kostelko:
     affiliation: McGill University
   auto_update_publications: false
 
+  team_group: masters_students
 Maya Krishnan:
   name: Maya Krishnan
   current_role:
@@ -955,6 +1068,7 @@ Maya Krishnan:
     advisor: Eran Shor
     affiliation: McGill University
   auto_update_publications: false
+  team_group: phd_students_and_postdocs
 Freya Lambrechts:
   name: Freya Lambrechts
   alumni: true
@@ -962,6 +1076,7 @@ Freya Lambrechts:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Anna Laurence:
   name: Anna Laurence
   alumni: true
@@ -972,6 +1087,7 @@ Anna Laurence:
     advisor: Dietlind Stolle
     affiliation: McGill University
 
+  team_group: masters_students
 Mathieu Lavigne:
   name: Mathieu Lavigne
   alumni: true
@@ -979,6 +1095,7 @@ Mathieu Lavigne:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Andrea Lawlor:
   name: Andrea Lawlor
   alumni: true
@@ -990,6 +1107,7 @@ Sarah Lebeau:
     type: Student
     end_date: "2017"
 
+  team_group: researchers
 Zoé Hyman Levy:
   name: Zoé Hyman Levy
   alumni: true
@@ -997,6 +1115,7 @@ Zoé Hyman Levy:
     type: Student
     end_date: "2024"
 
+  team_group: researchers
 Qinggang Li:
   name: Qinggang Li
   current_role:
@@ -1004,13 +1123,14 @@ Qinggang Li:
     title: Doctoral Student
     start_date: "2024"
     end_date: "2029"
-  bio: Qinggang is generally interested in state-society relations and the political
-    economy of developing countries. He is currently working on how different forms
-    of patron-client relations affect development and state capacity in developing
-    countries. He also has an interest in political participation in nondemocratic
-    contexts.
+  bio: Qinggang is generally interested in state-society relations and the 
+    political economy of developing countries. He is currently working on how 
+    different forms of patron-client relations affect development and state 
+    capacity in developing countries. He also has an interest in political 
+    participation in nondemocratic contexts.
   avatar: /assets/images/bio/Qinggang Li.jpg
 
+  team_group: phd_students_and_postdocs
 Rupinder Liddar:
   name: Rupinder Liddar
   current_role:
@@ -1025,6 +1145,7 @@ Rupinder Liddar:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=1cN1RpQAAAAJ
 
+  team_group: phd_students_and_postdocs
 Evan Light:
   name: Evan Light
   alumni: true
@@ -1032,6 +1153,7 @@ Evan Light:
     type: Student
     end_date: "2012"
 
+  team_group: researchers
 Travis Lim:
   name: Travis Lim
   current_role:
@@ -1046,6 +1168,7 @@ Travis Lim:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=6mSqPZsAAAAJ
 
+  team_group: phd_students_and_postdocs
 Natalia Lis:
   name: Natalia Lis
   alumni: true
@@ -1056,6 +1179,7 @@ Natalia Lis:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+  team_group: masters_students
 Jean-Baptiste Litrico:
   name: Jean-Baptiste Litrico
   alumni: true
@@ -1066,6 +1190,7 @@ Jean-Baptiste Litrico:
     affiliation: McGill University
   auto_update_publications: false
 
+  team_group: phd_students_and_postdocs
 Xuanchi Liu:
   name: Xuanchi Liu
   current_role:
@@ -1075,6 +1200,7 @@ Xuanchi Liu:
     end_date: "2028"
     advisor: Eran Shor
 
+  team_group: phd_students_and_postdocs
 Victor Livernoche:
   name: Victor Livernoche
   current_role:
@@ -1113,6 +1239,7 @@ Victor Livernoche:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=tuhCUyIAAAAJ
 
+  team_group: phd_students_and_postdocs
 Jasmine Lorenzini:
   name: Jasmine Lorenzini
   alumni: true
@@ -1120,6 +1247,7 @@ Jasmine Lorenzini:
     type: Student
     end_date: "2013"
 
+  team_group: researchers
 Zekai Lu:
   name: Zekai Lu
   current_role:
@@ -1133,32 +1261,36 @@ Zekai Lu:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=LDs-D4kAAAAJ
 
+  team_group: masters_students
 Juan Pablo Luna:
   name: Juan Pablo Luna
   current_role:
     type: Faculty / Professor
     title: Inaugural Diamond Brown Chair in Democratic Studies
-  bio: Juan Pablo Luna grew up in Montevideo, Uruguay, and is the Inaugural Diamond
-    Brown Chair in Democratic Studies at McGill. While mainly focused on comparative
-    Latin American politics, his research analyzes how socio-structural conditions
-    such as social inequality and state capacity shape democratic institutions and
-    development trajectories. In recent years, he has researched how organized crime
-    dynamics is contributing to reshape politics, states, and markets in Latin America.
-    His books include Latin American Party Systems (with Kitschelt, Hawkins, Rosas,
-    and Zechmeister; Cambridge, 2010); Segmented Representation, Political Party Strategies
-    ni Unequal Democracies (Oxford, 2014); The Resilience of the Latin American Right
-    (with Rovira-Kaltwasser; Johns Hopkins, 2014); En vez del optimismo. Crisis de
-    representación política en el Chile actual (Catalonia, 2017); Political Parties
-    and Diminished Subtypes (with Rosenblatt, Piñeiro, and Vommaro; Cambridge, 2021);
-    Latin American Politics and Society. A Comparative Historical Analysis (with Gerardo
-    Munck, Cambridge University Press, 2022); Criminal Politics and Botched Development
-    in Contemporary Latin America (with Andreas Feldmann, Cambridge University Press,
-    2024); and ¿Democracia Muerta? Chile, América Latina y un Modelo Estallado. (Ariel,
+  bio: Juan Pablo Luna grew up in Montevideo, Uruguay, and is the Inaugural 
+    Diamond Brown Chair in Democratic Studies at McGill. While mainly focused on
+    comparative Latin American politics, his research analyzes how 
+    socio-structural conditions such as social inequality and state capacity 
+    shape democratic institutions and development trajectories. In recent years,
+    he has researched how organized crime dynamics is contributing to reshape 
+    politics, states, and markets in Latin America. His books include Latin 
+    American Party Systems (with Kitschelt, Hawkins, Rosas, and Zechmeister; 
+    Cambridge, 2010); Segmented Representation, Political Party Strategies ni 
+    Unequal Democracies (Oxford, 2014); The Resilience of the Latin American 
+    Right (with Rovira-Kaltwasser; Johns Hopkins, 2014); En vez del optimismo. 
+    Crisis de representación política en el Chile actual (Catalonia, 2017); 
+    Political Parties and Diminished Subtypes (with Rosenblatt, Piñeiro, and 
+    Vommaro; Cambridge, 2021); Latin American Politics and Society. A 
+    Comparative Historical Analysis (with Gerardo Munck, Cambridge University 
+    Press, 2022); Criminal Politics and Botched Development in Contemporary 
+    Latin America (with Andreas Feldmann, Cambridge University Press, 2024); and
+    ¿Democracia Muerta? Chile, América Latina y un Modelo Estallado. (Ariel, 
     2024).
   orcid: https://orcid.org/0000-0001-7597-203X
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
+  team_group: faculty_members
 Justin Lutz:
   name: Justin Lutz
   alumni: true
@@ -1166,6 +1298,7 @@ Justin Lutz:
     type: Student
     end_date: "2015"
 
+  team_group: researchers
 Félix Lévesque:
   name: Félix Lévesque
   alumni: true
@@ -1173,12 +1306,14 @@ Félix Lévesque:
     type: Student
     end_date: "2024"
 
+  team_group: researchers
 Michael Mackenzie:
   name: Michael Mackenzie
   current_role:
     type: Student
     title: Master's Student
   auto_update_publications: false
+  team_group: masters_students
 Shoshana Magnet:
   name: Shoshana Magnet
   alumni: true
@@ -1188,6 +1323,7 @@ Shoshana Magnet:
     title: Postdoctoral Fellow
     affiliation: McGill University
 
+  team_group: phd_students_and_postdocs
 Pratik Mahajan:
   name: Pratik Mahajan
   alumni: true
@@ -1195,6 +1331,7 @@ Pratik Mahajan:
     type: Student
     end_date: "2024"
 
+  team_group: researchers
 Adam Mahon:
   name: Adam Mahon
   alumni: true
@@ -1203,6 +1340,7 @@ Adam Mahon:
     end_date: "2009"
     title: Master's Student
     affiliation: McGill University
+  team_group: masters_students
 Victoria Mahon:
   name: Victoria Mahon
   current_role:
@@ -1214,6 +1352,7 @@ Victoria Mahon:
   orcid: 0009-0002-3577-3217
   avatar: /assets/images/bio/Victoria Mahon.jpg
   auto_update_publications: true
+  team_group: phd_students_and_postdocs
 Brett Manzer:
   name: Brett Manzer
   alumni: true
@@ -1221,6 +1360,7 @@ Brett Manzer:
     type: Student
     end_date: "2018"
 
+  team_group: researchers
 Beatrice Marry:
   name: Beatrice Marry
   alumni: true
@@ -1231,6 +1371,7 @@ Beatrice Marry:
     advisor: Dietlind Stolle
     affiliation: McGill University
 
+  team_group: masters_students
 Janine Marshall:
   name: Janine Marshall
   current_role:
@@ -1238,6 +1379,7 @@ Janine Marshall:
     title: Master's Student
     affiliation: McGill University
   auto_update_publications: false
+  team_group: masters_students
 Zachary Marshall:
   name: Zachary Marshall
   alumni: true
@@ -1245,6 +1387,7 @@ Zachary Marshall:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Nick Maturo:
   name: Nick Maturo
   alumni: true
@@ -1252,6 +1395,7 @@ Nick Maturo:
     type: Student
     end_date: "2015"
 
+  team_group: researchers
 Julia Maynard:
   name: Julia Maynard
   alumni: true
@@ -1259,6 +1403,7 @@ Julia Maynard:
     type: Student
     end_date: "2017"
 
+  team_group: researchers
 Abigail Chaya Maza:
   name: Abigail Chaya Maza
   alumni: true
@@ -1266,6 +1411,7 @@ Abigail Chaya Maza:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Andrew McCormack:
   name: Andrew McCormack
   alumni: true
@@ -1273,6 +1419,7 @@ Andrew McCormack:
     type: Student
     end_date: "2019"
 
+  team_group: researchers
 Aiden McIlvaney:
   name: Aiden McIlvaney
   current_role:
@@ -1283,6 +1430,7 @@ Aiden McIlvaney:
     advisor: Aaron Erlich
   orcid: 0009-0000-7512-6554
 
+  team_group: masters_students
 Katerina McMulen:
   name: Katerina McMulen
   current_role:
@@ -1292,6 +1440,7 @@ Katerina McMulen:
     end_date: "2026"
     advisor: Aaron Erlich
 
+  team_group: masters_students
 Denver McNeney:
   name: Denver McNeney
   alumni: true
@@ -1299,6 +1448,7 @@ Denver McNeney:
     type: Student
     end_date: "2019"
 
+  team_group: researchers
 Eric Merkley:
   name: Eric Merkley
   alumni: true
@@ -1306,6 +1456,7 @@ Eric Merkley:
     type: Student
     end_date: "2013"
 
+  team_group: researchers
 Ezelbahar Metin:
   name: Ezelbahar Metin
   current_role:
@@ -1316,6 +1467,7 @@ Ezelbahar Metin:
     advisor: Eran Shor
   orcid: 0009-0002-4832-666X
 
+  team_group: phd_students_and_postdocs
 Paulina Mickiewicz:
   name: Paulina Mickiewicz
   alumni: true
@@ -1327,6 +1479,7 @@ Alexandre Miltsov:
     type: Student
     end_date: "2018"
 
+  team_group: researchers
 Philippe Mongrain:
   name: Philippe Mongrain
   alumni: true
@@ -1334,6 +1487,7 @@ Philippe Mongrain:
     type: Postdoc
     end_date: "2023"
 
+  team_group: phd_students_and_postdocs
 Isadora Borges Monroy:
   name: Isadora Borges Monroy
   alumni: true
@@ -1341,6 +1495,7 @@ Isadora Borges Monroy:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Mahsa Moosavi:
   name: Mahsa Moosavi
   alumni: true
@@ -1348,6 +1503,7 @@ Mahsa Moosavi:
     type: Student
     end_date: "2022"
 
+  team_group: researchers
 Anaïs Légaré Morasse:
   name: Anaïs Légaré Morasse
   alumni: true
@@ -1355,6 +1511,7 @@ Anaïs Légaré Morasse:
     type: Student
     end_date: "2018"
 
+  team_group: researchers
 Brad Morrison:
   name: Brad Morrison
   alumni: true
@@ -1366,6 +1523,7 @@ Emma Myhre:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Rosalie Nadeau:
   name: Rosalie Nadeau
   alumni: true
@@ -1373,6 +1531,7 @@ Rosalie Nadeau:
     type: Student
     end_date: "2018"
 
+  team_group: researchers
 Mahdi Nejadgholi:
   name: Mahdi Nejadgholi
   alumni: true
@@ -1380,6 +1539,7 @@ Mahdi Nejadgholi:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Alan Nemirovski:
   name: Alan Nemirovski
   current_role:
@@ -1391,6 +1551,7 @@ Alan Nemirovski:
   orcid: 0009-0009-3106-9426
   avatar: /assets/images/bio/Alan Nemirovski.jpg
   auto_update_publications: true
+  team_group: masters_students
 Ka U Ng:
   name: Ka U Ng
   alumni: true
@@ -1398,6 +1559,7 @@ Ka U Ng:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Eugene Ofosu:
   name: Eugene Ofosu
   alumni: true
@@ -1405,6 +1567,7 @@ Eugene Ofosu:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Bethany Or:
   name: Bethany Or
   alumni: true
@@ -1415,6 +1578,7 @@ Bethany Or:
     advisor: Dietlind Stolle
     affiliation: McGill University
 
+  team_group: masters_students
 Saewon Park:
   name: Saewon Park
   alumni: true
@@ -1422,6 +1586,7 @@ Saewon Park:
     type: Student
     end_date: "2019"
 
+  team_group: researchers
 Eva Falk Pedersen:
   name: Eva Falk Pedersen
   alumni: true
@@ -1433,6 +1598,7 @@ Kellin Pelrine:
     type: Student
     end_date: "2025"
 
+  team_group: researchers
 Erin Penner:
   name: Erin Penner
   current_role:
@@ -1440,6 +1606,7 @@ Erin Penner:
     title: Master's Student
     affiliation: McGill University
   auto_update_publications: false
+  team_group: faculty_members
 Teresa Pian:
   name: Teresa Pian
   current_role:
@@ -1449,12 +1616,14 @@ Teresa Pian:
     end_date: "2029"
     advisor: Dietlind Stolle
 
+  team_group: phd_students_and_postdocs
 Nathan Di Pinto:
   name: Nathan Di Pinto
   current_role:
     type: Student
     advisor: Benjamin Forest
 
+  team_group: researchers
 Myriam Plourde:
   name: Myriam Plourde
   alumni: true
@@ -1462,35 +1631,40 @@ Myriam Plourde:
     type: Student
     end_date: "2012"
 
+  team_group: researchers
 Farimah Poursafaei:
   name: Farimah Poursafaei
   alumni: true
   current_role:
     type: Postdoc
-  bio: Farimah Poursafaei is a Postdoc Fellow at McGill University and Mila, Quebec
-    AI Institute. Her research interests include dynamic graph representation learning,
-    graph neural networks, graph machine learning, and real-world network data analysis.
+  bio: Farimah Poursafaei is a Postdoc Fellow at McGill University and Mila, 
+    Quebec AI Institute. Her research interests include dynamic graph 
+    representation learning, graph neural networks, graph machine learning, and 
+    real-world network data analysis.
   avatar: /assets/images/bio/Farimah Poursafaei.jpg
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=gZ7HEsMAAAAJ
 
+  team_group: phd_students_and_postdocs
 Reihaneh Rabbany:
   name: Reihaneh Rabbany
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
-  bio: Reihaneh Rabbany is an Assistant Professor at the School of Computer Science,
-    McGill University. Before that, she was a Postdoctoral fellow at the School of
-    Computer Science, Carnegie Mellon University. She completed her Ph.D. in Computing
-    Science Department at the University of Alberta. Her research is at the intersection
-    of network science, data mining and machine learning, with a focus on analyzing
-    real-world interconnected data, and social good applications.
+  bio: Reihaneh Rabbany is an Assistant Professor at the School of Computer 
+    Science, McGill University. Before that, she was a Postdoctoral fellow at 
+    the School of Computer Science, Carnegie Mellon University. She completed 
+    her Ph.D. in Computing Science Department at the University of Alberta. Her 
+    research is at the intersection of network science, data mining and machine 
+    learning, with a focus on analyzing real-world interconnected data, and 
+    social good applications.
   orcid: 0000-0003-2348-0353
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=Foh_c-QAAAAJ
 
+  team_group: faculty_members
 Reza Rahimian:
   name: Reza Rahimian
   alumni: true
@@ -1498,6 +1672,7 @@ Reza Rahimian:
     type: Student
     end_date: "2022"
 
+  team_group: researchers
 Rachel Rammal:
   name: Rachel Rammal
   current_role:
@@ -1506,6 +1681,7 @@ Rachel Rammal:
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
+  team_group: phd_students_and_postdocs
 Emma-Kate Ranachan:
   name: Emma-Kate Ranachan
   current_role:
@@ -1514,6 +1690,7 @@ Emma-Kate Ranachan:
     affiliation: McGill University
   auto_update_publications: false
 
+  team_group: masters_students
 Jeremy Rappel:
   name: Jeremy Rappel
   current_role:
@@ -1526,6 +1703,7 @@ Jeremy Rappel:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
+  team_group: researchers
 Tim Reeskens:
   name: Tim Reeskens
   current_role:
@@ -1534,12 +1712,14 @@ Tim Reeskens:
     affiliation: McGill University
   auto_update_publications: false
 
+  team_group: phd_students_and_postdocs
 Ayanna Roberts:
   name: Ayanna Roberts
   current_role:
     type: Student
     title: Master's Student
     advisor: Dietlind Stolle
+  team_group: masters_students
 Christopher Ross:
   name: Christopher Ross
   alumni: true
@@ -1547,6 +1727,7 @@ Christopher Ross:
     type: Student
     end_date: "2023"
 
+  team_group: researchers
 Marie-Pierre Rouette:
   name: Marie-Pierre Rouette
   current_role:
@@ -1555,6 +1736,7 @@ Marie-Pierre Rouette:
     advisor: Éric Bélanger
     affiliation: McGill University
   auto_update_publications: false
+  team_group: masters_students
 Nick Ruderman:
   name: Nick Ruderman
   alumni: true
@@ -1562,6 +1744,7 @@ Nick Ruderman:
     type: Postdoc
     end_date: "2019"
 
+  team_group: phd_students_and_postdocs
 Rafico Ruiz:
   name: Rafico Ruiz
   alumni: true
@@ -1569,6 +1752,7 @@ Rafico Ruiz:
     type: Student
     end_date: "2014"
 
+  team_group: researchers
 Cassandra Ryan:
   name: Cassandra Ryan
   alumni: true
@@ -1576,6 +1760,7 @@ Cassandra Ryan:
     type: Student
     end_date: "2020"
 
+  team_group: researchers
 Daniel Sailofsky:
   name: Daniel Sailofsky
   alumni: true
@@ -1583,6 +1768,7 @@ Daniel Sailofsky:
     type: Student
     end_date: "2022"
 
+  team_group: researchers
 Joseph Sannicandro:
   name: Joseph Sannicandro
   alumni: true
@@ -1590,6 +1776,7 @@ Joseph Sannicandro:
     type: Student
     end_date: "2012"
 
+  team_group: researchers
 Steven Schnoor:
   name: Steven Schnoor
   alumni: true
@@ -1597,6 +1784,7 @@ Steven Schnoor:
     type: Student
     end_date: "2013"
 
+  team_group: researchers
 Colin Scott:
   name: Colin Scott
   alumni: true
@@ -1604,6 +1792,7 @@ Colin Scott:
     type: Student
     end_date: "2024"
 
+  team_group: researchers
 Sahar Omidi Shayegan:
   name: Sahar Omidi Shayegan
   current_role:
@@ -1612,20 +1801,23 @@ Sahar Omidi Shayegan:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=1K-uTWgAAAAJ
 
+  team_group: researchers
 Eran Shor:
   name: Eran Shor
   current_role:
     type: Faculty / Professor
     title: Associate Professor
     start_date: "2010"
-  bio: Eran Shor is an Associate Professor in the Department of Sociology at McGill
-    University. His research interests center around the themes of political conflict,
-    human rights, and ethnicity and nationalism. Professor Shor's current research
-    projects evaluate inequalities in media coverage of women and ethnic minorities.
+  bio: Eran Shor is an Associate Professor in the Department of Sociology at 
+    McGill University. His research interests center around the themes of 
+    political conflict, human rights, and ethnicity and nationalism. Professor 
+    Shor's current research projects evaluate inequalities in media coverage of 
+    women and ethnic minorities.
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=vxVIFkIAAAAJ&hl=en&oi=ao
 
+  team_group: faculty_members
 Eran Shor 2:
   name: Eran Shor
   avatar: /assets/images/bio/Eran Shor 2.jpg
@@ -1636,6 +1828,7 @@ Sula Sidnell-Green:
     type: Student
     end_date: "2015"
 
+  team_group: researchers
 Harpeet Singh:
   name: Harpeet Singh
   current_role:
@@ -1646,6 +1839,7 @@ Harpeet Singh:
     advisor: Nicolas Ajzenman
     affiliation: McGill University
   auto_update_publications: false
+  team_group: phd_students_and_postdocs
 Shane Singh:
   name: Shane Singh
   alumni: true
@@ -1656,6 +1850,7 @@ Shane Singh:
     affiliation: McGill University
   auto_update_publications: false
 
+  team_group: phd_students_and_postdocs
 Étienne Sinotte:
   name: Étienne Sinotte
   current_role:
@@ -1670,6 +1865,7 @@ Shane Singh:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=jstFBx0AAAAJ
 
+  team_group: phd_students_and_postdocs
 Alan Michael Smith:
   name: Alan Michael Smith
   alumni: true
@@ -1677,23 +1873,26 @@ Alan Michael Smith:
     type: Student
     end_date: "2022"
 
+  team_group: researchers
 Thomas Soehl:
   name: Thomas Soehl
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
-  bio: Thomas Soehl is an Assistant Professor in the Department of Sociology at McGill
-    University. His work mainly examines the themes of international migration, race,
-    and ethnicity. More specifically, he studies these themes through the lens of
-    the family as a locus for the transmission of culture and political attachments.
-    Recently, he has looked at the acquisition of citizenship in Canada and France,
-    as well as at the determinants of anti-immigration attitudes. Professor Soehl's
-    research makes use of quantitative research methods such as using event history
-    analysis and multi-level modeling.
+  bio: Thomas Soehl is an Assistant Professor in the Department of Sociology at 
+    McGill University. His work mainly examines the themes of international 
+    migration, race, and ethnicity. More specifically, he studies these themes 
+    through the lens of the family as a locus for the transmission of culture 
+    and political attachments. Recently, he has looked at the acquisition of 
+    citizenship in Canada and France, as well as at the determinants of 
+    anti-immigration attitudes. Professor Soehl's research makes use of 
+    quantitative research methods such as using event history analysis and 
+    multi-level modeling.
   orcid: 0000-0002-6593-3376
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=paO09F8AAAAJ
+  team_group: faculty_members
 Cayley Sorochan:
   name: Cayley Sorochan
   alumni: true
@@ -1701,6 +1900,7 @@ Cayley Sorochan:
     type: Student
     end_date: "2013"
 
+  team_group: researchers
 Cameron Stark:
   name: Cameron Stark
   alumni: true
@@ -1711,6 +1911,7 @@ Cameron Stark:
     advisor: Éric Bélanger
     affiliation: McGill University
 
+  team_group: masters_students
 Dominik Stecula:
   name: Dominik Stecula
   alumni: true
@@ -1718,6 +1919,7 @@ Dominik Stecula:
     type: Student
     end_date: "2012"
 
+  team_group: researchers
 Brooke Steinhauer:
   name: Brooke Steinhauer
   current_role:
@@ -1727,20 +1929,23 @@ Brooke Steinhauer:
     advisor: Dietlind Stolle
   avatar: /assets/images/bio/Brooke Steinhauer.jpg
 
+  team_group: researchers
 Dietlind Stolle:
   name: Dietlind Stolle
   current_role:
     type: Faculty / Professor
     title: "Director & Professor"
-  bio: Dietlind Stolle is a Professor of Political Science at McGill University. Her
-    research looks at political mobilization, participation and knowledge, as well
-    as social capital, ethnic and racial prejudice, and the consequences of ethnic
-    diversity. She is also a Principal Investigator of the Canadian Election Study.
-    Professor Stolle's projects include quantitative research looking into youth mobilization
-    and participation on Facebook, the role of pregnancy on political behaviour, the
-    impact of religious diversity in 11 different countries, and attitudes towards
-    refugees in Germany. She is also the Director of the Centre for the Study of Democratic
-    Citizenship.
+  bio: "Dietlind Stolle is the James McGill professor in political science at McGill
+    University and fellow of the Royal Society of Canada. She is widely recognized
+    both within Canada and internationally as an expert on political behaviour, social
+    capital, ethnic diversity, social cohesion and democracy. Her current projects
+    include work on democratic backsliding; gender and politics including the role
+    of pregnancy; European solidarity; and emerging cleavages in European party politics.
+    Stolle has served as the Director of the Centre for the Study of Democratic Citizenship
+    (CSDC) from 2013-2020 and as co-director of the European Union Centre of Excellence.
+    She is currently co-leading the EUI-YouGov European Solidarity Study in more than
+    20 democracies. She now serves as the academic lead of the CSDC McGill lab on
+    political behavior."
   avatar: /assets/images/bio/Dietlind Stolle.jpg
 
   social_media_links:
@@ -1748,6 +1953,7 @@ Dietlind Stolle:
     url: https://scholar.google.com/citations?user=mjqHdG4AAAAJ&hl=en
   orcid: 0000-0001-7839-0617
 
+  team_group: faculty_members
 Vidya Sujaya:
   name: Vidya Sujaya
   current_role:
@@ -1757,6 +1963,7 @@ Vidya Sujaya:
     end_date: "2026"
     advisor: Reihaneh Rabbany
 
+  team_group: masters_students
 Jennifer Suliteanu:
   name: Jennifer Suliteanu
   current_role:
@@ -1770,6 +1977,7 @@ Jennifer Suliteanu:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=8XWdG_YAAAAJ&hl=en&oi=ao
+  team_group: phd_students_and_postdocs
 Matthew Surch:
   name: Matthew Surch
   current_role:
@@ -1777,6 +1985,7 @@ Matthew Surch:
     title: Master's Student
     affiliation: McGill University
   auto_update_publications: false
+  team_group: masters_students
 Paul Sutton:
   name: Paul Sutton
   current_role:
@@ -1784,6 +1993,7 @@ Paul Sutton:
     title: Master's Student
     affiliation: McGill University
   auto_update_publications: false
+  team_group: masters_students
 Melanee Thomas:
   name: Melanee Thomas
   alumni: true
@@ -1796,6 +2006,7 @@ Neal Thomas:
     title: Doctoral Student
     affiliation: McGill University
 
+  team_group: phd_students_and_postdocs
 Hamid Ali Tiwana:
   name: Hamid Ali Tiwana
   alumni: true
@@ -1803,6 +2014,7 @@ Hamid Ali Tiwana:
     type: Student
     end_date: "2024"
 
+  team_group: researchers
 Erika De Torres:
   name: Erika De Torres
   alumni: true
@@ -1810,6 +2022,7 @@ Erika De Torres:
     type: Student
     end_date: "2003"
 
+  team_group: researchers
 David Trotter:
   name: David Trotter
   alumni: true
@@ -1817,6 +2030,7 @@ David Trotter:
     type: Student
     end_date: "2016"
 
+  team_group: researchers
 Marc Trussler:
   name: Marc Trussler
   alumni: true
@@ -1824,6 +2038,7 @@ Marc Trussler:
     type: Student
     end_date: "2013"
 
+  team_group: researchers
 Nicolas Vaxelaire:
   name: Nicolas Vaxelaire
   current_role:
@@ -1834,6 +2049,7 @@ Nicolas Vaxelaire:
     advisor: Dietlind Stolle
     affiliation: McGill University
   auto_update_publications: false
+  team_group: masters_students
 Sara Vissers:
   name: Sara Vissers
   alumni: true
@@ -1848,6 +2064,7 @@ Derek Volker:
     advisor: Dietlind Stolle
     affiliation: McGill University
 
+  team_group: masters_students
 Angelia Wagner:
   name: Angelia Wagner
   alumni: true
@@ -1855,6 +2072,7 @@ Angelia Wagner:
     type: Postdoc
     end_date: "2017"
 
+  team_group: phd_students_and_postdocs
 Michelle Wang:
   name: Michelle Wang
   current_role:
@@ -1869,6 +2087,7 @@ Michelle Wang:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=PujecSgAAAAJ
 
+  team_group: masters_students
 Julie Whittet:
   name: Julie Whittet
   alumni: true
@@ -1876,6 +2095,7 @@ Julie Whittet:
     type: Student
     end_date: "2012"
 
+  team_group: researchers
 Taisto Witt:
   name: Taisto Witt
   current_role:
@@ -1889,6 +2109,7 @@ Taisto Witt:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=0AYdib0AAAAJ
 
+  team_group: phd_students_and_postdocs
 Chih-lan Winnie Yang:
   name: Chih-lan Winnie Yang
   alumni: true
@@ -1896,6 +2117,7 @@ Chih-lan Winnie Yang:
     type: Student
     end_date: "2025"
 
+  team_group: researchers
 Zachary Yang:
   name: Zachary Yang
   current_role:
@@ -1908,6 +2130,7 @@ Zachary Yang:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=ljOxbowAAAAJ
+  team_group: masters_students
 Julia Yingling:
   name: Julia Yingling
   alumni: true
@@ -1915,6 +2138,7 @@ Julia Yingling:
     type: Postdoc
     end_date: "2025"
 
+  team_group: phd_students_and_postdocs
 Jason R. Young:
   name: Jason R. Young
   alumni: true
@@ -1922,6 +2146,7 @@ Jason R. Young:
     type: Student
     end_date: "2015"
 
+  team_group: researchers
 Lori Young:
   name: Lori Young
   current_role:
@@ -1930,12 +2155,14 @@ Lori Young:
     affiliation: McGill University
   auto_update_publications: false
 
+  team_group: masters_students
 Chris Yurris:
   name: Chris Yurris
   alumni: true
   current_role:
     type: Student
     end_date: "2024"
+  team_group: researchers
 Ali Zeren:
   name: Ali Zeren
   alumni: true
@@ -1943,3 +2170,4 @@ Ali Zeren:
     type: Student
     end_date: "2017"
 
+  team_group: researchers

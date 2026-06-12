@@ -26,14 +26,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="McGill CSDC">
 <meta property="og:title" content="Read “Europe’s New Political Divide isn’t Left-Right, it’s About Russia” in Policy: Canadian Politics and Public Policy">
-<meta property="og:url" content="http://localhost:4000/news/read-europe-s-new-political-divide-isn-t-left-right-it-s-about-russia-in-policy-canadian-politics-and-public-policy/">
+<meta property="og:url" content="/news/read-europe-s-new-political-divide-isn-t-left-right-it-s-about-russia-in-policy-canadian-politics-and-public-policy/">
 
 
   <meta property="og:description" content="By Dietlind Stolle and Maria Popova">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/">
+  <meta property="og:image" content="">
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/news/read-europe-s-new-political-divide-isn-t-left-right-it-s-about-russia-in-policy-canadian-politics-and-public-policy/">
+<link rel="canonical" href="/news/read-europe-s-new-political-divide-isn-t-left-right-it-s-about-russia-in-policy-canadian-politics-and-public-policy/">
 
 
 
@@ -4254,7 +4254,46 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', applyActiveNav);
+  function syncActiveNavWithSearchOverlay() {
+    var searchOverlay = document.querySelector('.search-content');
+    if (!searchOverlay) {
+      return;
+    }
+
+    var overlayVisible = searchOverlay.classList.contains('is--visible');
+    if (overlayVisible) {
+      document.querySelectorAll('.csdc-shell-nav .csdc-nav-link.is-active').forEach(function (link) {
+        link.classList.remove('is-active');
+      });
+      return;
+    }
+
+    applyActiveNav();
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    applyActiveNav();
+    syncActiveNavWithSearchOverlay();
+
+    var searchToggle = document.querySelector('.search__toggle');
+    if (searchToggle) {
+      searchToggle.addEventListener('click', function () {
+        window.requestAnimationFrame(syncActiveNavWithSearchOverlay);
+      });
+    }
+
+    var searchOverlay = document.querySelector('.search-content');
+    if (searchOverlay && window.MutationObserver) {
+      var observer = new MutationObserver(syncActiveNavWithSearchOverlay);
+      observer.observe(searchOverlay, { attributes: true, attributeFilter: ['class'] });
+    }
+
+    document.addEventListener('keyup', function (event) {
+      if (event.key === 'Escape') {
+        window.requestAnimationFrame(syncActiveNavWithSearchOverlay);
+      }
+    });
+  });
 })();
 </script>
 
@@ -4279,7 +4318,7 @@
       
         <header>
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="http://localhost:4000/news/read-europe-s-new-political-divide-isn-t-left-right-it-s-about-russia-in-policy-canadian-politics-and-public-policy/" itemprop="url">Read “Europe’s New Political Divide isn’t Left-Right, it’s About Russia” in <em>Policy: Canadian Politics and Public Policy</em>
+            <a href="/news/read-europe-s-new-political-divide-isn-t-left-right-it-s-about-russia-in-policy-canadian-politics-and-public-policy/" itemprop="url">Read “Europe’s New Political Divide isn’t Left-Right, it’s About Russia” in <em>Policy: Canadian Politics and Public Policy</em>
 </a>
           </h1>
           

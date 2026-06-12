@@ -12,17 +12,43 @@
 
 <div class="csdc-container">
 
-{% include card-authors-with-role.html authors=site.data.authors role="Faculty / Professor" section_title=t.home.people.faculty render_current_role=true %}
-{% include card-authors-with-role.html authors=site.data.authors role="Faculty / Professor" alumni=true %}
+<div class="csdc-people-search-wrap">
+    <form class="search-content__form csdc-people-search-form" role="search" onsubmit="return false;">
+        <input type="search" id="people-search-input" class="search-input csdc-people-search-input" placeholder="{{ t.home.people.search_placeholder }}" autocomplete="off" aria-label="{{ t.home.people.search_placeholder }}" />
+    </form>
+    <p class="csdc-people-no-results" id="people-search-empty" hidden>{{ t.home.people.search_empty }}</p>
+</div>
 
-{% include card-authors-with-role.html authors=site.data.authors role="Staff" section_title=t.home.people.staff render_current_role=true %}
-{% include card-authors-with-role.html authors=site.data.authors role="Staff" alumni=true %}
+<section class="csdc-people-group" data-people-group="faculty_members">
+{% include card-authors-with-role.html authors=site.data.authors team_group="faculty_members" section_title=t.home.people.faculty_members render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors team_group="faculty_members" alumni=true %}
+</section>
 
-{% include card-authors-with-role.html authors=site.data.authors role="Postdoc" section_title=t.home.people.postdocs render_current_role=true %}
-{% include card-authors-with-role.html authors=site.data.authors role="Postdoc" alumni=true %}
+<section class="csdc-people-group" data-people-group="phd_students_and_postdocs">
+{% include card-authors-with-role.html authors=site.data.authors team_group="phd_students_and_postdocs" section_title=t.home.people.phd_students_and_postdocs render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors team_group="phd_students_and_postdocs" alumni=true %}
+</section>
 
-{% include card-authors-with-role.html authors=site.data.authors role="Student" section_title=t.home.people.students render_current_role=true %}
-{% include card-authors-with-role.html authors=site.data.authors role="Student" alumni=true %}
+<section class="csdc-people-group" data-people-group="masters_students">
+{% include card-authors-with-role.html authors=site.data.authors team_group="masters_students" section_title=t.home.people.masters_students render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors team_group="masters_students" alumni=true %}
+</section>
+
+<section class="csdc-people-group" data-people-group="researchers">
+{% include card-authors-with-role.html authors=site.data.authors team_group="researchers" section_title=t.home.people.researchers render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors team_group="researchers" alumni=true %}
+</section>
+
+<div class="csdc-year-jump-nav" data-csdc-people-group-jump>
+    <button type="button" class="csdc-year-jump-btn" data-csdc-people-group-dir="up" aria-label="Jump to previous team category">
+        <span class="csdc-year-jump-arrow">&uarr;</span>
+        <span class="csdc-year-jump-label" data-csdc-people-group-label="up">--</span>
+    </button>
+    <button type="button" class="csdc-year-jump-btn" data-csdc-people-group-dir="down" aria-label="Jump to next team category">
+        <span class="csdc-year-jump-arrow">&darr;</span>
+        <span class="csdc-year-jump-label" data-csdc-people-group-label="down">--</span>
+    </button>
+</div>
 
 <p>
     <span class="csdc-contact-pill">{{ t.home.headers.contact }} <a href="mailto:anne.imouza@mail.mcgill.ca">{{ t.home.headers.contact_link }}</a></span>
@@ -34,27 +60,202 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var defaultOpen = document.querySelector('.csdc-people-page .author-card--default-open');
-    if (!defaultOpen) {
+
+    if (defaultOpen) {
+        var closeDefaultOpen = function (event) {
+            var activeCard = event.target.closest('.author-card');
+            if (!activeCard || activeCard === defaultOpen) {
+                return;
+            }
+
+            defaultOpen.classList.remove('author-card--default-open');
+
+            document.querySelectorAll('.csdc-people-page .author-card').forEach(function (card) {
+                card.removeEventListener('mouseenter', closeDefaultOpen);
+                card.removeEventListener('focusin', closeDefaultOpen);
+            });
+        };
+
+        document.querySelectorAll('.csdc-people-page .author-card').forEach(function (card) {
+            card.addEventListener('mouseenter', closeDefaultOpen);
+            card.addEventListener('focusin', closeDefaultOpen);
+        });
+    }
+
+    var searchInput = document.getElementById('people-search-input');
+    var emptyState = document.getElementById('people-search-empty');
+    var groups = document.querySelectorAll('.csdc-people-page .csdc-people-group');
+    var groupJumpNav = document.querySelector('[data-csdc-people-group-jump]');
+
+    if (!searchInput || groups.length === 0) {
         return;
     }
 
-    var closeDefaultOpen = function (event) {
-        var activeCard = event.target.closest('.author-card');
-        if (!activeCard || activeCard === defaultOpen) {
+    function compactGroupLabel(text) {
+        var plain = (text || '').replace(/\([^)]*\)\s*$/g, '').trim();
+        var lower = plain.toLowerCase();
+
+        if (lower.indexOf('faculty') !== -1 || lower.indexOf('corps') !== -1) {
+            return 'Faculty';
+        }
+        if (lower.indexOf('phd') !== -1 || lower.indexOf('doctor') !== -1 || lower.indexOf('postdoc') !== -1) {
+            return 'PhD';
+        }
+        if (lower.indexOf('master') !== -1 || lower.indexOf('maitrise') !== -1) {
+            return 'Master';
+        }
+        if (lower.indexOf('research') !== -1 || lower.indexOf('chercheur') !== -1) {
+            return 'Research';
+        }
+
+        var firstWord = plain.split(/\s+/)[0] || '--';
+        return firstWord.slice(0, 8);
+    }
+
+    function getVisibleGroups() {
+        return Array.prototype.filter.call(groups, function (group) {
+            return window.getComputedStyle(group).display !== 'none';
+        });
+    }
+
+    function getHeading(group) {
+        return group.querySelector('h2');
+    }
+
+    function getGroupAnchor(group) {
+        var heading = getHeading(group);
+        if (!heading) {
+            return group.getBoundingClientRect().top + window.pageYOffset - 92;
+        }
+        return heading.getBoundingClientRect().top + window.pageYOffset - 92;
+    }
+
+    function computeActiveIndex(visibleGroups) {
+        var scrollYValue = window.scrollY;
+        var idx = 0;
+        for (var i = 0; i < visibleGroups.length; i += 1) {
+            if (getGroupAnchor(visibleGroups[i]) <= scrollYValue + 1) {
+                idx = i;
+            } else {
+                break;
+            }
+        }
+        return idx;
+    }
+
+    function renderGroupJumpState(virtualScrollY, forcedIndex) {
+        if (!groupJumpNav) {
             return;
         }
 
-        defaultOpen.classList.remove('author-card--default-open');
+        var visibleGroups = getVisibleGroups();
+        var upBtn = groupJumpNav.querySelector('[data-csdc-people-group-dir="up"]');
+        var downBtn = groupJumpNav.querySelector('[data-csdc-people-group-dir="down"]');
+        var upLabel = groupJumpNav.querySelector('[data-csdc-people-group-label="up"]');
+        var downLabel = groupJumpNav.querySelector('[data-csdc-people-group-label="down"]');
 
-        document.querySelectorAll('.csdc-people-page .author-card').forEach(function (card) {
-            card.removeEventListener('mouseenter', closeDefaultOpen);
-            card.removeEventListener('focusin', closeDefaultOpen);
+        if (visibleGroups.length < 2) {
+            groupJumpNav.classList.remove('is-visible');
+            if (upBtn) upBtn.disabled = true;
+            if (downBtn) downBtn.disabled = true;
+            if (upLabel) upLabel.textContent = '--';
+            if (downLabel) downLabel.textContent = '--';
+            return;
+        }
+
+        var effectiveScrollY = typeof virtualScrollY === 'number' ? virtualScrollY : window.scrollY;
+        var activeIndex = typeof forcedIndex === 'number' ? forcedIndex : computeActiveIndex(visibleGroups);
+        activeIndex = Math.max(0, Math.min(visibleGroups.length - 1, activeIndex));
+        var nextIndex = Math.min(visibleGroups.length - 1, activeIndex + 1);
+        var activeHeading = getHeading(visibleGroups[activeIndex]);
+        var nextHeading = getHeading(visibleGroups[nextIndex]);
+        var activeAnchor = getGroupAnchor(visibleGroups[activeIndex]);
+
+        if (upLabel) upLabel.textContent = compactGroupLabel(activeHeading ? activeHeading.textContent : '--');
+        if (downLabel) downLabel.textContent = compactGroupLabel(nextHeading ? nextHeading.textContent : '--');
+        if (upBtn) upBtn.disabled = activeIndex === 0 && effectiveScrollY <= activeAnchor + 2;
+        if (downBtn) downBtn.disabled = activeIndex >= visibleGroups.length - 1;
+
+        var firstHeading = getHeading(visibleGroups[0]);
+        var shouldShow = firstHeading && firstHeading.getBoundingClientRect().top <= 92;
+        groupJumpNav.classList.toggle('is-visible', !!shouldShow);
+    }
+
+    function jumpGroup(direction) {
+        var visibleGroups = getVisibleGroups();
+        if (visibleGroups.length < 2) {
+            return;
+        }
+
+        var activeIndex = computeActiveIndex(visibleGroups);
+        var targetIndex = activeIndex;
+        var currentAnchor = getGroupAnchor(visibleGroups[activeIndex]);
+
+        if (direction === 'up') {
+            if (window.scrollY > currentAnchor + 2) {
+                targetIndex = activeIndex;
+            } else {
+                targetIndex = Math.max(0, activeIndex - 1);
+            }
+        } else {
+            targetIndex = Math.min(visibleGroups.length - 1, activeIndex + 1);
+        }
+
+        var targetTop = getGroupAnchor(visibleGroups[targetIndex]);
+        window.scrollTo({ top: targetTop, behavior: 'auto' });
+        renderGroupJumpState(targetTop, targetIndex);
+    }
+
+    if (groupJumpNav) {
+        var upBtn = groupJumpNav.querySelector('[data-csdc-people-group-dir="up"]');
+        var downBtn = groupJumpNav.querySelector('[data-csdc-people-group-dir="down"]');
+
+        if (upBtn) {
+            upBtn.addEventListener('click', function () { jumpGroup('up'); });
+        }
+        if (downBtn) {
+            downBtn.addEventListener('click', function () { jumpGroup('down'); });
+        }
+
+        window.addEventListener('scroll', renderGroupJumpState, { passive: true });
+        window.addEventListener('resize', renderGroupJumpState);
+    }
+
+    var applyFilter = function () {
+        var query = searchInput.value.toLowerCase().trim();
+        var visibleCards = 0;
+
+        groups.forEach(function (group) {
+            var groupVisible = 0;
+            var cards = group.querySelectorAll('.author-card');
+
+            cards.forEach(function (card) {
+                var haystack = (card.textContent || '').toLowerCase();
+                var isMatch = query === '' || haystack.indexOf(query) !== -1;
+                card.style.display = isMatch ? '' : 'none';
+                if (isMatch) {
+                    groupVisible += 1;
+                    visibleCards += 1;
+                }
+            });
+
+            var alumniSections = group.querySelectorAll('.csdc-alumni-section');
+            alumniSections.forEach(function (section) {
+                var visibleAlumni = section.querySelectorAll('.author-card:not([style*="display: none"])').length;
+                section.style.display = visibleAlumni > 0 ? '' : 'none';
+            });
+
+            group.style.display = groupVisible > 0 ? '' : 'none';
         });
+
+        if (emptyState) {
+            emptyState.hidden = visibleCards !== 0;
+        }
+
+        renderGroupJumpState();
     };
 
-    document.querySelectorAll('.csdc-people-page .author-card').forEach(function (card) {
-        card.addEventListener('mouseenter', closeDefaultOpen);
-        card.addEventListener('focusin', closeDefaultOpen);
-    });
+    searchInput.addEventListener('input', applyFilter);
+    applyFilter();
 });
 </script>

@@ -24,14 +24,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="McGill CSDC">
 <meta property="og:title" content="À propos">
-<meta property="og:url" content="http://localhost:4000/fr/about/">
+<meta property="og:url" content="/fr/about/">
 
 
   <meta property="og:description" content="Le nœud McGill du CÉCD fait progresser la recherche sur la confiance, la participation démocratique et l’inclusion.">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/">
+  <meta property="og:image" content="">
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/fr/about/">
+<link rel="canonical" href="/fr/about/">
 
 
 
@@ -247,7 +247,46 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', applyActiveNav);
+  function syncActiveNavWithSearchOverlay() {
+    var searchOverlay = document.querySelector('.search-content');
+    if (!searchOverlay) {
+      return;
+    }
+
+    var overlayVisible = searchOverlay.classList.contains('is--visible');
+    if (overlayVisible) {
+      document.querySelectorAll('.csdc-shell-nav .csdc-nav-link.is-active').forEach(function (link) {
+        link.classList.remove('is-active');
+      });
+      return;
+    }
+
+    applyActiveNav();
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    applyActiveNav();
+    syncActiveNavWithSearchOverlay();
+
+    var searchToggle = document.querySelector('.search__toggle');
+    if (searchToggle) {
+      searchToggle.addEventListener('click', function () {
+        window.requestAnimationFrame(syncActiveNavWithSearchOverlay);
+      });
+    }
+
+    var searchOverlay = document.querySelector('.search-content');
+    if (searchOverlay && window.MutationObserver) {
+      var observer = new MutationObserver(syncActiveNavWithSearchOverlay);
+      observer.observe(searchOverlay, { attributes: true, attributeFilter: ['class'] });
+    }
+
+    document.addEventListener('keyup', function (event) {
+      if (event.key === 'Escape') {
+        window.requestAnimationFrame(syncActiveNavWithSearchOverlay);
+      }
+    });
+  });
 })();
 </script>
 

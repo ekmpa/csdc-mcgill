@@ -1,5 +1,6 @@
 {
     "name": "John Doe",
+    "team_group": "phd_students_and_postdocs",
     "avatar": "/tests/scratch/assets/images/bio/John Doe.jpg",
     "orcid": "0000-0002-1825-0097",
     "current_role": {

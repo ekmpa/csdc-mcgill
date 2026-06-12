@@ -41,6 +41,10 @@ show_taxonomy_posts: false
       <h2 id="research-publications-heading">Publications</h2>
       <p class="csdc-page-subtitle">Research outputs by the team.</p>
       <hr class="csdc-research-divider">
+      <form class="search-content__form csdc-research-search-form" role="search" onsubmit="return false;">
+        <input type="search" id="research-publications-search" class="search-input csdc-research-search-input" placeholder="Search papers by title, author, venue..." autocomplete="off" aria-label="Search papers" />
+      </form>
+      <p class="csdc-research-no-results" id="research-publications-empty" hidden>No papers matched your search.</p>
       {% assign publications = site.posts | where_exp: "post", "post.path contains '_posts/papers/'" %}
       {% if publications and publications.size > 0 %}
       {% assign publication_years = '' | split: '' %}
@@ -62,7 +66,10 @@ show_taxonomy_posts: false
         {% endfor %}
 
         <section id="research-year-{{ year }}" class="csdc-research-year-section">
-          <h3 class="csdc-research-year-heading">{{ year }} ({{ year_publications.size }})</h3>
+          <h3 class="csdc-research-year-heading">
+            <span class="csdc-research-year-label">{{ year }}</span>
+            (<span class="csdc-research-year-count" data-total-count="{{ year_publications.size }}">{{ year_publications.size }}</span>)
+          </h3>
           <div class="csdc-pillars csdc-pillars-two">
             {% for post in year_publications %}
             <article class="csdc-card">
@@ -111,83 +118,120 @@ show_taxonomy_posts: false
             return;
           }
 
-          var sections = Array.prototype.slice.call(document.querySelectorAll('.csdc-research-page .csdc-research-year-section'));
-          if (sections.length < 2) {
-            return;
-          }
-          var firstYearHeading = sections[0].querySelector('.csdc-research-year-heading');
-          if (!firstYearHeading) {
-            return;
-          }
-
           var upBtn = nav.querySelector('[data-csdc-research-year-dir="up"]');
           var downBtn = nav.querySelector('[data-csdc-research-year-dir="down"]');
           var upLabel = nav.querySelector('[data-csdc-research-year-label="up"]');
           var downLabel = nav.querySelector('[data-csdc-research-year-label="down"]');
 
-          function currentIndex() {
-            var pointer = window.scrollY + 170;
+          function getVisibleSections() {
+            return Array.prototype.filter.call(
+              document.querySelectorAll('.csdc-research-page .csdc-research-year-section'),
+              function (section) {
+                return window.getComputedStyle(section).display !== 'none';
+              }
+            );
+          }
+
+          function getSectionTop(section) {
+            var heading = section.querySelector('.csdc-research-year-heading');
+            if (heading) {
+              return heading.getBoundingClientRect().top + window.pageYOffset;
+            }
+            return section.getBoundingClientRect().top + window.pageYOffset;
+          }
+
+          function jumpTo(section) {
+            var top = getSectionTop(section) - 92;
+            // Use immediate jumps so repeated button presses always advance year-by-year.
+            window.scrollTo({ top: top, behavior: 'auto' });
+            return top;
+          }
+          var activeIndex = 0;
+
+          function computeIndexFromScroll(visibleSections, scrollYValue) {
             var idx = 0;
-            for (var i = 0; i < sections.length; i += 1) {
-              if (sections[i].offsetTop <= pointer) {
+            for (var i = 0; i < visibleSections.length; i += 1) {
+              var anchor = getSectionTop(visibleSections[i]) - 92;
+              if (anchor <= scrollYValue + 1) {
                 idx = i;
+              } else {
+                break;
               }
             }
             return idx;
           }
 
-          function computeTargets() {
-            var idx = currentIndex();
-            var currentHeaderTop = sections[idx].offsetTop - 92;
-            var upIdx;
-
-            if (idx === 0) {
-              upIdx = 0;
-            } else if (window.scrollY > currentHeaderTop + 24) {
-              upIdx = idx;
-            } else {
-              upIdx = idx - 1;
+          function renderState(visibleSections, index, virtualScrollY) {
+            if (!visibleSections.length) {
+              nav.classList.remove('is-visible');
+              upBtn.disabled = true;
+              downBtn.disabled = true;
+              upLabel.textContent = '--';
+              downLabel.textContent = '--';
+              return;
             }
 
-            var downIdx = Math.min(sections.length - 1, idx + 1);
-            return { idx: idx, upIdx: upIdx, downIdx: downIdx, currentHeaderTop: currentHeaderTop };
-          }
+            activeIndex = Math.max(0, Math.min(visibleSections.length - 1, index));
+            var effectiveScrollY = typeof virtualScrollY === 'number' ? virtualScrollY : window.scrollY;
+            var activeAnchor = getSectionTop(visibleSections[activeIndex]) - 92;
+            var nextIndex = Math.min(visibleSections.length - 1, activeIndex + 1);
+            upLabel.textContent = extractLabel(visibleSections[activeIndex]);
+            downLabel.textContent = extractLabel(visibleSections[nextIndex]);
+            upBtn.disabled = activeIndex === 0 && effectiveScrollY <= activeAnchor + 2;
+            downBtn.disabled = activeIndex >= visibleSections.length - 1;
 
-          function jumpTo(section) {
-            var top = section.getBoundingClientRect().top + window.pageYOffset - 92;
-            window.scrollTo({ top: top, behavior: 'smooth' });
-          }
-
-          function refresh() {
-            var targets = computeTargets();
-            var headingTop = firstYearHeading.getBoundingClientRect().top;
-            var shouldShow = headingTop <= 92;
+            var firstHeading = visibleSections[0].querySelector('.csdc-research-year-heading');
+            if (!firstHeading) {
+              nav.classList.remove('is-visible');
+              return;
+            }
+            var shouldShow = firstHeading.getBoundingClientRect().top <= 92;
             nav.classList.toggle('is-visible', shouldShow);
+          }
 
-            upBtn.disabled = targets.idx === 0 && window.scrollY <= targets.currentHeaderTop + 24;
-            downBtn.disabled = targets.idx === sections.length - 1;
-
-            upLabel.textContent = extractLabel(sections[targets.upIdx]);
-            downLabel.textContent = extractLabel(sections[targets.downIdx]);
+          function syncFromScroll() {
+            var visibleSections = getVisibleSections();
+            if (visibleSections.length < 2) {
+              renderState(visibleSections, 0, window.scrollY);
+              return;
+            }
+            var idx = computeIndexFromScroll(visibleSections, window.scrollY);
+            renderState(visibleSections, idx, window.scrollY);
           }
 
           upBtn.addEventListener('click', function () {
-            var targets = computeTargets();
-            if (!upBtn.disabled) {
-              jumpTo(sections[targets.upIdx]);
+            var visibleSections = getVisibleSections();
+            if (visibleSections.length < 2) {
+              return;
             }
+
+            var currentAnchor = getSectionTop(visibleSections[activeIndex]) - 92;
+            var targetIndex = activeIndex;
+            if (window.scrollY > currentAnchor + 2) {
+              targetIndex = activeIndex;
+            } else {
+              targetIndex = Math.max(0, activeIndex - 1);
+            }
+
+            var targetTop = jumpTo(visibleSections[targetIndex]);
+            renderState(visibleSections, targetIndex, targetTop);
           });
 
           downBtn.addEventListener('click', function () {
-            var targets = computeTargets();
-            if (!downBtn.disabled) {
-              jumpTo(sections[targets.downIdx]);
+            var visibleSections = getVisibleSections();
+            if (visibleSections.length < 2) {
+              return;
             }
+
+            var targetIndex = Math.min(visibleSections.length - 1, activeIndex + 1);
+            var targetTop = jumpTo(visibleSections[targetIndex]);
+            renderState(visibleSections, targetIndex, targetTop);
           });
 
-          window.addEventListener('scroll', refresh, { passive: true });
-          window.addEventListener('resize', refresh);
-          refresh();
+          window.addEventListener('scroll', syncFromScroll, { passive: true });
+          window.addEventListener('resize', syncFromScroll);
+          document.addEventListener('csdc:research-filter-changed', syncFromScroll);
+          syncFromScroll();
         }
 
         if (document.readyState === 'loading') {
@@ -198,6 +242,80 @@ show_taxonomy_posts: false
       })();
       </script>
       {% endif %}
+
+      <script>
+      (function () {
+        if (window.__csdcResearchSearchBound) {
+          return;
+        }
+        window.__csdcResearchSearchBound = true;
+
+        function init() {
+          var input = document.getElementById('research-publications-search');
+          var emptyState = document.getElementById('research-publications-empty');
+          if (!input) {
+            return;
+          }
+
+          var sections = Array.prototype.slice.call(document.querySelectorAll('.csdc-research-page .csdc-research-year-section'));
+          if (!sections.length) {
+            return;
+          }
+
+          var yearJumpNav = document.querySelector('[data-csdc-research-year-jump]');
+
+          function applyFilter() {
+            var query = input.value.toLowerCase().trim();
+            var visibleCards = 0;
+
+            sections.forEach(function (section) {
+              var cards = Array.prototype.slice.call(section.querySelectorAll('.csdc-card'));
+              var visibleInSection = 0;
+              var headingCount = section.querySelector('.csdc-research-year-count');
+
+              cards.forEach(function (card) {
+                var haystack = (card.textContent || '').toLowerCase();
+                var isMatch = query === '' || haystack.indexOf(query) !== -1;
+                card.style.display = isMatch ? '' : 'none';
+                if (isMatch) {
+                  visibleInSection += 1;
+                  visibleCards += 1;
+                }
+              });
+
+              if (headingCount) {
+                if (query === '') {
+                  headingCount.textContent = headingCount.getAttribute('data-total-count') || String(visibleInSection);
+                } else {
+                  headingCount.textContent = String(visibleInSection);
+                }
+              }
+
+              section.style.display = visibleInSection > 0 ? '' : 'none';
+            });
+
+            if (yearJumpNav) {
+              yearJumpNav.style.display = '';
+            }
+
+            if (emptyState) {
+              emptyState.hidden = visibleCards !== 0;
+            }
+
+            document.dispatchEvent(new CustomEvent('csdc:research-filter-changed'));
+          }
+
+          input.addEventListener('input', applyFilter);
+          applyFilter();
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', init);
+        } else {
+          init();
+        }
+      })();
+      </script>
       {% else %}
       <div class="csdc-card">
         <p style="margin:0;">No publications submitted yet. Use the footer "Add publication" form to add DOI or URL entries.</p>

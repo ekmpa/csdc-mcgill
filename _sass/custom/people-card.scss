@@ -363,6 +363,30 @@ div.author-avatar {
     max-width: 52ch;
 }
 
+.csdc-people-page .csdc-people-search-wrap {
+    margin: 0.35rem 0 1.35rem;
+}
+
+.csdc-people-page .csdc-people-search-form {
+    max-width: 34rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.csdc-people-page .csdc-people-search-input {
+    margin: 0;
+}
+
+.csdc-people-page .csdc-people-no-results {
+    margin-top: 0.65rem;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.csdc-people-page .csdc-people-group {
+    margin-bottom: 1.6rem;
+}
+
 .csdc-people-page .author-card {
     padding: 1rem;
 }

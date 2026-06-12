@@ -24,14 +24,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="McGill CSDC">
 <meta property="og:title" content="Home">
-<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:url" content="/">
 
 
   <meta property="og:description" content="The McGill node of the CSDC researches trust, participation, and democratic inclusion.">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/">
+  <meta property="og:image" content="">
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/">
+<link rel="canonical" href="/">
 
 
 
@@ -53,7 +53,7 @@
   "@context": "https://schema.org",
   "@type": "Person",
     "name": "McGill CSDC",
-    "url": "http://localhost:4000/"
+    "url": "/"
 }
 </script>
 
@@ -272,7 +272,46 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', applyActiveNav);
+  function syncActiveNavWithSearchOverlay() {
+    var searchOverlay = document.querySelector('.search-content');
+    if (!searchOverlay) {
+      return;
+    }
+
+    var overlayVisible = searchOverlay.classList.contains('is--visible');
+    if (overlayVisible) {
+      document.querySelectorAll('.csdc-shell-nav .csdc-nav-link.is-active').forEach(function (link) {
+        link.classList.remove('is-active');
+      });
+      return;
+    }
+
+    applyActiveNav();
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    applyActiveNav();
+    syncActiveNavWithSearchOverlay();
+
+    var searchToggle = document.querySelector('.search__toggle');
+    if (searchToggle) {
+      searchToggle.addEventListener('click', function () {
+        window.requestAnimationFrame(syncActiveNavWithSearchOverlay);
+      });
+    }
+
+    var searchOverlay = document.querySelector('.search-content');
+    if (searchOverlay && window.MutationObserver) {
+      var observer = new MutationObserver(syncActiveNavWithSearchOverlay);
+      observer.observe(searchOverlay, { attributes: true, attributeFilter: ['class'] });
+    }
+
+    document.addEventListener('keyup', function (event) {
+      if (event.key === 'Escape') {
+        window.requestAnimationFrame(syncActiveNavWithSearchOverlay);
+      }
+    });
+  });
 })();
 </script>
 
@@ -424,32 +463,7 @@
     <p class="csdc-home-events-title">Upcoming Events</p>
     <div class="csdc-card csdc-featured">
       
-        
-        
-        <div style="padding:0.35rem 0 0.8rem; border-bottom:1px solid #e5e7eb; margin-bottom:0.7rem;">
-          <h3 style="margin:0 0 0.25rem;">CSDC Breakfast 🥐</h3>
-          <p style="margin:0.2rem 0;"><strong>Date:</strong> Thursday, May 28, 10:30 AM ET</p>
-          
-          <p style="margin:0.25rem 0 0;"><a href="https://www.google.com/calendar/event?eid=N2tnYmhiNDVyOWdoczBvcW9kNzFicWpxdGFfMjAyNjA1MjhUMTQzMDAwWiBtY2dpbGxjc2RjQG0" target="_blank" rel="noopener noreferrer" class="csdc-red" style="font-weight:700; text-decoration:none;">Event details</a></p>
-          
-        </div>
-        
-        <div style="padding:0.35rem 0 0.8rem; border-bottom:1px solid #e5e7eb; margin-bottom:0.7rem;">
-          <h3 style="margin:0 0 0.25rem;">CSDC Lab</h3>
-          <p style="margin:0.2rem 0;"><strong>Date:</strong> Wednesday, June 3, 1:15 PM ET</p>
-          
-          <p style="margin:0.25rem 0 0;"><a href="https://www.google.com/calendar/event?eid=MTByMDQwc2FjNW0yMTRiNmplb2owcGg3MTJfMjAyNjA2MDNUMTcxNTAwWiBtY2dpbGxjc2RjQG0" target="_blank" rel="noopener noreferrer" class="csdc-red" style="font-weight:700; text-decoration:none;">Event details</a></p>
-          
-        </div>
-        
-        <div style="padding:0.35rem 0 0.8rem; border-bottom:1px solid #e5e7eb; margin-bottom:0.7rem;">
-          <h3 style="margin:0 0 0.25rem;">CSDC Breakfast 🥐</h3>
-          <p style="margin:0.2rem 0;"><strong>Date:</strong> Thursday, June 4, 10:30 AM ET</p>
-          
-          <p style="margin:0.25rem 0 0;"><a href="https://www.google.com/calendar/event?eid=N2tnYmhiNDVyOWdoczBvcW9kNzFicWpxdGFfMjAyNjA2MDRUMTQzMDAwWiBtY2dpbGxjc2RjQG0" target="_blank" rel="noopener noreferrer" class="csdc-red" style="font-weight:700; text-decoration:none;">Event details</a></p>
-          
-        </div>
-        
+      <p style="margin:0.35rem 0 0.8rem;">No upcoming events synced yet.</p>
       
 
       

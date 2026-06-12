@@ -26,14 +26,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="McGill CSDC">
 <meta property="og:title" content="Conflicting Approaches to the Study of Social Capital">
-<meta property="og:url" content="http://localhost:4000/publications/10.2143-ep.10.1.503869/">
+<meta property="og:url" content="/publications/10.2143-ep.10.1.503869/">
 
 
   <meta property="og:description" content="Dietlind Stolle, Marc Hooghe">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/">
+  <meta property="og:image" content="">
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/publications/10.2143-ep.10.1.503869/">
+<link rel="canonical" href="/publications/10.2143-ep.10.1.503869/">
 
 
 
@@ -4254,7 +4254,46 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', applyActiveNav);
+  function syncActiveNavWithSearchOverlay() {
+    var searchOverlay = document.querySelector('.search-content');
+    if (!searchOverlay) {
+      return;
+    }
+
+    var overlayVisible = searchOverlay.classList.contains('is--visible');
+    if (overlayVisible) {
+      document.querySelectorAll('.csdc-shell-nav .csdc-nav-link.is-active').forEach(function (link) {
+        link.classList.remove('is-active');
+      });
+      return;
+    }
+
+    applyActiveNav();
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    applyActiveNav();
+    syncActiveNavWithSearchOverlay();
+
+    var searchToggle = document.querySelector('.search__toggle');
+    if (searchToggle) {
+      searchToggle.addEventListener('click', function () {
+        window.requestAnimationFrame(syncActiveNavWithSearchOverlay);
+      });
+    }
+
+    var searchOverlay = document.querySelector('.search-content');
+    if (searchOverlay && window.MutationObserver) {
+      var observer = new MutationObserver(syncActiveNavWithSearchOverlay);
+      observer.observe(searchOverlay, { attributes: true, attributeFilter: ['class'] });
+    }
+
+    document.addEventListener('keyup', function (event) {
+      if (event.key === 'Escape') {
+        window.requestAnimationFrame(syncActiveNavWithSearchOverlay);
+      }
+    });
+  });
 })();
 </script>
 
@@ -4334,7 +4373,7 @@
       
         <header>
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="http://localhost:4000/publications/10.2143-ep.10.1.503869/" itemprop="url">Conflicting Approaches to the Study of Social Capital
+            <a href="/publications/10.2143-ep.10.1.503869/" itemprop="url">Conflicting Approaches to the Study of Social Capital
 </a>
           </h1>
           
@@ -4354,20 +4393,20 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "http://localhost:4000"
+      "item": ""
     }
     ,
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Research",
-      "item": "http://localhost:4000/research/"
+      "item": "/research/"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Conflicting Approaches to the Study of Social Capital",
-      "item": "http://localhost:4000/publications/10.2143-ep.10.1.503869/"
+      "item": "/publications/10.2143-ep.10.1.503869/"
     }
     
   ]
@@ -4490,11 +4529,11 @@
       <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Conflicting+Approaches+to+the+Study+of+Social+Capital%20http%3A%2F%2Flocalhost%3A4000%2Fpublications%2F10.2143-ep.10.1.503869%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Conflicting+Approaches+to+the+Study+of+Social+Capital%20%2Fpublications%2F10.2143-ep.10.1.503869%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fpublications%2F10.2143-ep.10.1.503869%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fpublications%2F10.2143-ep.10.1.503869%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/publications/10.2143-ep.10.1.503869/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=/publications/10.2143-ep.10.1.503869/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 

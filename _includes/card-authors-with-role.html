@@ -1,20 +1,11 @@
-<!-- First collect the authors that should be shown -->
+<!-- Collect the authors that should be shown -->
 {% assign authors_to_show = '' | split: '' %}
 {% for hash in include.authors %}
 {% assign author = hash[1] %}
 {% assign show_author = false %}
+{% assign role_to_render = nil %}
 
-{% if include.alumni %}
-{%- comment -%} Alumni section: show authors marked alumni whose role type matches {%- endcomment -%}
-{% if author.alumni and author.current_role and author.current_role.type == include.role %}
-{% assign show_author = true %}
-{% assign role_to_render = author.current_role %}
-{% endif %}
-
-{% elsif include.render_current_role %}
-{% if author.alumni != true %}
 {% assign latest_role = author.current_role %}
-
 {% if latest_role == nil and author.secondary_roles %}
 {% assign latest_role_date = "000000" %}
 {% for secondary_role in author.secondary_roles %}
@@ -43,7 +34,44 @@
 {% endfor %}
 {% endif %}
 
-{% if latest_role and latest_role.type == include.role %}
+{% assign author_group = author.team_group | default: "" | strip %}
+{% if author_group == "" and latest_role %}
+{% assign role_type = latest_role.type | default: "" | strip %}
+{% assign role_title = latest_role.title | default: "" | downcase %}
+{% if role_type == "Faculty / Professor" %}
+{% assign author_group = "faculty_members" %}
+{% elsif role_type == "Postdoc" %}
+{% assign author_group = "phd_students_and_postdocs" %}
+{% elsif role_type == "Student" and (role_title contains "phd" or role_title contains "doctor") %}
+{% assign author_group = "phd_students_and_postdocs" %}
+{% elsif role_type == "Student" and (role_title contains "master" or role_title contains "maitri") %}
+{% assign author_group = "masters_students" %}
+{% else %}
+{% assign author_group = "researchers" %}
+{% endif %}
+{% endif %}
+
+{% if include.alumni %}
+{% if author.alumni and latest_role %}
+{% if include.team_group %}
+{% if author_group == include.team_group %}
+{% assign show_author = true %}
+{% assign role_to_render = latest_role %}
+{% endif %}
+{% elsif latest_role.type == include.role %}
+{% assign show_author = true %}
+{% assign role_to_render = latest_role %}
+{% endif %}
+{% endif %}
+
+{% elsif include.render_current_role %}
+{% if author.alumni != true and latest_role %}
+{% if include.team_group %}
+{% if author_group == include.team_group %}
+{% assign show_author = true %}
+{% assign role_to_render = latest_role %}
+{% endif %}
+{% elsif latest_role.type == include.role %}
 {% assign title_match = true %}
 {% assign role_title = latest_role.title | default: "" | downcase %}
 
@@ -94,34 +122,13 @@
 
 {% if show_author %}
 {% assign entry = "" | split: "" %}
-{% assign start_date = role_to_render.start_date | default: "" %}
-
-{% if start_date == "" %}
-{% assign formatted_date = "999999" %}
-{% elsif start_date contains "Fall" or start_date contains "Winter" or start_date contains "Summer" %}
-{% assign season_year = start_date | split: " " %}
-{% if season_year[0] == "Fall" %}
-{% assign month = "09" %}
-{% elsif season_year[0] == "Winter" %}
-{% assign month = "01" %}
-{% elsif season_year[0] == "Summer" %}
-{% assign month = "05" %}
-{% endif %}
-{% assign formatted_date = season_year[1] | append: month %}
-{% else %}
-{% assign formatted_date = start_date | date: "%Y%m" %}
-{% endif %}
-
 {% assign sort_key = author.name | downcase | append: "|" | append: forloop.index0 %}
 {% assign entry = entry | push: sort_key %}
 {% assign entry = entry | push: author %}
 {% assign entry = entry | push: role_to_render %}
 {% assign authors_to_show = authors_to_show | push: entry %}
 {% endif %}
-
-
 {% endfor %}
-
 
 {% assign sorted_authors = authors_to_show | sort %}
 
@@ -129,7 +136,6 @@
 <h2>{{ include.section_title }} <span class="csdc-role-count">({{ sorted_authors.size }})</span></h2>
 {% endif %}
 
-<!-- Then display the filtered authors -->
 {% if include.alumni %}
 {% if sorted_authors.size > 0 %}
 <div class="csdc-alumni-section">
@@ -137,8 +143,9 @@
 {% for entry in sorted_authors %}
 {% assign author = entry[1] %}
 {% assign role_to_render = entry[2] %}
+{% assign role_type = role_to_render.type | default: "" %}
 {% assign compact_avatar = false %}
-{% if include.role == "Postdoc" or include.role == "Student" or include.role == "Staff" %}
+{% if role_type == "Postdoc" or role_type == "Student" or role_type == "Staff" or role_type == "Collaborator" or role_type == "Unaffiliated" %}
 {% assign compact_avatar = true %}
 {% endif %}
 {% include display-author.html
@@ -154,8 +161,9 @@ alumni=true %}
 {% for entry in sorted_authors %}
 {% assign author = entry[1] %}
 {% assign role_to_render = entry[2] %}
+{% assign role_type = role_to_render.type | default: "" %}
 {% assign compact_avatar = false %}
-{% if include.role == "Postdoc" or include.role == "Student" or include.role == "Staff" %}
+{% if role_type == "Postdoc" or role_type == "Student" or role_type == "Staff" or role_type == "Collaborator" or role_type == "Unaffiliated" %}
 {% assign compact_avatar = true %}
 {% endif %}
 
