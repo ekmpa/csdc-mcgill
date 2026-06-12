@@ -102,6 +102,22 @@
 {% endif %}
 {% endif %}
 {% endif %}
+{% elsif include.render_secondary_doctoral %}
+{% if author.alumni != true %}
+{% if include.team_group %}
+{% if author_group == include.team_group %}
+{% for sec_role in author.secondary_roles %}
+{% assign sec_title = sec_role.title | default: "" | downcase %}
+{% assign sec_type = sec_role.type | default: "" %}
+{% if sec_type == "Student" and (sec_title contains "doctor" or sec_title contains "phd") %}
+{% assign show_author = true %}
+{% assign role_to_render = sec_role %}
+{% break %}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endif %}
+{% endif %}
 {% else %}
 {% for past_role in author.past_roles %}
 {% if past_role.type == include.role %}
@@ -122,7 +138,9 @@
 
 {% if show_author %}
 {% assign entry = "" | split: "" %}
-{% assign sort_key = author.name | downcase | append: "|" | append: forloop.index0 %}
+{% assign _name_parts = author.name | split: " " %}
+{% assign _last_name = _name_parts | last | downcase %}
+{% assign sort_key = _last_name | append: "|" | append: author.name | downcase %}
 {% assign entry = entry | push: sort_key %}
 {% assign entry = entry | push: author %}
 {% assign entry = entry | push: role_to_render %}

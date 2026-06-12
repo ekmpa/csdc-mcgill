@@ -21,22 +21,19 @@
 
 <section class="csdc-people-group" data-people-group="faculty_members">
 {% include card-authors-with-role.html authors=site.data.authors team_group="faculty_members" section_title=t.home.people.faculty_members render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors team_group="staff" section_title=t.home.people.staff render_current_role=true %}
 {% include card-authors-with-role.html authors=site.data.authors team_group="faculty_members" alumni=true %}
 </section>
 
 <section class="csdc-people-group" data-people-group="phd_students_and_postdocs">
 {% include card-authors-with-role.html authors=site.data.authors team_group="phd_students_and_postdocs" section_title=t.home.people.phd_students_and_postdocs render_current_role=true %}
+{% include card-authors-with-role.html authors=site.data.authors team_group="staff" render_secondary_doctoral=true %}
 {% include card-authors-with-role.html authors=site.data.authors team_group="phd_students_and_postdocs" alumni=true %}
 </section>
 
 <section class="csdc-people-group" data-people-group="masters_students">
 {% include card-authors-with-role.html authors=site.data.authors team_group="masters_students" section_title=t.home.people.masters_students render_current_role=true %}
 {% include card-authors-with-role.html authors=site.data.authors team_group="masters_students" alumni=true %}
-</section>
-
-<section class="csdc-people-group" data-people-group="researchers">
-{% include card-authors-with-role.html authors=site.data.authors team_group="researchers" section_title=t.home.people.researchers render_current_role=true %}
-{% include card-authors-with-role.html authors=site.data.authors team_group="researchers" alumni=true %}
 </section>
 
 <div class="csdc-year-jump-nav" data-csdc-people-group-jump>
@@ -95,17 +92,14 @@ document.addEventListener('DOMContentLoaded', function () {
         var plain = (text || '').replace(/\([^)]*\)\s*$/g, '').trim();
         var lower = plain.toLowerCase();
 
-        if (lower.indexOf('faculty') !== -1 || lower.indexOf('corps') !== -1) {
+        if (lower.indexOf('faculty') !== -1 || lower.indexOf('corps') !== -1 || lower.indexOf('staff') !== -1 || lower.indexOf('personnel') !== -1) {
             return 'Faculty';
         }
         if (lower.indexOf('phd') !== -1 || lower.indexOf('doctor') !== -1 || lower.indexOf('postdoc') !== -1) {
             return 'PhD';
         }
-        if (lower.indexOf('master') !== -1 || lower.indexOf('maitrise') !== -1) {
-            return 'Master';
-        }
-        if (lower.indexOf('research') !== -1 || lower.indexOf('chercheur') !== -1) {
-            return 'Research';
+        if (lower.indexOf('master') !== -1 || lower.indexOf('ma\u00eetrise') !== -1 || lower.indexOf('maitrise') !== -1) {
+            return 'Master\u2019s';
         }
 
         var firstWord = plain.split(/\s+/)[0] || '--';
@@ -176,8 +170,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (upBtn) upBtn.disabled = activeIndex === 0 && effectiveScrollY <= activeAnchor + 2;
         if (downBtn) downBtn.disabled = activeIndex >= visibleGroups.length - 1;
 
-        var firstHeading = getHeading(visibleGroups[0]);
-        var shouldShow = firstHeading && firstHeading.getBoundingClientRect().top <= 92;
+        var firstAnchor = getGroupAnchor(visibleGroups[0]);
+        // Keep controls visible throughout Faculty; hide only when scrolled slightly above the first anchor.
+        var shouldShow = effectiveScrollY >= firstAnchor - 28;
         groupJumpNav.classList.toggle('is-visible', !!shouldShow);
     }
 

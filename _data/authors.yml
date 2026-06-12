@@ -32,7 +32,7 @@ Fagar Al-Sayed:
     type: Student
     end_date: "2025"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Hubert Alain:
   name: Hubert Alain
   alumni: true
@@ -40,7 +40,7 @@ Hubert Alain:
     type: Student
     end_date: "2015"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Quinn Albaugh:
   name: Quinn Albaugh
   alumni: true
@@ -48,7 +48,7 @@ Quinn Albaugh:
     type: Student
     end_date: "2014"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Mohammed Ali:
   name: Mohammed Ali
   alumni: true
@@ -56,7 +56,7 @@ Mohammed Ali:
     type: Student
     end_date: "2011"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Sahar Ramazan Ali:
   name: Sahar Ramazan Ali
   current_role:
@@ -105,7 +105,7 @@ Henry Atkins:
     type: Student
     end_date: "2022"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Borna Atrchian:
   name: Borna Atrchian
   current_role:
@@ -123,7 +123,7 @@ Ayhan Eren Babayigit:
     type: Student
     end_date: "2025"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Leonardo Baccini:
   name: Leonardo Baccini
   current_role:
@@ -146,7 +146,7 @@ Maxime Barbeau:
     type: Student
     end_date: "2016"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Patrizia Barbone:
   name: Patrizia Barbone
   alumni: true
@@ -154,7 +154,7 @@ Patrizia Barbone:
     type: Student
     end_date: "2013"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Edana Beauvais:
   name: Edana Beauvais
   alumni: true
@@ -170,7 +170,7 @@ Jessica Behnke:
     type: Student
     end_date: "2013"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Sheena Bell:
   name: Sheena Bell
   alumni: true
@@ -189,7 +189,7 @@ Olivier Bergeron-Boutin:
     type: Student
     end_date: "2024"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Elissa Berwick:
   name: Elissa Berwick
   avatar: /assets/images/bio/Elissa Berwick 2.jpg
@@ -211,7 +211,7 @@ Maxime Blanchard:
     type: Student
     end_date: "2024"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Kelly Blidook:
   name: Kelly Blidook
   current_role:
@@ -238,7 +238,7 @@ Danielle Bohonos:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Arianna Bondi:
   name: Arianna Bondi
   current_role:
@@ -267,7 +267,7 @@ Tyler Braun:
     type: Student
     end_date: "2013"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Aengus Bridgman:
   name: Aengus Bridgman
   alumni: true
@@ -275,7 +275,7 @@ Aengus Bridgman:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Éric Bélanger:
   name: Éric Bélanger
   current_role:
@@ -304,7 +304,7 @@ Albert Manuel Orozco Camacho:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Xavier Campbell:
   name: Xavier Campbell
   alumni: true
@@ -312,7 +312,7 @@ Xavier Campbell:
     type: Student
     end_date: "2015"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Rafael Campos-Gottardo:
   name: Rafael Campos-Gottardo
   current_role:
@@ -335,7 +335,7 @@ Ana Canedo:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Yvonne Chang:
   name: Yvonne Chang
   alumni: true
@@ -343,7 +343,7 @@ Yvonne Chang:
     title: MA
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Philippe Chassé:
   name: Philippe Chassé
   alumni: true
@@ -351,7 +351,7 @@ Philippe Chassé:
     type: Student
     end_date: "2021"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Annie Chen:
   name: Annie Chen
   alumni: true
@@ -359,7 +359,7 @@ Annie Chen:
     type: Student
     end_date: "2020"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Kefan Chen:
   name: Kefan Chen
   current_role:
@@ -380,7 +380,7 @@ Chris Chimm:
     type: Student
     end_date: "2016"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Sarah Ciaglia:
   name: Sarah Ciaglia
   alumni: true
@@ -388,7 +388,7 @@ Sarah Ciaglia:
     type: Student
     end_date: "2012"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Costin Ciobanu:
   name: Costin Ciobanu
   alumni: true
@@ -396,7 +396,7 @@ Costin Ciobanu:
     type: Student
     end_date: "2022"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Ellen Claes:
   name: Ellen Claes
   alumni: true
@@ -414,7 +414,7 @@ Ethan Clow:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Guila Cohen:
   name: Guila Cohen
   current_role:
@@ -433,7 +433,7 @@ Maxime Coulon-Hamelin:
     type: Student
     end_date: "2022"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Bolette Danckert:
   name: Bolette Danckert
   alumni: true
@@ -441,7 +441,7 @@ Bolette Danckert:
     type: Student
     end_date: "2014"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Jacob Danovitch:
   name: Jacob Danovitch
   alumni: true
@@ -449,7 +449,7 @@ Jacob Danovitch:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Shadia El Dardiry:
   name: Shadia El Dardiry
   alumni: true
@@ -475,7 +475,7 @@ Natalie Delmonte:
     type: Student
     end_date: "2024"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Didem Demirag:
   name: Didem Demirag
   alumni: true
@@ -483,7 +483,7 @@ Didem Demirag:
     type: Student
     end_date: "2022"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Clare Devereux:
   name: Clare Devereux
   alumni: true
@@ -491,7 +491,7 @@ Clare Devereux:
     type: Student
     end_date: "2015"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Thomas Didier:
   name: Thomas Didier
   alumni: true
@@ -499,7 +499,7 @@ Thomas Didier:
     type: Student
     end_date: "2011"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Valérie Doucette:
   name: Valérie Doucette
   alumni: true
@@ -511,7 +511,7 @@ William East:
     type: Student
     end_date: "2019"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Merve Erdilmen:
   name: Merve Erdilmen
   alumni: true
@@ -519,7 +519,7 @@ Merve Erdilmen:
     type: Student
     end_date: "2018"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Chris Erl:
   name: Chris Erl
   alumni: true
@@ -527,7 +527,7 @@ Chris Erl:
     type: Student
     end_date: "2022"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Aaron Erlich:
   name: Aaron Erlich
   current_role:
@@ -578,7 +578,7 @@ Andréa Febres-Gagné:
     type: Student
     end_date: "2022"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Fernando Feitosa:
   name: Fernando Feitosa
   alumni: true
@@ -608,7 +608,7 @@ Benjamin Ferland:
     type: Student
     end_date: "2015"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Ina Filkobski:
   name: Ina Filkobski
   alumni: true
@@ -616,7 +616,7 @@ Ina Filkobski:
     type: Student
     end_date: "2022"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Benjamin Forest:
   name: Benjamin Forest
   avatar: /assets/images/bio/Benjamin Forest 2.jpg
@@ -651,7 +651,7 @@ Sarah Freund:
     type: Student
     end_date: "2005"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Jorge Frozzini:
   name: Jorge Frozzini
   alumni: true
@@ -659,7 +659,7 @@ Jorge Frozzini:
     type: Student
     end_date: "2011"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Etienne Gagnon:
   name: Etienne Gagnon
   alumni: true
@@ -667,7 +667,7 @@ Etienne Gagnon:
     type: Student
     end_date: "2020"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Thomas Gareau-Paquette:
   name: Thomas Gareau-Paquette
   alumni: true
@@ -675,7 +675,7 @@ Thomas Gareau-Paquette:
     type: Student
     end_date: "2024"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Holly Garnett:
   name: Holly Garnett
   alumni: true
@@ -683,7 +683,7 @@ Holly Garnett:
     type: Student
     end_date: "2017"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Lara Gauthier:
   name: Lara Gauthier
   alumni: true
@@ -699,7 +699,7 @@ Daniel St. Germaine:
     type: Student
     end_date: "2021"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Kassandra Gervasi:
   name: Kassandra Gervasi
   current_role:
@@ -732,7 +732,7 @@ Claire Girard:
     type: Student
     end_date: "2013"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Dan Goldberg:
   name: Dan Goldberg
   alumni: true
@@ -751,7 +751,7 @@ Gaby Gonzalez-Sirois:
     type: Student
     end_date: "2019"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Elizabeth Goodyear-Grant:
   name: Elizabeth Goodyear-Grant
   current_role:
@@ -780,7 +780,7 @@ Birte Gundelach:
     type: Student
     end_date: "2013"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Caroline Habluetzl:
   name: Caroline Habluetzl
   alumni: true
@@ -805,13 +805,13 @@ Ian Van Haren:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=_0j4tPAAAAAJ
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Ian Van Haren 2:
   name: Ian Van Haren
   current_role:
     type: Student
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Eric Hehman:
   name: Eric Hehman
   current_role:
@@ -837,7 +837,7 @@ Shaden Hetu-Frankel:
     type: Student
     end_date: "2022"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Joe Heywood:
   name: Joe Heywood
   alumni: true
@@ -845,7 +845,7 @@ Joe Heywood:
     type: Student
     end_date: "2012"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 John Hicks:
   name: John Hicks
   alumni: true
@@ -853,7 +853,7 @@ John Hicks:
     type: Student
     end_date: "2024"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Richard Hink:
   name: Richard Hink
   alumni: true
@@ -920,7 +920,7 @@ Anne Imouza:
     McGill CSDC.
   avatar: /assets/images/bio/placeholder/default.jpg
 
-  team_group: researchers
+  team_group: staff
 Olivier Jacques:
   name: Olivier Jacques
   alumni: true
@@ -928,7 +928,7 @@ Olivier Jacques:
     type: Student
     end_date: "2021"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Luis Alvarez Jimenez:
   name: Luis Alvarez Jimenez
   current_role:
@@ -966,7 +966,7 @@ Janine Kanters:
     type: Student
     end_date: "2016"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Sakeef Karim:
   name: Sakeef Karim
   alumni: true
@@ -974,7 +974,7 @@ Sakeef Karim:
     type: Student
     end_date: "2022"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Jordan Katz:
   name: Jordan Katz
   current_role:
@@ -993,7 +993,7 @@ Dilse Kaygisiz:
     type: Student
     end_date: "2022"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Anthony Kevins:
   name: Anthony Kevins
   alumni: true
@@ -1001,7 +1001,7 @@ Anthony Kevins:
     type: Student
     end_date: "2014"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Khaoula El Khalil:
   name: Khaoula El Khalil
   alumni: true
@@ -1010,7 +1010,7 @@ Khaoula El Khalil:
     end_date: "2022"
   avatar: /assets/images/bio/Khaoula El Khalil.jpg
   auto_update_publications: false
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Kira Killermann:
   name: Kira Killermann
   alumni: true
@@ -1018,7 +1018,7 @@ Kira Killermann:
     type: Student
     end_date: "2012"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Susanna Kislenko:
   name: Susanna Kislenko
   current_role:
@@ -1045,7 +1045,7 @@ Emma Kondrup:
   bio: Web developer maintaining the McGill CSDC website and publication/member 
     update workflow.
   avatar: /assets/images/bio/placeholder/default.jpg
-  team_group: researchers
+  team_group: staff
 Angela Kostelko:
   name: Angela Kostelko
   alumni: true
@@ -1076,7 +1076,7 @@ Freya Lambrechts:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Anna Laurence:
   name: Anna Laurence
   alumni: true
@@ -1095,7 +1095,7 @@ Mathieu Lavigne:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Andrea Lawlor:
   name: Andrea Lawlor
   alumni: true
@@ -1107,7 +1107,7 @@ Sarah Lebeau:
     type: Student
     end_date: "2017"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Zoé Hyman Levy:
   name: Zoé Hyman Levy
   alumni: true
@@ -1115,7 +1115,7 @@ Zoé Hyman Levy:
     type: Student
     end_date: "2024"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Qinggang Li:
   name: Qinggang Li
   current_role:
@@ -1153,7 +1153,7 @@ Evan Light:
     type: Student
     end_date: "2012"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Travis Lim:
   name: Travis Lim
   current_role:
@@ -1247,7 +1247,7 @@ Jasmine Lorenzini:
     type: Student
     end_date: "2013"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Zekai Lu:
   name: Zekai Lu
   current_role:
@@ -1298,7 +1298,7 @@ Justin Lutz:
     type: Student
     end_date: "2015"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Félix Lévesque:
   name: Félix Lévesque
   alumni: true
@@ -1306,7 +1306,7 @@ Félix Lévesque:
     type: Student
     end_date: "2024"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Michael Mackenzie:
   name: Michael Mackenzie
   current_role:
@@ -1331,7 +1331,7 @@ Pratik Mahajan:
     type: Student
     end_date: "2024"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Adam Mahon:
   name: Adam Mahon
   alumni: true
@@ -1360,7 +1360,7 @@ Brett Manzer:
     type: Student
     end_date: "2018"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Beatrice Marry:
   name: Beatrice Marry
   alumni: true
@@ -1387,7 +1387,7 @@ Zachary Marshall:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Nick Maturo:
   name: Nick Maturo
   alumni: true
@@ -1395,7 +1395,7 @@ Nick Maturo:
     type: Student
     end_date: "2015"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Julia Maynard:
   name: Julia Maynard
   alumni: true
@@ -1403,7 +1403,7 @@ Julia Maynard:
     type: Student
     end_date: "2017"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Abigail Chaya Maza:
   name: Abigail Chaya Maza
   alumni: true
@@ -1411,7 +1411,7 @@ Abigail Chaya Maza:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Andrew McCormack:
   name: Andrew McCormack
   alumni: true
@@ -1419,7 +1419,7 @@ Andrew McCormack:
     type: Student
     end_date: "2019"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Aiden McIlvaney:
   name: Aiden McIlvaney
   current_role:
@@ -1448,7 +1448,7 @@ Denver McNeney:
     type: Student
     end_date: "2019"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Eric Merkley:
   name: Eric Merkley
   alumni: true
@@ -1456,7 +1456,7 @@ Eric Merkley:
     type: Student
     end_date: "2013"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Ezelbahar Metin:
   name: Ezelbahar Metin
   current_role:
@@ -1479,7 +1479,7 @@ Alexandre Miltsov:
     type: Student
     end_date: "2018"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Philippe Mongrain:
   name: Philippe Mongrain
   alumni: true
@@ -1495,7 +1495,7 @@ Isadora Borges Monroy:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Mahsa Moosavi:
   name: Mahsa Moosavi
   alumni: true
@@ -1503,7 +1503,7 @@ Mahsa Moosavi:
     type: Student
     end_date: "2022"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Anaïs Légaré Morasse:
   name: Anaïs Légaré Morasse
   alumni: true
@@ -1511,7 +1511,7 @@ Anaïs Légaré Morasse:
     type: Student
     end_date: "2018"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Brad Morrison:
   name: Brad Morrison
   alumni: true
@@ -1523,7 +1523,7 @@ Emma Myhre:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Rosalie Nadeau:
   name: Rosalie Nadeau
   alumni: true
@@ -1531,7 +1531,7 @@ Rosalie Nadeau:
     type: Student
     end_date: "2018"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Mahdi Nejadgholi:
   name: Mahdi Nejadgholi
   alumni: true
@@ -1539,7 +1539,7 @@ Mahdi Nejadgholi:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Alan Nemirovski:
   name: Alan Nemirovski
   current_role:
@@ -1559,7 +1559,7 @@ Ka U Ng:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Eugene Ofosu:
   name: Eugene Ofosu
   alumni: true
@@ -1567,7 +1567,7 @@ Eugene Ofosu:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Bethany Or:
   name: Bethany Or
   alumni: true
@@ -1586,7 +1586,7 @@ Saewon Park:
     type: Student
     end_date: "2019"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Eva Falk Pedersen:
   name: Eva Falk Pedersen
   alumni: true
@@ -1598,7 +1598,7 @@ Kellin Pelrine:
     type: Student
     end_date: "2025"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Erin Penner:
   name: Erin Penner
   current_role:
@@ -1623,7 +1623,7 @@ Nathan Di Pinto:
     type: Student
     advisor: Benjamin Forest
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Myriam Plourde:
   name: Myriam Plourde
   alumni: true
@@ -1631,7 +1631,7 @@ Myriam Plourde:
     type: Student
     end_date: "2012"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Farimah Poursafaei:
   name: Farimah Poursafaei
   alumni: true
@@ -1672,7 +1672,7 @@ Reza Rahimian:
     type: Student
     end_date: "2022"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Rachel Rammal:
   name: Rachel Rammal
   current_role:
@@ -1703,7 +1703,7 @@ Jeremy Rappel:
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Tim Reeskens:
   name: Tim Reeskens
   current_role:
@@ -1727,7 +1727,7 @@ Christopher Ross:
     type: Student
     end_date: "2023"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Marie-Pierre Rouette:
   name: Marie-Pierre Rouette
   current_role:
@@ -1752,7 +1752,7 @@ Rafico Ruiz:
     type: Student
     end_date: "2014"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Cassandra Ryan:
   name: Cassandra Ryan
   alumni: true
@@ -1760,7 +1760,7 @@ Cassandra Ryan:
     type: Student
     end_date: "2020"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Daniel Sailofsky:
   name: Daniel Sailofsky
   alumni: true
@@ -1768,7 +1768,7 @@ Daniel Sailofsky:
     type: Student
     end_date: "2022"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Joseph Sannicandro:
   name: Joseph Sannicandro
   alumni: true
@@ -1776,7 +1776,7 @@ Joseph Sannicandro:
     type: Student
     end_date: "2012"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Steven Schnoor:
   name: Steven Schnoor
   alumni: true
@@ -1784,7 +1784,7 @@ Steven Schnoor:
     type: Student
     end_date: "2013"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Colin Scott:
   name: Colin Scott
   alumni: true
@@ -1792,7 +1792,7 @@ Colin Scott:
     type: Student
     end_date: "2024"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Sahar Omidi Shayegan:
   name: Sahar Omidi Shayegan
   current_role:
@@ -1801,7 +1801,7 @@ Sahar Omidi Shayegan:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=1K-uTWgAAAAJ
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Eran Shor:
   name: Eran Shor
   current_role:
@@ -1828,7 +1828,7 @@ Sula Sidnell-Green:
     type: Student
     end_date: "2015"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Harpeet Singh:
   name: Harpeet Singh
   current_role:
@@ -1873,7 +1873,7 @@ Alan Michael Smith:
     type: Student
     end_date: "2022"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Thomas Soehl:
   name: Thomas Soehl
   current_role:
@@ -1900,7 +1900,7 @@ Cayley Sorochan:
     type: Student
     end_date: "2013"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Cameron Stark:
   name: Cameron Stark
   alumni: true
@@ -1919,7 +1919,7 @@ Dominik Stecula:
     type: Student
     end_date: "2012"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Brooke Steinhauer:
   name: Brooke Steinhauer
   current_role:
@@ -1929,7 +1929,7 @@ Brooke Steinhauer:
     advisor: Dietlind Stolle
   avatar: /assets/images/bio/Brooke Steinhauer.jpg
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Dietlind Stolle:
   name: Dietlind Stolle
   current_role:
@@ -2014,7 +2014,7 @@ Hamid Ali Tiwana:
     type: Student
     end_date: "2024"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Erika De Torres:
   name: Erika De Torres
   alumni: true
@@ -2022,7 +2022,7 @@ Erika De Torres:
     type: Student
     end_date: "2003"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 David Trotter:
   name: David Trotter
   alumni: true
@@ -2030,7 +2030,7 @@ David Trotter:
     type: Student
     end_date: "2016"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Marc Trussler:
   name: Marc Trussler
   alumni: true
@@ -2038,7 +2038,7 @@ Marc Trussler:
     type: Student
     end_date: "2013"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Nicolas Vaxelaire:
   name: Nicolas Vaxelaire
   current_role:
@@ -2095,7 +2095,7 @@ Julie Whittet:
     type: Student
     end_date: "2012"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Taisto Witt:
   name: Taisto Witt
   current_role:
@@ -2117,7 +2117,7 @@ Chih-lan Winnie Yang:
     type: Student
     end_date: "2025"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Zachary Yang:
   name: Zachary Yang
   current_role:
@@ -2146,7 +2146,7 @@ Jason R. Young:
     type: Student
     end_date: "2015"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Lori Young:
   name: Lori Young
   current_role:
@@ -2162,7 +2162,7 @@ Chris Yurris:
   current_role:
     type: Student
     end_date: "2024"
-  team_group: researchers
+  team_group: phd_students_and_postdocs
 Ali Zeren:
   name: Ali Zeren
   alumni: true
@@ -2170,4 +2170,4 @@ Ali Zeren:
     type: Student
     end_date: "2017"
 
-  team_group: researchers
+  team_group: phd_students_and_postdocs
