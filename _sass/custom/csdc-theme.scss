@@ -76,6 +76,10 @@ a.csdc-red:focus {
   color: $csdc-dark;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .csdc-lead {
   margin-top: 1rem;
   margin-bottom: 1rem;

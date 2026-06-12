@@ -42,7 +42,7 @@
         {% assign show_excerpt = true %}
         {% endif %}
         {% endif %}
-        <article class="csdc-news-item{% unless show_byline or show_excerpt %} csdc-news-item--title-only{% endunless %}">
+        <article class="csdc-news-item{% unless show_byline or show_excerpt %} csdc-news-item--title-only{% endunless %}"{% if rendered_news_count > 3 %} hidden{% endif %}>
           {% if is_fr and post.title_fr %}
           {% assign news_title = post.title_fr | default: "" | strip %}
           {% else %}
@@ -74,24 +74,19 @@
           if (!list || !button) return;
 
           var items = Array.prototype.slice.call(list.querySelectorAll('.csdc-news-item'));
-          var visibleCount = 1;
-          var revealStep = 1;
+          var hiddenItems = items.filter(function (item) { return item.hidden; });
 
-          function updateVisibility() {
-            items.forEach(function (item, index) {
-              item.hidden = index >= visibleCount;
-            });
-            if (visibleCount >= items.length) {
-              button.hidden = true;
-            }
+          if (hiddenItems.length === 0) {
+            button.hidden = true;
+            return;
           }
 
           button.addEventListener('click', function () {
-            visibleCount = Math.min(visibleCount + revealStep, items.length);
-            updateVisibility();
+            hiddenItems.forEach(function (item) {
+              item.hidden = false;
+            });
+            button.hidden = true;
           });
-
-          updateVisibility();
         });
       </script>
       {% else %}

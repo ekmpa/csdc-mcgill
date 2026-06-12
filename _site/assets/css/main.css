@@ -1638,6 +1638,8 @@ a.csdc-red, a.csdc-red:visited, a.csdc-red:hover, a.csdc-red:focus { color: #c81
 
 .csdc-hero-subtitle a:hover, .csdc-hero-subtitle a:focus { color: #1f2937; }
 
+[hidden] { display: none !important; }
+
 .csdc-lead { margin-top: 1rem; margin-bottom: 1rem; max-width: 46rem; color: #374151; font-size: 0.94rem; line-height: 1.6; }
 
 .csdc-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }

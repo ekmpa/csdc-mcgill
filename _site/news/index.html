@@ -386,7 +386,7 @@
           <h3 class="csdc-news-item-title"><a href="/news/rupin-liddar-wins-the-best-paper-award-in-asian-pacific-american-politics-at-the-western-political-science-association-s-conference/">Rupin Liddar wins the Best Paper Award in Asian Pacific American Politics at the Western Political Science Association’s conference</a></h3>
           <p class="csdc-news-item-date">June 11, 2026</p>
           
-          <p class="csdc-news-item-excerpt">Rupin Liddar won the Best Paper Award in Asian Pacific American Politics from the Western Political Science Association's conference that she attended last year.</p>
+          <p class="csdc-news-item-excerpt">Rupinder Liddar, PhD Student supervised by Eric Belanger and Dietlind Stolle, won the Best Paper Award in Asian Pacific American Politics from the Western Political Science Association's conference that she attended l...</p>
           
         </article>
         
@@ -445,7 +445,7 @@
         
         
         
-        <article class="csdc-news-item">
+        <article class="csdc-news-item" hidden="">
           
           
           
@@ -469,24 +469,19 @@
           if (!list || !button) return;
 
           var items = Array.prototype.slice.call(list.querySelectorAll('.csdc-news-item'));
-          var visibleCount = 1;
-          var revealStep = 1;
+          var hiddenItems = items.filter(function (item) { return item.hidden; });
 
-          function updateVisibility() {
-            items.forEach(function (item, index) {
-              item.hidden = index >= visibleCount;
-            });
-            if (visibleCount >= items.length) {
-              button.hidden = true;
-            }
+          if (hiddenItems.length === 0) {
+            button.hidden = true;
+            return;
           }
 
           button.addEventListener('click', function () {
-            visibleCount = Math.min(visibleCount + revealStep, items.length);
-            updateVisibility();
+            hiddenItems.forEach(function (item) {
+              item.hidden = false;
+            });
+            button.hidden = true;
           });
-
-          updateVisibility();
         });
       </script>
       
