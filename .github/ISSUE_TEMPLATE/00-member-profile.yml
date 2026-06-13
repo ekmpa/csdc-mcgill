@@ -89,6 +89,20 @@ body:
     validations:
       required: false
 
+  - type: dropdown
+    id: team_group
+    attributes:
+      label: Team Group / Groupe de l'equipe
+      description: People-page section for this member / Section de la page equipe pour ce membre
+      multiple: false
+      options:
+        - Faculty members
+        - PhD students and postdocs
+        - Master's students
+        - Researchers
+    validations:
+      required: false
+
   - type: input
     id: current_role-title
     attributes:

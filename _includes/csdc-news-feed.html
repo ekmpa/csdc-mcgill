@@ -40,12 +40,12 @@
           {% assign news_title = post.slug | replace: "-", " " %}
           {% endif %}
           {% assign rendered_news_title = news_title | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines | strip %}
-          <h3 class="csdc-news-item-title"><a href="{{ post.url | relative_url }}">{{ rendered_news_title }}</a></h3>
+          <h3 class="csdc-news-item-title">{{ rendered_news_title }}</h3>
           <p class="csdc-news-item-date">{{ post.date | date: "%B %-d, %Y" }}</p>
           {% if show_byline %}
-          <p class="csdc-news-item-excerpt"><span class="csdc-news-item-by">By</span> {{ excerpt_clean | truncate: 220 }}</p>
+          <p class="csdc-news-item-excerpt"><span class="csdc-news-item-by">By</span> {{ excerpt_clean }}</p>
           {% elsif show_excerpt %}
-          <p class="csdc-news-item-excerpt">{{ excerpt_clean | truncate: 220 }}</p>
+          <p class="csdc-news-item-excerpt">{{ excerpt_clean }}</p>
           {% endif %}
         </article>
         {% endfor %}

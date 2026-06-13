@@ -11,6 +11,9 @@ jobs:
     if: |
       (github.event.action == 'labeled' && startsWith(github.event.label.name, 'automatic-')) ||
       contains(join(github.event.issue.labels.*.name, ','), 'automatic-')
+    concurrency:
+      group: process-issue-form-${{ github.event.issue.number }}
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -52,7 +55,6 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           delete-branch: true
-          branch-suffix: timestamp
           commit-message: "[GH Actions] process issue form"
           title: "[Automatic PR] ${{ github.event.issue.title }}"
           body: >

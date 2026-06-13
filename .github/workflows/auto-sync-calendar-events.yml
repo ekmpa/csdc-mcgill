@@ -36,6 +36,7 @@ jobs:
         id: create-pr
         uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ env.CALENDAR_AUTOMERGE_TOKEN != '' && env.CALENDAR_AUTOMERGE_TOKEN || github.token }}
           delete-branch: true
           branch-suffix: timestamp
           branch: gh-actions/sync-calendar-events

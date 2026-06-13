@@ -301,6 +301,13 @@ a.csdc-red:focus {
   padding: 0.7rem 0.85rem;
   max-width: 46rem;
   margin-right: auto;
+  transition: padding 0.2s ease, box-shadow 0.2s ease;
+}
+
+.csdc-news-item:hover,
+.csdc-news-item:focus-within {
+  padding: 0.9rem 1rem;
+  box-shadow: 0 8px 22px rgba(17, 24, 39, 0.08);
 }
 
 .csdc-news-item-title {
@@ -309,15 +316,8 @@ a.csdc-red:focus {
   line-height: 1.3;
 }
 
-.csdc-news-item-title a {
-  color: #9f1239;
-  text-decoration: none;
-}
-
-.csdc-news-item-title a:hover,
-.csdc-news-item-title a:focus {
+.csdc-news-item-title {
   color: #7f1d1d;
-  text-decoration: none;
 }
 
 .csdc-news-item-date {
@@ -334,6 +334,16 @@ a.csdc-red:focus {
   margin: 0.4rem 0 0;
   color: #111827;
   font-size: 0.86rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.csdc-news-item:hover .csdc-news-item-excerpt,
+.csdc-news-item:focus-within .csdc-news-item-excerpt {
+  -webkit-line-clamp: unset;
+  overflow: visible;
 }
 
 .csdc-news-item-by {

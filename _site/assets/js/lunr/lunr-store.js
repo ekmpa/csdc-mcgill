@@ -132,6 +132,20 @@ var store = [{
       "url": "/news/brooke-steinhauer-awarded-the-lemieux-fellowship/",
       "teaser": null
     },{
+      "title": "Alan Nemirovski Becomes The Mcgill Student Representative On The Csdc Student Committee",
+      "excerpt": "title: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    title_en: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    date: 2026-06-05    categories: [fr, news]    excerpt: \"X\"    excerpt_en: \"X\"    ---\n      Alan Nemirovski Becomes The Mcgill Student Representative On The Csdc Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee     title: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    title_en: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    date: 2026-06-05    categories: [fr, news]    excerpt: \"X\"    excerpt_en: \"X\"    ---\n      Alan Nemirovski Becomes The Mcgill Student Representative On The Csdc Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee",
+      "categories": [],
+      "tags": [],
+      "url": "/alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee/",
+      "teaser": null
+    },{
+      "title": "Alan Nemirovski Becomes The Mcgill Student Representative On The Csdc Student Committee",
+      "excerpt": "title: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    title_fr: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    date: 2026-06-05    categories: News    excerpt: \"X\"    excerpt_fr: \"X\"    ---\n      Alan Nemirovski Becomes The Mcgill Student Representative On The Csdc Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee     title: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    title_fr: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    date: 2026-06-05    categories: News    excerpt: \"X\"    excerpt_fr: \"X\"    ---\n      Alan Nemirovski Becomes The Mcgill Student Representative On The Csdc Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee",
+      "categories": [],
+      "tags": [],
+      "url": "/alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee/",
+      "teaser": null
+    },{
       "title": "EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations",
       "excerpt": "Sneheel Sarangi, Maximilian Puelma Touzel, Aurélien Bück-Kaeffer, Zachary Yang, Jean-François Godbout, Reihaneh Rabbany\n      EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations\n      \n      Sneheel Sarangi, Maximilian Puelma Touzel, Aurélien Bück-Kaeffer, Zachary Yang, Jean-François Godbout, Reihaneh Rabbany\n      W7162893632 Sneheel Sarangi, Maximilian Puelma Touzel, Aurelien Buck-Kaeffer, Zachary Yang, Jean-Francois Godbout, Reihaneh Rabbany\n      EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations\n      \n      Sneheel Sarangi, Maximilian Puelma Touzel, Aurelien Buck-Kaeffer, Zachary Yang, Jean-Francois Godbout, Reihaneh Rabbany\n      W7162893632",
       "categories": ["Publications"],
@@ -151,6 +165,20 @@ var store = [{
       "categories": ["Publications"],
       "tags": ["Comparative Migration Studies"],
       "url": "/publications/10.1186-s40878-026-00546-3/",
+      "teaser": null
+    },{
+      "title": "Aiden McIlvaney and Alan Nemirovski awarded FRQSC MA Grants",
+      "excerpt": "Aiden McIlvaney, étudiant à la maîtrise sous la supervision d’Aaron Erlich, et Alan Nemirovski, à la maîtrise sous la supervision de Dietlind Stolle, ont tous deux reçu des bourses de maîtrise du FRQSC.\n      Aiden McIlvaney and Alan Nemirovski awarded FRQSC MA Grants\n      \n      \n      aiden-mcilvaney-and-alan-nemirovski-awarded-frqsc-ma-grants Aiden McIlvaney, etudiant a la maitrise sous la supervision d'Aaron Erlich, et Alan Nemirovski, a la maitrise sous la supervision de Dietlind Stolle, ont tous deux recu des bourses de maitrise du FRQSC.\n      Aiden McIlvaney and Alan Nemirovski awarded FRQSC MA Grants\n      \n      \n      aiden-mcilvaney-and-alan-nemirovski-awarded-frqsc-ma-grants",
+      "categories": ["fr","news"],
+      "tags": [],
+      "url": "/fr/news/aiden-mcilvaney-and-alan-nemirovski-awarded-frqsc-ma-grants/",
+      "teaser": null
+    },{
+      "title": "Aiden McIlvaney and Alan Nemirovski awarded FRQSC MA Grants",
+      "excerpt": "Aiden McIlvaney, Master’s student under the supervision of Aaron Erlich, and Alan Nemirovski, MA under the supervision of Dietlind Stolle, were both awarded FRQSC MA Grants.\n      Aiden McIlvaney and Alan Nemirovski awarded FRQSC MA Grants\n      \n      \n      aiden-mcilvaney-and-alan-nemirovski-awarded-frqsc-ma-grants Aiden McIlvaney, Master's student under the supervision of Aaron Erlich, and Alan Nemirovski, MA under the supervision of Dietlind Stolle, were both awarded FRQSC MA Grants.\n      Aiden McIlvaney and Alan Nemirovski awarded FRQSC MA Grants\n      \n      \n      aiden-mcilvaney-and-alan-nemirovski-awarded-frqsc-ma-grants",
+      "categories": ["News"],
+      "tags": [],
+      "url": "/news/aiden-mcilvaney-and-alan-nemirovski-awarded-frqsc-ma-grants/",
       "teaser": null
     },{
       "title": "Countering Authoritarian Censorship via Grassroots Communication Campaigns: Evidence from an Experimental Mega-Study in Wartime Russia",

@@ -42,16 +42,16 @@ body:
     id: summary
     attributes:
       label: Summary
-      description: Short update text shown in the news card
+      description: Short update text shown in the news card. Leave blank, or enter X, for a title-only update.
       placeholder: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: summary_fr
     attributes:
       label: Summary French
-      description: French summary shown on /fr/news/
+      description: French summary shown on /fr/news/. Leave blank, or enter X, for a title-only update.
       placeholder: "Breve mise a jour affichee sur la page des actualites."
     validations:
       required: false
