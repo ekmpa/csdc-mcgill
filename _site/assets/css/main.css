@@ -1775,6 +1775,19 @@ a.csdc-red, a.csdc-red:visited, a.csdc-red:hover, a.csdc-red:focus { color: #c81
 
 .csdc-news-item-by { font-style: italic; }
 
+.csdc-news-group + .csdc-news-group { margin-top: 2rem; }
+
+.csdc-news-groups { display: grid; gap: 2rem; }
+@media (min-width: 64em) { .csdc-news-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; } }
+
+.csdc-news-group { min-width: 0; }
+
+@media (min-width: 64em) { .csdc-news-group--full { grid-column: 1 / -1; } }
+
+.csdc-news-group-title { margin: 0 0 0.85rem; padding-bottom: 0.42rem; border-bottom: 1px solid #e5e7eb; color: #374151; font-size: 0.98rem; }
+
+.csdc-news-group .csdc-news-item { max-width: none; }
+
 .csdc-news-read-more { margin-top: 0.65rem; display: inline-flex; align-items: center; gap: 0.4rem; border: 0; background: transparent; color: #c8102e; border-radius: 0; padding: 0; font-weight: 700; text-decoration-line: underline; text-decoration-color: transparent; text-underline-offset: 0.18em; text-decoration-thickness: 0.08em; transition: text-decoration-color 0.2s ease; cursor: pointer; font-size: 0.84rem; }
 
 .csdc-news-read-more:hover, .csdc-news-read-more:focus { color: #c8102e; text-decoration-color: currentColor; }

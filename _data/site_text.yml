@@ -56,6 +56,12 @@ en:
     latest_updates: "Latest Updates"
     read_more: "Read more"
     empty: "No news updates yet."
+    sections:
+      prize: "Prizes and Awards"
+      grants: "Grants and Fellowships"
+      press: "Press"
+      global-csdc: "Broader CSDC"
+      other: "Other Updates"
   events:
     calendar_title: "Upcoming Events"
     contact_note: "For location or questions,"
@@ -119,6 +125,12 @@ fr:
     latest_updates: "Dernières mises à jour"
     read_more: "Voir plus"
     empty: "Aucune nouvelle pour le moment."
+    sections:
+      prize: "Prix et distinctions"
+      grants: "Subventions et bourses"
+      press: "Presse"
+      global-csdc: "CÉCD élargi"
+      other: "Autres nouvelles"
   events:
     calendar_title: "Événements à venir"
     contact_note: "Pour les lieux où questions,"

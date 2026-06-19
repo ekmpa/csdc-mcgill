@@ -477,6 +477,42 @@ a.csdc-red:focus {
   font-style: italic;
 }
 
+.csdc-news-group + .csdc-news-group {
+  margin-top: 2rem;
+}
+
+.csdc-news-groups {
+  display: grid;
+  gap: 2rem;
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+}
+
+.csdc-news-group {
+  min-width: 0;
+}
+
+.csdc-news-group--full {
+  @include breakpoint($large) {
+    grid-column: 1 / -1;
+  }
+}
+
+.csdc-news-group-title {
+  margin: 0 0 0.85rem;
+  padding-bottom: 0.42rem;
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+  font-size: 0.98rem;
+}
+
+.csdc-news-group .csdc-news-item {
+  max-width: none;
+}
+
 .csdc-news-read-more {
   margin-top: 0.65rem;
   display: inline-flex;

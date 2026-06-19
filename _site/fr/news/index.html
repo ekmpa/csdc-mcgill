@@ -380,6 +380,7 @@
 
 
 
+
 <section class="csdc-section csdc-news-updates-section">
   <div class="csdc-container">
     <div class="csdc-card">
@@ -387,20 +388,21 @@
 
       
       
-      <div class="csdc-news-list" data-progressive-news="">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <article class="csdc-news-item">
+      
+      <div class="csdc-news-groups">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <section class="csdc-news-group csdc-news-group--half">
+        <h3 class="csdc-news-group-title">Prix et distinctions</h3>
+        <div class="csdc-news-list">
+          <article class="csdc-news-item">
           
           
           
@@ -410,19 +412,18 @@
           <p class="csdc-news-item-excerpt">Rupin Liddar a remporté le prix du meilleur article en politique asiatique-américaine et du Pacifique lors de la conférence de la Western Political Science Association, qu'elle a fréquentée l'année dernière.</p>
           
         </article>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <article class="csdc-news-item">
+        </div>
+      </section>
+      
+      
+      
+      
+      
+      
+      <section class="csdc-news-group csdc-news-group--half">
+        <h3 class="csdc-news-group-title">Subventions et bourses</h3>
+        <div class="csdc-news-list">
+          <article class="csdc-news-item">
           
           
           
@@ -450,38 +451,19 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <article class="csdc-news-item">
-          
-          
-          
-          <h3 class="csdc-news-item-title">Alan Nemirovski Becomes The Mcgill Student Representative On The Csdc Student Committee</h3>
-          <p class="csdc-news-item-date">June 5, 2026</p>
-          
-          <p class="csdc-news-item-excerpt">title: "Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee"
-    title_en: "Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee"
-    date: 2026-06-05
-    categories: [fr, news]
-    excerpt: "X"
-    excerpt_en: "X"
-    ---</p>
-          
-        </article>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <article class="csdc-news-item" hidden="">
           
           
           
@@ -491,44 +473,36 @@
           <p class="csdc-news-item-excerpt">Aiden McIlvaney, étudiant à la maîtrise sous la supervision d'Aaron Erlich, et Alan Nemirovski, à la maîtrise sous la supervision de Dietlind Stolle, ont tous deux reçu des bourses de maîtrise du FRQSC.</p>
           
         </article>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        </div>
+      </section>
+      
+      
+      
+      
+      
+      
+      <section class="csdc-news-group csdc-news-group--full">
+        <h3 class="csdc-news-group-title">CÉCD élargi</h3>
+        <div class="csdc-news-list">
+          <article class="csdc-news-item csdc-news-item--title-only">
+          
+          
+          
+          <h3 class="csdc-news-item-title">Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee</h3>
+          <p class="csdc-news-item-date">June 5, 2026</p>
+          
+        </article>
+        </div>
+      </section>
+      
+      
+      
+      
+      
+      
       </div>
       
-      <button type="button" class="csdc-news-read-more" data-news-read-more="">
-        <span class="csdc-news-read-more-arrow" aria-hidden="true">&darr;</span>
-        <span>Voir plus</span>
-      </button>
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          var list = document.querySelector('[data-progressive-news]');
-          var button = document.querySelector('[data-news-read-more]');
-          if (!list || !button) return;
-
-          var items = Array.prototype.slice.call(list.querySelectorAll('.csdc-news-item'));
-          var hiddenItems = items.filter(function (item) { return item.hidden; });
-
-          if (hiddenItems.length === 0) {
-            button.hidden = true;
-            return;
-          }
-
-          button.addEventListener('click', function () {
-            hiddenItems.forEach(function (item) {
-              item.hidden = false;
-            });
-            button.hidden = true;
-          });
-        });
-      </script>
+      
       
       
     </div>

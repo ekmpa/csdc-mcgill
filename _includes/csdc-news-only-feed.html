@@ -4,6 +4,7 @@
 {% assign is_fr = true %}
 {% endif %}
 {% assign news_updates = site.posts | where_exp: "post", "post.path contains '_posts/news/'" %}
+{% assign section_keys = 'press|prize|grants|global-csdc|other' | split: '|' %}
 
 <section class="csdc-section csdc-news-updates-section">
   <div class="csdc-container">
@@ -12,8 +13,12 @@
 
       {% if news_updates and news_updates.size > 0 %}
       {% assign rendered_news_count = 0 %}
-      <div class="csdc-news-list" data-progressive-news>
-        {% for post in news_updates limit:40 %}
+      {% assign rendered_sections_count = 0 %}
+      <div class="csdc-news-groups">
+      {% for section_key in section_keys %}
+      {% assign section_count = 0 %}
+      {% capture section_items %}
+        {% for post in news_updates limit:80 %}
         {% if is_fr %}
         {% unless post.path contains '_posts/news/fr/' %}
         {% continue %}
@@ -23,6 +28,11 @@
         {% continue %}
         {% endif %}
         {% endif %}
+        {% assign post_news_tag = post.news_tag | default: 'other' | downcase | replace: ' ', '-' | replace: '_', '-' %}
+        {% if post_news_tag != section_key %}
+        {% continue %}
+        {% endif %}
+        {% assign section_count = section_count | plus: 1 %}
         {% assign rendered_news_count = rendered_news_count | plus: 1 %}
         {% if is_fr %}
         {% assign excerpt_raw = post.excerpt_fr | default: post.excerpt | default: '' | strip_html | strip %}
@@ -42,14 +52,14 @@
         {% assign show_excerpt = true %}
         {% endif %}
         {% endif %}
-        <article class="csdc-news-item{% unless show_byline or show_excerpt %} csdc-news-item--title-only{% endunless %}"{% if rendered_news_count > 3 %} hidden{% endif %}>
+        <article class="csdc-news-item{% unless show_byline or show_excerpt %} csdc-news-item--title-only{% endunless %}">
           {% if is_fr and post.title_fr %}
-          {% assign news_title = post.title_fr | default: "" | strip %}
+          {% assign news_title = post.title_fr | default: '' | strip %}
           {% else %}
-          {% assign news_title = post.title | default: "" | strip %}
+          {% assign news_title = post.title | default: '' | strip %}
           {% endif %}
-          {% if news_title == "" %}
-          {% assign news_title = post.slug | replace: "-", " " %}
+          {% if news_title == '' %}
+          {% assign news_title = post.slug | replace: '-', ' ' %}
           {% endif %}
           {% assign rendered_news_title = news_title | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines | strip %}
           <h3 class="csdc-news-item-title">{{ rendered_news_title }}</h3>
@@ -61,36 +71,24 @@
           {% endif %}
         </article>
         {% endfor %}
+      {% endcapture %}
+      {% if section_count > 0 %}
+      {% assign rendered_sections_count = rendered_sections_count | plus: 1 %}
+      <section class="csdc-news-group{% if section_key == 'prize' or section_key == 'grants' %} csdc-news-group--half{% else %} csdc-news-group--full{% endif %}">
+        <h3 class="csdc-news-group-title">{{ t.news.sections[section_key] | default: section_key }}</h3>
+        <div class="csdc-news-list">
+          {{ section_items | strip }}
+        </div>
+      </section>
+      {% endif %}
+      {% endfor %}
       </div>
-      {% if rendered_news_count > 0 %}
-      <button type="button" class="csdc-news-read-more" data-news-read-more>
-        <span class="csdc-news-read-more-arrow" aria-hidden="true">&darr;</span>
-        <span>{% if is_fr %}Voir plus{% else %}Read more{% endif %}</span>
-      </button>
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          var list = document.querySelector('[data-progressive-news]');
-          var button = document.querySelector('[data-news-read-more]');
-          if (!list || !button) return;
-
-          var items = Array.prototype.slice.call(list.querySelectorAll('.csdc-news-item'));
-          var hiddenItems = items.filter(function (item) { return item.hidden; });
-
-          if (hiddenItems.length === 0) {
-            button.hidden = true;
-            return;
-          }
-
-          button.addEventListener('click', function () {
-            hiddenItems.forEach(function (item) {
-              item.hidden = false;
-            });
-            button.hidden = true;
-          });
-        });
-      </script>
-      {% else %}
+      {% if rendered_news_count == 0 %}
       <p>{% if is_fr %}Aucune nouvelle pour le moment.{% else %}No news updates yet.{% endif %}</p>
+      {% else %}
+      {% if rendered_sections_count == 0 %}
+      <p>{% if is_fr %}Aucune nouvelle pour le moment.{% else %}No news updates yet.{% endif %}</p>
+      {% endif %}
       {% endif %}
       {% else %}
       <p>{% if is_fr %}Aucune nouvelle pour le moment.{% else %}No news updates yet.{% endif %}</p>

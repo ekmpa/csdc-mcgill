@@ -1,9 +1,24 @@
 import datetime as dt
 import os
 import re
-from textwrap import dedent
 
 from . import parse_issue_body, write_content_to_file
+
+
+NEWS_TAG_ALIASES = {
+    "prize": "prize",
+    "prix": "prize",
+    "press": "press",
+    "presse": "press",
+    "global csdc": "global-csdc",
+    "global cscd": "global-csdc",
+    "global cecd": "global-csdc",
+    "global-csdc": "global-csdc",
+    "grants": "grants",
+    "grant": "grants",
+    "subventions": "grants",
+    "subvention": "grants",
+}
 
 
 def _is_empty(value: str) -> bool:
@@ -57,9 +72,17 @@ def _yaml_quote(value: str) -> str:
     return f'"{escaped}"'
 
 
+def _normalize_news_tag(value: str) -> str:
+    normalized = str(value or "").strip().lower()
+    normalized = normalized.replace("_", " ")
+    normalized = re.sub(r"\s+", " ", normalized)
+    return NEWS_TAG_ALIASES.get(normalized, "other")
+
+
 def _build_content(parsed):
     title = _first_non_empty(parsed, "title")
     date_str = _first_non_empty(parsed, "date")
+    news_tag = _normalize_news_tag(_first_non_empty(parsed, "tag"))
     summary = _normalize_summary(_first_non_empty(parsed, "summary"))
     title_fr = _first_non_empty(parsed, "title_fr", "title_french") or title
     summary_fr = _normalize_summary(_first_non_empty(parsed, "summary_fr", "summary_french")) or summary
@@ -71,6 +94,7 @@ def _build_content(parsed):
         f"title_fr: {_yaml_quote(title_fr)}\n"
         f"date: {date_str}\n"
         "categories: News\n"
+        f"news_tag: {_yaml_quote(news_tag)}\n"
         f"excerpt: {_yaml_quote(summary)}\n"
         f"excerpt_en: {_yaml_quote(summary)}\n"
         f"excerpt_fr: {_yaml_quote(summary_fr)}\n"
@@ -87,6 +111,7 @@ def _build_content(parsed):
 def _build_fr_content(parsed):
     title = _first_non_empty(parsed, "title")
     date_str = _first_non_empty(parsed, "date")
+    news_tag = _normalize_news_tag(_first_non_empty(parsed, "tag"))
     summary = _normalize_summary(_first_non_empty(parsed, "summary"))
     title_fr = _first_non_empty(parsed, "title_fr", "title_french") or title
     summary_fr = _normalize_summary(_first_non_empty(parsed, "summary_fr", "summary_french")) or summary
@@ -98,6 +123,7 @@ def _build_fr_content(parsed):
         f"title_en: {_yaml_quote(title)}\n"
         f"date: {date_str}\n"
         "categories: [fr, news]\n"
+        f"news_tag: {_yaml_quote(news_tag)}\n"
         f"excerpt: {_yaml_quote(summary_fr)}\n"
         f"excerpt_fr: {_yaml_quote(summary_fr)}\n"
         f"excerpt_en: {_yaml_quote(summary)}\n"

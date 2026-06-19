@@ -132,18 +132,18 @@ var store = [{
       "url": "/news/brooke-steinhauer-awarded-the-lemieux-fellowship/",
       "teaser": null
     },{
-      "title": "Alan Nemirovski Becomes The Mcgill Student Representative On The Csdc Student Committee",
-      "excerpt": "title: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    title_en: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    date: 2026-06-05    categories: [fr, news]    excerpt: \"X\"    excerpt_en: \"X\"    ---\n      Alan Nemirovski Becomes The Mcgill Student Representative On The Csdc Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee     title: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    title_en: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    date: 2026-06-05    categories: [fr, news]    excerpt: \"X\"    excerpt_en: \"X\"    ---\n      Alan Nemirovski Becomes The Mcgill Student Representative On The Csdc Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee",
-      "categories": [],
+      "title": "Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee",
+      "excerpt": "Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee \n      Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee",
+      "categories": ["fr","news"],
       "tags": [],
-      "url": "/alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee/",
+      "url": "/fr/news/alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee/",
       "teaser": null
     },{
-      "title": "Alan Nemirovski Becomes The Mcgill Student Representative On The Csdc Student Committee",
-      "excerpt": "title: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    title_fr: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    date: 2026-06-05    categories: News    excerpt: \"X\"    excerpt_fr: \"X\"    ---\n      Alan Nemirovski Becomes The Mcgill Student Representative On The Csdc Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee     title: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    title_fr: \"Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\"    date: 2026-06-05    categories: News    excerpt: \"X\"    excerpt_fr: \"X\"    ---\n      Alan Nemirovski Becomes The Mcgill Student Representative On The Csdc Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee",
-      "categories": [],
+      "title": "Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee",
+      "excerpt": "Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee \n      Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee",
+      "categories": ["News"],
       "tags": [],
-      "url": "/alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee/",
+      "url": "/news/alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee/",
       "teaser": null
     },{
       "title": "EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations",
