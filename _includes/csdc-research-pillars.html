@@ -13,16 +13,25 @@
 {% assign axis_1_tags = '' | split: '' %}
 {% assign axis_2_tags = '' | split: '' %}
 {% assign axis_3_tags = '' | split: '' %}
+{% assign axis_1_highlights = '' | split: '' %}
+{% assign axis_2_highlights = '' | split: '' %}
+{% assign axis_3_highlights = '' | split: '' %}
 
 {% if axis_topics %}
   {% if is_french %}
     {% assign axis_1_tags = axis_topics.axis_1.tags_fr | default: axis_topics.axis_1.tags_en %}
     {% assign axis_2_tags = axis_topics.axis_2.tags_fr | default: axis_topics.axis_2.tags_en %}
     {% assign axis_3_tags = axis_topics.axis_3.tags_fr | default: axis_topics.axis_3.tags_en %}
+    {% assign axis_1_highlights = axis_topics.axis_1.highlight_papers | default: '' %}
+    {% assign axis_2_highlights = axis_topics.axis_2.highlight_papers | default: '' %}
+    {% assign axis_3_highlights = axis_topics.axis_3.highlight_papers | default: '' %}
   {% else %}
     {% assign axis_1_tags = axis_topics.axis_1.tags_en | default: axis_topics.axis_1.tags_fr %}
     {% assign axis_2_tags = axis_topics.axis_2.tags_en | default: axis_topics.axis_2.tags_fr %}
     {% assign axis_3_tags = axis_topics.axis_3.tags_en | default: axis_topics.axis_3.tags_fr %}
+    {% assign axis_1_highlights = axis_topics.axis_1.highlight_papers | default: '' %}
+    {% assign axis_2_highlights = axis_topics.axis_2.highlight_papers | default: '' %}
+    {% assign axis_3_highlights = axis_topics.axis_3.highlight_papers | default: '' %}
   {% endif %}
 {% endif %}
 
@@ -39,8 +48,7 @@
     <div class="csdc-pillars csdc-home-pillars-row">
       <article class="csdc-card" style="border-top:4px solid #c8102e;">
         <h3 class="csdc-card-title">{{ t.home.research.card_1_title }}</h3>
-        <p>{{ t.home.research.focusing }}</p>
-        <ul>
+        <ul class="csdc-axis-topics">
           {% if axis_1_tags and axis_1_tags.size > 0 %}
             {% for topic in axis_1_tags %}
             <li>{{ topic }}</li>
@@ -49,11 +57,32 @@
           <li>{% if is_french %}Modélisation thématique en attente{% else %}Topic modelling pending{% endif %}</li>
           {% endif %}
         </ul>
+        {% if axis_1_highlights and axis_1_highlights.size > 0 %}
+        <div class="csdc-axis-highlights">
+          <p class="csdc-axis-highlights-label">{% if is_french %}Quelques publications en vedette{% else %}Highlighted papers{% endif %}</p>
+          <div class="csdc-axis-highlights-grid">
+            {% for paper in axis_1_highlights limit: 3 %}
+            <article class="csdc-paper-highlight-card">
+              <a class="csdc-paper-highlight-title" href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
+              {% if paper.venue or paper.year %}
+              <p class="csdc-paper-highlight-meta">
+                {% if paper.venue %}<span>{{ paper.venue }}</span>{% endif %}
+                {% if paper.venue and paper.year %}<span class="csdc-paper-highlight-meta-sep">&middot;</span>{% endif %}
+                {% if paper.year %}<span>{{ paper.year }}</span>{% endif %}
+              </p>
+              {% endif %}
+              {% if paper.names %}
+              <p class="csdc-paper-highlight-authors">{{ paper.names }}</p>
+              {% endif %}
+            </article>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
       </article>
       <article class="csdc-card" style="border-top:4px solid #c8102e;">
         <h3 class="csdc-card-title">{{ t.home.research.card_2_title }}</h3>
-        <p>{{ t.home.research.focusing }}</p>
-        <ul>
+        <ul class="csdc-axis-topics">
           {% if axis_2_tags and axis_2_tags.size > 0 %}
             {% for topic in axis_2_tags %}
             <li>{{ topic }}</li>
@@ -62,11 +91,32 @@
           <li>{% if is_french %}Modélisation thématique en attente{% else %}Topic modelling pending{% endif %}</li>
           {% endif %}
         </ul>
+        {% if axis_2_highlights and axis_2_highlights.size > 0 %}
+        <div class="csdc-axis-highlights">
+          <p class="csdc-axis-highlights-label">{% if is_french %}Quelques publications en vedette{% else %}Highlighted papers{% endif %}</p>
+          <div class="csdc-axis-highlights-grid">
+            {% for paper in axis_2_highlights limit: 3 %}
+            <article class="csdc-paper-highlight-card">
+              <a class="csdc-paper-highlight-title" href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
+              {% if paper.venue or paper.year %}
+              <p class="csdc-paper-highlight-meta">
+                {% if paper.venue %}<span>{{ paper.venue }}</span>{% endif %}
+                {% if paper.venue and paper.year %}<span class="csdc-paper-highlight-meta-sep">&middot;</span>{% endif %}
+                {% if paper.year %}<span>{{ paper.year }}</span>{% endif %}
+              </p>
+              {% endif %}
+              {% if paper.names %}
+              <p class="csdc-paper-highlight-authors">{{ paper.names }}</p>
+              {% endif %}
+            </article>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
       </article>
       <article class="csdc-card" style="border-top:4px solid #c8102e;">
         <h3 class="csdc-card-title">{{ t.home.research.card_3_title }}</h3>
-        <p>{{ t.home.research.focusing }}</p>
-        <ul>
+        <ul class="csdc-axis-topics">
           {% if axis_3_tags and axis_3_tags.size > 0 %}
             {% for topic in axis_3_tags %}
             <li>{{ topic }}</li>
@@ -75,6 +125,28 @@
           <li>{% if is_french %}Modélisation thématique en attente{% else %}Topic modelling pending{% endif %}</li>
           {% endif %}
         </ul>
+        {% if axis_3_highlights and axis_3_highlights.size > 0 %}
+        <div class="csdc-axis-highlights">
+          <p class="csdc-axis-highlights-label">{% if is_french %}Quelques publications en vedette{% else %}Highlighted papers{% endif %}</p>
+          <div class="csdc-axis-highlights-grid">
+            {% for paper in axis_3_highlights limit: 3 %}
+            <article class="csdc-paper-highlight-card">
+              <a class="csdc-paper-highlight-title" href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
+              {% if paper.venue or paper.year %}
+              <p class="csdc-paper-highlight-meta">
+                {% if paper.venue %}<span>{{ paper.venue }}</span>{% endif %}
+                {% if paper.venue and paper.year %}<span class="csdc-paper-highlight-meta-sep">&middot;</span>{% endif %}
+                {% if paper.year %}<span>{{ paper.year }}</span>{% endif %}
+              </p>
+              {% endif %}
+              {% if paper.names %}
+              <p class="csdc-paper-highlight-authors">{{ paper.names }}</p>
+              {% endif %}
+            </article>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
       </article>
     </div>
 

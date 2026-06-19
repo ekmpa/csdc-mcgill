@@ -90,15 +90,21 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav csdc-shell-nav">
         {% if is_fr %}
-          <a class="site-title" href="{{ '/fr/' | relative_url }}">
-            <span class="site-title-text">CÉCD McGill</span>
-            <span class="site-subtitle">Centre pour l'étude de la citoyenneté démocratique</span>
-          </a>
+          <div class="site-title">
+            <a class="site-title-link" href="{{ '/fr/' | relative_url }}">
+              <span class="site-title-text">CÉCD McGill</span>
+              <span class="site-subtitle">Centre pour l'étude de la citoyenneté démocratique</span>
+            </a>
+            <span class="site-affiliation">Basé à <a href="https://csdc-cecd.ca/" target="_blank" rel="noopener noreferrer">l'Université Laval</a></span>
+          </div>
         {% else %}
-          <a class="site-title" href="{{ '/' | relative_url }}">
-            <span class="site-title-text">McGill CSDC</span>
-            <span class="site-subtitle">Centre for the Study of Democratic Citizenship</span>
-          </a>
+          <div class="site-title">
+            <a class="site-title-link" href="{{ '/' | relative_url }}">
+              <span class="site-title-text">McGill CSDC</span>
+              <span class="site-subtitle">Centre for the Study of Democratic Citizenship</span>
+            </a>
+            <span class="site-affiliation">Based at <a href="https://csdc-cecd.ca/" target="_blank" rel="noopener noreferrer">Laval University</a></span>
+          </div>
         {% endif %}
 
         <ul class="visible-links">

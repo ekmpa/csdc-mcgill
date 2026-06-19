@@ -1,9 +1,9 @@
 en:
   home:
     hero:
-      title: "Centre for the Study of Democratic Citizenship"
+      title: "McGill Centre for the Study of Democratic Citizenship"
       subtitle: "McGill unit of the CSDC/CECD based at Laval University"
-      lead: "We study democratic citizenship, justice and political behaviors. More about our team, research and upcoming events below."
+      lead: "We study democratic citizenship, justice and political behaviors.<br>More about our team, research and upcoming events below."
       cta_research: "Our Research"
       cta_events: "View Upcoming Events"
       cta_news: "See Recent News"
@@ -33,9 +33,9 @@ en:
       about_mission: "Our Mission"
       about_axes: "Our Research Axes"
       news_kicker: "News and announcements"
-      news_title: "Recent Updates from the CSDC"
+      news_title: "Updates from the McGill CSDC"
       events_kicker: "Seminars and other events"
-      events_title: "Happening at the CSDC"
+      events_title: "Happening at the McGill CSDC"
       publications_kicker: "Research Focus and Publications"
       publications_title: "Research"
       publications_subtitle: "Research outputs by the team's professors and students."
@@ -98,7 +98,7 @@ fr:
       news_kicker: "Nouvelles et annonces"
       news_title: "Mises à jour récentes du CÉCD"
       events_kicker: "Séminaires et autres événements"
-      events_title: "Activités du CÉCD"
+      events_title: "Activités du CÉCD à McGill"
       publications_kicker: "Axe de recherche et publications"
       publications_title: "Recherche"
       publications_subtitle: "Productions scientifiques des professeur(e)s et étudiant(e)s de l'équipe."

@@ -250,8 +250,6 @@ AXIS_BY_ID: Dict[AxisId, AxisDefinition] = {axis.axis_id: axis for axis in AXES}
 AXIS_PRIORITY_PHRASES: Dict[AxisId, Sequence[str]] = {
     "axis_2": (
         "Misinformation and fact-checking",
-        "AI and deepfake detection",
-        "Public perceptions of AI",
     ),
     "axis_3": (
         "Platform governance and regulation",
@@ -273,6 +271,10 @@ AXIS_ALLOWED_PHRASES: Dict[AxisId, Set[str]] = {
         "Public perceptions of AI",
         "Information consumption",
         "Opinion formation",
+        "Citizen participation",
+        "Partisan polarization",
+        "Electoral behavior",
+        "Public deliberation",
     },
     "axis_3": {
         "Platform governance and regulation",
@@ -306,6 +308,20 @@ TECH_ORIENTED_TOKENS: Set[str] = {
     "online",
 }
 
+AI_ORIENTED_TOKENS: Set[str] = {
+    "ai",
+    "algorithmic",
+    "deepfake",
+    "synthetic",
+    "generative",
+    "llm",
+}
+
+AXIS_AI_TARGETS: Dict[AxisId, int] = {
+    # Favor political-science framing on axis_2 while retaining one AI-linked tag.
+    "axis_2": 1,
+}
+
 
 def normalize_person_name(name: str) -> str:
     cleaned = normalize_text(name)
@@ -319,15 +335,17 @@ def normalize_person_name(name: str) -> str:
     return cleaned
 
 
-def load_faculty_name_sets(authors_path: Path) -> Tuple[Set[str], Set[str]]:
+def load_faculty_name_sets(authors_path: Path) -> Tuple[Set[str], Set[str], Dict[str, str], Dict[str, List[str]]]:
     if not authors_path.exists():
-        return set(), set()
+        return set(), set(), {}, {}
 
     yaml = YAML(typ="safe")
     authors_data = yaml.load(authors_path.read_text(encoding="utf-8")) or {}
 
     faculty_full_names: Set[str] = set()
     faculty_last_names: Set[str] = set()
+    faculty_bio_by_full_name: Dict[str, str] = {}
+    faculty_bio_by_last_name: Dict[str, List[str]] = {}
 
     for _, profile in authors_data.items():
         if not isinstance(profile, dict):
@@ -349,7 +367,49 @@ def load_faculty_name_sets(authors_path: Path) -> Tuple[Set[str], Set[str]]:
             if len(last_name) >= 3:
                 faculty_last_names.add(last_name)
 
-    return faculty_full_names, faculty_last_names
+            bio_value = str(profile.get("bio", "") or "").strip()
+            if bio_value:
+                faculty_bio_by_full_name[normalized_name] = bio_value
+                if len(last_name) >= 3:
+                    existing_bios = faculty_bio_by_last_name.setdefault(last_name, [])
+                    if bio_value not in existing_bios:
+                        existing_bios.append(bio_value)
+
+    return faculty_full_names, faculty_last_names, faculty_bio_by_full_name, faculty_bio_by_last_name
+
+
+def get_matching_faculty_bio_text(
+    names_value: str,
+    faculty_full_names: Set[str],
+    faculty_last_names: Set[str],
+    faculty_bio_by_full_name: Dict[str, str],
+    faculty_bio_by_last_name: Dict[str, List[str]],
+) -> str:
+    if not names_value:
+        return ""
+
+    normalized_names_text = normalize_person_name(names_value)
+    matched_bios: List[str] = []
+    seen_bios: Set[str] = set()
+
+    for full_name in faculty_full_names:
+        if full_name in normalized_names_text:
+            bio_value = faculty_bio_by_full_name.get(full_name, "")
+            if bio_value and bio_value not in seen_bios:
+                matched_bios.append(bio_value)
+                seen_bios.add(bio_value)
+
+    # Fall back to surname matching for edge cases in publication author formatting.
+    name_tokens = set(re.findall(r"[a-z]{3,}", normalized_names_text))
+    for last_name in faculty_last_names:
+        if last_name not in name_tokens:
+            continue
+        for bio_value in faculty_bio_by_last_name.get(last_name, []):
+            if bio_value and bio_value not in seen_bios:
+                matched_bios.append(bio_value)
+                seen_bios.add(bio_value)
+
+    return " ".join(matched_bios)
 
 
 def parse_publication_year(path: Path, data: dict) -> Optional[int]:
@@ -432,10 +492,14 @@ def build_documents(
     posts_dir: Path,
     faculty_full_names: Optional[Set[str]] = None,
     faculty_last_names: Optional[Set[str]] = None,
+    faculty_bio_by_full_name: Optional[Dict[str, str]] = None,
+    faculty_bio_by_last_name: Optional[Dict[str, List[str]]] = None,
 ) -> List[dict]:
     documents: List[dict] = []
     faculty_full_names = faculty_full_names or set()
     faculty_last_names = faculty_last_names or set()
+    faculty_bio_by_full_name = faculty_bio_by_full_name or {}
+    faculty_bio_by_last_name = faculty_bio_by_last_name or {}
 
     for path in sorted(posts_dir.glob("*.md")):
         data, body = read_front_matter(path)
@@ -458,19 +522,41 @@ def build_documents(
             faculty_full_names=faculty_full_names,
             faculty_last_names=faculty_last_names,
         )
+        faculty_bio_text = get_matching_faculty_bio_text(
+            names_value,
+            faculty_full_names=faculty_full_names,
+            faculty_last_names=faculty_last_names,
+            faculty_bio_by_full_name=faculty_bio_by_full_name,
+            faculty_bio_by_last_name=faculty_bio_by_last_name,
+        )
 
         title_text = " ".join(part for part in [title, title_fr] if part)
         abstract_text = " ".join(part for part in [abstract, abstract_fr] if part)
-        full_text = "\n".join(part for part in [title_text, abstract_text, body, " ".join(clean_tags), names_value] if part)
+        full_text = "\n".join(
+            part for part in [title_text, abstract_text, body, " ".join(clean_tags), names_value, faculty_bio_text] if part
+        )
+        full_tokens = tokenize(full_text)
+        faculty_bio_tokens = tokenize(faculty_bio_text)
+        if faculty_bio_tokens:
+            # Give faculty-only profile signal stronger influence than generic paper text.
+            full_tokens.extend(faculty_bio_tokens)
+            full_tokens.extend(faculty_bio_tokens)
 
         documents.append(
             {
                 "path": str(path),
-                "tokens": tokenize(full_text),
+                "tokens": full_tokens,
                 "title_tokens": tokenize(title_text),
                 "abstract_tokens": tokenize(abstract_text),
+                "faculty_bio_tokens": faculty_bio_tokens,
                 "year": publication_year,
                 "has_faculty_author": has_faculty_author,
+                "raw_meta": {
+                    "title": str(data.get("title", "") or "").strip(),
+                    "names": str(data.get("names", "") or "").strip(),
+                    "venue": str(data.get("venue", "") or "").strip(),
+                    "link": str(data.get("link", "") or "").strip(),
+                },
             }
         )
 
@@ -601,30 +687,34 @@ def pick_axis_phrases(
     scored = score_axis_phrase_bank(axis, docs)
     phrase_signals = {en_label: signals for en_label, _, signals in axis.phrase_bank}
 
-    allowed = AXIS_ALLOWED_PHRASES.get(axis.axis_id)
-    if allowed:
-        scored = [item for item in scored if item[0] in allowed]
+    # Keep AXIS_ALLOWED_PHRASES as advisory/reference, but do not hard-filter.
+    # This lets publication evidence (including faculty bio signal) drive selection.
 
-    tech_ranked: List[Tuple[str, str, float]] = []
-    general_ranked: List[Tuple[str, str, float]] = []
+    ai_ranked: List[Tuple[str, str, float]] = []
+    non_ai_ranked: List[Tuple[str, str, float]] = []
     for item in scored:
         label = item[0]
         signals = phrase_signals.get(label, set())
-        if signals.intersection(TECH_ORIENTED_TOKENS):
-            tech_ranked.append(item)
+        if signals.intersection(AI_ORIENTED_TOKENS):
+            ai_ranked.append(item)
         else:
-            general_ranked.append(item)
+            non_ai_ranked.append(item)
 
     selected: List[Tuple[str, str, float]] = []
-    tech_target = max(0, max_tags - 1)
-    selected.extend(tech_ranked[:tech_target])
-    if len(selected) < max_tags and general_ranked:
-        selected.append(general_ranked[0])
+    ai_target = AXIS_AI_TARGETS.get(axis.axis_id, max_tags // 2)
+    ai_target = max(0, min(max_tags, ai_target))
+    non_ai_target = max_tags - ai_target
+    selected.extend(ai_ranked[:ai_target])
+    selected.extend(non_ai_ranked[:non_ai_target])
     if len(selected) < max_tags:
-        for item in tech_ranked[tech_target:]:
+        selected_labels = {item[0] for item in selected}
+        for item in ai_ranked + non_ai_ranked:
             if len(selected) >= max_tags:
                 break
+            if item[0] in selected_labels:
+                continue
             selected.append(item)
+            selected_labels.add(item[0])
 
     # Keep prioritized technical/specialized phrases where evidence exists.
     priority_labels = AXIS_PRIORITY_PHRASES.get(axis.axis_id, ())
@@ -647,7 +737,7 @@ def pick_axis_phrases(
                 for idx in range(len(selected) - 1, -1, -1):
                     sel_label = selected[idx][0]
                     sel_signals = phrase_signals.get(sel_label, set())
-                    if not sel_signals.intersection(TECH_ORIENTED_TOKENS):
+                    if not sel_signals.intersection(AI_ORIENTED_TOKENS):
                         replacement_index = idx
                         break
                 if replacement_index is None:
@@ -666,9 +756,127 @@ def pick_axis_phrases(
             existing_en.add(en_label)
 
     selected = selected[:max_tags]
+    selected.sort(key=lambda item: item[2], reverse=True)
+
     tags_en = [item[0] for item in selected]
     tags_fr = [item[1] for item in selected]
     return tags_en, tags_fr
+
+
+def select_highlight_papers(
+    axis: AxisDefinition,
+    documents: Sequence[dict],
+    max_highlights: int = 3,
+    min_highlights: int = 2,
+    highlight_years: int = 2,
+) -> List[dict]:
+    """Pick 2-3 recent, faculty-authored papers most relevant to this axis."""
+    current_year = datetime.date.today().year
+    min_year = current_year - highlight_years + 1
+    phrase_signals = {en_label: signals for en_label, _, signals in axis.phrase_bank}
+
+    candidates: List[Tuple[float, dict]] = []
+    for doc in documents:
+        year = doc.get("year")
+        if year is None or int(year) < min_year:
+            continue
+        if not doc.get("has_faculty_author", False):
+            continue
+        focus_tokens = list(doc.get("title_tokens", [])) + list(doc.get("abstract_tokens", []))
+        if not focus_tokens:
+            continue
+
+        focus_counts = Counter(focus_tokens)
+        axis_raw = sum(focus_counts.get(token, 0) for token in axis.core_tokens)
+        if axis_raw < 2:
+            continue
+
+        other_best = max(
+            (
+                sum(focus_counts.get(token, 0) for token in other_axis.core_tokens)
+                for other_axis in AXES
+                if other_axis.axis_id != axis.axis_id
+            ),
+            default=0,
+        )
+        if axis_raw - other_best < 1:
+            continue
+
+        phrase_overlap = 0
+        for signals in phrase_signals.values():
+            phrase_overlap = max(phrase_overlap, sum(focus_counts.get(token, 0) for token in signals))
+
+        recency_bonus = max(0.0, min(0.4, 0.1 * (int(year) - (current_year - 3))))
+        score = axis_raw + (0.5 * phrase_overlap) + recency_bonus
+        candidates.append((score, doc))
+
+    candidates.sort(key=lambda x: x[0], reverse=True)
+
+    seen_titles: Set[str] = set()
+    highlights: List[dict] = []
+    for score, doc in candidates:
+        if len(highlights) >= max_highlights:
+            break
+        raw_meta = doc.get("raw_meta", {})
+        title = raw_meta.get("title", "").strip()
+        if not title or title in seen_titles:
+            continue
+        seen_titles.add(title)
+        names = raw_meta.get("names", "").strip()
+        venue = raw_meta.get("venue", "").strip()
+        link = raw_meta.get("link", "").strip()
+        year = doc.get("year")
+        highlights.append({
+            "title": title,
+            "names": names,
+            "venue": venue,
+            "link": link,
+            "year": year,
+        })
+
+    return highlights if len(highlights) >= min_highlights else highlights
+
+
+def is_ai_oriented_label(axis: AxisDefinition, label_en: str) -> bool:
+    phrase_signals = {en_label: signals for en_label, _, signals in axis.phrase_bank}
+    signals = phrase_signals.get(label_en, set())
+    return bool(signals.intersection(AI_ORIENTED_TOKENS))
+
+
+def swap_first_with_non_ai(
+    axis: AxisDefinition,
+    tags_en: List[str],
+    tags_fr: List[str],
+) -> bool:
+    if not tags_en or not tags_fr or len(tags_en) != len(tags_fr):
+        return False
+    if not is_ai_oriented_label(axis, tags_en[0]):
+        return False
+
+    for idx in range(1, len(tags_en)):
+        if not is_ai_oriented_label(axis, tags_en[idx]):
+            tags_en[0], tags_en[idx] = tags_en[idx], tags_en[0]
+            tags_fr[0], tags_fr[idx] = tags_fr[idx], tags_fr[0]
+            return True
+    return False
+
+
+def swap_first_with_ai(
+    axis: AxisDefinition,
+    tags_en: List[str],
+    tags_fr: List[str],
+) -> bool:
+    if not tags_en or not tags_fr or len(tags_en) != len(tags_fr):
+        return False
+    if is_ai_oriented_label(axis, tags_en[0]):
+        return True
+
+    for idx in range(1, len(tags_en)):
+        if is_ai_oriented_label(axis, tags_en[idx]):
+            tags_en[0], tags_en[idx] = tags_en[idx], tags_en[0]
+            tags_fr[0], tags_fr[idx] = tags_fr[idx], tags_fr[0]
+            return True
+    return False
 
 
 def build_output(
@@ -687,7 +895,7 @@ def build_output(
         "source_publication_count": all_documents_count,
         "selected_publication_count": len(documents),
         "matching": {
-            "method": "weighted multi-axis relevance (recent faculty-focused CECD bilingual vocabulary)",
+            "method": "weighted multi-axis relevance (recent faculty-focused CECD bilingual vocabulary + faculty bio signal)",
             "thresholds": {
                 "min_share": min_share,
                 "min_hits": min_hits,
@@ -703,10 +911,54 @@ def build_output(
 
     for axis in AXES:
         tags_en, tags_fr = pick_axis_phrases(axis, documents, min_tags=min_tags, max_tags=max_tags)
-        output["axes"][axis.axis_id] = {
+        highlights = select_highlight_papers(axis, documents)
+        axis_entry: dict = {
             "tags_en": tags_en,
             "tags_fr": tags_fr,
         }
+        if highlights:
+            axis_entry["highlight_papers"] = highlights
+        output["axes"][axis.axis_id] = axis_entry
+
+    # Enforce exact display split across axes:
+    # exactly 1 AI-first axis and 2 non-AI-first axes.
+    target_ai_first = 1
+    ai_first_axis_ids: List[str] = []
+    for axis in AXES:
+        axis_entry = output["axes"].get(axis.axis_id, {})
+        tags_en = axis_entry.get("tags_en", [])
+        if tags_en and is_ai_oriented_label(axis, tags_en[0]):
+            ai_first_axis_ids.append(axis.axis_id)
+
+    ai_first_preference = ["axis_3", "axis_2", "axis_1"]
+    non_ai_preference = ["axis_1", "axis_2", "axis_3"]
+
+    if len(ai_first_axis_ids) > target_ai_first:
+        keep_axis_id = next((axis_id for axis_id in ai_first_preference if axis_id in ai_first_axis_ids), ai_first_axis_ids[0])
+        for axis_id in non_ai_preference:
+            if len(ai_first_axis_ids) <= target_ai_first:
+                break
+            if axis_id == keep_axis_id or axis_id not in ai_first_axis_ids:
+                continue
+            axis = AXIS_BY_ID[axis_id]
+            axis_entry = output["axes"].get(axis_id, {})
+            tags_en = axis_entry.get("tags_en", [])
+            tags_fr = axis_entry.get("tags_fr", [])
+            if swap_first_with_non_ai(axis, tags_en, tags_fr):
+                ai_first_axis_ids.remove(axis_id)
+
+    if len(ai_first_axis_ids) < target_ai_first:
+        for axis_id in ai_first_preference:
+            if len(ai_first_axis_ids) >= target_ai_first:
+                break
+            if axis_id in ai_first_axis_ids:
+                continue
+            axis = AXIS_BY_ID[axis_id]
+            axis_entry = output["axes"].get(axis_id, {})
+            tags_en = axis_entry.get("tags_en", [])
+            tags_fr = axis_entry.get("tags_fr", [])
+            if swap_first_with_ai(axis, tags_en, tags_fr):
+                ai_first_axis_ids.append(axis_id)
 
     for path in sorted(diagnostics.keys())[:6]:
         output["matching"]["sample_assignments"].append(
@@ -740,11 +992,13 @@ def main(
     min_tags: int = 4,
     max_tags: int = 4,
 ) -> None:
-    faculty_full_names, faculty_last_names = load_faculty_name_sets(Path(authors_path))
+    faculty_full_names, faculty_last_names, faculty_bio_by_full_name, faculty_bio_by_last_name = load_faculty_name_sets(Path(authors_path))
     all_docs = build_documents(
         Path(posts_dir),
         faculty_full_names=faculty_full_names,
         faculty_last_names=faculty_last_names,
+        faculty_bio_by_full_name=faculty_bio_by_full_name,
+        faculty_bio_by_last_name=faculty_bio_by_last_name,
     )
     docs, selection_summary = filter_documents(all_docs, recent_years=recent_years, faculty_only=faculty_only)
     if not docs:

@@ -165,7 +165,16 @@
 
 {% if show_author %}
 {% assign entry = "" | split: "" %}
-{% assign sort_key = author.name | downcase | replace: "é","e" | replace: "è","e" | replace: "ê","e" | replace: "ë","e" | replace: "à","a" | replace: "â","a" | replace: "ä","a" | replace: "î","i" | replace: "ï","i" | replace: "ô","o" | replace: "ö","o" | replace: "ù","u" | replace: "û","u" | replace: "ü","u" | replace: "ç","c" | replace: "ñ","n" %}
+{% assign normalized_name = author.name | downcase | replace: "é","e" | replace: "è","e" | replace: "ê","e" | replace: "ë","e" | replace: "à","a" | replace: "â","a" | replace: "ä","a" | replace: "î","i" | replace: "ï","i" | replace: "ô","o" | replace: "ö","o" | replace: "ù","u" | replace: "û","u" | replace: "ü","u" | replace: "ç","c" | replace: "ñ","n" | strip %}
+{% assign last_name_key = normalized_name %}
+{% if normalized_name contains "," %}
+{% assign comma_parts = normalized_name | split: "," %}
+{% assign last_name_key = comma_parts[0] | strip %}
+{% else %}
+{% assign name_parts = normalized_name | split: " " %}
+{% assign last_name_key = name_parts | last | strip %}
+{% endif %}
+{% assign sort_key = last_name_key | append: "|" | append: normalized_name %}
 {% assign entry = entry | push: sort_key %}
 {% assign entry = entry | push: author %}
 {% assign entry = entry | push: role_to_render %}

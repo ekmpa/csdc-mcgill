@@ -33,11 +33,17 @@ html, body {
   margin-bottom: 0.35rem;
 }
 
+.csdc-kicker-cecd {
+  color: #6b7280;
+  font-style: normal;
+  font-weight: 700;
+}
+
 .csdc-kicker-mcgill {
-  color: #c28e0e;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 0.92em;
+  color: rgba(156, 163, 175, 0.9);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.88em;
 }
 
 .csdc-red {
@@ -55,7 +61,7 @@ a.csdc-red:focus {
   color: $csdc-dark;
   font-size: clamp(1.25rem, 3vw, 1.8rem);
   line-height: 1.2;
-  margin: 0;
+  margin: 0 0 0.28rem;
 }
 
 .csdc-hero-subtitle {
@@ -113,6 +119,127 @@ a.csdc-red:focus {
 .csdc-btn:focus {
   transform: scale(1.02);
   text-decoration-color: currentColor;
+}
+
+.csdc-axis-highlights {
+  margin-top: 0.75rem;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.csdc-axis-highlights-label {
+  margin: 0 0 0.42rem;
+  padding-bottom: 0.32rem;
+  border-bottom: 1px solid #e5e7eb;
+  color: #6b7280;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.csdc-home-research .csdc-card .csdc-axis-topics {
+  margin-top: 0.25rem;
+}
+
+.csdc-home-research .csdc-card .csdc-axis-topics li {
+  color: #1f2937;
+  font-weight: 400;
+}
+
+.csdc-axis-highlights-list {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.csdc-axis-highlights-list li + li {
+  margin-top: 0.35rem;
+}
+
+.csdc-axis-highlights-list a {
+  color: #6f1d2f;
+  text-decoration: none;
+}
+
+.csdc-axis-highlights-list a:hover,
+.csdc-axis-highlights-list a:focus {
+  text-decoration: underline;
+}
+
+.csdc-axis-highlights-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.45rem;
+}
+
+.csdc-paper-highlight-card {
+  border: 1px solid #dbe2ea;
+  border-radius: 0.62rem;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%);
+  padding: 0.42rem 0.5rem 0.46rem;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.csdc-paper-highlight-card:hover,
+.csdc-paper-highlight-card:focus-within {
+  transform: translateY(-1px);
+  border-color: #c9d4e2;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.csdc-paper-highlight-title {
+  display: inline-block;
+  color: #1f2937;
+  font-weight: 700;
+  font-size: 0.84rem;
+  line-height: 1.35;
+  text-decoration: none;
+  margin: 0 0 0.18rem;
+}
+
+.csdc-paper-highlight-title:hover,
+.csdc-paper-highlight-title:focus {
+  color: #6f1d2f;
+  text-decoration: underline;
+}
+
+.csdc-paper-highlight-meta {
+  margin: 0 0 0.16rem;
+  color: #6b7280;
+  font-size: 0.5rem;
+  font-weight: 500;
+  line-height: 1.18;
+}
+
+.csdc-paper-highlight-meta-sep {
+  margin: 0 0.18rem;
+  color: #9ca3af;
+}
+
+.csdc-paper-highlight-authors {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.5rem;
+  line-height: 1.18;
+}
+
+/* Force compact metadata typography even when broader card paragraph rules apply. */
+.csdc-home-research .csdc-paper-highlight-card .csdc-paper-highlight-meta,
+.csdc-home-research .csdc-paper-highlight-card .csdc-paper-highlight-authors {
+  font-size: 0.5rem !important;
+  line-height: 1.18 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.08rem !important;
+}
+
+.csdc-home-research .csdc-paper-highlight-card p {
+  margin: 0.08rem 0 !important;
+}
+
+.csdc-home-research .csdc-paper-highlight-card .csdc-paper-highlight-title + .csdc-paper-highlight-meta,
+.csdc-home-research .csdc-paper-highlight-card .csdc-paper-highlight-title + .csdc-paper-highlight-authors {
+  margin-top: 0 !important;
 }
 
 .csdc-btn-primary {
@@ -637,7 +764,15 @@ a.csdc-red:focus {
 .csdc-home-pillars-row .csdc-card {
   width: 100%;
   max-width: 22rem;
-  justify-self: center;
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.csdc-home-pillars-row .csdc-card .csdc-axis-highlights {
+  margin-top: 1.05rem;
+  padding-top: 1.05rem;
 }
 
 .csdc-home-research:not(.csdc-publications-focus-section) .csdc-home-pillars-row .csdc-card {

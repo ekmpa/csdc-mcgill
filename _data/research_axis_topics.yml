@@ -1,9 +1,9 @@
-generated_at: '2026-06-11'
-source_publication_count: 1091
-selected_publication_count: 82
+generated_at: '2026-06-18'
+source_publication_count: 1302
+selected_publication_count: 83
 matching:
   method: weighted multi-axis relevance (recent faculty-focused CECD bilingual 
-    vocabulary)
+    vocabulary + faculty bio signal)
   thresholds:
     min_share: 0.24
     min_hits: 2
@@ -13,20 +13,21 @@ matching:
     recent_years: 4
     min_year: 2023
     faculty_only: true
-    selected_publication_count: 82
-    available_publication_count: 1091
+    selected_publication_count: 83
+    available_publication_count: 1302
   axis_document_counts:
-    axis_1: 32
-    axis_2: 34
-    axis_3: 28
+    axis_1: 36
+    axis_2: 42
+    axis_3: 49
   sample_assignments:
     - path: _posts/papers/2023-01-01-10.1007-978-3-031-28089-4_3.md
       assigned_axes:
         - axis_1
+        - axis_3
       relevance:
-        axis_1: 1.0
+        axis_1: 0.25
         axis_2: 0.0
-        axis_3: 0.0
+        axis_3: 0.75
     - path: _posts/papers/2023-01-01-10.1007-978-3-031-32205-1_3.md
       assigned_axes: []
       relevance:
@@ -41,59 +42,113 @@ matching:
         axis_3: 0.0
     - path: _posts/papers/2023-01-01-10.6084-m9.figshare.24649929.md
       assigned_axes:
-        - axis_2
+        - axis_1
         - axis_3
       relevance:
-        axis_1: 0.0
-        axis_2: 0.5
-        axis_3: 0.5
+        axis_1: 0.4
+        axis_2: 0.2
+        axis_3: 0.4
     - path: _posts/papers/2023-01-01-10.6084-m9.figshare.24649929.v1.md
       assigned_axes:
-        - axis_2
+        - axis_1
         - axis_3
       relevance:
-        axis_1: 0.0
-        axis_2: 0.5
-        axis_3: 0.5
+        axis_1: 0.4
+        axis_2: 0.2
+        axis_3: 0.4
     - path: _posts/papers/2023-02-20-10.31234-osf.io-avm36.md
       assigned_axes:
         - axis_1
         - axis_2
       relevance:
-        axis_1: 0.25
-        axis_2: 0.75
-        axis_3: 0.0
+        axis_1: 0.357
+        axis_2: 0.429
+        axis_3: 0.214
 axes:
   axis_1:
     tags_en:
-      - Digital civic literacy
-      - Online political socialization
-      - Information literacy
       - Political trust
+      - Social cohesion
+      - AI literacy and trust
+      - Digital civic literacy
     tags_fr:
-      - Litteratie civique numerique
-      - Socialisation politique en ligne
-      - Competences informationnelles
       - Confiance politique
+      - Cohesion sociale
+      - Litteratie en IA et confiance
+      - Litteratie civique numerique
+    highlight_papers:
+      - title: Affective polarization and social cohesion
+        names: Mariano Torcal, Dietlind Stolle, Zoe A. Thomson
+        venue: Edward Elgar Publishing eBooks
+        link: https://doi.org/10.4337/9781035310609.00040
+        year: 2025
+      - title: Elder, Am I Right? Age-Group Differences in Social and Political 
+          Interactions in Africa
+        names: Aaron Erlich, Andrew McCormack
+        venue: International Journal of Public Opinion Research
+        link: https://doi.org/10.1093/ijpor/edaf003
+        year: 2025
+      - title: 'Measuring Identity in Substate Nations: Evidence from Quebec'
+        names: Elissa Berwick, Éric Bélanger
+        venue: Publius The Journal of Federalism
+        link: https://doi.org/10.1093/publius/pjaf077
+        year: 2025
   axis_2:
     tags_en:
+      - Opinion formation
+      - Electoral behavior
       - Public perceptions of AI
-      - Information consumption
-      - AI and deepfake detection
       - Misinformation and fact-checking
     tags_fr:
+      - Formation des opinions politiques
+      - Comportement electoral
       - Perceptions publiques de l'IA
-      - Consommation de l'information
-      - IA et detection des hypertrucages
       - Desinformation et verification des faits
+    highlight_papers:
+      - title: Who should vote? Membership and claims to expatriate political 
+          participation in the Nigerian diaspora
+        names: Aaron Erlich, Thomas Soehl
+        venue: Comparative Migration Studies
+        link: https://doi.org/10.1186/s40878-026-00546-3
+        year: 2026
+      - title: 'How Language Shapes Belief in Misinformation: A Study Among Multilinguals
+          in Ukraine'
+        names: Aaron Erlich, Kevin Aslett, Sarah Graham, Joshua A. Tucker
+        venue: Journal of Experimental Political Science
+        link: https://doi.org/10.1017/xps.2025.10011
+        year: 2025
+      - title: Le sentiment de menace identitaire au Québec
+        names: Éric Bélanger, Jean‐François Godbout
+        venue: Politique et Sociétés
+        link: https://doi.org/10.7202/1118477ar
+        year: 2025
   axis_3:
     tags_en:
       - AI governance and institutions
+      - Political representation
       - Platform governance and regulation
       - Algorithmic accountability
-      - Political representation
     tags_fr:
       - Gouvernance de l'IA et institutions
+      - Representation politique
       - Gouvernance et regulation des plateformes
       - Responsabilite algorithmique
-      - Representation politique
+    highlight_papers:
+      - title: 'Party Realignment in Québec: Lessons from the United States'
+        names: Jean‐François Godbout, Éric Bélanger
+        venue: Canada and international affairs
+        link: https://doi.org/10.1007/978-3-031-76113-3_5
+        year: 2025
+      - title: A Party that Went Viral? The Drivers of Support for the Parti 
+          Conservateur du Québec in the 2022 Election
+        names: Éric Bélanger, Philippe Mongrain, Thomas Gareau‐Paquette, 
+          Valérie-Anne Mahéo
+        venue: Canadian Journal of Political Science
+        link: https://doi.org/10.1017/s0008423924000829
+        year: 2025
+      - title: Inflation, Blame Attribution, and the 2022 US Congressional 
+          Elections
+        names: Leonardo Baccini, Stephen Weymouth
+        venue: British Journal of Political Science
+        link: https://doi.org/10.1017/s0007123424000930
+        year: 2025
