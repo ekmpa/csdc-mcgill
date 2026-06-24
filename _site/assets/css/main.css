@@ -1527,6 +1527,7 @@ div.author-avatar img { border-radius: 50%; height: 100%; width: 100%; object-fi
 .csdc-people-page .author-card--alumni .author-avatar img { filter: saturate(0.8); }
 .csdc-people-page .author-card--alumni .author-name a, .csdc-people-page .author-card--alumni .author-name { color: #b06f7d; }
 .csdc-people-page .author-card--alumni .author-dates { font-size: 0.78rem; color: #c28190; margin-top: 0.15rem; font-style: italic; }
+.csdc-people-page .author-card--alumni .author-advisor, .csdc-people-page .author-card--alumni .author-department { color: #7c8694; }
 .csdc-people-page .author-card--alumni .author-links a { opacity: 0.6; }
 
 .csdc-people-page .author-card--alumni:hover, .csdc-people-page .author-card--alumni:focus-within { opacity: 0.88; filter: grayscale(0%); }

@@ -75,6 +75,7 @@ Brianne Anderson:
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
     start_date: "2025"
     end_date: "2027"
     advisor: Leonardo Baccini
@@ -942,6 +943,7 @@ Luis Alvarez Jimenez:
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
     start_date: "2021"
     end_date: "2023"
     advisor: Aaron Erlich
@@ -1645,6 +1647,10 @@ Farimah Poursafaei:
   alumni: true
   current_role:
     type: Postdoc
+    title: Postdoctoral Fellow
+    start_date: "2022"
+    end_date: "2024"
+    department: Computer Science
   bio: Farimah Poursafaei is a Postdoc Fellow at McGill University and Mila, Quebec
     AI Institute. Her research interests include dynamic graph representation learning,
     graph neural networks, graph machine learning, and real-world network data analysis.

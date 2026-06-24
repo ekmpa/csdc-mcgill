@@ -25,7 +25,7 @@
 
     <div class="author-info">
         <b class="author-name">
-            {% if author.social_media_links %}
+            {% if author.social_media_links and include.role_to_render and include.role_to_render.type == 'Faculty / Professor' %}
             <a href="{{ author.social_media_links[0].url }}"
                 aria-label="Access the primary external link of this author">{{
                 author.name }}</a>
@@ -52,8 +52,14 @@
                 {% assign role_type_value = include.role_to_render.type | default: "" | strip %}
                 {% assign role_type_down = role_type_value | downcase %}
                 {% assign is_prof_role = false %}
+                {% assign is_student_role = false %}
+                {% assign is_postdoc_role = false %}
                 {% if role_type_down == "faculty / professor" %}
                 {% assign is_prof_role = true %}
+                {% elsif role_type_down == "student" %}
+                {% assign is_student_role = true %}
+                {% elsif role_type_down == "postdoc" %}
+                {% assign is_postdoc_role = true %}
                 {% endif %}
 
                 {% assign dept_value = include.role_to_render.department | default: "" | strip %}
@@ -81,11 +87,11 @@
                     {% endif %}
                 {% endif %}
 
-                {% if is_prof_role and (title_valid or dept_valid) %}
+                {% if (is_prof_role or is_student_role or is_postdoc_role) and (title_valid or dept_valid) %}
                 <div class="author-advisor">
                         {% if title_valid %}<b>{{ title_value }}</b>{% endif %}{% if title_valid and dept_valid %}<span class="author-role-sep">, </span>{% endif %}{% if dept_valid %}<span class="author-department">{{ dept_label }}</span>{% endif %}
                 </div>
-                {% elsif include.role_to_render.type != "Postdoc" and title_valid %}
+                {% elsif title_valid %}
         <div class="author-advisor">
             <b>{{ title_value }}</b>
         </div>
