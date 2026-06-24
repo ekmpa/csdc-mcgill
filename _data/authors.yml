@@ -280,15 +280,14 @@ Aengus Bridgman:
   current_role:
     type: Faculty / Professor
     title: Professor
-  bio: Éric Bélanger is Professor of Political Science at McGill University. He 
-    is also a member of the Royal Society of Canada’s College of New Scholars, 
-    Artists and Scientists. Though centered around Quebec and Canadian politics,
-    his research focuses on the general themes of political parties, public 
-    opinion, and voting behaviour using a variety of quantitative methods. Some 
-    of his prior research has been concerned with economic voting and Quebec 
-    provincial elections. He is also involved in research projects studying 
-    voting behaviour in Latin America, as well as a comparison of nationalism in
-    Quebec and Scotland.
+  bio: Éric Bélanger is Professor of Political Science at McGill University. He is
+    also a member of the Royal Society of Canada’s College of New Scholars, Artists
+    and Scientists. Though centered around Quebec and Canadian politics, his research
+    focuses on the general themes of political parties, public opinion, and voting
+    behaviour using a variety of quantitative methods. Some of his prior research
+    has been concerned with economic voting and Quebec provincial elections. He is
+    also involved in research projects studying voting behaviour in Latin America,
+    as well as a comparison of nationalism in Quebec and Scotland.
   orcid: 0000-0003-3289-6000
   social_media_links:
   - label: Scholar
@@ -539,12 +538,12 @@ Aaron Erlich:
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
-  bio: Aaron Erlich is an Assistant Professor of Political Science at McGill 
-    University. His research interests concern questions of democratization, 
-    information dissemination, political behavior, political participation, and 
-    public opinion in the Former Soviet Union, Eastern and Southern Africa, and 
-    Mexico. Professor Erlich's research makes use of a variety of methods, such 
-    as field experiments, survey experiments, and mixed-method research designs.
+  bio: Aaron Erlich is an Assistant Professor of Political Science at McGill University.
+    His research interests concern questions of democratization, information dissemination,
+    political behavior, political participation, and public opinion in the Former
+    Soviet Union, Eastern and Southern Africa, and Mexico. Professor Erlich's research
+    makes use of a variety of methods, such as field experiments, survey experiments,
+    and mixed-method research designs.
   orcid: 0000-0001-6571-9081
   avatar: https://github.com/user-attachments/assets/4c441e39-9859-48e0-9440-e743ddbd8838
   social_media_links:
@@ -628,14 +627,13 @@ Benjamin Forest:
     type: Faculty / Professor
     title: Associate Professor
     department: Geography
-  bio: Benjamin Forest is an Associate Professor at McGill University in the 
-    Department of Geography as well as an Associate Member of the Department of 
-    Political Science. A specialist in the field of political geography, his 
-    work revolves around the theme of diversity and electoral reform. In 
-    addition to being part of a project studying monuments and memorials in the 
-    post-Soviet sphere, Professor Forest is currently heading a project on 
-    diversity in party structures and constituencies in Canada. He is also 
-    working on research exploring municipal LGBTQ policies.
+  bio: Benjamin Forest is an Associate Professor at McGill University in the Department
+    of Geography as well as an Associate Member of the Department of Political Science.
+    A specialist in the field of political geography, his work revolves around the
+    theme of diversity and electoral reform. In addition to being part of a project
+    studying monuments and memorials in the post-Soviet sphere, Professor Forest is
+    currently heading a project on diversity in party structures and constituencies
+    in Canada. He is also working on research exploring municipal LGBTQ policies.
   orcid: https://orcid.org/0000-0002-4831-9403
   social_media_links:
   - label: Scholar
@@ -1293,6 +1291,9 @@ Juan Pablo Luna:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
   team_group: faculty_members
+Juan Pablo Luna 2:
+  name: Juan Pablo Luna
+  avatar: /assets/images/bio/Juan Pablo Luna 2.jpg
 Justin Lutz:
   name: Justin Lutz
   alumni: true
