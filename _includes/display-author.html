@@ -49,8 +49,43 @@
         {% endif %}
         {% assign title_down = title_value | downcase %}
         {% assign advisor_down = advisor_value | downcase %}
+                {% assign role_type_value = include.role_to_render.type | default: "" | strip %}
+                {% assign role_type_down = role_type_value | downcase %}
+                {% assign is_prof_role = false %}
+                {% if role_type_down == "faculty / professor" %}
+                {% assign is_prof_role = true %}
+                {% endif %}
 
-        {% if include.role_to_render.type != "Postdoc" and title_value != "" and title_down != "_no response_" and title_down != "no response" %}
+                {% assign dept_value = include.role_to_render.department | default: "" | strip %}
+                {% assign dept_down = dept_value | downcase %}
+                {% assign dept_valid = false %}
+                {% if dept_value != "" and dept_down != "_no response_" and dept_down != "no response" %}
+                {% assign dept_valid = true %}
+                {% endif %}
+
+                {% assign title_valid = false %}
+                {% if title_value != "" and title_down != "_no response_" and title_down != "no response" %}
+                {% assign title_valid = true %}
+                {% endif %}
+
+                {% assign dept_label = dept_value %}
+                {% if dept_valid %}
+                    {% if is_fr %}
+                        {% unless dept_down contains "département de" or dept_down contains "departement de" %}
+                        {% assign dept_label = "Département de " | append: dept_value %}
+                        {% endunless %}
+                    {% else %}
+                        {% unless dept_down contains "department of" %}
+                        {% assign dept_label = "Department of " | append: dept_value %}
+                        {% endunless %}
+                    {% endif %}
+                {% endif %}
+
+                {% if is_prof_role and (title_valid or dept_valid) %}
+                <div class="author-advisor">
+                        {% if title_valid %}<b>{{ title_value }}</b>{% endif %}{% if title_valid and dept_valid %}<span class="author-role-sep">, </span>{% endif %}{% if dept_valid %}<span class="author-department">{{ dept_label }}</span>{% endif %}
+                </div>
+                {% elsif include.role_to_render.type != "Postdoc" and title_valid %}
         <div class="author-advisor">
             <b>{{ title_value }}</b>
         </div>

@@ -104,6 +104,13 @@ var store = [{
       "url": "/tools-and-resources/",
       "teaser": null
     },{
+      "title": "Rethinking External Finance for Economic Growth in the Western Balkans: A Comparison with Central Eastern Europe",
+      "excerpt": "Milica Uvalić, Renzo Daviddi\n      Rethinking External Finance for Economic Growth in the Western Balkans: A Comparison with Central Eastern Europe\n      \n      Milica Uvalić, Renzo Daviddi\n      10.30965-18763332-20262010 Milica Uvalić, Renzo Daviddi\n      Rethinking External Finance for Economic Growth in the Western Balkans: A Comparison with Central Eastern Europe\n      \n      Milica Uvalić, Renzo Daviddi\n      10.30965-18763332-20262010",
+      "categories": ["Publications"],
+      "tags": ["Southeastern Europe"],
+      "url": "/publications/10.30965-18763332-20262010/",
+      "teaser": null
+    },{
       "title": "Rupin Liddar wins the Best Paper Award in Asian Pacific American Politics at the Western Political Science Association's conference",
       "excerpt": "Rupin Liddar a remporté le prix du meilleur article en politique asiatique-américaine et du Pacifique lors de la conférence de la Western Political Science Association, qu’elle a fréquentée l’année dernière.\n      Rupin Liddar wins the Best Paper Award in Asian Pacific American Politics at the Western Political Science Association's conference\n      \n      \n      rupin-liddar-wins-the-best-paper-award-in-asian-pacific-american-politics-at-the-western-political-science-association-s-conference Rupin Liddar a remporte le prix du meilleur article en politique asiatique-americaine et du Pacifique lors de la conference de la Western Political Science Association, qu'elle a frequentee l'annee derniere.\n      Rupin Liddar wins the Best Paper Award in Asian Pacific American Politics at the Western Political Science Association's conference\n      \n      \n      rupin-liddar-wins-the-best-paper-award-in-asian-pacific-american-politics-at-the-western-political-science-association-s-conference",
       "categories": ["fr","news"],
@@ -132,15 +139,29 @@ var store = [{
       "url": "/news/brooke-steinhauer-awarded-the-lemieux-fellowship/",
       "teaser": null
     },{
+      "title": "Citizens’ dynamic engagement: a longitudinal person-centered approach for analyzing repertoires of political behaviors",
+      "excerpt": "Félix Laliberté, Roxane de la Sablonnière, Dietlind Stolle, Clémentine Courdi, Mathieu Pelletier‐Dumas, Éric Lacourse\n      Citizens’ dynamic engagement: a longitudinal person-centered approach for analyzing repertoires of political behaviors\n      \n      Félix Laliberté, Roxane de la Sablonnière, Dietlind Stolle, Clémentine Courdi, Mathieu Pelletier‐Dumas, Éric Lacourse\n      10.1007-s11135-026-02757-3 Felix Laliberte, Roxane de la Sablonniere, Dietlind Stolle, Clementine Courdi, Mathieu Pelletier‐Dumas, Eric Lacourse\n      Citizens' dynamic engagement: a longitudinal person-centered approach for analyzing repertoires of political behaviors\n      \n      Felix Laliberte, Roxane de la Sablonniere, Dietlind Stolle, Clementine Courdi, Mathieu Pelletier‐Dumas, Eric Lacourse\n      10.1007-s11135-026-02757-3",
+      "categories": ["Publications"],
+      "tags": ["Quality & Quantity"],
+      "url": "/publications/10.1007-s11135-026-02757-3/",
+      "teaser": null
+    },{
+      "title": "A taxonomy of discriminatory behavior.",
+      "excerpt": "Eric Hehman, Rebecca Neel, Lora E. Park, N Keita Christophe\n      A taxonomy of discriminatory behavior.\n      \n      Eric Hehman, Rebecca Neel, Lora E. Park, N Keita Christophe\n      10.1037-rev0000636 Eric Hehman, Rebecca Neel, Lora E. Park, N Keita Christophe\n      A taxonomy of discriminatory behavior.\n      \n      Eric Hehman, Rebecca Neel, Lora E. Park, N Keita Christophe\n      10.1037-rev0000636",
+      "categories": ["Publications"],
+      "tags": ["Psychological Review"],
+      "url": "/publications/10.1037-rev0000636/",
+      "teaser": null
+    },{
       "title": "Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee",
-      "excerpt": "Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee \n      Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee",
+      "excerpt": "Alan Nemirovski a été nommé représentant étudiant de McGill au comité étudiant du CÉCD.\n      Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee Alan Nemirovski a ete nomme representant etudiant de McGill au comite etudiant du CECD.\n      Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee",
       "categories": ["fr","news"],
       "tags": [],
       "url": "/fr/news/alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee/",
       "teaser": null
     },{
       "title": "Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee",
-      "excerpt": "Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee \n      Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee",
+      "excerpt": "Alan Nemirovski has been appointed as McGill’s student representative on the CSDC Student Committee.\n      Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee Alan Nemirovski has been appointed as McGill's student representative on the CSDC Student Committee.\n      Alan Nemirovski becomes the McGill Student Representative on the CSDC Student Committee\n      \n      \n      alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee",
       "categories": ["News"],
       "tags": [],
       "url": "/news/alan-nemirovski-becomes-the-mcgill-student-representative-on-the-csdc-student-committee/",

@@ -317,6 +317,9 @@ AI_ORIENTED_TOKENS: Set[str] = {
     "llm",
 }
 
+# Extra weighting for faculty bios explicitly mapped to an axis.
+MAPPED_FACULTY_BIO_WEIGHT: float = 2.4
+
 AXIS_AI_TARGETS: Dict[AxisId, int] = {
     # Favor political-science framing on axis_2 while retaining one AI-linked tag.
     "axis_2": 1,
@@ -376,6 +379,50 @@ def load_faculty_name_sets(authors_path: Path) -> Tuple[Set[str], Set[str], Dict
                         existing_bios.append(bio_value)
 
     return faculty_full_names, faculty_last_names, faculty_bio_by_full_name, faculty_bio_by_last_name
+
+
+def load_faculty_axis_map(
+    mapping_path: Path,
+    faculty_bio_by_full_name: Dict[str, str],
+) -> Tuple[Dict[AxisId, Counter], Dict[AxisId, List[str]]]:
+    axis_bio_token_boosts: Dict[AxisId, Counter] = {axis.axis_id: Counter() for axis in AXES}
+    axis_faculty_names: Dict[AxisId, List[str]] = {axis.axis_id: [] for axis in AXES}
+
+    if not mapping_path.exists():
+        return axis_bio_token_boosts, axis_faculty_names
+
+    yaml = YAML(typ="safe")
+    mapping_data = yaml.load(mapping_path.read_text(encoding="utf-8")) or {}
+    faculty_to_axes = mapping_data.get("faculty_to_axes", mapping_data)
+    if not isinstance(faculty_to_axes, dict):
+        return axis_bio_token_boosts, axis_faculty_names
+
+    for raw_name, axes_value in faculty_to_axes.items():
+        faculty_name = str(raw_name or "").strip()
+        if not faculty_name:
+            continue
+
+        normalized_name = normalize_person_name(faculty_name)
+        bio_text = faculty_bio_by_full_name.get(normalized_name, "")
+        if not bio_text:
+            continue
+
+        axes_list = axes_value if isinstance(axes_value, list) else [axes_value]
+        bio_tokens = tokenize(bio_text)
+        if not bio_tokens:
+            continue
+
+        for axis_item in axes_list:
+            axis_id = str(axis_item or "").strip()
+            if axis_id not in AXIS_BY_ID:
+                continue
+            axis_bio_token_boosts[axis_id].update(bio_tokens)
+            axis_faculty_names[axis_id].append(faculty_name)
+
+    for axis_id in axis_faculty_names:
+        axis_faculty_names[axis_id] = sorted(set(axis_faculty_names[axis_id]))
+
+    return axis_bio_token_boosts, axis_faculty_names
 
 
 def get_matching_faculty_bio_text(
@@ -641,7 +688,11 @@ def assign_documents_to_axes(
     return axis_docs, diagnostics
 
 
-def score_axis_phrase_bank(axis: AxisDefinition, docs: Sequence[dict]) -> List[Tuple[str, str, float]]:
+def score_axis_phrase_bank(
+    axis: AxisDefinition,
+    docs: Sequence[dict],
+    axis_bio_token_boosts: Optional[Dict[AxisId, Counter]] = None,
+) -> List[Tuple[str, str, float]]:
     weighted_tokens: Counter = Counter()
     weighted_title_tokens: Counter = Counter()
     current_year = datetime.date.today().year
@@ -657,6 +708,10 @@ def score_axis_phrase_bank(axis: AxisDefinition, docs: Sequence[dict]) -> List[T
             weighted_tokens[token] += freq * weight
         for token, freq in Counter(doc["title_tokens"]).items():
             weighted_title_tokens[token] += freq * weight
+
+    if axis_bio_token_boosts:
+        for token, freq in axis_bio_token_boosts.get(axis.axis_id, Counter()).items():
+            weighted_tokens[token] += freq * MAPPED_FACULTY_BIO_WEIGHT
 
     scores: List[Tuple[str, str, float]] = []
     for en_label, fr_label, signals in axis.phrase_bank:
@@ -683,8 +738,9 @@ def pick_axis_phrases(
     docs: Sequence[dict],
     min_tags: int,
     max_tags: int,
+    axis_bio_token_boosts: Optional[Dict[AxisId, Counter]] = None,
 ) -> Tuple[List[str], List[str]]:
-    scored = score_axis_phrase_bank(axis, docs)
+    scored = score_axis_phrase_bank(axis, docs, axis_bio_token_boosts=axis_bio_token_boosts)
     phrase_signals = {en_label: signals for en_label, _, signals in axis.phrase_bank}
 
     # Keep AXIS_ALLOWED_PHRASES as advisory/reference, but do not hard-filter.
@@ -885,6 +941,8 @@ def build_output(
     selection_summary: Dict[str, object],
     axis_docs: Dict[AxisId, List[dict]],
     diagnostics: Dict[str, dict],
+    axis_bio_token_boosts: Dict[AxisId, Counter],
+    axis_mapped_faculty: Dict[AxisId, List[str]],
     min_share: float,
     min_hits: int,
     min_tags: int,
@@ -903,6 +961,7 @@ def build_output(
                 "max_tags": max_tags,
             },
             "selection": selection_summary,
+            "axis_mapped_faculty": axis_mapped_faculty,
             "axis_document_counts": {axis.axis_id: len(axis_docs[axis.axis_id]) for axis in AXES},
             "sample_assignments": [],
         },
@@ -910,7 +969,13 @@ def build_output(
     }
 
     for axis in AXES:
-        tags_en, tags_fr = pick_axis_phrases(axis, documents, min_tags=min_tags, max_tags=max_tags)
+        tags_en, tags_fr = pick_axis_phrases(
+            axis,
+            documents,
+            min_tags=min_tags,
+            max_tags=max_tags,
+            axis_bio_token_boosts=axis_bio_token_boosts,
+        )
         highlights = select_highlight_papers(axis, documents)
         axis_entry: dict = {
             "tags_en": tags_en,
@@ -984,6 +1049,7 @@ def write_yaml(data: dict, output_path: Path) -> None:
 def main(
     posts_dir: str = "_posts/papers",
     authors_path: str = "_data/authors.yml",
+    faculty_axis_map_path: str = "_data/faculty_axis_map.yml",
     output_path: str = "_data/research_axis_topics.yml",
     recent_years: int = 4,
     faculty_only: bool = True,
@@ -1001,6 +1067,10 @@ def main(
         faculty_bio_by_last_name=faculty_bio_by_last_name,
     )
     docs, selection_summary = filter_documents(all_docs, recent_years=recent_years, faculty_only=faculty_only)
+    axis_bio_token_boosts, axis_mapped_faculty = load_faculty_axis_map(
+        Path(faculty_axis_map_path),
+        faculty_bio_by_full_name=faculty_bio_by_full_name,
+    )
     if not docs:
         raise RuntimeError(
             "No publications matched the topic modeling filters. "
@@ -1013,6 +1083,8 @@ def main(
         selection_summary=selection_summary,
         axis_docs=axis_docs,
         diagnostics=diagnostics,
+        axis_bio_token_boosts=axis_bio_token_boosts,
+        axis_mapped_faculty=axis_mapped_faculty,
         min_share=min_share,
         min_hits=min_hits,
         min_tags=min_tags,
@@ -1026,6 +1098,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--posts_dir", default="_posts/papers")
     parser.add_argument("--authors_path", default="_data/authors.yml")
+    parser.add_argument("--faculty_axis_map_path", default="_data/faculty_axis_map.yml")
     parser.add_argument("--output_path", default="_data/research_axis_topics.yml")
     parser.add_argument("--recent_years", default=4, type=int)
     parser.add_argument("--include_all_authors", action="store_true")

@@ -1,0 +1,8 @@
+# Faculty-to-axis mapping used by topic generation to upweight axis-specific bio signal.
+# Axis IDs: axis_1, axis_2, axis_3
+faculty_to_axes:
+  Benjamin Forest:
+    - axis_3
+  Éric Bélanger:
+    - axis_2
+    - axis_3

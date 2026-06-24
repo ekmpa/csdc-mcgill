@@ -4,7 +4,30 @@
 {% assign is_fr = true %}
 {% endif %}
 {% assign news_updates = site.posts | where_exp: "post", "post.path contains '_posts/news/'" %}
-{% assign section_keys = 'press|prize|grants|global-csdc|other' | split: '|' %}
+{% assign allowed_section_keys = 'press|prize|grants|global-csdc|other' | split: '|' %}
+{% assign section_keys = '' | split: '' %}
+
+{% if news_updates and news_updates.size > 0 %}
+  {% for post in news_updates limit: 120 %}
+    {% if is_fr %}
+      {% unless post.path contains '_posts/news/fr/' %}
+        {% continue %}
+      {% endunless %}
+    {% else %}
+      {% if post.path contains '_posts/news/fr/' %}
+        {% continue %}
+      {% endif %}
+    {% endif %}
+    {% assign post_news_tag = post.news_tag | default: 'other' | downcase | replace: ' ', '-' | replace: '_', '-' %}
+    {% unless allowed_section_keys contains post_news_tag %}
+      {% assign post_news_tag = 'other' %}
+    {% endunless %}
+    {% unless section_keys contains post_news_tag %}
+      {% assign post_news_tag_array = post_news_tag | split: '|' %}
+      {% assign section_keys = section_keys | concat: post_news_tag_array %}
+    {% endunless %}
+  {% endfor %}
+{% endif %}
 
 <section class="csdc-section csdc-news-updates-section">
   <div class="csdc-container">
@@ -29,6 +52,9 @@
         {% endif %}
         {% endif %}
         {% assign post_news_tag = post.news_tag | default: 'other' | downcase | replace: ' ', '-' | replace: '_', '-' %}
+        {% unless allowed_section_keys contains post_news_tag %}
+        {% assign post_news_tag = 'other' %}
+        {% endunless %}
         {% if post_news_tag != section_key %}
         {% continue %}
         {% endif %}

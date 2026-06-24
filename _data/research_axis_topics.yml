@@ -1,6 +1,6 @@
-generated_at: '2026-06-18'
+generated_at: '2026-06-24'
 source_publication_count: 1302
-selected_publication_count: 83
+selected_publication_count: 80
 matching:
   method: weighted multi-axis relevance (recent faculty-focused CECD bilingual 
     vocabulary + faculty bio signal)
@@ -13,10 +13,17 @@ matching:
     recent_years: 4
     min_year: 2023
     faculty_only: true
-    selected_publication_count: 83
+    selected_publication_count: 80
     available_publication_count: 1302
+  axis_mapped_faculty:
+    axis_1: []
+    axis_2:
+      - Éric Bélanger
+    axis_3:
+      - Benjamin Forest
+      - Éric Bélanger
   axis_document_counts:
-    axis_1: 36
+    axis_1: 35
     axis_2: 42
     axis_3: 49
   sample_assignments:
@@ -28,12 +35,6 @@ matching:
         axis_1: 0.25
         axis_2: 0.0
         axis_3: 0.75
-    - path: _posts/papers/2023-01-01-10.1007-978-3-031-32205-1_3.md
-      assigned_axes: []
-      relevance:
-        axis_1: 0.0
-        axis_2: 0.0
-        axis_3: 0.0
     - path: _posts/papers/2023-01-01-10.2139-ssrn.4392501.md
       assigned_axes: []
       relevance:
@@ -64,6 +65,13 @@ matching:
         axis_1: 0.357
         axis_2: 0.429
         axis_3: 0.214
+    - path: _posts/papers/2023-02-22-10.1145-3539597.3573033.md
+      assigned_axes:
+        - axis_1
+      relevance:
+        axis_1: 0.889
+        axis_2: 0.111
+        axis_3: 0.0
 axes:
   axis_1:
     tags_en:

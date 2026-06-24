@@ -1452,6 +1452,10 @@ div.author-avatar img { border-radius: 50%; height: 100%; width: 100%; object-fi
 
 .author-advisor { font-size: 0.95rem; color: #4b5563; }
 
+.author-role-sep { font-weight: 400; }
+
+.author-department { font-style: italic; font-weight: 400; }
+
 .author-dates { margin-top: 0.15rem; font-size: 0.82rem; color: #6b7280; font-style: italic; }
 
 .author-card { display: flex; align-items: center; vertical-align: top; width: 100%; margin: 0 0 1rem; padding: 1.2rem; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 0.6rem; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
@@ -1499,16 +1503,13 @@ div.author-avatar img { border-radius: 50%; height: 100%; width: 100%; object-fi
 
 .csdc-people-page .author-card::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3.1rem; pointer-events: none; opacity: 0; background: linear-gradient(to top, rgba(200, 16, 46, 0.08) 0%, rgba(200, 16, 46, 0.03) 45%, rgba(255, 255, 255, 0) 100%); transition: opacity 0.16s ease; }
 
-.csdc-people-page .author-card:hover, .csdc-people-page .author-card:focus-within, .csdc-people-page .author-card.author-card--default-open { box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); }
+.csdc-people-page .author-card:hover, .csdc-people-page .author-card:focus-within, .csdc-people-page .author-card.author-card--default-open, .csdc-people-page .author-card.author-card--active-open { box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); }
 
-.csdc-people-page .author-card:hover::after, .csdc-people-page .author-card:focus-within::after, .csdc-people-page .author-card.author-card--default-open::after { opacity: 1; }
+.csdc-people-page .author-card:hover::after, .csdc-people-page .author-card:focus-within::after, .csdc-people-page .author-card.author-card--default-open::after, .csdc-people-page .author-card.author-card--active-open::after { opacity: 1; }
 
 .csdc-people-page .author-card .author-bio, .csdc-people-page .author-card .author-note { max-height: 0; opacity: 0; overflow: hidden; margin-top: 0; transition: max-height 0.3s ease, opacity 0.24s ease, margin-top 0.3s ease; transition-delay: 0s; }
 
-.csdc-people-page .author-card:hover .author-bio, .csdc-people-page .author-card:focus-within .author-bio, .csdc-people-page .author-card.author-card--default-open .author-bio, .csdc-people-page .author-card:hover .author-note, .csdc-people-page .author-card:focus-within .author-note, .csdc-people-page .author-card.author-card--default-open .author-note { max-height: 20rem; opacity: 1; margin-top: 0.6rem; transition-delay: 0.06s; }
-
-/* Sass in this Jekyll stack does not support :has(); keep close behavior immediate when the team area is hovered and the current card is not active. */
-.csdc-people-page:hover .author-card:not(:hover):not(:focus-within) .author-bio, .csdc-people-page:hover .author-card:not(:hover):not(:focus-within) .author-note { transition-delay: 0s; }
+.csdc-people-page .author-card:hover .author-bio, .csdc-people-page .author-card:focus-within .author-bio, .csdc-people-page .author-card.author-card--default-open .author-bio, .csdc-people-page .author-card.author-card--active-open .author-bio, .csdc-people-page .author-card:hover .author-note, .csdc-people-page .author-card:focus-within .author-note, .csdc-people-page .author-card.author-card--default-open .author-note, .csdc-people-page .author-card.author-card--active-open .author-note { max-height: 60rem; opacity: 1; margin-top: 0.6rem; transition-delay: 0.06s; }
 
 @media (hover: none), (max-width: 720px) { .csdc-people-page .author-card .author-bio, .csdc-people-page .author-card .author-note { max-height: none; opacity: 1; margin-top: 0.6rem; } }
 .csdc-alumni-section { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid #e5e9ed; }

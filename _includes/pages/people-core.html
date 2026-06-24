@@ -55,28 +55,35 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.csdc-people-page .author-card'));
     var defaultOpen = document.querySelector('.csdc-people-page .author-card--default-open');
+    var activeCard = null;
+
+    function setActiveCard(nextCard) {
+        if (!nextCard || activeCard === nextCard) {
+            return;
+        }
+
+        if (activeCard) {
+            activeCard.classList.remove('author-card--active-open');
+            activeCard.classList.remove('author-card--default-open');
+        }
+
+        activeCard = nextCard;
+        activeCard.classList.remove('author-card--default-open');
+        activeCard.classList.add('author-card--active-open');
+    }
 
     if (defaultOpen) {
-        var closeDefaultOpen = function (event) {
-            var activeCard = event.target.closest('.author-card');
-            if (!activeCard || activeCard === defaultOpen) {
-                return;
-            }
-
-            defaultOpen.classList.remove('author-card--default-open');
-
-            document.querySelectorAll('.csdc-people-page .author-card').forEach(function (card) {
-                card.removeEventListener('mouseenter', closeDefaultOpen);
-                card.removeEventListener('focusin', closeDefaultOpen);
-            });
-        };
-
-        document.querySelectorAll('.csdc-people-page .author-card').forEach(function (card) {
-            card.addEventListener('mouseenter', closeDefaultOpen);
-            card.addEventListener('focusin', closeDefaultOpen);
-        });
+        activeCard = defaultOpen;
+        activeCard.classList.add('author-card--active-open');
     }
+
+    cards.forEach(function (card) {
+        card.addEventListener('click', function () {
+            setActiveCard(card);
+        });
+    });
 
     var searchInput = document.getElementById('people-search-input');
     var emptyState = document.getElementById('people-search-empty');

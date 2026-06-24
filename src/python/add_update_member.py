@@ -18,6 +18,37 @@ def _normalize_heading_key(text: str) -> str:
     return text.strip("_")
 
 
+def _normalize_member_name_for_match(name: str) -> str:
+    """Normalize member names for robust matching across accents/case/spacing."""
+    text = unicodedata.normalize("NFKD", str(name or ""))
+    text = "".join(ch for ch in text if not unicodedata.combining(ch))
+    text = text.lower().strip()
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
+def _find_existing_username_by_name(authors: Dict, profile_name: str) -> Optional[str]:
+    """Find an existing author key by normalized displayed name."""
+    target_norm = _normalize_member_name_for_match(profile_name)
+    if not target_norm:
+        return None
+
+    matches: List[str] = []
+    for username, desc in authors.items():
+        existing_name = str((desc or {}).get("name", "") or "")
+        if _normalize_member_name_for_match(existing_name) == target_norm:
+            matches.append(username)
+
+    if not matches:
+        return None
+
+    # Prefer exact key-name match if present, then shortest key (usually base key over "Name 2").
+    if profile_name in matches:
+        return profile_name
+    return sorted(matches, key=lambda key: (len(key), key))[0]
+
+
 def _normalize_role_type(value: str) -> str:
     """Map bilingual/variant role labels to canonical role types used by templates."""
     if _is_empty_response(value):
@@ -130,6 +161,7 @@ def _canonicalize_member_parsed_input(parsed: Dict) -> Dict:
             "team_group_groupe_de_l_equipe",
         ],
         "current_role_title": ["current_role_title"],
+        "current_role_department": ["current_role_department", "current_role_department_département_actuel", "current_role_department_departement_actuel"],
         "current_role_affiliation": ["current_role_affiliation", "current_affiliation_affiliation_actuelle"],
         "current_role_advisor": ["current_role_advisor", "current_role_advisor_superviseur_e_actuel_le"],
         "current_role_start_date": ["current_role_start_date", "start_date_date_de_debut"],
@@ -250,6 +282,10 @@ def process_role_data(parsed: Dict, prefix: str = "") -> Optional[Dict]:
         if not _is_empty_response(value):
             role[field] = value
 
+    department = parsed.get(f"{prefix}department")
+    if not _is_empty_response(department):
+        role["department"] = department
+
     # Add new fields for affiliation and research directions
     affiliation = parsed.get(f"{prefix}affiliation")
     if not _is_empty_response(affiliation):
@@ -331,9 +367,14 @@ def merge_profile_data(old_profile: Dict, new_profile: Dict) -> Dict:
     if "team_group" in new_profile and not _is_empty_response(new_profile["team_group"]):
         merged["team_group"] = new_profile["team_group"]
 
-    # Update current role if provided
+    # Update current role if provided; preserve unspecified existing role fields.
     if "current_role" in new_profile:
-        merged["current_role"] = new_profile["current_role"]
+        existing_role = merged.get("current_role", {}) if isinstance(merged.get("current_role", {}), dict) else {}
+        updated_role = dict(existing_role)
+        for key, value in new_profile["current_role"].items():
+            if not _is_empty_response(value):
+                updated_role[key] = value
+        merged["current_role"] = updated_role
         if "team_group" not in new_profile:
             merged["team_group"] = _infer_team_group(
                 merged["current_role"].get("type", ""),
@@ -389,13 +430,18 @@ def main(parsed: Dict, action: str = "", site_data_dir: str = "_data/", image_di
     yaml.preserve_quotes = True
     with open(site_data_dir / "authors.yml") as f:
         authors = yaml.load(f)
+
+    existing_username = _find_existing_username_by_name(authors, profile["name"])
    
     if action not in {"Add member", "Update member"}:
-        name_to_username = {authors[username]["name"]: username for username in authors}
-        if profile["name"] in name_to_username:
+        if existing_username:
             action = "Update member"
         else:
             action = "Add member"
+
+    # Even when form/workflow says "Add member", treat same-name submissions as updates.
+    if action == "Add member" and existing_username:
+        action = "Update member"
 
     if action == "Add member":
         # Handle new member addition
@@ -409,11 +455,10 @@ def main(parsed: Dict, action: str = "", site_data_dir: str = "_data/", image_di
         authors[username] = profile
     else:
         # Handle member update
-        name_to_username = {authors[username]["name"]: username for username in authors}
-        if profile["name"] not in name_to_username:
+        if not existing_username:
             raise ValueError(f'{profile["name"]} not in authors')
 
-        username = name_to_username[profile["name"]]
+        username = existing_username
         authors[username] = merge_profile_data(authors[username], profile)
 
     # Handle avatar image if provided
