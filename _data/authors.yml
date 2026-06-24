@@ -1655,6 +1655,7 @@ Farimah Poursafaei:
   team_group: phd_students_and_postdocs
 Reihaneh Rabbany:
   name: Reihaneh Rabbany
+  avatar: /assets/images/bio/Reihaneh Rabbany 2.jpg
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
@@ -1667,13 +1668,12 @@ Reihaneh Rabbany:
     real-world interconnected data, and social good applications.
   orcid: 0000-0003-2348-0353
   social_media_links:
+  - label: Website
+    url: http://www.reirab.com/
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=Foh_c-QAAAAJ
 
   team_group: faculty_members
-Reihaneh Rabbany 2:
-  name: Reihaneh Rabbany
-  avatar: /assets/images/bio/Reihaneh Rabbany 2.jpg
 Reza Rahimian:
   name: Reza Rahimian
   alumni: true
@@ -1813,10 +1813,11 @@ Sahar Omidi Shayegan:
   team_group: phd_students_and_postdocs
 Eran Shor:
   name: Eran Shor
+  avatar: /assets/images/bio/Eran Shor 2.jpg
   current_role:
     type: Faculty / Professor
     title: Associate Professor
-    start_date: "2010"
+    department: Sociology
   bio: Eran Shor is an Associate Professor in the Department of Sociology at McGill
     University. His research interests center around the themes of political conflict,
     human rights, and ethnicity and nationalism. Professor Shor's current research
@@ -1826,9 +1827,6 @@ Eran Shor:
     url: https://scholar.google.com/citations?user=vxVIFkIAAAAJ&hl=en&oi=ao
 
   team_group: faculty_members
-  avatar: /assets/images/bio/Eran Shor.jpg
-Eran Shor 2:
-  name: Eran Shor
   avatar: /assets/images/bio/Eran Shor 2.jpg
 Sula Sidnell-Green:
   name: Sula Sidnell-Green
