@@ -245,6 +245,15 @@ Danielle Bohonos:
     end_date: "2023"
 
   team_group: phd_students_and_postdocs
+Julien Boisvert-Perry:
+  name: Julien Boisvert-Perry
+  current_role:
+    type: Student
+    title: Master's
+    title_fr: Maitrise
+    advisor: Dietlind Stolle
+    department: Department of Political Science
+  team_group: masters_students
 Arianna Bondi:
   name: Arianna Bondi
   current_role:
