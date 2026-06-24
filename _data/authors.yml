@@ -13,6 +13,7 @@ Nicolas Ajzenman:
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
+    department: Economics
   bio: Nicolas Ajzenman is an Assistant Professor at McGill (Economics Department)
     and an affiliated professor at J-PAL and IZA. He is working at the intersection
     of development economics, behavioral economics, and political economy. His research
@@ -128,6 +129,7 @@ Leonardo Baccini:
   current_role:
     type: Faculty / Professor
     title: Associate Professor
+    department: Political Science
   bio: Leonardo Baccini is an Associate Professor in the Department of Political Science
     at McGill University. His research interests are in the area of international
     political economy and comparative political economy with a focus on the political
@@ -194,6 +196,7 @@ Elissa Berwick:
   avatar: /assets/images/bio/Elissa Berwick 2.jpg
   current_role:
     type: Faculty / Professor
+    department: Political Science
   bio: Prof Berwick’s interests span the sub-fields of comparative politics and quantitative
     methodology. Her research focuses on sub-state nationalism, exploring how the
     imagined communities of stateless nations mold actual political attitudes and
@@ -277,9 +280,11 @@ Aengus Bridgman:
   team_group: phd_students_and_postdocs
 Éric Bélanger:
   name: Éric Bélanger
+  avatar: /assets/images/bio/Éric Bélanger 2.jpg
   current_role:
     type: Faculty / Professor
     title: Professor
+    department: Political Science
   bio: Éric Bélanger is Professor of Political Science at McGill University. He 
     is also a member of the Royal Society of Canada’s College of New Scholars, 
     Artists and Scientists. Though centered around Quebec and Canadian politics,
@@ -295,9 +300,6 @@ Aengus Bridgman:
     url: https://scholar.google.com/citations?hl=en&user=CuFbthUAAAAJ
 
   team_group: faculty_members
-Éric Bélanger 2:
-  name: Éric Bélanger
-  avatar: /assets/images/bio/Éric Bélanger 2.jpg
 Albert Manuel Orozco Camacho:
   name: Albert Manuel Orozco Camacho
   alumni: true
@@ -539,6 +541,7 @@ Aaron Erlich:
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
+    department: Political Science
   bio: Aaron Erlich is an Assistant Professor of Political Science at McGill 
     University. His research interests concern questions of democratization, 
     information dissemination, political behavior, political participation, and 
@@ -822,6 +825,7 @@ Eric Hehman:
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
+    department: Psychology
   bio: Eric Hehman is an Assistant Professor of Psychology at McGill University and
     director of the Seeing Human Lab.  Generally, Dr. Hehman’s research examines how
     individuals perceive and evaluate one another across group boundaries (e.g., race,
@@ -1271,6 +1275,7 @@ Juan Pablo Luna:
   current_role:
     type: Faculty / Professor
     title: Inaugural Diamond Brown Chair in Democratic Studies
+    department: Political Science
   bio: Juan Pablo Luna grew up in Montevideo, Uruguay, and is the Inaugural Diamond
     Brown Chair in Democratic Studies at McGill. While mainly focused on comparative
     Latin American politics, his research analyzes how socio-structural conditions
@@ -1653,6 +1658,7 @@ Reihaneh Rabbany:
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
+    department: Computer Science
   bio: Reihaneh Rabbany is an Assistant Professor at the School of Computer Science,
     McGill University. Before that, she was a Postdoctoral fellow at the School of
     Computer Science, Carnegie Mellon University. She completed her Ph.D. in Computing
