@@ -196,6 +196,7 @@ Elissa Berwick:
   avatar: /assets/images/bio/Elissa Berwick 2.jpg
   current_role:
     type: Faculty / Professor
+    title: Assistant Professor
     department: Political Science
   bio: Prof Berwick’s interests span the sub-fields of comparative politics and quantitative
     methodology. Her research focuses on sub-state nationalism, exploring how the
@@ -915,7 +916,7 @@ Anne Imouza:
   alumni: false
   current_role:
     type: Staff
-    title: Admin
+    title: Administrator
     research_directions:
     - poli-sci
   secondary_roles:
@@ -1942,6 +1943,7 @@ Dietlind Stolle:
   current_role:
     type: Faculty / Professor
     title: Professor
+    department: Political Science
   bio: "Dietlind Stolle is the James McGill professor in political science at McGill\
     \ University and fellow of the Royal Society of Canada. She is widely recognized\
     \ both within Canada and internationally as an expert on political behaviour,\
@@ -1956,6 +1958,8 @@ Dietlind Stolle:
   avatar: /assets/images/bio/Dietlind Stolle.jpg
 
   social_media_links:
+  - label: Website
+    url: http://profs-polisci.mcgill.ca/stolle/
   - label: Scholar
     url: https://scholar.google.com/citations?user=mjqHdG4AAAAJ&hl=en
   orcid: 0000-0001-7839-0617
