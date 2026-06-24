@@ -62,6 +62,7 @@ Sahar Ramazan Ali:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Psychology
     start_date: "2025"
     end_date: "2030"
     advisor: Eric Hehman
@@ -248,6 +249,7 @@ Arianna Bondi:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Political Science
     start_date: "2022"
     end_date: "2028"
     advisor: Leonardo Baccini
@@ -923,8 +925,10 @@ Anne Imouza:
   secondary_roles:
   - type: Student
     title: Doctoral Student
-    start_date: "2023"
-    advisor: Dietlind Stolle
+    start_date: "2022"
+    end_date: "2027"
+    advisor: Éric Bélanger
+    department: Political Science
   bio: Administrative lead supporting coordination, operations, and outreach for McGill
     CSDC.
   avatar: /assets/images/bio/Anne Imouza.jpg
@@ -1811,13 +1815,19 @@ Colin Scott:
   team_group: phd_students_and_postdocs
 Sahar Omidi Shayegan:
   name: Sahar Omidi Shayegan
+  alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    start_date: "2023"
+    end_date: "2025"
+    advisor: Reihaneh Rabbany
+    department: Computer Science
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=1K-uTWgAAAAJ
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Eran Shor:
   name: Eran Shor
   avatar: /assets/images/bio/Eran Shor 2.jpg

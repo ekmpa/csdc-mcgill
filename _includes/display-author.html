@@ -100,10 +100,10 @@
         {% if include.role_to_render.type == "Student" and advisor_value != "" and advisor_down != "_no response_" and advisor_down != "no response" %}
         <div class="author-advisor">
             <b>
-                {% if include.role_to_render.title == "Intern" %}
-                Hosted by:
+                {% if advisor_value contains "," %}
+                Advisors:
                 {% else %}
-                Advised by:
+                Advisor:
                 {% endif %}
             </b>
             {{ advisor_value }}
