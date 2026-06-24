@@ -86,8 +86,8 @@ body:
     id: current_role-department
     attributes:
       label: Current Role Department / Département actuel
-      description: Department name for faculty/professors / Nom du département pour les professeur(e)s.
-      placeholder: Political Science / science politique
+      description: Department name / Nom du département.
+      placeholder: Department of Political Science
     validations:
       required: false
 

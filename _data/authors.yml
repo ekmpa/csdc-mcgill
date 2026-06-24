@@ -5,6 +5,7 @@ Aisha Ahmad:
     type: Student
     end_date: "2010"
     title: Doctoral Student
+    department: Political Science
     affiliation: McGill University
   auto_update_publications: false
   team_group: phd_students_and_postdocs
@@ -61,6 +62,8 @@ Mohammed Ali:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Communication Studies
     end_date: "2011"
 
   team_group: phd_students_and_postdocs
@@ -93,17 +96,22 @@ Brianne Anderson:
   team_group: masters_students
 Cameron Anderson:
   name: Cameron Anderson
+  alumni: true
   current_role:
     type: Student
     title: Doctoral Student
+    end_date: "2006"
     affiliation: McGill University
   auto_update_publications: false
   team_group: phd_students_and_postdocs
 Christopher Anderson:
   name: Christopher Anderson
+  alumni: true
   current_role:
     type: Student
     title: Doctoral Student
+    department: Political Science
+    end_date: "2007"
     affiliation: McGill University
   auto_update_publications: false
 
@@ -205,6 +213,7 @@ Sheena Bell:
     type: Student
     end_date: "2010"
     title: Master's Student
+    department: Political Science
     advisor: Éric Bélanger
     affiliation: McGill University
 
@@ -249,9 +258,12 @@ Maxime Blanchard:
   team_group: phd_students_and_postdocs
 Kelly Blidook:
   name: Kelly Blidook
+  alumni: true
   current_role:
     type: Student
     title: Doctoral Student
+    department: Political Science
+    end_date: "2008"
     affiliation: McGill University
   auto_update_publications: false
   team_group: phd_students_and_postdocs
@@ -262,6 +274,7 @@ Marc André Bodet:
     type: Student
     end_date: "2010"
     title: Doctoral Student
+    department: Political Science
     affiliation: McGill University
   auto_update_publications: false
 
@@ -292,9 +305,12 @@ Arianna Bondi:
   team_group: phd_students_and_postdocs
 Maialene Boutin-Wilkins:
   name: Maialene Boutin-Wilkins
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
+    end_date: "2006"
     affiliation: McGill University
   auto_update_publications: false
 
@@ -452,9 +468,11 @@ Sarah Ciaglia:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2012"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Costin Ciobanu:
   name: Costin Ciobanu
   alumni: true
@@ -472,6 +490,7 @@ Ellen Claes:
     type: Student
     end_date: "2010"
     title: Doctoral Student
+    department: Political Science
     affiliation: McGill University
 
   team_group: phd_students_and_postdocs
@@ -537,6 +556,7 @@ Shadia El Dardiry:
     type: Student
     end_date: "2009"
     title: Master's Student
+    department: Political Science
     advisor: Dietlind Stolle
     affiliation: McGill University
 
@@ -590,13 +610,21 @@ Thomas Didier:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2011"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Valérie Doucette:
   name: Valérie Doucette
   alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Communication Studies
+    end_date: "2011"
 
+  team_group: masters_students
 William East:
   name: William East
   alumni: true
@@ -668,6 +696,7 @@ Jean-Simon Farrah:
     end_date: "2010"
     title: Master's Student
     advisor: Dietlind Stolle
+    department: Political Science
     affiliation: McGill University
   auto_update_publications: false
 
@@ -695,7 +724,8 @@ Fernando Feitosa:
 
   team_group: phd_students_and_postdocs
 Aarash Feizi:
-  name: Aarash Feizi
+  name: Aarash Feizi 
+  alumni: true
   current_role:
     type: Student
     title: Doctoral Student
@@ -754,6 +784,9 @@ Patrick Forest:
   alumni: true
   current_role:
     type: Postdoc
+    title: Postdoctoral Fellow
+    department: Geography
+    advisor: Benjamin Forest
     end_date: "2011"
 
   team_group: phd_students_and_postdocs
@@ -762,14 +795,19 @@ Sarah Freund:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2005"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Jorge Frozzini:
   name: Jorge Frozzini
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Communication Studies
     end_date: "2011"
 
   team_group: phd_students_and_postdocs
@@ -881,6 +919,7 @@ Dan Goldberg:
     type: Student
     end_date: "2011"
     title: Doctoral Student
+    department: Communication Studies
     affiliation: McGill University
   auto_update_publications: false
 
@@ -898,9 +937,12 @@ Gaby Gonzalez-Sirois:
   team_group: masters_students
 Elizabeth Goodyear-Grant:
   name: Elizabeth Goodyear-Grant
+  alumni: true
   current_role:
     type: Student
     title: Doctoral Student
+    department: Political Science
+    end_date: "2007"
   team_group: phd_students_and_postdocs
 Adela Gotz:
   name: Adela Gotz
@@ -910,6 +952,7 @@ Adela Gotz:
     end_date: "2010"
     title: Master's Student
     advisor: Éric Bélanger
+    department: Political Science
     affiliation: McGill University
   auto_update_publications: false
   team_group: masters_students
@@ -937,12 +980,22 @@ Birte Gundelach:
 Caroline Habluetzl:
   name: Caroline Habluetzl
   alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Communication Studies
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: phd_students_and_postdocs
 Allison Harell:
   name: Allison Harell
+  alumni: true
   current_role:
     type: Student
     title: Doctoral Student
     advisor: Dietlind Stolle
+    department: Political Science
+    end_date: "2008"
     affiliation: McGill University
   auto_update_publications: false
   team_group: phd_students_and_postdocs
@@ -996,9 +1049,12 @@ Joe Heywood:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2012"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 John Hicks:
   name: John Hicks
   alumni: true
@@ -1017,6 +1073,7 @@ Richard Hink:
     type: Student
     end_date: "2010"
     title: Doctoral Student
+    department: Communication Studies
     affiliation: McGill University
 
   team_group: phd_students_and_postdocs
@@ -1039,23 +1096,30 @@ Sarah Houde:
     type: Student
     title: Master's Student
     advisor: Dietlind Stolle
+    department: Political Science
     affiliation: McGill University
   auto_update_publications: false
   team_group: masters_students
 Emmanuelle Hébert:
   name: Emmanuelle Hébert
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
+    end_date: "2007"
     affiliation: McGill University
   auto_update_publications: false
   team_group: masters_students
 Raffaele Iacovino:
   name: Raffaele Iacovino
+  alumni: true
   current_role:
     type: Student
     title: Doctoral Student
     advisor: Éric Bélanger
+    department: Political Science
+    end_date: "2009"
     affiliation: McGill University
   auto_update_publications: false
 
@@ -1121,6 +1185,7 @@ Natalie Kaiser:
     end_date: "2010"
     title: Master's Student
     advisor: Benjamin Forest
+    department: Geography
     affiliation: McGill University
 
   team_group: masters_students
@@ -1195,27 +1260,37 @@ Kira Killermann:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2012"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Susanna Kislenko:
   name: Susanna Kislenko
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
+    end_date: "2009"
     affiliation: McGill University
   auto_update_publications: false
 
   team_group: masters_students
 Katherine Kline:
   name: Katherine Kline
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2007"
+    title: Master's Student
+    department: Communication Studies
+  team_group: masters_students
 Emma Kondrup:
   name: Emma Kondrup
   current_role:
     type: Staff
     title: Web Developer
-    research_directions:
-    - poli-sci
   secondary_roles:
   - type: Student
     title: Doctoral Student
@@ -1236,6 +1311,7 @@ Angela Kostelko:
     title: Master's Student
     advisor: Dietlind Stolle
     affiliation: McGill University
+    department: Political Science
   auto_update_publications: false
 
   team_group: masters_students
@@ -1269,6 +1345,7 @@ Anna Laurence:
     type: Student
     end_date: "2011"
     title: Master's Student
+    department: Political Science
     advisor: Dietlind Stolle
     affiliation: McGill University
 
@@ -1354,6 +1431,8 @@ Evan Light:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Communication Studies
     end_date: "2012"
 
   team_group: phd_students_and_postdocs
@@ -1381,6 +1460,7 @@ Natalia Lis:
     title: Master's Student
     end_date: "2005"
     advisor: Dietlind Stolle
+    department: Political Science
     affiliation: McGill University
   auto_update_publications: false
   team_group: masters_students
@@ -1391,6 +1471,7 @@ Jean-Baptiste Litrico:
     type: Student
     end_date: "2010"
     title: Doctoral Student
+    department: Communication Studies
     affiliation: McGill University
   auto_update_publications: false
 
@@ -1460,7 +1541,7 @@ Mike Medeiros:
   name: Mike Medeiros
   alumni: true
   current_role:
-    type: postdoc
+    type: Postdoc
     title: Postdoctoral Fellow
     department: Geography
     advisor: Benjamin Forest
@@ -1534,9 +1615,12 @@ Félix Lévesque:
   team_group: masters_students
 Michael Mackenzie:
   name: Michael Mackenzie
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
+    end_date: "2006"
   auto_update_publications: false
   team_group: masters_students
 Shoshana Magnet:
@@ -1546,6 +1630,7 @@ Shoshana Magnet:
     type: Postdoc
     end_date: "2009"
     title: Postdoctoral Fellow
+    department: Communication Studies
     affiliation: McGill University
 
   team_group: phd_students_and_postdocs
@@ -1567,6 +1652,7 @@ Adam Mahon:
     type: Student
     end_date: "2009"
     title: Master's Student
+    department: Political Science
     affiliation: McGill University
   team_group: masters_students
 Victoria Mahon:
@@ -1600,20 +1686,25 @@ Beatrice Marry:
     type: Student
     end_date: "2009"
     title: Master's Student
+    department: Political Science
     advisor: Dietlind Stolle
     affiliation: McGill University
 
   team_group: masters_students
 Janine Marshall:
   name: Janine Marshall
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    end_date: "2007"
+    department: Political Science
     affiliation: McGill University
   auto_update_publications: false
   team_group: masters_students
 Zachary Marshall:
   name: Zachary Marshall
+  alumni: true
   current_role:
     type: Student
     title: Doctoral Student
@@ -1624,6 +1715,7 @@ Zachary Marshall:
   team_group: phd_students_and_postdocs
 Adam Chalmers:
   name: Adam Chalmers
+  alumni: true
   current_role:
     type: Student
     title: Doctoral Student
@@ -1880,6 +1972,7 @@ Bethany Or:
     end_date: "2009"
     title: Master's Student
     advisor: Dietlind Stolle
+    department: Political Science
     affiliation: McGill University
 
   team_group: masters_students
@@ -1922,6 +2015,7 @@ Erin Penner:
     type: Student
     title: Master's Student
     department: Political Science
+    end_date: "2006"
   team_group: masters_students
 Teresa Pian:
   name: Teresa Pian
@@ -1948,9 +2042,12 @@ Myriam Plourde:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
     end_date: "2012"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Farimah Poursafaei:
   name: Farimah Poursafaei
   alumni: true
@@ -2015,9 +2112,12 @@ Rachel Rammal:
   team_group: phd_students_and_postdocs
 Emma-Kate Ranachan:
   name: Emma-Kate Ranachan
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    department: Communication Studies
+    end_date: "2008"
     affiliation: McGill University
   auto_update_publications: false
 
@@ -2026,6 +2126,7 @@ Jeremy Rappel:
   name: Jeremy Rappel
   current_role:
     type: Student
+    title: Doctoral Student
     department: Psychology
     start_date: "2024"
     end_date: "2029"
@@ -2038,18 +2139,24 @@ Jeremy Rappel:
   team_group: phd_students_and_postdocs
 Tim Reeskens:
   name: Tim Reeskens
+  alumni: true
   current_role:
     type: Student
     title: Doctoral Student
+    department: Political Science
+    end_date: "2009"
     affiliation: McGill University
   auto_update_publications: false
 
   team_group: phd_students_and_postdocs
 Ayanna Roberts:
   name: Ayanna Roberts
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
+    end_date: "2006"
     advisor: Dietlind Stolle
   team_group: masters_students
 Christopher Ross:
@@ -2065,10 +2172,13 @@ Christopher Ross:
   team_group: masters_students
 Marie-Pierre Rouette:
   name: Marie-Pierre Rouette
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
     advisor: Éric Bélanger
+    department: Political Science
+    end_date: "2007"
     affiliation: McGill University
   auto_update_publications: false
   team_group: masters_students
@@ -2119,14 +2229,18 @@ Joseph Sannicandro:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Communication Studies
     end_date: "2012"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Steven Schnoor:
   name: Steven Schnoor
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Communication Studies
     end_date: "2013"
 
   team_group: phd_students_and_postdocs
@@ -2202,6 +2316,7 @@ Shane Singh:
     end_date: "2010"
     title: Postdoctoral Fellow
     affiliation: McGill University
+    department: Political Science
   auto_update_publications: false
 
   team_group: phd_students_and_postdocs
@@ -2257,6 +2372,8 @@ Cayley Sorochan:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Communication Studies
     end_date: "2013"
 
   team_group: phd_students_and_postdocs
@@ -2268,6 +2385,7 @@ Cameron Stark:
     end_date: "2010"
     title: Master's Student
     advisor: Éric Bélanger
+    department: Political Science
     affiliation: McGill University
 
   team_group: masters_students
@@ -2276,9 +2394,11 @@ Dominik Stecula:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2012"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Brooke Steinhauer:
   name: Brooke Steinhauer
   current_role:
@@ -2330,6 +2450,7 @@ Vidya Sujaya:
   team_group: masters_students
 Jennifer Suliteanu:
   name: Jennifer Suliteanu
+  alumni: true
   current_role:
     type: Student
     title: Doctoral Student
@@ -2345,17 +2466,23 @@ Jennifer Suliteanu:
   team_group: phd_students_and_postdocs
 Matthew Surch:
   name: Matthew Surch
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    department: Communication Studies
+    end_date: "2008"
     affiliation: McGill University
   auto_update_publications: false
   team_group: masters_students
 Paul Sutton:
   name: Paul Sutton
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
+    end_date: "2009"
     affiliation: McGill University
   auto_update_publications: false
   team_group: masters_students
@@ -2369,6 +2496,7 @@ Neal Thomas:
     type: Student
     end_date: "2011"
     title: Doctoral Student
+    department: Communication Studies
     affiliation: McGill University
 
   team_group: phd_students_and_postdocs
@@ -2388,9 +2516,11 @@ Erika De Torres:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2003"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 David Trotter:
   name: David Trotter
   alumni: true
@@ -2407,9 +2537,11 @@ Marc Trussler:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2013"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Nicolas Vaxelaire:
   name: Nicolas Vaxelaire
   current_role:
@@ -2425,7 +2557,13 @@ Nicolas Vaxelaire:
 Sara Vissers:
   name: Sara Vissers
   alumni: true
+  current_role:
+    type: Postdoc
+    end_date: "2013"
+    title: Postdoctoral Fellow
+    affiliation: McGill University
 
+  team_group: phd_students_and_postdocs
 Derek Volker:
   name: Derek Volker
   alumni: true
@@ -2434,6 +2572,7 @@ Derek Volker:
     end_date: "2011"
     title: Master's Student
     advisor: Dietlind Stolle
+    department: Political Science
     affiliation: McGill University
 
   team_group: masters_students
@@ -2468,9 +2607,11 @@ Julie Whittet:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Communication Studies
     end_date: "2012"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Taisto Witt:
   name: Taisto Witt
   current_role:
@@ -2501,15 +2642,16 @@ Zachary Yang:
   name: Zachary Yang
   current_role:
     type: Student
-    title: Master's Student
-    start_date: "2020"
-    end_date: "2022"
+    title: Doctoral Student
+    start_date: "2022"
+    end_date: "2026"
+    department: Computer Science 
     advisor: Reihaneh Rabbany
   orcid: 0009-0009-6765-2293
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=ljOxbowAAAAJ
-  team_group: masters_students
+  team_group: phd_students_and_postdocs
 Julia Yingling:
   name: Julia Yingling
   alumni: true
@@ -2534,9 +2676,12 @@ Jason R. Young:
   team_group: phd_students_and_postdocs
 Lori Young:
   name: Lori Young
+  alumni: true
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
+    end_date: "2009"
     affiliation: McGill University
   auto_update_publications: false
 
