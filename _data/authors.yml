@@ -787,6 +787,15 @@ Adela Gotz:
     affiliation: McGill University
   auto_update_publications: false
   team_group: masters_students
+Oriana Grosbusch:
+  name: Oriana Grosbusch
+  current_role:
+    type: Student
+    title: PhD
+    title_fr: Doctorat
+    advisor: Eric Belanger
+    department: Department of Political Science
+  team_group: phd_students_and_postdocs
 Giovanni Guiga:
   name: Giovanni Guiga
   alumni: true
