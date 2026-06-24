@@ -352,7 +352,7 @@ div.author-avatar {
 .csdc-people-page .author-card {
     position: relative;
     overflow: hidden;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .csdc-people-page .csdc-container {
@@ -447,53 +447,63 @@ div.author-avatar {
             rgba(200, 16, 46, 0.08) 0%,
             rgba(200, 16, 46, 0.03) 45%,
             rgba(255, 255, 255, 0) 100%);
-    transition: opacity 0.16s ease;
+    transition: opacity 0.28s ease;
 }
 
-.csdc-people-page .author-card:hover,
-.csdc-people-page .author-card:focus-within,
+.csdc-people-page .author-card.author-card--hover-open,
 .csdc-people-page .author-card.author-card--default-open,
-.csdc-people-page .author-card.author-card--active-open {
+.csdc-people-page .author-card.author-card--active-open-visible {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
-.csdc-people-page .author-card:hover::after,
-.csdc-people-page .author-card:focus-within::after,
+.csdc-people-page .author-card.author-card--hover-open::after,
 .csdc-people-page .author-card.author-card--default-open::after,
-.csdc-people-page .author-card.author-card--active-open::after {
+.csdc-people-page .author-card.author-card--active-open-visible::after {
     opacity: 1;
 }
 
-.csdc-people-page .author-card .author-bio,
-.csdc-people-page .author-card .author-note {
-    max-height: 0;
-    opacity: 0;
+.csdc-people-page .author-card .author-expandable {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.62s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: grid-template-rows;
+}
+
+.csdc-people-page .author-card .author-expandable-inner {
+    min-height: 0;
     overflow: hidden;
-    margin-top: 0;
-    transition: max-height 0.3s ease, opacity 0.24s ease, margin-top 0.3s ease;
-    transition-delay: 0s;
+    opacity: 0;
+    padding-top: 0;
+    transform: translateY(6px);
+    transition: opacity 0.42s ease-out, padding-top 0.52s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.5s ease-out;
+    will-change: opacity, padding-top, transform;
 }
 
-.csdc-people-page .author-card:hover .author-bio,
-.csdc-people-page .author-card:focus-within .author-bio,
-.csdc-people-page .author-card.author-card--default-open .author-bio,
-.csdc-people-page .author-card.author-card--active-open .author-bio,
-.csdc-people-page .author-card:hover .author-note,
-.csdc-people-page .author-card:focus-within .author-note,
-.csdc-people-page .author-card.author-card--default-open .author-note,
-.csdc-people-page .author-card.author-card--active-open .author-note {
-    max-height: 60rem;
+.csdc-people-page .author-card.author-card--hover-open .author-expandable,
+.csdc-people-page .author-card.author-card--default-open .author-expandable,
+.csdc-people-page .author-card.author-card--active-open-visible .author-expandable {
+    grid-template-rows: 1fr;
+}
+
+.csdc-people-page .author-card.author-card--hover-open .author-expandable-inner,
+.csdc-people-page .author-card.author-card--default-open .author-expandable-inner,
+.csdc-people-page .author-card.author-card--active-open-visible .author-expandable-inner {
     opacity: 1;
-    margin-top: 0.6rem;
-    transition-delay: 0.06s;
+    padding-top: 0.6rem;
+    transform: translateY(0);
+    transition-delay: 0.05s;
 }
 
 @media (hover: none), (max-width: 720px) {
-    .csdc-people-page .author-card .author-bio,
-    .csdc-people-page .author-card .author-note {
-        max-height: none;
+    .csdc-people-page .author-card .author-expandable {
+        grid-template-rows: 1fr;
+    }
+
+    .csdc-people-page .author-card .author-expandable-inner {
         opacity: 1;
-        margin-top: 0.6rem;
+        padding-top: 0.6rem;
+        transform: translateY(0);
     }
 }
 

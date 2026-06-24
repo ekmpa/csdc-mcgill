@@ -3,6 +3,12 @@
 faculty_to_axes:
   Benjamin Forest:
     - axis_3
+  Dietlind Stolle:
+    - axis_1
+    - axis_2
+    - axis_3
+  Thomas Soehl:
+    - axis_1
   Éric Bélanger:
     - axis_2
     - axis_3

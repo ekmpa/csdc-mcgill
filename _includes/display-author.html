@@ -1,5 +1,5 @@
 <!-- Show author next to post, should show most up to date info -->
-<article class="author-card{% if include.alumni %} author-card--alumni{% endif %}{% if include.compact_avatar %} author-card--compact{% endif %}{% if include.compact_avatar and include.role_to_render and (include.role_to_render.type == 'Student' or include.role_to_render.type == 'Staff' or include.role_to_render.type == 'Postdoc') %} author-card--compact-wide-avatar{% endif %}{% if include.alumni != true and author.name == 'Dietlind Stolle' %} author-card--default-open{% endif %}">
+<article class="author-card{% if include.alumni %} author-card--alumni{% endif %}{% if include.compact_avatar %} author-card--compact{% endif %}{% if include.compact_avatar and include.role_to_render and (include.role_to_render.type == 'Student' or include.role_to_render.type == 'Staff' or include.role_to_render.type == 'Postdoc') %} author-card--compact-wide-avatar{% endif %}{% if include.alumni != true and author.name == 'Leonardo Baccini' %} author-card--default-open{% endif %}">
     {% assign current_path = page.url | default: page.permalink | default: '/' %}
     {% assign is_fr = false %}
     {% if current_path == '/fr/' or current_path contains '/fr/' %}
@@ -110,28 +110,40 @@
         {% else %}
         {% assign bio_value = author.bio %}
         {% endif %}
-        {% if bio_value %}
-        <div class="author-bio">
-            {{ bio_value }}
-        </div>
-        {% endif %}
-
         {% if is_fr and author.note_fr %}
         {% assign note_value = author.note_fr %}
         {% else %}
         {% assign note_value = author.note %}
         {% endif %}
-        {% if note_value %}
-        <div class="author-note">
-            {{ note_value }}
-        </div>
-        {% endif %}
 
         {% assign current_title_value = author.current_role.title | default: "" | strip %}
         {% assign current_title_down = current_title_value | downcase %}
+        {% assign show_current_role_note = false %}
         {% if include.render_current_role == false and include.alumni != true and current_title_value != "" and current_title_down != "_no response_" and current_title_down != "no response" %}
-        <div class="author-note">
-            <b>➡️ </b> {{ author.current_role.title }}
+        {% assign show_current_role_note = true %}
+        {% endif %}
+
+        {% if bio_value or note_value or show_current_role_note %}
+        <div class="author-expandable">
+            <div class="author-expandable-inner">
+                {% if bio_value %}
+                <div class="author-bio">
+                    {{ bio_value }}
+                </div>
+                {% endif %}
+
+                {% if note_value %}
+                <div class="author-note">
+                    {{ note_value }}
+                </div>
+                {% endif %}
+
+                {% if show_current_role_note %}
+                <div class="author-note">
+                    <b>➡️ </b> {{ author.current_role.title }}
+                </div>
+                {% endif %}
+            </div>
         </div>
         {% endif %}
 

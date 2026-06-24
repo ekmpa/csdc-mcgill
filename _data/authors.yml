@@ -1886,6 +1886,7 @@ Thomas Soehl:
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
+    department: Sociology
   bio: Thomas Soehl is an Assistant Professor in the Department of Sociology at McGill
     University. His work mainly examines the themes of international migration, race,
     and ethnicity. More specifically, he studies these themes through the lens of
@@ -1940,7 +1941,7 @@ Dietlind Stolle:
   name: Dietlind Stolle
   current_role:
     type: Faculty / Professor
-    title: "Director & Professor"
+    title: Professor
   bio: "Dietlind Stolle is the James McGill professor in political science at McGill\
     \ University and fellow of the Royal Society of Canada. She is widely recognized\
     \ both within Canada and internationally as an expert on political behaviour,\

@@ -56,32 +56,101 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var cards = Array.prototype.slice.call(document.querySelectorAll('.csdc-people-page .author-card'));
+    var peoplePage = document.querySelector('.csdc-people-page');
     var defaultOpen = document.querySelector('.csdc-people-page .author-card--default-open');
+    var defaultCard = defaultOpen || null;
     var activeCard = null;
+    var hoverCard = null;
+
+    function disableDefaultCard() {
+        if (!defaultCard) {
+            return;
+        }
+        defaultCard.classList.remove('author-card--default-open');
+        defaultCard = null;
+    }
+
+    function syncActiveVisibility() {
+        if (!activeCard) {
+            return;
+        }
+
+        var suppressActiveOpen = !!(hoverCard && hoverCard !== activeCard);
+        activeCard.classList.toggle('author-card--active-open-visible', !suppressActiveOpen);
+        if (peoplePage) {
+            peoplePage.classList.toggle('people-page--suppress-active-open', suppressActiveOpen);
+        }
+    }
+
+    function setHoverCard(nextCard) {
+        if (hoverCard === nextCard) {
+            return;
+        }
+
+        if (hoverCard) {
+            hoverCard.classList.remove('author-card--hover-open');
+        }
+
+        hoverCard = nextCard || null;
+
+        if (hoverCard) {
+            hoverCard.classList.add('author-card--hover-open');
+        }
+
+        syncActiveVisibility();
+    }
 
     function setActiveCard(nextCard) {
         if (!nextCard || activeCard === nextCard) {
             return;
         }
 
+        disableDefaultCard();
+
         if (activeCard) {
             activeCard.classList.remove('author-card--active-open');
+            activeCard.classList.remove('author-card--active-open-visible');
             activeCard.classList.remove('author-card--default-open');
         }
 
         activeCard = nextCard;
         activeCard.classList.remove('author-card--default-open');
         activeCard.classList.add('author-card--active-open');
+        activeCard.classList.add('author-card--active-open-visible');
+        syncActiveVisibility();
     }
 
     if (defaultOpen) {
-        activeCard = defaultOpen;
-        activeCard.classList.add('author-card--active-open');
+        defaultOpen.classList.add('author-card--default-open');
     }
 
     cards.forEach(function (card) {
         card.addEventListener('click', function () {
             setActiveCard(card);
+        });
+
+        card.addEventListener('mouseenter', function () {
+            if (!activeCard && defaultCard && card !== defaultCard) {
+                disableDefaultCard();
+            }
+            setHoverCard(card);
+        });
+
+        card.addEventListener('mouseleave', function () {
+            setHoverCard(null);
+        });
+
+        card.addEventListener('focusin', function () {
+            if (!activeCard && defaultCard && card !== defaultCard) {
+                disableDefaultCard();
+            }
+            setHoverCard(card);
+        });
+
+        card.addEventListener('focusout', function (event) {
+            if (!card.contains(event.relatedTarget)) {
+                setHoverCard(null);
+            }
         });
     });
 
