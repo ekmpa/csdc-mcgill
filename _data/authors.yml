@@ -285,15 +285,14 @@ Aengus Bridgman:
     type: Faculty / Professor
     title: Professor
     department: Political Science
-  bio: Éric Bélanger is Professor of Political Science at McGill University. He 
-    is also a member of the Royal Society of Canada’s College of New Scholars, 
-    Artists and Scientists. Though centered around Quebec and Canadian politics,
-    his research focuses on the general themes of political parties, public 
-    opinion, and voting behaviour using a variety of quantitative methods. Some 
-    of his prior research has been concerned with economic voting and Quebec 
-    provincial elections. He is also involved in research projects studying 
-    voting behaviour in Latin America, as well as a comparison of nationalism in
-    Quebec and Scotland.
+  bio: Éric Bélanger is Professor of Political Science at McGill University. He is
+    also a member of the Royal Society of Canada’s College of New Scholars, Artists
+    and Scientists. Though centered around Quebec and Canadian politics, his research
+    focuses on the general themes of political parties, public opinion, and voting
+    behaviour using a variety of quantitative methods. Some of his prior research
+    has been concerned with economic voting and Quebec provincial elections. He is
+    also involved in research projects studying voting behaviour in Latin America,
+    as well as a comparison of nationalism in Quebec and Scotland.
   orcid: 0000-0003-3289-6000
   social_media_links:
   - label: Scholar
@@ -542,12 +541,12 @@ Aaron Erlich:
     type: Faculty / Professor
     title: Assistant Professor
     department: Political Science
-  bio: Aaron Erlich is an Assistant Professor of Political Science at McGill 
-    University. His research interests concern questions of democratization, 
-    information dissemination, political behavior, political participation, and 
-    public opinion in the Former Soviet Union, Eastern and Southern Africa, and 
-    Mexico. Professor Erlich's research makes use of a variety of methods, such 
-    as field experiments, survey experiments, and mixed-method research designs.
+  bio: Aaron Erlich is an Assistant Professor of Political Science at McGill University.
+    His research interests concern questions of democratization, information dissemination,
+    political behavior, political participation, and public opinion in the Former
+    Soviet Union, Eastern and Southern Africa, and Mexico. Professor Erlich's research
+    makes use of a variety of methods, such as field experiments, survey experiments,
+    and mixed-method research designs.
   orcid: 0000-0001-6571-9081
   avatar: https://github.com/user-attachments/assets/4c441e39-9859-48e0-9440-e743ddbd8838
   social_media_links:
@@ -1827,6 +1826,7 @@ Eran Shor:
     url: https://scholar.google.com/citations?user=vxVIFkIAAAAJ&hl=en&oi=ao
 
   team_group: faculty_members
+  avatar: /assets/images/bio/Eran Shor.jpg
 Eran Shor 2:
   name: Eran Shor
   avatar: /assets/images/bio/Eran Shor 2.jpg
