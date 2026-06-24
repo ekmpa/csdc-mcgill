@@ -108,6 +108,25 @@ def _normalize_role_title(value: str) -> str:
     return cleaned
 
 
+def _infer_role_type_from_title(role_title: str) -> str:
+    """Infer a role type from a free-text role title when type is omitted."""
+    if _is_empty_response(role_title):
+        return ""
+
+    norm = _normalize_heading_key(str(role_title))
+    if "professor" in norm or "professeur" in norm or "faculty" in norm:
+        return "Faculty / Professor"
+    if "postdoc" in norm or "postdoctor" in norm or "postdoctoral" in norm:
+        return "Postdoc"
+    if "student" in norm or "phd" in norm or "doctor" in norm or "master" in norm or "maitrise" in norm:
+        return "Student"
+    if "admin" in norm or "administrator" in norm or "staff" in norm or "coordinator" in norm or "developer" in norm:
+        return "Staff"
+    if "collaborator" in norm or "collaborateur" in norm:
+        return "Collaborator"
+    return ""
+
+
 def _normalize_team_group(value: str) -> str:
     """Normalize team group labels to canonical keys used by the People page."""
     if _is_empty_response(value):
@@ -274,6 +293,9 @@ def format_social_media_links(parsed: Dict) -> List[Dict]:
 def process_role_data(parsed: Dict, prefix: str = "") -> Optional[Dict]:
     """Process role data from parsed content with optional prefix."""
     role_type = _normalize_role_type(parsed.get(f"{prefix}type"))
+    if _is_empty_response(role_type):
+        inferred_from_title = _infer_role_type_from_title(_first_non_empty(parsed, f"{prefix}title", f"{prefix}title_french"))
+        role_type = inferred_from_title
     if _is_empty_response(role_type):
         return None
 
