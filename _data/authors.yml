@@ -1065,6 +1065,7 @@ Emma Kondrup:
   - type: Student
     title: Doctoral Student
     start_date: "2026"
+    end_date: "2031"
     advisor: Reihaneh Rabbany, Catherine Régis
   bio: Web developer maintaining the McGill CSDC website and publication/member update
     workflow.
