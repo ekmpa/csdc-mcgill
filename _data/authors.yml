@@ -30,25 +30,32 @@ Fagar Al-Sayed:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2025"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Hubert Alain:
   name: Hubert Alain
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Communication Studies
     end_date: "2015"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Quinn Albaugh:
   name: Quinn Albaugh
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2014"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Mohammed Ali:
   name: Mohammed Ali
   alumni: true
@@ -106,9 +113,12 @@ Henry Atkins:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
     end_date: "2022"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Borna Atrchian:
   name: Borna Atrchian
   current_role:
@@ -124,9 +134,12 @@ Ayhan Eren Babayigit:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
     end_date: "2025"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Leonardo Baccini:
   name: Leonardo Baccini
   current_role:
@@ -148,14 +161,19 @@ Maxime Barbeau:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Economics
     end_date: "2016"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Patrizia Barbone:
   name: Patrizia Barbone
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Geography
+    advisor: Benjamin Forest
     end_date: "2013"
 
   team_group: phd_students_and_postdocs
@@ -164,6 +182,9 @@ Edana Beauvais:
   alumni: true
   current_role:
     type: Postdoc
+    title: Postdoctoral Fellow 
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2019"
 
   team_group: phd_students_and_postdocs
@@ -172,9 +193,11 @@ Jessica Behnke:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student 
+    department: Political Science
     end_date: "2013"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Sheena Bell:
   name: Sheena Bell
   alumni: true
@@ -191,9 +214,12 @@ Olivier Bergeron-Boutin:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2024"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Elissa Berwick:
   name: Elissa Berwick
   avatar: /assets/images/bio/Elissa Berwick 2.jpg
@@ -215,6 +241,9 @@ Maxime Blanchard:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2024"
 
   team_group: phd_students_and_postdocs
@@ -242,9 +271,12 @@ Danielle Bohonos:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2023"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Arianna Bondi:
   name: Arianna Bondi
   current_role:
@@ -272,14 +304,19 @@ Tyler Braun:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Communication Studies
     end_date: "2013"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Aengus Bridgman:
   name: Aengus Bridgman
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2023"
 
   team_group: phd_students_and_postdocs
@@ -309,6 +346,9 @@ Albert Manuel Orozco Camacho:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Computer Science
+    advisor: Reihaneh Rabbany
     end_date: "2023"
 
   team_group: phd_students_and_postdocs
@@ -317,9 +357,11 @@ Xavier Campbell:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2015"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Rafael Campos-Gottardo:
   name: Rafael Campos-Gottardo
   current_role:
@@ -341,6 +383,9 @@ Ana Canedo:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Thomas Soehl
     end_date: "2023"
 
   team_group: phd_students_and_postdocs
@@ -348,7 +393,10 @@ Yvonne Chang:
   name: Yvonne Chang
   alumni: true
   current_role:
-    title: MA
+    type: Student
+    title: Doctoral Student
+    advisor: Thomas Soehl
+    department: Sociology
     end_date: "2023"
 
   team_group: phd_students_and_postdocs
@@ -357,17 +405,23 @@ Philippe Chassé:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
     end_date: "2021"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Annie Chen:
   name: Annie Chen
   alumni: true
   current_role:
     type: Student
+    title: Master's Student 
+    department: Political Science
+    advisor: Aaron Erlich
     end_date: "2020"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Kefan Chen:
   name: Kefan Chen
   current_role:
@@ -387,6 +441,9 @@ Chris Chimm:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Eric Bélanger
     end_date: "2016"
 
   team_group: phd_students_and_postdocs
@@ -403,6 +460,8 @@ Costin Ciobanu:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Political Science
     end_date: "2022"
 
   team_group: phd_students_and_postdocs
@@ -421,9 +480,12 @@ Ethan Clow:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2023"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Guila Cohen:
   name: Guila Cohen
   current_role:
@@ -441,14 +503,19 @@ Maxime Coulon-Hamelin:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
     end_date: "2022"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Bolette Danckert:
   name: Bolette Danckert
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Political Science
     end_date: "2014"
 
   team_group: phd_students_and_postdocs
@@ -457,9 +524,12 @@ Jacob Danovitch:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Computer Science
+    advisor: Reihaneh Rabbany
     end_date: "2023"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Shadia El Dardiry:
   name: Shadia El Dardiry
   alumni: true
@@ -488,14 +558,20 @@ Natalie Delmonte:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Elissa Berwick
     end_date: "2024"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Didem Demirag:
   name: Didem Demirag
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Computer Science
+    advisor: Jeremy Clark
     end_date: "2022"
 
   team_group: phd_students_and_postdocs
@@ -504,9 +580,11 @@ Clare Devereux:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2015"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Thomas Didier:
   name: Thomas Didier
   alumni: true
@@ -524,22 +602,30 @@ William East:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2019"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Merve Erdilmen:
   name: Merve Erdilmen
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2018"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Chris Erl:
   name: Chris Erl
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Geography 
+    advisor: Benjamin Forest
     end_date: "2022"
 
   team_group: phd_students_and_postdocs
@@ -591,14 +677,20 @@ Andréa Febres-Gagné:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
     end_date: "2022"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Fernando Feitosa:
   name: Fernando Feitosa
   alumni: true
   current_role:
     type: Postdoc
+    title: Postdoctoral Fellow
+    department: Political Science
+    advisor: Eric Bélanger
     end_date: "2022"
 
   team_group: phd_students_and_postdocs
@@ -622,6 +714,8 @@ Benjamin Ferland:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student 
+    department: Political Science
     end_date: "2015"
 
   team_group: phd_students_and_postdocs
@@ -630,6 +724,9 @@ Ina Filkobski:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Eran Shor
     end_date: "2022"
 
   team_group: phd_students_and_postdocs
@@ -681,22 +778,40 @@ Etienne Gagnon:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
     end_date: "2020"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Thomas Gareau-Paquette:
   name: Thomas Gareau-Paquette
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Belanger
     end_date: "2024"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
+Sekoul Krastev:
+  name: Sekoul Krastev
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Neurology and Neurosurgery
+    end_date: "2015"
+
+  team_group: masters_students
 Holly Garnett:
   name: Holly Garnett
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Political Science
     end_date: "2017"
 
   team_group: phd_students_and_postdocs
@@ -705,6 +820,9 @@ Lara Gauthier:
   alumni: true
   current_role:
     type: Postdoc
+    title: Postdoctoral Fellow
+    department: Sociology
+    advisor: Thomas Soehl
     end_date: "2020"
 
   team_group: phd_students_and_postdocs
@@ -713,9 +831,12 @@ Daniel St. Germaine:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2021"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Kassandra Gervasi:
   name: Kassandra Gervasi
   current_role:
@@ -748,9 +869,11 @@ Claire Girard:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Communication Studies
     end_date: "2013"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Dan Goldberg:
   name: Dan Goldberg
   alumni: true
@@ -767,9 +890,12 @@ Gaby Gonzalez-Sirois:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
     end_date: "2019"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Elizabeth Goodyear-Grant:
   name: Elizabeth Goodyear-Grant
   current_role:
@@ -790,12 +916,21 @@ Adela Gotz:
 Giovanni Guiga:
   name: Giovanni Guiga
   alumni: true
+  current_role:
+      type: Student
+      title: Master's Student
+      department: Political Science 
+      advisor: Eric Bélanger
+      end_date: "2020"
 
+  team_group: masters_students
 Birte Gundelach:
   name: Birte Gundelach
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Political Science
     end_date: "2013"
 
   team_group: phd_students_and_postdocs
@@ -813,21 +948,18 @@ Allison Harell:
   team_group: phd_students_and_postdocs
 Ian Van Haren:
   name: Ian Van Haren
-  alumni: true
   current_role:
     type: Student
-    end_date: "2023"
+    title: Doctoral Student
+    department: Sociology
+    start_date: "2024"
+    end_date: "2026"
+    advisor: Thomas Soehl
   orcid: 0000-0002-1818-7577
   avatar: /assets/images/bio/Ian Van Haren.jpg
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=_0j4tPAAAAAJ
-
-  team_group: phd_students_and_postdocs
-Ian Van Haren 2:
-  name: Ian Van Haren
-  current_role:
-    type: Student
 
   team_group: phd_students_and_postdocs
 Eric Hehman:
@@ -854,9 +986,11 @@ Shaden Hetu-Frankel:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2022"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Joe Heywood:
   name: Joe Heywood
   alumni: true
@@ -870,9 +1004,12 @@ John Hicks:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Leonardo Baccini
     end_date: "2024"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Richard Hink:
   name: Richard Hink
   alumni: true
@@ -888,6 +1025,7 @@ Esme Hood:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Sociology
     start_date: "2025"
     end_date: "2030"
     advisor: Eran Shor
@@ -946,7 +1084,10 @@ Olivier Jacques:
   name: Olivier Jacques
   alumni: true
   current_role:
-    type: Student
+    type: Student 
+    title: Doctoral Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2021"
 
   team_group: phd_students_and_postdocs
@@ -967,6 +1108,8 @@ Jeroen Joly:
   alumni: true
   current_role:
     type: Postdoc
+    title: Postdoctoral Fellow
+    department: Political Science
     end_date: "2014"
 
   team_group: phd_students_and_postdocs
@@ -986,14 +1129,19 @@ Janine Kanters:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2016"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Sakeef Karim:
   name: Sakeef Karim
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Thomas Soehl
     end_date: "2022"
 
   team_group: phd_students_and_postdocs
@@ -1002,6 +1150,7 @@ Jordan Katz:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Sociology
     start_date: "2023"
     end_date: "2028"
     advisor: Thomas Soehl
@@ -1013,14 +1162,19 @@ Dilse Kaygisiz:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student 
+    department: Political Science
+    advisor: Aaron Erlich
     end_date: "2022"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Anthony Kevins:
   name: Anthony Kevins
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Political Science
     end_date: "2014"
 
   team_group: phd_students_and_postdocs
@@ -1028,6 +1182,7 @@ Khaoula El Khalil:
   name: Khaoula El Khalil
   current_role:
     type: Student
+    title: Doctoral Student
     start_date: "2022"
     end_date: "2026"
     advisor: Éric Bélanger
@@ -1064,6 +1219,7 @@ Emma Kondrup:
   secondary_roles:
   - type: Student
     title: Doctoral Student
+    department: Computer Science
     start_date: "2026"
     end_date: "2031"
     advisor: Reihaneh Rabbany, Catherine Régis
@@ -1088,6 +1244,7 @@ Maya Krishnan:
   current_role:
     type: Student
     title: Doctorate Student
+    department: Sociology
     start_date: "2023"
     end_date: "2028"
     advisor: Eran Shor
@@ -1098,6 +1255,9 @@ Freya Lambrechts:
   name: Freya Lambrechts
   alumni: true
   current_role:
+    title: Doctoral Student
+    department: Sociology
+    advisor: Eran Shor
     type: Student
     end_date: "2023"
 
@@ -1118,26 +1278,41 @@ Mathieu Lavigne:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Eric Bélanger
     end_date: "2023"
 
   team_group: phd_students_and_postdocs
 Andrea Lawlor:
   name: Andrea Lawlor
   alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    end_date: "2013"
+
+  team_group: phd_students_and_postdocs
 
 Sarah Lebeau:
   name: Sarah Lebeau
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2017"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Zoé Hyman Levy:
   name: Zoé Hyman Levy
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Eran Shor
     end_date: "2024"
 
   team_group: phd_students_and_postdocs
@@ -1146,8 +1321,10 @@ Qinggang Li:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Political Science
     start_date: "2024"
     end_date: "2029"
+    advisor: Aaron Erlich
   bio: Qinggang is generally interested in state-society relations and the political
     economy of developing countries. He is currently working on how different forms
     of patron-client relations affect development and state capacity in developing
@@ -1161,9 +1338,10 @@ Rupinder Liddar:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Political Science
     start_date: "2021"
     end_date: "2026"
-    advisor: Éric Bélanger
+    advisor: Éric Bélanger, Dietlind Stolle
   orcid: 0000-0002-2884-5684
   avatar: /assets/images/bio/Rupinder Liddar.jpg
   social_media_links:
@@ -1184,6 +1362,7 @@ Travis Lim:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Psychology
     start_date: "2022"
     end_date: "2026"
     advisor: Eric Hehman
@@ -1221,6 +1400,7 @@ Xuanchi Liu:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Sociology
     start_date: "2023"
     end_date: "2028"
     advisor: Eran Shor
@@ -1231,6 +1411,7 @@ Victor Livernoche:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Computer Science
     start_date: "2024"
     end_date: "2029"
     advisor: Reihaneh Rabbany
@@ -1270,7 +1451,20 @@ Jasmine Lorenzini:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Political Science
     end_date: "2013"
+
+  team_group: phd_students_and_postdocs
+Mike Medeiros:
+  name: Mike Medeiros
+  alumni: true
+  current_role:
+    type: postdoc
+    title: Postdoctoral Fellow
+    department: Geography
+    advisor: Benjamin Forest
+    end_date: "2017"
 
   team_group: phd_students_and_postdocs
 Zekai Lu:
@@ -1278,6 +1472,7 @@ Zekai Lu:
   current_role:
     type: Student
     title: Master's Student
+    department: Sociology
     start_date: "2023"
     end_date: "2025"
     advisor: Eran Shor
@@ -1321,6 +1516,8 @@ Justin Lutz:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Communication Studies
     end_date: "2015"
 
   team_group: phd_students_and_postdocs
@@ -1329,9 +1526,12 @@ Félix Lévesque:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Éric Bélanger
     end_date: "2024"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Michael Mackenzie:
   name: Michael Mackenzie
   current_role:
@@ -1354,9 +1554,12 @@ Pratik Mahajan:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
     end_date: "2024"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Adam Mahon:
   name: Adam Mahon
   alumni: true
@@ -1371,6 +1574,7 @@ Victoria Mahon:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Political Science
     start_date: "2023"
     end_date: "2028"
     advisor: Dietlind Stolle
@@ -1383,9 +1587,12 @@ Brett Manzer:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
     end_date: "2018"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Beatrice Marry:
   name: Beatrice Marry
   alumni: true
@@ -1407,10 +1614,21 @@ Janine Marshall:
   team_group: masters_students
 Zachary Marshall:
   name: Zachary Marshall
-  alumni: true
   current_role:
     type: Student
-    end_date: "2023"
+    title: Doctoral Student
+    department: Sociology
+    advisor: Thomas Soehl
+    end_date: "2024"
+
+  team_group: phd_students_and_postdocs
+Adam Chalmers:
+  name: Adam Chalmers
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    end_date: "2013"
 
   team_group: phd_students_and_postdocs
 Nick Maturo:
@@ -1418,9 +1636,11 @@ Nick Maturo:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Communication Studies
     end_date: "2015"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Julia Maynard:
   name: Julia Maynard
   alumni: true
@@ -1434,22 +1654,30 @@ Abigail Chaya Maza:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Sociology
+    advisor: Thomas Soehl
     end_date: "2023"
 
-  team_group: phd_students_and_postdocs
+
+  team_group: masters_students
 Andrew McCormack:
   name: Andrew McCormack
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2019"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Aiden McIlvaney:
   name: Aiden McIlvaney
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
     start_date: "2025"
     end_date: "2027"
     advisor: Aaron Erlich
@@ -1461,6 +1689,7 @@ Katerina McMulen:
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
     start_date: "2024"
     end_date: "2026"
     advisor: Aaron Erlich
@@ -1471,6 +1700,9 @@ Denver McNeney:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2019"
 
   team_group: phd_students_and_postdocs
@@ -1479,14 +1711,17 @@ Eric Merkley:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2013"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Ezelbahar Metin:
   name: Ezelbahar Metin
   current_role:
     type: Student
     title: Doctoral Student
+    department: Sociology
     start_date: "2023"
     end_date: "2028"
     advisor: Eran Shor
@@ -1496,12 +1731,22 @@ Ezelbahar Metin:
 Paulina Mickiewicz:
   name: Paulina Mickiewicz
   alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Communication Studies
+    end_date: "2013"
+
+  team_group: phd_students_and_postdocs
 
 Alexandre Miltsov:
   name: Alexandre Miltsov
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Eran Shor
     end_date: "2018"
 
   team_group: phd_students_and_postdocs
@@ -1510,6 +1755,9 @@ Philippe Mongrain:
   alumni: true
   current_role:
     type: Postdoc
+    title: Postdoctoral Fellow
+    department: Political Science
+    advisor: Eric Bélanger
     end_date: "2023"
 
   team_group: phd_students_and_postdocs
@@ -1518,6 +1766,9 @@ Isadora Borges Monroy:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2023"
 
   team_group: phd_students_and_postdocs
@@ -1526,6 +1777,9 @@ Mahsa Moosavi:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Computer Science 
+    advisor: Jeremy Clark
     end_date: "2022"
 
   team_group: phd_students_and_postdocs
@@ -1534,42 +1788,61 @@ Anaïs Légaré Morasse:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2018"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Brad Morrison:
   name: Brad Morrison
   alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    end_date: "2018"
 
+  team_group: phd_students_and_postdocs
 Emma Myhre:
   name: Emma Myhre
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
     end_date: "2023"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Rosalie Nadeau:
   name: Rosalie Nadeau
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2018"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Mahdi Nejadgholi:
   name: Mahdi Nejadgholi
   alumni: true
   current_role:
+    title: Master's Student
+    department: Institute for Information Systems Engineering
+    advisor: Jeremy Clark
     type: Student
     end_date: "2023"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Alan Nemirovski:
   name: Alan Nemirovski
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
     start_date: "2025"
     end_date: "2027"
     advisor: Dietlind Stolle
@@ -1582,6 +1855,9 @@ Ka U Ng:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Thomas Soehl
     end_date: "2023"
 
   team_group: phd_students_and_postdocs
@@ -1590,6 +1866,9 @@ Eugene Ofosu:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Psychology
+    advisor: Eric Hehman
     end_date: "2023"
 
   team_group: phd_students_and_postdocs
@@ -1609,18 +1888,30 @@ Saewon Park:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
     end_date: "2019"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Eva Falk Pedersen:
   name: Eva Falk Pedersen
   alumni: true
-
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
+    end_date: "2013"
+  team_group: masters_students
 Kellin Pelrine:
   name: Kellin Pelrine
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Computer Science
+    advisor: Reihaneh Rabbany
     end_date: "2025"
 
   team_group: phd_students_and_postdocs
@@ -1637,6 +1928,7 @@ Teresa Pian:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Political Science
     start_date: "2024"
     end_date: "2029"
     advisor: Dietlind Stolle
@@ -1703,6 +1995,9 @@ Reza Rahimian:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Computer Science
+    advisor: Jeremy Clark
     end_date: "2022"
 
   team_group: phd_students_and_postdocs
@@ -1711,6 +2006,9 @@ Rachel Rammal:
   current_role:
     type: Student
     title: Doctorate Student
+    department: Sociology
+    start_date: "2020"
+    end_date: "2025"
     advisor: Thomas Soehl
     affiliation: McGill University
   auto_update_publications: false
@@ -1728,6 +2026,7 @@ Jeremy Rappel:
   name: Jeremy Rappel
   current_role:
     type: Student
+    department: Psychology
     start_date: "2024"
     end_date: "2029"
     advisor: Eric Hehman
@@ -1758,9 +2057,12 @@ Christopher Ross:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
     end_date: "2023"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Marie-Pierre Rouette:
   name: Marie-Pierre Rouette
   current_role:
@@ -1775,6 +2077,9 @@ Nick Ruderman:
   alumni: true
   current_role:
     type: Postdoc
+    title: Postdoctoral Fellow
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2019"
 
   team_group: phd_students_and_postdocs
@@ -1783,6 +2088,8 @@ Rafico Ruiz:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Communication Studies
     end_date: "2014"
 
   team_group: phd_students_and_postdocs
@@ -1791,17 +2098,22 @@ Cassandra Ryan:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
     end_date: "2020"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Daniel Sailofsky:
   name: Daniel Sailofsky
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2022"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Joseph Sannicandro:
   name: Joseph Sannicandro
   alumni: true
@@ -1823,11 +2135,14 @@ Colin Scott:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2024"
 
   team_group: phd_students_and_postdocs
-Sahar Omidi Shayegan:
-  name: Sahar Omidi Shayegan
+Sahar Omid Shayegan:
+  name: Sahar Omid Shayegan
   alumni: true
   current_role:
     type: Student
@@ -1863,13 +2178,16 @@ Sula Sidnell-Green:
   current_role:
     type: Student
     end_date: "2015"
+    title: Master's Student 
+    department: Communication Studies
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Harpeet Singh:
   name: Harpeet Singh
   current_role:
     type: Student
     title: Doctoral Student
+    department: Economics
     start_date: "2025"
     end_date: "2030"
     advisor: Nicolas Ajzenman
@@ -1892,6 +2210,7 @@ Shane Singh:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Political Science
     start_date: "2025"
     end_date: "2030"
     advisor: Juan Pablo Luna
@@ -1907,9 +2226,12 @@ Alan Michael Smith:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
     end_date: "2022"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Thomas Soehl:
   name: Thomas Soehl
   current_role:
@@ -1961,6 +2283,7 @@ Brooke Steinhauer:
   name: Brooke Steinhauer
   current_role:
     type: Student
+    department: Political Science
     start_date: "2021"
     end_date: "2026"
     advisor: Dietlind Stolle
@@ -1999,6 +2322,7 @@ Vidya Sujaya:
   current_role:
     type: Student
     title: Master's Student
+    department: Computer Science
     start_date: "2024"
     end_date: "2026"
     advisor: Reihaneh Rabbany
@@ -2009,6 +2333,7 @@ Jennifer Suliteanu:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Psychology
     start_date: "2020"
     end_date: "2024"
     advisor: Eric Hehman
@@ -2052,9 +2377,12 @@ Hamid Ali Tiwana:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
     end_date: "2024"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Erika De Torres:
   name: Erika De Torres
   alumni: true
@@ -2068,9 +2396,12 @@ David Trotter:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student 
+    department: Political Science
+    advisor: Eric Bélanger
     end_date: "2016"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Marc Trussler:
   name: Marc Trussler
   alumni: true
@@ -2084,6 +2415,7 @@ Nicolas Vaxelaire:
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
     start_date: "2024"
     end_date: "2026"
     advisor: Dietlind Stolle
@@ -2110,6 +2442,8 @@ Angelia Wagner:
   alumni: true
   current_role:
     type: Postdoc
+    title: Postdoctoral Fellow
+    department: Political Science
     end_date: "2017"
 
   team_group: phd_students_and_postdocs
@@ -2118,6 +2452,7 @@ Michelle Wang:
   current_role:
     type: Student
     title: Master's Student
+    department: Sociology
     start_date: "2025"
     end_date: "2027"
     advisor: Thomas Soehl
@@ -2141,6 +2476,7 @@ Taisto Witt:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Sociology
     start_date: "2022"
     end_date: "2026"
     advisor: Eran Shor
@@ -2155,6 +2491,9 @@ Chih-lan Winnie Yang:
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Eran Shor
     end_date: "2025"
 
   team_group: phd_students_and_postdocs
@@ -2175,15 +2514,21 @@ Julia Yingling:
   name: Julia Yingling
   alumni: true
   current_role:
-    type: Postdoc
+    type: Student
+    title: Master's Student
+    department: Geography
+    advisor: Benjamin Forest
     end_date: "2025"
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Jason R. Young:
   name: Jason R. Young
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Geography
+    advisor: Benjamin Forest
     end_date: "2015"
 
   team_group: phd_students_and_postdocs
@@ -2201,13 +2546,18 @@ Chris Yurris:
   alumni: true
   current_role:
     type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Éric Bélanger
     end_date: "2024"
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Ali Zeren:
   name: Ali Zeren
   alumni: true
   current_role:
     type: Student
+    title: Doctoral Student
+    department: Sociology
     end_date: "2017"
 
   team_group: phd_students_and_postdocs
