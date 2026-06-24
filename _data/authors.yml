@@ -281,7 +281,6 @@ Aengus Bridgman:
   current_role:
     type: Faculty / Professor
     title: Professor
-    start_date: "2003"
   bio: Éric Bélanger is Professor of Political Science at McGill University. He 
     is also a member of the Royal Society of Canada’s College of New Scholars, 
     Artists and Scientists. Though centered around Quebec and Canadian politics,
@@ -464,10 +463,15 @@ Shadia El Dardiry:
 Rebecca Daviddi:
   name: Rebecca Daviddi
   current_role:
-    type: Faculty / Professor
+    type: Student
+    title: Doctoral Student
+    start_date: "2020"
+    end_date: "2023"
+    advisor: Eran Shor
+    department: Sociology
   orcid: 0009-0009-7176-0115
   auto_update_publications: true
-  team_group: faculty_members
+  team_group: phd_students_and_postdocs
 Natalie Delmonte:
   name: Natalie Delmonte
   alumni: true
@@ -533,7 +537,6 @@ Aaron Erlich:
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
-    start_date: "2016"
   bio: Aaron Erlich is an Assistant Professor of Political Science at McGill 
     University. His research interests concern questions of democratization, 
     information dissemination, political behavior, political participation, and 
@@ -623,6 +626,7 @@ Benjamin Forest:
   current_role:
     type: Faculty / Professor
     title: Associate Professor
+    department: Geography
   bio: Benjamin Forest is an Associate Professor at McGill University in the 
     Department of Geography as well as an Associate Member of the Department of 
     Political Science. A specialist in the field of political geography, his 
@@ -1601,12 +1605,12 @@ Kellin Pelrine:
   team_group: phd_students_and_postdocs
 Erin Penner:
   name: Erin Penner
+  alumni: true
   current_role:
-    type: Faculty / Professor
+    type: Student
     title: Master's Student
-    affiliation: McGill University
-  auto_update_publications: false
-  team_group: faculty_members
+    department: Political Science
+  team_group: masters_students
 Teresa Pian:
   name: Teresa Pian
   current_role:
