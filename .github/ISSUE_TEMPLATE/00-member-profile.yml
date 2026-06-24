@@ -31,8 +31,8 @@ body:
     id: current_role-start_date
     attributes:
       label: Start Date / Date de début
-      description: When did you join the center? (Month YYYY) / Quand avez-vous rejoint le centre? (Mois AAAA)
-      placeholder: Fall 2024 
+      description: Enter start year only (YYYY) / Entrez seulement l'annee de debut (AAAA)
+      placeholder: "2024"
     validations:
       required: false
 
@@ -40,8 +40,8 @@ body:
     id: current_role-end_date
     attributes:
       label: End Date (Alumni only) / Date de fin (anciens membres seulement)
-      description: When did you leave? Leave blank for current members. / Quand avez-vous quitté? Laisser vide pour les membres actuels.
-      placeholder: Spring 2026
+      description: Enter end year only (YYYY). Leave blank for current members. / Entrez seulement l'annee de fin (AAAA). Laisser vide pour les membres actuels.
+      placeholder: "2026"
     validations:
       required: false
 
