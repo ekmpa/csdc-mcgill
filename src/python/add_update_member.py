@@ -49,6 +49,29 @@ def _find_existing_username_by_name(authors: Dict, profile_name: str) -> Optiona
     return sorted(matches, key=lambda key: (len(key), key))[0]
 
 
+def _sync_avatar_for_same_name_entries(authors: Dict, username: str, avatar_path: str) -> None:
+    """Keep avatar consistent across duplicate same-name entries for staff edge cases."""
+    if not avatar_path:
+        return
+
+    base_profile = authors.get(username, {}) or {}
+    role_type = str((base_profile.get("current_role") or {}).get("type", "") or "")
+    if role_type != "Staff":
+        return
+
+    target_name = str(base_profile.get("name", "") or "")
+    target_norm = _normalize_member_name_for_match(target_name)
+    if not target_norm:
+        return
+
+    for other_username, other_profile in authors.items():
+        if other_username == username:
+            continue
+        other_name = str((other_profile or {}).get("name", "") or "")
+        if _normalize_member_name_for_match(other_name) == target_norm:
+            authors[other_username]["avatar"] = avatar_path
+
+
 def _normalize_role_type(value: str) -> str:
     """Map bilingual/variant role labels to canonical role types used by templates."""
     if _is_empty_response(value):
@@ -473,6 +496,7 @@ def main(parsed: Dict, action: str = "", site_data_dir: str = "_data/", image_di
 
     if img_path is not None:
         authors[username]["avatar"] = img_path
+        _sync_avatar_for_same_name_entries(authors, username, img_path)
 
     sort_by_lastname(authors)
 
