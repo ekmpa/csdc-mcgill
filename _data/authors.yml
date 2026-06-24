@@ -325,6 +325,7 @@ Rafael Campos-Gottardo:
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
     start_date: "2023"
     end_date: "2025"
     advisor: Aaron Erlich
@@ -372,6 +373,7 @@ Kefan Chen:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Economics
     start_date: "2025"
     end_date: "2030"
     advisor: Nicolas Ajzenman
@@ -427,6 +429,7 @@ Guila Cohen:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Political Science
     start_date: "2022"
     end_date: "2026"
     advisor: Dietlind Stolle
@@ -564,6 +567,7 @@ Garrett Evans:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Economics
     start_date: "2025"
     end_date: "2030"
     advisor: Nicolas Ajzenman
@@ -603,6 +607,7 @@ Aarash Feizi:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Computer Science
     start_date: "2019"
     end_date: "2024"
     advisor: Reihaneh Rabbany
@@ -716,6 +721,7 @@ Kassandra Gervasi:
   current_role:
     type: Student
     title: Master's Student
+    department: Political Science
     start_date: "2025"
     end_date: "2027"
     advisor: Leonardo Baccini
@@ -1019,10 +1025,12 @@ Anthony Kevins:
   team_group: phd_students_and_postdocs
 Khaoula El Khalil:
   name: Khaoula El Khalil
-  alumni: true
   current_role:
     type: Student
-    end_date: "2022"
+    start_date: "2022"
+    end_date: "2026"
+    advisor: Éric Bélanger
+    department: Political Science
   avatar: /assets/images/bio/Khaoula El Khalil.jpg
   auto_update_publications: false
   team_group: phd_students_and_postdocs
@@ -1636,9 +1644,11 @@ Nathan Di Pinto:
   name: Nathan Di Pinto
   current_role:
     type: Student
+    title: Master's Student
+    department: Geography
     advisor: Benjamin Forest
 
-  team_group: phd_students_and_postdocs
+  team_group: masters_students
 Myriam Plourde:
   name: Myriam Plourde
   alumni: true
