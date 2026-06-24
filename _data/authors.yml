@@ -13,13 +13,12 @@ Nicolas Ajzenman:
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
-  bio: Nicolas Ajzenman is an Assistant Professor at McGill (Economics 
-    Department) and an affiliated professor at J-PAL and IZA. He is working at 
-    the intersection of development economics, behavioral economics, and 
-    political economy. His research has appeared or is forthcoming in top 
-    scientific journals such as the American Economic Journal.
-  avatar: 
-    https://github.com/user-attachments/assets/a0df0780-8d08-4e46-aaac-2bc460ee3b7b
+  bio: Nicolas Ajzenman is an Assistant Professor at McGill (Economics Department)
+    and an affiliated professor at J-PAL and IZA. He is working at the intersection
+    of development economics, behavioral economics, and political economy. His research
+    has appeared or is forthcoming in top scientific journals such as the American
+    Economic Journal.
+  avatar: https://github.com/user-attachments/assets/a0df0780-8d08-4e46-aaac-2bc460ee3b7b
   social_media_links:
   - label: Scholar
     url: https://scholar.google.ca/citations?user=MdFqDJkAAAAJ&hl=en&oi=ao
@@ -129,10 +128,10 @@ Leonardo Baccini:
   current_role:
     type: Faculty / Professor
     title: Associate Professor
-  bio: Leonardo Baccini is an Associate Professor in the Department of Political
-    Science at McGill University. His research interests are in the area of 
-    international political economy and comparative political economy with a 
-    focus on the political effects of structural economic transformations.
+  bio: Leonardo Baccini is an Associate Professor in the Department of Political Science
+    at McGill University. His research interests are in the area of international
+    political economy and comparative political economy with a focus on the political
+    effects of structural economic transformations.
   orcid: 0000-0002-6027-9192
   avatar: /assets/images/bio/Leonardo Baccini.jpg
   social_media_links:
@@ -195,10 +194,10 @@ Elissa Berwick:
   avatar: /assets/images/bio/Elissa Berwick 2.jpg
   current_role:
     type: Faculty / Professor
-  bio: Prof Berwick’s interests span the sub-fields of comparative politics and 
-    quantitative methodology. Her research focuses on sub-state nationalism, 
-    exploring how the imagined communities of stateless nations mold actual 
-    political attitudes and behaviors.
+  bio: Prof Berwick’s interests span the sub-fields of comparative politics and quantitative
+    methodology. Her research focuses on sub-state nationalism, exploring how the
+    imagined communities of stateless nations mold actual political attitudes and
+    behaviors.
   orcid: 0000-0002-0011-5073
   social_media_links:
   - label: Website
@@ -282,21 +281,23 @@ Aengus Bridgman:
     type: Faculty / Professor
     title: Professor
     start_date: "2003"
-  bio: Éric Bélanger is Professor of Political Science at McGill University. He 
-    is also a member of the Royal Society of Canada’s College of New Scholars, 
-    Artists and Scientists. Though centered around Quebec and Canadian politics,
-    his research focuses on the general themes of political parties, public 
-    opinion, and voting behaviour using a variety of quantitative methods. Some 
-    of his prior research has been concerned with economic voting and Quebec 
-    provincial elections. He is also involved in research projects studying 
-    voting behaviour in Latin America, as well as a comparison of nationalism in
-    Quebec and Scotland.
+  bio: Éric Bélanger is Professor of Political Science at McGill University. He is
+    also a member of the Royal Society of Canada’s College of New Scholars, Artists
+    and Scientists. Though centered around Quebec and Canadian politics, his research
+    focuses on the general themes of political parties, public opinion, and voting
+    behaviour using a variety of quantitative methods. Some of his prior research
+    has been concerned with economic voting and Quebec provincial elections. He is
+    also involved in research projects studying voting behaviour in Latin America,
+    as well as a comparison of nationalism in Quebec and Scotland.
   orcid: 0000-0003-3289-6000
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=CuFbthUAAAAJ
 
   team_group: faculty_members
+Éric Bélanger 2:
+  name: Éric Bélanger
+  avatar: /assets/images/bio/Éric Bélanger 2.jpg
 Albert Manuel Orozco Camacho:
   name: Albert Manuel Orozco Camacho
   alumni: true
@@ -534,15 +535,14 @@ Aaron Erlich:
     type: Faculty / Professor
     title: Assistant Professor
     start_date: "2016"
-  bio: Aaron Erlich is an Assistant Professor of Political Science at McGill 
-    University. His research interests concern questions of democratization, 
-    information dissemination, political behavior, political participation, and 
-    public opinion in the Former Soviet Union, Eastern and Southern Africa, and 
-    Mexico. Professor Erlich's research makes use of a variety of methods, such 
-    as field experiments, survey experiments, and mixed-method research designs.
+  bio: Aaron Erlich is an Assistant Professor of Political Science at McGill University.
+    His research interests concern questions of democratization, information dissemination,
+    political behavior, political participation, and public opinion in the Former
+    Soviet Union, Eastern and Southern Africa, and Mexico. Professor Erlich's research
+    makes use of a variety of methods, such as field experiments, survey experiments,
+    and mixed-method research designs.
   orcid: 0000-0001-6571-9081
-  avatar: 
-    https://github.com/user-attachments/assets/4c441e39-9859-48e0-9440-e743ddbd8838
+  avatar: https://github.com/user-attachments/assets/4c441e39-9859-48e0-9440-e743ddbd8838
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=h8n98PQAAAAJ&hl=en
@@ -623,14 +623,13 @@ Benjamin Forest:
   current_role:
     type: Faculty / Professor
     title: Associate Professor
-  bio: Benjamin Forest is an Associate Professor at McGill University in the 
-    Department of Geography as well as an Associate Member of the Department of 
-    Political Science. A specialist in the field of political geography, his 
-    work revolves around the theme of diversity and electoral reform. In 
-    addition to being part of a project studying monuments and memorials in the 
-    post-Soviet sphere, Professor Forest is currently heading a project on 
-    diversity in party structures and constituencies in Canada. He is also 
-    working on research exploring municipal LGBTQ policies.
+  bio: Benjamin Forest is an Associate Professor at McGill University in the Department
+    of Geography as well as an Associate Member of the Department of Political Science.
+    A specialist in the field of political geography, his work revolves around the
+    theme of diversity and electoral reform. In addition to being part of a project
+    studying monuments and memorials in the post-Soviet sphere, Professor Forest is
+    currently heading a project on diversity in party structures and constituencies
+    in Canada. He is also working on research exploring municipal LGBTQ policies.
   orcid: https://orcid.org/0000-0002-4831-9403
   social_media_links:
   - label: Scholar
@@ -817,14 +816,13 @@ Eric Hehman:
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
-  bio: Eric Hehman is an Assistant Professor of Psychology at McGill University 
-    and director of the Seeing Human Lab.  Generally, Dr. Hehman’s research 
-    examines how individuals perceive and evaluate one another across group 
-    boundaries (e.g., race, gender, sexual-orientation, occupation, etc). To 
-    address these questions, he takes a multi-method approach, incorporating a 
-    broad range of behavioral (e.g., computer-mouse tracking, digital face 
-    modeling, group interactions) and statistical techniques (e.g., multilevel 
-    modeling, structural equation modeling).
+  bio: Eric Hehman is an Assistant Professor of Psychology at McGill University and
+    director of the Seeing Human Lab.  Generally, Dr. Hehman’s research examines how
+    individuals perceive and evaluate one another across group boundaries (e.g., race,
+    gender, sexual-orientation, occupation, etc). To address these questions, he takes
+    a multi-method approach, incorporating a broad range of behavioral (e.g., computer-mouse
+    tracking, digital face modeling, group interactions) and statistical techniques
+    (e.g., multilevel modeling, structural equation modeling).
   orcid: https://orcid.org/0000-0003-2227-1517
   social_media_links:
   - label: Scholar
@@ -916,8 +914,8 @@ Anne Imouza:
     title: Doctoral Student
     start_date: "2023"
     advisor: Dietlind Stolle
-  bio: Administrative lead supporting coordination, operations, and outreach for
-    McGill CSDC.
+  bio: Administrative lead supporting coordination, operations, and outreach for McGill
+    CSDC.
   avatar: /assets/images/bio/placeholder/default.jpg
 
   team_group: staff
@@ -1042,8 +1040,8 @@ Emma Kondrup:
     title: Doctoral Student
     start_date: "2026"
     advisor: Reihaneh Rabbany, Catherine Régis
-  bio: Web developer maintaining the McGill CSDC website and publication/member 
-    update workflow.
+  bio: Web developer maintaining the McGill CSDC website and publication/member update
+    workflow.
   avatar: /assets/images/bio/placeholder/default.jpg
   team_group: staff
 Angela Kostelko:
@@ -1123,11 +1121,11 @@ Qinggang Li:
     title: Doctoral Student
     start_date: "2024"
     end_date: "2029"
-  bio: Qinggang is generally interested in state-society relations and the 
-    political economy of developing countries. He is currently working on how 
-    different forms of patron-client relations affect development and state 
-    capacity in developing countries. He also has an interest in political 
-    participation in nondemocratic contexts.
+  bio: Qinggang is generally interested in state-society relations and the political
+    economy of developing countries. He is currently working on how different forms
+    of patron-client relations affect development and state capacity in developing
+    countries. He also has an interest in political participation in nondemocratic
+    contexts.
   avatar: /assets/images/bio/Qinggang Li.jpg
 
   team_group: phd_students_and_postdocs
@@ -1267,24 +1265,22 @@ Juan Pablo Luna:
   current_role:
     type: Faculty / Professor
     title: Inaugural Diamond Brown Chair in Democratic Studies
-  bio: Juan Pablo Luna grew up in Montevideo, Uruguay, and is the Inaugural 
-    Diamond Brown Chair in Democratic Studies at McGill. While mainly focused on
-    comparative Latin American politics, his research analyzes how 
-    socio-structural conditions such as social inequality and state capacity 
-    shape democratic institutions and development trajectories. In recent years,
-    he has researched how organized crime dynamics is contributing to reshape 
-    politics, states, and markets in Latin America. His books include Latin 
-    American Party Systems (with Kitschelt, Hawkins, Rosas, and Zechmeister; 
-    Cambridge, 2010); Segmented Representation, Political Party Strategies ni 
-    Unequal Democracies (Oxford, 2014); The Resilience of the Latin American 
-    Right (with Rovira-Kaltwasser; Johns Hopkins, 2014); En vez del optimismo. 
-    Crisis de representación política en el Chile actual (Catalonia, 2017); 
-    Political Parties and Diminished Subtypes (with Rosenblatt, Piñeiro, and 
-    Vommaro; Cambridge, 2021); Latin American Politics and Society. A 
-    Comparative Historical Analysis (with Gerardo Munck, Cambridge University 
-    Press, 2022); Criminal Politics and Botched Development in Contemporary 
-    Latin America (with Andreas Feldmann, Cambridge University Press, 2024); and
-    ¿Democracia Muerta? Chile, América Latina y un Modelo Estallado. (Ariel, 
+  bio: Juan Pablo Luna grew up in Montevideo, Uruguay, and is the Inaugural Diamond
+    Brown Chair in Democratic Studies at McGill. While mainly focused on comparative
+    Latin American politics, his research analyzes how socio-structural conditions
+    such as social inequality and state capacity shape democratic institutions and
+    development trajectories. In recent years, he has researched how organized crime
+    dynamics is contributing to reshape politics, states, and markets in Latin America.
+    His books include Latin American Party Systems (with Kitschelt, Hawkins, Rosas,
+    and Zechmeister; Cambridge, 2010); Segmented Representation, Political Party Strategies
+    ni Unequal Democracies (Oxford, 2014); The Resilience of the Latin American Right
+    (with Rovira-Kaltwasser; Johns Hopkins, 2014); En vez del optimismo. Crisis de
+    representación política en el Chile actual (Catalonia, 2017); Political Parties
+    and Diminished Subtypes (with Rosenblatt, Piñeiro, and Vommaro; Cambridge, 2021);
+    Latin American Politics and Society. A Comparative Historical Analysis (with Gerardo
+    Munck, Cambridge University Press, 2022); Criminal Politics and Botched Development
+    in Contemporary Latin America (with Andreas Feldmann, Cambridge University Press,
+    2024); and ¿Democracia Muerta? Chile, América Latina y un Modelo Estallado. (Ariel,
     2024).
   orcid: https://orcid.org/0000-0001-7597-203X
   social_media_links:
@@ -1637,10 +1633,9 @@ Farimah Poursafaei:
   alumni: true
   current_role:
     type: Postdoc
-  bio: Farimah Poursafaei is a Postdoc Fellow at McGill University and Mila, 
-    Quebec AI Institute. Her research interests include dynamic graph 
-    representation learning, graph neural networks, graph machine learning, and 
-    real-world network data analysis.
+  bio: Farimah Poursafaei is a Postdoc Fellow at McGill University and Mila, Quebec
+    AI Institute. Her research interests include dynamic graph representation learning,
+    graph neural networks, graph machine learning, and real-world network data analysis.
   avatar: /assets/images/bio/Farimah Poursafaei.jpg
   social_media_links:
   - label: Scholar
@@ -1652,13 +1647,12 @@ Reihaneh Rabbany:
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
-  bio: Reihaneh Rabbany is an Assistant Professor at the School of Computer 
-    Science, McGill University. Before that, she was a Postdoctoral fellow at 
-    the School of Computer Science, Carnegie Mellon University. She completed 
-    her Ph.D. in Computing Science Department at the University of Alberta. Her 
-    research is at the intersection of network science, data mining and machine 
-    learning, with a focus on analyzing real-world interconnected data, and 
-    social good applications.
+  bio: Reihaneh Rabbany is an Assistant Professor at the School of Computer Science,
+    McGill University. Before that, she was a Postdoctoral fellow at the School of
+    Computer Science, Carnegie Mellon University. She completed her Ph.D. in Computing
+    Science Department at the University of Alberta. Her research is at the intersection
+    of network science, data mining and machine learning, with a focus on analyzing
+    real-world interconnected data, and social good applications.
   orcid: 0000-0003-2348-0353
   social_media_links:
   - label: Scholar
@@ -1808,11 +1802,10 @@ Eran Shor:
     type: Faculty / Professor
     title: Associate Professor
     start_date: "2010"
-  bio: Eran Shor is an Associate Professor in the Department of Sociology at 
-    McGill University. His research interests center around the themes of 
-    political conflict, human rights, and ethnicity and nationalism. Professor 
-    Shor's current research projects evaluate inequalities in media coverage of 
-    women and ethnic minorities.
+  bio: Eran Shor is an Associate Professor in the Department of Sociology at McGill
+    University. His research interests center around the themes of political conflict,
+    human rights, and ethnicity and nationalism. Professor Shor's current research
+    projects evaluate inequalities in media coverage of women and ethnic minorities.
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=vxVIFkIAAAAJ&hl=en&oi=ao
@@ -1879,15 +1872,14 @@ Thomas Soehl:
   current_role:
     type: Faculty / Professor
     title: Assistant Professor
-  bio: Thomas Soehl is an Assistant Professor in the Department of Sociology at 
-    McGill University. His work mainly examines the themes of international 
-    migration, race, and ethnicity. More specifically, he studies these themes 
-    through the lens of the family as a locus for the transmission of culture 
-    and political attachments. Recently, he has looked at the acquisition of 
-    citizenship in Canada and France, as well as at the determinants of 
-    anti-immigration attitudes. Professor Soehl's research makes use of 
-    quantitative research methods such as using event history analysis and 
-    multi-level modeling.
+  bio: Thomas Soehl is an Assistant Professor in the Department of Sociology at McGill
+    University. His work mainly examines the themes of international migration, race,
+    and ethnicity. More specifically, he studies these themes through the lens of
+    the family as a locus for the transmission of culture and political attachments.
+    Recently, he has looked at the acquisition of citizenship in Canada and France,
+    as well as at the determinants of anti-immigration attitudes. Professor Soehl's
+    research makes use of quantitative research methods such as using event history
+    analysis and multi-level modeling.
   orcid: 0000-0002-6593-3376
   social_media_links:
   - label: Scholar
@@ -1935,17 +1927,17 @@ Dietlind Stolle:
   current_role:
     type: Faculty / Professor
     title: "Director & Professor"
-  bio: "Dietlind Stolle is the James McGill professor in political science at McGill
-    University and fellow of the Royal Society of Canada. She is widely recognized
-    both within Canada and internationally as an expert on political behaviour, social
-    capital, ethnic diversity, social cohesion and democracy. Her current projects
-    include work on democratic backsliding; gender and politics including the role
-    of pregnancy; European solidarity; and emerging cleavages in European party politics.
-    Stolle has served as the Director of the Centre for the Study of Democratic Citizenship
-    (CSDC) from 2013-2020 and as co-director of the European Union Centre of Excellence.
-    She is currently co-leading the EUI-YouGov European Solidarity Study in more than
-    20 democracies. She now serves as the academic lead of the CSDC McGill lab on
-    political behavior."
+  bio: "Dietlind Stolle is the James McGill professor in political science at McGill\
+    \ University and fellow of the Royal Society of Canada. She is widely recognized\
+    \ both within Canada and internationally as an expert on political behaviour,\
+    \ social capital, ethnic diversity, social cohesion and democracy. Her current\
+    \ projects include work on democratic backsliding; gender and politics including\
+    \ the role of pregnancy; European solidarity; and emerging cleavages in European\
+    \ party politics. Stolle has served as the Director of the Centre for the Study\
+    \ of Democratic Citizenship (CSDC) from 2013-2020 and as co-director of the European\
+    \ Union Centre of Excellence. She is currently co-leading the EUI-YouGov European\
+    \ Solidarity Study in more than 20 democracies. She now serves as the academic\
+    \ lead of the CSDC McGill lab on political behavior."
   avatar: /assets/images/bio/Dietlind Stolle.jpg
 
   social_media_links:
