@@ -956,6 +956,15 @@ Adela Gotz:
     affiliation: McGill University
   auto_update_publications: false
   team_group: masters_students
+Oriana Grosbusch:
+  name: Oriana Grosbusch
+  current_role:
+    type: Student
+    title: PhD
+    title_fr: Doctorat
+    advisor: Eric Belanger
+    department: Department of Political Science
+  team_group: phd_students_and_postdocs
 Giovanni Guiga:
   name: Giovanni Guiga
   alumni: true
@@ -1100,6 +1109,16 @@ Sarah Houde:
     affiliation: McGill University
   auto_update_publications: false
   team_group: masters_students
+Andy (Shenyang) Huang:
+  name: Andy (Shenyang) Huang
+  current_role:
+    type: Student
+    title: PhD
+    title_fr: Doctorat
+    advisor: Reihaneh Rabbany
+    department: Department of Computer Science
+  team_group: phd_students_and_postdocs
+  avatar: /assets/images/bio/Andy (Shenyang) Huang.jpg
 Emmanuelle Hébert:
   name: Emmanuelle Hébert
   alumni: true
@@ -1723,6 +1742,8 @@ Adam Chalmers:
     end_date: "2013"
 
   team_group: phd_students_and_postdocs
+Luisa Hinke Martinez:
+  name: Luisa Hinke Martinez
 Nick Maturo:
   name: Nick Maturo
   alumni: true
