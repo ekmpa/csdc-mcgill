@@ -73,42 +73,21 @@ body:
     validations:
       required: false
 
-  - type: dropdown
-    id: current_role-type
-    attributes:
-      label: Current Role / Rôle actuel
-      description: Current role type / Type de rôle actuel
-      multiple: false
-      options:
-        - Faculty or Professor / Faculté ou Professeur
-        - Staff / Personnel
-        - Postdoc / Postdoctorant
-        - Student / Étudiant
-        - Collaborator / Collaborateur
-        - Unaffiliated / Non affilié
-    validations:
-      required: false
-
-  - type: dropdown
-    id: team_group
-    attributes:
-      label: Team Group / Groupe de l'equipe
-      description: People-page section for this member / Section de la page equipe pour ce membre
-      multiple: false
-      options:
-        - Faculty members
-        - PhD students and postdocs
-        - Master's students
-        - Researchers
-    validations:
-      required: false
-
   - type: input
     id: current_role-title
     attributes:
       label: Current Role Title 
       description: Role title (e.g., Master's or PhD) / Titre du rôle (par exemple, Maitrise ou Doctorat).
       placeholder: Professor / Professeur
+    validations:
+      required: false
+
+  - type: input
+    id: current_role-department
+    attributes:
+      label: Current Role Department / Département actuel
+      description: Department name for faculty/professors / Nom du département pour les professeur(e)s.
+      placeholder: Political Science / science politique
     validations:
       required: false
 

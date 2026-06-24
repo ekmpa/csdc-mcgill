@@ -34,7 +34,9 @@ jobs:
         run: python -m src.python.add_update_member
 
       - name: "Auto-sync publications for members with ORCID/OpenAlex IDs"
-        if: github.event.label.name == 'automatic-add-member' || contains(github.event.issue.labels.*.name, 'automatic-add-member')
+        if: >-
+          (github.event.label.name == 'automatic-add-member' || contains(github.event.issue.labels.*.name, 'automatic-add-member')) &&
+          (contains(github.event.issue.body, '### ORCID') || contains(github.event.issue.body, '### OpenAlex ID'))
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python -m src.python.auto_update_publications

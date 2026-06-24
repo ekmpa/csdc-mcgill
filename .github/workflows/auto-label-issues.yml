@@ -17,7 +17,7 @@ jobs:
             // Detect template based on form markers in issue body
             // Member profile form fields
             if ((body.includes('### Name / Nom') || body.includes('### Name')) && 
-                (body.includes('### Status / Statut') || body.includes('### Member Status'))) {
+                (body.includes('### Status / Statut') || body.includes('### Member Status') || body.includes('### Profile picture / Photo de profil') || body.includes('### Profile picture'))) {
               label = 'automatic-add-member';
             }
             // Publication by ID form fields

@@ -38,6 +38,19 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: tag
+    attributes:
+      label: Tag
+      description: Choose the news section / Choisissez la section de nouvelles
+      options:
+        - prize
+        - press
+        - global CSDC
+        - grants
+    validations:
+      required: true
+
   - type: textarea
     id: summary
     attributes:
