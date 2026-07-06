@@ -16,6 +16,7 @@
 {% assign axis_1_highlights = '' | split: '' %}
 {% assign axis_2_highlights = '' | split: '' %}
 {% assign axis_3_highlights = '' | split: '' %}
+{% assign render_separate_highlights = include.separate_highlights | default: false %}
 
 {% if axis_topics %}
   {% if is_french %}
@@ -57,6 +58,7 @@
           <li>{% if is_french %}Modélisation thématique en attente{% else %}Topic modelling pending{% endif %}</li>
           {% endif %}
         </ul>
+        {% unless render_separate_highlights %}
         {% if axis_1_highlights and axis_1_highlights.size > 0 %}
         <div class="csdc-axis-highlights">
           <p class="csdc-axis-highlights-label">{% if is_french %}Quelques publications en vedette{% else %}Highlighted papers{% endif %}</p>
@@ -64,10 +66,19 @@
             {% for paper in axis_1_highlights limit: 3 %}
             <article class="csdc-paper-highlight-card">
               <a class="csdc-paper-highlight-title" href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
-              {% if paper.venue or paper.year %}
+              {% assign venue_clean = paper.venue | default: '' | strip %}
+              {% assign venue_clean_lc = venue_clean | downcase %}
+              {% if venue_clean == '.' or venue_clean == '-' or venue_clean_lc == 'n/a' or venue_clean_lc == 'na' %}
+                {% assign venue_clean = '' %}
+              {% endif %}
+              {% assign venue_probe = venue_clean | remove: '.' | remove: '·' | remove: '-' | remove: '—' | remove: '–' | remove: '_' | remove: '/' | remove: ' ' | strip %}
+              {% if venue_probe == '' %}
+                {% assign venue_clean = '' %}
+              {% endif %}
+              {% if venue_clean or paper.year %}
               <p class="csdc-paper-highlight-meta">
-                {% if paper.venue %}<span>{{ paper.venue }}</span>{% endif %}
-                {% if paper.venue and paper.year %}<span class="csdc-paper-highlight-meta-sep">&middot;</span>{% endif %}
+                {% if venue_clean %}<span>{{ venue_clean }}</span>{% endif %}
+                {% if venue_clean and paper.year %}<span class="csdc-paper-highlight-meta-sep">&middot;</span>{% endif %}
                 {% if paper.year %}<span>{{ paper.year }}</span>{% endif %}
               </p>
               {% endif %}
@@ -79,6 +90,7 @@
           </div>
         </div>
         {% endif %}
+        {% endunless %}
       </article>
       <article class="csdc-card" style="border-top:4px solid #c8102e;">
         <h3 class="csdc-card-title">{{ t.home.research.card_2_title }}</h3>
@@ -91,6 +103,7 @@
           <li>{% if is_french %}Modélisation thématique en attente{% else %}Topic modelling pending{% endif %}</li>
           {% endif %}
         </ul>
+        {% unless render_separate_highlights %}
         {% if axis_2_highlights and axis_2_highlights.size > 0 %}
         <div class="csdc-axis-highlights">
           <p class="csdc-axis-highlights-label">{% if is_french %}Quelques publications en vedette{% else %}Highlighted papers{% endif %}</p>
@@ -98,10 +111,19 @@
             {% for paper in axis_2_highlights limit: 3 %}
             <article class="csdc-paper-highlight-card">
               <a class="csdc-paper-highlight-title" href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
-              {% if paper.venue or paper.year %}
+              {% assign venue_clean = paper.venue | default: '' | strip %}
+              {% assign venue_clean_lc = venue_clean | downcase %}
+              {% if venue_clean == '.' or venue_clean == '-' or venue_clean_lc == 'n/a' or venue_clean_lc == 'na' %}
+                {% assign venue_clean = '' %}
+              {% endif %}
+              {% assign venue_probe = venue_clean | remove: '.' | remove: '·' | remove: '-' | remove: '—' | remove: '–' | remove: '_' | remove: '/' | remove: ' ' | strip %}
+              {% if venue_probe == '' %}
+                {% assign venue_clean = '' %}
+              {% endif %}
+              {% if venue_clean or paper.year %}
               <p class="csdc-paper-highlight-meta">
-                {% if paper.venue %}<span>{{ paper.venue }}</span>{% endif %}
-                {% if paper.venue and paper.year %}<span class="csdc-paper-highlight-meta-sep">&middot;</span>{% endif %}
+                {% if venue_clean %}<span>{{ venue_clean }}</span>{% endif %}
+                {% if venue_clean and paper.year %}<span class="csdc-paper-highlight-meta-sep">&middot;</span>{% endif %}
                 {% if paper.year %}<span>{{ paper.year }}</span>{% endif %}
               </p>
               {% endif %}
@@ -113,6 +135,7 @@
           </div>
         </div>
         {% endif %}
+        {% endunless %}
       </article>
       <article class="csdc-card" style="border-top:4px solid #c8102e;">
         <h3 class="csdc-card-title">{{ t.home.research.card_3_title }}</h3>
@@ -125,6 +148,7 @@
           <li>{% if is_french %}Modélisation thématique en attente{% else %}Topic modelling pending{% endif %}</li>
           {% endif %}
         </ul>
+        {% unless render_separate_highlights %}
         {% if axis_3_highlights and axis_3_highlights.size > 0 %}
         <div class="csdc-axis-highlights">
           <p class="csdc-axis-highlights-label">{% if is_french %}Quelques publications en vedette{% else %}Highlighted papers{% endif %}</p>
@@ -132,10 +156,19 @@
             {% for paper in axis_3_highlights limit: 3 %}
             <article class="csdc-paper-highlight-card">
               <a class="csdc-paper-highlight-title" href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
-              {% if paper.venue or paper.year %}
+              {% assign venue_clean = paper.venue | default: '' | strip %}
+              {% assign venue_clean_lc = venue_clean | downcase %}
+              {% if venue_clean == '.' or venue_clean == '-' or venue_clean_lc == 'n/a' or venue_clean_lc == 'na' %}
+                {% assign venue_clean = '' %}
+              {% endif %}
+              {% assign venue_probe = venue_clean | remove: '.' | remove: '·' | remove: '-' | remove: '—' | remove: '–' | remove: '_' | remove: '/' | remove: ' ' | strip %}
+              {% if venue_probe == '' %}
+                {% assign venue_clean = '' %}
+              {% endif %}
+              {% if venue_clean or paper.year %}
               <p class="csdc-paper-highlight-meta">
-                {% if paper.venue %}<span>{{ paper.venue }}</span>{% endif %}
-                {% if paper.venue and paper.year %}<span class="csdc-paper-highlight-meta-sep">&middot;</span>{% endif %}
+                {% if venue_clean %}<span>{{ venue_clean }}</span>{% endif %}
+                {% if venue_clean and paper.year %}<span class="csdc-paper-highlight-meta-sep">&middot;</span>{% endif %}
                 {% if paper.year %}<span>{{ paper.year }}</span>{% endif %}
               </p>
               {% endif %}
@@ -147,14 +180,123 @@
           </div>
         </div>
         {% endif %}
+        {% endunless %}
       </article>
     </div>
 
+    {% assign has_any_highlights = false %}
+    {% if axis_1_highlights and axis_1_highlights.size > 0 %}
+      {% assign has_any_highlights = true %}
+    {% elsif axis_2_highlights and axis_2_highlights.size > 0 %}
+      {% assign has_any_highlights = true %}
+    {% elsif axis_3_highlights and axis_3_highlights.size > 0 %}
+      {% assign has_any_highlights = true %}
+    {% endif %}
+
+    {% if render_separate_highlights and has_any_highlights %}
+    <div class="csdc-home-highlights-section">
+      <h2 class="csdc-home-highlights-title">Highlighted Papers</h2>
+      <div class="csdc-home-highlights-columns">
+        <section class="csdc-home-highlights-column">
+          <h3 class="csdc-home-highlights-column-title">{% if is_french %}Axe 1 : {% else %}Axis 1: {% endif %}{{ t.home.research.card_1_title }}</h3>
+          <div class="csdc-axis-highlights-grid">
+            {% for paper in axis_1_highlights limit: 3 %}
+            <article class="csdc-paper-highlight-card">
+              <a class="csdc-paper-highlight-title" href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
+              {% assign venue_clean = paper.venue | default: '' | strip %}
+              {% assign venue_clean_lc = venue_clean | downcase %}
+              {% if venue_clean == '.' or venue_clean == '-' or venue_clean_lc == 'n/a' or venue_clean_lc == 'na' %}
+                {% assign venue_clean = '' %}
+              {% endif %}
+              {% assign venue_probe = venue_clean | remove: '.' | remove: '·' | remove: '-' | remove: '—' | remove: '–' | remove: '_' | remove: '/' | remove: ' ' | strip %}
+              {% if venue_probe == '' %}
+                {% assign venue_clean = '' %}
+              {% endif %}
+              {% if venue_clean or paper.year %}
+              <p class="csdc-paper-highlight-meta">
+                {% if venue_clean %}<span>{{ venue_clean }}</span>{% endif %}
+                {% if venue_clean and paper.year %}<span class="csdc-paper-highlight-meta-sep">&middot;</span>{% endif %}
+                {% if paper.year %}<span>{{ paper.year }}</span>{% endif %}
+              </p>
+              {% endif %}
+              {% if paper.names %}
+              <p class="csdc-paper-highlight-authors">{{ paper.names }}</p>
+              {% endif %}
+            </article>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section class="csdc-home-highlights-column">
+          <h3 class="csdc-home-highlights-column-title">{% if is_french %}Axe 2 : {% else %}Axis 2: {% endif %}{{ t.home.research.card_2_title }}</h3>
+          <div class="csdc-axis-highlights-grid">
+            {% for paper in axis_2_highlights limit: 3 %}
+            <article class="csdc-paper-highlight-card">
+              <a class="csdc-paper-highlight-title" href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
+              {% assign venue_clean = paper.venue | default: '' | strip %}
+              {% assign venue_clean_lc = venue_clean | downcase %}
+              {% if venue_clean == '.' or venue_clean == '-' or venue_clean_lc == 'n/a' or venue_clean_lc == 'na' %}
+                {% assign venue_clean = '' %}
+              {% endif %}
+              {% assign venue_probe = venue_clean | remove: '.' | remove: '·' | remove: '-' | remove: '—' | remove: '–' | remove: '_' | remove: '/' | remove: ' ' | strip %}
+              {% if venue_probe == '' %}
+                {% assign venue_clean = '' %}
+              {% endif %}
+              {% if venue_clean or paper.year %}
+              <p class="csdc-paper-highlight-meta">
+                {% if venue_clean %}<span>{{ venue_clean }}</span>{% endif %}
+                {% if venue_clean and paper.year %}<span class="csdc-paper-highlight-meta-sep">&middot;</span>{% endif %}
+                {% if paper.year %}<span>{{ paper.year }}</span>{% endif %}
+              </p>
+              {% endif %}
+              {% if paper.names %}
+              <p class="csdc-paper-highlight-authors">{{ paper.names }}</p>
+              {% endif %}
+            </article>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section class="csdc-home-highlights-column">
+          <h3 class="csdc-home-highlights-column-title">{% if is_french %}Axe 3 : {% else %}Axis 3: {% endif %}{{ t.home.research.card_3_title }}</h3>
+          <div class="csdc-axis-highlights-grid">
+            {% for paper in axis_3_highlights limit: 3 %}
+            <article class="csdc-paper-highlight-card">
+              <a class="csdc-paper-highlight-title" href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
+              {% assign venue_clean = paper.venue | default: '' | strip %}
+              {% assign venue_clean_lc = venue_clean | downcase %}
+              {% if venue_clean == '.' or venue_clean == '-' or venue_clean_lc == 'n/a' or venue_clean_lc == 'na' %}
+                {% assign venue_clean = '' %}
+              {% endif %}
+              {% assign venue_probe = venue_clean | remove: '.' | remove: '·' | remove: '-' | remove: '—' | remove: '–' | remove: '_' | remove: '/' | remove: ' ' | strip %}
+              {% if venue_probe == '' %}
+                {% assign venue_clean = '' %}
+              {% endif %}
+              {% if venue_clean or paper.year %}
+              <p class="csdc-paper-highlight-meta">
+                {% if venue_clean %}<span>{{ venue_clean }}</span>{% endif %}
+                {% if venue_clean and paper.year %}<span class="csdc-paper-highlight-meta-sep">&middot;</span>{% endif %}
+                {% if paper.year %}<span>{{ paper.year }}</span>{% endif %}
+              </p>
+              {% endif %}
+              {% if paper.names %}
+              <p class="csdc-paper-highlight-authors">{{ paper.names }}</p>
+              {% endif %}
+            </article>
+            {% endfor %}
+          </div>
+        </section>
+      </div>
+    </div>
+    {% endif %}
+
     {% if include.show_publications_link != false %}
-    <a href="{{ base | append: '/research/' | relative_url }}" class="csdc-arrow-link" aria-label="{{ t.home.research.publications_link }}">
-      <span aria-hidden="true">&rarr;</span>
-      <span>{{ t.home.research.publications_link }}</span>
-    </a>
+    <div class="csdc-home-publications-link-row">
+      <a href="{{ base | append: '/research/' | relative_url }}" class="csdc-arrow-link" aria-label="{{ t.home.research.publications_link }}">
+        <span aria-hidden="true">&rarr;</span>
+        <span>{{ t.home.research.publications_link }}</span>
+      </a>
+    </div>
     {% endif %}
   </div>
 </section>

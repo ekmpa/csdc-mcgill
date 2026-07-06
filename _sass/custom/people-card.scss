@@ -396,6 +396,26 @@ div.author-avatar {
     margin-bottom: 1.6rem;
 }
 
+.csdc-people-page .csdc-people-alumni-block {
+    margin-top: 2.8rem;
+    padding-top: 0.6rem;
+}
+
+.csdc-people-page .csdc-people-section-title--alumni {
+    margin: 0 0 1rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid #efc7cf;
+    color: #c8102e;
+    font-size: clamp(1.2rem, 2.4vw, 1.45rem);
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.csdc-people-page .csdc-alumni-group-title {
+    color: #c8102e;
+}
+
 .csdc-people-page .author-card {
     padding: 1rem;
 }
@@ -427,6 +447,25 @@ div.author-avatar {
 
 .csdc-people-page .csdc-contact-pill {
     font-size: 0.92rem;
+}
+
+.csdc-people-page .csdc-year-jump-nav--left-outline {
+    left: 1rem;
+    right: auto;
+}
+
+.csdc-people-page .csdc-year-jump-nav--left-outline .csdc-year-jump-btn {
+    border: 2px solid #1e3a8a;
+    background: transparent;
+    color: #1e3a8a;
+    box-shadow: 0 8px 18px rgba(30, 58, 138, 0.18);
+}
+
+.csdc-people-page .csdc-year-jump-nav--left-outline .csdc-year-jump-btn:hover,
+.csdc-people-page .csdc-year-jump-nav--left-outline .csdc-year-jump-btn:focus {
+    background: transparent;
+    color: #1d4ed8;
+    border-color: #1d4ed8;
 }
 
 .csdc-people-page .author-card:not(.author-card--alumni) {

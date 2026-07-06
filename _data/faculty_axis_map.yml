@@ -1,14 +1,35 @@
 # Faculty-to-axis mapping used by topic generation to upweight axis-specific bio signal.
 # Axis IDs: axis_1, axis_2, axis_3
 faculty_to_axes:
+  Aaron Erlich:
+    - axis_1
+    - axis_2
+    - axis_3
   Benjamin Forest:
+    - axis_2
     - axis_3
   Dietlind Stolle:
     - axis_1
     - axis_2
     - axis_3
+  Elissa Berwick:
+    - axis_1
+    - axis_2
+  Eran Shor:
+    - axis_1
+    - axis_2
+  Eric Hehman:
+    - axis_1
+  Nicolas Ajzenman:
+    - axis_1
+    - axis_2
+  Reihaneh Rabbany:
+    - axis_1
+    - axis_2
   Thomas Soehl:
     - axis_1
+    - axis_2
   Éric Bélanger:
+    - axis_1
     - axis_2
     - axis_3

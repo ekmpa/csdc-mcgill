@@ -45,7 +45,14 @@ show_taxonomy_posts: false
         <input type="search" id="research-publications-search" class="search-input csdc-research-search-input" placeholder="Search papers by title, author, venue..." autocomplete="off" aria-label="Search papers" />
       </form>
       <p class="csdc-research-no-results" id="research-publications-empty" hidden>No papers matched your search.</p>
-      {% assign publications = site.posts | where_exp: "post", "post.path contains '_posts/papers/'" %}
+      {% assign all_publications = site.posts | where_exp: "post", "post.path contains '_posts/papers/'" %}
+      {% assign publications = '' | split: '' %}
+      {% for post in all_publications %}
+        {% assign post_year = post.date | date: "%Y" | plus: 0 %}
+        {% if post_year >= 2008 %}
+          {% assign publications = publications | push: post %}
+        {% endif %}
+      {% endfor %}
       {% if publications and publications.size > 0 %}
       {% assign publication_years = '' | split: '' %}
       {% for post in publications %}
@@ -73,10 +80,27 @@ show_taxonomy_posts: false
           <div class="csdc-pillars csdc-pillars-two">
             {% for post in year_publications %}
             <article class="csdc-card">
-              <h4 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+              {% assign clean_title = post.title
+                | replace: '$$\\textbf{', ''
+                | replace: '$$\\textttt{', ''
+                | replace: '$$\\texttt{', ''
+                | replace: '$$\\textit{', ''
+                | replace: '$\\textbf{', ''
+                | replace: '$\\textttt{', ''
+                | replace: '$\\texttt{', ''
+                | replace: '$\\textit{', ''
+                | replace: '\\textbf{', ''
+                | replace: '\\textttt{', ''
+                | replace: '\\texttt{', ''
+                | replace: '\\textit{', ''
+                | replace: '$$', ''
+                | replace: '$', ''
+                | replace: '{', ''
+                | replace: '}', ''
+                | strip %}
+              <h4 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ clean_title }}</a></h4>
               {% if post.names %}<p style="margin:0.2rem 0;">{{ post.names }}</p>{% endif %}
               {% if post.venue %}<p style="margin:0.2rem 0; color:#6b7280;">{{ post.venue }}</p>{% endif %}
-              {% if post.link %}<p style="margin:0.35rem 0 0;"><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">Paper link</a></p>{% endif %}
             </article>
             {% endfor %}
           </div>

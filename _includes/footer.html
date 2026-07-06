@@ -33,12 +33,42 @@
 </div>
 <script>
 (function () {
+    var root = document.documentElement;
+    var footer = document.querySelector('.page__footer .csdc-footer') || document.querySelector('.csdc-footer');
+    var rafScheduled = false;
+
+    function applyFloatingNavFooterOffset() {
+        rafScheduled = false;
+
+        if (!root || !footer) {
+            return;
+        }
+
+        var rect = footer.getBoundingClientRect();
+        var overlap = Math.max(0, window.innerHeight - rect.top);
+        var extraMargin = overlap > 0 ? 10 : 0;
+        root.style.setProperty('--csdc-footer-avoidance', (Math.round(overlap) + extraMargin) + 'px');
+    }
+
+    function scheduleFloatingNavFooterOffset() {
+        if (rafScheduled) {
+            return;
+        }
+        rafScheduled = true;
+        window.requestAnimationFrame(applyFloatingNavFooterOffset);
+    }
+
+    window.addEventListener('scroll', scheduleFloatingNavFooterOffset, { passive: true });
+    window.addEventListener('resize', scheduleFloatingNavFooterOffset);
+    applyFloatingNavFooterOffset();
+
     var wrap = document.querySelector('.csdc-footer-door-wrap');
     if (!wrap) return;
     wrap.addEventListener('mouseenter', function () {
         // Wait for the panel max-height transition (0.24s) then scroll to bottom
         setTimeout(function () {
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+            scheduleFloatingNavFooterOffset();
         }, 260);
     });
 })();

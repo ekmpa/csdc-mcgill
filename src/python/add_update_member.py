@@ -28,6 +28,57 @@ def _normalize_member_name_for_match(name: str) -> str:
     return text.strip()
 
 
+def _extract_year(value) -> Optional[int]:
+    """Extract the first 4-digit year from a date-like value."""
+    if _is_empty_response(value):
+        return None
+
+    match = re.search(r"(19|20)\d{2}", str(value))
+    if not match:
+        return None
+
+    return int(match.group(0))
+
+
+def _collect_end_years_from_profile(profile: Dict) -> List[int]:
+    """Collect parsed end years from current/past/secondary roles."""
+    years: List[int] = []
+
+    def _add_from_role(role) -> None:
+        if not isinstance(role, dict):
+            return
+        year = _extract_year(role.get("end_date"))
+        if year is not None:
+            years.append(year)
+
+    _add_from_role(profile.get("current_role"))
+
+    past_roles = profile.get("past_roles")
+    if isinstance(past_roles, dict):
+        _add_from_role(past_roles)
+    elif isinstance(past_roles, list):
+        for role in past_roles:
+            _add_from_role(role)
+
+    secondary_roles = profile.get("secondary_roles")
+    if isinstance(secondary_roles, list):
+        for role in secondary_roles:
+            _add_from_role(role)
+
+    return years
+
+
+def _enforce_alumni_from_end_dates(authors: Dict, cutoff_year: int = 2026) -> None:
+    """Set alumni=true when a profile has an end_date year before cutoff_year."""
+    for profile in authors.values():
+        if not isinstance(profile, dict):
+            continue
+
+        end_years = _collect_end_years_from_profile(profile)
+        if any(year < cutoff_year for year in end_years):
+            profile["alumni"] = True
+
+
 def _find_existing_username_by_name(authors: Dict, profile_name: str) -> Optional[str]:
     """Find an existing author key by normalized displayed name."""
     target_norm = _normalize_member_name_for_match(profile_name)
@@ -144,6 +195,30 @@ def _normalize_team_group(value: str) -> str:
     return ""
 
 
+def _normalize_axis_selection(value) -> List[str]:
+    """Normalize axis selections from the intake form into axis_1/axis_2/axis_3 IDs."""
+    if _is_empty_response(value):
+        return []
+
+    if isinstance(value, list):
+        raw_items = value
+    else:
+        raw_items = re.split(r"[\n,;/]+", str(value))
+
+    selected_axes: List[str] = []
+    for raw_item in raw_items:
+        item = _normalize_heading_key(str(raw_item or ""))
+        if not item:
+            continue
+        match = re.search(r"axis[_\s]*([123])", item)
+        if match:
+            axis_id = f"axis_{match.group(1)}"
+            if axis_id not in selected_axes:
+                selected_axes.append(axis_id)
+
+    return selected_axes
+
+
 def _infer_team_group(role_type: str, role_title: str) -> str:
     """Infer a team group from role type/title when the form does not provide one."""
     role_type_norm = _normalize_heading_key(str(role_type or ""))
@@ -206,6 +281,7 @@ def _canonicalize_member_parsed_input(parsed: Dict) -> Dict:
         "current_role_department": ["current_role_department", "current_role_department_département_actuel", "current_role_department_departement_actuel"],
         "current_role_affiliation": ["current_role_affiliation", "current_affiliation_affiliation_actuelle"],
         "current_role_advisor": ["current_role_advisor", "current_role_advisor_superviseur_e_actuel_le"],
+        "research_axes": ["research_axes", "research_axes_axes_de_recherche"],
         "current_role_start_date": ["current_role_start_date", "start_date_date_de_debut"],
         "current_role_end_date": ["current_role_end_date", "end_date_alumni_only_date_de_fin_anciens_membres_seulement"],
         "orcid": ["orcid"],
@@ -383,12 +459,17 @@ def format_parsed_content(parsed: Dict) -> Dict:
         "orcid": ["orcid"],
         "openalex_id": ["openalex_id"],
         "avatar": ["avatar", "profile_picture"],
+        "research_axes": ["research_axes"],
     }
     for field, candidates in optional_field_map.items():
         value = _get_avatar_input(parsed) if field == "avatar" else _first_non_empty(parsed, *candidates)
         if not _is_empty_response(value):
             if field == "avatar":
                 formatted[field] = _normalize_avatar_value(value)
+            elif field == "research_axes":
+                axes = _normalize_axis_selection(value)
+                if axes:
+                    formatted[field] = axes
             else:
                 formatted[field] = value
 
@@ -405,7 +486,7 @@ def merge_profile_data(old_profile: Dict, new_profile: Dict) -> Dict:
     merged = old_profile.copy()
 
     # Update basic fields if provided
-    for field in ["bio", "bio_fr", "note", "note_fr", "orcid", "openalex_id", "avatar"]:
+    for field in ["bio", "bio_fr", "note", "note_fr", "orcid", "openalex_id", "avatar", "research_axes"]:
         if field in new_profile:
             merged[field] = new_profile[field]
 
@@ -466,7 +547,44 @@ def sort_by_lastname(authors: Dict) -> None:
         authors.insert(0, user, desc)
 
 
-def main(parsed: Dict, action: str = "", site_data_dir: str = "_data/", image_dir: str = "assets/images/bio") -> Dict:
+def _update_faculty_axis_map_from_authors(authors: Dict, faculty_axis_map_path: Path) -> None:
+    """Merge faculty research axes from authors.yml into faculty_axis_map.yml."""
+    yaml = YAML()
+    yaml.preserve_quotes = True
+
+    if faculty_axis_map_path.exists():
+        with faculty_axis_map_path.open() as file_handle:
+            faculty_axis_map = yaml.load(file_handle) or {}
+    else:
+        faculty_axis_map = {}
+
+    faculty_to_axes = faculty_axis_map.get("faculty_to_axes", {}) if isinstance(faculty_axis_map, dict) else {}
+    if not isinstance(faculty_to_axes, dict):
+        faculty_to_axes = {}
+
+    for profile in authors.values():
+        if not isinstance(profile, dict):
+            continue
+
+        current_role = profile.get("current_role") or {}
+        role_type = _normalize_heading_key(str((current_role or {}).get("type", "") or ""))
+        if "faculty" not in role_type and "professor" not in role_type:
+            continue
+
+        axes = _normalize_axis_selection(profile.get("research_axes", []))
+        if not axes:
+            continue
+
+        name = str(profile.get("name", "") or "").strip()
+        if name:
+            faculty_to_axes[name] = axes
+
+    faculty_axis_map["faculty_to_axes"] = {name: faculty_to_axes[name] for name in sorted(faculty_to_axes)}
+    with faculty_axis_map_path.open("w") as file_handle:
+        yaml.dump(faculty_axis_map, file_handle)
+
+
+def main(parsed: Dict, action: str = "", site_data_dir: str = "_data/", image_dir: str = "assets/images/bio", faculty_axis_map_path: str = "_data/faculty_axis_map.yml") -> Dict:
     site_data_dir = Path(site_data_dir)
     parsed = _canonicalize_member_parsed_input(parsed)
     profile = format_parsed_content(parsed)
@@ -519,6 +637,10 @@ def main(parsed: Dict, action: str = "", site_data_dir: str = "_data/", image_di
     if img_path is not None:
         authors[username]["avatar"] = img_path
         _sync_avatar_for_same_name_entries(authors, username, img_path)
+
+    _enforce_alumni_from_end_dates(authors, cutoff_year=2026)
+
+    _update_faculty_axis_map_from_authors(authors, Path(faculty_axis_map_path))
 
     sort_by_lastname(authors)
 

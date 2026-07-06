@@ -19,20 +19,58 @@
     <p class="csdc-people-no-results" id="people-search-empty" hidden>{{ t.home.people.search_empty }}</p>
 </div>
 
+{% if lang == 'fr' %}
+{% assign current_members_label = 'Membres actifs' %}
+{% assign current_members_short = 'Actifs' %}
+{% assign alumni_short = 'Anciens' %}
+{% else %}
+{% assign current_members_label = 'Current members' %}
+{% assign current_members_short = 'Current' %}
+{% assign alumni_short = 'Alumni' %}
+{% endif %}
+
+<section class="csdc-people-active-block" aria-label="{{ current_members_label }}">
 <section class="csdc-people-group" data-people-group="faculty_members">
 {% include card-authors-with-role.html authors=site.data.authors team_group="faculty_members" section_title=t.home.people.faculty_members render_current_role=true %}
+</section>
+
+<section class="csdc-people-group" data-people-group="staff">
 {% include card-authors-with-role.html authors=site.data.authors team_group="staff" section_title=t.home.people.staff render_current_role=true %}
-{% include card-authors-with-role.html authors=site.data.authors team_group="faculty_members" alumni=true %}
 </section>
 
 <section class="csdc-people-group" data-people-group="phd_students_and_postdocs">
 {% include card-authors-with-role.html authors=site.data.authors team_group="phd_students_and_postdocs" section_title=t.home.people.phd_students_and_postdocs render_current_role=true include_secondary_doctoral=true %}
-{% include card-authors-with-role.html authors=site.data.authors team_group="phd_students_and_postdocs" alumni=true %}
 </section>
 
 <section class="csdc-people-group" data-people-group="masters_students">
 {% include card-authors-with-role.html authors=site.data.authors team_group="masters_students" section_title=t.home.people.masters_students render_current_role=true %}
-{% include card-authors-with-role.html authors=site.data.authors team_group="masters_students" alumni=true %}
+</section>
+</section>
+
+{% if lang == 'fr' %}
+{% assign alumni_heading = 'Anciens membres' %}
+{% else %}
+{% assign alumni_heading = 'Alumni' %}
+{% endif %}
+
+<section class="csdc-people-alumni-block" aria-label="{{ alumni_heading }}">
+    <h2 class="csdc-people-section-title csdc-people-section-title--alumni">{{ alumni_heading }}</h2>
+
+    <section class="csdc-people-group" data-people-group="alumni_faculty_members">
+    {% include card-authors-with-role.html authors=site.data.authors team_group="faculty_members" section_title=t.home.people.faculty_members alumni=true suppress_alumni_label=true %}
+    </section>
+
+    <section class="csdc-people-group" data-people-group="alumni_staff">
+    {% include card-authors-with-role.html authors=site.data.authors team_group="staff" section_title=t.home.people.staff alumni=true suppress_alumni_label=true %}
+    </section>
+
+    <section class="csdc-people-group" data-people-group="alumni_phd_students_and_postdocs">
+    {% include card-authors-with-role.html authors=site.data.authors team_group="phd_students_and_postdocs" section_title=t.home.people.phd_students_and_postdocs alumni=true suppress_alumni_label=true %}
+    </section>
+
+    <section class="csdc-people-group" data-people-group="alumni_masters_students">
+    {% include card-authors-with-role.html authors=site.data.authors team_group="masters_students" section_title=t.home.people.masters_students alumni=true suppress_alumni_label=true %}
+    </section>
 </section>
 
 <div class="csdc-year-jump-nav" data-csdc-people-group-jump>
@@ -43,6 +81,17 @@
     <button type="button" class="csdc-year-jump-btn" data-csdc-people-group-dir="down" aria-label="Jump to next team category">
         <span class="csdc-year-jump-arrow">&darr;</span>
         <span class="csdc-year-jump-label" data-csdc-people-group-label="down">--</span>
+    </button>
+</div>
+
+<div class="csdc-year-jump-nav csdc-year-jump-nav--left-outline" data-csdc-people-section-jump>
+    <button type="button" class="csdc-year-jump-btn" data-csdc-people-section-target="current" aria-label="Jump to {{ current_members_label }}">
+        <span class="csdc-year-jump-arrow">&uarr;</span>
+        <span class="csdc-year-jump-label">{{ current_members_short }}</span>
+    </button>
+    <button type="button" class="csdc-year-jump-btn" data-csdc-people-section-target="alumni" aria-label="Jump to {{ alumni_heading }}">
+        <span class="csdc-year-jump-arrow">&darr;</span>
+        <span class="csdc-year-jump-label">{{ alumni_short }}</span>
     </button>
 </div>
 
@@ -158,6 +207,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var emptyState = document.getElementById('people-search-empty');
     var groups = document.querySelectorAll('.csdc-people-page .csdc-people-group');
     var groupJumpNav = document.querySelector('[data-csdc-people-group-jump]');
+    var sectionJumpNav = document.querySelector('[data-csdc-people-section-jump]');
+    var activeSectionBlock = document.querySelector('.csdc-people-page .csdc-people-active-block');
+    var alumniSectionBlock = document.querySelector('.csdc-people-page .csdc-people-alumni-block');
 
     if (!searchInput || groups.length === 0) {
         return;
@@ -167,7 +219,10 @@ document.addEventListener('DOMContentLoaded', function () {
         var plain = (text || '').replace(/\([^)]*\)\s*$/g, '').trim();
         var lower = plain.toLowerCase();
 
-        if (lower.indexOf('faculty') !== -1 || lower.indexOf('corps') !== -1 || lower.indexOf('staff') !== -1 || lower.indexOf('personnel') !== -1) {
+        if (lower.indexOf('staff') !== -1 || lower.indexOf('personnel') !== -1) {
+            return 'Staff';
+        }
+        if (lower.indexOf('faculty') !== -1 || lower.indexOf('corps') !== -1) {
             return 'Faculty';
         }
         if (lower.indexOf('phd') !== -1 || lower.indexOf('doctor') !== -1 || lower.indexOf('postdoc') !== -1) {
@@ -181,6 +236,35 @@ document.addEventListener('DOMContentLoaded', function () {
         return firstWord.slice(0, 8);
     }
 
+    function setJumpLabel(labelEl, nextText) {
+        if (!labelEl) {
+            return;
+        }
+
+        var targetText = String(nextText || '--');
+        var currentText = (labelEl.textContent || '').trim();
+        if (currentText === targetText) {
+            return;
+        }
+
+        // Always set text immediately so labels never appear empty.
+        labelEl.textContent = targetText;
+
+        if (labelEl.__swapTimer) {
+            window.clearTimeout(labelEl.__swapTimer);
+            labelEl.__swapTimer = null;
+        }
+
+        // Restart a short visual transition without hiding content.
+        labelEl.classList.remove('is-swapping');
+        void labelEl.offsetWidth;
+        labelEl.classList.add('is-swapping');
+        labelEl.__swapTimer = window.setTimeout(function () {
+            labelEl.classList.remove('is-swapping');
+            labelEl.__swapTimer = null;
+        }, 140);
+    }
+
     function getVisibleGroups() {
         return Array.prototype.filter.call(groups, function (group) {
             return window.getComputedStyle(group).display !== 'none';
@@ -189,6 +273,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function getHeading(group) {
         return group.querySelector('h2');
+    }
+
+    function isAlumniGroup(group) {
+        if (!group) {
+            return false;
+        }
+        var groupKey = group.getAttribute('data-people-group') || '';
+        return groupKey.indexOf('alumni_') === 0;
+    }
+
+    function formatJumpLabel(group, fallback, contextIsAlumni, direction) {
+        if (!group) {
+            return fallback;
+        }
+
+        var heading = getHeading(group);
+        var baseLabel = compactGroupLabel(heading ? heading.textContent : fallback);
+        if (baseLabel === '--') {
+            return baseLabel;
+        }
+
+        var targetIsAlumni = isAlumniGroup(group);
+        if (targetIsAlumni) {
+            return baseLabel + ' (alumni)';
+        }
+
+        return baseLabel;
     }
 
     function getGroupAnchor(group) {
@@ -212,6 +323,35 @@ document.addEventListener('DOMContentLoaded', function () {
         return idx;
     }
 
+    function getJumpTargets(visibleGroups, scrollYValue) {
+        var upIndex = -1;
+        var downIndex = -1;
+
+        for (var i = 0; i < visibleGroups.length; i += 1) {
+            var anchor = getGroupAnchor(visibleGroups[i]);
+            if (anchor < scrollYValue - 2) {
+                upIndex = i;
+                continue;
+            }
+            if (downIndex === -1 && anchor > scrollYValue + 2) {
+                downIndex = i;
+            }
+        }
+
+        return { upIndex: upIndex, downIndex: downIndex };
+    }
+
+    function findGroupIndexByCompactLabel(visibleGroups, wantedLabel) {
+        for (var i = 0; i < visibleGroups.length; i += 1) {
+            var heading = getHeading(visibleGroups[i]);
+            var label = compactGroupLabel(heading ? heading.textContent : '');
+            if (label === wantedLabel) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     function renderGroupJumpState(virtualScrollY, forcedIndex) {
         if (!groupJumpNav) {
             return;
@@ -227,25 +367,36 @@ document.addEventListener('DOMContentLoaded', function () {
             groupJumpNav.classList.remove('is-visible');
             if (upBtn) upBtn.disabled = true;
             if (downBtn) downBtn.disabled = true;
-            if (upLabel) upLabel.textContent = '--';
-            if (downLabel) downLabel.textContent = '--';
+            setJumpLabel(upLabel, '--');
+            setJumpLabel(downLabel, '--');
             return;
         }
 
-        var effectiveScrollY = typeof virtualScrollY === 'number' ? virtualScrollY : window.scrollY;
-        var activeIndex = typeof forcedIndex === 'number' ? forcedIndex : computeActiveIndex(visibleGroups);
-        activeIndex = Math.max(0, Math.min(visibleGroups.length - 1, activeIndex));
-        var nextIndex = Math.min(visibleGroups.length - 1, activeIndex + 1);
-        var activeHeading = getHeading(visibleGroups[activeIndex]);
-        var nextHeading = getHeading(visibleGroups[nextIndex]);
-        var activeAnchor = getGroupAnchor(visibleGroups[activeIndex]);
-
-        if (upLabel) upLabel.textContent = compactGroupLabel(activeHeading ? activeHeading.textContent : '--');
-        if (downLabel) downLabel.textContent = compactGroupLabel(nextHeading ? nextHeading.textContent : '--');
-        if (upBtn) upBtn.disabled = activeIndex === 0 && effectiveScrollY <= activeAnchor + 2;
-        if (downBtn) downBtn.disabled = activeIndex >= visibleGroups.length - 1;
-
         var firstAnchor = getGroupAnchor(visibleGroups[0]);
+        var effectiveScrollY = typeof virtualScrollY === 'number' ? virtualScrollY : window.scrollY;
+        var targets = getJumpTargets(visibleGroups, effectiveScrollY);
+        var activeIndex = computeActiveIndex(visibleGroups);
+        activeIndex = Math.max(0, Math.min(visibleGroups.length - 1, activeIndex));
+        var activeGroup = visibleGroups[activeIndex];
+        var activeIsAlumni = isAlumniGroup(activeGroup);
+        var firstHeading = getHeading(visibleGroups[0]);
+        var previousHeading = targets.upIndex >= 0 ? getHeading(visibleGroups[targets.upIndex]) : null;
+        var nextHeading = targets.downIndex >= 0 ? getHeading(visibleGroups[targets.downIndex]) : null;
+        var atMembersTop = targets.upIndex === -1;
+
+        setJumpLabel(
+            upLabel,
+            targets.upIndex === -1
+                ? formatJumpLabel(visibleGroups[0], compactGroupLabel(firstHeading ? firstHeading.textContent : '--'), activeIsAlumni, 'up')
+                : formatJumpLabel(visibleGroups[targets.upIndex], compactGroupLabel(previousHeading ? previousHeading.textContent : '--'), activeIsAlumni, 'up')
+        );
+        setJumpLabel(
+            downLabel,
+            formatJumpLabel(visibleGroups[targets.downIndex], compactGroupLabel(nextHeading ? nextHeading.textContent : '--'), activeIsAlumni, 'down')
+        );
+        if (upBtn) upBtn.disabled = false;
+        if (downBtn) downBtn.disabled = targets.downIndex === -1;
+
         // Keep controls visible throughout Faculty; hide only when scrolled slightly above the first anchor.
         var shouldShow = effectiveScrollY >= firstAnchor - 28;
         groupJumpNav.classList.toggle('is-visible', !!shouldShow);
@@ -257,18 +408,20 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        var activeIndex = computeActiveIndex(visibleGroups);
-        var targetIndex = activeIndex;
-        var currentAnchor = getGroupAnchor(visibleGroups[activeIndex]);
+        var currentScrollY = window.scrollY;
+        var targets = getJumpTargets(visibleGroups, currentScrollY);
+        var atMembersTop = targets.upIndex === -1;
+        var targetIndex = direction === 'up' ? targets.upIndex : targets.downIndex;
 
-        if (direction === 'up') {
-            if (window.scrollY > currentAnchor + 2) {
-                targetIndex = activeIndex;
-            } else {
-                targetIndex = Math.max(0, activeIndex - 1);
-            }
-        } else {
-            targetIndex = Math.min(visibleGroups.length - 1, activeIndex + 1);
+        if (!atMembersTop && direction === 'up' && targetIndex === -1) {
+            targetIndex = 0;
+        }
+
+        if (atMembersTop && direction === 'up' && targetIndex === -1) {
+            targetIndex = 0;
+        }
+        if (targetIndex === -1) {
+            return;
         }
 
         var targetTop = getGroupAnchor(visibleGroups[targetIndex]);
@@ -289,6 +442,42 @@ document.addEventListener('DOMContentLoaded', function () {
 
         window.addEventListener('scroll', renderGroupJumpState, { passive: true });
         window.addEventListener('resize', renderGroupJumpState);
+    }
+
+    function getBlockAnchor(block) {
+        if (!block) {
+            return 0;
+        }
+        return block.getBoundingClientRect().top + window.pageYOffset - 92;
+    }
+
+    function renderSectionJumpState() {
+        if (!sectionJumpNav || !activeSectionBlock || !alumniSectionBlock) {
+            return;
+        }
+
+        var show = window.scrollY >= getBlockAnchor(activeSectionBlock) - 28;
+        sectionJumpNav.classList.toggle('is-visible', !!show);
+    }
+
+    if (sectionJumpNav) {
+        var currentBtn = sectionJumpNav.querySelector('[data-csdc-people-section-target="current"]');
+        var alumniBtn = sectionJumpNav.querySelector('[data-csdc-people-section-target="alumni"]');
+
+        if (currentBtn) {
+            currentBtn.addEventListener('click', function () {
+                window.scrollTo({ top: getBlockAnchor(activeSectionBlock), behavior: 'auto' });
+            });
+        }
+
+        if (alumniBtn) {
+            alumniBtn.addEventListener('click', function () {
+                window.scrollTo({ top: getBlockAnchor(alumniSectionBlock), behavior: 'auto' });
+            });
+        }
+
+        window.addEventListener('scroll', renderSectionJumpState, { passive: true });
+        window.addEventListener('resize', renderSectionJumpState);
     }
 
     var applyFilter = function () {
@@ -323,6 +512,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         renderGroupJumpState();
+        renderSectionJumpState();
     };
 
     searchInput.addEventListener('input', applyFilter);

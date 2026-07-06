@@ -1,12 +1,5 @@
 <div class="publication-links">
     {% assign pub = include.pub %}
-    {% if pub.link %}
-    <a class="publication-ext-link" href="{{ pub.link }}" target="_blank">
-        <i class="fas fa-book"></i>
-        <span>Paper</span>
-    </a>
-    {% endif %}
-
     {% if pub.code %}
     <a class="publication-ext-link" href="{{ pub.code }}" target="_blank">
         <i class="fab fa-github"></i>

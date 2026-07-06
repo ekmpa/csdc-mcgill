@@ -109,6 +109,19 @@ body:
     validations:
       required: false
 
+  - type: dropdown
+    id: research_axes
+    attributes:
+      label: Research axes / Axes de recherche
+      description: Select all topic-modeling axes that apply to this faculty member. / Sélectionnez tous les axes de modélisation qui s'appliquent à ce membre du corps professoral.
+      multiple: true
+      options:
+        - Axis 1
+        - Axis 2
+        - Axis 3
+    validations:
+      required: false
+
   - type: input
     id: orcid
     attributes:

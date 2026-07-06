@@ -31,7 +31,12 @@ AXES: Sequence[AxisDefinition] = (
         core_tokens={
             "citizenship",
             "learning",
+            "civic",
             "education",
+            "school",
+            "socialization",
+            "generation",
+            "generational",
             "identity",
             "trust",
             "social",
@@ -42,32 +47,36 @@ AXES: Sequence[AxisDefinition] = (
             "youth",
             "student",
             "community",
-            "digital",
-            "online",
-            "ai",
+            "immigrant",
+            "immigration",
+            "integration",
+            "democracy",
+            "democratic",
+            "backsliding",
+            "tolerance",
         },
         phrase_bank=(
-            ("Citizen identity", "Identite citoyenne", {"identity", "citizenship", "community"}),
+            ("Civic education and schools", "Education civique et ecoles", {"civic", "education", "school", "student"}),
+            (
+                "Political socialization across generations",
+                "Socialisation politique intergenerationnelle",
+                {"socialization", "generation", "youth", "learning"},
+            ),
+            (
+                "Immigration, integration, and belonging",
+                "Immigration, integration et appartenance",
+                {"immigrant", "immigration", "integration", "community", "belonging"},
+            ),
+            (
+                "Support for democracy and democratic resilience",
+                "Soutien a la democratie et resilience democratique",
+                {"democracy", "democratic", "support", "backsliding", "tolerance"},
+            ),
             ("Political trust", "Confiance politique", {"trust", "institution", "political"}),
             ("Social cohesion", "Cohesion sociale", {"social", "cohesion", "community"}),
             ("Information literacy", "Competences informationnelles", {"information", "literacy", "media"}),
-            ("Civic learning", "Apprentissage civique", {"civic", "learning", "citizenship"}),
+            ("Citizen identity", "Identite citoyenne", {"identity", "citizenship", "community"}),
             ("Educational inequality", "Inegalites educatives", {"education", "inequality", "student"}),
-            (
-                "Digital civic literacy",
-                "Litteratie civique numerique",
-                {"digital", "media", "literacy", "information", "civic"},
-            ),
-            (
-                "AI literacy and trust",
-                "Litteratie en IA et confiance",
-                {"ai", "literacy", "trust", "information", "citizenship"},
-            ),
-            (
-                "Online political socialization",
-                "Socialisation politique en ligne",
-                {"online", "information", "youth", "learning", "community"},
-            ),
         ),
     ),
     AxisDefinition(
@@ -78,9 +87,12 @@ AXES: Sequence[AxisDefinition] = (
             "participation",
             "vote",
             "voting",
+            "turnout",
             "opinion",
             "information",
             "media",
+            "consumption",
+            "news",
             "partisan",
             "polarization",
             "engagement",
@@ -93,18 +105,12 @@ AXES: Sequence[AxisDefinition] = (
             "fact",
             "checking",
             "verification",
-            "ai",
-            "algorithmic",
-            "deepfake",
-            "synthetic",
-            "generative",
-            "platform",
-            "perception",
         },
         phrase_bank=(
-            ("Information consumption", "Consommation de l'information", {"information", "media", "news"}),
-            ("Opinion formation", "Formation des opinions politiques", {"opinion", "attitude", "political"}),
-            ("Citizen participation", "Participation citoyenne", {"participation", "citizenship", "engagement"}),
+            ("Media consumption", "Consommation mediatique", {"media", "consumption", "news", "information"}),
+            ("Public opinion", "Opinion publique", {"public", "opinion", "attitude", "political"}),
+            ("Political participation", "Participation politique", {"participation", "citizenship", "engagement"}),
+            ("Voting and turnout", "Vote et participation electorale", {"vote", "voting", "turnout", "electoral"}),
             ("Partisan polarization", "Polarisation partisane", {"partisan", "polarization", "party"}),
             ("Electoral behavior", "Comportement electoral", {"electoral", "vote", "voting"}),
             ("Public deliberation", "Deliberation publique", {"public", "deliberation", "debate"}),
@@ -113,26 +119,17 @@ AXES: Sequence[AxisDefinition] = (
                 "Desinformation et verification des faits",
                 {"misinformation", "disinformation", "fact", "checking", "verification", "rumor", "rumour"},
             ),
-            (
-                "AI and deepfake detection",
-                "IA et detection des hypertrucages",
-                {"ai", "deepfake", "synthetic", "generative", "detection", "media"},
-            ),
-            (
-                "Public perceptions of AI",
-                "Perceptions publiques de l'IA",
-                {"public", "perception", "attitude", "ai", "algorithmic", "trust"},
-            ),
         ),
     ),
     AxisDefinition(
         axis_id="axis_3",
-        title_en="Citizen Representation and Governance",
-        title_fr="La representation des citoyens et la gouvernance",
+        title_en="Political Representation, Institutions, and Inequality",
+        title_fr="Representation, institutions et inegalites politiques",
         core_tokens={
             "representation",
             "governance",
             "institution",
+            "institutions",
             "parliament",
             "legislative",
             "government",
@@ -143,39 +140,27 @@ AXES: Sequence[AxisDefinition] = (
             "party",
             "trust",
             "democratic",
-            "platform",
-            "regulation",
-            "accountability",
-            "algorithmic",
-            "ai",
-            "digital",
+            "democracy",
+            "inequality",
+            "redistribution",
+            "state",
         },
         phrase_bank=(
             ("Citizen-institution relations", "Relation citoyens-institutions", {"citizen", "institution", "trust"}),
-            ("Parliamentary institutions", "Institutions parlementaires", {"parliament", "legislative", "institution"}),
+            ("Political institutions", "Institutions politiques", {"institution", "institutions", "parliament", "legislative"}),
             ("Government responsiveness", "Reactivite des gouvernements", {"government", "responsiveness", "policy"}),
             ("Political representation", "Representation politique", {"representation", "party", "electoral"}),
             ("Democratic governance", "Gouvernance democratique", {"governance", "democratic", "government"}),
             ("Electoral systems", "Systemes electoraux", {"electoral", "system", "institution"}),
             (
-                "Platform governance and regulation",
-                "Gouvernance et regulation des plateformes",
-                {"platform", "regulation", "policy", "governance", "institution"},
+                "Political inequality",
+                "Inegalite politique",
+                {"inequality", "political", "representation", "redistribution", "democratic"},
             ),
             (
-                "Algorithmic accountability",
-                "Responsabilite algorithmique",
-                {"algorithmic", "accountability", "ai", "governance", "regulation"},
-            ),
-            (
-                "Digital platform accountability",
-                "Responsabilite numerique des plateformes",
-                {"digital", "platform", "accountability", "governance", "regulation"},
-            ),
-            (
-                "AI governance and institutions",
-                "Gouvernance de l'IA et institutions",
-                {"ai", "governance", "institution", "regulation", "policy"},
+                "Parties and political competition",
+                "Partis et competition politique",
+                {"party", "competition", "electoral", "representation"},
             ),
         ),
     ),
@@ -198,6 +183,8 @@ NOISE_TERMS: Set[str] = {
     "supplementary", "dataset", "data", "static", "stats", "zenodo", "metric", "waveform", "inversion",
     "sensor", "branch", "synchronous", "prediction", "therapy", "antiretroviral", "software", "package",
 }
+
+FOUNDATION_YEAR = 2008
 
 
 TOKEN_NORMALIZATION: Dict[str, str] = {
@@ -248,42 +235,50 @@ TOKEN_NORMALIZATION: Dict[str, str] = {
 AXIS_BY_ID: Dict[AxisId, AxisDefinition] = {axis.axis_id: axis for axis in AXES}
 
 AXIS_PRIORITY_PHRASES: Dict[AxisId, Sequence[str]] = {
+    "axis_1": (
+        "Support for democracy and democratic resilience",
+        "Political socialization across generations",
+        "Immigration, integration, and belonging",
+    ),
     "axis_2": (
         "Misinformation and fact-checking",
     ),
     "axis_3": (
-        "Platform governance and regulation",
-        "Algorithmic accountability",
+        "Political institutions",
+        "Political inequality",
     ),
 }
 
 AXIS_ALLOWED_PHRASES: Dict[AxisId, Set[str]] = {
     "axis_1": {
-        "Digital civic literacy",
-        "AI literacy and trust",
-        "Information literacy",
-        "Online political socialization",
+        "Civic education and schools",
+        "Political socialization across generations",
+        "Immigration, integration, and belonging",
+        "Support for democracy and democratic resilience",
         "Political trust",
+        "Social cohesion",
+        "Information literacy",
+        "Citizen identity",
+        "Educational inequality",
     },
     "axis_2": {
-        "Misinformation and fact-checking",
-        "AI and deepfake detection",
-        "Public perceptions of AI",
-        "Information consumption",
-        "Opinion formation",
-        "Citizen participation",
-        "Partisan polarization",
+        "Media consumption",
+        "Public opinion",
+        "Political participation",
+        "Voting and turnout",
         "Electoral behavior",
+        "Misinformation and fact-checking",
+        "Partisan polarization",
         "Public deliberation",
     },
     "axis_3": {
-        "Platform governance and regulation",
-        "Algorithmic accountability",
-        "Digital platform accountability",
-        "AI governance and institutions",
-        "Democratic governance",
+        "Political institutions",
+        "Political inequality",
         "Government responsiveness",
-        "Political representation",
+        "Democratic governance",
+        "Electoral systems",
+        "Citizen-institution relations",
+        "Parties and political competition",
     },
 }
 
@@ -308,22 +303,26 @@ TECH_ORIENTED_TOKENS: Set[str] = {
     "online",
 }
 
-AI_ORIENTED_TOKENS: Set[str] = {
-    "ai",
-    "algorithmic",
-    "deepfake",
-    "synthetic",
-    "generative",
-    "llm",
-}
-
 # Extra weighting for faculty bios explicitly mapped to an axis.
-MAPPED_FACULTY_BIO_WEIGHT: float = 2.4
+MAPPED_FACULTY_BIO_WEIGHT: float = 3.0
 
-AXIS_AI_TARGETS: Dict[AxisId, int] = {
-    # Favor political-science framing on axis_2 while retaining one AI-linked tag.
-    "axis_2": 1,
+HIGHLIGHT_TARGET_FACULTY: Set[str] = {
+    "benjamin forest",
+    "eran shor",
+    "reihaneh rabbany",
+    "eric hehman",
+    "leonardo baccini",
+    "nicolas ajzenman",
 }
+
+HIGHLIGHT_TARGET_FACULTY_ORDER: Sequence[str] = (
+    "benjamin forest",
+    "eran shor",
+    "reihaneh rabbany",
+    "eric hehman",
+    "leonardo baccini",
+    "nicolas ajzenman",
+)
 
 
 def normalize_person_name(name: str) -> str:
@@ -338,9 +337,17 @@ def normalize_person_name(name: str) -> str:
     return cleaned
 
 
-def load_faculty_name_sets(authors_path: Path) -> Tuple[Set[str], Set[str], Dict[str, str], Dict[str, List[str]]]:
+def normalize_names_blob(names_text: str) -> str:
+    cleaned = normalize_text(names_text)
+    cleaned = re.sub(r"[^a-z\s,.-]", " ", cleaned)
+    cleaned = cleaned.replace(".", " ")
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    return cleaned
+
+
+def load_faculty_name_sets(authors_path: Path) -> Tuple[Set[str], Set[str], Dict[str, str], Dict[str, List[str]], Set[str], Set[str]]:
     if not authors_path.exists():
-        return set(), set(), {}, {}
+        return set(), set(), {}, {}, set(), set()
 
     yaml = YAML(typ="safe")
     authors_data = yaml.load(authors_path.read_text(encoding="utf-8")) or {}
@@ -349,6 +356,8 @@ def load_faculty_name_sets(authors_path: Path) -> Tuple[Set[str], Set[str], Dict
     faculty_last_names: Set[str] = set()
     faculty_bio_by_full_name: Dict[str, str] = {}
     faculty_bio_by_last_name: Dict[str, List[str]] = {}
+    student_full_names: Set[str] = set()
+    student_last_names: Set[str] = set()
 
     for _, profile in authors_data.items():
         if not isinstance(profile, dict):
@@ -356,17 +365,23 @@ def load_faculty_name_sets(authors_path: Path) -> Tuple[Set[str], Set[str], Dict
 
         current_role = profile.get("current_role", {}) or {}
         role_type = normalize_text(str(current_role.get("type", "") or ""))
-        if "faculty" not in role_type and "professor" not in role_type:
-            continue
-
         name = str(profile.get("name", "") or "").strip()
         if not name:
             continue
 
         normalized_name = normalize_person_name(name)
-        if normalized_name:
+        if not normalized_name:
+            continue
+
+        last_name = normalized_name.split(" ")[-1]
+        is_faculty = "faculty" in role_type or "professor" in role_type
+        is_student_like = any(
+            marker in role_type
+            for marker in ("student", "postdoc", "post-doctoral", "phd", "doctoral", "master", "msc", "ma")
+        )
+
+        if is_faculty:
             faculty_full_names.add(normalized_name)
-            last_name = normalized_name.split(" ")[-1]
             if len(last_name) >= 3:
                 faculty_last_names.add(last_name)
 
@@ -377,8 +392,35 @@ def load_faculty_name_sets(authors_path: Path) -> Tuple[Set[str], Set[str], Dict
                     existing_bios = faculty_bio_by_last_name.setdefault(last_name, [])
                     if bio_value not in existing_bios:
                         existing_bios.append(bio_value)
+        elif is_student_like:
+            student_full_names.add(normalized_name)
+            if len(last_name) >= 3:
+                student_last_names.add(last_name)
 
-    return faculty_full_names, faculty_last_names, faculty_bio_by_full_name, faculty_bio_by_last_name
+    return faculty_full_names, faculty_last_names, faculty_bio_by_full_name, faculty_bio_by_last_name, student_full_names, student_last_names
+
+
+def get_matching_person_names(
+    names_value: str,
+    full_names: Set[str],
+    last_names: Set[str],
+) -> List[str]:
+    if not names_value:
+        return []
+
+    normalized_names_text = normalize_names_blob(names_value)
+    matches: Set[str] = set()
+    for full_name in full_names:
+        if full_name in normalized_names_text:
+            matches.add(full_name)
+
+    word_tokens = set(re.findall(r"[a-z]{3,}", normalized_names_text))
+    for full_name in full_names:
+        last_name = full_name.split(" ")[-1]
+        if len(last_name) >= 3 and last_name in last_names and last_name in word_tokens:
+            matches.add(full_name)
+
+    return sorted(matches)
 
 
 def load_faculty_axis_map(
@@ -435,7 +477,7 @@ def get_matching_faculty_bio_text(
     if not names_value:
         return ""
 
-    normalized_names_text = normalize_person_name(names_value)
+    normalized_names_text = normalize_names_blob(names_value)
     matched_bios: List[str] = []
     seen_bios: Set[str] = set()
 
@@ -480,7 +522,7 @@ def publication_has_faculty_author(
     if not names_value:
         return False
 
-    normalized_names_text = normalize_person_name(names_value)
+    normalized_names_text = normalize_names_blob(names_value)
     if any(full_name in normalized_names_text for full_name in faculty_full_names):
         return True
 
@@ -497,6 +539,39 @@ def normalize_text(text: str) -> str:
     lowered = lowered.replace("\u2013", "-")
     lowered = lowered.replace("\u2014", "-")
     return lowered
+
+
+def strip_latex_markup(text: str) -> str:
+    """Strip lightweight LaTeX-like markup for clean UI display in highlights."""
+    if not text:
+        return ""
+
+    cleaned = str(text)
+    cleaned = re.sub(r"\$\$(.*?)\$\$", r"\1", cleaned, flags=re.DOTALL)
+    cleaned = re.sub(r"\$(.*?)\$", r"\1", cleaned, flags=re.DOTALL)
+    cleaned = re.sub(r"\\text(?:bf|tt|ttt|it)\s*\{([^{}]*)\}", r"\1", cleaned)
+    cleaned = re.sub(r"[{}]", "", cleaned)
+    cleaned = re.sub(r"\\[a-zA-Z]+", "", cleaned)
+    cleaned = re.sub(r"\s+", " ", cleaned)
+    return cleaned.strip()
+
+
+def normalize_display_venue(text: str) -> str:
+    """Normalize venue text for UI display; collapse placeholder values to empty."""
+    if not text:
+        return ""
+
+    cleaned = str(text).strip()
+    if not cleaned:
+        return ""
+
+    lowered = cleaned.lower()
+    if lowered in {"n/a", "na", "none", "null", "_no response_", "_unavailable_"}:
+        return ""
+    if cleaned in {".", "-", "--", "·"}:
+        return ""
+
+    return cleaned
 
 
 def tokenize(text: str) -> List[str]:
@@ -541,18 +616,22 @@ def build_documents(
     faculty_last_names: Optional[Set[str]] = None,
     faculty_bio_by_full_name: Optional[Dict[str, str]] = None,
     faculty_bio_by_last_name: Optional[Dict[str, List[str]]] = None,
+    student_full_names: Optional[Set[str]] = None,
+    student_last_names: Optional[Set[str]] = None,
 ) -> List[dict]:
     documents: List[dict] = []
     faculty_full_names = faculty_full_names or set()
     faculty_last_names = faculty_last_names or set()
     faculty_bio_by_full_name = faculty_bio_by_full_name or {}
     faculty_bio_by_last_name = faculty_bio_by_last_name or {}
+    student_full_names = student_full_names or set()
+    student_last_names = student_last_names or set()
 
     for path in sorted(posts_dir.glob("*.md")):
         data, body = read_front_matter(path)
 
-        title = str(data.get("title", "") or "")
-        title_fr = str(data.get("title_fr", "") or "")
+        title = strip_latex_markup(str(data.get("title", "") or ""))
+        title_fr = strip_latex_markup(str(data.get("title_fr", "") or ""))
         abstract = str(data.get("abstract", "") or "")
         abstract_fr = str(data.get("abstract_fr", "") or "")
 
@@ -564,10 +643,22 @@ def build_documents(
         ]
         names_value = str(data.get("names", "") or "")
         publication_year = parse_publication_year(path, data)
+        if publication_year is not None and publication_year < FOUNDATION_YEAR:
+            continue
         has_faculty_author = publication_has_faculty_author(
             names_value,
             faculty_full_names=faculty_full_names,
             faculty_last_names=faculty_last_names,
+        )
+        matched_faculty_names = get_matching_person_names(
+            names_value,
+            full_names=faculty_full_names,
+            last_names=faculty_last_names,
+        )
+        matched_student_names = get_matching_person_names(
+            names_value,
+            full_names=student_full_names,
+            last_names=student_last_names,
         )
         faculty_bio_text = get_matching_faculty_bio_text(
             names_value,
@@ -598,10 +689,12 @@ def build_documents(
                 "faculty_bio_tokens": faculty_bio_tokens,
                 "year": publication_year,
                 "has_faculty_author": has_faculty_author,
+                "matched_faculty_names": matched_faculty_names,
+                "has_student_author": bool(matched_student_names),
                 "raw_meta": {
-                    "title": str(data.get("title", "") or "").strip(),
+                    "title": strip_latex_markup(str(data.get("title", "") or "")).strip(),
                     "names": str(data.get("names", "") or "").strip(),
-                    "venue": str(data.get("venue", "") or "").strip(),
+                    "venue": normalize_display_venue(str(data.get("venue", "") or "")),
                     "link": str(data.get("link", "") or "").strip(),
                 },
             }
@@ -616,9 +709,9 @@ def filter_documents(
     faculty_only: bool,
 ) -> Tuple[List[dict], Dict[str, object]]:
     current_year = datetime.date.today().year
-    min_year: Optional[int] = None
+    min_year: Optional[int] = FOUNDATION_YEAR
     if recent_years > 0:
-        min_year = current_year - recent_years + 1
+        min_year = max(FOUNDATION_YEAR, current_year - recent_years + 1)
 
     filtered: List[dict] = []
     for doc in documents:
@@ -741,47 +834,20 @@ def pick_axis_phrases(
     axis_bio_token_boosts: Optional[Dict[AxisId, Counter]] = None,
 ) -> Tuple[List[str], List[str]]:
     scored = score_axis_phrase_bank(axis, docs, axis_bio_token_boosts=axis_bio_token_boosts)
-    phrase_signals = {en_label: signals for en_label, _, signals in axis.phrase_bank}
-
-    # Keep AXIS_ALLOWED_PHRASES as advisory/reference, but do not hard-filter.
-    # This lets publication evidence (including faculty bio signal) drive selection.
-
-    ai_ranked: List[Tuple[str, str, float]] = []
-    non_ai_ranked: List[Tuple[str, str, float]] = []
-    for item in scored:
-        label = item[0]
-        signals = phrase_signals.get(label, set())
-        if signals.intersection(AI_ORIENTED_TOKENS):
-            ai_ranked.append(item)
-        else:
-            non_ai_ranked.append(item)
-
-    selected: List[Tuple[str, str, float]] = []
-    ai_target = AXIS_AI_TARGETS.get(axis.axis_id, max_tags // 2)
-    ai_target = max(0, min(max_tags, ai_target))
-    non_ai_target = max_tags - ai_target
-    selected.extend(ai_ranked[:ai_target])
-    selected.extend(non_ai_ranked[:non_ai_target])
-    if len(selected) < max_tags:
-        selected_labels = {item[0] for item in selected}
-        for item in ai_ranked + non_ai_ranked:
-            if len(selected) >= max_tags:
-                break
-            if item[0] in selected_labels:
-                continue
-            selected.append(item)
-            selected_labels.add(item[0])
+    allowed_labels = AXIS_ALLOWED_PHRASES.get(axis.axis_id)
+    if allowed_labels:
+        scored = [item for item in scored if item[0] in allowed_labels]
+    selected: List[Tuple[str, str, float]] = list(scored[:max_tags])
 
     # Keep prioritized technical/specialized phrases where evidence exists.
     priority_labels = AXIS_PRIORITY_PHRASES.get(axis.axis_id, ())
     if priority_labels:
+        scored_by_label = {item[0]: item for item in scored}
         selected_labels = {item[0] for item in selected}
-        priority_candidates: List[Tuple[str, str, float]] = []
-        for item in scored:
-            if item[0] in priority_labels:
-                priority_candidates.append(item)
-
-        for candidate in priority_candidates:
+        for label in priority_labels:
+            candidate = scored_by_label.get(label)
+            if candidate is None:
+                continue
             if candidate[0] in selected_labels:
                 continue
             if len(selected) < max_tags:
@@ -791,14 +857,14 @@ def pick_axis_phrases(
             if selected:
                 replacement_index = None
                 for idx in range(len(selected) - 1, -1, -1):
-                    sel_label = selected[idx][0]
-                    sel_signals = phrase_signals.get(sel_label, set())
-                    if not sel_signals.intersection(AI_ORIENTED_TOKENS):
+                    if selected[idx][0] not in priority_labels:
                         replacement_index = idx
                         break
                 if replacement_index is None:
                     replacement_index = len(selected) - 1
+                replaced_label = selected[replacement_index][0]
                 selected[replacement_index] = candidate
+                selected_labels.discard(replaced_label)
                 selected_labels.add(candidate[0])
 
     if len(selected) < min_tags:
@@ -806,6 +872,8 @@ def pick_axis_phrases(
         for en_label, fr_label, _ in axis.phrase_bank:
             if len(selected) >= min_tags:
                 break
+            if allowed_labels and en_label not in allowed_labels:
+                continue
             if en_label in existing_en:
                 continue
             selected.append((en_label, fr_label, 0.0))
@@ -819,32 +887,41 @@ def pick_axis_phrases(
     return tags_en, tags_fr
 
 
-def select_highlight_papers(
+def rank_axis_highlight_candidates(
     axis: AxisDefinition,
     documents: Sequence[dict],
-    max_highlights: int = 3,
-    min_highlights: int = 2,
-    highlight_years: int = 2,
+    axis_mapped_faculty: Dict[AxisId, List[str]],
+    highlight_years: int = 0,
 ) -> List[dict]:
-    """Pick 2-3 recent, faculty-authored papers most relevant to this axis."""
     current_year = datetime.date.today().year
-    min_year = current_year - highlight_years + 1
+    min_year: Optional[int] = None
+    if highlight_years > 0:
+        min_year = current_year - highlight_years + 1
+
+    mapped_faculty = {
+        normalize_person_name(name)
+        for name in axis_mapped_faculty.get(axis.axis_id, [])
+    }
     phrase_signals = {en_label: signals for en_label, _, signals in axis.phrase_bank}
 
-    candidates: List[Tuple[float, dict]] = []
+    candidates: List[dict] = []
     for doc in documents:
         year = doc.get("year")
-        if year is None or int(year) < min_year:
+        if min_year is not None and (year is None or int(year) < min_year):
             continue
-        if not doc.get("has_faculty_author", False):
+
+        matched_faculty = list(doc.get("matched_faculty_names", []))
+        if not matched_faculty:
             continue
+        has_target_faculty = any(faculty in HIGHLIGHT_TARGET_FACULTY for faculty in matched_faculty)
+
         focus_tokens = list(doc.get("title_tokens", [])) + list(doc.get("abstract_tokens", []))
         if not focus_tokens:
             continue
 
         focus_counts = Counter(focus_tokens)
         axis_raw = sum(focus_counts.get(token, 0) for token in axis.core_tokens)
-        if axis_raw < 2:
+        if axis_raw < 1 and not has_target_faculty:
             continue
 
         other_best = max(
@@ -855,88 +932,147 @@ def select_highlight_papers(
             ),
             default=0,
         )
-        if axis_raw - other_best < 1:
+        if axis_raw + 1 < other_best and not has_target_faculty:
             continue
 
         phrase_overlap = 0
         for signals in phrase_signals.values():
             phrase_overlap = max(phrase_overlap, sum(focus_counts.get(token, 0) for token in signals))
 
-        recency_bonus = max(0.0, min(0.4, 0.1 * (int(year) - (current_year - 3))))
-        score = axis_raw + (0.5 * phrase_overlap) + recency_bonus
-        candidates.append((score, doc))
+        recency_bonus = 0.0
+        if isinstance(year, int):
+            recency_bonus = max(0.0, min(0.5, 0.08 * (int(year) - (current_year - 6))))
 
-    candidates.sort(key=lambda x: x[0], reverse=True)
+        student_bonus = 0.5 if doc.get("has_student_author", False) else 0.0
+        mapped_bonus = 0.45 if any(faculty in mapped_faculty for faculty in matched_faculty) else 0.0
+        base_score = axis_raw + (0.45 * phrase_overlap) + recency_bonus + student_bonus + mapped_bonus
 
-    seen_titles: Set[str] = set()
-    highlights: List[dict] = []
-    for score, doc in candidates:
-        if len(highlights) >= max_highlights:
-            break
         raw_meta = doc.get("raw_meta", {})
-        title = raw_meta.get("title", "").strip()
-        if not title or title in seen_titles:
+        title = strip_latex_markup(raw_meta.get("title", "")).strip()
+        if not title:
             continue
-        seen_titles.add(title)
-        names = raw_meta.get("names", "").strip()
-        venue = raw_meta.get("venue", "").strip()
-        link = raw_meta.get("link", "").strip()
-        year = doc.get("year")
-        highlights.append({
-            "title": title,
-            "names": names,
-            "venue": venue,
-            "link": link,
-            "year": year,
-        })
 
-    return highlights if len(highlights) >= min_highlights else highlights
+        for faculty in matched_faculty:
+            target_bonus = 0.8 if faculty in HIGHLIGHT_TARGET_FACULTY else 0.0
+            candidates.append(
+                {
+                    "score": base_score + target_bonus,
+                    "axis_id": axis.axis_id,
+                    "path": doc.get("path", ""),
+                    "primary_faculty": faculty,
+                    "all_faculty": matched_faculty,
+                    "title": title,
+                    "names": raw_meta.get("names", "").strip(),
+                    "venue": normalize_display_venue(raw_meta.get("venue", "")),
+                    "link": raw_meta.get("link", "").strip(),
+                    "year": year,
+                }
+            )
 
-
-def is_ai_oriented_label(axis: AxisDefinition, label_en: str) -> bool:
-    phrase_signals = {en_label: signals for en_label, _, signals in axis.phrase_bank}
-    signals = phrase_signals.get(label_en, set())
-    return bool(signals.intersection(AI_ORIENTED_TOKENS))
-
-
-def swap_first_with_non_ai(
-    axis: AxisDefinition,
-    tags_en: List[str],
-    tags_fr: List[str],
-) -> bool:
-    if not tags_en or not tags_fr or len(tags_en) != len(tags_fr):
-        return False
-    if not is_ai_oriented_label(axis, tags_en[0]):
-        return False
-
-    for idx in range(1, len(tags_en)):
-        if not is_ai_oriented_label(axis, tags_en[idx]):
-            tags_en[0], tags_en[idx] = tags_en[idx], tags_en[0]
-            tags_fr[0], tags_fr[idx] = tags_fr[idx], tags_fr[0]
-            return True
-    return False
+    candidates.sort(key=lambda item: item["score"], reverse=True)
+    return candidates
 
 
-def swap_first_with_ai(
-    axis: AxisDefinition,
-    tags_en: List[str],
-    tags_fr: List[str],
-) -> bool:
-    if not tags_en or not tags_fr or len(tags_en) != len(tags_fr):
-        return False
-    if is_ai_oriented_label(axis, tags_en[0]):
-        return True
+def select_highlights_for_all_axes(
+    documents: Sequence[dict],
+    axis_mapped_faculty: Dict[AxisId, List[str]],
+    max_highlights: int = 3,
+    min_highlights: int = 2,
+    highlight_years: int = 2,
+) -> Dict[AxisId, List[dict]]:
+    candidates_by_axis: Dict[AxisId, List[dict]] = {
+        axis.axis_id: rank_axis_highlight_candidates(
+            axis,
+            documents,
+            axis_mapped_faculty=axis_mapped_faculty,
+            highlight_years=highlight_years,
+        )
+        for axis in AXES
+    }
 
-    for idx in range(1, len(tags_en)):
-        if is_ai_oriented_label(axis, tags_en[idx]):
-            tags_en[0], tags_en[idx] = tags_en[idx], tags_en[0]
-            tags_fr[0], tags_fr[idx] = tags_fr[idx], tags_fr[0]
-            return True
-    return False
+    selected: Dict[AxisId, List[dict]] = {axis.axis_id: [] for axis in AXES}
+    used_paths: Set[str] = set()
+    used_faculty: Set[str] = set()
+    used_faculty_any: Set[str] = set()
+
+    def add_candidate(candidate: dict) -> None:
+        axis_id = candidate["axis_id"]
+        selected[axis_id].append(
+            {
+                "title": candidate["title"],
+                "names": candidate["names"],
+                "venue": candidate["venue"],
+                "link": candidate["link"],
+                "year": candidate["year"],
+            }
+        )
+        used_paths.add(candidate["path"])
+        used_faculty.add(candidate["primary_faculty"])
+        for faculty_name in candidate.get("all_faculty", []):
+            used_faculty_any.add(faculty_name)
+
+    # Seed highlights with requested faculty where possible.
+    for faculty_name in HIGHLIGHT_TARGET_FACULTY_ORDER:
+        if faculty_name in used_faculty:
+            continue
+        best_candidate = None
+        for axis in AXES:
+            axis_id = axis.axis_id
+            if len(selected[axis_id]) >= max_highlights:
+                continue
+            for candidate in candidates_by_axis.get(axis_id, []):
+                if candidate["primary_faculty"] != faculty_name:
+                    continue
+                if candidate["path"] in used_paths:
+                    continue
+                if best_candidate is None or candidate["score"] > best_candidate["score"]:
+                    best_candidate = candidate
+                break
+        if best_candidate is not None:
+            add_candidate(best_candidate)
+
+    def try_fill(target_count: int, enforce_unique_faculty: bool) -> bool:
+        progress = False
+        for axis in AXES:
+            axis_id = axis.axis_id
+            while len(selected[axis_id]) < target_count:
+                picked = None
+                for candidate in candidates_by_axis.get(axis_id, []):
+                    if candidate["path"] in used_paths:
+                        continue
+                    if enforce_unique_faculty and candidate["primary_faculty"] in used_faculty:
+                        continue
+                    if enforce_unique_faculty and set(candidate.get("all_faculty", [])).intersection(used_faculty_any):
+                        continue
+                    picked = candidate
+                    break
+
+                if picked is None:
+                    break
+
+                add_candidate(picked)
+                progress = True
+
+        return progress
+
+    # First pass: enforce one highlighted paper per faculty globally.
+    while try_fill(min_highlights, enforce_unique_faculty=True):
+        pass
+    while try_fill(max_highlights, enforce_unique_faculty=True):
+        pass
+
+    # Fallback pass: if needed, allow faculty repeats before leaving empty slots.
+    while try_fill(min_highlights, enforce_unique_faculty=False):
+        pass
+    while try_fill(max_highlights, enforce_unique_faculty=False):
+        pass
+
+    return selected
 
 
 def build_output(
     documents: Sequence[dict],
+    highlight_documents: Sequence[dict],
     all_documents_count: int,
     selection_summary: Dict[str, object],
     axis_docs: Dict[AxisId, List[dict]],
@@ -953,7 +1089,7 @@ def build_output(
         "source_publication_count": all_documents_count,
         "selected_publication_count": len(documents),
         "matching": {
-            "method": "weighted multi-axis relevance (recent faculty-focused CECD bilingual vocabulary + faculty bio signal)",
+            "method": "weighted multi-axis relevance (recent faculty publications + faculty bios, CECD bilingual vocabulary)",
             "thresholds": {
                 "min_share": min_share,
                 "min_hits": min_hits,
@@ -962,11 +1098,24 @@ def build_output(
             },
             "selection": selection_summary,
             "axis_mapped_faculty": axis_mapped_faculty,
+            "highlight_selection": {
+                "min_per_axis": 2,
+                "max_per_axis": 3,
+                "highlight_years": 2,
+                "global_unique_faculty": True,
+                "preferred_faculty": list(HIGHLIGHT_TARGET_FACULTY_ORDER),
+            },
             "axis_document_counts": {axis.axis_id: len(axis_docs[axis.axis_id]) for axis in AXES},
             "sample_assignments": [],
         },
         "axes": {},
     }
+
+    highlights_by_axis = select_highlights_for_all_axes(
+        highlight_documents,
+        axis_mapped_faculty=axis_mapped_faculty,
+        highlight_years=2,
+    )
 
     for axis in AXES:
         tags_en, tags_fr = pick_axis_phrases(
@@ -976,7 +1125,7 @@ def build_output(
             max_tags=max_tags,
             axis_bio_token_boosts=axis_bio_token_boosts,
         )
-        highlights = select_highlight_papers(axis, documents)
+        highlights = highlights_by_axis.get(axis.axis_id, [])
         axis_entry: dict = {
             "tags_en": tags_en,
             "tags_fr": tags_fr,
@@ -984,46 +1133,6 @@ def build_output(
         if highlights:
             axis_entry["highlight_papers"] = highlights
         output["axes"][axis.axis_id] = axis_entry
-
-    # Enforce exact display split across axes:
-    # exactly 1 AI-first axis and 2 non-AI-first axes.
-    target_ai_first = 1
-    ai_first_axis_ids: List[str] = []
-    for axis in AXES:
-        axis_entry = output["axes"].get(axis.axis_id, {})
-        tags_en = axis_entry.get("tags_en", [])
-        if tags_en and is_ai_oriented_label(axis, tags_en[0]):
-            ai_first_axis_ids.append(axis.axis_id)
-
-    ai_first_preference = ["axis_3", "axis_2", "axis_1"]
-    non_ai_preference = ["axis_1", "axis_2", "axis_3"]
-
-    if len(ai_first_axis_ids) > target_ai_first:
-        keep_axis_id = next((axis_id for axis_id in ai_first_preference if axis_id in ai_first_axis_ids), ai_first_axis_ids[0])
-        for axis_id in non_ai_preference:
-            if len(ai_first_axis_ids) <= target_ai_first:
-                break
-            if axis_id == keep_axis_id or axis_id not in ai_first_axis_ids:
-                continue
-            axis = AXIS_BY_ID[axis_id]
-            axis_entry = output["axes"].get(axis_id, {})
-            tags_en = axis_entry.get("tags_en", [])
-            tags_fr = axis_entry.get("tags_fr", [])
-            if swap_first_with_non_ai(axis, tags_en, tags_fr):
-                ai_first_axis_ids.remove(axis_id)
-
-    if len(ai_first_axis_ids) < target_ai_first:
-        for axis_id in ai_first_preference:
-            if len(ai_first_axis_ids) >= target_ai_first:
-                break
-            if axis_id in ai_first_axis_ids:
-                continue
-            axis = AXIS_BY_ID[axis_id]
-            axis_entry = output["axes"].get(axis_id, {})
-            tags_en = axis_entry.get("tags_en", [])
-            tags_fr = axis_entry.get("tags_fr", [])
-            if swap_first_with_ai(axis, tags_en, tags_fr):
-                ai_first_axis_ids.append(axis_id)
 
     for path in sorted(diagnostics.keys())[:6]:
         output["matching"]["sample_assignments"].append(
@@ -1058,13 +1167,22 @@ def main(
     min_tags: int = 4,
     max_tags: int = 4,
 ) -> None:
-    faculty_full_names, faculty_last_names, faculty_bio_by_full_name, faculty_bio_by_last_name = load_faculty_name_sets(Path(authors_path))
+    (
+        faculty_full_names,
+        faculty_last_names,
+        faculty_bio_by_full_name,
+        faculty_bio_by_last_name,
+        student_full_names,
+        student_last_names,
+    ) = load_faculty_name_sets(Path(authors_path))
     all_docs = build_documents(
         Path(posts_dir),
         faculty_full_names=faculty_full_names,
         faculty_last_names=faculty_last_names,
         faculty_bio_by_full_name=faculty_bio_by_full_name,
         faculty_bio_by_last_name=faculty_bio_by_last_name,
+        student_full_names=student_full_names,
+        student_last_names=student_last_names,
     )
     docs, selection_summary = filter_documents(all_docs, recent_years=recent_years, faculty_only=faculty_only)
     axis_bio_token_boosts, axis_mapped_faculty = load_faculty_axis_map(
@@ -1079,6 +1197,7 @@ def main(
     axis_docs, diagnostics = assign_documents_to_axes(docs, min_share=min_share, min_hits=min_hits)
     output = build_output(
         documents=docs,
+        highlight_documents=all_docs,
         all_documents_count=len(all_docs),
         selection_summary=selection_summary,
         axis_docs=axis_docs,

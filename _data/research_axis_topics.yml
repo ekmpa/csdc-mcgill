@@ -1,9 +1,9 @@
-generated_at: '2026-06-24'
-source_publication_count: 1302
-selected_publication_count: 80
+generated_at: '2026-07-06'
+source_publication_count: 1151
+selected_publication_count: 203
 matching:
-  method: weighted multi-axis relevance (recent faculty-focused CECD bilingual 
-    vocabulary + faculty bio signal)
+  method: weighted multi-axis relevance (recent faculty publications + faculty 
+    bios, CECD bilingual vocabulary)
   thresholds:
     min_share: 0.24
     min_hits: 2
@@ -13,150 +13,180 @@ matching:
     recent_years: 4
     min_year: 2023
     faculty_only: true
-    selected_publication_count: 80
-    available_publication_count: 1302
+    selected_publication_count: 203
+    available_publication_count: 1151
   axis_mapped_faculty:
-    axis_1: []
+    axis_1:
+      - Aaron Erlich
+      - Dietlind Stolle
+      - Elissa Berwick
+      - Eran Shor
+      - Eric Hehman
+      - Nicolas Ajzenman
+      - Reihaneh Rabbany
+      - Thomas Soehl
+      - Éric Bélanger
     axis_2:
+      - Aaron Erlich
+      - Benjamin Forest
+      - Dietlind Stolle
+      - Elissa Berwick
+      - Eran Shor
+      - Nicolas Ajzenman
+      - Reihaneh Rabbany
+      - Thomas Soehl
       - Éric Bélanger
     axis_3:
+      - Aaron Erlich
       - Benjamin Forest
+      - Dietlind Stolle
       - Éric Bélanger
+  highlight_selection:
+    min_per_axis: 2
+    max_per_axis: 3
+    highlight_years: 2
+    global_unique_faculty: true
+    preferred_faculty:
+      - benjamin forest
+      - eran shor
+      - reihaneh rabbany
+      - eric hehman
+      - leonardo baccini
+      - nicolas ajzenman
   axis_document_counts:
-    axis_1: 35
-    axis_2: 42
-    axis_3: 49
+    axis_1: 156
+    axis_2: 55
+    axis_3: 69
   sample_assignments:
     - path: _posts/papers/2023-01-01-10.1007-978-3-031-28089-4_3.md
       assigned_axes:
         - axis_1
         - axis_3
       relevance:
-        axis_1: 0.25
+        axis_1: 0.325
         axis_2: 0.0
-        axis_3: 0.75
-    - path: _posts/papers/2023-01-01-10.2139-ssrn.4392501.md
-      assigned_axes: []
+        axis_3: 0.675
+    - path: _posts/papers/2023-01-01-10.1007-978-3-031-33374-3_2.md
+      assigned_axes:
+        - axis_1
       relevance:
-        axis_1: 0.0
+        axis_1: 1.0
         axis_2: 0.0
         axis_3: 0.0
-    - path: _posts/papers/2023-01-01-10.6084-m9.figshare.24649929.md
-      assigned_axes:
-        - axis_1
-        - axis_3
-      relevance:
-        axis_1: 0.4
-        axis_2: 0.2
-        axis_3: 0.4
-    - path: _posts/papers/2023-01-01-10.6084-m9.figshare.24649929.v1.md
-      assigned_axes:
-        - axis_1
-        - axis_3
-      relevance:
-        axis_1: 0.4
-        axis_2: 0.2
-        axis_3: 0.4
-    - path: _posts/papers/2023-02-20-10.31234-osf.io-avm36.md
-      assigned_axes:
-        - axis_1
-        - axis_2
-      relevance:
-        axis_1: 0.357
-        axis_2: 0.429
-        axis_3: 0.214
-    - path: _posts/papers/2023-02-22-10.1145-3539597.3573033.md
+    - path: _posts/papers/2023-01-01-10.18154-rwth-conv-253368.md
       assigned_axes:
         - axis_1
       relevance:
-        axis_1: 0.889
-        axis_2: 0.111
+        axis_1: 1.0
+        axis_2: 0.0
+        axis_3: 0.0
+    - path: _posts/papers/2023-01-01-10.18653-v1-2023.emnlp-main.395.md
+      assigned_axes:
+        - axis_1
+      relevance:
+        axis_1: 0.857
+        axis_2: 0.143
+        axis_3: 0.0
+    - path: _posts/papers/2023-01-01-10.18653-v1-2023.findings-emnlp.219.md
+      assigned_axes:
+        - axis_1
+      relevance:
+        axis_1: 1.0
+        axis_2: 0.0
+        axis_3: 0.0
+    - path: _posts/papers/2023-01-01-10.18653-v1-2023.findings-emnlp.663.md
+      assigned_axes:
+        - axis_1
+      relevance:
+        axis_1: 0.929
+        axis_2: 0.071
         axis_3: 0.0
 axes:
   axis_1:
     tags_en:
-      - Political trust
       - Social cohesion
-      - AI literacy and trust
-      - Digital civic literacy
+      - Political socialization across generations
+      - Support for democracy and democratic resilience
+      - Immigration, integration, and belonging
     tags_fr:
-      - Confiance politique
       - Cohesion sociale
-      - Litteratie en IA et confiance
-      - Litteratie civique numerique
+      - Socialisation politique intergenerationnelle
+      - Soutien a la democratie et resilience democratique
+      - Immigration, integration et appartenance
     highlight_papers:
+      - title: Nationalism and Nation‐Building
+        names: Benjamin Forest
+        venue: ''
+        link: https://doi.org/10.1002/9781119753995.ch23
+        year: 2025
+      - title: A tutorial on representational similarity analysis for research 
+          in social cognition
+        names: Sally Y Xie, Ruoying Zheng, Eric Hehman, Chujun Lin
+        venue: ''
+        link: https://doi.org/10.31234/osf.io/x4stc
+        year: 2025
       - title: Affective polarization and social cohesion
         names: Mariano Torcal, Dietlind Stolle, Zoe A. Thomson
         venue: Edward Elgar Publishing eBooks
         link: https://doi.org/10.4337/9781035310609.00040
         year: 2025
-      - title: Elder, Am I Right? Age-Group Differences in Social and Political 
-          Interactions in Africa
-        names: Aaron Erlich, Andrew McCormack
-        venue: International Journal of Public Opinion Research
-        link: https://doi.org/10.1093/ijpor/edaf003
-        year: 2025
-      - title: 'Measuring Identity in Substate Nations: Evidence from Quebec'
-        names: Elissa Berwick, Éric Bélanger
-        venue: Publius The Journal of Federalism
-        link: https://doi.org/10.1093/publius/pjaf077
-        year: 2025
   axis_2:
     tags_en:
-      - Opinion formation
+      - Public opinion
+      - Voting and turnout
       - Electoral behavior
-      - Public perceptions of AI
       - Misinformation and fact-checking
     tags_fr:
-      - Formation des opinions politiques
+      - Opinion publique
+      - Vote et participation electorale
       - Comportement electoral
-      - Perceptions publiques de l'IA
       - Desinformation et verification des faits
     highlight_papers:
-      - title: Who should vote? Membership and claims to expatriate political 
-          participation in the Nigerian diaspora
-        names: Aaron Erlich, Thomas Soehl
-        venue: Comparative Migration Studies
-        link: https://doi.org/10.1186/s40878-026-00546-3
-        year: 2026
+      - title: 'BluePrint: A Social Media User Dataset for LLM Persona Evaluation
+          and Training'
+        names: Aurélien Bück-Kaeffer, Je Qin Chooi, Dan Zhao, Maximilian Puelma 
+          Touzel, Kellin Pelrine, Jean-François Godbout, Reihaneh Rabbany, 
+          Zachary Yang
+        venue: ArXiv.org
+        link: https://doi.org/10.48550/arxiv.2510.02343
+        year: 2025
       - title: 'How Language Shapes Belief in Misinformation: A Study Among Multilinguals
           in Ukraine'
         names: Aaron Erlich, Kevin Aslett, Sarah Graham, Joshua A. Tucker
         venue: Journal of Experimental Political Science
         link: https://doi.org/10.1017/xps.2025.10011
         year: 2025
-      - title: Le sentiment de menace identitaire au Québec
-        names: Éric Bélanger, Jean‐François Godbout
-        venue: Politique et Sociétés
-        link: https://doi.org/10.7202/1118477ar
+      - title: 'MODGIRT: Multidimensional Dynamic Scaling of Aggregate Survey Data'
+        names: Elissa Berwick, Devin Caughey
+        venue: Political Analysis
+        link: https://doi.org/10.1017/pan.2024.25
         year: 2025
   axis_3:
     tags_en:
-      - AI governance and institutions
-      - Political representation
-      - Platform governance and regulation
-      - Algorithmic accountability
+      - Political inequality
+      - Parties and political competition
+      - Democratic governance
+      - Political institutions
     tags_fr:
-      - Gouvernance de l'IA et institutions
-      - Representation politique
-      - Gouvernance et regulation des plateformes
-      - Responsabilite algorithmique
+      - Inegalite politique
+      - Partis et competition politique
+      - Gouvernance democratique
+      - Institutions politiques
     highlight_papers:
+      - title: Embedded liberalism, economic nationalism, or Welfare Chauvinism?
+          Experimental evidence on policy preferences in tough times
+        names: Leonardo Baccini, Mattia Guidi, Arlo Poletti
+        venue: Journal of European Public Policy
+        link: https://doi.org/10.1080/13501763.2025.2475007
+        year: 2025
       - title: 'Party Realignment in Québec: Lessons from the United States'
         names: Jean‐François Godbout, Éric Bélanger
         venue: Canada and international affairs
         link: https://doi.org/10.1007/978-3-031-76113-3_5
         year: 2025
-      - title: A Party that Went Viral? The Drivers of Support for the Parti 
-          Conservateur du Québec in the 2022 Election
-        names: Éric Bélanger, Philippe Mongrain, Thomas Gareau‐Paquette, 
-          Valérie-Anne Mahéo
-        venue: Canadian Journal of Political Science
-        link: https://doi.org/10.1017/s0008423924000829
-        year: 2025
-      - title: Inflation, Blame Attribution, and the 2022 US Congressional 
-          Elections
-        names: Leonardo Baccini, Stephen Weymouth
-        venue: British Journal of Political Science
-        link: https://doi.org/10.1017/s0007123424000930
+      - title: 'Accountability in Time: Evolution and Expertise in Participatory Institutions'
+        names: Brian Palmer‐Rubin, Jésica E. Tapia Reyes, Daniel Berliner, Aaron
+          Erlich, Benjamin E. Bagozzi
+        venue: World Politics
+        link: https://doi.org/10.1353/wp.2025.a964463
         year: 2025

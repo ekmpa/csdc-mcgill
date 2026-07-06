@@ -479,6 +479,10 @@ a.csdc-red:focus {
 
 .csdc-news-group + .csdc-news-group {
   margin-top: 2rem;
+
+  @include breakpoint($large) {
+    margin-top: 0;
+  }
 }
 
 .csdc-news-groups {
@@ -623,13 +627,20 @@ a.csdc-red:focus {
 .csdc-home-team-stats {
   margin-top: 4rem;
   margin-bottom: 4rem;
-  padding: 2.4rem 1.2rem;
-  background: #ffffff;
-  border: 1px solid #eef2f6;
-  border-radius: 0.75rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 2.6rem 0;
+  background: linear-gradient(120deg, #7a1128 0%, #9f1239 48%, #c8102e 100%);
+  border: 0;
+  border-radius: 0;
 }
 
 .csdc-home-team-stats-grid {
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.2rem;
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1.1rem;
@@ -676,7 +687,7 @@ a.csdc-red:focus {
 }
 
 .csdc-home-team-stat-number {
-  color: $csdc-red;
+  color: #ffffff;
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 900;
   line-height: 0.85;
@@ -692,10 +703,30 @@ a.csdc-red:focus {
 
 .csdc-home-team-stat-label {
   margin: 0.55rem 0 0;
-  color: #4b5563;
+  color: #ffffff;
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.csdc-home-team-stat-link,
+.csdc-home-team-stat-link:visited,
+.csdc-home-team-stat-link:hover,
+.csdc-home-team-stat-link:focus {
+  color: #ffffff;
+}
+
+.csdc-home-team-stats-since {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 0.5rem 0 0;
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  justify-self: center;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -821,6 +852,71 @@ a.csdc-red:focus {
   border: 1px solid #fecaca;
 }
 
+.csdc-home-highlights-section {
+  margin-top: 3.1rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 1.1rem 0 0.95rem;
+  border: 1px solid #d8e0ea;
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.csdc-home-highlights-title {
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0.95rem;
+  padding: 0 1.2rem;
+  text-align: center;
+  color: #111827;
+  font-size: clamp(1.06rem, 1.65vw, 1.3rem);
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.csdc-home-highlights-columns {
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+  }
+}
+
+.csdc-home-highlights-column {
+  min-width: 0;
+  padding: 0 0.55rem;
+
+  @include breakpoint($large) {
+    border-right: 1px solid #d8e0ea;
+  }
+}
+
+.csdc-home-highlights-column:last-child {
+  @include breakpoint($large) {
+    border-right: 0;
+  }
+}
+
+.csdc-home-highlights-column-title {
+  margin: 0 0 0.68rem;
+  color: #1f2937;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
 .csdc-arrow-link {
   margin-top: 0.9rem;
   display: inline-flex;
@@ -847,6 +943,11 @@ a.csdc-red:focus {
 .csdc-arrow-link:hover,
 .csdc-arrow-link:focus {
   color: $csdc-red;
+}
+
+.csdc-home-publications-link-row {
+  display: flex;
+  justify-content: center;
 }
 
 .csdc-slab {

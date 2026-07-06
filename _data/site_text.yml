@@ -3,7 +3,7 @@ en:
     hero:
       title: "McGill Centre for the Study of Democratic Citizenship"
       subtitle: "McGill unit of the CSDC/CECD based at Laval University"
-      lead: "We study democratic citizenship, justice and political behaviors.<br>More about our team, research and upcoming events below."
+      lead: "This is the McGill branch of the CSDC/CECD at Laval University. We study democratic citizenship, justice and political behaviors.<br>More about our team, research and upcoming events below."
       cta_research: "Our Research"
       cta_events: "View Upcoming Events"
       cta_news: "See Recent News"
@@ -14,7 +14,7 @@ en:
       card_2_title: "The Practice of Democratic Citizenship"
       card_3_title: "Citizen Representation and Governance"
       focusing: "Focusing on:"
-      publications_link: "See Publications"
+      publications_link: "See all publications"
     stats:
       members: "Members"
       alumni: "Alumni"
@@ -83,7 +83,7 @@ fr:
       card_2_title: "La pratique de la citoyenneté démocratique"
       card_3_title: "Représentation citoyenne et gouvernance"
       focusing: "Axes :"
-      publications_link: "Voir les publications"
+      publications_link: "Voir toutes les publications"
     stats:
       members: "Membres"
       alumni: "Anciens"

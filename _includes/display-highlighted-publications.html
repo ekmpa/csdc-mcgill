@@ -12,12 +12,16 @@
         {% endif %}
 
         <div class="highlighted-publication-venue">
-            {% if post.venue_full %}
-            {{ post.venue_full }}
-            {% elsif post.venue %}
-            {{ post.venue }}
-            {% endif %}
-            ({{ post.date | date: "%Y" }})
+                                                {% assign venue_clean = post.venue_full | default: post.venue | default: '' | strip %}
+                                                {% assign venue_clean_lc = venue_clean | downcase %}
+                                                {% if venue_clean == '.' or venue_clean == '-' or venue_clean_lc == 'n/a' or venue_clean_lc == 'na' %}
+                                                    {% assign venue_clean = '' %}
+                                                {% endif %}
+                                                {% if venue_clean %}
+                                                    {{ venue_clean }} &middot; {{ post.date | date: "%Y" }}
+                                                {% else %}
+                                                    {{ post.date | date: "%Y" }}
+                                                {% endif %}
         </div>
 
         {% include display-publication-links.html pub=post%}

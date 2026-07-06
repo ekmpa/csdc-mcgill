@@ -31,6 +31,8 @@ def parse_issue_body(body):
             k = line.removeprefix("###").strip().lower().replace(" ", "_")
             parsed[k] = ""
         elif k is not None:
+            if parsed[k]:
+                parsed[k] += "\n"
             parsed[k] += line.strip()
     return parsed
 

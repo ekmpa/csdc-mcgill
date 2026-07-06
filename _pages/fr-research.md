@@ -41,7 +41,14 @@ show_taxonomy_posts: false
       <h2>Publications</h2>
       <p class="csdc-page-subtitle">Productions scientifiques à travers le CÉCD McGill.</p>
       <hr class="csdc-research-divider">
-      {% assign publications = site.posts | where_exp: "post", "post.path contains '_posts/papers/'" %}
+      {% assign all_publications = site.posts | where_exp: "post", "post.path contains '_posts/papers/'" %}
+      {% assign publications = '' | split: '' %}
+      {% for post in all_publications %}
+        {% assign post_year = post.date | date: "%Y" | plus: 0 %}
+        {% if post_year >= 2008 %}
+          {% assign publications = publications | push: post %}
+        {% endif %}
+      {% endfor %}
       {% if publications and publications.size > 0 %}
       {% assign publication_years = '' | split: '' %}
       {% for post in publications %}

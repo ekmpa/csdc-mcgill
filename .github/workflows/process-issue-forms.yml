@@ -40,6 +40,10 @@ jobs:
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python -m src.python.auto_update_publications
+
+      - name: "Regenerate topic modeling outputs"
+        if: github.event.label.name == 'automatic-add-member' || contains(github.event.issue.labels.*.name, 'automatic-add-member')
+        run: python -m src.python.generate_research_axis_topics
       
       - name: "Create post in _posts/papers with src/python/add_publication_by_id.py"
         if: github.event.label.name == 'automatic-add-publication-by-id' || contains(github.event.issue.labels.*.name, 'automatic-add-publication-by-id')
