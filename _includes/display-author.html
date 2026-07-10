@@ -1,9 +1,27 @@
 <!-- Show author next to post, should show most up to date info -->
-<article class="author-card{% if include.alumni %} author-card--alumni{% endif %}{% if include.compact_avatar %} author-card--compact{% endif %}{% if include.compact_avatar and include.role_to_render and (include.role_to_render.type == 'Student' or include.role_to_render.type == 'Staff' or include.role_to_render.type == 'Postdoc') %} author-card--compact-wide-avatar{% endif %}{% if include.alumni != true and author.name == 'Leonardo Baccini' %} author-card--default-open{% endif %}">
+<article class="author-card{% if include.alumni %} author-card--alumni{% endif %}{% if include.compact_avatar %} author-card--compact{% endif %}{% if include.compact_avatar and include.role_to_render and (include.role_to_render.type == 'Student' or include.role_to_render.type == 'Staff' or include.role_to_render.type == 'Postdoc' or include.role_to_render.type == 'Faculty / Professor') %} author-card--compact-wide-avatar{% endif %}{% if include.alumni != true and author.name == 'Leonardo Baccini' %} author-card--default-open{% endif %}">
+    {% assign hide_about_details = false %}
+    {% if include.hide_about_details == true or include.hide_about_details == 'true' or include.hide_about_details == 'True' or include.hide_about_details == '1' %}
+    {% assign hide_about_details = true %}
+    {% endif %}
+    {% assign simplified_csdc_role = false %}
+    {% if include.simplified_csdc_role == true or include.simplified_csdc_role == 'true' or include.simplified_csdc_role == 'True' %}
+    {% assign simplified_csdc_role = true %}
+    {% endif %}
     {% assign current_path = page.url | default: page.permalink | default: '/' %}
     {% assign is_fr = false %}
     {% if current_path == '/fr/' or current_path contains '/fr/' %}
     {% assign is_fr = true %}
+    {% endif %}
+    {% assign is_about_page = false %}
+    {% if current_path == '/about/' or current_path == '/fr/about/' or current_path contains '/about/' %}
+    {% assign is_about_page = true %}
+    {% endif %}
+    {% if is_about_page and include.csdc_role_label %}
+    {% assign hide_about_details = true %}
+    {% endif %}
+    {% if is_about_page and include.csdc_role_label %}
+    {% assign simplified_csdc_role = true %}
     {% endif %}
     <div class="author-avatar">
         {% assign avatar_value = author.avatar | default: "" | strip %}
@@ -25,7 +43,9 @@
 
     <div class="author-info">
         <b class="author-name">
-            {% if author.social_media_links and include.role_to_render and include.role_to_render.type == 'Faculty / Professor' %}
+            {% if simplified_csdc_role and include.profile_href %}
+            <a href="{{ include.profile_href }}" aria-label="Open full profile for {{ author.name }}">{{ author.name }}</a>
+            {% elsif author.social_media_links and include.role_to_render and include.role_to_render.type == 'Faculty / Professor' %}
             <a href="{{ author.social_media_links[0].url }}"
                 aria-label="Access the primary external link of this author">{{
                 author.name }}</a>
@@ -36,11 +56,17 @@
 
         {% assign role_start = include.role_to_render.start_date | default: "" | strip %}
         {% assign role_end = include.role_to_render.end_date | default: "" | strip %}
+        {% unless hide_about_details or simplified_csdc_role %}
         {% if include.role_to_render and (role_start != "" or role_end != "") %}
         <div class="author-dates">{% if role_start != "" %}{{ role_start }}{% if role_end != "" %}&thinsp;&mdash;&thinsp;{{ role_end }}{% else %}&thinsp;&mdash;{% endif %}{% else %}&mdash;&thinsp;{{ role_end }}{% endif %}</div>
         {% endif %}
+        {% endunless %}
 
-        {% if include.role_to_render %}
+        {% if hide_about_details and include.csdc_role_label %}
+        <div class="author-advisor author-advisor--csdc-role">
+            <b>{{ include.csdc_role_label }}</b>
+        </div>
+        {% elsif include.role_to_render %}
         {% assign advisor_value = include.role_to_render.advisor | default: "" | strip %}
         {% if is_fr and include.role_to_render.title_fr %}
         {% assign title_value = include.role_to_render.title_fr | default: "" | strip %}
@@ -129,6 +155,7 @@
         {% assign show_current_role_note = true %}
         {% endif %}
 
+        {% unless hide_about_details or simplified_csdc_role %}
         {% if bio_value or note_value or show_current_role_note %}
         <div class="author-expandable">
             <div class="author-expandable-inner">
@@ -152,7 +179,9 @@
             </div>
         </div>
         {% endif %}
+        {% endunless %}
 
+        {% unless hide_about_details or simplified_csdc_role %}
         {% if author.social_media_links %}
         <div class="author-links">
             {% for link in author.social_media_links %}
@@ -164,5 +193,6 @@
             {% endfor %}
         </div>
         {% endif %}
+        {% endunless %}
     </div>
 </article>

@@ -366,6 +366,17 @@ a.csdc-red:focus {
   background: #fafafa;
 }
 
+.csdc-research-axes-section {
+  margin-top: 4.2rem;
+  margin-bottom: 5rem;
+}
+
+.csdc-research-page .csdc-card--research-axis-span {
+  @include breakpoint($large) {
+    grid-column: 1 / -1;
+  }
+}
+
 .csdc-research-divider {
   border: 0;
   border-top: 1px solid #d8dde4;
@@ -1055,6 +1066,107 @@ a.csdc-red:focus {
 
 .csdc-about-axes-section .csdc-pillars {
   gap: 1.35rem;
+}
+
+.csdc-about-axes-section .csdc-card {
+  background: #fafafa;
+}
+
+.csdc-about-axes-section .csdc-card--about-axis-span {
+  @include breakpoint($large) {
+    grid-column: 1 / -1;
+  }
+}
+
+.csdc-about-team-section {
+  margin-top: 1.8rem;
+  margin-bottom: 4.5rem;
+}
+
+.csdc-about-team-section .csdc-about-team-heading {
+  margin-bottom: 2.2rem;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+  color: $csdc-red !important;
+}
+
+.csdc-about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.4rem;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.csdc-about-team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.csdc-about-team-avatar-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 104px;
+  height: 104px;
+  min-width: 104px;
+  min-height: 104px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.csdc-about-team-avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(17, 24, 39, 0.08);
+}
+
+.csdc-about-team-avatar--placeholder {
+  background: #f3f4f6;
+  padding: 0.65rem;
+  object-fit: contain;
+}
+
+.csdc-about-team-name {
+  margin: 0.75rem 0 0.1rem;
+  font-size: 0.95rem;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6f1d2f;
+}
+
+.csdc-about-team-name a,
+.csdc-about-team-name a:visited,
+.csdc-about-team-name a:hover,
+.csdc-about-team-name a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.csdc-about-team-role {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 .csdc-contact-pill {

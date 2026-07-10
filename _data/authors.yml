@@ -99,6 +99,7 @@ Borna Atrchian:
   current_role:
     type: Student
     title: Doctoral Student
+    department: Political Science
     start_date: "2025"
     end_date: "2030"
     advisor: Dietlind Stolle
@@ -810,13 +811,13 @@ Kassandra Gervasi:
     end_date: "2027"
     advisor: Leonardo Baccini
   avatar: /assets/images/bio/Kassandra Gervasi.jpg
-
   team_group: masters_students
 Terhas Ghebretecle:
   name: Terhas Ghebretecle
   current_role:
     type: Student
     title: Doctoral Student
+    department: Sociology
     start_date: "2024"
     end_date: "2029"
     advisor: Thomas Soehl
@@ -937,7 +938,7 @@ Eric Hehman:
     type: Faculty / Professor
     title: Associate Professor
     department: Psychology
-  bio: Eric Hehman is an Assistant Professor of Psychology at McGill University 
+  bio: Eric Hehman is an Associate Professor of Psychology at McGill University 
     and director of the Seeing Human Lab.  Generally, Dr. Hehman’s research 
     examines how individuals perceive and evaluate one another across group 
     boundaries (e.g., race, gender, sexual-orientation, occupation, etc). To 
@@ -1464,7 +1465,7 @@ Juan Pablo Luna:
   avatar: /assets/images/bio/Juan Pablo Luna 2.jpg
   current_role:
     type: Faculty / Professor
-    title: Inaugural Diamond Brown Chair in Democratic Studies
+    title: Professor, Inaugural Diamond Brown Chair in Democratic Studies
     department: Political Science
   bio: Juan Pablo Luna grew up in Montevideo, Uruguay, and is the Inaugural 
     Diamond Brown Chair in Democratic Studies at McGill. While mainly focused on
@@ -2099,9 +2100,9 @@ Eran Shor:
   avatar: /assets/images/bio/Eran Shor 2.jpg
   current_role:
     type: Faculty / Professor
-    title: Associate Professor
+    title: Professor
     department: Sociology
-  bio: Eran Shor is an Associate Professor in the Department of Sociology at 
+  bio: Eran Shor is a Professor in the Department of Sociology at 
     McGill University. His research interests center around the themes of 
     political conflict, human rights, and ethnicity and nationalism. Professor 
     Shor's current research projects evaluate inequalities in media coverage of 
@@ -2178,7 +2179,7 @@ Thomas Soehl:
     type: Faculty / Professor
     title: Professor
     department: Sociology
-  bio: Thomas Soehl is an Assistant Professor in the Department of Sociology at 
+  bio: Thomas Soehl is a Professor in the Department of Sociology at 
     McGill University. His work mainly examines the themes of international 
     migration, race, and ethnicity. More specifically, he studies these themes 
     through the lens of the family as a locus for the transmission of culture 

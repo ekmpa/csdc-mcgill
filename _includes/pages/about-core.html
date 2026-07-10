@@ -10,12 +10,148 @@
     </div>
   </section>
 
+  {% if lang == 'fr' %}
+  {% assign about_team_title = 'Équipe de direction' %}
+  {% assign role_coordinator = 'Coordonnatrice' %}
+  {% assign role_academic_lead = 'Responsable académique' %}
+  {% assign role_steering_rep = 'Représentant de McGill au comité directeur du CSDC' %}
+  {% assign role_web_dev = 'Développeuse web' %}
+  {% assign people_page_path = '/fr/people/' %}
+  {% else %}
+  {% assign about_team_title = 'Core Team' %}
+  {% assign role_coordinator = 'Coordinator' %}
+  {% assign role_academic_lead = 'Academic Lead' %}
+  {% assign role_steering_rep = 'McGill Representative at the Steering committee of the CSDC' %}
+  {% assign role_web_dev = 'Web Developer' %}
+  {% assign people_page_path = '/people/' %}
+  {% endif %}
+
   <section class="csdc-section csdc-about-mission-section">
     <div class="csdc-container">
       <article class="csdc-card">
         <h2 class="csdc-card-title">{{ t.home.headers.about_mission }}</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>The McGill node of the Centre for the Study of Democratic Citizenship builds on the CSDC’s origins at McGill University and contributes to its broader mission as a Québec-wide strategic cluster now headquartered at Université Laval. Bringing together McGill faculty, students, and staff across political science, economics, sociology, psychology, geography, computer science, and related fields, CSDC McGill advances interdisciplinary and multi-method research on democratic citizenship, political behaviour, public opinion, representation, inequality, technology, and the challenges facing contemporary democracies.</p>
+        <p>Our mission is to foster rigorous research, train the next generation of scholars, and promote knowledge exchange within McGill, the Montreal community, Quebec, Canada, and beyond. Through the McGill Political Behavior Lab, regular student workshops and mentoring, collaborative research initiatives, and new work on AI as both a research and learning tool — including its limits and risks — we provide an active intellectual home for students and researchers. CSDC McGill also supports public-facing events and partnerships, including the Toronto–Montreal Political Behavior Workshop and collaborations with local centres and initiatives such as MISC, the McGill EU Centre, the Diamond-Brown Chair in Democratic Studies, and Mila. In doing so, we carry forward CSDC’s commitment to understanding and strengthening democratic life through research, training, and public engagement.</p>
       </article>
+    </div>
+  </section>
+
+  <section class="csdc-section csdc-about-team-section">
+    <div class="csdc-container">
+      <h2 class="csdc-about-team-heading" style="text-align:center;color:#c8102e;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:3.2rem;">{{ about_team_title }}</h2>
+      <div class="csdc-about-team-grid">
+        {% assign author = site.data.authors['Dietlind Stolle'] %}
+        {% assign avatar_value = author.avatar | default: '' | strip %}
+        {% assign use_person_placeholder = false %}
+        {% if avatar_value == '' %}
+        {% assign use_person_placeholder = true %}
+        {% elsif avatar_value contains '/assets/images/bio/placeholder/' %}
+        {% assign use_person_placeholder = true %}
+        {% elsif avatar_value == site.author.avatar %}
+        {% assign use_person_placeholder = true %}
+        {% endif %}
+        {% assign member_query = author.name | url_encode %}
+        {% assign profile_href = people_page_path | relative_url | append: '?member=' | append: member_query %}
+        {% assign avatar_src = avatar_value %}
+        {% unless avatar_src contains '://' %}
+        {% assign avatar_src = avatar_src | relative_url %}
+        {% endunless %}
+        <article class="csdc-about-team-member">
+          <a class="csdc-about-team-avatar-link" href="{{ profile_href }}" aria-label="Open full profile for {{ author.name }}">
+            {% if use_person_placeholder %}
+            <img loading="lazy" class="csdc-about-team-avatar csdc-about-team-avatar--placeholder" src="{{ '/assets/images/icons/person.png' | relative_url }}" alt="No profile photo for {{ author.name }}">
+            {% else %}
+            <img loading="lazy" class="csdc-about-team-avatar" src="{{ avatar_src }}" alt="An image of {{ author.name }}">
+            {% endif %}
+          </a>
+          <h3 class="csdc-about-team-name"><a href="{{ profile_href }}">{{ author.name }}</a></h3>
+          <p class="csdc-about-team-role">{{ role_academic_lead }}</p>
+        </article>
+
+        {% assign author = site.data.authors['Anne Imouza'] %}
+        {% assign avatar_value = author.avatar | default: '' | strip %}
+        {% assign use_person_placeholder = false %}
+        {% if avatar_value == '' %}
+        {% assign use_person_placeholder = true %}
+        {% elsif avatar_value contains '/assets/images/bio/placeholder/' %}
+        {% assign use_person_placeholder = true %}
+        {% elsif avatar_value == site.author.avatar %}
+        {% assign use_person_placeholder = true %}
+        {% endif %}
+        {% assign member_query = author.name | url_encode %}
+        {% assign profile_href = people_page_path | relative_url | append: '?member=' | append: member_query %}
+        {% assign avatar_src = avatar_value %}
+        {% unless avatar_src contains '://' %}
+        {% assign avatar_src = avatar_src | relative_url %}
+        {% endunless %}
+        <article class="csdc-about-team-member">
+          <a class="csdc-about-team-avatar-link" href="{{ profile_href }}" aria-label="Open full profile for {{ author.name }}">
+            {% if use_person_placeholder %}
+            <img loading="lazy" class="csdc-about-team-avatar csdc-about-team-avatar--placeholder" src="{{ '/assets/images/icons/person.png' | relative_url }}" alt="No profile photo for {{ author.name }}">
+            {% else %}
+            <img loading="lazy" class="csdc-about-team-avatar" src="{{ avatar_src }}" alt="An image of {{ author.name }}">
+            {% endif %}
+          </a>
+          <h3 class="csdc-about-team-name"><a href="{{ profile_href }}">{{ author.name }}</a></h3>
+          <p class="csdc-about-team-role">{{ role_coordinator }}</p>
+        </article>
+
+        {% assign author = site.data.authors['Aaron Erlich'] %}
+        {% assign avatar_value = author.avatar | default: '' | strip %}
+        {% assign use_person_placeholder = false %}
+        {% if avatar_value == '' %}
+        {% assign use_person_placeholder = true %}
+        {% elsif avatar_value contains '/assets/images/bio/placeholder/' %}
+        {% assign use_person_placeholder = true %}
+        {% elsif avatar_value == site.author.avatar %}
+        {% assign use_person_placeholder = true %}
+        {% endif %}
+        {% assign member_query = author.name | url_encode %}
+        {% assign profile_href = people_page_path | relative_url | append: '?member=' | append: member_query %}
+        {% assign avatar_src = avatar_value %}
+        {% unless avatar_src contains '://' %}
+        {% assign avatar_src = avatar_src | relative_url %}
+        {% endunless %}
+        <article class="csdc-about-team-member">
+          <a class="csdc-about-team-avatar-link" href="{{ profile_href }}" aria-label="Open full profile for {{ author.name }}">
+            {% if use_person_placeholder %}
+            <img loading="lazy" class="csdc-about-team-avatar csdc-about-team-avatar--placeholder" src="{{ '/assets/images/icons/person.png' | relative_url }}" alt="No profile photo for {{ author.name }}">
+            {% else %}
+            <img loading="lazy" class="csdc-about-team-avatar" src="{{ avatar_src }}" alt="An image of {{ author.name }}">
+            {% endif %}
+          </a>
+          <h3 class="csdc-about-team-name"><a href="{{ profile_href }}">{{ author.name }}</a></h3>
+          <p class="csdc-about-team-role">{{ role_steering_rep }}</p>
+        </article>
+
+        {% assign author = site.data.authors['Emma Kondrup'] %}
+        {% assign avatar_value = author.avatar | default: '' | strip %}
+        {% assign use_person_placeholder = false %}
+        {% if avatar_value == '' %}
+        {% assign use_person_placeholder = true %}
+        {% elsif avatar_value contains '/assets/images/bio/placeholder/' %}
+        {% assign use_person_placeholder = true %}
+        {% elsif avatar_value == site.author.avatar %}
+        {% assign use_person_placeholder = true %}
+        {% endif %}
+        {% assign member_query = author.name | url_encode %}
+        {% assign profile_href = people_page_path | relative_url | append: '?member=' | append: member_query %}
+        {% assign avatar_src = avatar_value %}
+        {% unless avatar_src contains '://' %}
+        {% assign avatar_src = avatar_src | relative_url %}
+        {% endunless %}
+        <article class="csdc-about-team-member">
+          <a class="csdc-about-team-avatar-link" href="{{ profile_href }}" aria-label="Open full profile for {{ author.name }}">
+            {% if use_person_placeholder %}
+            <img loading="lazy" class="csdc-about-team-avatar csdc-about-team-avatar--placeholder" src="{{ '/assets/images/icons/person.png' | relative_url }}" alt="No profile photo for {{ author.name }}">
+            {% else %}
+            <img loading="lazy" class="csdc-about-team-avatar" src="{{ avatar_src }}" alt="An image of {{ author.name }}">
+            {% endif %}
+          </a>
+          <h3 class="csdc-about-team-name"><a href="{{ profile_href }}">{{ author.name }}</a></h3>
+          <p class="csdc-about-team-role">{{ role_web_dev }}</p>
+        </article>
+      </div>
     </div>
   </section>
 
@@ -24,16 +160,16 @@
       <h2>{{ t.home.headers.about_axes }}</h2>
       <div class="csdc-pillars csdc-pillars-two">
         <article class="csdc-card" style="border-top:4px solid #c8102e;">
-          <h3 class="csdc-card-title">{{ t.home.research.card_1_title }}</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h3 class="csdc-card-title">1) {{ t.home.research.card_1_title }}</h3>
+          <p>This first axis focuses on the acquisition of values, attitudes and skills that constitute the ingredients of a healthy democracy. Democratic citizenship is based on the feeling of belonging to a political community, trust in the institutions that embody the democratic regime, social cohesion linked to the equality of citizens, as well as the information skills essential to understanding the world. However, several factors influence this learning, as research combining communication, social psychology, computer science, political science and sociology shows.</p>
         </article>
         <article class="csdc-card" style="border-top:4px solid #c8102e;">
-          <h3 class="csdc-card-title">{{ t.home.research.card_2_title }}</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h3 class="csdc-card-title">2) {{ t.home.research.card_2_title }}</h3>
+          <p>This axis focuses on concrete elements of the practice of citizenship: the production and consumption of information on current events, the formation of opinions on political issues and actors (including partisan preferences and voting intentions), and political participation in all its forms. The research in this axis examines crucial questions about a rapidly changing media ecosystem, partisan misalignment and the polarization of opinions, and inequalities in citizen participation.</p>
         </article>
-        <article class="csdc-card" style="border-top:4px solid #c8102e;">
-          <h3 class="csdc-card-title">{{ t.home.research.card_3_title }}</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <article class="csdc-card csdc-card--about-axis-span" style="border-top:4px solid #c8102e;">
+          <h3 class="csdc-card-title">3) {{ t.home.research.card_3_title }}</h3>
+          <p>After learning and practicing democratic citizenship, the next critical steps are representation and governance. Democratic institutions are key elements. They shape the norms and incentives for active citizenship and they link citizens and their representatives in ways that foster accountability, legitimacy and representation. In Québec and Canada, as well as in other countries, confidence of citizens toward the institutions is low, as many dislike the way that members of parliaments behave and consider that politicians don’t honour their promises, hence various political endeavours to reform these institutions. Research on this axis will focus on the role of electoral systems, parliaments, parliamentary debates, and political parties.</p>
         </article>
       </div>
     </div>

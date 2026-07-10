@@ -1613,12 +1613,15 @@ a.site-title:hover, .csdc-shell-nav .site-title-link:hover { color: #fecdd3; }
 
 .page__footer .csdc-footer { margin-top: 0; width: 100vw; max-width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); box-sizing: border-box; }
 
-.page__footer .csdc-footer .csdc-container { padding-left: clamp(2rem, 5vw, 4rem); padding-right: clamp(2rem, 5vw, 4rem); }
+.csdc-footer .csdc-container { max-width: none; width: 100%; padding-left: clamp(2rem, 5vw, 4rem); padding-right: clamp(2rem, 5vw, 4rem); }
 
 .csdc-footer-grid { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 1.2rem; }
 @media (min-width: 48em) { .csdc-footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 64em) { .csdc-footer-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 
+@media (min-width: 64em) { .csdc-footer-grid .csdc-footer-col--primary { grid-column: 1 / span 2; grid-row: 1; }
+  .csdc-footer-grid .csdc-footer-col--funder { grid-column: 3; grid-row: 1; justify-self: start; }
+  .csdc-footer-grid .csdc-footer-col--entry { grid-column: 4; grid-row: 1; justify-self: end; align-self: start; } }
 .csdc-footer h4 { color: #fda4af; margin-top: 0; margin-bottom: 0.55rem; }
 
 .csdc-footer p { margin: 0.3rem 0; color: #d1d5db; }
@@ -1626,6 +1629,10 @@ a.site-title:hover, .csdc-shell-nav .site-title-link:hover { color: #fecdd3; }
 .csdc-footer a { color: #f9fafb; text-decoration: none; }
 
 .csdc-footer a:hover { color: #fecdd3; }
+
+.csdc-footer-funder { margin-top: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; color: #d1d5db; font-size: 0.82rem; line-height: 1.35; }
+
+.csdc-footer-funder-logo { height: 0.95rem !important; width: auto !important; max-width: 6.5rem; display: inline-block; object-fit: contain; }
 
 .csdc-footer-copy { margin-top: 1.15rem; border-top: 1px solid #374151; padding-top: 0.85rem; font-size: 0.85rem; color: #9ca3af; }
 
@@ -1759,6 +1766,10 @@ a.csdc-red, a.csdc-red:visited, a.csdc-red:hover, a.csdc-red:focus { color: #c81
 .csdc-card { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 0.6rem; padding: 0.95rem; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
 
 .csdc-research-page .csdc-card { background: #fafafa; }
+
+.csdc-research-axes-section { margin-top: 4.2rem; margin-bottom: 5rem; }
+
+@media (min-width: 64em) { .csdc-research-page .csdc-card--research-axis-span { grid-column: 1 / -1; } }
 
 .csdc-research-divider { border: 0; border-top: 1px solid #d8dde4; margin: 1.5rem 0 1.75rem; }
 
@@ -1961,6 +1972,32 @@ a.csdc-red, a.csdc-red:visited, a.csdc-red:hover, a.csdc-red:focus { color: #c81
 .csdc-about-axes-section h2 { margin-bottom: 1.35rem; }
 
 .csdc-about-axes-section .csdc-pillars { gap: 1.35rem; }
+
+.csdc-about-axes-section .csdc-card { background: #fafafa; }
+
+@media (min-width: 64em) { .csdc-about-axes-section .csdc-card--about-axis-span { grid-column: 1 / -1; } }
+
+.csdc-about-team-section { margin-top: 1.8rem; margin-bottom: 4.5rem; }
+
+.csdc-about-team-section .csdc-about-team-heading { margin-bottom: 2.2rem; text-align: center !important; text-transform: uppercase !important; letter-spacing: 0.06em !important; color: #c8102e !important; }
+
+.csdc-about-team-grid { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 1.4rem; }
+@media (min-width: 48em) { .csdc-about-team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 64em) { .csdc-about-team-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+.csdc-about-team-member { display: flex; flex-direction: column; align-items: center; text-align: center; }
+
+.csdc-about-team-avatar-link { display: inline-flex; align-items: center; justify-content: center; width: 104px; height: 104px; min-width: 104px; min-height: 104px; border-radius: 999px; overflow: hidden; }
+
+.csdc-about-team-avatar { display: block; width: 100%; height: 100%; min-width: 100%; min-height: 100%; aspect-ratio: 1 / 1; border-radius: 999px; object-fit: cover; object-position: center; border: 2px solid #e5e7eb; box-shadow: 0 1px 2px rgba(17, 24, 39, 0.08); }
+
+.csdc-about-team-avatar--placeholder { background: #f3f4f6; padding: 0.65rem; object-fit: contain; }
+
+.csdc-about-team-name { margin: 0.75rem 0 0.1rem; font-size: 0.95rem; line-height: 1.25; letter-spacing: 0.05em; text-transform: uppercase; color: #6f1d2f; }
+
+.csdc-about-team-name a, .csdc-about-team-name a:visited, .csdc-about-team-name a:hover, .csdc-about-team-name a:focus { color: inherit; text-decoration: none; }
+
+.csdc-about-team-role { margin: 0; color: #9ca3af; font-size: 0.88rem; font-weight: 400; line-height: 1.4; }
 
 .csdc-contact-pill { display: inline-block; border-radius: 0.5rem; padding: 0.5rem 0.85rem; font-size: 0.92rem; font-weight: 700; background: #e5e7eb; color: #111827; line-height: 1.5; overflow-wrap: anywhere; }
 

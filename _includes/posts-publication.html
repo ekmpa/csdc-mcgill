@@ -82,6 +82,7 @@
     var downBtn = nav.querySelector('[data-csdc-year-jump-dir="down"]');
     var upLabel = nav.querySelector('[data-csdc-year-jump-label="up"]');
     var downLabel = nav.querySelector('[data-csdc-year-jump-label="down"]');
+    var navFrameScheduled = false;
 
     function nearestSectionIndex() {
       var pointerY = window.scrollY + 170;
@@ -117,6 +118,17 @@
       downLabel.textContent = extractYearLabel(downTarget);
     }
 
+    function scheduleRefreshState() {
+      if (navFrameScheduled) {
+        return;
+      }
+      navFrameScheduled = true;
+      window.requestAnimationFrame(function () {
+        navFrameScheduled = false;
+        refreshState();
+      });
+    }
+
     upBtn.addEventListener('click', function () {
       var idx = nearestSectionIndex();
       if (idx <= 0) {
@@ -133,8 +145,8 @@
       scrollToSection(sections[idx + 1]);
     });
 
-    window.addEventListener('scroll', refreshState, { passive: true });
-    window.addEventListener('resize', refreshState);
+    window.addEventListener('scroll', scheduleRefreshState, { passive: true });
+    window.addEventListener('resize', scheduleRefreshState);
     refreshState();
   }
 

@@ -1,29 +1,28 @@
 <div class="csdc-footer">
     <div class="csdc-container">
         <div class="csdc-footer-grid">
-            <div>
+            <div class="csdc-footer-col csdc-footer-col--primary">
                 <h4>McGill CSDC</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p><a href="mailto:anne.imouza@mail.mcgill.ca">Contact us</a></p>
+                <p>The McGill node of the CSDC unites an interdisciplinary community to produce rigorous, mixed method research, train future scholars, and build public partnerships that strengthen democratic citizenship in Quebec, Canada, and beyond.</p>
+                <p><a href="mailto:anne.imouza@mail.mcgill.ca"><strong>Contact us</strong></a></p>
             </div>
-            <div>
-                <h4>Quick Links</h4>
-                <p><a href="{{ '/about/' | relative_url }}">About</a></p>
-                <p><a href="{{ '/news/' | relative_url }}">News and Events</a></p>
-                <p><a href="{{ '/people/' | relative_url }}">People</a></p>
+            <div class="csdc-footer-col csdc-footer-col--funder">
+                <div class="csdc-footer-funder" aria-label="Funding acknowledgment">
+                    <span>We are a local node of the CSDC, Regroupement Stratégique, funded by:</span>
+                    <img src="{{ '/assets/images/frq_logo_blanc.png' | relative_url }}" alt="FRQ logo" class="csdc-footer-funder-logo">
+                </div>
             </div>
-            <div>
-                <h4>Broader CSDC</h4>
-                <p><a href="https://csdc-cecd.ca/" rel="nofollow noopener noreferrer">Centre for the Study of Democratic Citizenship (Quebec)</a></p>
-            </div>
-            <div class="csdc-footer-door-wrap">
-                <button type="button" class="csdc-footer-door-btn" aria-label="Open contribution options">
-                    <img src="{{ '/assets/images/icons/entry.png' | relative_url }}" class="csdc-door-symbol" alt="">
-                </button>
-                <div class="csdc-footer-door-panel">
-                    <a href="https://github.com/ekmpa/csdc-mcgill/issues/new/choose">Add or update member profile</a>
-                    <a href="https://github.com/ekmpa/csdc-mcgill/issues/new?template=add-publication-by-id.yml">Add publication</a>
-                    <a href="https://github.com/ekmpa/csdc-mcgill/issues/new?template=add-news-update.yml">Add news update</a>
+
+            <div class="csdc-footer-col csdc-footer-col--entry">
+                <div class="csdc-footer-door-wrap">
+                    <button type="button" class="csdc-footer-door-btn" aria-label="Open contribution options">
+                        <img src="{{ '/assets/images/icons/entry.png' | relative_url }}" class="csdc-door-symbol" alt="">
+                    </button>
+                    <div class="csdc-footer-door-panel">
+                        <a href="https://github.com/ekmpa/csdc-mcgill/issues/new/choose">Add or update member profile</a>
+                        <a href="https://github.com/ekmpa/csdc-mcgill/issues/new?template=add-publication-by-id.yml">Add publication</a>
+                        <a href="https://github.com/ekmpa/csdc-mcgill/issues/new?template=add-news-update.yml">Add news update</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -31,6 +30,26 @@
         <div class="csdc-footer-copy">&copy; {{ site.time | date: '%Y' }} {{ site.copyright | default: site.title }}.</div>
     </div>
 </div>
+<style>
+@media (min-width: 64em) {
+    .page__footer .csdc-footer .csdc-footer-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .page__footer .csdc-footer .csdc-footer-grid .csdc-footer-col--primary {
+        grid-column: 1 / span 2 !important;
+    }
+
+    .page__footer .csdc-footer .csdc-footer-grid .csdc-footer-col--funder {
+        grid-column: 3 !important;
+    }
+
+    .page__footer .csdc-footer .csdc-footer-grid .csdc-footer-col--entry {
+        grid-column: 4 !important;
+        justify-self: end !important;
+    }
+}
+</style>
 <script>
 (function () {
     var root = document.documentElement;

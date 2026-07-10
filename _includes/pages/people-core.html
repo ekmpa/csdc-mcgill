@@ -247,22 +247,8 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // Always set text immediately so labels never appear empty.
+        // Keep updates stable during fast scrolling; avoid pulse/reflow animations.
         labelEl.textContent = targetText;
-
-        if (labelEl.__swapTimer) {
-            window.clearTimeout(labelEl.__swapTimer);
-            labelEl.__swapTimer = null;
-        }
-
-        // Restart a short visual transition without hiding content.
-        labelEl.classList.remove('is-swapping');
-        void labelEl.offsetWidth;
-        labelEl.classList.add('is-swapping');
-        labelEl.__swapTimer = window.setTimeout(function () {
-            labelEl.classList.remove('is-swapping');
-            labelEl.__swapTimer = null;
-        }, 140);
     }
 
     function getVisibleGroups() {
@@ -432,6 +418,19 @@ document.addEventListener('DOMContentLoaded', function () {
     if (groupJumpNav) {
         var upBtn = groupJumpNav.querySelector('[data-csdc-people-group-dir="up"]');
         var downBtn = groupJumpNav.querySelector('[data-csdc-people-group-dir="down"]');
+        var navFrameScheduled = false;
+
+        function scheduleJumpNavRender() {
+            if (navFrameScheduled) {
+                return;
+            }
+            navFrameScheduled = true;
+            window.requestAnimationFrame(function () {
+                navFrameScheduled = false;
+                renderGroupJumpState();
+                renderSectionJumpState();
+            });
+        }
 
         if (upBtn) {
             upBtn.addEventListener('click', function () { jumpGroup('up'); });
@@ -440,8 +439,8 @@ document.addEventListener('DOMContentLoaded', function () {
             downBtn.addEventListener('click', function () { jumpGroup('down'); });
         }
 
-        window.addEventListener('scroll', renderGroupJumpState, { passive: true });
-        window.addEventListener('resize', renderGroupJumpState);
+        window.addEventListener('scroll', scheduleJumpNavRender, { passive: true });
+        window.addEventListener('resize', scheduleJumpNavRender);
     }
 
     function getBlockAnchor(block) {
@@ -476,13 +475,14 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
 
-        window.addEventListener('scroll', renderSectionJumpState, { passive: true });
-        window.addEventListener('resize', renderSectionJumpState);
+        // Section visibility is scheduled by the shared scroll handler above.
     }
 
     var applyFilter = function () {
         var query = searchInput.value.toLowerCase().trim();
         var visibleCards = 0;
+        var hasVisibleCurrent = false;
+        var hasVisibleAlumni = false;
 
         groups.forEach(function (group) {
             var groupVisible = 0;
@@ -505,7 +505,34 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             group.style.display = groupVisible > 0 ? '' : 'none';
+
+            if (groupVisible > 0) {
+                if (isAlumniGroup(group)) {
+                    hasVisibleAlumni = true;
+                } else {
+                    hasVisibleCurrent = true;
+                }
+            }
         });
+
+        if (activeSectionBlock) {
+            activeSectionBlock.style.display = hasVisibleCurrent ? '' : 'none';
+        }
+
+        if (alumniSectionBlock) {
+            alumniSectionBlock.style.display = hasVisibleAlumni ? '' : 'none';
+        }
+
+        if (sectionJumpNav) {
+            var currentBtn = sectionJumpNav.querySelector('[data-csdc-people-section-target="current"]');
+            var alumniBtn = sectionJumpNav.querySelector('[data-csdc-people-section-target="alumni"]');
+            if (currentBtn) {
+                currentBtn.style.display = hasVisibleCurrent ? '' : 'none';
+            }
+            if (alumniBtn) {
+                alumniBtn.style.display = hasVisibleAlumni ? '' : 'none';
+            }
+        }
 
         if (emptyState) {
             emptyState.hidden = visibleCards !== 0;
@@ -517,5 +544,52 @@ document.addEventListener('DOMContentLoaded', function () {
 
     searchInput.addEventListener('input', applyFilter);
     applyFilter();
+
+    function normalizeName(value) {
+        return (value || '')
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .trim();
+    }
+
+    function openMemberFromQuery() {
+        var params = new URLSearchParams(window.location.search || '');
+        var member = params.get('member');
+        if (!member) {
+            return;
+        }
+
+        searchInput.value = member;
+        applyFilter();
+
+        var targetName = normalizeName(member);
+        var matchedCard = null;
+
+        cards.forEach(function (card) {
+            if (matchedCard) {
+                return;
+            }
+
+            if (window.getComputedStyle(card).display === 'none') {
+                return;
+            }
+
+            var nameEl = card.querySelector('.author-name');
+            var cardName = normalizeName(nameEl ? nameEl.textContent : '');
+            if (cardName === targetName) {
+                matchedCard = card;
+            }
+        });
+
+        if (!matchedCard) {
+            return;
+        }
+
+        matchedCard.click();
+        matchedCard.scrollIntoView({ behavior: 'auto', block: 'center' });
+    }
+
+    openMemberFromQuery();
 });
 </script>
