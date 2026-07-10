@@ -16,6 +16,8 @@
 title: McGill CSDC
 name: McGill CSDC
 email:
+url: "https://ekmpa.github.io"
+baseurl: "/csdc-mcgill"
 description: >- # this means to ignore newlines until "baseurl:"
   The McGill node of the Centre for the Study of Democratic Citizenship researches trust, participation, and democratic inclusion.
 twitter_username:

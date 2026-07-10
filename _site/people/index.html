@@ -241,6 +241,15 @@
     });
 
     var currentPath = window.location.pathname.replace(/\/index\.html$/, '');
+    var baseurl = '';
+    if (baseurl && baseurl !== '/' && currentPath.indexOf(baseurl) === 0) {
+      currentPath = currentPath.slice(baseurl.length) || '/';
+    }
+
+    if (!currentPath.startsWith('/')) {
+      currentPath = '/' + currentPath;
+    }
+
     if (currentPath === '/fr') {
       currentPath = '/fr/';
     }
@@ -250,10 +259,6 @@
       if (!currentPath || currentPath === '') {
         currentPath = '/';
       }
-    }
-
-    if (!currentPath.startsWith('/')) {
-      currentPath = '/' + currentPath;
     }
 
     var section = currentPath.split('/')[1] || 'home';
