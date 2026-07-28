@@ -1,14 +1,29 @@
-generated_at: '2026-06-13T00:50:39+00:00'
+generated_at: '2026-07-23T18:25:46+00:00'
 source:
-  provider: outlook_published_calendar
-  calendar_url: https://outlook.office365.com/owa/calendar/7fb5d6f8890f4776af6224301bea023b@mail.mcgill.ca/90fc976dc03e4fdcabbcdf8ce7795ea78987418656938045875/calendar.html
+  provider: google_calendar_public_ics
+  calendar_id: mcgillcsdc@gmail.com
   timezone: America/Toronto
 featured_event:
   banner_label: Featured Seminar
-  title: No upcoming seminar scheduled.
-  date_display: Check back soon
+  title: CSDC Lab
+  date_display: Wednesday, July 29, 1:15 PM ET
   blurb: ''
   cta_text: View all seminars
   cta_url: /news/
   event_url: ''
-upcoming_events: []
+upcoming_events:
+- title: CSDC Lab
+  date_display: Wednesday, July 29, 1:15 PM ET
+  event_url: ''
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, July 30, 10:30 AM ET
+  event_url: ''
+- title: CSDC Lab
+  date_display: Wednesday, August 5, 1:15 PM ET
+  event_url: ''
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, August 6, 10:30 AM ET
+  event_url: ''
+- title: CSDC Lab
+  date_display: Wednesday, August 12, 1:15 PM ET
+  event_url: ''

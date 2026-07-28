@@ -1,27 +1,34 @@
+{% assign footer_lang = include.locale | default: page.lang_code | default: page.locale | default: 'en' %}
+{% assign footer_lang = footer_lang | slice: 0, 2 | downcase %}
+{% unless footer_lang == 'fr' %}
+{% assign footer_lang = 'en' %}
+{% endunless %}
+{% assign ft = site.data.site_text[footer_lang].footer %}
+
 <div class="csdc-footer">
     <div class="csdc-container">
         <div class="csdc-footer-grid">
             <div class="csdc-footer-col csdc-footer-col--primary">
                 <h4>McGill CSDC</h4>
-                <p>The McGill node of the CSDC unites an interdisciplinary community to produce rigorous, mixed method research, train future scholars, and build public partnerships that strengthen democratic citizenship in Quebec, Canada, and beyond.</p>
-                <p><a href="mailto:anne.imouza@mail.mcgill.ca"><strong>Contact us</strong></a></p>
+                <p>{{ ft.description }}</p>
+                <p><a href="mailto:anne.imouza@mail.mcgill.ca"><strong>{{ ft.contact_link }}</strong></a></p>
             </div>
             <div class="csdc-footer-col csdc-footer-col--funder">
-                <div class="csdc-footer-funder" aria-label="Funding acknowledgment">
-                    <span>We are a local node of the CSDC, Regroupement Stratégique, funded by:</span>
+                <div class="csdc-footer-funder" aria-label="{{ ft.funding_aria_label }}">
+                    <span>{{ ft.funding_text }}</span>
                     <img src="{{ '/assets/images/frq_logo_blanc.png' | relative_url }}" alt="FRQ logo" class="csdc-footer-funder-logo">
                 </div>
             </div>
 
             <div class="csdc-footer-col csdc-footer-col--entry">
                 <div class="csdc-footer-door-wrap">
-                    <button type="button" class="csdc-footer-door-btn" aria-label="Open contribution options">
+                    <button type="button" class="csdc-footer-door-btn" aria-label="{{ ft.entry_button_aria_label }}">
                         <img src="{{ '/assets/images/icons/entry.png' | relative_url }}" class="csdc-door-symbol" alt="">
                     </button>
                     <div class="csdc-footer-door-panel">
-                        <a href="https://github.com/ekmpa/csdc-mcgill/issues/new/choose">Add or update member profile</a>
-                        <a href="https://github.com/ekmpa/csdc-mcgill/issues/new?template=add-publication-by-id.yml">Add publication</a>
-                        <a href="https://github.com/ekmpa/csdc-mcgill/issues/new?template=add-news-update.yml">Add news update</a>
+                        <a href="https://github.com/ekmpa/csdc-mcgill/issues/new/choose">{{ ft.entry_member }}</a>
+                        <a href="https://github.com/ekmpa/csdc-mcgill/issues/new?template=add-publication-by-id.yml">{{ ft.entry_publication }}</a>
+                        <a href="https://github.com/ekmpa/csdc-mcgill/issues/new?template=add-news-update.yml">{{ ft.entry_news }}</a>
                     </div>
                 </div>
             </div>

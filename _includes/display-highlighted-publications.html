@@ -1,8 +1,9 @@
 <div class="{{ include.type | default: 'list' }}__item">
     <article class="highlighted-publication-card" itemscope itemtype="https://schema.org/CreativeWork">
+        {% capture publication_title_clean %}{% include clean-publication-title.html title=post.title %}{% endcapture %}
 
         <h2 class="highlighted-publication-title" itemprop="headline">
-            <a href="{{ post.link }}">{{ post.title }}</a>
+            <a href="{{ post.link }}">{{ publication_title_clean | strip }}</a>
         </h2>
 
         {% if post.excerpt %}

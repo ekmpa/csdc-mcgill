@@ -73,6 +73,35 @@
         {% else %}
         {% assign title_value = include.role_to_render.title | default: "" | strip %}
         {% endif %}
+        {% if is_fr and include.role_to_render.title_fr == nil %}
+        {% assign title_en_key = include.role_to_render.title | default: "" | strip | downcase %}
+        {% case title_en_key %}
+        {% when "assistant professor" %}
+        {% assign title_value = "Professeur adjoint" %}
+        {% when "associate professor" %}
+        {% assign title_value = "Professeur agrégé" %}
+        {% when "associate professor, member of the steering committee of the csdc at laval" %}
+        {% assign title_value = "Professeur agrégé, Membre du Comité directeur du CSDC à Laval" %}
+        {% when "james mcgill professor, academic lead of the mcgill csdc" %}
+        {% assign title_value = "Professeur James McGill, Responsable académique du CSDC McGill" %}
+        {% when "professor, inaugural diamond brown chair in democratic studies" %}
+        {% assign title_value = "Professeur, Titulaire inaugural de la Chaire Diamond-Brown en études démocratiques" %}
+        {% when "professor" %}
+        {% assign title_value = "Professeur" %}
+        {% when "postdoctoral fellow" %}
+        {% assign title_value = "Stagiaire postdoctoral" %}
+        {% when "postdoctoral researcher" %}
+        {% assign title_value = "Chercheur postdoctoral" %}
+        {% when "doctoral student" %}
+        {% assign title_value = "Doctorant" %}
+        {% when "doctorate student" %}
+        {% assign title_value = "Doctorant" %}
+        {% when "master's student" %}
+        {% assign title_value = "Étudiant à la maîtrise" %}
+        {% when "phd" %}
+        {% assign title_value = "Doctorat" %}
+        {% endcase %}
+        {% endif %}
         {% assign title_down = title_value | downcase %}
         {% assign advisor_down = advisor_value | downcase %}
                 {% assign role_type_value = include.role_to_render.type | default: "" | strip %}
@@ -88,7 +117,37 @@
                 {% assign is_postdoc_role = true %}
                 {% endif %}
 
+                {% if is_fr and include.role_to_render.department_fr %}
+                {% assign dept_value = include.role_to_render.department_fr | default: "" | strip %}
+                {% else %}
                 {% assign dept_value = include.role_to_render.department | default: "" | strip %}
+                {% endif %}
+                {% if is_fr and include.role_to_render.department_fr == nil %}
+                {% assign dept_en_key = include.role_to_render.department | default: "" | strip | downcase %}
+                {% if dept_en_key contains "department of " %}
+                {% assign dept_en_key = dept_en_key | remove_first: "department of " %}
+                {% endif %}
+                {% case dept_en_key %}
+                {% when "economics" %}
+                {% assign dept_value = "Économie" %}
+                {% when "political science" %}
+                {% assign dept_value = "Science politique" %}
+                {% when "sociology" %}
+                {% assign dept_value = "Sociologie" %}
+                {% when "communication studies" %}
+                {% assign dept_value = "Communication" %}
+                {% when "computer science" %}
+                {% assign dept_value = "Informatique" %}
+                {% when "geography" %}
+                {% assign dept_value = "Géographie" %}
+                {% when "psychology" %}
+                {% assign dept_value = "Psychologie" %}
+                {% when "neurology and neurosurgery" %}
+                {% assign dept_value = "Neurologie et neurochirurgie" %}
+                {% when "institute for information systems engineering" %}
+                {% assign dept_value = "Institut de genie des systemes d information" %}
+                {% endcase %}
+                {% endif %}
                 {% assign dept_down = dept_value | downcase %}
                 {% assign dept_valid = false %}
                 {% if dept_value != "" and dept_down != "_no response_" and dept_down != "no response" %}
@@ -126,10 +185,14 @@
         {% if include.role_to_render.type == "Student" and advisor_value != "" and advisor_down != "_no response_" and advisor_down != "no response" %}
         <div class="author-advisor">
             <b>
+                {% if is_fr %}
+                Supervisé(e) par:
+                {% else %}
                 {% if advisor_value contains "," %}
                 Supervisors:
                 {% else %}
                 Supervisor:
+                {% endif %}
                 {% endif %}
             </b>
             {{ advisor_value }}

@@ -1632,7 +1632,7 @@ a.site-title:hover, .csdc-shell-nav .site-title-link:hover { color: #fecdd3; }
 
 .csdc-footer-funder { margin-top: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; color: #d1d5db; font-size: 0.82rem; line-height: 1.35; }
 
-.csdc-footer-funder-logo { height: 0.95rem !important; width: auto !important; max-width: 6.5rem; display: inline-block; object-fit: contain; }
+.csdc-footer-funder-logo { height: auto !important; width: 50% !important; max-width: 100%; display: block; object-fit: contain; }
 
 .csdc-footer-copy { margin-top: 1.15rem; border-top: 1px solid #374151; padding-top: 0.85rem; font-size: 0.85rem; color: #9ca3af; }
 
@@ -1663,6 +1663,14 @@ html, body { overflow-x: hidden; }
 .csdc-kicker { font-weight: 700; font-size: 0.82rem; margin-bottom: 0.35rem; }
 
 .csdc-kicker-cecd { color: #6b7280; font-style: normal; font-weight: 700; }
+
+.csdc-kicker-lang-link, .csdc-kicker-lang-link:visited, .csdc-kicker-lang-link:hover, .csdc-kicker-lang-link:focus { color: inherit; text-decoration: none; border-bottom: none; opacity: 0.85; }
+
+.csdc-kicker-lang-link:hover, .csdc-kicker-lang-link:focus { opacity: 1; }
+
+.csdc-research-dept-group { margin-top: 1.2rem; }
+
+.csdc-research-dept-heading { margin: 0.35rem 0 0.85rem; text-align: center; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.9rem; color: #6b7280; }
 
 .csdc-kicker-mcgill { color: rgba(156, 163, 175, 0.9); font-style: normal; font-weight: 700; font-size: 0.88em; }
 

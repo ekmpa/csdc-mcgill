@@ -184,10 +184,161 @@
 
 {% assign sorted_authors = authors_to_show | sort %}
 
-{% if include.section_title %}
-<h2{% if include.alumni %} class="csdc-alumni-group-title"{% endif %}>{{ include.section_title }} <span class="csdc-role-count">({{ sorted_authors.size }})</span></h2>
+{% assign page_url = page.url | default: page.permalink | default: '/' %}
+{% assign is_people_page = false %}
+{% if page_url contains '/people/' %}
+  {% assign is_people_page = true %}
+{% endif %}
+{% assign is_fr_page = false %}
+{% if page_url == '/fr/' or page_url contains '/fr/' %}
+  {% assign is_fr_page = true %}
 {% endif %}
 
+{% if include.section_title %}
+<h2{% if include.alumni %} class="csdc-alumni-group-title"{% endif %}{% if include.alumni and is_people_page %} style="margin-bottom: 1.55rem;"{% endif %}>{{ include.section_title }} <span class="csdc-role-count">({{ sorted_authors.size }})</span></h2>
+{% endif %}
+
+{% if is_people_page and include.alumni %}
+<!-- Grid layout for people page -->
+<div class="csdc-about-team-grid">
+{% for entry in sorted_authors %}
+{% assign author = entry[1] %}
+{% assign role_to_render = entry[2] %}
+{% assign avatar_value = author.avatar | default: '' | strip %}
+{% assign use_person_placeholder = false %}
+{% if avatar_value == '' %}
+{% assign use_person_placeholder = true %}
+{% elsif avatar_value contains '/assets/images/bio/placeholder/' %}
+{% assign use_person_placeholder = true %}
+{% endif %}
+{% assign member_query = author.name | url_encode %}
+{% assign profile_href = '/people/' | relative_url | append: '?member=' | append: member_query %}
+{% assign avatar_src = avatar_value %}
+{% unless avatar_src contains '://' %}
+{% assign avatar_src = avatar_src | relative_url %}
+{% endunless %}
+{% if is_fr_page and role_to_render.department_fr %}
+{% assign member_department = role_to_render.department_fr | default: author.current_role.department_fr | default: role_to_render.department | default: author.current_role.department | default: '' | strip %}
+{% else %}
+{% assign member_department = role_to_render.department | default: author.current_role.department | default: '' | strip %}
+{% endif %}
+{% if is_fr_page and role_to_render.department_fr == nil %}
+{% assign dept_en_key = role_to_render.department | default: author.current_role.department | default: '' | strip | downcase %}
+{% if dept_en_key contains 'department of ' %}
+{% assign dept_en_key = dept_en_key | remove_first: 'department of ' %}
+{% endif %}
+{% case dept_en_key %}
+{% when 'economics' %}
+{% assign member_department = 'Économie' %}
+{% when 'political science' %}
+{% assign member_department = 'Science politique' %}
+{% when 'sociology' %}
+{% assign member_department = 'Sociologie' %}
+{% when 'communication studies' %}
+{% assign member_department = 'Communication' %}
+{% when 'computer science' %}
+{% assign member_department = 'Informatique' %}
+{% when 'geography' %}
+{% assign member_department = 'Géographie' %}
+{% when 'psychology' %}
+{% assign member_department = 'Psychologie' %}
+{% when 'neurology and neurosurgery' %}
+{% assign member_department = 'Neurologie et neurochirurgie' %}
+{% when 'institute for information systems engineering' %}
+{% assign member_department = 'Institut de genie des systemes d information' %}
+{% endcase %}
+{% endif %}
+{% assign member_advisor = role_to_render.advisor | default: '' | strip %}
+{% assign member_advisor_down = member_advisor | downcase %}
+{% if member_advisor_down == '_no response_' or member_advisor_down == 'no response' %}
+{% assign member_advisor = '' %}
+{% endif %}
+{% if include.alumni %}
+{% assign member_meta = member_advisor %}
+{% else %}
+{% assign member_meta = member_department %}
+{% endif %}
+{% if include.alumni %}
+{% assign member_card_style = 'background: transparent; border: 0; box-shadow: none; padding: 0.35rem 0.1rem 0.45rem;' %}
+{% assign member_avatar_link_style = 'width: 88px; height: 88px; min-width: 88px; min-height: 88px; position: relative;' %}
+{% assign member_avatar_overlay_style = 'position: absolute; inset: 0; border-radius: 999px; background: rgba(200, 16, 46, 0.10); pointer-events: none;' %}
+{% assign member_name_style = 'color: #8f5f6b; opacity: 0.8; font-weight: 700; font-size: 0.9rem; margin-top: 0.58rem;' %}
+{% assign member_role_style = 'margin: 0.06rem 0 0; color: #8b6f77; font-size: 0.82rem; font-weight: 700; line-height: 1.3; opacity: 0.8;' %}
+{% assign member_meta_style = 'margin: 0.03rem 0 0; font-size: 0.71rem; line-height: 1.15; color: #b7959f; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; opacity: 0.72;' %}
+{% else %}
+{% assign member_card_style = 'background: transparent; border: 0; box-shadow: none; padding: 0.4rem 0.2rem 0.7rem;' %}
+{% assign member_avatar_link_style = '' %}
+{% assign member_avatar_overlay_style = '' %}
+{% assign member_name_style = 'color: #7a0019; font-weight: 700;' %}
+{% assign member_role_style = 'margin: 0.08rem 0 0; color: #4b5563; font-size: 0.9rem; font-weight: 700; line-height: 1.35;' %}
+{% assign member_meta_style = 'margin: 0.04rem 0 0; font-size: 0.77rem; line-height: 1.2; color: #b1b5bd; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500;' %}
+{% assign member_advisor_style = 'margin: 0.04rem 0 0; font-size: 0.77rem; line-height: 1.2; color: #b1b5bd; letter-spacing: 0.08em; font-weight: 500;' %}
+{% endif %}
+{% assign role_type = role_to_render.type | default: '' %}
+{% assign show_advisor = false %}
+{% unless include.alumni %}
+{% if role_type == 'Student' or role_type == 'Postdoc' %}
+{% if member_advisor != '' %}
+{% assign show_advisor = true %}
+{% endif %}
+{% endif %}
+{% endunless %}
+<article class="csdc-about-team-member csdc-people-member-card{% if include.alumni %} csdc-about-team-member--alumni{% else %} csdc-about-team-member--active{% endif %}" style="{{ member_card_style }}">
+  <a class="csdc-about-team-avatar-link" href="{{ profile_href }}" aria-label="Open full profile for {{ author.name }}"{% if member_avatar_link_style != '' %} style="{{ member_avatar_link_style }}"{% endif %}>
+    {% if use_person_placeholder %}
+    <img loading="lazy" class="csdc-about-team-avatar csdc-about-team-avatar--placeholder" src="{{ '/assets/images/icons/person.png' | relative_url }}" alt="No profile photo for {{ author.name }}">
+    {% else %}
+    <img loading="lazy" class="csdc-about-team-avatar" src="{{ avatar_src }}" alt="An image of {{ author.name }}">
+    {% endif %}
+    {% if member_avatar_overlay_style != '' %}
+    <span aria-hidden="true" style="{{ member_avatar_overlay_style }}"></span>
+    {% endif %}
+  </a>
+    <h3 class="author-name csdc-about-team-name" style="{{ member_name_style }}"><a href="{{ profile_href }}" style="color: inherit; text-decoration: none;">{{ author.name }}</a></h3>
+    {% assign role_title_display = role_to_render.title | default: '' | strip %}
+    {% if is_fr_page and role_to_render.title_fr %}
+    {% assign role_title_display = role_to_render.title_fr | default: '' | strip %}
+    {% elsif is_fr_page %}
+    {% assign title_en_key = role_to_render.title | default: '' | strip | downcase %}
+    {% case title_en_key %}
+    {% when 'assistant professor' %}
+    {% assign role_title_display = 'Professeur adjoint' %}
+    {% when 'associate professor' %}
+    {% assign role_title_display = 'Professeur agrégé' %}
+    {% when 'associate professor, member of the steering committee of the csdc at laval' %}
+    {% assign role_title_display = 'Professeur agrégé, Membre du Comité directeur du CSDC à Laval' %}
+    {% when 'james mcgill professor, academic lead of the mcgill csdc' %}
+    {% assign role_title_display = 'Professeur James McGill, Responsable académique du CSDC McGill' %}
+    {% when 'professor, inaugural diamond brown chair in democratic studies' %}
+    {% assign role_title_display = 'Professeur, Titulaire inaugural de la Chaire Diamond-Brown en études démocratiques' %}
+    {% when 'professor' %}
+    {% assign role_title_display = 'Professeur' %}
+    {% when 'postdoctoral fellow' %}
+    {% assign role_title_display = 'Stagiaire postdoctoral' %}
+    {% when 'postdoctoral researcher' %}
+    {% assign role_title_display = 'Chercheur postdoctoral' %}
+    {% when 'doctoral student' %}
+    {% assign role_title_display = 'Doctorant' %}
+    {% when 'doctorate student' %}
+    {% assign role_title_display = 'Doctorant' %}
+    {% when "master's student" %}
+    {% assign role_title_display = 'Étudiant à la maîtrise' %}
+    {% when 'phd' %}
+    {% assign role_title_display = 'Doctorat' %}
+    {% endcase %}
+    {% endif %}
+    <p class="csdc-about-team-role" style="{{ member_role_style }}">{{ role_title_display }}</p>
+  {% if member_meta != '' %}
+    <p class="csdc-about-team-meta" style="{{ member_meta_style }}">{{ member_meta }}</p>
+  {% endif %}
+  {% if show_advisor %}
+    <p class="csdc-about-team-meta csdc-about-team-advisor" style="{{ member_advisor_style }}">{% if is_fr_page %}Supervisé(e) par:{% else %}Supervised by:{% endif %} {{ member_advisor }}</p>
+  {% endif %}
+</article>
+{% endfor %}
+</div>
+{% else %}
+<!-- Original flex layout for other pages -->
 {% if include.alumni %}
 {% if sorted_authors.size > 0 %}
 <div class="csdc-alumni-section">
@@ -236,4 +387,5 @@ role_to_render=role_to_render
 compact_avatar=compact_avatar
 alumni=include.alumni %}
 {% endfor %}
+{% endif %}
 {% endif %}

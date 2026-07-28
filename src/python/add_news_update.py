@@ -1,6 +1,9 @@
 import datetime as dt
 import os
+import datetime as dt
+import os
 import re
+import unicodedata
 
 from . import parse_issue_body, write_content_to_file
 
@@ -49,7 +52,41 @@ def _slugify(text: str) -> str:
     return text or "news-update"
 
 
+def _normalize_heading_key(value: str) -> str:
+    text = unicodedata.normalize("NFKD", str(value or ""))
+    text = text.encode("ascii", "ignore").decode("ascii")
+    text = text.lower().strip()
+    text = re.sub(r"[^a-z0-9]+", "_", text)
+    text = re.sub(r"_+", "_", text).strip("_")
+    return text
+
+
+def _canonicalize_news_parsed_input(parsed):
+    canonical = dict(parsed)
+    by_norm = {_normalize_heading_key(k): v for k, v in parsed.items()}
+
+    alias_map = {
+        "title": ["title", "headline"],
+        "title_fr": ["title_fr", "title_french", "titre", "titre_fr", "titre_francais"],
+        "date": ["date"],
+        "tag": ["tag", "news_tag"],
+        "summary": ["summary", "excerpt", "resume", "resume_en"],
+        "summary_fr": ["summary_fr", "summary_french", "resume_fr", "resume_french"],
+        "external_link": ["external_link", "external_link_optional", "external_url", "lien_externe"],
+    }
+
+    for target, aliases in alias_map.items():
+        if _is_empty(canonical.get(target)):
+            for alias in aliases:
+                if alias in by_norm and not _is_empty(by_norm[alias]):
+                    canonical[target] = by_norm[alias]
+                    break
+
+    return canonical
+
+
 def _build_filename(parsed):
+    parsed = _canonicalize_news_parsed_input(parsed)
     date_str = _first_non_empty(parsed, "date")
     dt.date.fromisoformat(date_str)
     slug = _slugify(_first_non_empty(parsed, "title"))
@@ -57,6 +94,7 @@ def _build_filename(parsed):
 
 
 def _build_fr_filename(parsed):
+    parsed = _canonicalize_news_parsed_input(parsed)
     date_str = _first_non_empty(parsed, "date")
     dt.date.fromisoformat(date_str)
     fr_title = _first_non_empty(parsed, "title_fr", "title_french")
@@ -80,6 +118,7 @@ def _normalize_news_tag(value: str) -> str:
 
 
 def _build_content(parsed):
+    parsed = _canonicalize_news_parsed_input(parsed)
     title = _first_non_empty(parsed, "title")
     date_str = _first_non_empty(parsed, "date")
     news_tag = _normalize_news_tag(_first_non_empty(parsed, "tag"))
@@ -109,6 +148,7 @@ def _build_content(parsed):
 
 
 def _build_fr_content(parsed):
+    parsed = _canonicalize_news_parsed_input(parsed)
     title = _first_non_empty(parsed, "title")
     date_str = _first_non_empty(parsed, "date")
     news_tag = _normalize_news_tag(_first_non_empty(parsed, "tag"))

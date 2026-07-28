@@ -103,5 +103,30 @@ class TestAddUpdateMember(unittest.TestCase):
             "https://github.com/user-attachments/assets/example-image",
         )
 
+    def test_process_role_data_auto_translates_title_and_department(self):
+        parsed = {
+            "current_role_type": "Faculty / Professor",
+            "current_role_title": "Assistant Professor",
+            "current_role_department": "Economics",
+        }
+
+        role = mod.process_role_data(parsed, "current_role_")
+
+        self.assertEqual(role["title"], "Assistant Professor")
+        self.assertEqual(role["title_fr"], "Professeur adjoint")
+        self.assertEqual(role["department"], "Economics")
+        self.assertEqual(role["department_fr"], "Economie")
+
+    def test_process_role_data_translates_prefixed_department(self):
+        parsed = {
+            "current_role_type": "Faculty / Professor",
+            "current_role_title": "Professor",
+            "current_role_department": "Department of Computer Science",
+        }
+
+        role = mod.process_role_data(parsed, "current_role_")
+
+        self.assertEqual(role["department_fr"], "Informatique")
+
         
     

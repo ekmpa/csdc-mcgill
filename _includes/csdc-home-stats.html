@@ -55,7 +55,7 @@
             <p class="csdc-home-team-stat-label">{{ t.home.stats.publications }}</p>
           </a>
         </article>
-        <p class="csdc-home-team-stats-since">SINCE 2008</p>
+        <p class="csdc-home-team-stats-since">{{ t.home.stats.since_2008 | default: 'SINCE 2008' }}</p>
       </div>
     </div>
   </div>

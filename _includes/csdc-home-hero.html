@@ -6,7 +6,7 @@
 {% endif %}
 <section class="csdc-hero csdc-page">
   <div class="csdc-container">
-    <p class="csdc-kicker"><span class="csdc-red">CSDC / </span><span class="csdc-kicker-cecd">CECD</span> <span class="csdc-kicker-mcgill">@ McGill University</span></p>
+    <p class="csdc-kicker">{% if lang == 'fr' %}<a class="csdc-kicker-lang-link csdc-red" href="{{ '/' | relative_url }}">CSDC</a><span class="csdc-red"> / </span><span class="csdc-kicker-cecd">CÉCD</span>{% else %}<span class="csdc-red">CSDC / </span><span class="csdc-kicker-cecd"><a class="csdc-kicker-lang-link" href="{{ '/fr/' | relative_url }}">CÉCD</a></span>{% endif %} <span class="csdc-kicker-mcgill">@ McGill University</span></p>
     <h1 class="csdc-hero-title">{{ t.home.hero.title }}</h1>
 
     <p class="csdc-lead">{{ t.home.hero.lead }}</p>

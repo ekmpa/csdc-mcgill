@@ -1,6 +1,6 @@
 ---
 ---
-{%- assign locale = page.locale | default: layout.locale | default: site.locale %}
+{%- assign locale = page.locale | default: page.lang_code | default: layout.locale | default: site.locale %}
 
 <!doctype html>
 {% include copyright.html %}

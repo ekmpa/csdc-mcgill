@@ -1,4 +1,4 @@
-name: Sync Outlook Calendar events
+name: Sync Google Calendar events
 
 on:
   schedule:
@@ -26,11 +26,11 @@ jobs:
       - name: Install Python requirements
         run: pip install -r src/python/requirements.txt
 
-      - name: Sync Outlook Calendar events
-        run: python -m src.python.sync_outlook_calendar_events
+      - name: Sync Google Calendar events
+        run: python -m src.python.sync_google_calendar_events
         env:
-          OUTLOOK_CALENDAR_HTML_URL: ${{ vars.OUTLOOK_CALENDAR_HTML_URL }}
-          OUTLOOK_CALENDAR_ICS_URL: ${{ vars.OUTLOOK_CALENDAR_ICS_URL }}
+          GOOGLE_CALENDAR_ID: ${{ vars.GOOGLE_CALENDAR_ID }}
+          GOOGLE_CALENDAR_API_KEY: ${{ secrets.GOOGLE_CALENDAR_API_KEY }}
 
       - name: Create pull request
         id: create-pr
@@ -40,10 +40,10 @@ jobs:
           delete-branch: true
           branch-suffix: timestamp
           branch: gh-actions/sync-calendar-events
-          commit-message: "[GH Actions] Sync Outlook Calendar events"
-          title: "[Automatic PR] Sync Outlook Calendar events"
+          commit-message: "[GH Actions] Sync Google Calendar events"
+          title: "[Automatic PR] Sync Google Calendar events"
           body: |
-            Automatically syncs Outlook Calendar events to `_data/events.yml`.
+            Automatically syncs Google Calendar events to `_data/events.yml`.
 
       - name: Enable auto-merge
         if: steps.create-pr.outputs.pull-request-number != '' && env.CALENDAR_AUTOMERGE_TOKEN == ''

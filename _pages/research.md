@@ -46,13 +46,50 @@ show_taxonomy_posts: false
       </form>
       <p class="csdc-research-no-results" id="research-publications-empty" hidden>No papers matched your search.</p>
       {% assign all_publications = site.posts | where_exp: "post", "post.path contains '_posts/papers/'" %}
-      {% assign publications = '' | split: '' %}
+      {% assign candidate_publications_non_arxiv = '' | split: '' %}
+      {% assign candidate_publications_arxiv = '' | split: '' %}
       {% for post in all_publications %}
         {% assign post_year = post.date | date: "%Y" | plus: 0 %}
         {% if post_year >= 2008 %}
-          {% assign publications = publications | push: post %}
+          {% assign normalized_venue = post.venue | default: '' | downcase %}
+          {% if normalized_venue contains 'arxiv' %}
+            {% assign candidate_publications_arxiv = candidate_publications_arxiv | push: post %}
+          {% else %}
+            {% assign candidate_publications_non_arxiv = candidate_publications_non_arxiv | push: post %}
+          {% endif %}
         {% endif %}
       {% endfor %}
+      {% assign publications = '' | split: '' %}
+      {% assign seen_publication_title_keys = '' | split: '' %}
+      {% assign publication_candidates = candidate_publications_non_arxiv | concat: candidate_publications_arxiv %}
+      {% for post in publication_candidates %}
+        {% assign title_key = post.title
+          | downcase
+          | replace: '$$\\textbf{', ''
+          | replace: '$$\\textttt{', ''
+          | replace: '$$\\texttt{', ''
+          | replace: '$$\\textit{', ''
+          | replace: '$\\textbf{', ''
+          | replace: '$\\textttt{', ''
+          | replace: '$\\texttt{', ''
+          | replace: '$\\textit{', ''
+          | replace: '\\textbf{', ''
+          | replace: '\\textttt{', ''
+          | replace: '\\texttt{', ''
+          | replace: '\\textit{', ''
+          | replace: '$$', ''
+          | replace: '$', ''
+          | replace: '{', ''
+          | replace: '}', ''
+          | replace: '–', '-'
+          | replace: '—', '-'
+          | strip %}
+        {% unless seen_publication_title_keys contains title_key %}
+          {% assign seen_publication_title_keys = seen_publication_title_keys | push: title_key %}
+          {% assign publications = publications | push: post %}
+        {% endunless %}
+      {% endfor %}
+      {% assign cs_keyword_terms = "deepfake|democracy|partisan|polarisation|election|pandemic|social|ai-for-good|responsible ai|information integrity|fact-checking|misinformation|trafficking|abuse|privacy|sexual|campaigns|influence|safety|integrity|epistemic|risks|disinformation|political|societal|toxicity|public|discourse|party|tweet|twitter|reddit" | split: "|" %}
       {% if publications and publications.size > 0 %}
       {% assign publication_years = '' | split: '' %}
       {% for post in publications %}
@@ -77,33 +114,109 @@ show_taxonomy_posts: false
             <span class="csdc-research-year-label">{{ year }}</span>
             (<span class="csdc-research-year-count" data-total-count="{{ year_publications.size }}">{{ year_publications.size }}</span>)
           </h3>
-          <div class="csdc-pillars csdc-pillars-two">
-            {% for post in year_publications %}
-            <article class="csdc-card">
-              {% assign clean_title = post.title
-                | replace: '$$\\textbf{', ''
-                | replace: '$$\\textttt{', ''
-                | replace: '$$\\texttt{', ''
-                | replace: '$$\\textit{', ''
-                | replace: '$\\textbf{', ''
-                | replace: '$\\textttt{', ''
-                | replace: '$\\texttt{', ''
-                | replace: '$\\textit{', ''
-                | replace: '\\textbf{', ''
-                | replace: '\\textttt{', ''
-                | replace: '\\texttt{', ''
-                | replace: '\\textit{', ''
-                | replace: '$$', ''
-                | replace: '$', ''
-                | replace: '{', ''
-                | replace: '}', ''
-                | strip %}
-              <h4 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ clean_title }}</a></h4>
-              {% if post.names %}<p style="margin:0.2rem 0;">{{ post.names }}</p>{% endif %}
-              {% if post.venue %}<p style="margin:0.2rem 0; color:#6b7280;">{{ post.venue }}</p>{% endif %}
-            </article>
-            {% endfor %}
+          {% assign year_departments = '' | split: '' %}
+          {% for post in year_publications %}
+            {% assign post_department = '' %}
+            {% assign post_names = post.names | default: '' %}
+            {% if post_names != '' %}
+              {% for author_entry in site.data.authors %}
+                {% assign author_name = author_entry[0] %}
+                {% assign author = author_entry[1] %}
+                {% assign dept = author.current_role.department | default: '' | strip %}
+                {% assign group = author.team_group | default: '' | strip %}
+                {% if post_department == '' and dept != '' and group == 'faculty_members' and post_names contains author_name %}
+                  {% assign post_department = dept %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if post_department == '' %}
+              {% assign post_department = 'Other' %}
+            {% endif %}
+            {% unless year_departments contains post_department %}
+              {% assign year_departments = year_departments | push: post_department %}
+            {% endunless %}
+          {% endfor %}
+          {% assign year_departments = year_departments | sort %}
+          {% assign ordered_departments = '' | split: '' %}
+          {% for dept in year_departments %}
+            {% unless dept == 'Computer Science' or dept == 'Other' %}
+              {% assign ordered_departments = ordered_departments | push: dept %}
+            {% endunless %}
+          {% endfor %}
+          {% if year_departments contains 'Computer Science' %}
+            {% assign ordered_departments = ordered_departments | push: 'Computer Science' %}
+          {% endif %}
+          {% if year_departments contains 'Other' %}
+            {% assign ordered_departments = ordered_departments | push: 'Other' %}
+          {% endif %}
+
+          {% for dept in ordered_departments %}
+          <div class="csdc-research-dept-group">
+            <h4 class="csdc-research-dept-heading">{{ dept }}</h4>
+            <div class="csdc-pillars csdc-pillars-two">
+              {% for post in year_publications %}
+                {% assign post_department = '' %}
+                {% assign post_names = post.names | default: '' %}
+                {% if post_names != '' %}
+                  {% for author_entry in site.data.authors %}
+                    {% assign author_name = author_entry[0] %}
+                    {% assign author = author_entry[1] %}
+                    {% assign dept_name = author.current_role.department | default: '' | strip %}
+                    {% assign group = author.team_group | default: '' | strip %}
+                    {% if post_department == '' and dept_name != '' and group == 'faculty_members' and post_names contains author_name %}
+                      {% assign post_department = dept_name %}
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+                {% if post_department == '' %}
+                  {% assign post_department = 'Other' %}
+                {% endif %}
+
+                {% if post_department == dept %}
+                {% assign clean_title = post.title
+                    | replace: '$$\\textbf{', ''
+                    | replace: '$$\\textttt{', ''
+                    | replace: '$$\\texttt{', ''
+                    | replace: '$$\\textit{', ''
+                    | replace: '$\\textbf{', ''
+                    | replace: '$\\textttt{', ''
+                    | replace: '$\\texttt{', ''
+                    | replace: '$\\textit{', ''
+                    | replace: '\\textbf{', ''
+                    | replace: '\\textttt{', ''
+                    | replace: '\\texttt{', ''
+                    | replace: '\\textit{', ''
+                    | replace: '$$', ''
+                    | replace: '$', ''
+                    | replace: '{', ''
+                    | replace: '}', ''
+                    | strip %}
+                {% assign should_show_post = true %}
+                {% if dept == 'Computer Science' %}
+                  {% assign normalized_title = clean_title
+                    | downcase
+                    | replace: '–', '-'
+                    | replace: '—', '-' %}
+                  {% assign should_show_post = false %}
+                  {% for keyword in cs_keyword_terms %}
+                    {% if normalized_title contains keyword %}
+                      {% assign should_show_post = true %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+                {% if should_show_post %}
+                <article class="csdc-card">
+                  <h4 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ clean_title }}</a></h4>
+                  {% if post.names %}<p style="margin:0.2rem 0;">{{ post.names }}</p>{% endif %}
+                  {% if post.venue %}<p style="margin:0.2rem 0; color:#6b7280;">{{ post.venue }}</p>{% endif %}
+                </article>
+                {% endif %}
+                {% endif %}
+              {% endfor %}
+            </div>
           </div>
+          {% endfor %}
         </section>
       {% endfor %}
 

@@ -19,6 +19,7 @@ en:
       members: "Members"
       alumni: "Alumni"
       publications: "Publications"
+      since_2008: "SINCE 2008"
     events:
       title: "Upcoming Events"
       date_label: "Date:"
@@ -29,7 +30,7 @@ en:
     headers:
       about_kicker: "About the Centre"
       about_title: "About Us"
-      about_subtitle: "The McGill node of the CSDC advances research on trust, democratic participation, and inclusion."
+      about_subtitle: "The McGill chapter of the CSDC advances research on trust, democratic participation, and inclusion."
       about_mission: "Our Mission"
       about_axes: "Our Research Axes"
       news_kicker: "News and announcements"
@@ -66,6 +67,15 @@ en:
     calendar_title: "Upcoming Events"
     contact_note: "For location or questions,"
     contact_link: "contact us"
+  footer:
+    description: "The McGill chapter of the CSDC unites an interdisciplinary community to produce rigorous, mixed method research, train future scholars, and build public partnerships that strengthen democratic citizenship in Quebec, Canada, and beyond."
+    contact_link: "Contact us"
+    funding_aria_label: "Funding acknowledgment"
+    funding_text: "We are a local chapter of the CSDC, Regroupement Strategique, funded by:"
+    entry_button_aria_label: "Open contribution options"
+    entry_member: "Add or update member profile"
+    entry_publication: "Add publication"
+    entry_news: "Add news update"
 
 fr:
   home:
@@ -85,9 +95,10 @@ fr:
       focusing: "Axes :"
       publications_link: "Voir toutes les publications"
     stats:
-      members: "Membres"
-      alumni: "Anciens"
+      members: "Membres actifs"
+      alumni: "Anciens membres"
       publications: "Publications"
+      since_2008: "DEPUIS 2008"
     events:
       title: "Événements à venir"
       date_label: "Date :"
@@ -98,7 +109,7 @@ fr:
     headers:
       about_kicker: "À propos du Centre"
       about_title: "À propos"
-      about_subtitle: "Le nœud McGill du CÉCD fait progresser la recherche sur la confiance, la participation démocratique et l'inclusion."
+      about_subtitle: "Le Chapitre McGill du CÉCD fait progresser la recherche sur la confiance, la participation démocratique et l'inclusion."
       about_mission: "Notre mission"
       about_axes: "Nos axes de recherche"
       news_kicker: "Nouvelles et annonces"
@@ -135,3 +146,12 @@ fr:
     calendar_title: "Événements à venir"
     contact_note: "Pour les lieux où questions,"
     contact_link: "contactez-nous"
+  footer:
+    description: "Le chapitre McGill du CÉCD rassemble une communauté interdisciplinaire afin de mener des recherches rigoureuses en méthodes mixtes, former la relève et développer des partenariats publics qui renforcent la citoyenneté démocratique au Québec, au Canada et au-delà."
+    contact_link: "Contactez-nous"
+    funding_aria_label: "Reconnaissance du financement"
+    funding_text: "Nous sommes un chapitre local du CÉCD, regroupement stratégique, financé par :"
+    entry_button_aria_label: "Ouvrir les options de contribution"
+    entry_member: "Ajouter ou mettre à jour un profil de membre"
+    entry_publication: "Ajouter une publication"
+    entry_news: "Ajouter une nouvelle"

@@ -7,6 +7,7 @@ from typing import Dict, List, Optional
 from ruamel.yaml import YAML
 
 from . import find_urls, save_url_image, parse_issue_body, remove_keys, remove_items_with_values
+from .translate_maps import translate_department_to_fr, translate_title_to_fr
 
 
 def _normalize_heading_key(text: str) -> str:
@@ -240,20 +241,7 @@ def _translate_role_title_fr(value: str) -> str:
     if _is_empty_response(value):
         return value
 
-    norm = _normalize_heading_key(_normalize_role_title(str(value)))
-    translations = {
-        "phd": "Doctorat",
-        "master_s": "Maitrise",
-        "professor": "Professeur",
-        "associate_professor": "Professeur associe",
-        "assistant_professor": "Professeur adjoint",
-        "postdoc": "Postdoctorat",
-        "postdoctoral_fellow": "Stagiaire postdoctoral",
-        "research_assistant": "Assistant de recherche",
-        "director": "Directeur",
-        "student": "Etudiant",
-    }
-    return translations.get(norm, value)
+    return translate_title_to_fr(_normalize_role_title(str(value)))
 
 
 def _canonicalize_member_parsed_input(parsed: Dict) -> Dict:
@@ -279,6 +267,7 @@ def _canonicalize_member_parsed_input(parsed: Dict) -> Dict:
         ],
         "current_role_title": ["current_role_title"],
         "current_role_department": ["current_role_department", "current_role_department_département_actuel", "current_role_department_departement_actuel"],
+        "current_role_department_fr": ["current_role_department_fr", "current_role_department_french", "current_role_departement_fr", "current_role_departement_french"],
         "current_role_affiliation": ["current_role_affiliation", "current_affiliation_affiliation_actuelle"],
         "current_role_advisor": ["current_role_advisor", "current_role_advisor_superviseur_e_actuel_le"],
         "research_axes": ["research_axes", "research_axes_axes_de_recherche"],
@@ -301,6 +290,21 @@ def _canonicalize_member_parsed_input(parsed: Dict) -> Dict:
                     break
 
     return canonical
+
+
+def _sanitize_parsed_values(parsed: Dict) -> Dict:
+    """Trim leading/trailing whitespace artifacts from parsed form values."""
+
+    def _sanitize(value):
+        if isinstance(value, str):
+            return value.strip()
+        if isinstance(value, list):
+            return [_sanitize(item) for item in value]
+        if isinstance(value, dict):
+            return {k: _sanitize(v) for k, v in value.items()}
+        return value
+
+    return {key: _sanitize(value) for key, value in parsed.items()}
 
 
 def _is_empty_response(value) -> bool:
@@ -407,6 +411,16 @@ def process_role_data(parsed: Dict, prefix: str = "") -> Optional[Dict]:
     if not _is_empty_response(department):
         role["department"] = department
 
+    department_fr = _first_non_empty(
+        parsed,
+        f"{prefix}department_fr",
+        f"{prefix}department_french",
+    )
+    if not _is_empty_response(department_fr):
+        role["department_fr"] = department_fr
+    elif not _is_empty_response(department):
+        role["department_fr"] = translate_department_to_fr(department)
+
     # Add new fields for affiliation and research directions
     affiliation = parsed.get(f"{prefix}affiliation")
     if not _is_empty_response(affiliation):
@@ -427,8 +441,10 @@ def process_role_data(parsed: Dict, prefix: str = "") -> Optional[Dict]:
 
 def format_parsed_content(parsed: Dict) -> Dict:
     """Format the parsed content into the new structure."""
+    normalized_name = str(parsed["name"]).strip()
+
     formatted = {
-        "name": parsed["name"],
+        "name": normalized_name,
     }
 
     # Process current role
@@ -587,6 +603,7 @@ def _update_faculty_axis_map_from_authors(authors: Dict, faculty_axis_map_path: 
 def main(parsed: Dict, action: str = "", site_data_dir: str = "_data/", image_dir: str = "assets/images/bio", faculty_axis_map_path: str = "_data/faculty_axis_map.yml") -> Dict:
     site_data_dir = Path(site_data_dir)
     parsed = _canonicalize_member_parsed_input(parsed)
+    parsed = _sanitize_parsed_values(parsed)
     profile = format_parsed_content(parsed)
 
     yaml = YAML()

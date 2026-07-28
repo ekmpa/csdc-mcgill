@@ -2,7 +2,7 @@
 permalink: /
 title: Home
 layout: splash
-excerpt: "The McGill node of the CSDC researches trust, participation, and democratic inclusion."
+excerpt: "The McGill chapter of the CSDC researches trust, participation, and democratic inclusion."
 lang_code: en
 
 ---

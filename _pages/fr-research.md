@@ -21,16 +21,16 @@ show_taxonomy_posts: false
     <div class="csdc-container">
       <div class="csdc-pillars csdc-pillars-two">
         <article class="csdc-card" style="border-top:4px solid #c8102e;">
-          <h3 class="csdc-card-title">Apprendre la citoyenneté démocratique dans un monde inégal</h3>
-          <p>Travaux sur les parcours citoyens, les inégalités sociales et les conditions de formation politique.</p>
+          <h3 class="csdc-card-title">1) Apprendre la citoyenneté démocratique dans un monde inégal</h3>
+          <p>Ce premier axe porte sur l'acquisition des valeurs, des attitudes et des compétences qui constituent les ingrédients d'une démocratie en santé. La citoyenneté démocratique repose sur le sentiment d'appartenance à une communauté politique, la confiance envers les institutions qui incarnent le régime démocratique, la cohésion sociale liée à l'égalité des citoyens, ainsi que les compétences informationnelles essentielles à la compréhension du monde. Or, plusieurs facteurs influencent cet apprentissage, comme le montrent les recherches combinant communication, psychologie sociale, informatique, science politique et sociologie.</p>
         </article>
         <article class="csdc-card" style="border-top:4px solid #c8102e;">
-          <h3 class="csdc-card-title">La pratique de la citoyenneté démocratique</h3>
-          <p>Études sur la participation, l'engagement civique, la délibération et les transformations de la vie démocratique.</p>
+          <h3 class="csdc-card-title">2) La pratique de la citoyenneté démocratique</h3>
+          <p>Cet axe porte sur des éléments concrets de la pratique de la citoyenneté : la production et la consommation d'information sur l'actualité, la formation des opinions sur les enjeux et les acteurs politiques (y compris les préférences partisanes et les intentions de vote), et la participation politique sous toutes ses formes. Les recherches de cet axe examinent des questions cruciales concernant un écosystème médiatique en mutation rapide, le désalignement partisan et la polarisation des opinions, ainsi que les inégalités dans la participation citoyenne.</p>
         </article>
-        <article class="csdc-card" style="border-top:4px solid #c8102e;">
-          <h3 class="csdc-card-title">Représentation citoyenne et gouvernance</h3>
-          <p>Analyses de la représentation politique, de la confiance institutionnelle et des mécanismes de gouvernance.</p>
+        <article class="csdc-card csdc-card--research-axis-span" style="border-top:4px solid #c8102e;">
+          <h3 class="csdc-card-title">3) Représentation citoyenne et gouvernance</h3>
+          <p>Après l'apprentissage et la pratique de la citoyenneté démocratique, les prochaines étapes essentielles sont la représentation et la gouvernance. Les institutions démocratiques en sont des éléments clés. Elles façonnent les normes et les incitatifs d'une citoyenneté active et relient les citoyens à leurs représentants de manière à favoriser la reddition de comptes, la légitimité et la représentation. Au Québec et au Canada, comme dans d'autres pays, la confiance des citoyens envers les institutions est faible : plusieurs désapprouvent le comportement des membres des parlements et considèrent que les politiciens ne respectent pas leurs promesses, d'où diverses initiatives politiques visant à réformer ces institutions. Les recherches de cet axe porteront sur le rôle des systèmes électoraux, des parlements, des débats parlementaires et des partis politiques.</p>
         </article>
       </div>
     </div>
@@ -42,13 +42,50 @@ show_taxonomy_posts: false
       <p class="csdc-page-subtitle">Productions scientifiques à travers le CÉCD McGill.</p>
       <hr class="csdc-research-divider">
       {% assign all_publications = site.posts | where_exp: "post", "post.path contains '_posts/papers/'" %}
-      {% assign publications = '' | split: '' %}
+      {% assign candidate_publications_non_arxiv = '' | split: '' %}
+      {% assign candidate_publications_arxiv = '' | split: '' %}
       {% for post in all_publications %}
         {% assign post_year = post.date | date: "%Y" | plus: 0 %}
         {% if post_year >= 2008 %}
-          {% assign publications = publications | push: post %}
+          {% assign normalized_venue = post.venue | default: '' | downcase %}
+          {% if normalized_venue contains 'arxiv' %}
+            {% assign candidate_publications_arxiv = candidate_publications_arxiv | push: post %}
+          {% else %}
+            {% assign candidate_publications_non_arxiv = candidate_publications_non_arxiv | push: post %}
+          {% endif %}
         {% endif %}
       {% endfor %}
+      {% assign publications = '' | split: '' %}
+      {% assign seen_publication_title_keys = '' | split: '' %}
+      {% assign publication_candidates = candidate_publications_non_arxiv | concat: candidate_publications_arxiv %}
+      {% for post in publication_candidates %}
+        {% assign title_key = post.title
+          | downcase
+          | replace: '$$\\textbf{', ''
+          | replace: '$$\\textttt{', ''
+          | replace: '$$\\texttt{', ''
+          | replace: '$$\\textit{', ''
+          | replace: '$\\textbf{', ''
+          | replace: '$\\textttt{', ''
+          | replace: '$\\texttt{', ''
+          | replace: '$\\textit{', ''
+          | replace: '\\textbf{', ''
+          | replace: '\\textttt{', ''
+          | replace: '\\texttt{', ''
+          | replace: '\\textit{', ''
+          | replace: '$$', ''
+          | replace: '$', ''
+          | replace: '{', ''
+          | replace: '}', ''
+          | replace: '–', '-'
+          | replace: '—', '-'
+          | strip %}
+        {% unless seen_publication_title_keys contains title_key %}
+          {% assign seen_publication_title_keys = seen_publication_title_keys | push: title_key %}
+          {% assign publications = publications | push: post %}
+        {% endunless %}
+      {% endfor %}
+      {% assign cs_keyword_terms = "deepfake|democracy|partisan|polarisation|election|pandemic|social|ai-for-good|responsible ai|information integrity|fact-checking|misinformation|trafficking|abuse|privacy|sexual|campaigns|influence|safety|integrity|epistemic|risks|disinformation|political|societal|toxicity|public|discourse|party|tweet|twitter|reddit" | split: "|" %}
       {% if publications and publications.size > 0 %}
       {% assign publication_years = '' | split: '' %}
       {% for post in publications %}
@@ -73,16 +110,114 @@ show_taxonomy_posts: false
             <span class="csdc-research-year-label">{{ year }}</span>
             (<span class="csdc-research-year-count" data-total-count="{{ year_publications.size }}">{{ year_publications.size }}</span>)
           </h3>
-          <div class="csdc-pillars csdc-pillars-two">
-            {% for post in year_publications %}
-            <article class="csdc-card">
-              <h4 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
-              {% if post.names %}<p style="margin:0.2rem 0;">{{ post.names }}</p>{% endif %}
-              {% if post.venue %}<p style="margin:0.2rem 0; color:#6b7280;">{{ post.venue }}</p>{% endif %}
-              {% if post.link %}<p style="margin:0.35rem 0 0;"><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">Lien vers la publication</a></p>{% endif %}
-            </article>
-            {% endfor %}
+          {% assign year_departments = '' | split: '' %}
+          {% for post in year_publications %}
+            {% assign post_department = '' %}
+            {% assign post_names = post.names | default: '' %}
+            {% if post_names != '' %}
+              {% for author_entry in site.data.authors %}
+                {% assign author_name = author_entry[0] %}
+                {% assign author = author_entry[1] %}
+                {% assign dept = author.current_role.department | default: '' | strip %}
+                {% assign group = author.team_group | default: '' | strip %}
+                {% if post_department == '' and dept != '' and group == 'faculty_members' and post_names contains author_name %}
+                  {% assign post_department = dept %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if post_department == '' %}
+              {% assign post_department = 'Autres' %}
+            {% endif %}
+            {% unless year_departments contains post_department %}
+              {% assign year_departments = year_departments | push: post_department %}
+            {% endunless %}
+          {% endfor %}
+          {% assign year_departments = year_departments | sort %}
+          {% assign ordered_departments = '' | split: '' %}
+          {% for dept in year_departments %}
+            {% unless dept == 'Computer Science' or dept == 'Informatique' or dept == 'Autres' or dept == 'Other' %}
+              {% assign ordered_departments = ordered_departments | push: dept %}
+            {% endunless %}
+          {% endfor %}
+          {% if year_departments contains 'Computer Science' %}
+            {% assign ordered_departments = ordered_departments | push: 'Computer Science' %}
+          {% elsif year_departments contains 'Informatique' %}
+            {% assign ordered_departments = ordered_departments | push: 'Informatique' %}
+          {% endif %}
+          {% if year_departments contains 'Autres' %}
+            {% assign ordered_departments = ordered_departments | push: 'Autres' %}
+          {% elsif year_departments contains 'Other' %}
+            {% assign ordered_departments = ordered_departments | push: 'Other' %}
+          {% endif %}
+
+          {% for dept in ordered_departments %}
+          <div class="csdc-research-dept-group">
+            <h4 class="csdc-research-dept-heading">{{ dept }}</h4>
+            <div class="csdc-pillars csdc-pillars-two">
+              {% for post in year_publications %}
+                {% assign post_department = '' %}
+                {% assign post_names = post.names | default: '' %}
+                {% if post_names != '' %}
+                  {% for author_entry in site.data.authors %}
+                    {% assign author_name = author_entry[0] %}
+                    {% assign author = author_entry[1] %}
+                    {% assign dept_name = author.current_role.department | default: '' | strip %}
+                    {% assign group = author.team_group | default: '' | strip %}
+                    {% if post_department == '' and dept_name != '' and group == 'faculty_members' and post_names contains author_name %}
+                      {% assign post_department = dept_name %}
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+                {% if post_department == '' %}
+                  {% assign post_department = 'Autres' %}
+                {% endif %}
+
+                {% if post_department == dept %}
+                {% assign clean_title = post.title
+                  | replace: '$$\\textbf{', ''
+                  | replace: '$$\\textttt{', ''
+                  | replace: '$$\\texttt{', ''
+                  | replace: '$$\\textit{', ''
+                  | replace: '$\\textbf{', ''
+                  | replace: '$\\textttt{', ''
+                  | replace: '$\\texttt{', ''
+                  | replace: '$\\textit{', ''
+                  | replace: '\\textbf{', ''
+                  | replace: '\\textttt{', ''
+                  | replace: '\\texttt{', ''
+                  | replace: '\\textit{', ''
+                  | replace: '$$', ''
+                  | replace: '$', ''
+                  | replace: '{', ''
+                  | replace: '}', ''
+                  | strip %}
+                {% assign should_show_post = true %}
+                {% if dept == 'Computer Science' or dept == 'Informatique' %}
+                  {% assign normalized_title = clean_title
+                    | downcase
+                    | replace: '–', '-'
+                    | replace: '—', '-' %}
+                  {% assign should_show_post = false %}
+                  {% for keyword in cs_keyword_terms %}
+                    {% if normalized_title contains keyword %}
+                      {% assign should_show_post = true %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+                {% if should_show_post %}
+                <article class="csdc-card">
+                  <h4 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ clean_title }}</a></h4>
+                  {% if post.names %}<p style="margin:0.2rem 0;">{{ post.names }}</p>{% endif %}
+                  {% if post.venue %}<p style="margin:0.2rem 0; color:#6b7280;">{{ post.venue }}</p>{% endif %}
+                  {% if post.link %}<p style="margin:0.35rem 0 0;"><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">Lien vers la publication</a></p>{% endif %}
+                </article>
+                {% endif %}
+                {% endif %}
+              {% endfor %}
+            </div>
           </div>
+          {% endfor %}
         </section>
       {% endfor %}
 

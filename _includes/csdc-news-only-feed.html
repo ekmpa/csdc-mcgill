@@ -3,21 +3,53 @@
 {% if current_path == '/fr/' or current_path contains '/fr/' %}
 {% assign is_fr = true %}
 {% endif %}
-{% assign news_updates = site.posts | where_exp: "post", "post.path contains '_posts/news/'" %}
+{% assign all_news_posts = site.posts | where_exp: "post", "post.path contains '_posts/news/'" %}
+{% assign fr_news_filenames = '' | split: '' %}
+{% assign news_updates = '' | split: '' %}
+{% if all_news_posts and all_news_posts.size > 0 %}
+  {% for post in all_news_posts limit: 300 %}
+    {% if post.path contains '_posts/news/fr/' %}
+      {% assign fr_filename = post.path | split: '/' | last %}
+      {% unless fr_news_filenames contains fr_filename %}
+        {% assign filename_item = fr_filename | split: '|' %}
+        {% assign fr_news_filenames = fr_news_filenames | concat: filename_item %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+
+  {% for post in all_news_posts limit: 300 %}
+    {% assign post_is_fr = false %}
+    {% if post.path contains '_posts/news/fr/' %}
+      {% assign post_is_fr = true %}
+    {% endif %}
+
+    {% if is_fr %}
+      {% assign include_post = post_is_fr %}
+      {% unless post_is_fr %}
+        {% assign post_filename = post.path | split: '/' | last %}
+        {% unless fr_news_filenames contains post_filename %}
+          {% assign include_post = true %}
+        {% endunless %}
+      {% endunless %}
+    {% else %}
+      {% assign include_post = false %}
+      {% unless post_is_fr %}
+        {% assign include_post = true %}
+      {% endunless %}
+    {% endif %}
+
+    {% if include_post %}
+      {% assign post_item = '' | split: '' %}
+      {% assign post_item = post_item | push: post %}
+      {% assign news_updates = news_updates | concat: post_item %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 {% assign allowed_section_keys = 'press|prize|grants|global-csdc|other' | split: '|' %}
 {% assign section_keys = '' | split: '' %}
 
 {% if news_updates and news_updates.size > 0 %}
   {% for post in news_updates limit: 120 %}
-    {% if is_fr %}
-      {% unless post.path contains '_posts/news/fr/' %}
-        {% continue %}
-      {% endunless %}
-    {% else %}
-      {% if post.path contains '_posts/news/fr/' %}
-        {% continue %}
-      {% endif %}
-    {% endif %}
     {% assign post_news_tag = post.news_tag | default: 'other' | downcase | replace: ' ', '-' | replace: '_', '-' %}
     {% unless allowed_section_keys contains post_news_tag %}
       {% assign post_news_tag = 'other' %}
@@ -42,15 +74,6 @@
       {% assign section_count = 0 %}
       {% capture section_items %}
         {% for post in news_updates limit:80 %}
-        {% if is_fr %}
-        {% unless post.path contains '_posts/news/fr/' %}
-        {% continue %}
-        {% endunless %}
-        {% else %}
-        {% if post.path contains '_posts/news/fr/' %}
-        {% continue %}
-        {% endif %}
-        {% endif %}
         {% assign post_news_tag = post.news_tag | default: 'other' | downcase | replace: ' ', '-' | replace: '_', '-' %}
         {% unless allowed_section_keys contains post_news_tag %}
         {% assign post_news_tag = 'other' %}
@@ -61,18 +84,18 @@
         {% assign section_count = section_count | plus: 1 %}
         {% assign rendered_news_count = rendered_news_count | plus: 1 %}
         {% if is_fr %}
-        {% assign excerpt_raw = post.excerpt_fr | default: post.excerpt | default: '' | strip_html | strip %}
+        {% assign excerpt_raw = post.excerpt_fr | default: post.excerpt_en | default: post.excerpt | default: '' | strip_html | strip %}
         {% else %}
         {% assign excerpt_raw = post.excerpt_en | default: post.excerpt | default: '' | strip_html | strip %}
         {% endif %}
         {% assign excerpt_down = excerpt_raw | downcase %}
-        {% assign excerpt_prefix = excerpt_raw | slice: 0, 3 %}
+        {% assign excerpt_prefix = excerpt_down | slice: 0, 3 %}
         {% assign show_byline = false %}
         {% assign show_excerpt = false %}
         {% assign excerpt_clean = excerpt_raw %}
         {% if excerpt_raw != '' and excerpt_down != 'x' %}
-        {% if excerpt_prefix == 'By ' or excerpt_prefix == 'By:' %}
-        {% assign excerpt_clean = excerpt_clean | replace_first: 'By: ', '' | replace_first: 'By ', '' %}
+        {% if excerpt_prefix == 'by ' or excerpt_prefix == 'by:' or excerpt_prefix == 'par' %}
+        {% assign excerpt_clean = excerpt_clean | replace_first: 'By: ', '' | replace_first: 'By ', '' | replace_first: 'by: ', '' | replace_first: 'by ', '' | replace_first: 'BY: ', '' | replace_first: 'BY ', '' | replace_first: 'Par: ', '' | replace_first: 'Par ', '' | replace_first: 'par: ', '' | replace_first: 'par ', '' | replace_first: 'PAR: ', '' | replace_first: 'PAR ', '' %}
         {% assign show_byline = true %}
         {% else %}
         {% assign show_excerpt = true %}
@@ -91,7 +114,7 @@
           <h3 class="csdc-news-item-title">{{ rendered_news_title }}</h3>
           <p class="csdc-news-item-date">{{ post.date | date: "%B %-d, %Y" }}</p>
           {% if show_byline %}
-          <p class="csdc-news-item-excerpt"><span class="csdc-news-item-by">By</span> {{ excerpt_clean }}</p>
+          <p class="csdc-news-item-excerpt"><span class="csdc-news-item-by">{% if excerpt_prefix == 'par' %}par{% elsif post_news_tag == 'press' %}by{% else %}By{% endif %}</span> {{ excerpt_clean }}</p>
           {% elsif show_excerpt %}
           <p class="csdc-news-item-excerpt">{{ excerpt_clean }}</p>
           {% endif %}

@@ -104,7 +104,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-    var cards = Array.prototype.slice.call(document.querySelectorAll('.csdc-people-page .author-card'));
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.csdc-people-page .author-card, .csdc-people-page .csdc-people-member-card'));
     var peoplePage = document.querySelector('.csdc-people-page');
     var defaultOpen = document.querySelector('.csdc-people-page .author-card--default-open');
     var defaultCard = defaultOpen || null;
@@ -215,21 +215,26 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
     }
 
+    var isFrenchPage = "{{ lang }}" === "fr";
+    var jumpLabels = isFrenchPage
+        ? { staff: 'Personnel', faculty: 'Corps', phd: 'Doctorat', masters: 'Maîtrise', alumniSuffix: ' (anciens)' }
+        : { staff: 'Staff', faculty: 'Faculty', phd: 'PhD', masters: 'Master\u2019s', alumniSuffix: ' (alumni)' };
+
     function compactGroupLabel(text) {
         var plain = (text || '').replace(/\([^)]*\)\s*$/g, '').trim();
         var lower = plain.toLowerCase();
 
         if (lower.indexOf('staff') !== -1 || lower.indexOf('personnel') !== -1) {
-            return 'Staff';
+            return jumpLabels.staff;
         }
         if (lower.indexOf('faculty') !== -1 || lower.indexOf('corps') !== -1) {
-            return 'Faculty';
+            return jumpLabels.faculty;
         }
         if (lower.indexOf('phd') !== -1 || lower.indexOf('doctor') !== -1 || lower.indexOf('postdoc') !== -1) {
-            return 'PhD';
+            return jumpLabels.phd;
         }
         if (lower.indexOf('master') !== -1 || lower.indexOf('ma\u00eetrise') !== -1 || lower.indexOf('maitrise') !== -1) {
-            return 'Master\u2019s';
+            return jumpLabels.masters;
         }
 
         var firstWord = plain.split(/\s+/)[0] || '--';
@@ -282,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var targetIsAlumni = isAlumniGroup(group);
         if (targetIsAlumni) {
-            return baseLabel + ' (alumni)';
+            return baseLabel + jumpLabels.alumniSuffix;
         }
 
         return baseLabel;
@@ -486,7 +491,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         groups.forEach(function (group) {
             var groupVisible = 0;
-            var cards = group.querySelectorAll('.author-card');
+            var cards = group.querySelectorAll('.author-card, .csdc-people-member-card');
 
             cards.forEach(function (card) {
                 var haystack = (card.textContent || '').toLowerCase();
@@ -500,7 +505,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             var alumniSections = group.querySelectorAll('.csdc-alumni-section');
             alumniSections.forEach(function (section) {
-                var visibleAlumni = section.querySelectorAll('.author-card:not([style*="display: none"])').length;
+                var visibleAlumni = section.querySelectorAll('.author-card:not([style*="display: none"]), .csdc-people-member-card:not([style*="display: none"])').length;
                 section.style.display = visibleAlumni > 0 ? '' : 'none';
             });
 
@@ -575,7 +580,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            var nameEl = card.querySelector('.author-name');
+            var nameEl = card.querySelector('.author-name, .csdc-about-team-name');
             var cardName = normalizeName(nameEl ? nameEl.textContent : '');
             if (cardName === targetName) {
                 matchedCard = card;

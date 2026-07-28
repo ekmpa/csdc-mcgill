@@ -1,0 +1,2520 @@
+Aisha Ahmad:
+  name: Aisha Ahmad
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2010"
+    title: Doctoral Student
+    department: Political Science
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: phd_students_and_postdocs
+Nicolas Ajzenman:
+  name: Nicolas Ajzenman
+  current_role:
+    type: Faculty / Professor
+    title: Assistant Professor
+    department: Economics
+  bio: Nicolas Ajzenman is an Assistant Professor at McGill (Economics Department)
+    and an affiliated professor at J-PAL and IZA. He is working at the intersection
+    of development economics, behavioral economics, and political economy. His research
+    has appeared or is forthcoming in top scientific journals such as the American
+    Economic Journal.
+  avatar: https://github.com/user-attachments/assets/a0df0780-8d08-4e46-aaac-2bc460ee3b7b
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.ca/citations?user=MdFqDJkAAAAJ&hl=en&oi=ao
+  team_group: faculty_members
+Hubert Alain:
+  name: Hubert Alain
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Communication Studies
+    end_date: "2015"
+
+  team_group: masters_students
+Quinn Albaugh:
+  name: Quinn Albaugh
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2014"
+
+  team_group: masters_students
+Mohammed Ali:
+  name: Mohammed Ali
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Communication Studies
+    end_date: "2011"
+
+  team_group: phd_students_and_postdocs
+Sahar Ramazan Ali:
+  name: Sahar Ramazan Ali
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Psychology
+    start_date: "2025"
+    end_date: "2030"
+    advisor: Eric Hehman
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=sF4qbXlF77oC&hl=en&oi=ao
+
+  team_group: phd_students_and_postdocs
+  avatar: /assets/images/bio/Sahar Ramazan Ali.jpg
+Brianne Anderson:
+  name: Brianne Anderson
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    start_date: "2025"
+    end_date: "2027"
+    advisor: Leonardo Baccini
+  avatar: /assets/images/bio/Brianne Anderson.jpg
+  auto_update_publications: false
+  team_group: masters_students
+Henry Atkins:
+  name: Henry Atkins
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
+    end_date: "2022"
+
+  team_group: masters_students
+Borna Atrchian:
+  name: Borna Atrchian
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    start_date: "2025"
+    end_date: "2030"
+    advisor: Dietlind Stolle
+
+  team_group: phd_students_and_postdocs
+Ayhan Eren Babayigit:
+  name: Ayhan Eren Babayigit
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
+    end_date: "2025"
+
+  team_group: masters_students
+Leonardo Baccini:
+  name: Leonardo Baccini
+  current_role:
+    type: Faculty / Professor
+    title: Professor
+    department: Political Science
+  bio: Leonardo Baccini is a Professor in the Department of Political Science at McGill
+    University. His research interests are in the area of international political
+    economy and comparative political economy with a focus on the political effects
+    of structural economic transformations.
+  orcid: 0000-0002-6027-9192
+  avatar: /assets/images/bio/Leonardo Baccini.jpg
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=t621mGQAAAAJ&hl=en&oi=ao
+  team_group: faculty_members
+Maxime Barbeau:
+  name: Maxime Barbeau
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Economics
+    end_date: "2016"
+
+  team_group: masters_students
+Patrizia Barbone:
+  name: Patrizia Barbone
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Geography
+    advisor: Benjamin Forest
+    end_date: "2013"
+
+  team_group: phd_students_and_postdocs
+Edana Beauvais:
+  name: Edana Beauvais
+  alumni: true
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2019"
+
+  team_group: phd_students_and_postdocs
+Jessica Behnke:
+  name: Jessica Behnke
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2013"
+
+  team_group: masters_students
+Sheena Bell:
+  name: Sheena Bell
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2010"
+    title: Master's Student
+    department: Political Science
+    advisor: Éric Bélanger
+    affiliation: McGill University
+
+  team_group: masters_students
+Olivier Bergeron-Boutin:
+  name: Olivier Bergeron-Boutin
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2024"
+
+  team_group: masters_students
+Elissa Berwick:
+  name: Elissa Berwick
+  avatar: /assets/images/bio/Elissa Berwick 2.jpg
+  current_role:
+    type: Faculty / Professor
+    title: Assistant Professor
+    department: Political Science
+  bio: Prof Berwick’s interests span the sub-fields of comparative politics and quantitative
+    methodology. Her research focuses on sub-state nationalism, exploring how the
+    imagined communities of stateless nations mold actual political attitudes and
+    behaviors.
+  orcid: 0000-0002-0011-5073
+  social_media_links:
+  - label: Website
+    url: https://www.elissaberwick.com/
+  team_group: faculty_members
+Maxime Blanchard:
+  name: Maxime Blanchard
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2024"
+
+  team_group: phd_students_and_postdocs
+Marc André Bodet:
+  name: Marc André Bodet
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2010"
+    title: Doctoral Student
+    department: Political Science
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: phd_students_and_postdocs
+Danielle Bohonos:
+  name: Danielle Bohonos
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Éric Belanger
+    end_date: "2023"
+  team_group: masters_students
+Arianna Bondi:
+  name: Arianna Bondi
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    start_date: "2022"
+    end_date: "2028"
+    advisor: Leonardo Baccini
+  orcid: 0000-0003-2491-2672
+  avatar: /assets/images/bio/Arianna Bondi.jpg
+  auto_update_publications: true
+  team_group: phd_students_and_postdocs
+Tyler Braun:
+  name: Tyler Braun
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Communication Studies
+    end_date: "2013"
+
+  team_group: masters_students
+Aengus Bridgman:
+  name: Aengus Bridgman
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2023"
+
+  team_group: phd_students_and_postdocs
+Éric Bélanger:
+  name: Éric Bélanger
+  avatar: /assets/images/bio/Éric Bélanger 2.jpg
+  current_role:
+    type: Faculty / Professor
+    title: Professor
+    department: Political Science
+  bio: Éric Bélanger is Professor of Political Science at McGill University. He is
+    also a member of the Royal Society of Canada’s College of New Scholars, Artists
+    and Scientists. Though centered around Quebec and Canadian politics, his research
+    focuses on the general themes of political parties, public opinion, and voting
+    behaviour using a variety of quantitative methods. Some of his prior research
+    has been concerned with economic voting and Quebec provincial elections. He is
+    also involved in research projects studying voting behaviour in Latin America,
+    as well as a comparison of nationalism in Quebec and Scotland.
+  orcid: 0000-0003-3289-6000
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=CuFbthUAAAAJ
+
+  team_group: faculty_members
+Albert Manuel Orozco Camacho:
+  name: Albert Manuel Orozco Camacho
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Computer Science
+    advisor: Reihaneh Rabbany
+    end_date: "2023"
+
+  team_group: phd_students_and_postdocs
+Xavier Campbell:
+  name: Xavier Campbell
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2015"
+
+  team_group: masters_students
+Rafael Campos-Gottardo:
+  name: Rafael Campos-Gottardo
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    start_date: "2023"
+    end_date: "2025"
+    advisor: Aaron Erlich
+  orcid: 0000-0002-0632-1070
+  avatar: /assets/images/bio/Rafael Campos-Gottardo.jpg
+  social_media_links:
+  - label: Website
+    url: https://rafael-campos-gottardo.github.io
+
+  team_group: masters_students
+  alumni: true
+Ana Canedo:
+  name: Ana Canedo
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Thomas Soehl
+    end_date: "2023"
+
+  team_group: phd_students_and_postdocs
+Adam Chalmers:
+  name: Adam Chalmers
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    end_date: "2013"
+
+  team_group: phd_students_and_postdocs
+Yvonne Chang:
+  name: Yvonne Chang
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Thomas Soehl
+    department: Sociology
+    end_date: "2023"
+
+  team_group: phd_students_and_postdocs
+Philippe Chassé:
+  name: Philippe Chassé
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
+    end_date: "2021"
+
+  team_group: masters_students
+Annie Chen:
+  name: Annie Chen
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
+    end_date: "2020"
+
+  team_group: masters_students
+Kefan Chen:
+  name: Kefan Chen
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Economics
+    start_date: "2025"
+    end_date: "2030"
+    advisor: Nicolas Ajzenman
+  orcid: 0009-0001-6812-5657
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=AzVYNOAAAAAJ&hl=en&oi=ao
+  team_group: phd_students_and_postdocs
+Chris Chimm:
+  name: Chris Chimm
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Eric Bélanger
+    end_date: "2016"
+
+  team_group: phd_students_and_postdocs
+Sarah Ciaglia:
+  name: Sarah Ciaglia
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2012"
+
+  team_group: masters_students
+Costin Ciobanu:
+  name: Costin Ciobanu
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    end_date: "2022"
+
+  team_group: phd_students_and_postdocs
+Ellen Claes:
+  name: Ellen Claes
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2010"
+    title: Doctoral Student
+    department: Political Science
+    affiliation: McGill University
+  team_group: phd_students_and_postdocs
+Guila Cohen:
+  name: Guila Cohen
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    start_date: "2022"
+    end_date: "2026"
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: phd_students_and_postdocs
+Maxime Coulon-Hamelin:
+  name: Maxime Coulon-Hamelin
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
+    end_date: "2022"
+
+  team_group: masters_students
+Bolette Danckert:
+  name: Bolette Danckert
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    end_date: "2014"
+
+  team_group: phd_students_and_postdocs
+Jacob Danovitch:
+  name: Jacob Danovitch
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Computer Science
+    advisor: Reihaneh Rabbany
+    end_date: "2023"
+
+  team_group: masters_students
+Shadia El Dardiry:
+  name: Shadia El Dardiry
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2009"
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+
+  team_group: masters_students
+Rebecca Daviddi:
+  name: Rebecca Daviddi
+  current_role:
+    type: Student
+    title: Doctoral Student
+    start_date: "2020"
+    end_date: "2023"
+    advisor: Eran Shor
+    department: Sociology
+  orcid: 0009-0009-7176-0115
+  auto_update_publications: true
+  team_group: phd_students_and_postdocs
+  alumni: true
+Natalie Delmonte:
+  name: Natalie Delmonte
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Elissa Berwick
+    end_date: "2024"
+
+  team_group: masters_students
+Didem Demirag:
+  name: Didem Demirag
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Computer Science
+    advisor: Jeremy Clark
+    end_date: "2022"
+
+  team_group: phd_students_and_postdocs
+Clare Devereux:
+  name: Clare Devereux
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2015"
+
+  team_group: masters_students
+Thomas Didier:
+  name: Thomas Didier
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2011"
+
+  team_group: masters_students
+? "John Doe\n"
+: name: "John Doe\n"
+  current_role:
+    type: Student
+    title: PhD
+    title_fr: Doctorat
+    advisor: "Reihaneh Rabbany\n"
+    affiliation: "Mila, McGill\n"
+    research_directions:
+    - online-toxicity
+    - poli-sci
+  team_group: phd_students_and_postdocs
+  orcid: "0000-0002-1825-0097\n"
+  avatar: "/tests/scratch_debug/assets/images/bio/John Doe\n.jpg"
+  social_media_links:
+  - label: GitHub
+    url: "www.github.com\n"
+Valérie Doucette:
+  name: Valérie Doucette
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Communication Studies
+    end_date: "2011"
+
+  team_group: masters_students
+William East:
+  name: William East
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2019"
+
+  team_group: masters_students
+Merve Erdilmen:
+  name: Merve Erdilmen
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2018"
+
+  team_group: masters_students
+Chris Erl:
+  name: Chris Erl
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Geography
+    advisor: Benjamin Forest
+    end_date: "2022"
+
+  team_group: phd_students_and_postdocs
+Aaron Erlich:
+  name: Aaron Erlich
+  current_role:
+    type: Faculty / Professor
+    title: Associate Professor, Member of the steering committee of the CSDC at Laval
+    department: Political Science
+  bio: Aaron Erlich is an Associate Professor of Political Science at McGill University.
+    His research interests concern questions of democratization, information dissemination,
+    political behavior, political participation, and public opinion in the Former
+    Soviet Union, Eastern and Southern Africa, and Mexico. Professor Erlich's research
+    makes use of a variety of methods, such as field experiments, survey experiments,
+    and mixed-method research designs.
+  orcid: 0000-0001-6571-9081
+  avatar: https://github.com/user-attachments/assets/4c441e39-9859-48e0-9440-e743ddbd8838
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=h8n98PQAAAAJ&hl=en
+
+  team_group: faculty_members
+Garrett Evans:
+  name: Garrett Evans
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Economics
+    start_date: "2025"
+    end_date: "2030"
+    advisor: Nicolas Ajzenman
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: phd_students_and_postdocs
+Jean-Simon Farrah:
+  name: Jean-Simon Farrah
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2010"
+    title: Master's Student
+    advisor: Dietlind Stolle
+    department: Political Science
+    affiliation: McGill University
+  auto_update_publications: false
+
+  team_group: masters_students
+Andréa Febres-Gagné:
+  name: Andréa Febres-Gagné
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
+    end_date: "2022"
+
+  team_group: masters_students
+Fernando Feitosa:
+  name: Fernando Feitosa
+  alumni: true
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    department: Political Science
+    advisor: Eric Bélanger
+    end_date: "2022"
+
+  team_group: phd_students_and_postdocs
+Aarash Feizi:
+  name: Aarash Feizi
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Computer Science
+    start_date: "2019"
+    end_date: "2024"
+    advisor: Reihaneh Rabbany
+  avatar: /assets/images/bio/Aarash Feizi.jpg
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=wdZdCMoAAAAJ
+
+  team_group: phd_students_and_postdocs
+Benjamin Ferland:
+  name: Benjamin Ferland
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    end_date: "2015"
+
+  team_group: phd_students_and_postdocs
+Ina Filkobski:
+  name: Ina Filkobski
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Eran Shor
+    end_date: "2022"
+
+  team_group: phd_students_and_postdocs
+Benjamin Forest:
+  name: Benjamin Forest
+  avatar: /assets/images/bio/Benjamin Forest 2.jpg
+  current_role:
+    type: Faculty / Professor
+    title: Associate Professor
+    department: Geography
+  bio: Benjamin Forest is an Associate Professor at McGill University in the Department
+    of Geography as well as an Associate Member of the Department of Political Science.
+    A specialist in the field of political geography, his work revolves around the
+    theme of diversity and electoral reform. In addition to being part of a project
+    studying monuments and memorials in the post-Soviet sphere, Professor Forest is
+    currently heading a project on diversity in party structures and constituencies
+    in Canada. He is also working on research exploring municipal LGBTQ policies.
+  orcid: https://orcid.org/0000-0002-4831-9403
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=tLfKPpgAAAAJ&hl=en&oi=ao
+  team_group: faculty_members
+Patrick Forest:
+  name: Patrick Forest
+  alumni: true
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    department: Geography
+    advisor: Benjamin Forest
+    end_date: "2011"
+
+  team_group: phd_students_and_postdocs
+Jorge Frozzini:
+  name: Jorge Frozzini
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Communication Studies
+    end_date: "2011"
+
+  team_group: phd_students_and_postdocs
+Etienne Gagnon:
+  name: Etienne Gagnon
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
+    end_date: "2020"
+
+  team_group: masters_students
+Thomas Gareau-Paquette:
+  name: Thomas Gareau-Paquette
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Belanger
+    end_date: "2024"
+
+  team_group: masters_students
+Holly Garnett:
+  name: Holly Garnett
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    end_date: "2017"
+
+  team_group: phd_students_and_postdocs
+Lara Gauthier:
+  name: Lara Gauthier
+  alumni: true
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    department: Sociology
+    advisor: Thomas Soehl
+    end_date: "2020"
+
+  team_group: phd_students_and_postdocs
+Daniel St. Germaine:
+  name: Daniel St. Germaine
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2021"
+
+  team_group: masters_students
+Kassandra Gervasi:
+  name: Kassandra Gervasi
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    start_date: "2025"
+    end_date: "2027"
+    advisor: Leonardo Baccini
+  avatar: /assets/images/bio/Kassandra Gervasi.jpg
+  team_group: masters_students
+Terhas Ghebretecle:
+  name: Terhas Ghebretecle
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    start_date: "2024"
+    end_date: "2029"
+    advisor: Thomas Soehl
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: phd_students_and_postdocs
+  avatar: /assets/images/bio/Terhas Ghebretecle.jpg
+Andrew Gibson:
+  name: Andrew Gibson
+  alumni: true
+Claire Girard:
+  name: Claire Girard
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Communication Studies
+    end_date: "2013"
+
+  team_group: masters_students
+Dan Goldberg:
+  name: Dan Goldberg
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2011"
+    title: Doctoral Student
+    department: Communication Studies
+    affiliation: McGill University
+  auto_update_publications: false
+
+  team_group: phd_students_and_postdocs
+Gaby Gonzalez-Sirois:
+  name: Gaby Gonzalez-Sirois
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
+    end_date: "2019"
+
+  team_group: masters_students
+Adela Gotz:
+  name: Adela Gotz
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2010"
+    title: Master's Student
+    advisor: Éric Bélanger
+    department: Political Science
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: masters_students
+Oriana Grosbusch:
+  name: Oriana Grosbusch
+  current_role:
+    type: Student
+    title: PhD
+    start_date: "2024"
+    end_date: "2029"
+    title_fr: Doctorat
+    advisor: Eric Belanger
+    department: Political Science
+  team_group: phd_students_and_postdocs
+Giovanni Guiga:
+  name: Giovanni Guiga
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
+    end_date: "2020"
+
+  team_group: masters_students
+Birte Gundelach:
+  name: Birte Gundelach
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    end_date: "2013"
+
+  team_group: phd_students_and_postdocs
+Caroline Habluetzl:
+  name: Caroline Habluetzl
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Communication Studies
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: phd_students_and_postdocs
+Ian Van Haren:
+  name: Ian Van Haren
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    start_date: "2024"
+    end_date: "2026"
+    advisor: Thomas Soehl
+  orcid: 0000-0002-1818-7577
+  avatar: /assets/images/bio/Ian Van Haren.jpg
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=_0j4tPAAAAAJ
+
+  team_group: phd_students_and_postdocs
+Eric Hehman:
+  name: Eric Hehman
+  avatar: /assets/images/bio/Eric Hehman 2.jpg
+  current_role:
+    type: Faculty / Professor
+    title: Associate Professor
+    department: Psychology
+  bio: Eric Hehman is an Associate Professor of Psychology at McGill University and
+    director of the Seeing Human Lab.  Generally, Dr. Hehman’s research examines how
+    individuals perceive and evaluate one another across group boundaries (e.g., race,
+    gender, sexual-orientation, occupation, etc). To address these questions, he takes
+    a multi-method approach, incorporating a broad range of behavioral (e.g., computer-mouse
+    tracking, digital face modeling, group interactions) and statistical techniques
+    (e.g., multilevel modeling, structural equation modeling).
+  orcid: https://orcid.org/0000-0003-2227-1517
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=n8IeMMEAAAAJ
+  team_group: faculty_members
+Shaden Hetu-Frankel:
+  name: Shaden Hetu-Frankel
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2022"
+
+  team_group: masters_students
+Joe Heywood:
+  name: Joe Heywood
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2012"
+
+  team_group: masters_students
+John Hicks:
+  name: John Hicks
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Leonardo Baccini
+    end_date: "2024"
+
+  team_group: masters_students
+Richard Hink:
+  name: Richard Hink
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2010"
+    title: Doctoral Student
+    department: Communication Studies
+    affiliation: McGill University
+
+  team_group: phd_students_and_postdocs
+Esme Hood:
+  name: Esme Hood
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    start_date: "2025"
+    end_date: "2030"
+    advisor: Eran Shor
+  orcid: 0009-0006-0758-9788
+
+  team_group: phd_students_and_postdocs
+Sarah Houde:
+  name: Sarah Houde
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    advisor: Dietlind Stolle
+    department: Political Science
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: masters_students
+Andy (Shenyang) Huang:
+  name: Andy (Shenyang) Huang
+  alumni: true
+  current_role:
+    type: Student
+    title: PhD
+    title_fr: Doctorat
+    advisor: Reihaneh Rabbany
+    department: Department of Computer Science
+  team_group: phd_students_and_postdocs
+  avatar: /assets/images/bio/Andy (Shenyang) Huang.jpg
+Raffaele Iacovino:
+  name: Raffaele Iacovino
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    advisor: Éric Bélanger
+    department: Political Science
+    end_date: "2009"
+    affiliation: McGill University
+  auto_update_publications: false
+
+  team_group: phd_students_and_postdocs
+Anne Imouza:
+  name: Anne Imouza
+  alumni: false
+  current_role:
+    type: Staff
+    title: Administrator
+    research_directions:
+    - poli-sci
+  secondary_roles:
+  - type: Student
+    title: Doctoral Student
+    start_date: "2022"
+    end_date: "2027"
+    advisor: Éric Bélanger
+    department: Political Science
+  bio: Administrative lead supporting coordination, operations, and outreach for McGill
+    CSDC.
+  avatar: /assets/images/bio/Anne Imouza.jpg
+
+  team_group: staff
+Olivier Jacques:
+  name: Olivier Jacques
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2021"
+
+  team_group: phd_students_and_postdocs
+Luis Alvarez Jimenez:
+  name: Luis Alvarez Jimenez
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    start_date: "2021"
+    end_date: "2023"
+    advisor: Aaron Erlich
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: masters_students
+  alumni: true
+Jeroen Joly:
+  name: Jeroen Joly
+  alumni: true
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    department: Political Science
+    end_date: "2014"
+
+  team_group: phd_students_and_postdocs
+Natalie Kaiser:
+  name: Natalie Kaiser
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2010"
+    title: Master's Student
+    advisor: Benjamin Forest
+    department: Geography
+    affiliation: McGill University
+
+  team_group: masters_students
+Janine Kanters:
+  name: Janine Kanters
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2016"
+
+  team_group: masters_students
+Sakeef Karim:
+  name: Sakeef Karim
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Thomas Soehl
+    end_date: "2022"
+
+  team_group: phd_students_and_postdocs
+Jordan Katz:
+  name: Jordan Katz
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    start_date: "2023"
+    end_date: "2028"
+    advisor: Thomas Soehl
+  avatar: /assets/images/bio/Jordan Katz.jpg
+
+  team_group: phd_students_and_postdocs
+Dilse Kaygisiz:
+  name: Dilse Kaygisiz
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
+    end_date: "2022"
+
+  team_group: masters_students
+Anthony Kevins:
+  name: Anthony Kevins
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    end_date: "2014"
+
+  team_group: phd_students_and_postdocs
+Khaoula El Khalil:
+  name: Khaoula El Khalil
+  current_role:
+    type: Student
+    title: Doctoral Student
+    start_date: "2022"
+    end_date: "2026"
+    advisor: Éric Bélanger
+    department: Political Science
+  avatar: /assets/images/bio/Khaoula El Khalil.jpg
+  auto_update_publications: false
+  team_group: phd_students_and_postdocs
+Kira Killermann:
+  name: Kira Killermann
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2012"
+
+  team_group: masters_students
+Susanna Kislenko:
+  name: Susanna Kislenko
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2009"
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: masters_students
+Emma Kondrup:
+  name: Emma Kondrup
+  current_role:
+    type: Staff
+    title: Web Developer
+  secondary_roles:
+  - type: Student
+    title: Doctoral Student
+    department: Computer Science
+    start_date: "2026"
+    end_date: "2031"
+    advisor: Reihaneh Rabbany, Catherine Régis
+  bio: Web developer maintaining the McGill CSDC website and publication/member update
+    workflow.
+  avatar: /assets/images/bio/Emma Kondrup.jpg
+  team_group: staff
+Angela Kostelko:
+  name: Angela Kostelko
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2009"
+    title: Master's Student
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+    department: Political Science
+  auto_update_publications: false
+
+  team_group: masters_students
+Sekoul Krastev:
+  name: Sekoul Krastev
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Neurology and Neurosurgery
+    end_date: "2015"
+
+  team_group: masters_students
+Maya Krishnan:
+  name: Maya Krishnan
+  current_role:
+    type: Student
+    title: Doctorate Student
+    department: Sociology
+    start_date: "2023"
+    end_date: "2028"
+    advisor: Eran Shor
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: phd_students_and_postdocs
+Freya Lambrechts:
+  name: Freya Lambrechts
+  alumni: true
+  current_role:
+    title: Doctoral Student
+    department: Sociology
+    advisor: Eran Shor
+    type: Student
+    end_date: "2023"
+
+  team_group: phd_students_and_postdocs
+Anna Laurence:
+  name: Anna Laurence
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2011"
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+
+  team_group: masters_students
+Mathieu Lavigne:
+  name: Mathieu Lavigne
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Eric Bélanger
+    end_date: "2023"
+
+  team_group: phd_students_and_postdocs
+Andrea Lawlor:
+  name: Andrea Lawlor
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    end_date: "2013"
+
+  team_group: phd_students_and_postdocs
+
+Sarah Lebeau:
+  name: Sarah Lebeau
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2017"
+
+  team_group: masters_students
+Zoé Hyman Levy:
+  name: Zoé Hyman Levy
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Eran Shor
+    end_date: "2024"
+
+  team_group: phd_students_and_postdocs
+Qinggang Li:
+  name: Qinggang Li
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    start_date: "2024"
+    end_date: "2029"
+    advisor: Aaron Erlich
+  bio: Qinggang is generally interested in state-society relations and the political
+    economy of developing countries. He is currently working on how different forms
+    of patron-client relations affect development and state capacity in developing
+    countries. He also has an interest in political participation in nondemocratic
+    contexts.
+  avatar: /assets/images/bio/Qinggang Li.jpg
+
+  team_group: phd_students_and_postdocs
+Rupinder Liddar:
+  name: Rupinder Liddar
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    start_date: "2021"
+    end_date: "2026"
+    advisor: Éric Bélanger, Dietlind Stolle
+  orcid: 0000-0002-2884-5684
+  avatar: /assets/images/bio/Rupinder Liddar.jpg
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=1cN1RpQAAAAJ
+
+  team_group: phd_students_and_postdocs
+Evan Light:
+  name: Evan Light
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Communication Studies
+    end_date: "2012"
+
+  team_group: phd_students_and_postdocs
+Travis Lim:
+  name: Travis Lim
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Psychology
+    start_date: "2022"
+    end_date: "2026"
+    advisor: Eric Hehman
+  orcid: 0000-0003-1662-7329
+  avatar: /assets/images/bio/Travis Lim.jpg
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=6mSqPZsAAAAJ
+
+  team_group: phd_students_and_postdocs
+Jean-Baptiste Litrico:
+  name: Jean-Baptiste Litrico
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2010"
+    title: Doctoral Student
+    department: Communication Studies
+    affiliation: McGill University
+  auto_update_publications: false
+
+  team_group: phd_students_and_postdocs
+Xuanchi Liu:
+  name: Xuanchi Liu
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    start_date: "2023"
+    end_date: "2028"
+    advisor: Eran Shor
+
+  team_group: phd_students_and_postdocs
+Victor Livernoche:
+  name: Victor Livernoche
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Computer Science
+    start_date: "2024"
+    end_date: "2029"
+    advisor: Reihaneh Rabbany
+  bio: 'Title: Building a Modern Benchmark Dataset for Deepfake DetectionThis project
+    addresses the urgent need for a modern, representative dataset to advance deepfake
+    detection research. As AI-generated images from proprietary models like Midjourney,
+    Ideogram, and FLUX.1 pro have reached unprecedented realism, traditional detection
+    methods—developed using outdated datasets from open-source models—are becoming
+    ineffective. This gap hinders the development of robust detection algorithms and
+    raises questions about the feasibility of large-scale deepfake detection, especially
+    given the implications for misinformation and election security.The primary goal
+    of the project is to create a comprehensive benchmark dataset featuring AI-generated
+    images from both leading proprietary and open-source models. The dataset will
+    be diverse, including human portraits, landscapes, and objects, with a particular
+    focus on images most likely to be used for misinformation. Each image will be
+    systematically labeled by generation settings, model, and content type, enabling
+    detailed analysis.Key objectives include:• Collecting a broad and current set
+    of AI-generated images that reflect state-of-the-art generative techniques.• Evaluating
+    whether images from advanced proprietary models exhibit detectable artifacts.•
+    Assessing the effectiveness and generalizability of existing deepfake detection
+    methods on this new dataset.• Investigating which types of images and content
+    present the greatest challenges for detection.• Providing insights to guide the
+    development of more effective detection strategies, particularly for high-stakes
+    contexts like elections.By filling this critical gap, the project will equip researchers
+    and practitioners with the tools needed to accurately evaluate and improve deepfake
+    detection, supporting efforts to safeguard public trust and media integrity in
+    the age of advanced AI imagery.'
+  orcid: 0000-0002-3819-730X
+  avatar: /assets/images/bio/Victor Livernoche.jpg
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=tuhCUyIAAAAJ
+
+  team_group: phd_students_and_postdocs
+Jasmine Lorenzini:
+  name: Jasmine Lorenzini
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    end_date: "2013"
+
+  team_group: phd_students_and_postdocs
+Zekai Lu:
+  name: Zekai Lu
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Sociology
+    start_date: "2023"
+    end_date: "2025"
+    advisor: Eran Shor
+  orcid: 0000-0001-8015-3071
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=LDs-D4kAAAAJ
+
+  team_group: masters_students
+  alumni: true
+Juan Pablo Luna:
+  name: Juan Pablo Luna
+  avatar: /assets/images/bio/Juan Pablo Luna 2.jpg
+  current_role:
+    type: Faculty / Professor
+    title: Professor, Inaugural Diamond Brown Chair in Democratic Studies
+    department: Political Science
+  bio: Juan Pablo Luna grew up in Montevideo, Uruguay, and is the Inaugural Diamond
+    Brown Chair in Democratic Studies at McGill. While mainly focused on comparative
+    Latin American politics, his research analyzes how socio-structural conditions
+    such as social inequality and state capacity shape democratic institutions and
+    development trajectories. In recent years, he has researched how organized crime
+    dynamics is contributing to reshape politics, states, and markets in Latin America.
+    His books include Latin American Party Systems (with Kitschelt, Hawkins, Rosas,
+    and Zechmeister; Cambridge, 2010); Segmented Representation, Political Party Strategies
+    ni Unequal Democracies (Oxford, 2014); The Resilience of the Latin American Right
+    (with Rovira-Kaltwasser; Johns Hopkins, 2014); En vez del optimismo. Crisis de
+    representación política en el Chile actual (Catalonia, 2017); Political Parties
+    and Diminished Subtypes (with Rosenblatt, Piñeiro, and Vommaro; Cambridge, 2021);
+    Latin American Politics and Society. A Comparative Historical Analysis (with Gerardo
+    Munck, Cambridge University Press, 2022); Criminal Politics and Botched Development
+    in Contemporary Latin America (with Andreas Feldmann, Cambridge University Press,
+    2024); and ¿Democracia Muerta? Chile, América Latina y un Modelo Estallado. (Ariel,
+    2024).
+  orcid: https://orcid.org/0000-0001-7597-203X
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=IgwSc8oAAAAJ
+  team_group: faculty_members
+Justin Lutz:
+  name: Justin Lutz
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Communication Studies
+    end_date: "2015"
+
+  team_group: phd_students_and_postdocs
+Félix Lévesque:
+  name: Félix Lévesque
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Éric Bélanger
+    end_date: "2024"
+
+  team_group: masters_students
+Shoshana Magnet:
+  name: Shoshana Magnet
+  alumni: true
+  current_role:
+    type: Postdoc
+    end_date: "2009"
+    title: Postdoctoral Fellow
+    department: Communication Studies
+    affiliation: McGill University
+
+  team_group: phd_students_and_postdocs
+Pratik Mahajan:
+  name: Pratik Mahajan
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
+    end_date: "2024"
+
+  team_group: masters_students
+Adam Mahon:
+  name: Adam Mahon
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2009"
+    title: Master's Student
+    department: Political Science
+    affiliation: McGill University
+  team_group: masters_students
+Victoria Mahon:
+  name: Victoria Mahon
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    start_date: "2023"
+    end_date: "2028"
+    advisor: Dietlind Stolle
+  orcid: 0009-0002-3577-3217
+  avatar: /assets/images/bio/Victoria Mahon.jpg
+  auto_update_publications: true
+  team_group: phd_students_and_postdocs
+Brett Manzer:
+  name: Brett Manzer
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
+    end_date: "2018"
+  team_group: masters_students
+Zachary Marshall:
+  name: Zachary Marshall
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Thomas Soehl
+    end_date: "2024"
+  team_group: phd_students_and_postdocs
+Luisa Hinke Martinez:
+  name: Luisa Hinke Martinez
+Nick Maturo:
+  name: Nick Maturo
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Communication Studies
+    end_date: "2015"
+
+  team_group: masters_students
+Julia Maynard:
+  name: Julia Maynard
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2017"
+
+  team_group: phd_students_and_postdocs
+Abigail Chaya Maza:
+  name: Abigail Chaya Maza
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Sociology
+    advisor: Thomas Soehl
+    end_date: "2023"
+
+
+  team_group: masters_students
+Andrew McCormack:
+  name: Andrew McCormack
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2019"
+
+  team_group: masters_students
+Aiden McIlvaney:
+  name: Aiden McIlvaney
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    start_date: "2025"
+    end_date: "2027"
+    advisor: Aaron Erlich
+  orcid: 0009-0000-7512-6554
+
+  team_group: masters_students
+Katerina McMulen:
+  name: Katerina McMulen
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    start_date: "2024"
+    end_date: "2026"
+    advisor: Aaron Erlich
+
+  team_group: masters_students
+Denver McNeney:
+  name: Denver McNeney
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2019"
+
+  team_group: phd_students_and_postdocs
+Mike Medeiros:
+  name: Mike Medeiros
+  alumni: true
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    department: Geography
+    advisor: Benjamin Forest
+    end_date: "2017"
+
+  team_group: phd_students_and_postdocs
+Eric Merkley:
+  name: Eric Merkley
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2013"
+
+  team_group: masters_students
+Ezelbahar Metin:
+  name: Ezelbahar Metin
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    start_date: "2023"
+    end_date: "2028"
+    advisor: Eran Shor
+  orcid: 0009-0002-4832-666X
+
+  team_group: phd_students_and_postdocs
+Paulina Mickiewicz:
+  name: Paulina Mickiewicz
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Communication Studies
+    end_date: "2013"
+
+  team_group: phd_students_and_postdocs
+
+Alexandre Miltsov:
+  name: Alexandre Miltsov
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Eran Shor
+    end_date: "2018"
+
+  team_group: phd_students_and_postdocs
+Philippe Mongrain:
+  name: Philippe Mongrain
+  alumni: true
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    department: Political Science
+    advisor: Eric Bélanger
+    end_date: "2023"
+
+  team_group: phd_students_and_postdocs
+Isadora Borges Monroy:
+  name: Isadora Borges Monroy
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2023"
+
+  team_group: phd_students_and_postdocs
+Mahsa Moosavi:
+  name: Mahsa Moosavi
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Computer Science
+    advisor: Jeremy Clark
+    end_date: "2022"
+
+  team_group: phd_students_and_postdocs
+Anaïs Légaré Morasse:
+  name: Anaïs Légaré Morasse
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2018"
+
+  team_group: masters_students
+Brad Morrison:
+  name: Brad Morrison
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    end_date: "2018"
+
+  team_group: phd_students_and_postdocs
+Emma Myhre:
+  name: Emma Myhre
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
+    end_date: "2023"
+
+  team_group: masters_students
+Rosalie Nadeau:
+  name: Rosalie Nadeau
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2018"
+
+  team_group: masters_students
+Mahdi Nejadgholi:
+  name: Mahdi Nejadgholi
+  alumni: true
+  current_role:
+    title: Master's Student
+    department: Institute for Information Systems Engineering
+    advisor: Jeremy Clark
+    type: Student
+    end_date: "2023"
+
+  team_group: masters_students
+Alan Nemirovski:
+  name: Alan Nemirovski
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    start_date: "2025"
+    end_date: "2027"
+    advisor: Dietlind Stolle
+  orcid: 0009-0009-3106-9426
+  avatar: /assets/images/bio/Alan Nemirovski.jpg
+  auto_update_publications: true
+  team_group: masters_students
+Ka U Ng:
+  name: Ka U Ng
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Thomas Soehl
+    end_date: "2023"
+
+  team_group: phd_students_and_postdocs
+Eugene Ofosu:
+  name: Eugene Ofosu
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Psychology
+    advisor: Eric Hehman
+    end_date: "2023"
+
+  team_group: phd_students_and_postdocs
+Bethany Or:
+  name: Bethany Or
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2009"
+    title: Master's Student
+    advisor: Dietlind Stolle
+    department: Political Science
+    affiliation: McGill University
+
+  team_group: masters_students
+Saewon Park:
+  name: Saewon Park
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
+    end_date: "2019"
+
+  team_group: masters_students
+Eva Falk Pedersen:
+  name: Eva Falk Pedersen
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
+    end_date: "2013"
+  team_group: masters_students
+Kellin Pelrine:
+  name: Kellin Pelrine
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Computer Science
+    advisor: Reihaneh Rabbany
+    end_date: "2025"
+
+  team_group: phd_students_and_postdocs
+Teresa Pian:
+  name: Teresa Pian
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    start_date: "2024"
+    end_date: "2029"
+    advisor: Dietlind Stolle
+
+  team_group: phd_students_and_postdocs
+Nathan Di Pinto:
+  name: Nathan Di Pinto
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Geography
+    advisor: Benjamin Forest
+
+  team_group: masters_students
+Myriam Plourde:
+  name: Myriam Plourde
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
+    end_date: "2012"
+
+  team_group: masters_students
+Farimah Poursafaei:
+  name: Farimah Poursafaei
+  alumni: true
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    start_date: "2022"
+    end_date: "2024"
+    department: Computer Science
+  bio: Farimah Poursafaei is a Postdoc Fellow at McGill University and Mila, Quebec
+    AI Institute. Her research interests include dynamic graph representation learning,
+    graph neural networks, graph machine learning, and real-world network data analysis.
+  avatar: /assets/images/bio/Farimah Poursafaei.jpg
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=gZ7HEsMAAAAJ
+
+  team_group: phd_students_and_postdocs
+Reihaneh Rabbany:
+  name: Reihaneh Rabbany
+  avatar: /assets/images/bio/Reihaneh Rabbany 2.jpg
+  current_role:
+    type: Faculty / Professor
+    title: Assistant Professor
+    department: Computer Science
+  bio: Reihaneh Rabbany is an Assistant Professor at the School of Computer Science,
+    McGill University. Before that, she was a Postdoctoral fellow at the School of
+    Computer Science, Carnegie Mellon University. She completed her Ph.D. in Computing
+    Science Department at the University of Alberta. Her research is at the intersection
+    of network science, data mining and machine learning, with a focus on analyzing
+    real-world interconnected data, and social good applications.
+  orcid: 0000-0003-2348-0353
+  social_media_links:
+  - label: Website
+    url: http://www.reirab.com/
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=Foh_c-QAAAAJ
+
+  team_group: faculty_members
+Reza Rahimian:
+  name: Reza Rahimian
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Computer Science
+    advisor: Jeremy Clark
+    end_date: "2022"
+
+  team_group: phd_students_and_postdocs
+Rachel Rammal:
+  name: Rachel Rammal
+  current_role:
+    type: Student
+    title: Doctorate Student
+    department: Sociology
+    start_date: "2020"
+    end_date: "2025"
+    advisor: Thomas Soehl
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: phd_students_and_postdocs
+  alumni: true
+Jeremy Rappel:
+  name: Jeremy Rappel
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Psychology
+    start_date: "2024"
+    end_date: "2029"
+    advisor: Eric Hehman
+  orcid: 0000-0002-7838-1187
+  avatar: /assets/images/bio/Jeremy Rappel.jpg
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=lkncyKQAAAAJ
+  team_group: phd_students_and_postdocs
+Tim Reeskens:
+  name: Tim Reeskens
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    end_date: "2009"
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: phd_students_and_postdocs
+Christopher Ross:
+  name: Christopher Ross
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
+    end_date: "2023"
+
+  team_group: masters_students
+Nick Ruderman:
+  name: Nick Ruderman
+  alumni: true
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2019"
+
+  team_group: phd_students_and_postdocs
+Rafico Ruiz:
+  name: Rafico Ruiz
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Communication Studies
+    end_date: "2014"
+
+  team_group: phd_students_and_postdocs
+Cassandra Ryan:
+  name: Cassandra Ryan
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2020"
+
+  team_group: masters_students
+Daniel Sailofsky:
+  name: Daniel Sailofsky
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2022"
+
+  team_group: masters_students
+Joseph Sannicandro:
+  name: Joseph Sannicandro
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Communication Studies
+    end_date: "2012"
+
+  team_group: masters_students
+Steven Schnoor:
+  name: Steven Schnoor
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Communication Studies
+    end_date: "2013"
+
+  team_group: phd_students_and_postdocs
+Colin Scott:
+  name: Colin Scott
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2024"
+
+  team_group: phd_students_and_postdocs
+Sahar Omid Shayegan:
+  name: Sahar Omid Shayegan
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    start_date: "2023"
+    end_date: "2025"
+    advisor: Reihaneh Rabbany
+    department: Computer Science
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=1K-uTWgAAAAJ
+
+  team_group: masters_students
+Eran Shor:
+  name: Eran Shor
+  avatar: /assets/images/bio/Eran Shor 2.jpg
+  current_role:
+    type: Faculty / Professor
+    title: Professor
+    department: Sociology
+  bio: Eran Shor is a Professor in the Department of Sociology at McGill University.
+    His research interests center around the themes of political conflict, human rights,
+    and ethnicity and nationalism. Professor Shor's current research projects evaluate
+    inequalities in media coverage of women and ethnic minorities.
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=vxVIFkIAAAAJ&hl=en&oi=ao
+
+  team_group: faculty_members
+Sula Sidnell-Green:
+  name: Sula Sidnell-Green
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2015"
+    title: Master's Student
+    department: Communication Studies
+
+  team_group: masters_students
+Harpeet Singh:
+  name: Harpeet Singh
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Economics
+    start_date: "2025"
+    end_date: "2030"
+    advisor: Nicolas Ajzenman
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: phd_students_and_postdocs
+Shane Singh:
+  name: Shane Singh
+  alumni: true
+  current_role:
+    type: Postdoc
+    end_date: "2010"
+    title: Postdoctoral Fellow
+    affiliation: McGill University
+    department: Political Science
+  auto_update_publications: false
+
+  team_group: phd_students_and_postdocs
+Étienne Sinotte:
+  name: Étienne Sinotte
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Political Science
+    start_date: "2025"
+    end_date: "2030"
+    advisor: Juan Pablo Luna
+  orcid: 0000-0002-1198-8232
+  avatar: /assets/images/bio/Étienne Sinotte.jpg
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=jstFBx0AAAAJ
+
+  team_group: phd_students_and_postdocs
+Alan Michael Smith:
+  name: Alan Michael Smith
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Dietlind Stolle
+    end_date: "2022"
+
+  team_group: masters_students
+Thomas Soehl:
+  name: Thomas Soehl
+  current_role:
+    type: Faculty / Professor
+    title: Professor
+    department: Sociology
+  bio: Thomas Soehl is a Professor in the Department of Sociology at McGill University.
+    His work mainly examines the themes of international migration, race, and ethnicity.
+    More specifically, he studies these themes through the lens of the family as a
+    locus for the transmission of culture and political attachments. Recently, he
+    has looked at the acquisition of citizenship in Canada and France, as well as
+    at the determinants of anti-immigration attitudes. Professor Soehl's research
+    makes use of quantitative research methods such as using event history analysis
+    and multi-level modeling.
+  orcid: 0000-0002-6593-3376
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=paO09F8AAAAJ
+  team_group: faculty_members
+  avatar: /assets/images/bio/Thomas Soehl.jpg
+Cayley Sorochan:
+  name: Cayley Sorochan
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Communication Studies
+    end_date: "2013"
+
+  team_group: phd_students_and_postdocs
+Cameron Stark:
+  name: Cameron Stark
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2010"
+    title: Master's Student
+    advisor: Éric Bélanger
+    department: Political Science
+    affiliation: McGill University
+
+  team_group: masters_students
+Dominik Stecula:
+  name: Dominik Stecula
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2012"
+
+  team_group: masters_students
+Brooke Steinhauer:
+  name: Brooke Steinhauer
+  current_role:
+    type: Student
+    department: Political Science
+    start_date: "2021"
+    end_date: "2026"
+    advisor: Dietlind Stolle
+  avatar: /assets/images/bio/Brooke Steinhauer.jpg
+
+  team_group: phd_students_and_postdocs
+Dietlind Stolle:
+  name: Dietlind Stolle
+  current_role:
+    type: Faculty / Professor
+    title: James McGill Professor, Academic Lead of the McGill CSDC
+    department: Political Science
+  bio: "Dietlind Stolle is the James McGill professor in political science at McGill
+    University and fellow of the Royal Society of Canada. She is widely recognized
+    both within Canada and internationally as an expert on political behaviour, social
+    capital, ethnic diversity, social cohesion and democracy. Her current projects
+    include work on democratic backsliding; gender and politics including the role
+    of pregnancy; European solidarity; and emerging cleavages in European party politics.
+    Stolle has served as the Director of the Centre for the Study of Democratic Citizenship
+    (CSDC) from 2013-2020 and as co-director of the European Union Centre of Excellence.
+    She is currently co-leading the EUI-YouGov European Solidarity Study in more than
+    20 democracies. She now serves as the academic lead of the CSDC McGill lab on
+    political behavior."
+  avatar: /assets/images/bio/Dietlind Stolle.jpg
+
+  social_media_links:
+  - label: Website
+    url: http://profs-polisci.mcgill.ca/stolle/
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=mjqHdG4AAAAJ&hl=en
+  orcid: 0000-0001-7839-0617
+
+  team_group: faculty_members
+Vidya Sujaya:
+  name: Vidya Sujaya
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Computer Science
+    start_date: "2024"
+    end_date: "2026"
+    advisor: Reihaneh Rabbany
+
+  team_group: masters_students
+Jennifer Suliteanu:
+  name: Jennifer Suliteanu
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Psychology
+    start_date: "2020"
+    end_date: "2024"
+    advisor: Eric Hehman
+  orcid: 0000-0001-9636-9811
+  avatar: /assets/images/bio/Jennifer Suliteanu.jpg
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=8XWdG_YAAAAJ&hl=en&oi=ao
+  team_group: phd_students_and_postdocs
+Paul Sutton:
+  name: Paul Sutton
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2009"
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: masters_students
+Melanee Thomas:
+  name: Melanee Thomas
+  alumni: true
+Neal Thomas:
+  name: Neal Thomas
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2011"
+    title: Doctoral Student
+    department: Communication Studies
+    affiliation: McGill University
+
+  team_group: phd_students_and_postdocs
+Hamid Ali Tiwana:
+  name: Hamid Ali Tiwana
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Aaron Erlich
+    end_date: "2024"
+
+  team_group: masters_students
+David Trotter:
+  name: David Trotter
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Eric Bélanger
+    end_date: "2016"
+
+  team_group: masters_students
+Marc Trussler:
+  name: Marc Trussler
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2013"
+
+  team_group: masters_students
+Nicolas Vaxelaire:
+  name: Nicolas Vaxelaire
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    start_date: "2024"
+    end_date: "2026"
+    advisor: Dietlind Stolle
+    affiliation: McGill University
+  auto_update_publications: false
+  team_group: masters_students
+Sara Vissers:
+  name: Sara Vissers
+  alumni: true
+  current_role:
+    type: Postdoc
+    end_date: "2013"
+    title: Postdoctoral Fellow
+    affiliation: McGill University
+
+  team_group: phd_students_and_postdocs
+Derek Volker:
+  name: Derek Volker
+  alumni: true
+  current_role:
+    type: Student
+    end_date: "2011"
+    title: Master's Student
+    advisor: Dietlind Stolle
+    department: Political Science
+    affiliation: McGill University
+
+  team_group: masters_students
+Angelia Wagner:
+  name: Angelia Wagner
+  alumni: true
+  current_role:
+    type: Postdoc
+    title: Postdoctoral Fellow
+    department: Political Science
+    end_date: "2017"
+
+  team_group: phd_students_and_postdocs
+Michelle Wang:
+  name: Michelle Wang
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Sociology
+    start_date: "2025"
+    end_date: "2027"
+    advisor: Thomas Soehl
+  orcid: 0000-0002-3432-6899
+  avatar: /assets/images/bio/Michelle Wang.jpg
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=PujecSgAAAAJ
+
+  team_group: masters_students
+Julie Whittet:
+  name: Julie Whittet
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Communication Studies
+    end_date: "2012"
+
+  team_group: masters_students
+Taisto Witt:
+  name: Taisto Witt
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    start_date: "2022"
+    end_date: "2026"
+    advisor: Eran Shor
+  avatar: /assets/images/bio/Taisto Witt.jpg
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=0AYdib0AAAAJ
+
+  team_group: phd_students_and_postdocs
+Chih-lan Winnie Yang:
+  name: Chih-lan Winnie Yang
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    advisor: Eran Shor
+    end_date: "2025"
+
+  team_group: phd_students_and_postdocs
+Zachary Yang:
+  name: Zachary Yang
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    start_date: "2022"
+    end_date: "2026"
+    department: Computer Science
+    advisor: Reihaneh Rabbany
+  orcid: 0009-0009-6765-2293
+  social_media_links:
+  - label: Scholar
+    url: https://scholar.google.com/citations?hl=en&user=ljOxbowAAAAJ
+  team_group: phd_students_and_postdocs
+Julia Yingling:
+  name: Julia Yingling
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Geography
+    advisor: Benjamin Forest
+    end_date: "2025"
+
+  team_group: masters_students
+Jason R. Young:
+  name: Jason R. Young
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Geography
+    advisor: Benjamin Forest
+    end_date: "2015"
+
+  team_group: phd_students_and_postdocs
+Lori Young:
+  name: Lori Young
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    end_date: "2009"
+    affiliation: McGill University
+  auto_update_publications: false
+
+  team_group: masters_students
+Chris Yurris:
+  name: Chris Yurris
+  alumni: true
+  current_role:
+    type: Student
+    title: Master's Student
+    department: Political Science
+    advisor: Éric Bélanger
+    end_date: "2024"
+  team_group: masters_students
+Ali Zeren:
+  name: Ali Zeren
+  alumni: true
+  current_role:
+    type: Student
+    title: Doctoral Student
+    department: Sociology
+    end_date: "2017"
+
+  team_group: phd_students_and_postdocs

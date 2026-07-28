@@ -1,6 +1,7 @@
 import argparse
 import datetime as dt
 import os
+import re
 from pathlib import Path
 from io import StringIO
 from textwrap import dedent
@@ -30,6 +31,29 @@ def _to_plain(obj):
     if isinstance(obj, list):
         return [_to_plain(v) for v in obj]
     return obj
+
+
+def _strip_latex_title_markup(value):
+    if value is None:
+        return value
+
+    cleaned = str(value)
+    # Remove \text* wrappers while keeping inner content.
+    cleaned = re.sub(r"\$\$\\text(?:bf|ttt|tt|it)\s*\{([^{}]*)\}\$\$", r"\1", cleaned)
+    cleaned = re.sub(r"\$\\text(?:bf|ttt|tt|it)\s*\{([^{}]*)\}\$", r"\1", cleaned)
+    cleaned = re.sub(r"\\text(?:bf|ttt|tt|it)\s*\{([^{}]*)\}", r"\1", cleaned)
+    # Fallback for malformed input missing braces.
+    cleaned = cleaned.replace("\\textbf", "")
+    cleaned = cleaned.replace("\\textttt", "")
+    cleaned = cleaned.replace("\\texttt", "")
+    cleaned = cleaned.replace("\\textit", "")
+    # Remove leftover TeX delimiters/braces.
+    cleaned = cleaned.replace("$$", "")
+    cleaned = cleaned.replace("$", "")
+    cleaned = cleaned.replace("{", "")
+    cleaned = cleaned.replace("}", "")
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    return cleaned
 
 
 def front_matters_from_dict(d):
@@ -109,6 +133,12 @@ def preprocess_parsed(parsed, keys_removed, for_update=False):
 
         abstract_fr = _first_non_empty(parsed, "abstract_fr")
         parsed["abstract_fr"] = abstract_fr if abstract_fr is not None else parsed.get("abstract")
+
+    # Always sanitize publication titles to keep TeX styling commands out of UI labels.
+    if "title" in parsed:
+        parsed["title"] = _strip_latex_title_markup(parsed.get("title"))
+    if "title_fr" in parsed:
+        parsed["title_fr"] = _strip_latex_title_markup(parsed.get("title_fr"))
 
     # Sanitize some keys
     parsed["shorthand"] = parsed["shorthand"].replace("/", "-")

@@ -1101,7 +1101,7 @@ def build_output(
             "highlight_selection": {
                 "min_per_axis": 2,
                 "max_per_axis": 3,
-                "highlight_years": 2,
+                "highlight_years": 3,
                 "global_unique_faculty": True,
                 "preferred_faculty": list(HIGHLIGHT_TARGET_FACULTY_ORDER),
             },
@@ -1114,7 +1114,7 @@ def build_output(
     highlights_by_axis = select_highlights_for_all_axes(
         highlight_documents,
         axis_mapped_faculty=axis_mapped_faculty,
-        highlight_years=2,
+        highlight_years=3,
     )
 
     for axis in AXES:

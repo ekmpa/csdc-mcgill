@@ -4,6 +4,19 @@ import src.python.add_news_update as mod
 
 
 class TestAddNewsUpdate(unittest.TestCase):
+    def test_build_content_maps_titre_to_title_fr(self):
+        parsed = {
+            "title": "English title",
+            "titre": "Titre francais",
+            "date": "2026-07-21",
+            "summary": "English summary.",
+        }
+
+        content = mod._build_content(parsed)
+
+        self.assertIn('title: "English title"', content)
+        self.assertIn('title_fr: "Titre francais"', content)
+
     def test_build_content_keeps_english_summary_in_body(self):
         parsed = {
             "title": "Example title",
@@ -52,3 +65,18 @@ class TestAddNewsUpdate(unittest.TestCase):
         self.assertIn('excerpt: "English summary only."', content)
         self.assertIn('excerpt_fr: "English summary only."', content)
         self.assertIn("\nEnglish summary only.\n", content)
+
+    def test_build_fr_content_maps_resume_fr_alias(self):
+        parsed = {
+            "title": "English title",
+            "titre": "Titre francais",
+            "date": "2026-07-21",
+            "summary": "English summary.",
+            "resume_fr": "Resume francais.",
+        }
+
+        content = mod._build_fr_content(parsed)
+
+        self.assertIn('title: "Titre francais"', content)
+        self.assertIn('excerpt_fr: "Resume francais."', content)
+        self.assertIn("\nResume francais.\n", content)

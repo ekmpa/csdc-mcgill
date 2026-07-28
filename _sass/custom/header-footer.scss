@@ -299,10 +299,10 @@ a.site-title,
 }
 
 .csdc-footer-funder-logo {
-    height: 0.95rem !important;
-    width: auto !important;
-    max-width: 6.5rem;
-    display: inline-block;
+    height: auto !important;
+    width: 50% !important;
+    max-width: 100%;
+    display: block;
     object-fit: contain;
 }
 

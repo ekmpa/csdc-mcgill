@@ -22,6 +22,7 @@
     {% else %}
     {% assign publication_title = post.title %}
     {% endif %}
+    {% capture publication_title_clean %}{% include clean-publication-title.html title=publication_title %}{% endcapture %}
 
     {% if is_fr and post.venue_fr %}
     {% assign publication_venue = post.venue_fr %}
@@ -30,7 +31,7 @@
     {% endif %}
 
     <h2 class="publication-title" itemprop="headline">
-        <a href="{{ post.url | relative_url }}">{{ publication_title }}</a>
+        <a href="{{ post.url | relative_url }}">{{ publication_title_clean | strip }}</a>
     </h2>
 
     {% if post.names %}

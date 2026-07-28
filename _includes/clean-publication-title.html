@@ -1,0 +1,24 @@
+{% assign raw_title = include.title | default: '' %}
+{% assign cleaned_title = raw_title
+  | replace: '$$\\textbf{', ''
+  | replace: '$$\\textttt{', ''
+  | replace: '$$\\texttt{', ''
+  | replace: '$$\\textit{', ''
+  | replace: '$\\textbf{', ''
+  | replace: '$\\textttt{', ''
+  | replace: '$\\texttt{', ''
+  | replace: '$\\textit{', ''
+  | replace: '\\textbf{', ''
+  | replace: '\\textttt{', ''
+  | replace: '\\texttt{', ''
+  | replace: '\\textit{', ''
+  | replace: '\\textbf', ''
+  | replace: '\\textttt', ''
+  | replace: '\\texttt', ''
+  | replace: '\\textit', ''
+  | replace: '$$', ''
+  | replace: '$', ''
+  | replace: '{', ''
+  | replace: '}', ''
+  | strip %}
+{{ cleaned_title }}

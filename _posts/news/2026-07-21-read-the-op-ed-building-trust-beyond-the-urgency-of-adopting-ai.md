@@ -1,5 +1,5 @@
 ---
-title: "Read the op-ed: Building Trust Beyond The Urgency of Adopting AI"
+title: "Read the op-ed: \"Building Trust Beyond The Urgency of Adopting AI\" in Le Devoir"
 title_fr: "Read the op-ed: Building Trust Beyond The Urgency of Adopting AI"
 date: 2026-07-21
 categories: News

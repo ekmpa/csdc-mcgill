@@ -1,9 +1,9 @@
-generated_at: '2026-07-06'
+generated_at: '2026-07-20'
 source_publication_count: 1151
 selected_publication_count: 203
 matching:
-  method: weighted multi-axis relevance (recent faculty publications + faculty 
-    bios, CECD bilingual vocabulary)
+  method: weighted multi-axis relevance (recent faculty publications + faculty bios,
+    CECD bilingual vocabulary)
   thresholds:
     min_share: 0.24
     min_hits: 2
@@ -44,7 +44,7 @@ matching:
   highlight_selection:
     min_per_axis: 2
     max_per_axis: 3
-    highlight_years: 2
+    highlight_years: 3
     global_unique_faculty: true
     preferred_faculty:
       - benjamin forest
@@ -119,8 +119,8 @@ axes:
         venue: ''
         link: https://doi.org/10.1002/9781119753995.ch23
         year: 2025
-      - title: A tutorial on representational similarity analysis for research 
-          in social cognition
+      - title: A tutorial on representational similarity analysis for research in
+          social cognition
         names: Sally Y Xie, Ruoying Zheng, Eric Hehman, Chujun Lin
         venue: ''
         link: https://doi.org/10.31234/osf.io/x4stc
@@ -144,23 +144,21 @@ axes:
     highlight_papers:
       - title: 'BluePrint: A Social Media User Dataset for LLM Persona Evaluation
           and Training'
-        names: Aurélien Bück-Kaeffer, Je Qin Chooi, Dan Zhao, Maximilian Puelma 
-          Touzel, Kellin Pelrine, Jean-François Godbout, Reihaneh Rabbany, 
-          Zachary Yang
+        names: Aurélien Bück-Kaeffer, Je Qin Chooi, Dan Zhao, Maximilian Puelma Touzel,
+          Kellin Pelrine, Jean-François Godbout, Reihaneh Rabbany, Zachary Yang
         venue: ArXiv.org
         link: https://doi.org/10.48550/arxiv.2510.02343
         year: 2025
-      - title: 'How Language Shapes Belief in Misinformation: A Study Among Multilinguals
-          in Ukraine'
-        names: Aaron Erlich, Kevin Aslett, Sarah Graham, Joshua A. Tucker
-        venue: Journal of Experimental Political Science
-        link: https://doi.org/10.1017/xps.2025.10011
-        year: 2025
-      - title: 'MODGIRT: Multidimensional Dynamic Scaling of Aggregate Survey Data'
-        names: Elissa Berwick, Devin Caughey
-        venue: Political Analysis
-        link: https://doi.org/10.1017/pan.2024.25
-        year: 2025
+      - title: Disjointed Polarization in Chile’s Enduring Crisis of Representation
+        names: Juan Pablo Luna
+        venue: Latin American Politics and Society
+        link: https://doi.org/10.1017/lap.2024.19
+        year: 2024
+      - title: Economic Voting in Canadian Municipal Elections
+        names: Éric Bélanger, Ruth Dassonneville
+        venue: McGill-Queen's University Press eBooks
+        link: https://doi.org/10.2307/jj.13944115.9
+        year: 2024
   axis_3:
     tags_en:
       - Political inequality
@@ -173,20 +171,21 @@ axes:
       - Gouvernance democratique
       - Institutions politiques
     highlight_papers:
-      - title: Embedded liberalism, economic nationalism, or Welfare Chauvinism?
-          Experimental evidence on policy preferences in tough times
+      - title: Embedded liberalism, economic nationalism, or Welfare Chauvinism? Experimental
+          evidence on policy preferences in tough times
         names: Leonardo Baccini, Mattia Guidi, Arlo Poletti
         venue: Journal of European Public Policy
         link: https://doi.org/10.1080/13501763.2025.2475007
         year: 2025
-      - title: 'Party Realignment in Québec: Lessons from the United States'
-        names: Jean‐François Godbout, Éric Bélanger
-        venue: Canada and international affairs
-        link: https://doi.org/10.1007/978-3-031-76113-3_5
-        year: 2025
-      - title: 'Accountability in Time: Evolution and Expertise in Participatory Institutions'
-        names: Brian Palmer‐Rubin, Jésica E. Tapia Reyes, Daniel Berliner, Aaron
-          Erlich, Benjamin E. Bagozzi
-        venue: World Politics
-        link: https://doi.org/10.1353/wp.2025.a964463
-        year: 2025
+      - title: 'Covering the Campaign: Computational Tools for Measuring Differences
+          in Candidate and Party News Coverage With Application to an Emerging Democracy'
+        names: Aaron Erlich, Danielle F. Jung, James D. Long
+        venue: Social Science Computer Review
+        link: https://doi.org/10.1177/08944393241247420
+        year: 2024
+      - title: 'Beyond Secession: Substate Nationalism and Support for Redistribution
+          in Spain'
+        names: Elissa Berwick
+        venue: Comparative Politics
+        link: https://doi.org/10.5129/001041523x17022435051581
+        year: 2024
