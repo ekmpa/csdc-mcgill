@@ -26,10 +26,15 @@ jobs:
       - name: Install Python requirements
         run: pip install -r src/python/requirements.txt
 
+      - name: Print calendar target
+        run: echo "Syncing Google Calendar ID: ${GOOGLE_CALENDAR_ID}"
+        env:
+          GOOGLE_CALENDAR_ID: mcgillcsdc@gmail.com
+
       - name: Sync Google Calendar events
         run: python -m src.python.sync_google_calendar_events
         env:
-          GOOGLE_CALENDAR_ID: ${{ vars.GOOGLE_CALENDAR_ID }}
+          GOOGLE_CALENDAR_ID: mcgillcsdc@gmail.com
           GOOGLE_CALENDAR_API_KEY: ${{ secrets.GOOGLE_CALENDAR_API_KEY }}
 
       - name: Create pull request
