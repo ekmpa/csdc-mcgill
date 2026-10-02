@@ -1,0 +1,35 @@
+// =============================================================
+// CSDC design tokens — single source of truth for the custom theme.
+// Imported before all other custom partials so every file can use these.
+// Values intentionally match the previously hard-coded literals, so
+// migrating a literal to its token compiles to byte-identical CSS.
+// =============================================================
+
+// --- Brand ---------------------------------------------------
+$csdc-red: #c8102e; // McGill-adjacent primary accent
+$csdc-red-deep: #9f1239; // deeper rose for hovers / emphasis
+$csdc-red-wine: #6f1d2f; // muted wine accent
+$csdc-red-title: #7f1d1d; // news item titles
+
+// --- Ink / neutrals ------------------------------------------
+$csdc-ink: #111827; // near-black body / headings
+$csdc-dark: #1f2937; // slate dark
+$csdc-gray-700: #374151;
+$csdc-gray-600: #4b5563;
+$csdc-gray-500: #6b7280; // default muted text
+$csdc-gray-400: #9ca3af;
+$csdc-gray-300: #d1d5db;
+
+// --- Surfaces / borders --------------------------------------
+$csdc-white: #ffffff;
+$csdc-bg-a: #f8fafc; // alt section background
+$csdc-bg-b: #ffffff; // base surface
+$csdc-bg-muted: #f9fafb;
+$csdc-border: #e5e7eb; // hairline borders / dividers
+
+// --- Elevation / motion / shape (used by the polish layer) ---
+$csdc-shadow-sm: 0 1px 2px rgba(17, 24, 39, 0.06);
+$csdc-shadow-md: 0 8px 22px rgba(17, 24, 39, 0.08);
+$csdc-shadow-lg: 0 16px 40px rgba(17, 24, 39, 0.12);
+$csdc-radius: 10px;
+$csdc-transition: 0.18s ease;

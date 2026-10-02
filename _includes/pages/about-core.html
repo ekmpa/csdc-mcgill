@@ -15,6 +15,7 @@
   {% assign role_coordinator = 'Coordonnatrice' %}
   {% assign role_academic_lead = 'Responsable académique' %}
   {% assign role_steering_rep = 'Représentant de McGill au comité directeur du CSDC' %}
+  {% assign role_student_rep = 'Représentant étudiant du CSDC McGill' %}
   {% assign role_web_dev = 'Développeuse web' %}
   {% assign people_page_path = '/fr/people/' %}
   {% else %}
@@ -22,6 +23,7 @@
   {% assign role_coordinator = 'Coordinator' %}
   {% assign role_academic_lead = 'Academic Lead' %}
   {% assign role_steering_rep = 'McGill Representative at the Steering committee of the CSDC' %}
+  {% assign role_student_rep = 'CSDC McGill Student Representative' %}
   {% assign role_web_dev = 'Web Developer' %}
   {% assign people_page_path = '/people/' %}
   {% endif %}
@@ -45,7 +47,15 @@
     <div class="csdc-container">
       <h2 class="csdc-about-team-heading" style="text-align:center;color:#c8102e;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:3.2rem;">{{ about_team_title }}</h2>
       <div class="csdc-about-team-grid">
-        {% assign author = site.data.authors['Dietlind Stolle'] %}
+        {% comment %} The five leadership members share identical card markup
+        and differ only by author and role, so render them with a single loop
+        over parallel name/role arrays. {% endcomment %}
+        {% assign team_names = 'Dietlind Stolle,Anne Imouza,Aaron Erlich,Alan Nemirovski,Emma Kondrup' | split: ',' %}
+        {% assign team_roles = '' | split: '' %}
+        {% assign team_roles = team_roles | push: role_academic_lead | push: role_coordinator | push: role_steering_rep | push: role_student_rep | push: role_web_dev %}
+        {% for mi in (0..4) %}
+        {% assign member_name = team_names[mi] %}
+        {% assign author = site.data.authors[member_name] %}
         {% assign avatar_value = author.avatar | default: '' | strip %}
         {% assign use_person_placeholder = false %}
         {% if avatar_value == '' %}
@@ -70,92 +80,9 @@
             {% endif %}
           </a>
           <h3 class="csdc-about-team-name"><a href="{{ profile_href }}">{{ author.name }}</a></h3>
-          <p class="csdc-about-team-role">{{ role_academic_lead }}</p>
+          <p class="csdc-about-team-role">{{ team_roles[mi] }}</p>
         </article>
-
-        {% assign author = site.data.authors['Anne Imouza'] %}
-        {% assign avatar_value = author.avatar | default: '' | strip %}
-        {% assign use_person_placeholder = false %}
-        {% if avatar_value == '' %}
-        {% assign use_person_placeholder = true %}
-        {% elsif avatar_value contains '/assets/images/bio/placeholder/' %}
-        {% assign use_person_placeholder = true %}
-        {% elsif avatar_value == site.author.avatar %}
-        {% assign use_person_placeholder = true %}
-        {% endif %}
-        {% assign member_query = author.name | url_encode %}
-        {% assign profile_href = people_page_path | relative_url | append: '?member=' | append: member_query %}
-        {% assign avatar_src = avatar_value %}
-        {% unless avatar_src contains '://' %}
-        {% assign avatar_src = avatar_src | relative_url %}
-        {% endunless %}
-        <article class="csdc-about-team-member">
-          <a class="csdc-about-team-avatar-link" href="{{ profile_href }}" aria-label="Open full profile for {{ author.name }}">
-            {% if use_person_placeholder %}
-            <img loading="lazy" class="csdc-about-team-avatar csdc-about-team-avatar--placeholder" src="{{ '/assets/images/icons/person.png' | relative_url }}" alt="No profile photo for {{ author.name }}">
-            {% else %}
-            <img loading="lazy" class="csdc-about-team-avatar" src="{{ avatar_src }}" alt="An image of {{ author.name }}">
-            {% endif %}
-          </a>
-          <h3 class="csdc-about-team-name"><a href="{{ profile_href }}">{{ author.name }}</a></h3>
-          <p class="csdc-about-team-role">{{ role_coordinator }}</p>
-        </article>
-
-        {% assign author = site.data.authors['Aaron Erlich'] %}
-        {% assign avatar_value = author.avatar | default: '' | strip %}
-        {% assign use_person_placeholder = false %}
-        {% if avatar_value == '' %}
-        {% assign use_person_placeholder = true %}
-        {% elsif avatar_value contains '/assets/images/bio/placeholder/' %}
-        {% assign use_person_placeholder = true %}
-        {% elsif avatar_value == site.author.avatar %}
-        {% assign use_person_placeholder = true %}
-        {% endif %}
-        {% assign member_query = author.name | url_encode %}
-        {% assign profile_href = people_page_path | relative_url | append: '?member=' | append: member_query %}
-        {% assign avatar_src = avatar_value %}
-        {% unless avatar_src contains '://' %}
-        {% assign avatar_src = avatar_src | relative_url %}
-        {% endunless %}
-        <article class="csdc-about-team-member">
-          <a class="csdc-about-team-avatar-link" href="{{ profile_href }}" aria-label="Open full profile for {{ author.name }}">
-            {% if use_person_placeholder %}
-            <img loading="lazy" class="csdc-about-team-avatar csdc-about-team-avatar--placeholder" src="{{ '/assets/images/icons/person.png' | relative_url }}" alt="No profile photo for {{ author.name }}">
-            {% else %}
-            <img loading="lazy" class="csdc-about-team-avatar" src="{{ avatar_src }}" alt="An image of {{ author.name }}">
-            {% endif %}
-          </a>
-          <h3 class="csdc-about-team-name"><a href="{{ profile_href }}">{{ author.name }}</a></h3>
-          <p class="csdc-about-team-role">{{ role_steering_rep }}</p>
-        </article>
-
-        {% assign author = site.data.authors['Emma Kondrup'] %}
-        {% assign avatar_value = author.avatar | default: '' | strip %}
-        {% assign use_person_placeholder = false %}
-        {% if avatar_value == '' %}
-        {% assign use_person_placeholder = true %}
-        {% elsif avatar_value contains '/assets/images/bio/placeholder/' %}
-        {% assign use_person_placeholder = true %}
-        {% elsif avatar_value == site.author.avatar %}
-        {% assign use_person_placeholder = true %}
-        {% endif %}
-        {% assign member_query = author.name | url_encode %}
-        {% assign profile_href = people_page_path | relative_url | append: '?member=' | append: member_query %}
-        {% assign avatar_src = avatar_value %}
-        {% unless avatar_src contains '://' %}
-        {% assign avatar_src = avatar_src | relative_url %}
-        {% endunless %}
-        <article class="csdc-about-team-member">
-          <a class="csdc-about-team-avatar-link" href="{{ profile_href }}" aria-label="Open full profile for {{ author.name }}">
-            {% if use_person_placeholder %}
-            <img loading="lazy" class="csdc-about-team-avatar csdc-about-team-avatar--placeholder" src="{{ '/assets/images/icons/person.png' | relative_url }}" alt="No profile photo for {{ author.name }}">
-            {% else %}
-            <img loading="lazy" class="csdc-about-team-avatar" src="{{ avatar_src }}" alt="An image of {{ author.name }}">
-            {% endif %}
-          </a>
-          <h3 class="csdc-about-team-name"><a href="{{ profile_href }}">{{ author.name }}</a></h3>
-          <p class="csdc-about-team-role">{{ role_web_dev }}</p>
-        </article>
+        {% endfor %}
       </div>
     </div>
   </section>

@@ -1,0 +1,45 @@
+// =============================================================
+// CSDC polish layer — conservative micro-interactions & a11y.
+// Imported last so it can refine earlier rules. Uses design tokens
+// from custom/_csdc-tokens.scss. Purely additive: resting styles are
+// unchanged, so the page looks identical until hovered/focused.
+// =============================================================
+
+// Consistent, smooth motion on interactive surfaces.
+// Gated behind reduced-motion so we respect that preference.
+@media (prefers-reduced-motion: no-preference) {
+  .csdc-home-pillars-row .csdc-card,
+  .csdc-about-team-avatar {
+    transition: transform $csdc-transition, box-shadow $csdc-transition,
+      border-color $csdc-transition;
+  }
+}
+
+// Visible, brand-coloured focus ring for keyboard users.
+// :focus-visible keeps it out of the way for mouse/touch users.
+.csdc-page a:focus-visible,
+.csdc-btn:focus-visible,
+.csdc-arrow-link:focus-visible,
+.csdc-about-team-avatar-link:focus-visible {
+  outline: 2px solid $csdc-red;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+// Research-axis pillar cards: a gentle lift to reinforce them as
+// distinct, explorable groupings of the centre's work.
+.csdc-home-pillars-row .csdc-card:hover,
+.csdc-home-pillars-row .csdc-card:focus-within {
+  transform: translateY(-2px);
+  box-shadow: $csdc-shadow-md;
+  border-color: #dbe2ea;
+}
+
+// Team avatars are links to profile pages — lift and highlight the
+// ring in brand red on hover/focus to signal they are clickable.
+.csdc-about-team-avatar-link:hover .csdc-about-team-avatar,
+.csdc-about-team-avatar-link:focus-visible .csdc-about-team-avatar {
+  transform: translateY(-2px);
+  border-color: $csdc-red;
+  box-shadow: $csdc-shadow-md;
+}

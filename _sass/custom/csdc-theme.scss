@@ -1,7 +1,5 @@
-$csdc-red: #c8102e;
-$csdc-dark: #1f2937;
-$csdc-bg-a: #f8fafc;
-$csdc-bg-b: #ffffff;
+// Brand + neutral palette and design tokens live in custom/_csdc-tokens.scss
+// (imported first, so they are available to every custom partial).
 
 html, body {
   overflow-x: hidden;
@@ -141,6 +139,16 @@ a.csdc-red:focus {
   text-decoration-thickness: 0.08em;
   transform: scale(1);
   transition: transform 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.csdc-actions .csdc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.7rem;
+  line-height: 1.2;
+  box-sizing: border-box;
+  border: 2px solid transparent;
 }
 
 .csdc-btn:hover,
@@ -290,6 +298,47 @@ a.csdc-red:focus {
 .csdc-btn-secondary:hover,
 .csdc-btn-secondary:focus {
   color: $primary-color;
+}
+
+.csdc-actions .csdc-btn-outline {
+  background: transparent;
+  border-color: #6b7280;
+  border-width: 2px;
+  border-radius: 999px;
+  font-weight: 400;
+  color: #6b7280;
+  text-decoration-line: none;
+  text-decoration-color: transparent;
+}
+
+.csdc-actions .csdc-btn-outline:visited,
+.csdc-actions .csdc-btn-outline:hover,
+.csdc-actions .csdc-btn-outline:focus {
+  color: #6b7280;
+  text-decoration-line: none;
+  text-decoration-color: transparent;
+}
+
+.csdc-actions .csdc-btn-outline .csdc-btn-outline-label {
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+
+.csdc-actions .csdc-btn-outline:hover,
+.csdc-actions .csdc-btn-outline:focus {
+  background: transparent;
+  border-width: 2px;
+  border-color: #7f1d1d;
+  color: #7f1d1d;
+  text-decoration-line: none;
+  text-decoration-color: transparent;
+  transform: scale(0.97);
+}
+
+.csdc-actions .csdc-btn-outline:hover .csdc-btn-outline-label,
+.csdc-actions .csdc-btn-outline:focus .csdc-btn-outline-label {
+  transform: scale(0.9);
 }
 
 .csdc-events-cta {
@@ -480,9 +529,6 @@ a.csdc-red:focus {
   margin: 0;
   font-size: clamp(0.96rem, 1.75vw, 1.12rem);
   line-height: 1.3;
-}
-
-.csdc-news-item-title {
   color: #7f1d1d;
 }
 
@@ -563,7 +609,7 @@ a.csdc-red:focus {
   gap: 0.4rem;
   border: 0;
   background: transparent;
-  color: #c8102e;
+  color: $csdc-red;
   border-radius: 0;
   padding: 0;
   font-weight: 700;
@@ -578,7 +624,7 @@ a.csdc-red:focus {
 
 .csdc-news-read-more:hover,
 .csdc-news-read-more:focus {
-  color: #c8102e;
+  color: $csdc-red;
   text-decoration-color: currentColor;
 }
 
@@ -615,6 +661,275 @@ a.csdc-red:focus {
   max-width: 76rem;
 }
 
+.csdc-past-events-cta-wrap {
+  margin-top: 1.35rem;
+  text-align: center;
+}
+
+.csdc-past-events-cta {
+  min-width: 11.5rem;
+  padding: 0.55rem 1.15rem;
+  background: transparent;
+  color: $csdc-red;
+  border: 2px solid $csdc-red;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.22s ease, color 0.22s ease, border-color 0.22s ease;
+}
+
+.csdc-past-events-cta:visited {
+  color: $csdc-red;
+  text-decoration: none;
+}
+
+.csdc-past-events-cta:hover,
+.csdc-past-events-cta:focus {
+  background: $csdc-red;
+  color: #ffffff;
+  border-color: $csdc-red;
+  text-decoration: none;
+}
+
+.csdc-past-events-gallery-section {
+  margin-top: 2.15rem;
+  margin-bottom: 3.8rem;
+}
+
+.csdc-pe-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2vw, 1.75rem);
+  margin-top: 2rem;
+}
+
+// Each year: one big text card on the left, two stacked photos on the right.
+.csdc-pe-year {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "text text"
+    "imgA imgB";
+
+  @include breakpoint($large) {
+    grid-template-columns: 1.85fr 1fr;
+    grid-auto-rows: clamp(10rem, 13vw, 13.5rem);
+    grid-template-areas:
+      "text imgA"
+      "text imgB";
+  }
+}
+
+// Alternating rows: images on the left, big text card on the right.
+.csdc-pe-year--right {
+  @include breakpoint($large) {
+    grid-template-columns: 1fr 1.85fr;
+    grid-template-areas:
+      "imgA text"
+      "imgB text";
+  }
+}
+
+.csdc-pe-text {
+  position: relative;
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  min-height: clamp(13rem, 20vw, 16rem);
+  padding: 1.1rem 1.25rem 1.2rem;
+  background: $csdc-white;
+  border: 1px solid $csdc-border;
+  border-top: 4px solid $csdc-red;
+  border-radius: $csdc-radius;
+  box-shadow: $csdc-shadow-sm;
+  overflow: hidden;
+  transition: box-shadow $csdc-transition, transform $csdc-transition;
+}
+
+.csdc-pe-year:hover .csdc-pe-text,
+.csdc-pe-year:focus-within .csdc-pe-text {
+  box-shadow: $csdc-shadow-md;
+}
+
+// Scrollability cue: when the year list overflows (class added by the page's
+// script), a fade + a gently bobbing chevron appear at the card's lower edge,
+// and both disappear once the list is scrolled to the bottom.
+.csdc-pe-text::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  height: 2.6rem;
+  border-radius: 0 0 $csdc-radius $csdc-radius;
+  background: linear-gradient(to top, $csdc-white 22%, rgba(255, 255, 255, 0));
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.csdc-pe-text::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0.75rem;
+  width: 0.62rem;
+  height: 0.62rem;
+  margin-left: -0.35rem;
+  border-right: 2.5px solid $csdc-red;
+  border-bottom: 2.5px solid $csdc-red;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.csdc-pe-text.is-scrollable:not(.is-scrolled-bottom)::before {
+  opacity: 1;
+}
+
+.csdc-pe-text.is-scrollable:not(.is-scrolled-bottom)::after {
+  opacity: 0.9;
+  animation: csdc-pe-bob 1.5s ease-in-out infinite;
+}
+
+// Animate `bottom` (not transform) so the 45deg chevron rotation is preserved.
+@keyframes csdc-pe-bob {
+  0%, 100% { bottom: 0.75rem; }
+  50% { bottom: 0.55rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .csdc-pe-text.is-scrollable:not(.is-scrolled-bottom)::after {
+    animation: none;
+  }
+}
+
+.csdc-pe-text-title {
+  margin: 0 0 0.75rem;
+  color: $csdc-ink;
+  font-size: clamp(1.15rem, 1.9vw, 1.45rem);
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.csdc-pe-year-list {
+  margin: 0;
+  padding: 0 0.5rem 0 0;
+  list-style: none;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  // Thin, on-brand scrollbar so long year lists read as scrollable.
+  scrollbar-width: thin;
+  scrollbar-color: $csdc-gray-300 transparent;
+}
+
+.csdc-pe-year-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.csdc-pe-year-list::-webkit-scrollbar-thumb {
+  background: $csdc-gray-300;
+  border-radius: 3px;
+}
+
+.csdc-pe-year-list::-webkit-scrollbar-thumb:hover {
+  background: $csdc-gray-400;
+}
+
+.csdc-pe-year-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid $csdc-border;
+}
+
+.csdc-pe-year-list li:last-child {
+  border-bottom: 0;
+}
+
+.csdc-pe-year-list-title {
+  display: block;
+  color: $csdc-ink;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.csdc-pe-year-list-date {
+  display: block;
+  margin-top: 0.1rem;
+  color: $csdc-gray-500;
+  font-size: 0.82rem;
+}
+
+.csdc-pe-empty {
+  margin: 0.4rem 0 0;
+  color: $csdc-gray-500;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.csdc-pe-photo {
+  position: relative;
+  margin: 0;
+  min-height: clamp(9rem, 13vw, 12rem);
+  overflow: hidden;
+  border-radius: $csdc-radius;
+  background: $csdc-bg-a;
+  box-shadow: $csdc-shadow-sm;
+}
+
+.csdc-pe-photo--a { grid-area: imgA; }
+.csdc-pe-photo--b { grid-area: imgB; }
+
+.csdc-pe-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.csdc-pe-photo:hover img,
+.csdc-pe-photo:focus-within img {
+  transform: scale(1.06);
+}
+
+// Caption revealed on hover/focus (and exposed to screen readers at all times).
+.csdc-pe-photo-caption {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  margin: 0;
+  padding: 0.85rem 0.9rem;
+  display: block;
+  overflow-y: auto;
+  background: rgba(17, 24, 39, 0.86);
+  color: #ffffff;
+  font-size: clamp(0.72rem, 1vw, 0.82rem);
+  line-height: 1.4;
+  opacity: 0;
+  transition: opacity 0.22s ease;
+  pointer-events: none;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
+}
+
+.csdc-pe-photo:hover .csdc-pe-photo-caption,
+.csdc-pe-photo:focus-within .csdc-pe-photo-caption {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .csdc-pe-photo img { transition: none; }
+}
+
 .csdc-pillars {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -625,7 +940,7 @@ a.csdc-red:focus {
   }
 
   @include breakpoint($large) {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
@@ -670,7 +985,7 @@ a.csdc-red:focus {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   padding: 2.6rem 0;
-  background: linear-gradient(120deg, #7a1128 0%, #9f1239 48%, #c8102e 100%);
+  background: linear-gradient(120deg, #7a1128 0%, #9f1239 48%, $csdc-red 100%);
   border: 0;
   border-radius: 0;
 }
@@ -782,7 +1097,7 @@ a.csdc-red:focus {
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  background: linear-gradient(110deg, #9f1239 0%, #c8102e 52%, #1e3a5f 100%);
+  background: linear-gradient(110deg, #9f1239 0%, $csdc-red 52%, #1e3a5f 100%);
   color: #ffffff;
   transform: scale(1);
   transition: color 0.32s ease, transform 0.22s ease;
@@ -1009,7 +1324,7 @@ a.csdc-red:focus {
   text-align: center;
 
   @include breakpoint($large) {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
@@ -1129,7 +1444,7 @@ a.csdc-red:focus {
   }
 
   @include breakpoint($large) {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 

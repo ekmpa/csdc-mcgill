@@ -42,6 +42,7 @@
 @import "minimal-mistakes/print";
 
 /* Custom styling */
+@import "custom/csdc-tokens";
 @import "custom/no-sidebar";
 @import "custom/display-author-page.scss";
 @import "custom/display-publications.scss";
@@ -57,3 +58,4 @@
 @import "custom/display-highlighted-publications.scss";
 @import "custom/breadcrumbs.scss";
 @import "custom/particles.scss";
+@import "custom/csdc-polish.scss";

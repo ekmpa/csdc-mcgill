@@ -25,7 +25,7 @@ a.site-title,
 
 .masthead {
     background: #1f2937;
-    border-bottom: 4px solid #c8102e;
+    border-bottom: 4px solid $csdc-red;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -196,7 +196,7 @@ a.site-title,
 
 .csdc-footer {
     margin-top: 3rem;
-    border-top: 4px solid #c8102e;
+    border-top: 4px solid $csdc-red;
     background: #1f2937;
     color: #f9fafb;
     padding: 2rem 0 1rem;
@@ -369,7 +369,7 @@ a.site-title,
 
 .csdc-footer-door-panel a:hover,
 .csdc-footer-door-panel a:focus {
-    color: #c8102e;
+    color: $csdc-red;
     text-decoration: underline;
 }
 

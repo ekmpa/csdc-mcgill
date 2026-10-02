@@ -405,7 +405,7 @@ div.author-avatar {
     margin: 0 0 1rem;
     padding-bottom: 0.45rem;
     border-bottom: 1px solid #efc7cf;
-    color: #c8102e;
+    color: $csdc-red;
     font-size: clamp(1.2rem, 2.4vw, 1.45rem);
     font-weight: 400;
     letter-spacing: 0.08em;
@@ -413,7 +413,7 @@ div.author-avatar {
 }
 
 .csdc-people-page .csdc-alumni-group-title {
-    color: #c8102e;
+    color: $csdc-red;
 }
 
 .csdc-people-page .author-card {
