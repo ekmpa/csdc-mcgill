@@ -1,5 +1,6 @@
 {% assign lang = include.lang | default: page.lang_code | default: 'en' %}
 {% assign t = site.data.site_text[lang] %}
+{% assign page_url = page.url | default: page.permalink | default: '/' %}
 
 <section class="csdc-section csdc-news-events-section">
   <div class="csdc-container">
@@ -10,5 +11,12 @@
       </div>
     </div>
     <p class="csdc-calendar-note">{{ t.events.contact_note }} <a href="mailto:anne.imouza@mcgill.ca">{{ t.events.contact_link }}</a>.</p>
+    {% if page_url == '/events/' or page_url == '/fr/events/' %}
+    {% assign past_events_url = '/events/past-events/' %}
+    {% if lang == 'fr' %}{% assign past_events_url = '/fr/events/past-events/' %}{% endif %}
+    <div class="csdc-past-events-cta-wrap">
+      <a class="csdc-btn csdc-past-events-cta" href="{{ past_events_url | relative_url }}">{{ t.home.hero.cta_past_events }}</a>
+    </div>
+    {% endif %}
   </div>
 </section>

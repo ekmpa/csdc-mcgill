@@ -1,0 +1,23 @@
+{% assign paper = include.paper %}
+<article class="csdc-paper-highlight-card">
+  <a class="csdc-paper-highlight-title" href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
+  {% assign venue_clean = paper.venue | default: '' | strip %}
+  {% assign venue_clean_lc = venue_clean | downcase %}
+  {% if venue_clean == '.' or venue_clean == '-' or venue_clean_lc == 'n/a' or venue_clean_lc == 'na' %}
+    {% assign venue_clean = '' %}
+  {% endif %}
+  {% assign venue_probe = venue_clean | remove: '.' | remove: '·' | remove: '-' | remove: '—' | remove: '–' | remove: '_' | remove: '/' | remove: ' ' | strip %}
+  {% if venue_probe == '' %}
+    {% assign venue_clean = '' %}
+  {% endif %}
+  {% if venue_clean or paper.year %}
+  <p class="csdc-paper-highlight-meta">
+    {% if venue_clean %}<span>{{ venue_clean }}</span>{% endif %}
+    {% if venue_clean and paper.year %}<span class="csdc-paper-highlight-meta-sep">&middot;</span>{% endif %}
+    {% if paper.year %}<span>{{ paper.year }}</span>{% endif %}
+  </p>
+  {% endif %}
+  {% if paper.names %}
+  <p class="csdc-paper-highlight-authors">{{ paper.names }}</p>
+  {% endif %}
+</article>

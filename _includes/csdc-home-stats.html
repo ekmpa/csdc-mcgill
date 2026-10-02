@@ -25,7 +25,7 @@
         {% assign publications = publications | push: post %}
       {% endif %}
     {% endfor %}
-    {% assign publications_count = publications | size | default: 0 %}
+    {% assign publications_count = publications | size %}
 
     {% assign members_remainder = members_count | modulo: 10 %}
     {% assign alumni_remainder = alumni_count | modulo: 10 %}

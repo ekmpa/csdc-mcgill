@@ -20,6 +20,13 @@ Nicolas Ajzenman:
     the intersection of development economics, behavioral economics, and 
     political economy. His research has appeared or is forthcoming in top 
     scientific journals such as the American Economic Journal.
+  bio_fr: >-
+    Nicolas Ajzenman est professeur adjoint à l'Université McGill (Département
+    de sciences économiques) et professeur affilié au J-PAL et à l'IZA. Ses
+    travaux se situent à l'intersection de l'économie du développement, de
+    l'économie comportementale et de l'économie politique. Ses recherches ont
+    été publiées ou sont à paraître dans des revues scientifiques de premier
+    plan telles que l'American Economic Journal.
   avatar: 
     https://github.com/user-attachments/assets/a0df0780-8d08-4e46-aaac-2bc460ee3b7b
   social_media_links:
@@ -126,6 +133,12 @@ Leonardo Baccini:
     Science at McGill University. His research interests are in the area of 
     international political economy and comparative political economy with a 
     focus on the political effects of structural economic transformations.
+  bio_fr: >-
+    Leonardo Baccini est professeur au Département de science politique de
+    l'Université McGill. Ses intérêts de recherche portent sur l'économie
+    politique internationale et l'économie politique comparée, avec un accent
+    particulier sur les effets politiques des transformations économiques
+    structurelles.
   orcid: 0000-0002-6027-9192
   avatar: /assets/images/bio/Leonardo Baccini.jpg
   social_media_links:
@@ -208,6 +221,12 @@ Elissa Berwick:
     quantitative methodology. Her research focuses on sub-state nationalism, 
     exploring how the imagined communities of stateless nations mold actual 
     political attitudes and behaviors.
+  bio_fr: >-
+    Les intérêts de la professeure Berwick couvrent les sous-domaines de la
+    politique comparée et de la méthodologie quantitative. Ses recherches
+    portent sur le nationalisme infra-étatique et examinent comment les
+    communautés imaginées des nations sans État façonnent concrètement les
+    attitudes et les comportements politiques.
   orcid: 0000-0002-0011-5073
   social_media_links:
   - label: Website
@@ -295,6 +314,17 @@ Aengus Bridgman:
     provincial elections. He is also involved in research projects studying 
     voting behaviour in Latin America, as well as a comparison of nationalism in
     Quebec and Scotland.
+  bio_fr: >-
+    Éric Bélanger est professeur de science politique à l'Université McGill. Il
+    est également membre du Collège de nouveaux chercheurs et créateurs en art
+    et en science de la Société royale du Canada. Bien que centrées sur la
+    politique québécoise et canadienne, ses recherches portent sur les thèmes
+    généraux des partis politiques, de l'opinion publique et du comportement
+    électoral, au moyen de diverses méthodes quantitatives. Certains de ses
+    travaux antérieurs ont porté sur le vote économique et les élections
+    provinciales québécoises. Il participe aussi à des projets de recherche sur
+    le comportement électoral en Amérique latine, ainsi qu'à une comparaison du
+    nationalisme au Québec et en Écosse.
   orcid: 0000-0003-3289-6000
   social_media_links:
   - label: Scholar
@@ -604,6 +634,15 @@ Aaron Erlich:
     public opinion in the Former Soviet Union, Eastern and Southern Africa, and 
     Mexico. Professor Erlich's research makes use of a variety of methods, such 
     as field experiments, survey experiments, and mixed-method research designs.
+  bio_fr: >-
+    Aaron Erlich est professeur agrégé de science politique à l'Université
+    McGill. Ses intérêts de recherche portent sur les questions de
+    démocratisation, de diffusion de l'information, de comportement politique,
+    de participation politique et d'opinion publique dans l'ex-Union soviétique,
+    en Afrique de l'Est et australe, et au Mexique. Les recherches du professeur
+    Erlich font appel à diverses méthodes, telles que les expériences de
+    terrain, les expériences par sondage et les devis de recherche à méthodes
+    mixtes.
   orcid: 0000-0001-6571-9081
   avatar: 
     https://github.com/user-attachments/assets/4c441e39-9859-48e0-9440-e743ddbd8838
@@ -711,6 +750,15 @@ Benjamin Forest:
     post-Soviet sphere, Professor Forest is currently heading a project on 
     diversity in party structures and constituencies in Canada. He is also 
     working on research exploring municipal LGBTQ policies.
+  bio_fr: >-
+    Benjamin Forest est professeur agrégé à l'Université McGill, au Département
+    de géographie, ainsi que membre associé du Département de science politique.
+    Spécialiste de la géographie politique, ses travaux s'articulent autour du
+    thème de la diversité et de la réforme électorale. En plus de participer à
+    un projet sur les monuments et les mémoriaux dans l'espace postsoviétique,
+    le professeur Forest dirige actuellement un projet sur la diversité dans les
+    structures partisanes et les circonscriptions au Canada. Il mène également
+    des recherches sur les politiques municipales relatives aux personnes LGBTQ.
   orcid: https://orcid.org/0000-0002-4831-9403
   social_media_links:
   - label: Scholar
@@ -946,6 +994,17 @@ Eric Hehman:
     broad range of behavioral (e.g., computer-mouse tracking, digital face 
     modeling, group interactions) and statistical techniques (e.g., multilevel 
     modeling, structural equation modeling).
+  bio_fr: >-
+    Eric Hehman est professeur agrégé de psychologie à l'Université McGill et
+    directeur du Seeing Human Lab. De manière générale, les recherches du
+    professeur Hehman examinent comment les individus se perçoivent et
+    s'évaluent mutuellement par-delà les frontières de groupe (p. ex. la race,
+    le genre, l'orientation sexuelle, la profession, etc.). Pour aborder ces
+    questions, il adopte une approche multiméthode, combinant un large éventail
+    de techniques comportementales (p. ex. le suivi des mouvements de la souris,
+    la modélisation faciale numérique, les interactions de groupe) et
+    statistiques (p. ex. la modélisation multiniveau, la modélisation par
+    équations structurelles).
   orcid: https://orcid.org/0000-0003-2227-1517
   social_media_links:
   - label: Scholar
@@ -1058,6 +1117,9 @@ Anne Imouza:
     department: Political Science
   bio: Administrative lead supporting coordination, operations, and outreach for
     McGill CSDC.
+  bio_fr: >-
+    Responsable administrative assurant la coordination, les opérations et le
+    rayonnement du CSDC McGill.
   avatar: /assets/images/bio/Anne Imouza.jpg
 
   team_group: staff
@@ -1208,6 +1270,9 @@ Emma Kondrup:
     advisor: Reihaneh Rabbany, Catherine Régis
   bio: Web developer maintaining the McGill CSDC website and publication/member 
     update workflow.
+  bio_fr: >-
+    Développeuse web assurant la maintenance du site du CSDC McGill ainsi que du
+    processus de mise à jour des publications et des membres.
   avatar: /assets/images/bio/Emma Kondrup.jpg
   team_group: staff
 Angela Kostelko:
@@ -1315,6 +1380,13 @@ Qinggang Li:
     different forms of patron-client relations affect development and state 
     capacity in developing countries. He also has an interest in political 
     participation in nondemocratic contexts.
+  bio_fr: >-
+    Qinggang s'intéresse de façon générale aux relations entre l'État et la
+    société ainsi qu'à l'économie politique des pays en développement. Il étudie
+    actuellement comment différentes formes de relations clientélistes influent
+    sur le développement et la capacité de l'État dans les pays en
+    développement. Il porte également un intérêt à la participation politique
+    dans les contextes non démocratiques.
   avatar: /assets/images/bio/Qinggang Li.jpg
 
   team_group: phd_students_and_postdocs
@@ -1416,6 +1488,39 @@ Victor Livernoche:
     and practitioners with the tools needed to accurately evaluate and improve deepfake
     detection, supporting efforts to safeguard public trust and media integrity in
     the age of advanced AI imagery.'
+  bio_fr: >-
+    Titre : Création d'un jeu de données de référence moderne pour la détection
+    des hypertrucages. Ce projet répond au besoin urgent d'un jeu de données
+    moderne et représentatif pour faire progresser la recherche sur la détection
+    des hypertrucages (deepfakes). Alors que les images générées par IA à partir
+    de modèles propriétaires comme Midjourney, Ideogram et FLUX.1 pro ont
+    atteint un réalisme sans précédent, les méthodes de détection
+    traditionnelles — élaborées à partir de jeux de données désuets issus de
+    modèles à code source ouvert — deviennent inefficaces. Cette lacune freine
+    le développement d'algorithmes de détection robustes et soulève des
+    questions quant à la faisabilité de la détection des hypertrucages à grande
+    échelle, compte tenu notamment des répercussions sur la désinformation et la
+    sécurité électorale. L'objectif principal du projet est de créer un jeu de
+    données de référence complet réunissant des images générées par IA provenant
+    à la fois des principaux modèles propriétaires et des modèles à code source
+    ouvert. Le jeu de données sera diversifié et comprendra des portraits
+    humains, des paysages et des objets, en mettant l'accent sur les images les
+    plus susceptibles d'être utilisées à des fins de désinformation. Chaque
+    image sera systématiquement étiquetée selon les paramètres de génération, le
+    modèle et le type de contenu, afin de permettre une analyse détaillée. Les
+    principaux objectifs sont les suivants : • rassembler un ensemble vaste et
+    actuel d'images générées par IA reflétant les techniques génératives de
+    pointe; • déterminer si les images produites par des modèles propriétaires
+    avancés présentent des artefacts détectables; • évaluer l'efficacité et la
+    généralisabilité des méthodes de détection existantes sur ce nouveau jeu de
+    données; • cerner quels types d'images et de contenus posent les plus grands
+    défis pour la détection; • fournir des pistes pour orienter l'élaboration de
+    stratégies de détection plus efficaces, en particulier dans des contextes à
+    enjeux élevés comme les élections. En comblant cette lacune cruciale, le
+    projet dotera les chercheurs et les praticiens des outils nécessaires pour
+    évaluer et améliorer avec précision la détection des hypertrucages,
+    soutenant ainsi les efforts visant à préserver la confiance du public et
+    l'intégrité des médias à l'ère de l'imagerie avancée générée par IA.
   orcid: 0000-0002-3819-730X
   avatar: /assets/images/bio/Victor Livernoche.jpg
   social_media_links:
@@ -1486,6 +1591,27 @@ Juan Pablo Luna:
     Latin America (with Andreas Feldmann, Cambridge University Press, 2024); and
     ¿Democracia Muerta? Chile, América Latina y un Modelo Estallado. (Ariel, 
     2024).
+  bio_fr: >-
+    Juan Pablo Luna a grandi à Montevideo, en Uruguay, et est le premier
+    titulaire de la Chaire Diamond Brown en études démocratiques à McGill. Bien
+    que ses travaux portent principalement sur la politique latino-américaine
+    comparée, ses recherches analysent comment des conditions socio-
+    structurelles telles que l'inégalité sociale et la capacité de l'État
+    façonnent les institutions démocratiques et les trajectoires de
+    développement. Ces dernières années, il a étudié comment la dynamique du
+    crime organisé contribue à redéfinir la politique, les États et les marchés
+    en Amérique latine. Parmi ses ouvrages figurent Latin American Party Systems
+    (avec Kitschelt, Hawkins, Rosas et Zechmeister; Cambridge, 2010); Segmented
+    Representation, Political Party Strategies in Unequal Democracies (Oxford,
+    2014); The Resilience of the Latin American Right (avec Rovira-Kaltwasser;
+    Johns Hopkins, 2014); En vez del optimismo. Crisis de representación
+    política en el Chile actual (Catalonia, 2017); Political Parties and
+    Diminished Subtypes (avec Rosenblatt, Piñeiro et Vommaro; Cambridge, 2021);
+    Latin American Politics and Society. A Comparative Historical Analysis (avec
+    Gerardo Munck, Cambridge University Press, 2022); Criminal Politics and
+    Botched Development in Contemporary Latin America (avec Andreas Feldmann,
+    Cambridge University Press, 2024); et ¿Democracia Muerta? Chile, América
+    Latina y un Modelo Estallado. (Ariel, 2024).
   orcid: https://orcid.org/0000-0001-7597-203X
   social_media_links:
   - label: Scholar
@@ -1918,6 +2044,12 @@ Farimah Poursafaei:
     Quebec AI Institute. Her research interests include dynamic graph 
     representation learning, graph neural networks, graph machine learning, and 
     real-world network data analysis.
+  bio_fr: >-
+    Farimah Poursafaei est stagiaire postdoctorale à l'Université McGill et à
+    Mila, l'Institut québécois d'intelligence artificielle. Ses intérêts de
+    recherche comprennent l'apprentissage de représentations de graphes
+    dynamiques, les réseaux de neurones sur graphes, l'apprentissage automatique
+    sur graphes et l'analyse de données de réseaux réels.
   avatar: /assets/images/bio/Farimah Poursafaei.jpg
   social_media_links:
   - label: Scholar
@@ -1938,6 +2070,15 @@ Reihaneh Rabbany:
     research is at the intersection of network science, data mining and machine 
     learning, with a focus on analyzing real-world interconnected data, and 
     social good applications.
+  bio_fr: >-
+    Reihaneh Rabbany est professeure adjointe à l'École d'informatique de
+    l'Université McGill. Auparavant, elle a été stagiaire postdoctorale à
+    l'École d'informatique de l'Université Carnegie Mellon. Elle a obtenu son
+    doctorat au Département d'informatique de l'Université de l'Alberta. Ses
+    recherches se situent à l'intersection de la science des réseaux, de la
+    fouille de données et de l'apprentissage automatique, avec un accent sur
+    l'analyse de données interconnectées du monde réel et les applications
+    d'intérêt social.
   orcid: 0000-0003-2348-0353
   social_media_links:
   - label: Website
@@ -2107,6 +2248,13 @@ Eran Shor:
     political conflict, human rights, and ethnicity and nationalism. Professor 
     Shor's current research projects evaluate inequalities in media coverage of 
     women and ethnic minorities.
+  bio_fr: >-
+    Eran Shor est professeur au Département de sociologie de l'Université
+    McGill. Ses intérêts de recherche s'articulent autour des thèmes du conflit
+    politique, des droits de la personne, ainsi que de l'ethnicité et du
+    nationalisme. Les projets de recherche actuels du professeur Shor évaluent
+    les inégalités dans la couverture médiatique des femmes et des minorités
+    ethniques.
   social_media_links:
   - label: Scholar
     url: https://scholar.google.com/citations?user=vxVIFkIAAAAJ&hl=en&oi=ao
@@ -2188,6 +2336,16 @@ Thomas Soehl:
     anti-immigration attitudes. Professor Soehl's research makes use of 
     quantitative research methods such as using event history analysis and 
     multi-level modeling.
+  bio_fr: >-
+    Thomas Soehl est professeur au Département de sociologie de l'Université
+    McGill. Ses travaux examinent principalement les thèmes de la migration
+    internationale, de la race et de l'ethnicité. Plus précisément, il étudie
+    ces thèmes sous l'angle de la famille comme lieu de transmission de la
+    culture et des attachements politiques. Récemment, il s'est intéressé à
+    l'acquisition de la citoyenneté au Canada et en France, ainsi qu'aux
+    déterminants des attitudes anti-immigration. Les recherches du professeur
+    Soehl font appel à des méthodes quantitatives telles que l'analyse de
+    l'histoire des événements et la modélisation multiniveau.
   orcid: 0000-0002-6593-3376
   social_media_links:
   - label: Scholar
@@ -2254,6 +2412,20 @@ Dietlind Stolle:
     She is currently co-leading the EUI-YouGov European Solidarity Study in more than
     20 democracies. She now serves as the academic lead of the CSDC McGill lab on
     political behavior."
+  bio_fr: >-
+    Dietlind Stolle est professeure James McGill de science politique à
+    l'Université McGill et membre de la Société royale du Canada. Elle est
+    largement reconnue, tant au Canada qu'à l'étranger, comme une spécialiste du
+    comportement politique, du capital social, de la diversité ethnique, de la
+    cohésion sociale et de la démocratie. Ses projets actuels portent notamment
+    sur le recul démocratique; le genre et la politique, y compris le rôle de la
+    grossesse; la solidarité européenne; et les nouveaux clivages dans la
+    politique partisane européenne. Dietlind Stolle a été directrice du Centre
+    pour l'étude de la citoyenneté démocratique (CSDC) de 2013 à 2020, ainsi que
+    codirectrice du Centre d'excellence de l'Union européenne. Elle codirige
+    actuellement l'étude EUI-YouGov sur la solidarité européenne menée dans plus
+    de 20 démocraties. Elle est aujourd'hui responsable académique du
+    laboratoire du CSDC McGill sur le comportement politique.
   avatar: /assets/images/bio/Dietlind Stolle.jpg
 
   social_media_links:

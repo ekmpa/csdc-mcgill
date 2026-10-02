@@ -27,7 +27,8 @@ jobs:
         run: pip install -r src/python/requirements.txt
 
       - name: Print calendar target
-        run: echo "Syncing Google Calendar ID: ${GOOGLE_CALENDAR_ID}"
+        run: |
+          echo "Syncing Google Calendar ID: ${GOOGLE_CALENDAR_ID}"
         env:
           GOOGLE_CALENDAR_ID: mcgillcsdc@gmail.com
 
