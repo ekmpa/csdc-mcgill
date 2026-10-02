@@ -19,6 +19,8 @@ DEFAULT_CTA_TEXT = "View all seminars"
 DEFAULT_CTA_URL = "/news/"
 DEFAULT_BANNER_LABEL = "Featured Seminar"
 DEFAULT_MAX_RESULTS = 20
+DEFAULT_MAX_PAST_RESULTS = 200
+DEFAULT_PAST_LOOKBACK_DAYS = 1095
 
 
 def _format_date_display(start_dt: dt.datetime, all_day: bool, tz_name: str) -> str:
@@ -132,14 +134,16 @@ def _parse_rrule(rrule_value: str) -> Dict[str, str]:
 
 def _weekly_occurrences(
     start_dt: dt.datetime,
-    now_utc: dt.datetime,
+    window_start_utc: dt.datetime,
     byday_codes: List[str],
     interval: int,
     until_dt: Optional[dt.datetime],
+    window_end_utc: Optional[dt.datetime],
     max_count: int,
 ) -> List[dt.datetime]:
     local_tz = start_dt.tzinfo or dt.timezone.utc
-    now_local = now_utc.astimezone(local_tz)
+    window_start_local = window_start_utc.astimezone(local_tz)
+    window_end_local = window_end_utc.astimezone(local_tz) if window_end_utc else None
     start_local = start_dt.astimezone(local_tz)
 
     day_code_to_weekday = {
@@ -162,8 +166,8 @@ def _weekly_occurrences(
         weekdays = [start_local.weekday()]
 
     start_date = start_local.date()
-    candidate_date = max(start_date, now_local.date())
-    horizon_date = candidate_date + dt.timedelta(days=366)
+    candidate_date = max(start_date, window_start_local.date())
+    horizon_date = window_end_local.date() if window_end_local else candidate_date + dt.timedelta(days=366)
 
     matches: List[dt.datetime] = []
 
@@ -178,7 +182,10 @@ def _weekly_occurrences(
                     tzinfo=local_tz,
                 )
 
-                if candidate_dt >= start_local and candidate_dt.astimezone(dt.timezone.utc) >= now_utc:
+                candidate_utc = candidate_dt.astimezone(dt.timezone.utc)
+                if candidate_dt >= start_local and candidate_utc >= window_start_utc:
+                    if window_end_utc is not None and candidate_utc > window_end_utc:
+                        break
                     if until_dt is not None and candidate_dt.astimezone(dt.timezone.utc) > until_dt.astimezone(
                         dt.timezone.utc
                     ):
@@ -193,7 +200,8 @@ def _weekly_occurrences(
 def _recurrence_occurrences(
     start_dt: dt.datetime,
     rrule_raw: str,
-    now_utc: dt.datetime,
+    window_start_utc: dt.datetime,
+    window_end_utc: Optional[dt.datetime],
     max_count: int,
 ) -> List[dt.datetime]:
     rule = _parse_rrule(rrule_raw)
@@ -207,20 +215,33 @@ def _recurrence_occurrences(
 
     if freq == "WEEKLY":
         byday = [part.strip() for part in rule.get("BYDAY", "").split(",") if part.strip()]
-        return _weekly_occurrences(start_dt, now_utc, byday, interval, until_dt, max_count=max_count)
+        return _weekly_occurrences(
+            start_dt,
+            window_start_utc,
+            byday,
+            interval,
+            until_dt,
+            window_end_utc,
+            max_count=max_count,
+        )
 
     if freq == "DAILY":
         step = max(interval, 1)
         candidate = start_dt
         matches: List[dt.datetime] = []
-        if candidate < now_utc:
-            delta_days = (now_utc.date() - candidate.date()).days
+        if candidate < window_start_utc:
+            delta_days = (window_start_utc.date() - candidate.date()).days
             jumps = max(delta_days // step, 0)
             candidate = candidate + dt.timedelta(days=jumps * step)
-            while candidate < now_utc:
+            while candidate < window_start_utc:
                 candidate += dt.timedelta(days=step)
 
         for _ in range(max_count):
+            if candidate < window_start_utc:
+                candidate += dt.timedelta(days=step)
+                continue
+            if window_end_utc is not None and candidate > window_end_utc:
+                break
             if until_dt is not None and candidate.astimezone(dt.timezone.utc) > until_dt.astimezone(dt.timezone.utc):
                 break
             matches.append(candidate)
@@ -231,7 +252,13 @@ def _recurrence_occurrences(
     return []
 
 
-def _fetch_public_ics_events(calendar_id: str, timezone_name: str, max_results: int) -> List[Dict[str, Any]]:
+def _fetch_public_ics_events(
+    calendar_id: str,
+    timezone_name: str,
+    max_results: int,
+    window_start_utc: Optional[dt.datetime] = None,
+    window_end_utc: Optional[dt.datetime] = None,
+) -> List[Dict[str, Any]]:
     encoded_calendar = urllib.parse.quote(calendar_id, safe="")
     ics_url = f"https://calendar.google.com/calendar/ical/{encoded_calendar}/public/basic.ics"
 
@@ -243,7 +270,8 @@ def _fetch_public_ics_events(calendar_id: str, timezone_name: str, max_results: 
     with urllib.request.urlopen(request, timeout=25) as response:
         ics_text = response.read().decode("utf-8", errors="replace")
 
-    now_utc = dt.datetime.now(dt.timezone.utc)
+    if window_start_utc is None:
+        window_start_utc = dt.datetime.now(dt.timezone.utc)
     lines = _unfold_ics_lines(ics_text)
 
     events: List[Dict[str, Any]] = []
@@ -260,16 +288,23 @@ def _fetch_public_ics_events(calendar_id: str, timezone_name: str, max_results: 
             in_event = False
             start_dt = current.get("start")
             if isinstance(start_dt, dt.datetime):
-                if start_dt >= now_utc:
-                    events.append(current)
+                rrule_raw = str(current.get("rrule", "") or "")
+                if rrule_raw:
+                    starts = _recurrence_occurrences(
+                        start_dt,
+                        rrule_raw,
+                        window_start_utc,
+                        window_end_utc,
+                        max_count=max_results,
+                    )
+                    for recurrence_start in starts:
+                        event_copy = dict(current)
+                        event_copy["start"] = recurrence_start
+                        events.append(event_copy)
                 else:
-                    rrule_raw = str(current.get("rrule", "") or "")
-                    if rrule_raw:
-                        starts = _recurrence_occurrences(start_dt, rrule_raw, now_utc, max_count=max_results)
-                        for recurrence_start in starts:
-                            event_copy = dict(current)
-                            event_copy["start"] = recurrence_start
-                            events.append(event_copy)
+                    start_utc = start_dt.astimezone(dt.timezone.utc)
+                    if start_utc >= window_start_utc and (window_end_utc is None or start_utc <= window_end_utc):
+                        events.append(current)
             current = {}
             continue
         if not in_event:
@@ -292,7 +327,7 @@ def _fetch_public_ics_events(calendar_id: str, timezone_name: str, max_results: 
             except Exception:
                 pass
 
-    events.sort(key=lambda e: e.get("start", now_utc))
+    events.sort(key=lambda e: e.get("start", window_start_utc))
 
     parsed_events: List[Dict[str, Any]] = []
     for event in events[:max_results]:
@@ -309,15 +344,24 @@ def _fetch_public_ics_events(calendar_id: str, timezone_name: str, max_results: 
     return parsed_events
 
 
-def _fetch_events(calendar_id: str, api_key: str, timezone_name: str, max_results: int) -> List[Dict[str, Any]]:
-    now_utc = dt.datetime.now(dt.timezone.utc).isoformat().replace("+00:00", "Z")
+def _fetch_events(
+    calendar_id: str,
+    api_key: str,
+    timezone_name: str,
+    max_results: int,
+    time_min_utc: Optional[dt.datetime] = None,
+    time_max_utc: Optional[dt.datetime] = None,
+) -> List[Dict[str, Any]]:
     params = {
         "singleEvents": "true",
         "orderBy": "startTime",
-        "timeMin": now_utc,
         "maxResults": str(max_results),
         "key": api_key,
     }
+    if time_min_utc is not None:
+        params["timeMin"] = time_min_utc.isoformat().replace("+00:00", "Z")
+    if time_max_utc is not None:
+        params["timeMax"] = time_max_utc.isoformat().replace("+00:00", "Z")
 
     encoded_calendar = urllib.parse.quote(calendar_id, safe="")
     url = (
@@ -367,15 +411,19 @@ def _fetch_events(calendar_id: str, api_key: str, timezone_name: str, max_result
 
 
 def _build_payload(
-    events: List[Dict[str, Any]],
+    upcoming_events_raw: List[Dict[str, Any]],
+    past_events_raw: List[Dict[str, Any]],
     calendar_id: str,
     timezone_name: str,
     source_provider: str = "google_calendar",
 ) -> Dict[str, Any]:
     generated_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
 
-    if events:
-        featured = events[0]
+    upcoming_events_raw.sort(key=lambda e: e["start"])
+    past_events_raw.sort(key=lambda e: e["start"], reverse=True)
+
+    if upcoming_events_raw:
+        featured = upcoming_events_raw[0]
         featured_event = {
             "banner_label": DEFAULT_BANNER_LABEL,
             "title": featured["title"],
@@ -397,12 +445,24 @@ def _build_payload(
         }
 
     upcoming_events = []
-    for event in events[:5]:
+    for event in upcoming_events_raw[:5]:
         upcoming_events.append(
             {
                 "title": event["title"],
                 "date_display": _format_date_display(event["start"], event["all_day"], timezone_name),
                 "event_url": event["html_link"],
+                "start_iso": event["start"].astimezone(dt.timezone.utc).isoformat().replace("+00:00", "Z"),
+            }
+        )
+
+    past_events = []
+    for event in past_events_raw:
+        past_events.append(
+            {
+                "title": event["title"],
+                "date_display": _format_date_display(event["start"], event["all_day"], timezone_name),
+                "event_url": event["html_link"],
+                "start_iso": event["start"].astimezone(dt.timezone.utc).isoformat().replace("+00:00", "Z"),
             }
         )
 
@@ -415,6 +475,7 @@ def _build_payload(
         },
         "featured_event": featured_event,
         "upcoming_events": upcoming_events,
+        "past_events": past_events,
     }
 
 
@@ -435,39 +496,75 @@ def main(
     calendar_id: Optional[str] = None,
     timezone_name: str = DEFAULT_TIMEZONE,
     max_results: int = DEFAULT_MAX_RESULTS,
+    max_past_results: int = DEFAULT_MAX_PAST_RESULTS,
+    past_lookback_days: int = DEFAULT_PAST_LOOKBACK_DAYS,
 ) -> None:
     resolved_calendar_id = calendar_id or os.getenv("GOOGLE_CALENDAR_ID", DEFAULT_CALENDAR_ID)
     api_key = os.getenv("GOOGLE_CALENDAR_API_KEY")
+    now_utc = dt.datetime.now(dt.timezone.utc)
+    past_start_utc = now_utc - dt.timedelta(days=max(0, past_lookback_days))
 
     source_provider = "google_calendar_public_ics"
     if api_key:
         try:
-            events = _fetch_events(
+            upcoming_events_raw = _fetch_events(
                 calendar_id=resolved_calendar_id,
                 api_key=api_key,
                 timezone_name=timezone_name,
                 max_results=max_results,
+                time_min_utc=now_utc,
+            )
+            past_events_raw = _fetch_events(
+                calendar_id=resolved_calendar_id,
+                api_key=api_key,
+                timezone_name=timezone_name,
+                max_results=max_past_results,
+                time_min_utc=past_start_utc,
+                time_max_utc=now_utc,
             )
             source_provider = "google_calendar"
         except Exception as exc:
             print(f"Google Calendar API fetch failed ({exc}); falling back to public ICS feed.")
-            events = _fetch_public_ics_events(
+            upcoming_events_raw = _fetch_public_ics_events(
                 calendar_id=resolved_calendar_id,
                 timezone_name=timezone_name,
                 max_results=max_results,
+                window_start_utc=now_utc,
+            )
+            past_events_raw = _fetch_public_ics_events(
+                calendar_id=resolved_calendar_id,
+                timezone_name=timezone_name,
+                max_results=max_past_results,
+                window_start_utc=past_start_utc,
+                window_end_utc=now_utc,
             )
     else:
-        events = _fetch_public_ics_events(
+        upcoming_events_raw = _fetch_public_ics_events(
             calendar_id=resolved_calendar_id,
             timezone_name=timezone_name,
             max_results=max_results,
+            window_start_utc=now_utc,
+        )
+        past_events_raw = _fetch_public_ics_events(
+            calendar_id=resolved_calendar_id,
+            timezone_name=timezone_name,
+            max_results=max_past_results,
+            window_start_utc=past_start_utc,
+            window_end_utc=now_utc,
         )
 
-    payload = _build_payload(events, resolved_calendar_id, timezone_name, source_provider=source_provider)
+    payload = _build_payload(
+        upcoming_events_raw,
+        past_events_raw,
+        resolved_calendar_id,
+        timezone_name,
+        source_provider=source_provider,
+    )
     _write_yaml_atomic(payload, Path(output_path))
 
     print(
-        f"Synced {len(events)} events from Google Calendar ({source_provider}) "
+        f"Synced {len(upcoming_events_raw)} upcoming and {len(past_events_raw)} past events "
+        f"from Google Calendar ({source_provider}) "
         f"'{resolved_calendar_id}' into {output_path}."
     )
 
@@ -478,6 +575,8 @@ if __name__ == "__main__":
     parser.add_argument("--calendar-id", default=None)
     parser.add_argument("--timezone", default=DEFAULT_TIMEZONE)
     parser.add_argument("--max-results", type=int, default=20)
+    parser.add_argument("--max-past-results", type=int, default=DEFAULT_MAX_PAST_RESULTS)
+    parser.add_argument("--past-lookback-days", type=int, default=DEFAULT_PAST_LOOKBACK_DAYS)
     args = parser.parse_args()
 
     main(
@@ -485,4 +584,6 @@ if __name__ == "__main__":
         calendar_id=args.calendar_id,
         timezone_name=args.timezone,
         max_results=args.max_results,
+        max_past_results=args.max_past_results,
+        past_lookback_days=args.past_lookback_days,
     )

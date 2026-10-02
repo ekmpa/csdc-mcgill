@@ -1,4 +1,4 @@
-generated_at: '2026-07-23T18:25:46+00:00'
+generated_at: '2026-10-02T22:25:37+00:00'
 source:
   provider: google_calendar_public_ics
   calendar_id: mcgillcsdc@gmail.com
@@ -6,24 +6,329 @@ source:
 featured_event:
   banner_label: Featured Seminar
   title: CSDC Lab
-  date_display: Wednesday, July 29, 1:15 PM ET
+  date_display: Wednesday, October 7, 1:15 PM ET
   blurb: ''
   cta_text: View all seminars
   cta_url: /news/
   event_url: ''
 upcoming_events:
 - title: CSDC Lab
-  date_display: Wednesday, July 29, 1:15 PM ET
+  date_display: Wednesday, October 7, 1:15 PM ET
   event_url: ''
+  start_iso: '2026-10-07T17:15:00Z'
 - title: CSDC Breakfast 🥐
-  date_display: Thursday, July 30, 10:30 AM ET
+  date_display: Thursday, October 8, 10:30 AM ET
   event_url: ''
+  start_iso: '2026-10-08T14:30:00Z'
 - title: CSDC Lab
-  date_display: Wednesday, August 5, 1:15 PM ET
+  date_display: Wednesday, October 14, 1:15 PM ET
   event_url: ''
+  start_iso: '2026-10-14T17:15:00Z'
 - title: CSDC Breakfast 🥐
-  date_display: Thursday, August 6, 10:30 AM ET
+  date_display: Thursday, October 15, 10:30 AM ET
   event_url: ''
+  start_iso: '2026-10-15T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, October 21, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-10-21T17:15:00Z'
+past_events:
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, October 1, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-10-01T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, September 30, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-09-30T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, September 24, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-09-24T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, September 23, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-09-23T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, September 17, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-09-17T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, September 16, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-09-16T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, September 10, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-09-10T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, September 9, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-09-09T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, September 3, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-09-03T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, September 2, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-09-02T17:15:00Z'
+- title: GESIS Fall Seminar in Computational Social Science 2026
+  date_display: Monday, August 31, 5:00 AM ET
+  event_url: ''
+  start_iso: '2026-08-31T09:00:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, August 27, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-08-27T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, August 26, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-08-26T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, August 20, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-08-20T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, August 19, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-08-19T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, August 13, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-08-13T14:30:00Z'
 - title: CSDC Lab
   date_display: Wednesday, August 12, 1:15 PM ET
   event_url: ''
+  start_iso: '2026-08-12T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, August 6, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-08-06T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, August 5, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-08-05T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, July 30, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-07-30T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, July 29, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-07-29T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, July 23, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-07-23T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, July 22, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-07-22T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, July 16, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-07-16T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, July 15, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-07-15T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, July 9, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-07-09T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, July 8, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-07-08T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, July 2, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-07-02T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, July 1, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-07-01T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, June 25, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-06-25T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, June 24, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-06-24T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, June 18, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-06-18T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, June 17, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-06-17T17:15:00Z'
+- title: Visit of the CSDC Director, Prof. Thierry Giasson
+  date_display: Wednesday, June 17, 11:00 AM ET
+  event_url: ''
+  start_iso: '2026-06-17T15:00:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, June 11, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-06-11T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, June 10, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-06-10T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, June 4, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-06-04T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, June 3, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-06-03T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, May 28, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-05-28T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, May 27, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-05-27T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, May 21, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-05-21T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, May 20, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-05-20T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, May 14, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-05-14T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, May 13, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-05-13T17:15:00Z'
+- title: Agents in Research
+  date_display: Monday, May 11, 3:00 PM ET
+  event_url: ''
+  start_iso: '2026-05-11T19:00:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, May 7, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-05-07T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, May 6, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-05-06T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, April 30, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-04-30T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, April 29, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-04-29T17:15:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, April 23, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-04-23T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, April 22, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-04-22T17:15:00Z'
+- title: Studying Political Actors on Social Media – Current Challenges and Opportunities
+  date_display: Friday, April 17, 3:00 PM ET
+  event_url: ''
+  start_iso: '2026-04-17T19:00:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, April 16, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-04-16T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, April 15, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-04-15T17:15:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, April 15, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-04-15T17:15:00Z'
+- title: Perspectives on democratic backsliding
+  date_display: Thursday, April 9, 12:00 PM ET
+  event_url: ''
+  start_iso: '2026-04-09T16:00:00Z'
+- title: CSDC Breakfast 🥐
+  date_display: Thursday, April 9, 10:30 AM ET
+  event_url: ''
+  start_iso: '2026-04-09T14:30:00Z'
+- title: CSDC Lab
+  date_display: Wednesday, April 8, 1:15 PM ET
+  event_url: ''
+  start_iso: '2026-04-08T17:15:00Z'
+- title: Ballot Box or Tinder Box? Examining Online Voting in Ontario Cities
+  date_display: Friday, March 13, 3:00 PM ET
+  event_url: ''
+  start_iso: '2026-03-13T19:00:00Z'
+- title: 'Against the Tide: Immigrant Agency and the Transformation of Local Politics'
+  date_display: Friday, February 13, 3:00 PM ET
+  event_url: ''
+  start_iso: '2026-02-13T20:00:00Z'
+- title: Why do Latin American Citizens Support Populist Presidents?
+  date_display: Friday, January 16, 3:00 PM ET
+  event_url: ''
+  start_iso: '2026-01-16T20:00:00Z'
+- title: Comment les Québecois ont-ils évalués le leadership des chefs lors de l’élection
+    fédérale de 2025 ?
+  date_display: Thursday, November 20, 12:00 PM ET
+  event_url: ''
+  start_iso: '2025-11-20T17:00:00Z'
+- title: 'Populism and Political Trust: Evidence from Latin America'
+  date_display: Wednesday, November 5, 11:30 AM ET
+  event_url: ''
+  start_iso: '2025-11-05T16:30:00Z'
+- title: R Programming Summer Camp
+  date_display: Monday, August 18 (All day)
+  event_url: ''
+  start_iso: '2025-08-18T04:00:00Z'
+- title: Math Summer Camp
+  date_display: Monday, August 11 (All day)
+  event_url: ''
+  start_iso: '2025-08-11T04:00:00Z'
+- title: 'Workshop: Political Economy'
+  date_display: Friday, March 21, 1:30 PM ET
+  event_url: ''
+  start_iso: '2025-03-21T17:30:00Z'
+- title: CSDC Student and Postdoctoral Fellow Conference
+  date_display: Friday, February 21 (All day)
+  event_url: ''
+  start_iso: '2025-02-21T05:00:00Z'
+- title: 1st Transatlantic Political Economy Conference
+  date_display: Friday, October 25 (All day)
+  event_url: ''
+  start_iso: '2024-10-25T04:00:00Z'
+- title: Ethnic Diversity and Social Networks in German Secondary Schools
+  date_display: Friday, October 11, 3:00 PM ET
+  event_url: ''
+  start_iso: '2024-10-11T19:00:00Z'
+- title: The Toronto-Montreal Political Behaviour Workshop
+  date_display: Friday, September 27 (All day)
+  event_url: ''
+  start_iso: '2024-09-27T04:00:00Z'
+- title: R Programming Summer Camp 2024
+  date_display: Monday, August 19 (All day)
+  event_url: ''
+  start_iso: '2024-08-19T04:00:00Z'
+- title: Math Summer Camp 2024
+  date_display: Monday, August 12 (All day)
+  event_url: ''
+  start_iso: '2024-08-12T04:00:00Z'
+- title: 'Liberal Agentic Citizenship, its Global Reach and Limitations: Europe and
+    China Comparisons'
+  date_display: Friday, February 16, 2:00 PM ET
+  event_url: ''
+  start_iso: '2024-02-16T19:00:00Z'
+- title: 'Overcoming Barriers to Political Participation and Representation: Evidence
+    from Natural Experiments'
+  date_display: Friday, January 12, 2:00 PM ET
+  event_url: ''
+  start_iso: '2024-01-12T19:00:00Z'
