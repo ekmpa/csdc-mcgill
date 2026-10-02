@@ -91,3 +91,101 @@ html.js .csdc-reveal.is-visible .csdc-stagger > * {
     animation: none;
   }
 }
+
+// ---- Modern hover feedback (no hover underlines) ----------------------------
+// Imported after the base theme, so these override the older "reveal an
+// underline on hover" behaviour. Buttons and CTAs now lift / grow slightly and
+// shift colour on hover, which reads more modern and intentional.
+
+// Buttons: drop the underline, lift + grow a touch on hover.
+.csdc-btn {
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease,
+    background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.csdc-btn:hover,
+.csdc-btn:focus-visible {
+  text-decoration: none;
+  transform: translateY(-1px) scale(1.02);
+}
+
+.csdc-btn-primary:hover,
+.csdc-btn-primary:focus-visible {
+  background: $csdc-red-deep;
+  box-shadow: 0 6px 16px rgba(200, 16, 46, 0.25);
+}
+
+.csdc-btn-secondary:hover,
+.csdc-btn-secondary:focus-visible {
+  background: #dfe3e8;
+  box-shadow: $csdc-shadow-md;
+}
+
+// Outline button: grow + fill with a hint of brand red (was shrinking before).
+.csdc-actions .csdc-btn-outline:hover,
+.csdc-actions .csdc-btn-outline:focus-visible {
+  transform: translateY(-1px) scale(1.02);
+  border-color: $csdc-red;
+  color: $csdc-red;
+  background: rgba(200, 16, 46, 0.05);
+}
+
+.csdc-actions .csdc-btn-outline:hover .csdc-btn-outline-label,
+.csdc-actions .csdc-btn-outline:focus-visible .csdc-btn-outline-label {
+  transform: none;
+}
+
+// Text CTAs and card-title links: colour-shift instead of underline.
+.csdc-events-cta,
+.csdc-arrow-link,
+.csdc-paper-highlight-title {
+  text-decoration: none;
+}
+
+.csdc-events-cta:hover,
+.csdc-events-cta:focus-visible {
+  text-decoration: none;
+  color: $csdc-red-deep;
+  transform: translateY(-1px) scale(1.02);
+}
+
+.csdc-paper-highlight-title:hover,
+.csdc-paper-highlight-title:focus-visible,
+.csdc-axis-highlights-list a:hover,
+.csdc-axis-highlights-list a:focus {
+  text-decoration: none;
+  color: $csdc-red-deep;
+}
+
+// Arrow link: no underline; nudge the arrow glyph on hover.
+.csdc-arrow-link [aria-hidden="true"] {
+  display: inline-block;
+  transition: transform 0.18s ease;
+}
+
+.csdc-arrow-link:hover,
+.csdc-arrow-link:focus-visible {
+  text-decoration: none;
+  color: $csdc-red-deep;
+}
+
+.csdc-arrow-link:hover [aria-hidden="true"],
+.csdc-arrow-link:focus-visible [aria-hidden="true"] {
+  transform: translateX(3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .csdc-btn:hover,
+  .csdc-btn:focus-visible,
+  .csdc-actions .csdc-btn-outline:hover,
+  .csdc-actions .csdc-btn-outline:focus-visible,
+  .csdc-events-cta:hover,
+  .csdc-events-cta:focus-visible {
+    transform: none;
+  }
+  .csdc-arrow-link:hover [aria-hidden="true"],
+  .csdc-arrow-link:focus-visible [aria-hidden="true"] {
+    transform: none;
+  }
+}
