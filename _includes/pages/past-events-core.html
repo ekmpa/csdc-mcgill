@@ -1,0 +1,157 @@
+{% assign lang = include.lang | default: page.lang_code | default: 'en' %}
+{% assign t = site.data.site_text[lang] %}
+{% assign is_fr = false %}
+{% if lang == 'fr' or lang contains 'fr-' %}
+    {% assign is_fr = true %}
+{% endif %}
+{% assign pe = t.events.past_events %}
+
+{% assign now_ts = 'now' | date: '%s' %}
+{% assign generated_year = site.data.events.generated_at | date: '%Y' %}
+{% assign past_event_entries = '' | split: '' %}
+{% assign source_events = site.data.events.past_events | default: site.data.events.upcoming_events %}
+
+{% for event in source_events %}
+    {% assign event_iso = event.start_iso | default: '' | slice: 0, 10 %}
+    {% assign event_year = event.start_iso | default: '' | slice: 0, 4 %}
+
+    {% if event_iso == '' %}
+        {% assign date_parts = event.date_display | split: ',' %}
+        {% assign month_day_part = date_parts[1] | default: '' | strip %}
+        {% assign month_day_tokens = month_day_part | split: ' ' %}
+        {% assign month_name = month_day_tokens[0] | default: '' | strip %}
+        {% assign day_token = month_day_tokens[1] | default: '1' | remove: '.' %}
+        {% assign month_num = '' %}
+        {% case month_name %}
+            {% when 'January' %}{% assign month_num = '01' %}
+            {% when 'February' %}{% assign month_num = '02' %}
+            {% when 'March' %}{% assign month_num = '03' %}
+            {% when 'April' %}{% assign month_num = '04' %}
+            {% when 'May' %}{% assign month_num = '05' %}
+            {% when 'June' %}{% assign month_num = '06' %}
+            {% when 'July' %}{% assign month_num = '07' %}
+            {% when 'August' %}{% assign month_num = '08' %}
+            {% when 'September' %}{% assign month_num = '09' %}
+            {% when 'October' %}{% assign month_num = '10' %}
+            {% when 'November' %}{% assign month_num = '11' %}
+            {% when 'December' %}{% assign month_num = '12' %}
+        {% endcase %}
+
+        {% if month_num != '' %}
+            {% assign day_number = day_token | plus: 0 %}
+            {% assign day_padded = day_number | prepend: '00' | slice: -2, 2 %}
+            {% assign event_iso = generated_year | append: '-' | append: month_num | append: '-' | append: day_padded %}
+            {% assign event_year = generated_year %}
+        {% endif %}
+    {% endif %}
+
+    {% if event_iso != '' and event_year != '' %}
+        {% assign event_ts = event_iso | date: '%s' %}
+        {% if event_ts <= now_ts %}
+            {% assign event_entry = event_year | append: '::' | append: event_iso | append: '::' | append: event.title | append: '::' | append: event.date_display %}
+            {% assign past_event_entries = past_event_entries | push: event_entry %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+{% assign sorted_past_event_entries = past_event_entries | sort | reverse %}
+{% assign base_year = generated_year | plus: 0 %}
+{% assign year_current = base_year | append: '' %}
+{% assign year_minus_1 = base_year | minus: 1 | append: '' %}
+{% assign year_minus_2 = base_year | minus: 2 | append: '' %}
+{% assign text_year_targets = '' | split: '' %}
+{% assign text_year_targets = text_year_targets | push: year_current %}
+{% assign text_year_targets = text_year_targets | push: year_minus_1 %}
+{% assign text_year_targets = text_year_targets | push: year_minus_2 %}
+
+{% assign past_photos = site.data.past_events_photos %}
+
+<div class="csdc-page csdc-events-page">
+<section class="csdc-section csdc-page-header">
+    <div class="csdc-container">
+        <p class="csdc-kicker"><span class="csdc-red">{{ t.home.headers.events_kicker }}</span></p>
+        <h1 id="page-title" class="page__title csdc-page-title">{{ page.title }}</h1>
+    </div>
+</section>
+
+<section class="csdc-section csdc-past-events-gallery-section">
+    <div class="csdc-container">
+        <div class="csdc-pe-list">
+            {% for year_value in text_year_targets %}
+                {% unless year_value == nil or year_value == '' or year_value == 'YYYY' %}
+                {% assign year_start = year_value | append: '-01-01' %}
+                {% assign year_end = year_value | append: '-12-31' %}
+                {% assign img_index_a = forloop.index0 | times: 2 %}
+                {% assign img_index_b = img_index_a | plus: 1 %}
+                {% assign photo_a = past_photos[img_index_a] %}
+                {% assign photo_b = past_photos[img_index_b] %}
+                {% if is_fr %}
+                    {% assign cap_a = photo_a.caption_fr | default: photo_a.caption_en %}
+                    {% assign cap_b = photo_b.caption_fr | default: photo_b.caption_en %}
+                {% else %}
+                    {% assign cap_a = photo_a.caption_en %}
+                    {% assign cap_b = photo_b.caption_en %}
+                {% endif %}
+                {% assign row_side = forloop.index0 | modulo: 2 %}
+
+                <article class="csdc-pe-year{% if row_side == 1 %} csdc-pe-year--right{% endif %}">
+                    <div class="csdc-pe-text">
+                        <h2 class="csdc-pe-text-title">{{ pe.events_in }} {{ year_value }}</h2>
+                        {% assign year_event_count = 0 %}
+                        <ul class="csdc-pe-year-list">
+                            {% for event_entry in sorted_past_event_entries %}
+                                {% assign event_parts = event_entry | split: '::' %}
+                                {% assign event_iso = event_parts[1] %}
+                                {% assign event_title = event_parts[2] %}
+                                {% assign event_display = event_parts[3] %}
+                                {% if event_iso >= year_start and event_iso <= year_end %}
+                                    {% assign year_event_count = year_event_count | plus: 1 %}
+                                    <li>
+                                        <span class="csdc-pe-year-list-title">{{ event_title }}</span>
+                                        <span class="csdc-pe-year-list-date">{{ event_display }}</span>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                        {% if year_event_count == 0 %}
+                        <p class="csdc-pe-empty">{{ pe.empty }}</p>
+                        {% endif %}
+                    </div>
+                    {% if photo_a.src %}
+                    <figure class="csdc-pe-photo csdc-pe-photo--a" tabindex="0">
+                        <img loading="lazy" src="{{ photo_a.src | relative_url }}" alt="{{ cap_a | default: pe.photo_alt }}">
+                        {% if cap_a and cap_a != '' %}<figcaption class="csdc-pe-photo-caption">{{ cap_a }}</figcaption>{% endif %}
+                    </figure>
+                    {% endif %}
+                    {% if photo_b.src %}
+                    <figure class="csdc-pe-photo csdc-pe-photo--b" tabindex="0">
+                        <img loading="lazy" src="{{ photo_b.src | relative_url }}" alt="{{ cap_b | default: pe.photo_alt }}">
+                        {% if cap_b and cap_b != '' %}<figcaption class="csdc-pe-photo-caption">{{ cap_b }}</figcaption>{% endif %}
+                    </figure>
+                    {% endif %}
+                </article>
+                {% endunless %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+</div>
+
+<script>
+(() => {
+    const cards = document.querySelectorAll('.csdc-pe-text');
+    cards.forEach((card) => {
+        const list = card.querySelector('.csdc-pe-year-list');
+        if (!list) { return; }
+        const update = () => {
+            const scrollable = list.scrollHeight - list.clientHeight > 2;
+            card.classList.toggle('is-scrollable', scrollable);
+            const atBottom = list.scrollTop + list.clientHeight >= list.scrollHeight - 2;
+            card.classList.toggle('is-scrolled-bottom', atBottom);
+        };
+        update();
+        list.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+    });
+})();
+</script>

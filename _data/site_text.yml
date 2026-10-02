@@ -7,6 +7,7 @@ en:
       cta_research: "Our Research"
       cta_events: "View Upcoming Events"
       cta_news: "See Recent News"
+      cta_past_events: "Past Events"
     research:
       heading: "Our Research Focus"
       subtitle: "At the CSDC, we work on:"
@@ -67,6 +68,10 @@ en:
     calendar_title: "Upcoming Events"
     contact_note: "For location or questions,"
     contact_link: "contact us"
+    past_events:
+      events_in: "Events in"
+      empty: "No archived events are currently listed for this year."
+      photo_alt: "CSDC past event snapshot"
   footer:
     description: "The McGill chapter of the CSDC unites an interdisciplinary community to produce rigorous, mixed method research, train future scholars, and build public partnerships that strengthen democratic citizenship in Quebec, Canada, and beyond."
     contact_link: "Contact us"
@@ -86,6 +91,7 @@ fr:
       cta_research: "Notre recherche"
       cta_events: "Voir les événements"
       cta_news: "Voir les actualités"
+      cta_past_events: "Évènements passés"
     research:
       heading: "Nos axes de recherche"
       subtitle: "Au CÉCD, nous travaillons sur :"
@@ -146,6 +152,10 @@ fr:
     calendar_title: "Événements à venir"
     contact_note: "Pour les lieux où questions,"
     contact_link: "contactez-nous"
+    past_events:
+      events_in: "Événements en"
+      empty: "Aucun événement archivé n'est répertorié pour cette année pour le moment."
+      photo_alt: "Photo d'un événement passé du CÉCD"
   footer:
     description: "Le chapitre McGill du CÉCD rassemble une communauté interdisciplinaire afin de mener des recherches rigoureuses en méthodes mixtes, former la relève et développer des partenariats publics qui renforcent la citoyenneté démocratique au Québec, au Canada et au-delà."
     contact_link: "Contactez-nous"

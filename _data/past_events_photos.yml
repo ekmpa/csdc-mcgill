@@ -1,0 +1,30 @@
+# Photos shown on the Past Events page (/events/past-events/ and /fr/events/past-events/).
+# Rendered two per year, in order. Each entry carries an English and a French
+# caption; the page shows the one matching the current language on hover.
+- src: "/assets/images/past/20260321_152348.jpg"
+  caption_en: "CSDC Student Conference in Québec City, March 2026. Luisa Hinke Martinez received the prize for Best MA Presentation. From left to right: Thais Estrella, Luisa Hinke Martinez, Anne Imouza."
+  caption_fr: "Conférence étudiante du CÉCD à Québec, en mars 2026. Luisa Hinke Martinez a reçu le prix de la meilleure présentation à la maîtrise. De gauche à droite : Thais Estrella, Luisa Hinke Martinez, Anne Imouza."
+
+- src: "/assets/images/past/20260826_130117.jpg"
+  caption_en: "Welcome lunch at Thomson House. From left to right: David Dube, Gavriil Fakiih, Eliza Yip, Anne Imouza, Eric Belanger, Dietlind Stolle, Rafael Campos-Gottardo, Natalie Delmonte, Alan Nemirovski, Mark Williamson, Borna Atrchian, Leesak An, Teresa Pian, Victoria Mahon."
+  caption_fr: "Dîner de bienvenue à la Thomson House. De gauche à droite : David Dube, Gavriil Fakiih, Eliza Yip, Anne Imouza, Eric Belanger, Dietlind Stolle, Rafael Campos-Gottardo, Natalie Delmonte, Alan Nemirovski, Mark Williamson, Borna Atrchian, Leesak An, Teresa Pian, Victoria Mahon."
+
+- src: "/assets/images/past/p3.jpeg"
+  caption_en: "The CSDC group at the Department holiday party in 2025 at Thomson House. From left to right: Eliza Yip, Kael Kropp, Victoria Mahon, Borna Atrchian, Dietlind Stolle, Anne Imouza, Teresa Pian, Luisa Hinke Martinez and others."
+  caption_fr: "Le groupe du CÉCD à la fête de fin d'année du Département en 2025, à la Thomson House. De gauche à droite : Eliza Yip, Kael Kropp, Victoria Mahon, Borna Atrchian, Dietlind Stolle, Anne Imouza, Teresa Pian, Luisa Hinke Martinez et autres."
+
+- src: "/assets/images/past/pic1.jpg"
+  caption_en: "The CSDC goes on a bowling outing — yes, because of Bowling Alone. From left to right: Luisa Hinke Martinez, Alan Nemirovski, Borna Atrchian, Rafael Campos-Gottardo, Anne Imouza, Dietlind Stolle, Teresa Pian, Victoria Mahon, Natalie Delmonte, Arianna Bondi."
+  caption_fr: "Le CÉCD part en sortie de quilles — oui, à cause de Bowling Alone. De gauche à droite : Luisa Hinke Martinez, Alan Nemirovski, Borna Atrchian, Rafael Campos-Gottardo, Anne Imouza, Dietlind Stolle, Teresa Pian, Victoria Mahon, Natalie Delmonte, Arianna Bondi."
+
+- src: "/assets/images/past/Messenger_creation_13592e8f-6b56-43a8-87a5-916562c75a49 (1).jpeg"
+  caption_en: "CSDC social event to celebrate the end of the 2024 academic year. From left to right: John Hicks, Rupinder Liddar, Danielle Bohonos, Lawrence Plastina, Tess Pian, Victoria Mahon, Anne Imouza, Brendan Szendro, Dietlind Stolle, Marie Seestedt, Isaac Noveck, Rafael Campos-Gottardo, Arianna Bondi, Thomas Garreau-Paquette, Dinara Karimova, Pratik Mahajan, Aaron Erlich and his children."
+  caption_fr: "Activité sociale du CÉCD pour célébrer la fin de l'année universitaire 2024. De gauche à droite : John Hicks, Rupinder Liddar, Danielle Bohonos, Lawrence Plastina, Tess Pian, Victoria Mahon, Anne Imouza, Brendan Szendro, Dietlind Stolle, Marie Seestedt, Isaac Noveck, Rafael Campos-Gottardo, Arianna Bondi, Thomas Garreau-Paquette, Dinara Karimova, Pratik Mahajan, Aaron Erlich et ses enfants."
+
+- src: "/assets/images/past/20241022_175954 (1).jpg"
+  caption_en: "CSDC social event in Fall 2023. From left to right: Ayhan Eren Babyigit, Zekai Lu, Natalie Delmonte, Rafael Campos-Gottardo, Nicolas Vaxelaire, Anne Imouza, Luisa Hinke Martinez, Tess Pian, Isaac Noveck, Victoria Mahon, Minna Fisher, Brooke Steinhauer, Kael Kropp, Dietlind Stolle, Brendan Szendro and Fajr Al-Sayed."
+  caption_fr: "Activité sociale du CÉCD à l'automne 2023. De gauche à droite : Ayhan Eren Babyigit, Zekai Lu, Natalie Delmonte, Rafael Campos-Gottardo, Nicolas Vaxelaire, Anne Imouza, Luisa Hinke Martinez, Tess Pian, Isaac Noveck, Victoria Mahon, Minna Fisher, Brooke Steinhauer, Kael Kropp, Dietlind Stolle, Brendan Szendro et Fajr Al-Sayed."
+
+- src: "/assets/images/past/pic3.jpg"
+  caption_en: "Winners of our CSDC bowling social event. From left to right: Anne Imouza, Borna Atrchian, Tess Pian and Brendan Szendro."
+  caption_fr: "Gagnants de notre soirée de quilles du CÉCD. De gauche à droite : Anne Imouza, Borna Atrchian, Tess Pian et Brendan Szendro."
