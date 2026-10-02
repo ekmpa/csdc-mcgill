@@ -210,7 +210,7 @@ show_taxonomy_posts: false
                   <h4 class="csdc-card-title" style="margin-bottom:0.3rem;"><a href="{{ post.url | relative_url }}">{{ clean_title }}</a></h4>
                   {% if post.names %}<p style="margin:0.2rem 0;">{{ post.names }}</p>{% endif %}
                   {% if post.venue %}<p style="margin:0.2rem 0; color:#6b7280;">{{ post.venue }}</p>{% endif %}
-                  {% if post.link %}<p style="margin:0.35rem 0 0;"><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">Lien vers la publication</a></p>{% endif %}
+                  {% if post.link %}<p style="margin:0.35rem 0 0;"><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">Lien</a></p>{% endif %}
                 </article>
                 {% endif %}
                 {% endif %}
