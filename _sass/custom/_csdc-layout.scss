@@ -1,0 +1,93 @@
+// =============================================================
+// CSDC layout polish: coherent section titles, spacing rhythm, and
+// on-scroll reveal animation. Loaded after the base theme so it can
+// harmonize headings/spacing across pages.
+// =============================================================
+
+// ---- Coherent section titles ------------------------------------------------
+// A single treatment for in-page section headings: left-aligned, medium-weight,
+// with a short brand-red accent rule. Use on <h2> section headers.
+.csdc-section-title {
+  position: relative;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.7rem;
+  color: $csdc-ink;
+  font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.csdc-section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2.5rem;
+  height: 3px;
+  border-radius: 2px;
+  background: $csdc-red;
+}
+
+// Optional eyebrow/kicker label above a section title.
+.csdc-section-eyebrow {
+  margin: 0 0 0.45rem;
+  color: $csdc-red;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+// Centered variant for sections that read better centered (hero-adjacent bands).
+.csdc-section-title--center {
+  text-align: center;
+  padding-bottom: 0.85rem;
+}
+
+.csdc-section-title--center::after {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3rem;
+}
+
+// ---- On-scroll reveal -------------------------------------------------------
+// Gated on `html.js` so no-JS users always see content; disabled under
+// reduced-motion. JS adds `.is-visible` when the element scrolls into view.
+html.js .csdc-reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+html.js .csdc-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+// Light stagger for grids of cards that reveal together.
+html.js .csdc-reveal.is-visible .csdc-stagger > * {
+  animation: csdc-fade-in-up 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@for $i from 1 through 8 {
+  html.js .csdc-reveal.is-visible .csdc-stagger > *:nth-child(#{$i}) {
+    animation-delay: #{0.06s * $i};
+  }
+}
+
+@keyframes csdc-fade-in-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js .csdc-reveal,
+  html.js .csdc-reveal.is-visible .csdc-stagger > * {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    animation: none;
+  }
+}

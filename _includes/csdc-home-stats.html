@@ -39,19 +39,19 @@
       <div class="csdc-home-team-stats-grid">
         <article class="csdc-home-team-stat">
           <a class="csdc-home-team-stat-link" href="{{ base | append: '/people/' | relative_url }}" aria-label="{{ t.home.stats.members }}">
-            <div class="csdc-home-team-stat-number">{{ members_display }}+</div>
+            <div class="csdc-home-team-stat-number" data-count-to="{{ members_display }}" data-count-suffix="+">{{ members_display }}+</div>
             <p class="csdc-home-team-stat-label">{{ t.home.stats.members }}</p>
           </a>
         </article>
         <article class="csdc-home-team-stat">
           <a class="csdc-home-team-stat-link" href="{{ base | append: '/people/' | relative_url }}" aria-label="{{ t.home.stats.alumni }}">
-            <div class="csdc-home-team-stat-number">{{ alumni_display }}+</div>
+            <div class="csdc-home-team-stat-number" data-count-to="{{ alumni_display }}" data-count-suffix="+">{{ alumni_display }}+</div>
             <p class="csdc-home-team-stat-label">{{ t.home.stats.alumni }}</p>
           </a>
         </article>
         <article class="csdc-home-team-stat">
           <a class="csdc-home-team-stat-link" href="{{ base | append: '/research/' | relative_url }}" aria-label="{{ t.home.stats.publications }}">
-            <div class="csdc-home-team-stat-number">{{ publications_display }}+</div>
+            <div class="csdc-home-team-stat-number" data-count-to="{{ publications_display }}" data-count-suffix="+">{{ publications_display }}+</div>
             <p class="csdc-home-team-stat-label">{{ t.home.stats.publications }}</p>
           </a>
         </article>
