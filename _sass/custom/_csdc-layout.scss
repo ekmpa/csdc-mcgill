@@ -242,7 +242,8 @@ html.js .csdc-reveal.is-visible .csdc-stagger > * {
 // ---- Past-events photo strip (on the Events page) ---------------------------
 // A centered "Past Events" title above a horizontally auto-scrolling row of
 // photos (a film strip). The whole block links into the archive; the marquee
-// pauses on hover and is disabled under reduced-motion.
+// keeps scrolling, and on hover the title + the hovered photo grow as a
+// call-to-action. Disabled under reduced-motion.
 .csdc-pe-strip-section {
   display: block;
   margin-top: 2.75rem;
@@ -255,6 +256,14 @@ html.js .csdc-reveal.is-visible .csdc-stagger > * {
   letter-spacing: 0.1em;
   font-size: clamp(1rem, 1.7vw, 1.2rem);
   font-weight: 700;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+// Hovering the teaser enlarges + tints the title to invite a click.
+.csdc-pe-strip-section:hover .csdc-pe-strip-title,
+.csdc-pe-strip-section:focus-visible .csdc-pe-strip-title {
+  transform: scale(1.07);
+  color: $csdc-red;
 }
 
 .csdc-pe-strip {
@@ -269,14 +278,10 @@ html.js .csdc-reveal.is-visible .csdc-stagger > * {
   animation: csdc-marquee 48s linear infinite;
 }
 
-.csdc-pe-strip-section:hover .csdc-pe-strip-track,
-.csdc-pe-strip-section:focus-visible .csdc-pe-strip-track {
-  animation-play-state: paused;
-}
-
 // Scoped with .csdc-pe-strip to beat the theme's `.csdc-page img` rule
 // (which otherwise forces height:auto / max-width:100% and blows these up).
 .csdc-pe-strip .csdc-pe-strip-img {
+  position: relative;
   flex: 0 0 auto;
   height: clamp(9rem, 15vw, 12rem);
   width: auto;
@@ -286,11 +291,14 @@ html.js .csdc-reveal.is-visible .csdc-stagger > * {
   border-radius: $csdc-radius;
   box-shadow: $csdc-shadow-sm;
   object-fit: cover;
-  transition: box-shadow 0.25s ease;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
 }
 
-.csdc-pe-strip-section:hover .csdc-pe-strip-img {
-  box-shadow: $csdc-shadow-md;
+// The photo under the cursor grows and lifts (the strip keeps scrolling).
+.csdc-pe-strip .csdc-pe-strip-img:hover {
+  transform: scale(1.09);
+  box-shadow: $csdc-shadow-lg;
+  z-index: 2;
 }
 
 @keyframes csdc-marquee {
