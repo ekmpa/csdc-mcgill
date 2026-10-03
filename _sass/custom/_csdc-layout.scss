@@ -278,7 +278,7 @@ html.js .csdc-reveal.is-visible .csdc-stagger > * {
 .csdc-pe-strip-track {
   display: flex;
   width: max-content;
-  animation: csdc-marquee 48s linear infinite;
+  animation: csdc-marquee 20s linear infinite;
 }
 
 // Scoped with .csdc-pe-strip to beat the theme's `.csdc-page img` rule
