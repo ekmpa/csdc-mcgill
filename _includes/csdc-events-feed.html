@@ -14,9 +14,17 @@
     {% if page_url == '/events/' or page_url == '/fr/events/' %}
     {% assign past_events_url = '/events/past-events/' %}
     {% if lang == 'fr' %}{% assign past_events_url = '/fr/events/past-events/' %}{% endif %}
-    <div class="csdc-past-events-cta-wrap">
-      <a class="csdc-btn csdc-past-events-cta" href="{{ past_events_url | relative_url }}">{{ t.home.hero.cta_past_events }}</a>
-    </div>
+    <a class="csdc-pe-carousel" href="{{ past_events_url | relative_url }}" aria-label="{{ t.events.past_events.carousel_cta }}">
+      <div class="csdc-pe-carousel-track" data-pe-carousel>
+        {% for photo in site.data.past_events_photos limit: 6 %}
+        <img class="csdc-pe-carousel-slide{% if forloop.first %} is-active{% endif %}" loading="lazy" src="{{ photo.src | relative_url }}" alt="" aria-hidden="true">
+        {% endfor %}
+      </div>
+      <div class="csdc-pe-carousel-overlay">
+        <span class="csdc-pe-carousel-kicker">{{ t.events.past_events.in_pictures }}</span>
+        <span class="csdc-pe-carousel-cta">{{ t.events.past_events.carousel_cta }}<span class="csdc-pe-carousel-arrow" aria-hidden="true">&rarr;</span></span>
+      </div>
+    </a>
     {% endif %}
   </div>
 </section>
