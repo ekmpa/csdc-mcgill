@@ -83,23 +83,4 @@
       revealObserver.observe(el);
     });
   }
-
-  /* ---- Past-events teaser carousel: auto-rotate the slides ---- */
-  var carousels = Array.prototype.slice.call(
-    document.querySelectorAll("[data-pe-carousel]")
-  );
-  carousels.forEach(function (track) {
-    var slides = Array.prototype.slice.call(
-      track.querySelectorAll(".csdc-pe-carousel-slide")
-    );
-    if (slides.length < 2 || reduceMotion) {
-      return;
-    }
-    var index = 0;
-    window.setInterval(function () {
-      slides[index].classList.remove("is-active");
-      index = (index + 1) % slides.length;
-      slides[index].classList.add("is-active");
-    }, 4500);
-  });
 })();
