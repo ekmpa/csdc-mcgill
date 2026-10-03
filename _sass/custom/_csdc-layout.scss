@@ -189,3 +189,52 @@ html.js .csdc-reveal.is-visible .csdc-stagger > * {
     transform: none;
   }
 }
+
+// Navigation, footer, breadcrumbs, and link-style UI: drop hover underlines
+// (article-body prose links keep theirs, which is conventional there).
+.nav__list a:hover,
+.nav__list a:focus,
+.csdc-nav-link:hover,
+.csdc-nav-link:focus,
+.page__footer a:hover,
+.page__footer a:focus,
+.csdc-footer-door-panel a:hover,
+.csdc-footer-door-panel a:focus,
+.breadcrumbs .breadcrumb-item a:hover,
+.breadcrumbs .breadcrumb-item a:focus,
+.publication-ext-link:hover,
+.publication-ext-link:focus,
+.author__urls a:hover,
+.author__urls a:focus {
+  text-decoration: none;
+}
+
+// News "read more" and team banner used the underline-reveal trick — swap for
+// a colour shift + arrow nudge.
+.csdc-news-read-more,
+.csdc-team-banner-label {
+  text-decoration: none;
+}
+
+.csdc-news-read-more:hover,
+.csdc-news-read-more:focus-visible {
+  text-decoration: none;
+  color: $csdc-red-deep;
+}
+
+.csdc-news-read-more-arrow {
+  display: inline-block;
+  transition: transform 0.18s ease;
+}
+
+.csdc-news-read-more:hover .csdc-news-read-more-arrow,
+.csdc-news-read-more:focus-visible .csdc-news-read-more-arrow {
+  transform: translateX(3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .csdc-news-read-more:hover .csdc-news-read-more-arrow,
+  .csdc-news-read-more:focus-visible .csdc-news-read-more-arrow {
+    transform: none;
+  }
+}
