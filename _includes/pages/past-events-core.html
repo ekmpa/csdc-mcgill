@@ -48,8 +48,13 @@
     {% if event_iso != '' and event_year != '' %}
         {% assign event_ts = event_iso | date: '%s' %}
         {% if event_ts <= now_ts %}
+            {% comment %} Skip the weekly recurring CSDC Lab / Breakfast so the
+            archive highlights seminars, talks, and notable events. {% endcomment %}
+            {% assign title_check = event.title | downcase %}
+            {% unless title_check contains 'csdc lab' or title_check contains 'csdc breakfast' %}
             {% assign event_entry = event_year | append: '::' | append: event_iso | append: '::' | append: event.title | append: '::' | append: event.date_display %}
             {% assign past_event_entries = past_event_entries | push: event_entry %}
+            {% endunless %}
         {% endif %}
     {% endif %}
 {% endfor %}
