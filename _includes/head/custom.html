@@ -27,3 +27,7 @@
 
 <!-- CSDC subtle motion (count-up stats + on-scroll reveals) -->
 <script defer src="{{ '/assets/js/csdc-animations.js' | relative_url }}"></script>
+
+<!-- Cache-busted stylesheet: loads after the theme's main.css and re-fetches it
+     with a per-build version so CSS changes always show (no stale cache). -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
