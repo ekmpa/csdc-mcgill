@@ -268,6 +268,9 @@ html.js .csdc-reveal.is-visible .csdc-stagger > * {
 
 .csdc-pe-strip {
   overflow: hidden;
+  // Vertical breathing room so a hovered photo can grow without being clipped
+  // (which would square off its rounded corners).
+  padding: 1.1rem 0;
   -webkit-mask-image: linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%);
   mask-image: linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%);
 }
@@ -294,9 +297,9 @@ html.js .csdc-reveal.is-visible .csdc-stagger > * {
   transition: transform 0.28s ease, box-shadow 0.28s ease;
 }
 
-// The photo under the cursor grows and lifts (the strip keeps scrolling).
+// The photo under the cursor lifts and grows (the strip keeps scrolling).
 .csdc-pe-strip .csdc-pe-strip-img:hover {
-  transform: scale(1.09);
+  transform: translateY(-6px) scale(1.07);
   box-shadow: $csdc-shadow-lg;
   z-index: 2;
 }
