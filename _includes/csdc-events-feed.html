@@ -7,7 +7,7 @@
     <h2 class="csdc-card-title csdc-calendar-title">{{ t.events.calendar_title }}</h2>
     <div class="csdc-card csdc-calendar-card">
       <div class="csdc-calendar-embed">
-        <iframe src="https://calendar.google.com/calendar/embed?src=mcgillcsdc%40gmail.com&ctz=America%2FToronto&mode=WEEK" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?src=mcgillcsdc%40gmail.com&ctz=America%2FToronto&mode=WEEK" style="border: 0" width="800" height="600" frameborder="0" scrolling="no" loading="lazy"></iframe>
       </div>
     </div>
     <p class="csdc-calendar-note">{{ t.events.contact_note }} <a href="mailto:anne.imouza@mcgill.ca">{{ t.events.contact_link }}</a>.</p>
@@ -19,10 +19,10 @@
       <div class="csdc-pe-strip">
         <div class="csdc-pe-strip-track">
           {% for photo in site.data.past_events_photos %}
-          <img class="csdc-pe-strip-img" loading="lazy" src="{{ photo.src | relative_url }}" alt="">
+          <img class="csdc-pe-strip-img" loading="eager" decoding="async" src="{{ photo.src | replace: '/past/', '/past/thumb/' | relative_url }}" alt="">
           {% endfor %}
           {% for photo in site.data.past_events_photos %}
-          <img class="csdc-pe-strip-img" loading="lazy" src="{{ photo.src | relative_url }}" alt="" aria-hidden="true">
+          <img class="csdc-pe-strip-img" loading="eager" decoding="async" src="{{ photo.src | replace: '/past/', '/past/thumb/' | relative_url }}" alt="" aria-hidden="true">
           {% endfor %}
         </div>
       </div>

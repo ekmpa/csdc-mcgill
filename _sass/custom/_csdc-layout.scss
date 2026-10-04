@@ -279,6 +279,10 @@ html.js .csdc-reveal.is-visible .csdc-stagger > * {
   display: flex;
   width: max-content;
   animation: csdc-marquee 20s linear infinite;
+  // Keep the marquee on the compositor so first-load decoding of other
+  // content doesn't stutter it.
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 // Scoped with .csdc-pe-strip to beat the theme's `.csdc-page img` rule
