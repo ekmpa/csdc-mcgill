@@ -1233,6 +1233,15 @@ a.csdc-red:focus {
   padding-top: 1.05rem;
 }
 
+// Reserve equal title height so the bullet lists all start on the same line
+// (3-column layout only; titles wrap 2–3 lines). Titles stay top-aligned so
+// the slack sits below a short title rather than as a gap above it.
+@include breakpoint($large) {
+  .csdc-home-pillars-row .csdc-card .csdc-card-title {
+    min-height: 4em;
+  }
+}
+
 .csdc-home-research:not(.csdc-publications-focus-section) .csdc-home-pillars-row .csdc-card {
   background: rgba(254, 202, 202, 0.12);
   border: 1px solid #fecaca;
