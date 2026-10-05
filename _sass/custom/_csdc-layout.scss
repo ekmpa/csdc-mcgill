@@ -1,0 +1,325 @@
+// =============================================================
+// CSDC layout polish: coherent section titles, spacing rhythm, and
+// on-scroll reveal animation. Loaded after the base theme so it can
+// harmonize headings/spacing across pages.
+// =============================================================
+
+// ---- Coherent section titles ------------------------------------------------
+// A single treatment for in-page section headings: left-aligned, medium-weight,
+// with a short brand-red accent rule. Use on <h2> section headers.
+.csdc-section-title {
+  position: relative;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.7rem;
+  color: $csdc-ink;
+  font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.csdc-section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2.5rem;
+  height: 3px;
+  border-radius: 2px;
+  background: $csdc-red;
+}
+
+// Optional eyebrow/kicker label above a section title.
+.csdc-section-eyebrow {
+  margin: 0 0 0.45rem;
+  color: $csdc-red;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+// Centered variant for sections that read better centered (hero-adjacent bands).
+.csdc-section-title--center {
+  text-align: center;
+  padding-bottom: 0.85rem;
+}
+
+.csdc-section-title--center::after {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3rem;
+}
+
+// ---- On-scroll reveal -------------------------------------------------------
+// Gated on `html.js` so no-JS users always see content; disabled under
+// reduced-motion. JS adds `.is-visible` when the element scrolls into view.
+html.js .csdc-reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+html.js .csdc-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+// Light stagger for grids of cards that reveal together.
+html.js .csdc-reveal.is-visible .csdc-stagger > * {
+  animation: csdc-fade-in-up 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@for $i from 1 through 8 {
+  html.js .csdc-reveal.is-visible .csdc-stagger > *:nth-child(#{$i}) {
+    animation-delay: #{0.06s * $i};
+  }
+}
+
+@keyframes csdc-fade-in-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js .csdc-reveal,
+  html.js .csdc-reveal.is-visible .csdc-stagger > * {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    animation: none;
+  }
+}
+
+// ---- Modern hover feedback (no hover underlines) ----------------------------
+// Imported after the base theme, so these override the older "reveal an
+// underline on hover" behaviour. Buttons and CTAs now lift / grow slightly and
+// shift colour on hover, which reads more modern and intentional.
+
+// Buttons: drop the underline, lift + grow a touch on hover.
+.csdc-btn {
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease,
+    background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.csdc-btn:hover,
+.csdc-btn:focus-visible {
+  text-decoration: none;
+  transform: translateY(-1px) scale(1.02);
+}
+
+.csdc-btn-primary:hover,
+.csdc-btn-primary:focus-visible {
+  background: $csdc-red-deep;
+  box-shadow: 0 6px 16px rgba(200, 16, 46, 0.25);
+}
+
+.csdc-btn-secondary:hover,
+.csdc-btn-secondary:focus-visible {
+  background: #dfe3e8;
+  box-shadow: $csdc-shadow-md;
+}
+
+// Outline button: grow + fill with a hint of brand red (was shrinking before).
+.csdc-actions .csdc-btn-outline:hover,
+.csdc-actions .csdc-btn-outline:focus-visible {
+  transform: translateY(-1px) scale(1.02);
+  border-color: $csdc-red;
+  color: $csdc-red;
+  background: rgba(200, 16, 46, 0.05);
+}
+
+.csdc-actions .csdc-btn-outline:hover .csdc-btn-outline-label,
+.csdc-actions .csdc-btn-outline:focus-visible .csdc-btn-outline-label {
+  transform: none;
+}
+
+// Text CTAs and card-title links: colour-shift instead of underline.
+.csdc-events-cta,
+.csdc-arrow-link,
+.csdc-paper-highlight-title {
+  text-decoration: none;
+}
+
+.csdc-events-cta:hover,
+.csdc-events-cta:focus-visible {
+  text-decoration: none;
+  color: $csdc-red-deep;
+  transform: translateY(-1px) scale(1.02);
+}
+
+.csdc-paper-highlight-title:hover,
+.csdc-paper-highlight-title:focus-visible,
+.csdc-axis-highlights-list a:hover,
+.csdc-axis-highlights-list a:focus {
+  text-decoration: none;
+  color: $csdc-red-deep;
+}
+
+// Arrow link: no underline; nudge the arrow glyph on hover.
+.csdc-arrow-link [aria-hidden="true"] {
+  display: inline-block;
+  transition: transform 0.18s ease;
+}
+
+.csdc-arrow-link:hover,
+.csdc-arrow-link:focus-visible {
+  text-decoration: none;
+  color: $csdc-red-deep;
+}
+
+.csdc-arrow-link:hover [aria-hidden="true"],
+.csdc-arrow-link:focus-visible [aria-hidden="true"] {
+  transform: translateX(3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .csdc-btn:hover,
+  .csdc-btn:focus-visible,
+  .csdc-actions .csdc-btn-outline:hover,
+  .csdc-actions .csdc-btn-outline:focus-visible,
+  .csdc-events-cta:hover,
+  .csdc-events-cta:focus-visible {
+    transform: none;
+  }
+  .csdc-arrow-link:hover [aria-hidden="true"],
+  .csdc-arrow-link:focus-visible [aria-hidden="true"] {
+    transform: none;
+  }
+}
+
+// Navigation, footer, breadcrumbs, and link-style UI: drop hover underlines
+// (article-body prose links keep theirs, which is conventional there).
+.nav__list a:hover,
+.nav__list a:focus,
+.csdc-nav-link:hover,
+.csdc-nav-link:focus,
+.page__footer a:hover,
+.page__footer a:focus,
+.csdc-footer-door-panel a:hover,
+.csdc-footer-door-panel a:focus,
+.breadcrumbs .breadcrumb-item a:hover,
+.breadcrumbs .breadcrumb-item a:focus,
+.publication-ext-link:hover,
+.publication-ext-link:focus,
+.author__urls a:hover,
+.author__urls a:focus {
+  text-decoration: none;
+}
+
+// News "read more" and team banner used the underline-reveal trick — swap for
+// a colour shift + arrow nudge.
+.csdc-news-read-more,
+.csdc-team-banner-label {
+  text-decoration: none;
+}
+
+.csdc-news-read-more:hover,
+.csdc-news-read-more:focus-visible {
+  text-decoration: none;
+  color: $csdc-red-deep;
+}
+
+.csdc-news-read-more-arrow {
+  display: inline-block;
+  transition: transform 0.18s ease;
+}
+
+.csdc-news-read-more:hover .csdc-news-read-more-arrow,
+.csdc-news-read-more:focus-visible .csdc-news-read-more-arrow {
+  transform: translateX(3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .csdc-news-read-more:hover .csdc-news-read-more-arrow,
+  .csdc-news-read-more:focus-visible .csdc-news-read-more-arrow {
+    transform: none;
+  }
+}
+
+// ---- Past-events photo strip (on the Events page) ---------------------------
+// A centered "Past Events" title above a horizontally auto-scrolling row of
+// photos (a film strip). The whole block links into the archive; the marquee
+// keeps scrolling, and on hover the title + the hovered photo grow as a
+// call-to-action. Disabled under reduced-motion.
+.csdc-pe-strip-section {
+  display: block;
+  margin-top: 2.75rem;
+  text-decoration: none;
+}
+
+.csdc-pe-strip-title {
+  margin-bottom: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  font-weight: 700;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+// Hovering the teaser enlarges + tints the title to invite a click.
+.csdc-pe-strip-section:hover .csdc-pe-strip-title,
+.csdc-pe-strip-section:focus-visible .csdc-pe-strip-title {
+  transform: scale(1.07);
+  color: $csdc-red;
+}
+
+.csdc-pe-strip {
+  overflow: hidden;
+  // Vertical breathing room so a hovered photo can grow without being clipped
+  // (which would square off its rounded corners).
+  padding: 1.1rem 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%);
+}
+
+.csdc-pe-strip-track {
+  display: flex;
+  width: max-content;
+  animation: csdc-marquee 20s linear infinite;
+  // Keep the marquee on the compositor so first-load decoding of other
+  // content doesn't stutter it.
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+// Scoped with .csdc-pe-strip to beat the theme's `.csdc-page img` rule
+// (which otherwise forces height:auto / max-width:100% and blows these up).
+.csdc-pe-strip .csdc-pe-strip-img {
+  position: relative;
+  flex: 0 0 auto;
+  height: clamp(9rem, 15vw, 12rem);
+  width: auto;
+  max-width: none;
+  // Each item owns its trailing gap so a -50% translate loops seamlessly.
+  margin-right: 0.85rem;
+  border-radius: $csdc-radius;
+  box-shadow: $csdc-shadow-sm;
+  object-fit: cover;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+// The photo under the cursor lifts and grows (the strip keeps scrolling).
+.csdc-pe-strip .csdc-pe-strip-img:hover {
+  transform: translateY(-6px) scale(1.07);
+  box-shadow: $csdc-shadow-lg;
+  z-index: 2;
+}
+
+@keyframes csdc-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .csdc-pe-strip-track {
+    animation: none;
+  }
+  .csdc-pe-strip {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}

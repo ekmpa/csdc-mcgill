@@ -111,7 +111,11 @@
           {% assign news_title = post.slug | replace: '-', ' ' %}
           {% endif %}
           {% assign rendered_news_title = news_title | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines | strip %}
+          {% if post.link and post.link != '' %}
+          <h3 class="csdc-news-item-title"><a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">{{ rendered_news_title }}</a></h3>
+          {% else %}
           <h3 class="csdc-news-item-title">{{ rendered_news_title }}</h3>
+          {% endif %}
           <p class="csdc-news-item-date">{{ post.date | date: "%B %-d, %Y" }}</p>
           {% if show_byline %}
           <p class="csdc-news-item-excerpt"><span class="csdc-news-item-by">{% if excerpt_prefix == 'par' %}par{% elsif post_news_tag == 'press' %}by{% else %}By{% endif %}</span> {{ excerpt_clean }}</p>

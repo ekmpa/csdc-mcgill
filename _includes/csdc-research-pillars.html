@@ -36,10 +36,10 @@ copy-pasted once per axis. {% endcomment %}
   {% assign axis_highlight_sets = axis_highlight_sets | push: highlights %}
 {% endfor %}
 
-<section class="csdc-section csdc-home-research{% if include.extra_class %} {{ include.extra_class }}{% endif %}">
+<section class="csdc-section csdc-home-research csdc-reveal{% if include.extra_class %} {{ include.extra_class }}{% endif %}">
   <div class="csdc-container">
     {% if include.show_heading != false %}
-    <h2>{{ include.heading_text | default: t.home.research.heading }}</h2>
+    <h2 class="csdc-section-title">{{ include.heading_text | default: t.home.research.heading }}</h2>
     {% if include.subtitle_text %}
     <p class="csdc-section-subtitle">{{ include.subtitle_text }}</p>
     {% elsif include.show_default_subtitle %}
